@@ -1,3 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+<version>0.1-alpha</version>
 <ElementDescriptions>
     <Element>
         <name>Term</name>
@@ -8,7 +11,7 @@
         <description>Definition of the element</description>
     </Element>
     <Element>
-        <name>entry</name>
+        <name>Entry</name>
         <description>Data type (free text or controlled vocabulary)</description>
     </Element>
     <Element>
@@ -33,7 +36,7 @@
     </Element>
 </ElementDescriptions>
 
-<Metadata>
+<MetadataElements>
     <identification>
         <term>Unique Record Identifier</term>
         <definition>An alphanumeric identifier for the record created for the IF Repository.</definition>
@@ -41,12 +44,10 @@
         <dcequilavent>dc:identifier</dcequilavent>
         <repeatable>No</repeatable>
         <modality>Mandatory</modality>
-        <guideline>The PIs of each project will receive a pre-assigned unique project identifier.
-            Unique
-            ID's derivered from that ID and adding 4 digit secuential numbers.</guideline>
+        <guideline>Alphanumeric number assigned to each record.</guideline>
         <example>UFC00800001</example>
 
-        <term>Original Identifier</term>
+        <term>Local Identifier</term>
         <definition>Shows the parent collection or object which this record related to/part of.</definition>
         <entry>String-Free text</entry>
         <dcequilavent></dcequilavent>
@@ -121,6 +122,24 @@
     </identification>
 
     <ContentAndStructure>
+
+        <term>Digital Format</term>
+        <definition>The file format, physical medium or dimension of the source.</definition>
+        <entry>String-CV (Digital Format)</entry>
+        <dcequilavent>dc:format</dcequilavent>
+        <repeatable>Yes</repeatable>
+        <modality>Mandatory</modality>
+        <guideline>Choose between "Audio", "Video", "3D", "Document", "Image", "Binary".</guideline>
+        <example>Audio</example>
+
+        <term>Extent</term>
+        <definition>Size or duration of the source.</definition>
+        <entry>String-Free text</entry>
+        <dcequilavent>dc:extent</dcequilavent>
+        <repeatable>Yes</repeatable>
+        <modality>Optional</modality>
+        <guideline></guideline>
+        <example>02:15 minutes, 21 pages</example>
 
         <term>Resource Description</term>
         <definition>A textual description of the content of the resource (knowledge profile =
@@ -251,7 +270,7 @@
         <dcequilavent>dc:coverage</dcequilavent>
         <repeatable>Yes</repeatable>
         <modality>Optional</modality>
-        <guideline>It should be written as [lang,lat]</guideline>
+        <guideline>It should be written as [long,lat]</guideline>
         <example>[10.77555,106.701944]</example>
 
         <term>Non-Geolocated Place</term>
@@ -285,8 +304,8 @@
         <repeatable>Yes</repeatable>
         <modality>Strongly Suggested</modality>
         <guideline>Describe the cultural context or event associated with the resource. This
-            descriptor responds to ‘What was happening when the resource was produced?’, ‘What event
-            or practice is the resource recording?’ A list of suggested events is provided but add
+            descriptor responds to "What was happening when the resource was produced?", "What event
+            or practice is the resource recording?" A list of suggested events is provided but add
             additional, more specific values to the vocabulary.</guideline>
         <example>Dancing;Migration;Singing</example>
 
@@ -297,7 +316,7 @@
         <repeatable>Yes</repeatable>
         <modality>Optional</modality>
         <guideline>Describe the social group associated with the resource. This descriptor responds
-            to ‘What is the description of the people recorded by the resources?’ A list of
+            to "What is the description of the people recorded by the resources?" A list of
             suggested social group is provided but add additional, more specific values to the
             vocabulary. e.g. https://simplicable.com/society/social-groups</guideline>
         <example>Classmates;Family;Committees</example>
@@ -313,7 +332,7 @@
         <repeatable>Yes</repeatable>
         <modality>Optional</modality>
         <guideline>Describe the technique used in producing the resource. This descriptor responds
-            to ‘How was the resource produced?’ A list of relevant production technique is provided
+            to "How was the resource produced?" A list of relevant production technique is provided
             but additional techniques can be added.</guideline>
         <example>Photography;Report writing;Audio recording;Video recording</example>
 
@@ -392,15 +411,6 @@
             before making your selection.</guideline>
         <example>CC BY-NC 4.0</example>
 
-        <term>Rights Statement</term>
-        <definition>A statement about the intellectual property rights (IPR) held in or over a resource, a legal document giving official permission to do something with a resource, or a statement about access rights.</definition>
-        <entry>String-CV (Rights Statement)</entry>
-        <dcequilavent></dcequilavent>
-        <repeatable>Yes</repeatable>
-        <modality>Optional</modality>
-        <guideline>Choose a statement from "Rights Statement" list.</guideline>
-        <example>In Copyright - EU Orphan Work (InC-OW-EU)</example>
-
         <term>Cultural Sensitivity</term>
         <definition>This refers to the attributed standard that governs the content and knowledge of
             the resources and who can access the resource.</definition>
@@ -414,7 +424,7 @@
             in this category are confidential. The depositor, persons connected to the project and
             repository administrators may have access to the resource. ;Moderately sensitive –
             refers to resources that are to be viewed only, not to be downloaded and print.
-            Retrievers interested in accessing the resource need to fill ‘Data Retrieval Form’ to
+            Retrievers interested in accessing the resource need to fill "Data Retrieval Form" to
             justify the need for the resource. Data Retrieval Form to be assessed and approved by
             the Principal Investigator and co-PIs ;Low sensitivity – refers to resources that are to
             be shared openly. Retrievers will be able to view, download, print and use</guideline>
@@ -428,7 +438,7 @@
         <modality>Mandatory if</modality>
         <guideline>Select the level of access that is appropriate to the resource. Consider this
             carefully before making your selection. ---Yes – refers to resources that are
-            restricted. If you choose ‘Yes’, you need to justify ;No – refers to resources with no
+            restricted. If you choose "Yes", you need to justify ;No – refers to resources with no
             access restriction. Resources will be made openly available.</guideline>
         <example>Yes, No</example>
 
@@ -438,13 +448,23 @@
         <dcequilavent></dcequilavent>
         <repeatable>Yes</repeatable>
         <modality>Mandatory if</modality>
-        <guideline>The field is mandatory if the value for ‘Access restriction’ is Yes. Provide
+        <guideline>The field is mandatory if the value for "Access restriction" is Yes. Provide
             justifications for limiting the access to the resource and specify the consequences and
             potential impacts of making the resource accessible. Specify if access to the resource
             should ne restricted permanently or for a specific period of time.</guideline>
         <example>The image records various civil protests and disobedience is countries that are
             repressive. Making the image accessible could make the persons connected to the image
             targets. Therefore, access to the image should be permanently restricted.</example>
+
+        <term>Use and Reproduction</term>
+        <definition>Shows users how to cite this data when they want to reproduce or refer to it.</definition>
+        <entry>String-Free text</entry>
+        <dcequilavent></dcequilavent>
+        <repeatable>No</repeatable>
+        <modality>Strongly Suggested</modality>
+        <guideline>A spesific, permenent and searchable info about this data (such as ID) or a
+            perminent url can be used.</guideline>
+        <example>Please cite as UFC00800001</example>
 
     </AccessAndSensitivity>
 
@@ -474,5 +494,6 @@
 
     </IntellectualProperty>
 
+</MetadataElements>
 
-</Metadata>
+</metadata>
