@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+    <version>0.1-alpha</version>
+
+    <MetadataElements>
+
+        <term>Term ID</term>
+        <definition>Unique identifier of the term.</definition>
+        <entry>String-Free text</entry>
+        <dcequilavent>dc:identifier</dcequilavent>
+        <repeatable>No</repeatable>
+        <modality>Mandatory</modality>
+        <guideline>Provide the unique ID for the participant of the project.</guideline>
+        <example>theme_007</example>
+
+        <term>Term</term>
+        <definition>The name of the vocabulary term in English.</definition>
+        <entry>String-Free text</entry>
+        <dcequilavent></dcequilavent>
+        <repeatable>No</repeatable>
+        <modality>Mandatory</modality>
+        <guideline>Provide the name of the vocabulary term.</guideline>
+        <example>Cultural heritage</example>
+
+        <term>Description</term>
+        <definition>A textual description of the term.</definition>
+        <entry>String-Free text</entry>
+        <dcequilavent></dcequilavent>
+        <repeatable>No</repeatable>
+        <modality>Optional</modality>
+        <guideline></guideline>
+        <example>The legacy of physical artifacts (cultural property) and intangible attributes of a group or society inherited from the past</example>
+
+        <term>Other Language</term>
+        <definition>The language to be translated.</definition>
+        <entry>String-CV (Languages)</entry>
+        <dcequilavent></dcequilavent>
+        <repeatable>Yes</repeatable>
+        <modality>Optional</modality>
+        <guideline>Choose the alternative language for the term that you want to translate into.</guideline>
+        <example>Turkish</example>
+
+        <term>Translation</term>
+        <definition>Translation of the term.</definition>
+        <entry>String-Free text</entry>
+        <dcequilavent></dcequilavent>
+        <repeatable>No</repeatable>
+        <modality>Optional</modality>
+        <guideline>Provide the translation of the term.</guideline>
+        <example>Kültürel miras</example>
+
+        <term>Fast ID</term>
+        <definition>URL of the related term in FAST (https://fast.oclc.org/).</definition>
+        <entry>String-Free text</entry>
+        <dcequilavent></dcequilavent>
+        <repeatable>No</repeatable>
+        <modality>Optional</modality>
+        <guideline>Provide the URL of the related FAST term.</guideline>
+        <example>https://id.worldcat.org/fast/885014/</example>
+
+    </MetadataElements>
+</metadata>
