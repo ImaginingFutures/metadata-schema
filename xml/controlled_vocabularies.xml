@@ -1,17 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
-<metadata>
+<cvmetadata>
     <version>0.1-alpha</version>
 
     <MetadataElements>
-
-        <term>Term ID</term>
-        <definition>Unique identifier of the term.</definition>
-        <entry>String-Free text</entry>
-        <dcequilavent>dc:identifier</dcequilavent>
-        <repeatable>No</repeatable>
-        <modality>Mandatory</modality>
-        <guideline>Provide the unique ID for the participant of the project.</guideline>
-        <example>theme_007</example>
+        <metadataElement name="Term ID">
+            <labels>
+                <label locale="en_US">
+                    <term>Term ID</term>
+                    <definition>Unique identifier of the term.</definition>
+                    <entry>String-Free text</entry>
+                    <dcequilavent>dc:identifier</dcequilavent>
+                    <repeatable>No</repeatable>
+                    <modality>Mandatory</modality>
+                    <guideline>Provide the unique ID for the participant of the project.</guideline>
+                    <example>theme_007</example>
+                </label>
+            </labels>
+        </metadataElement>
 
         <term>Term</term>
         <definition>The name of the vocabulary term in English.</definition>
@@ -29,7 +34,8 @@
         <repeatable>No</repeatable>
         <modality>Optional</modality>
         <guideline></guideline>
-        <example>The legacy of physical artifacts (cultural property) and intangible attributes of a group or society inherited from the past</example>
+        <example>The legacy of physical artifacts (cultural property) and intangible attributes of a
+            group or society inherited from the past</example>
 
         <term>Other Language</term>
         <definition>The language to be translated.</definition>
@@ -59,4 +65,4 @@
         <example>https://id.worldcat.org/fast/885014/</example>
 
     </MetadataElements>
-</metadata>
+</cvmetadata>
