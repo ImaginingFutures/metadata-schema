@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<participantsmetadata>
+<metadata>
     <version>0.1-alpha</version>
 
     <MetadataElements>
@@ -203,4 +203,4 @@
         <example></example>
 
     </MetadataElements>
-</participantsmetadata>
+</metadata>
