@@ -355,7 +355,7 @@
             (YYYY-MM) or just year (YYYY) may be used.</guideline>
         <example>2022-01-04 or 2022-01 or 2022</example>
 
-        <name></name>
+        <name>Date of Publication</name>
         <description></description>
         <entry>Integer</entry>
         <dcequilavent></dcequilavent>

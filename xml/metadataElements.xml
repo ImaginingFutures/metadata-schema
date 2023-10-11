@@ -3,7 +3,10 @@
 <profileDescription>Archive management for Projects and Collections</profileDescription>
 <version>0.1-alpha</version>
 
+<!-- Metadata Elements-->
+
 <elementSets>
+    <!-- Resources -->
     <metadataElement code="idno" datatype="text">
         <labels>
             <label locale="en_US">
@@ -492,7 +495,8 @@
         <labels>
             <label locale="en_US">
                 <name>Notes</name>
-                <description>Any information that you want to add about this data, if you can not find a
+                <description>Any information that you want to add about this data, if you can not
+                    find a
                     metadata field according to your need.</description>
                 <entry>String-Free text</entry>
                 <dcequilavent></dcequilavent>
@@ -524,7 +528,8 @@
         <labels>
             <label locale="en_US">
                 <name>Country</name>
-                <description>The name of the country connected to the resource, where the content of the
+                <description>The name of the country connected to the resource, where the content of
+                    the
                     resource took place.</description>
                 <entry>String-CV (Countries)</entry>
                 <dcequilavent>dc:coverage</dcequilavent>
@@ -556,13 +561,15 @@
         <labels>
             <label locale="en_US">
                 <name>Region</name>
-                <description>The name of the region or state connected to the resource, where the content of
+                <description>The name of the region or state connected to the resource, where the
+                    content of
                     the resource took place.</description>
                 <entry>String-Free text</entry>
                 <dcequilavent>dc:coverage</dcequilavent>
                 <repeatable>Yes</repeatable>
                 <modality>Optional</modality>
-                <guideline>Provide the name of the region/state/province that is connected to the resource.</guideline>
+                <guideline>Provide the name of the region/state/province that is connected to the
+                    resource.</guideline>
                 <example>Osun, Chaco, Cape coast</example>
             </label>
         </labels>
@@ -619,13 +626,15 @@
         <labels>
             <label locale="en_US">
                 <name>Address</name>
-                <description>The name of the place/street name/area connected to the resource, where the
+                <description>The name of the place/street name/area connected to the resource, where
+                    the
                     content of the resource took place.</description>
                 <entry>String-Free text</entry>
                 <dcequilavent>dc:coverage</dcequilavent>
                 <repeatable>Yes</repeatable>
                 <modality>Strongly Suggested</modality>
-                <guideline>Provide the name of the place/street name/area that is connected to the resource.</guideline>
+                <guideline>Provide the name of the place/street name/area that is connected to the
+                    resource.</guideline>
                 <example>Gbongan, Kishi, Sidwell Street</example>
             </label>
         </labels>
@@ -682,7 +691,8 @@
         <labels>
             <label locale="en_US">
                 <name>Non-Geolocated Place</name>
-                <description>This element captures the names of places that do not have specific geographical
+                <description>This element captures the names of places that do not have specific
+                    geographical
                     coordinates or are of imaginary or mythical nature.</description>
                 <entry>String-Free text</entry>
                 <dcequilavent>dc:coverage</dcequilavent>
@@ -719,7 +729,8 @@
                 <dcequilavent></dcequilavent>
                 <repeatable>Yes</repeatable>
                 <modality>Strongly Suggested</modality>
-                <guideline>Provide the names of all the cultural or ethnic group/community connected to the
+                <guideline>Provide the names of all the cultural or ethnic group/community connected
+                    to the
                     resource. This could be more than one.</guideline>
                 <example>Arabs;Assyrians;Balanta</example>
             </label>
@@ -752,8 +763,10 @@
                 <repeatable>Yes</repeatable>
                 <modality>Strongly Suggested</modality>
                 <guideline>Describe the cultural context or event associated with the resource. This
-                    descriptor responds to ‘What was happening when the resource was produced?’, ‘What event
-                    or practice is the resource recording?’ A list of suggested events is provided but add
+                    descriptor responds to ‘What was happening when the resource was produced?’,
+                    ‘What event
+                    or practice is the resource recording?’ A list of suggested events is provided
+                    but add
                     additional, more specific values to the vocabulary.</guideline>
                 <example>Dancing;Migration;Singing</example>
             </label>
@@ -776,7 +789,7 @@
         </typeRestrictions>
     </metadataElement>
 
-    <metadataElement code="socialgroup" datatype="List">list="xxcomebackxx"
+    <metadataElement code="socialgroup" datatype="List" list="xxcomebackxx">
         <labels>
             <label locale="en_US">
                 <name>Social Group Setting</name>
@@ -785,11 +798,13 @@
                 <dcequilavent></dcequilavent>
                 <repeatable>Yes</repeatable>
                 <modality>Optional</modality>
-                <guideline>Describe the social group associated with the resource. This descriptor responds
+                <guideline>Describe the social group associated with the resource. This descriptor
+                    responds
                     to ‘What is the description of the people recorded by the resources?’ A list of
-                    suggested social group is provided but add additional, more specific values to the
+                    suggested social group is provided but add additional, more specific values to
+                    the
                     vocabulary. e.g. https://simplicable.com/society/social-groups</guideline>
-                <example>Classmates;Family;Committees</example>        
+                <example>Classmates;Family;Committees</example>
             </label>
         </labels>
         <settings>
@@ -819,8 +834,10 @@
                 <dcequilavent></dcequilavent>
                 <repeatable>Yes</repeatable>
                 <modality>Optional</modality>
-                <guideline>Describe the technique used in producing the resource. This descriptor responds
-                    to ‘How was the resource produced?’ A list of relevant production technique is provided
+                <guideline>Describe the technique used in producing the resource. This descriptor
+                    responds
+                    to ‘How was the resource produced?’ A list of relevant production technique is
+                    provided
                     but additional techniques can be added.</guideline>
                 <example>Photography;Report writing;Audio recording;Video recording</example>
             </label>
@@ -851,7 +868,8 @@
                 <dcequilavent></dcequilavent>
                 <repeatable>Yes</repeatable>
                 <modality>Optional</modality>
-                <guideline>List all the equipment used for the production of the resource. Provide the
+                <guideline>List all the equipment used for the production of the resource. Provide
+                    the
                     general names of each equipment, separated with commas.</guideline>
                 <example>Tripod stand;DSLR camera;Video recording</example>
             </label>
@@ -873,11 +891,120 @@
             </restriction>
         </typeRestrictions>
     </metadataElement>
-    <metadataElement code="" datatype="Text">
+    <metadataElement code="date" datatype="Container">
         <labels>
             <label locale="en_US">
+                <name>Dates</name>
+                <description>A point or period of time associated with the creation of the resource.</description>
+                <entry>Integer</entry>
+                <dcequilavent>dc:created</dcequilavent>
+                <repeatable>Yes</repeatable>
+                <modality>Strongly Suggested</modality>
+                <guideline>Enter the date the resource was created. Recommended practice is to
+                    express date
+                    using the format YYYY-MM-DD [ISO 8601-1]. If the full date is unknown, month and
+                    year
+                    (YYYY-MM) or just year (YYYY) may be used.</guideline>
+                <example>2022-01-04 or 2022-01 or 2022</example>
+            </label>
+        </labels>
+        <elements>
+            <metadataElement code="dates_value" datatype="DateRange">
+                <labels>
+                    <label locale="en_US">
+                        <name>Date of Creation “xxcomebackxx” </name>
+
+                    </label>
+                </labels>
+                <settings>
+                    <setting name="fieldWidth">40</setting>
+                    <setting name="fieldHeight">1</setting>
+                </settings>
+            </metadataElement>
+            <metadataElement code="dates_type" datatype="List" list="date_types">
+                <labels>
+                    <label locale="en_US">
+                        <name>Date of Digitisation “xxcomebackxx” </name>
+
+                    </label>
+                </labels>
+                <settings>
+                    <setting name="fieldWidth">40</setting>
+                    <setting name="fieldHeight">1</setting>
+                </settings>
+            </metadataElement>
+        </elements>
+        <settings>
+            <setting name="fieldWidth">90</setting>
+            <setting name="fieldHeight">3</setting>
+            <setting name="minChars">0</setting>
+            <setting name="maxChars">65535</setting>
+        </settings>
+        <typeRestrictions>
+            <restriction>
+                <table>ca_objects</table>
+                <settings>
+                    <setting name="minAttributesPerRow">0</setting>
+                    <setting name="maxAttributesPerRow">1</setting>
+                    <setting name="minimumAttributeBundlesToDisplay">1</setting>
+                </settings>
+            </restriction>
+        </typeRestrictions>
+    </metadataElement>
 
 
+    <metadataElement code="rightsownership" datatype="Entities">
+        <labels>
+            <label locale="en_US">
+                <name>Rights Ownership</name>
+                <description>Information about the
+                individual/community/groups/organisation who owns the
+                    rights in and over the resource.</description>
+                <entry>String-CV (Participants)</entry>
+                <dcequilavent>
+                dc:rightsHolder</dcequilavent>
+                <repeatable>Yes</repeatable>
+                <modality>Mandatory</modality>
+                <guideline>Select
+                the participant or community that owns the rights in and over the resource
+                    from the participants vocabulary. You can add names of
+                individual/community/organisation
+                    that are not on the list to the vocabulary list, then here.</guideline>
+                <example>Name
+                Surname;University of Ghana;Ilesa community</example>s </label>
+        </labels>
+        <settings>
+            <setting name="fieldWidth">90</setting>
+            <setting name="fieldHeight">3</setting>
+            <setting name="minChars">0</setting>
+            <setting name="maxChars">65535</setting>
+        </settings>
+        <typeRestrictions>
+            <restriction>
+                <table>ca_objects</table>
+                <settings>
+                    <setting name="minAttributesPerRow">0</setting>
+                    <setting name="maxAttributesPerRow">1</setting>
+                    <setting name="minimumAttributeBundlesToDisplay">1</setting>
+                </settings>
+            </restriction>
+        </typeRestrictions>
+    </metadataElement>
+
+    <metadataElement code="licence" datatype="List" list="xxcomebackxx">
+        <labels>
+            <label locale="en_US">
+                <name>Licence</name>
+                <description>Information about the shareability, distribution and adaptation of the
+                    resource.</description>
+                <entry>String-CV (Licence)</entry>
+                <dcequilavent>dc:licence</dcequilavent>
+                <repeatable>Yes</repeatable>
+                <modality>Mandatory</modality>
+                <guideline>Select which licence is applicable to the resource. Consider this
+                    carefully
+                    before making your selection.</guideline>
+                <example>CC BY-NC 4.0</example>
             </label>
         </labels>
         <settings>
@@ -897,11 +1024,20 @@
             </restriction>
         </typeRestrictions>
     </metadataElement>
-    <metadataElement code="" datatype="Text">
+
+    <metadataElement code="rightsstate" datatype="List" list="xxcomebackxx">
         <labels>
             <label locale="en_US">
-
-
+                <name>Rights Statement</name>
+                <description>A statement about the intellectual property rights (IPR) held in or
+                    over a resource, a legal document giving official permission to do something
+                    with a resource, or a statement about access rights.</description>
+                <entry>String-CV (Rights Statement)</entry>
+                <dcequilavent></dcequilavent>
+                <repeatable>Yes</repeatable>
+                <modality>Optional</modality>
+                <guideline>Choose a statement from "Rights Statement" list.</guideline>
+                <example>In Copyright - EU Orphan Work (InC-OW-EU)</example>
             </label>
         </labels>
         <settings>
@@ -922,6 +1058,207 @@
         </typeRestrictions>
     </metadataElement>
 
+    <metadataElement code="cultsens" datatype="List" list="xxcomebackxx">
+        <labels>
+            <label locale="en_US">
+                <name>Cultural Sensitivity</name>
+                <description>This refers to the attributed standard that governs the content and
+                    knowledge of
+                    the resources and who can access the resource.</description>
+                <entry>String-CV (Cultural Sensitivity)</entry>
+                <dcequilavent></dcequilavent>
+                <repeatable>Yes</repeatable>
+                <modality>Mandatory</modality>
+                <guideline>Select the level of cultural sensitivity of the content and knowledge of
+                    the
+                    resource. Consider this carefully before making your selection. ---Highly
+                    sensitive –
+                    refers to resource that cannot be viewed, downloaded, print nor accessed. The
+                    resources
+                    in this category are confidential. The depositor, persons connected to the
+                    project and
+                    repository administrators may have access to the resource. ;Moderately sensitive
+                    –
+                    refers to resources that are to be viewed only, not to be downloaded and print.
+                    Retrievers interested in accessing the resource need to fill ‘Data Retrieval
+                    Form’ to
+                    justify the need for the resource. Data Retrieval Form to be assessed and
+                    approved by
+                    the Principal Investigator and co-PIs ;Low sensitivity – refers to resources
+                    that are to
+                    be shared openly. Retrievers will be able to view, download, print and use</guideline>
+                <example>Highly sensitive, Medium sensitivity, Low sensitivity</example>
+            </label>
+        </labels>
+        <settings>
+            <setting name="fieldWidth">90</setting>
+            <setting name="fieldHeight">3</setting>
+            <setting name="minChars">0</setting>
+            <setting name="maxChars">65535</setting>
+        </settings>
+        <typeRestrictions>
+            <restriction>
+                <table>ca_objects</table>
+                <settings>
+                    <setting name="minAttributesPerRow">0</setting>
+                    <setting name="maxAttributesPerRow">1</setting>
+                    <setting name="minimumAttributeBundlesToDisplay">1</setting>
+                </settings>
+            </restriction>
+        </typeRestrictions>
+    </metadataElement>
+
+    <metadataElement code="accessrest" datatype="List" list="xxcomebackxx">
+        <labels>
+            <label locale="en_US">
+                <name>Access Restriction</name>
+                <description>This refers to availability of the resource.</description>
+                <entry>Boolean</entry>
+                <dcequilavent></dcequilavent>
+                <repeatable>Yes</repeatable>
+                <modality>Mandatory if</modality>
+                <guideline>Select the level of access that is appropriate to the resource. Consider
+                    this
+                    carefully before making your selection. ---Yes – refers to resources that are
+                    restricted. If you choose ‘Yes’, you need to justify ;No – refers to resources
+                    with no
+                    access restriction. Resources will be made openly available.</guideline>
+                <example>Yes, No</example>
+            </label>
+        </labels>
+        <settings>
+            <setting name="fieldWidth">90</setting>
+            <setting name="fieldHeight">3</setting>
+            <setting name="minChars">0</setting>
+            <setting name="maxChars">65535</setting>
+        </settings>
+        <typeRestrictions>
+            <restriction>
+                <table>ca_objects</table>
+                <settings>
+                    <setting name="minAttributesPerRow">0</setting>
+                    <setting name="maxAttributesPerRow">1</setting>
+                    <setting name="minimumAttributeBundlesToDisplay">1</setting>
+                </settings>
+            </restriction>
+        </typeRestrictions>
+    </metadataElement>
+
+    <metadataElement code="reasonforrest" datatype="Text">
+        <labels>
+            <label locale="en_US">
+                <name>Reasons for Restriction</name>
+                <description>Justification for limiting access to the resources.</description>
+                <entry>String-Free text</entry>
+                <dcequilavent></dcequilavent>
+                <repeatable>Yes</repeatable>
+                <modality>Mandatory if</modality>
+                <guideline>The field is mandatory if the value for ‘Access restriction’ is Yes.
+                    Provide
+                    justifications for limiting the access to the resource and specify the
+                    consequences and
+                    potential impacts of making the resource accessible. Specify if access to the
+                    resource
+                    should ne restricted permanently or for a specific period of time.</guideline>
+                <example>The image records various civil protests and disobedience is countries that
+                    are
+                    repressive. Making the image accessible could make the persons connected to the
+                    image
+                    targets. Therefore, access to the image should be permanently restricted.</example>
+            </label>
+        </labels>
+        <settings>
+            <setting name="fieldWidth">90</setting>
+            <setting name="fieldHeight">3</setting>
+            <setting name="minChars">0</setting>
+            <setting name="maxChars">65535</setting>
+        </settings>
+        <typeRestrictions>
+            <restriction>
+                <table>ca_objects</table>
+                <settings>
+                    <setting name="minAttributesPerRow">0</setting>
+                    <setting name="maxAttributesPerRow">1</setting>
+                    <setting name="minimumAttributeBundlesToDisplay">1</setting>
+                </settings>
+            </restriction>
+        </typeRestrictions>
+    </metadataElement>
+
+    <metadataElement code="creator" datatype="Entities">
+        <labels>
+            <label locale="en_US">
+                <name>Creator</name>
+                <description>The individual that is primarily responsible for the production of the
+                    resource.</description>
+                <entry>String-CV (Participants)</entry>
+                <dcequilavent>dc:creator</dcequilavent>
+                <repeatable>Yes</repeatable>
+                <modality>Strongly Suggested</modality>
+                <guideline>Select the participant that is primarily responsible for the production
+                    of the
+                    resource. If many participants are involved, select the lead person for the
+                    production
+                    of the resource and list other as contributors.</guideline>
+                <example>Name Surname;Name2 Surname2</example>
+            </label>
+        </labels>
+        <settings>
+            <setting name="fieldWidth">90</setting>
+            <setting name="fieldHeight">3</setting>
+            <setting name="minChars">0</setting>
+            <setting name="maxChars">65535</setting>
+        </settings>
+        <typeRestrictions>
+            <restriction>
+                <table>ca_objects</table>
+                <settings>
+                    <setting name="minAttributesPerRow">0</setting>
+                    <setting name="maxAttributesPerRow">1</setting>
+                    <setting name="minimumAttributeBundlesToDisplay">1</setting>
+                </settings>
+            </restriction>
+        </typeRestrictions>
+    </metadataElement>
+
+    <metadataElement code="contributor" datatype="Entities">
+        <labels>
+            <label locale="en_US">
+                <name>Contributors</name>
+                <description>The individuals that supported the creator or contributed to the
+                    production of
+                    the resource.</description>
+                <entry>String-CV (Participants)</entry>
+                <dcequilavent>dc:contributor</dcequilavent>
+                <repeatable>Yes</repeatable>
+                <modality>Optional</modality>
+                <guideline>List all the individuals that contributed or supported the production of
+                    the
+                    resources. Separate each contributor with commas.</guideline>
+                <example>Name Surname;Name2 Surname2</example>
+            </label>
+        </labels>
+        <settings>
+            <setting name="fieldWidth">90</setting>
+            <setting name="fieldHeight">3</setting>
+            <setting name="minChars">0</setting>
+            <setting name="maxChars">65535</setting>
+        </settings>
+        <typeRestrictions>
+            <restriction>
+                <table>ca_objects</table>
+                <settings>
+                    <setting name="minAttributesPerRow">0</setting>
+                    <setting name="maxAttributesPerRow">1</setting>
+                    <setting name="minimumAttributeBundlesToDisplay">1</setting>
+                </settings>
+            </restriction>
+        </typeRestrictions>
+    </metadataElement>
+
+    <!-- Participants -->
+    <!-- Projects -->
+    <!-- Controlled Vocabularies -->
 
 
 </elementSets>
