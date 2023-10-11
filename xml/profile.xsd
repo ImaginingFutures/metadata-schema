@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+<!-- GLOBAL SIMPLE TYPE DEFS -->
+
+<xs:simpleType name="stringRequired">
+    <xs:annotation>
+        <xs:documentation>non-empty strings only</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+        <xs:minLength value="1" />
+    </xs:restriction>
+</xs:simpleType>
+
+<xs:simpleType name="booleanType">
+    <xs:restriction base="xs:integer">
+        <xs:minInclusive value="0" />
+        <xs:maxInclusive value="1" />
+    </xs:restriction>
+</xs:simpleType>
+
+<xs:simpleType name="langType">
+    <xs:restriction base="xs:string">
+        <xs:pattern value="[a-z]{2,3}" />
+    </xs:restriction>
+</xs:simpleType>
+
+<xs:simpleType name="countryType">
+    <xs:restriction base="xs:string">
+        <xs:pattern value="[A-Z][A-Z]" />
+    </xs:restriction>
+</xs:simpleType>
+
+<xs:simpleType name="localeType">
+    <xs:restriction base="xs:string">
+        <xs:pattern value="[a-z]{2,3}_[A-Z][A-Z]" />
+    </xs:restriction>
+</xs:simpleType>
+
+<xs:simpleType name="elementCodeType">
+    <xs:restriction base="xs:string">
+        <xs:pattern value="[\p{L}0-9_]+" />
+        <xs:minLength value="1" />
+        <xs:maxLength value="30" />
+    </xs:restriction>
+</xs:simpleType>
+
+<xs:simpleType name="elementSpecType">
+    <xs:restriction base="xs:string">
+        <xs:pattern value="[\p{L}0-9_\.]+" />
+        <xs:minLength value="1" />
+        <xs:maxLength value="100" />
+    </xs:restriction>
+</xs:simpleType>
+
+<xs:simpleType name="codeType">
+    <xs:restriction base="xs:string">
+        <xs:pattern value="[\p{L}0-9_]+" />
+        <xs:minLength value="1" />
+        <xs:maxLength value="100" />
+    </xs:restriction>
+</xs:simpleType>
+
+<xs:simpleType name="colorType">
+    <xs:restriction base="xs:string">
+        <xs:pattern value="[A-Fa-f0-9]+" />
+        <xs:minLength value="6" />
+        <xs:maxLength value="6" />
+    </xs:restriction>
+</xs:simpleType>
+
+<xs:simpleType name="bundleType">
+    <xs:restriction base="xs:string">
+        <xs:pattern value="[A-Za-z\.0-9_]+" />
+        <xs:minLength value="1" />
+        <xs:maxLength value="100" />
+    </xs:restriction>
+</xs:simpleType>
+
+<xs:simpleType name="mdDictRuleLevelList">
+    <xs:restriction base="xs:string">
+        <xs:enumeration value="ERR" />
+        <xs:enumeration value="WARN" />
+        <xs:enumeration value="NOTE" />
+        <xs:enumeration value="DEBG" />
+    </xs:restriction>
+</xs:simpleType>
+
+<xs:simpleType name="mdAlertTriggerTypes">
+    <xs:restriction base="xs:string">
+        <xs:enumeration value="Date" />
+        <xs:enumeration value="Modification" />
+    </xs:restriction>
+</xs:simpleType>
+
+<xs:simpleType name="acPermissionList">
+    <xs:restriction base="xs:string">
+        <xs:enumeration value="read" />
+        <xs:enumeration value="edit" />
+        <xs:enumeration value="none" />
+    </xs:restriction>
+</xs:simpleType>
+
+<xs:simpleType name="acPermissionListNoNone">
+    <xs:restriction base="xs:string">
+        <xs:enumeration value="read" />
+        <xs:enumeration value="edit" />
+    </xs:restriction>
+</xs:simpleType>
+
+<xs:simpleType name="acPermissionListNotifications">
+    <xs:restriction base="xs:string">
+        <xs:enumeration value="notification" />
+        <xs:enumeration value="edit" />
+        <xs:enumeration value="none" />
+    </xs:restriction>
+</xs:simpleType>
+
+<xs:simpleType name="datatypeList">
+    <xs:restriction base="xs:string">
+        <xs:enumeration value="Container" />
+        <xs:enumeration value="Text" />
+        <xs:enumeration value="DateRange" />
+        <xs:enumeration value="List" />
+        <xs:enumeration value="Geocode" />
+        <xs:enumeration value="Url" />
+        <xs:enumeration value="Currency" />
+        <xs:enumeration value="Length" />
+        <xs:enumeration value="Weight" />
+        <xs:enumeration value="TimeCode" />
+        <xs:enumeration value="Integer" />
+        <xs:enumeration value="Numeric" />
+        <xs:enumeration value="LCSH" />
+        <xs:enumeration value="GeoNames" />
+        <xs:enumeration value="File" />
+        <xs:enumeration value="Media" />
+        <xs:enumeration value="Taxonomy" />
+        <xs:enumeration value="InformationService" />
+        <xs:enumeration value="Objects" />
+        <xs:enumeration value="ObjectLots" />
+        <xs:enumeration value="Entities" />
+        <xs:enumeration value="Places" />
+        <xs:enumeration value="Occurrences" />
+        <xs:enumeration value="Collections" />
+        <xs:enumeration value="Loans" />
+        <xs:enumeration value="Movements" />
+        <xs:enumeration value="StorageLocations" />
+        <xs:enumeration value="ObjectRepresentations" />
+        <xs:enumeration value="Color" />
+        <xs:enumeration value="Filesize" />
+        <xs:enumeration value="FloorPlan" />
+        <xs:enumeration value="ExternalMedia" />
+    </xs:restriction>
+</xs:simpleType>
+
+
+<!-- GLOBAL COMPLEX TYPE DEFS -->
+
+<!-- LABELS -->
+
+<xs:complexType name="elementLabels">
+    <xs:sequence>
+        <xs:element name="label" minOccurs="1" maxOccurs="unbounded">
+            <xs:complexType>
+                <xs:sequence>
+                    <xs:element name="name" type="stringRequired" minOccurs="1" maxOccurs="1" />
+                    <xs:element name="description" type="xs:string" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="entry" type="xs:string" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="dcequivalent" type="xs:string" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="repeatable" type="xs:string" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="modality" type="xs:string" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="guideline" type="xs:string" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="example" type="xs:string" minOccurs="0" maxOccurs="1" />
+                </xs:sequence>
+                <xs:attribute name="locale" type="localeType" use="required" />
+                <xs:attribute name="preferred" type="booleanType" />
+            </xs:complexType>
+        </xs:element>
+    </xs:sequence>
+</xs:complexType>
+
+<!-- MISC -->
+<xs:complexType name="metadataElement">
+    <xs:sequence>
+        <xs:element name="labels" type="elementLabels" minOccurs="1" maxOccurs="1" />
+        <xs:element name="documentationUrl" type="xs:anyURI" minOccurs="0" maxOccurs="1" />
+        <xs:element name="settings" minOccurs="0" maxOccurs="1">
+            <xs:complexType>
+                <xs:sequence>
+                    <xs:element name="setting" minOccurs="0" maxOccurs="unbounded">
+                        <xs:complexType>
+                            <xs:simpleContent>
+                                <xs:extension base="xs:string">
+                                    <xs:attribute name="name" type="xs:string" use="required" />
+                                </xs:extension>
+                            </xs:simpleContent>
+                        </xs:complexType>
+                    </xs:element>
+                </xs:sequence>
+            </xs:complexType>
+        </xs:element>
+        <xs:element name="elements" minOccurs="0" maxOccurs="1">
+            <xs:complexType>
+                <xs:sequence>
+                    <xs:element name="metadataElement" type="metadataSubElement" minOccurs="1"
+                        maxOccurs="unbounded" />
+                </xs:sequence>
+            </xs:complexType>
+        </xs:element>
+        <xs:element name="typeRestrictions" type="typeRestrictions" minOccurs="1" maxOccurs="1" />
+    </xs:sequence>
+    <xs:attribute name="code" type="elementCodeType" use="required" />
+    <xs:attribute name="datatype" type="datatypeList" use="required" />
+    <xs:attribute name="list" type="xs:string" use="optional" />
+    <xs:attribute name="deleted" type="booleanType" use="optional" />
+</xs:complexType>
+
+<xs:complexType name="metadataSubElement">
+    <!-- metadata element without type restriction -->
+    <xs:sequence>
+        <xs:element name="labels" type="elementLabels" minOccurs="0" maxOccurs="1" />
+        <xs:element name="documentationUrl" type="xs:anyURI" minOccurs="0" maxOccurs="1" />
+        <xs:element name="settings" minOccurs="0" maxOccurs="1">
+            <xs:complexType>
+                <xs:sequence>
+                    <xs:element name="setting" minOccurs="0" maxOccurs="unbounded">
+                        <xs:complexType>
+                            <xs:simpleContent>
+                                <xs:extension base="xs:string">
+                                    <xs:attribute name="name" type="xs:string" use="required" />
+                                </xs:extension>
+                            </xs:simpleContent>
+                        </xs:complexType>
+                    </xs:element>
+                </xs:sequence>
+            </xs:complexType>
+        </xs:element>
+        <xs:element name="elements" minOccurs="0" maxOccurs="1">
+            <xs:complexType>
+                <xs:sequence>
+                    <xs:element name="metadataElement" type="metadataSubElement" minOccurs="1"
+                        maxOccurs="unbounded" />
+                </xs:sequence>
+            </xs:complexType>
+        </xs:element>
+    </xs:sequence>
+    <xs:attribute name="code" type="elementCodeType" use="required" />
+    <xs:attribute name="datatype" type="datatypeList" use="required" />
+    <xs:attribute name="list" type="xs:string" use="optional" />
+</xs:complexType>
+
+        <!-- ELEMENT SETS -->
+
+        <xs:element name="elementSets" minOccurs="0" maxOccurs="1">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="metadataElement" type="metadataElement" minOccurs="0"
+                maxOccurs="unbounded"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
