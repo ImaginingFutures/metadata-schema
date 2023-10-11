@@ -159,6 +159,45 @@
 
 <!-- LABELS -->
 
+  <!-- LISTS -->
+
+  <xs:complexType name="listLabels">
+    <xs:sequence>
+      <xs:element name="label" minOccurs="1" maxOccurs="unbounded">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="name" type="xs:string" minOccurs="1" maxOccurs="1"/>
+          </xs:sequence>
+          <xs:attribute name="locale" type="localeType" use="required"/>
+        </xs:complexType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="listItemLabels">
+    <xs:sequence>
+      <xs:element name="label" minOccurs="1" maxOccurs="unbounded">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="name_singular" type="stringRequired" minOccurs="1" maxOccurs="1"/>
+            <xs:element name="name_plural" type="stringRequired" minOccurs="0" maxOccurs="1"/>
+            <xs:element name="description" type="xs:string" minOccurs="0" maxOccurs="1" />
+            <xs:element name="entry" type="xs:string" minOccurs="0" maxOccurs="1" />
+            <xs:element name="dcequivalent" type="xs:string" minOccurs="0" maxOccurs="1" />
+            <xs:element name="repeatable" type="xs:string" minOccurs="0" maxOccurs="1" />
+            <xs:element name="modality" type="xs:string" minOccurs="0" maxOccurs="1" />
+            <xs:element name="guideline" type="xs:string" minOccurs="0" maxOccurs="1" />
+            <xs:element name="example" type="xs:string" minOccurs="0" maxOccurs="1" />
+          </xs:sequence>
+          <xs:attribute name="locale" type="localeType" use="required"/>
+          <xs:attribute name="preferred" type="booleanType" use="required"/>
+        </xs:complexType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+
+  <!-- METADATA ELEMENTS -->
+
 <xs:complexType name="elementLabels">
     <xs:sequence>
         <xs:element name="label" minOccurs="1" maxOccurs="unbounded">
