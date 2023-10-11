@@ -1,11 +1,11 @@
 <ElementDescriptions>
     <Element>
-        <name>name</name>
+        <name>Term</name>
         <description>Name of the metadata element</description>
     </Element>
     <Element>
-        <name>description</name>
-        <description>description of the element</description>
+        <name>Definition</name>
+        <description>Definition of the element</description>
     </Element>
     <Element>
         <name>entry</name>
@@ -13,11 +13,11 @@
     </Element>
     <Element>
         <name>DC equivalent</name>
-        <description>Equivalent of the name in Dublin Core metadata elements</description>
+        <description>Equivalent of the term in Dublin Core metadata elements</description>
     </Element>
     <Element>
         <name>Repeatable</name>
-        <description>Whether the same name can be used in multiple names (Yes or No)</description>
+        <description>Whether the same term can be used in multiple terms (Yes or No)</description>
     </Element>
     <Element>
         <name>Modality</name>
@@ -35,8 +35,8 @@
 
 <Metadata>
     <identification>
-        <name>Unique Record Identifier</name>
-        <description>An alphanumeric identifier for the record created for the IF Repository.</description>
+        <term>Unique Record Identifier</term>
+        <definition>An alphanumeric identifier for the record created for the IF Repository.</definition>
         <entry>String-CV. Derived from Projects ID</entry>
         <dcequilavent>dc:identifier</dcequilavent>
         <repeatable>No</repeatable>
@@ -46,8 +46,8 @@
             ID's derivered from that ID and adding 4 digit secuential numbers.</guideline>
         <example>UFC00800001</example>
 
-        <name>Original Identifier</name>
-        <description>Shows the parent collection or object which this record related to/part of.</description>
+        <term>Original Identifier</term>
+        <definition>Shows the parent collection or object which this record related to/part of.</definition>
         <entry>String-Free text</entry>
         <dcequilavent></dcequilavent>
         <repeatable>No</repeatable>
@@ -59,8 +59,8 @@
             digital
             collection)</example>
 
-        <name>Member of</name>
-        <description>Shows the parent collection or object which this record related to/part of.</description>
+        <term>Member of</term>
+        <definition>Shows the parent collection or object which this record related to/part of.</definition>
         <entry>String-CV (Projects)</entry>
         <dcequilavent>dc:isPartOf</dcequilavent>
         <repeatable>Yes</repeatable>
@@ -68,8 +68,8 @@
         <guideline>Provide the name of the project as it is on the "Projects" sheet.</guideline>
         <example>Vernacular Songs as Archives and Modes of Social Redress in Jamestown, Accra</example>
 
-        <name>Resource Title Preferred</name>
-        <description>The name given to the resource by the Creator (depositor) in any language.</description>
+        <term>Resource Title Preferred</term>
+        <definition>The name given to the resource by the Creator (depositor) in any language.</definition>
         <entry>String-Free text</entry>
         <dcequilavent>dc:title</dcequilavent>
         <repeatable>No</repeatable>
@@ -80,8 +80,8 @@
             geographic names.</guideline>
         <example>Aso wiwo awon obinrin ile Yoruba</example>
 
-        <name>Resource Title Alternative</name>
-        <description>The name given to the resource by the Creator (depositor) in other language.</description>
+        <term>Resource Title Alternative</term>
+        <definition>The name given to the resource by the Creator (depositor) in other language.</definition>
         <entry>String-Free text</entry>
         <dcequilavent>dc:alternative</dcequilavent>
         <repeatable>No</repeatable>
@@ -89,8 +89,8 @@
         <guideline>Provide a translation or modified version of the title attributed to the record.</guideline>
         <example>Local-made cloth of a typical Ghanian lady</example>
 
-        <name>Digital Representations</name>
-        <description>Name of the digital file or the folder of multiple files.</description>
+        <term>Digital Representations</term>
+        <definition>Name of the digital file or the folder of multiple files.</definition>
         <entry>String-Free text</entry>
         <dcequilavent></dcequilavent>
         <repeatable>No</repeatable>
@@ -100,8 +100,8 @@
             provide the path of the folder.</guideline>
         <example>Example_photo.jpg, UFC00800001/images/folder1</example>
 
-        <name>External Link Website Name</name>
-        <description>Name of the website where this resource was published.</description>
+        <term>External Link Website Name</term>
+        <definition>Name of the website where this resource was published.</definition>
         <entry>String-Free text</entry>
         <dcequilavent></dcequilavent>
         <repeatable>Yes</repeatable>
@@ -109,8 +109,8 @@
         <guideline></guideline>
         <example></example>
 
-        <name>External Link Website URL</name>
-        <description>URL of the website where this resource was published.</description>
+        <term>External Link Website URL</term>
+        <definition>URL of the website where this resource was published.</definition>
         <entry>String-Free text</entry>
         <dcequilavent>dc:source</dcequilavent>
         <repeatable>No</repeatable>
@@ -122,10 +122,10 @@
 
     <ContentAndStructure>
 
-        <name>Resource Description</name>
-        <description>A textual description of the content of the resource (knowledge profile =
+        <term>Resource Description</term>
+        <definition>A textual description of the content of the resource (knowledge profile =
             images; documents) in any language, including event and significance connected to the
-            resource. Content descriptions in the case of visual resources.</description>
+            resource. Content descriptions in the case of visual resources.</definition>
         <entry>String-Free text</entry>
         <dcequilavent>dc:description</dcequilavent>
         <repeatable>Yes</repeatable>
@@ -136,10 +136,10 @@
             vocabulary, care should be taken to provide this element when possible.</guideline>
         <example>Ile alo ti awon omode eya Arika lo ni odun to ti pe</example>
 
-        <name>Resource Description Alt</name>
-        <description>A textual description of the content of the resource in other language,
+        <term>Resource Description Alt</term>
+        <definition>A textual description of the content of the resource in other language,
             including event and significance connected to the resource. Content descriptions in the
-            case of visual resources.</description>
+            case of visual resources.</definition>
         <entry>String-Free text</entry>
         <dcequilavent>dc:description</dcequilavent>
         <repeatable>Yes</repeatable>
@@ -151,9 +151,9 @@
         <example>Story book used for play by Pandalong children to understand the direction of the
             moon and sun. Created between 1908 and 1910.</example>
 
-        <name>Primary Language</name>
-        <description>The primary language spoken by the participant (if video or audio resource). The
-            primary language written on the image or in the document.</description>
+        <term>Primary Language</term>
+        <definition>The primary language spoken by the participant (if video or audio resource). The
+            primary language written on the image or in the document.</definition>
         <entry>String-CV (Language)</entry>
         <dcequilavent>dc:language</dcequilavent>
         <repeatable>Yes</repeatable>
@@ -162,9 +162,9 @@
             language written on the image or in the document.</guideline>
         <example>English;Yoruba;Arabic</example>
 
-        <name>Other Language</name>
-        <description>The other language spoken by the participant (if video or audio resource). The
-            other language written on the image or in the document. </description>
+        <term>Other Language</term>
+        <definition>The other language spoken by the participant (if video or audio resource). The
+            other language written on the image or in the document. </definition>
         <entry>String-CV (Language)</entry>
         <dcequilavent>dc:language</dcequilavent>
         <repeatable>Yes</repeatable>
@@ -173,8 +173,8 @@
             language written on the image or in the document.</guideline>
         <example>English;Yoruba;Arabic</example>
 
-        <name>Themes</name>
-        <description>Descriptive words that are most significant and unique to the resource </description>
+        <term>Themes</term>
+        <definition>Descriptive words that are most significant and unique to the resource </definition>
         <entry>String-CV (Themes)</entry>
         <dcequilavent></dcequilavent>
         <repeatable>Yes</repeatable>
@@ -183,8 +183,8 @@
             content of the resource. Separate each word with comma.</guideline>
         <example>Colonised;Forgotten;Inclusion;Post-conflict;Refugee</example>
 
-        <name>Keywords</name>
-        <description>Descriptive words that are most significant and unique to the resource.</description>
+        <term>Keywords</term>
+        <definition>Descriptive words that are most significant and unique to the resource.</definition>
         <entry>String-Free text</entry>
         <dcequilavent>dc:subject</dcequilavent>
         <repeatable>Yes</repeatable>
@@ -193,9 +193,9 @@
         </guideline>
         <example>Migration;Conflict;Community</example>
 
-        <name>Notes</name>
-        <description>Any information that you want to add about this data, if you can not find a
-            metadata field according to your need.</description>
+        <term>Notes</term>
+        <definition>Any information that you want to add about this data, if you can not find a
+            metadata field according to your need.</definition>
         <entry>String-Free text</entry>
         <dcequilavent></dcequilavent>
         <repeatable>Yes</repeatable>
@@ -206,9 +206,9 @@
     </ContentAndStructure>
 
     <GeographicalCoverage>
-        <name>Country</name>
-        <description>The name of the country connected to the resource, where the content of the
-            resource took place.</description>
+        <term>Country</term>
+        <definition>The name of the country connected to the resource, where the content of the
+            resource took place.</definition>
         <entry>String-CV (Countries)</entry>
         <dcequilavent>dc:coverage</dcequilavent>
         <repeatable>Yes</repeatable>
@@ -216,9 +216,9 @@
         <guideline>Provide the name of the country that is connected to the resource.</guideline>
         <example>Argentina, Ghana, South Africa</example>
 
-        <name>Region</name>
-        <description>The name of the region or state connected to the resource, where the content of
-            the resource took place.</description>
+        <term>Region</term>
+        <definition>The name of the region or state connected to the resource, where the content of
+            the resource took place.</definition>
         <entry>String-Free text</entry>
         <dcequilavent>dc:coverage</dcequilavent>
         <repeatable>Yes</repeatable>
@@ -226,8 +226,8 @@
         <guideline>Provide the name of the region/state/province that is connected to the resource.</guideline>
         <example>Osun, Chaco, Cape coast</example>
 
-        <name>City</name>
-        <description></description>
+        <term>City</term>
+        <definition></definition>
         <entry>String-Free text</entry>
         <dcequilavent>dc:coverage</dcequilavent>
         <repeatable>Yes</repeatable>
@@ -235,9 +235,9 @@
         <guideline></guideline>
         <example></example>
 
-        <name>Address</name>
-        <description>The name of the place/street name/area connected to the resource, where the
-            content of the resource took place.</description>
+        <term>Location</term>
+        <definition>The name of the place/street name/area connected to the resource, where the
+            content of the resource took place.</definition>
         <entry>String-Free text</entry>
         <dcequilavent>dc:coverage</dcequilavent>
         <repeatable>Yes</repeatable>
@@ -245,8 +245,8 @@
         <guideline>Provide the name of the place/street name/area that is connected to the resource.</guideline>
         <example>Gbongan, Kishi, Sidwell Street</example>
 
-        <name>Coordinates</name>
-        <description>Coordinates of the resources.</description>
+        <term>Coordinates</term>
+        <definition>Coordinates of the resources.</definition>
         <entry>Integer</entry>
         <dcequilavent>dc:coverage</dcequilavent>
         <repeatable>Yes</repeatable>
@@ -254,9 +254,9 @@
         <guideline>It should be written as [lang,lat]</guideline>
         <example>[10.77555,106.701944]</example>
 
-        <name>Non-Geolocated Place</name>
-        <description>This element captures the names of places that do not have specific geographical
-            coordinates or are of imaginary or mythical nature.</description>
+        <term>Non-Geolocated Place</term>
+        <definition>This element captures the names of places that do not have specific geographical
+            coordinates or are of imaginary or mythical nature.</definition>
         <entry>String-Free text</entry>
         <dcequilavent>dc:coverage</dcequilavent>
         <repeatable>Yes</repeatable>
@@ -268,8 +268,8 @@
 
     <SocioculturalContext>
 
-        <name>Cultural Group</name>
-        <description>The cultural or ethnic group connected to the resource.</description>
+        <term>Cultural Group</term>
+        <definition>The cultural or ethnic group connected to the resource.</definition>
         <entry>String-Free text</entry>
         <dcequilavent></dcequilavent>
         <repeatable>Yes</repeatable>
@@ -278,8 +278,8 @@
             resource. This could be more than one.</guideline>
         <example>Arabs;Assyrians;Balanta</example>
 
-        <name>Cultural Context</name>
-        <description>The cultural event or context associated with the resource. </description>
+        <term>Cultural Context</term>
+        <definition>The cultural event or context associated with the resource. </definition>
         <entry>String-CV (Cultural Context)</entry>
         <dcequilavent>t</dcequilavent>
         <repeatable>Yes</repeatable>
@@ -290,8 +290,8 @@
             additional, more specific values to the vocabulary.</guideline>
         <example>Dancing;Migration;Singing</example>
 
-        <name>Social Group Setting</name>
-        <description>The social group associated with or recorded by the resource.</description>
+        <term>Social Group Setting</term>
+        <definition>The social group associated with or recorded by the resource.</definition>
         <entry>String-CV (Social Group)</entry>
         <dcequilavent></dcequilavent>
         <repeatable>Yes</repeatable>
@@ -306,8 +306,8 @@
 
     <Technology>
 
-        <name>Production Technique</name>
-        <description>The defined way adopted to produce the resource.</description>
+        <term>Production Technique</term>
+        <definition>The defined way adopted to produce the resource.</definition>
         <entry>String-Free text</entry>
         <dcequilavent></dcequilavent>
         <repeatable>Yes</repeatable>
@@ -317,8 +317,8 @@
             but additional techniques can be added.</guideline>
         <example>Photography;Report writing;Audio recording;Video recording</example>
 
-        <name>Equipment Used</name>
-        <description>The equipment used directly for the production of the resource.</description>
+        <term>Equipment Used</term>
+        <definition>The equipment used directly for the production of the resource.</definition>
         <entry>String-Free text</entry>
         <dcequilavent></dcequilavent>
         <repeatable>Yes</repeatable>
@@ -332,8 +332,8 @@
 
     <Dates>
 
-        <name>Date of Creation</name>
-        <description>A point or period of time associated with the creation of the resource.</description>
+        <term>Date of Creation</term>
+        <definition>A point or period of time associated with the creation of the resource.</definition>
         <entry>Integer</entry>
         <dcequilavent>dc:created</dcequilavent>
         <repeatable>Yes</repeatable>
@@ -343,9 +343,9 @@
             (YYYY-MM) or just year (YYYY) may be used.</guideline>
         <example>2022-01-04 or 2022-01 or 2022</example>
 
-        <name>Date of Digitisation</name>
-        <description>A point or period of time associated with the digitisation of the resource. E.g.
-            scanning, photographing date.</description>
+        <term>Date of Digitisation</term>
+        <definition>A point or period of time associated with the digitisation of the resource. E.g.
+            scanning, photographing date.</definition>
         <entry>Integer</entry>
         <dcequilavent></dcequilavent>
         <repeatable>Yes</repeatable>
@@ -355,8 +355,8 @@
             (YYYY-MM) or just year (YYYY) may be used.</guideline>
         <example>2022-01-04 or 2022-01 or 2022</example>
 
-        <name></name>
-        <description></description>
+        <term></term>
+        <definition></definition>
         <entry>Integer</entry>
         <dcequilavent></dcequilavent>
         <repeatable>Yes</repeatable>
@@ -370,9 +370,9 @@
 
     <AccessAndSensitivity>
 
-        <name>Rights Ownership</name>
-        <description>Information about the individual/community/groups/organisation who owns the
-            rights in and over the resource.</description>
+        <term>Rights Ownership</term>
+        <definition>Information about the individual/community/groups/organisation who owns the
+            rights in and over the resource.</definition>
         <entry>String-CV (Participants)</entry>
         <dcequilavent>dc:rightsHolder</dcequilavent>
         <repeatable>Yes</repeatable>
@@ -382,8 +382,8 @@
             that are not on the list to the vocabulary list, then here.</guideline>
         <example>Name Surname;University of Ghana;Ilesa community</example>
 
-        <name>Licence</name>
-        <description>Information about the shareability, distribution and adaptation of the resource.</description>
+        <term>Licence</term>
+        <definition>Information about the shareability, distribution and adaptation of the resource.</definition>
         <entry>String-CV (Licence)</entry>
         <dcequilavent>dc:licence</dcequilavent>
         <repeatable>Yes</repeatable>
@@ -392,8 +392,8 @@
             before making your selection.</guideline>
         <example>CC BY-NC 4.0</example>
 
-        <name>Rights Statement</name>
-        <description>A statement about the intellectual property rights (IPR) held in or over a resource, a legal document giving official permission to do something with a resource, or a statement about access rights.</description>
+        <term>Rights Statement</term>
+        <definition>A statement about the intellectual property rights (IPR) held in or over a resource, a legal document giving official permission to do something with a resource, or a statement about access rights.</definition>
         <entry>String-CV (Rights Statement)</entry>
         <dcequilavent></dcequilavent>
         <repeatable>Yes</repeatable>
@@ -401,9 +401,9 @@
         <guideline>Choose a statement from "Rights Statement" list.</guideline>
         <example>In Copyright - EU Orphan Work (InC-OW-EU)</example>
 
-        <name>Cultural Sensitivity</name>
-        <description>This refers to the attributed standard that governs the content and knowledge of
-            the resources and who can access the resource.</description>
+        <term>Cultural Sensitivity</term>
+        <definition>This refers to the attributed standard that governs the content and knowledge of
+            the resources and who can access the resource.</definition>
         <entry>String-CV (Cultural Sensitivity)</entry>
         <dcequilavent></dcequilavent>
         <repeatable>Yes</repeatable>
@@ -420,8 +420,8 @@
             be shared openly. Retrievers will be able to view, download, print and use</guideline>
         <example>Highly sensitive, Medium sensitivity, Low sensitivity</example>
 
-        <name>Access Restriction</name>
-        <description>This refers to availability of the resource.</description>
+        <term>Access Restriction</term>
+        <definition>This refers to availability of the resource.</definition>
         <entry>Boolean</entry>
         <dcequilavent></dcequilavent>
         <repeatable>Yes</repeatable>
@@ -432,8 +432,8 @@
             access restriction. Resources will be made openly available.</guideline>
         <example>Yes, No</example>
 
-        <name>Reasons for Restriction</name>
-        <description>Justification for limiting access to the resources.</description>
+        <term>Reasons for Restriction</term>
+        <definition>Justification for limiting access to the resources.</definition>
         <entry>String-Free text</entry>
         <dcequilavent></dcequilavent>
         <repeatable>Yes</repeatable>
@@ -450,8 +450,8 @@
 
     <IntellectualProperty>
 
-        <name>Creator</name>
-        <description>The individual that is primarily responsible for the production of the resource.</description>
+        <term>Creator</term>
+        <definition>The individual that is primarily responsible for the production of the resource.</definition>
         <entry>String-CV (Participants)</entry>
         <dcequilavent>dc:creator</dcequilavent>
         <repeatable>Yes</repeatable>
@@ -461,9 +461,9 @@
             of the resource and list other as contributors.</guideline>
         <example>Name Surname;Name2 Surname2</example>
 
-        <name>Contributors</name>
-        <description>The individuals that supported the creator or contributed to the production of
-            the resource.</description>
+        <term>Contributors</term>
+        <definition>The individuals that supported the creator or contributed to the production of
+            the resource.</definition>
         <entry>String-CV (Participants)</entry>
         <dcequilavent>dc:contributor</dcequilavent>
         <repeatable>Yes</repeatable>
