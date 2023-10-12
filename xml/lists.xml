@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<profileName>Imagining Futures Through Un/Archived Pasts</profileName>
+<profileDescription>Archive management for Projects and Collections</profileDescription>
+<version>0.1-alpha</version>
+
+<!-- Lists-->
+<lists>
+    <list code="aat_vocabulary" hierarchical="1" system="0" vocabulary="1">
+        <labels>
+            <label locale="en_US">
+                <name>Art &amp;amp; Architecture Thesaurus</name>
+            </label>
+        </labels>
+        <items />
+    </list>
+</lists>
