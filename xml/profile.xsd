@@ -159,6 +159,38 @@
 
 <!-- LABELS -->
 
+<!-- List and List Items-->
+
+<xs:complexType name="listLabels">
+    <xs:sequence>
+      <xs:element name="label" minOccurs="1" maxOccurs="unbounded">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="name" type="xs:string" minOccurs="1" maxOccurs="1"/>
+          </xs:sequence>
+          <xs:attribute name="locale" type="localeType" use="required"/>
+        </xs:complexType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="listItemLabels">
+    <xs:sequence>
+      <xs:element name="label" minOccurs="1" maxOccurs="unbounded">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="name_singular" type="stringRequired" minOccurs="1" maxOccurs="1"/>
+            <xs:element name="name_plural" type="stringRequired" minOccurs="1" maxOccurs="1"/>
+            <xs:element name="description" type="xs:string" minOccurs="0" maxOccurs="1"/>
+          </xs:sequence>
+          <xs:attribute name="locale" type="localeType" use="required"/>
+          <xs:attribute name="preferred" type="booleanType" use="required"/>
+        </xs:complexType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  
+<!-- Metadata Element-->
 <xs:complexType name="elementLabels">
     <xs:sequence>
         <xs:element name="label" minOccurs="1" maxOccurs="unbounded">
@@ -181,6 +213,48 @@
 </xs:complexType>
 
 <!-- MISC -->
+
+<!-- List and List Items-->
+<xs:complexType name="listItems">
+    <xs:sequence>
+      <xs:element name="item" type="listItem" minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="listItem">
+    <xs:sequence>
+      <xs:element name="labels" type="listItemLabels" minOccurs="1" maxOccurs="1"/>
+      <xs:element name="settings" minOccurs="0" maxOccurs="1">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="setting" minOccurs="0" maxOccurs="unbounded">
+              <xs:complexType>
+                <xs:simpleContent>
+                  <xs:extension base="xs:string">
+                    <xs:attribute name="name" type="xs:string" use="required"/>
+                  </xs:extension>
+                </xs:simpleContent>
+              </xs:complexType>
+            </xs:element>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="items" type="listItems" minOccurs="0" maxOccurs="1"/>
+    </xs:sequence>
+    <xs:attribute name="idno" type="codeType" use="required"/>
+    <xs:attribute name="newidno" type="codeType" use="optional"/>
+    <xs:attribute name="status" type="xs:integer" use="optional"/>
+    <xs:attribute name="access" type="xs:integer" use="optional"/>
+    <xs:attribute name="rank" type="xs:integer" use="optional"/>
+    <xs:attribute name="enabled" type="booleanType" use="required"/>
+    <xs:attribute name="default" type="booleanType" use="required"/>
+    <xs:attribute name="value" type="xs:string" use="optional"/>
+    <xs:attribute name="type" type="codeType" use="optional"/>
+    <xs:attribute name="deleted" type="booleanType" use="optional"/>
+    <xs:attribute name="color" type="colorType" use="optional"/>
+  </xs:complexType>
+
+<!-- Metadata Element-->
 <xs:complexType name="metadataElement">
     <xs:sequence>
         <xs:element name="labels" type="elementLabels" minOccurs="1" maxOccurs="1" />
