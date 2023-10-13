@@ -14,7 +14,8 @@
             <labels>
                 <label locale="en_US">
                     <name>Unique Record Identifier</name>
-                    <description>An alphanumeric identifier for the record created for the IF Repository.</description>
+                    <description>An alphanumeric identifier for the record created for the IF
+                        Repository.</description>
                     <entry>String-CV. Derived from Projects ID</entry>
                     <dcequivalent>dc:identifier</dcequivalent>
                     <repeatable>No</repeatable>
@@ -85,7 +86,7 @@
             </typeRestrictions>
         </metadataElement>
 
-        <metadataElement code="xxcomebackxx" datatype="Text">
+        <metadataElement code="memberof" datatype="Collections">
             <labels>
                 <label locale="en_US">
                     <name>Member of</name>
@@ -119,7 +120,7 @@
             </typeRestrictions>
         </metadataElement>
 
-        <metadataElement code="xxcomebackxx" datatype="Text">
+        <metadataElement code="preferred_lables" datatype="Text">
             <labels>
                 <label locale="en_US">
                     <name>Resource Title Preferred</name>
@@ -188,7 +189,7 @@
                 </restriction>
             </typeRestrictions>
         </metadataElement>
-        <metadataElement code="xxcomebackxx" datatype="xxcomebackxx">
+        <metadataElement code="object_representations" datatype="Media">
             <labels>
                 <label locale="en_US">
                     <name>Digital Representations</name>
@@ -386,7 +387,7 @@
                 <setting name="maxChars">65535</setting>
             </settings>
             <elements>
-                <metadataElement code="primlang" datatype="List" list="xxcomebackxx">
+                <metadataElement code="primlang" datatype="List" list="languageslist">
                     <labels>
                         <label locale="en_US">
                             <name>Primary Language</name>
@@ -409,7 +410,7 @@
                         <setting name="fieldHeight">1</setting>
                     </settings>
                 </metadataElement>
-                <metadataElement code="otherlang" datatype="List" list="xxcomebackxx">
+                <metadataElement code="otherlang" datatype="List" list="languageslist">
                     <labels>
                         <label locale="en_US">
                             <name>Other Language</name>
@@ -445,7 +446,7 @@
             </typeRestrictions>
         </metadataElement>
 
-        <metadataElement code="themes" datatype="List" list="xxcomebackxx">
+        <metadataElement code="themes" datatype="List" list="themeslist">
             <labels>
                 <label locale="en_US">
                     <name>Themes</name>
@@ -782,7 +783,7 @@
             </typeRestrictions>
         </metadataElement>
 
-        <metadataElement code="cultcontext" datatype="List" list="xxcomebackxx">
+        <metadataElement code="cultcontext" datatype="List" list="cultcontlist">
             <labels>
                 <label locale="en_US">
                     <name>Cultural Context</name>
@@ -820,7 +821,7 @@
             </typeRestrictions>
         </metadataElement>
 
-        <metadataElement code="socialgroup" datatype="List" list="xxcomebackxx">
+        <metadataElement code="socialgroup" datatype="List" list="socialgrouplist">
             <labels>
                 <label locale="en_US">
                     <name>Social Group Setting</name>
@@ -928,7 +929,7 @@
                 </restriction>
             </typeRestrictions>
         </metadataElement>
-        <metadataElement code="date" datatype="Container">
+        <metadataElement code="dates" datatype="Container">
             <labels>
                 <label locale="en_US">
                     <name>Dates</name>
@@ -951,8 +952,7 @@
                 <metadataElement code="dates_value" datatype="DateRange">
                     <labels>
                         <label locale="en_US">
-                            <name>Date of Creation “xxcomebackxx” </name>
-
+                            <name>Date value </name>
                         </label>
                     </labels>
                     <settings>
@@ -963,8 +963,7 @@
                 <metadataElement code="dates_type" datatype="List" list="date_types">
                     <labels>
                         <label locale="en_US">
-                            <name>Date of Digitisation “xxcomebackxx” </name>
-
+                            <name>Date type</name>
                         </label>
                     </labels>
                     <settings>
@@ -973,12 +972,6 @@
                     </settings>
                 </metadataElement>
             </elements>
-            <settings>
-                <setting name="fieldWidth">90</setting>
-                <setting name="fieldHeight">3</setting>
-                <setting name="minChars">0</setting>
-                <setting name="maxChars">65535</setting>
-            </settings>
             <typeRestrictions>
                 <restriction>
                     <table>ca_objects</table>
@@ -996,23 +989,24 @@
             <labels>
                 <label locale="en_US">
                     <name>Rights Ownership</name>
-                <description>Information about the
-                    individual/community/groups/organisation who owns the
+                    <description>Information about the
+                        individual/community/groups/organisation who owns the
                         rights in and over the resource.</description>
-                <entry>String-CV
-                    (Participants)</entry>
-                <dcequivalent>
+                    <entry>String-CV
+                        (Participants)</entry>
+                    <dcequivalent>
                         dc:rightsHolder</dcequivalent>
-                <repeatable>Yes</repeatable>
-                <modality>
-                    Mandatory</modality>
-                <guideline>Select
+                    <repeatable>Yes</repeatable>
+                    <modality>
+                        Mandatory</modality>
+                    <guideline>Select
                         the participant or community that owns the rights in and over the resource
-                    from the participants vocabulary. You can add names of
-                    individual/community/organisation
+                        from the participants vocabulary. You can add names of
+                        individual/community/organisation
                         that are not on the list to the vocabulary list, then here.</guideline>
-                <example>Name
-                    Surname;University of Ghana;Ilesa community</example>s </label>
+                    <example>Name
+                        Surname;University of Ghana;Ilesa community</example>
+                </label>
             </labels>
             <settings>
                 <setting name="fieldWidth">90</setting>
@@ -1032,7 +1026,7 @@
             </typeRestrictions>
         </metadataElement>
 
-        <metadataElement code="licence" datatype="List" list="xxcomebackxx">
+        <metadataElement code="licence" datatype="List" list="licencelist">
             <labels>
                 <label locale="en_US">
                     <name>Licence</name>
@@ -1049,12 +1043,6 @@
                     <example>CC BY-NC 4.0</example>
                 </label>
             </labels>
-            <settings>
-                <setting name="fieldWidth">90</setting>
-                <setting name="fieldHeight">3</setting>
-                <setting name="minChars">0</setting>
-                <setting name="maxChars">65535</setting>
-            </settings>
             <typeRestrictions>
                 <restriction>
                     <table>ca_objects</table>
@@ -1100,7 +1088,7 @@
             </typeRestrictions>
         </metadataElement>
 
-        <metadataElement code="cultsens" datatype="List" list="xxcomebackxx">
+        <metadataElement code="cultsens" datatype="List" list="cultsenslist">
             <labels>
                 <label locale="en_US">
                     <name>Cultural Sensitivity</name>
@@ -1154,7 +1142,7 @@
             </typeRestrictions>
         </metadataElement>
 
-        <metadataElement code="accessrest" datatype="List" list="xxcomebackxx">
+        <metadataElement code="accessrest" datatype="List" list="access_statutes">
             <labels>
                 <label locale="en_US">
                     <name>Access Restriction</name>

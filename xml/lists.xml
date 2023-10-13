@@ -8,9 +8,8 @@
 
     <!-- Lists-->
     <lists>
-
-        <!-- Countries -->
-        <list code="countries" hierarchical="0" system="0" vocabulary="1">
+        <!-- 01_Countries -->
+        <list code="countrieslist" hierarchical="0" system="0" vocabulary="1">
             <labels>
                 <label locale="en_US">
                     <name>Themes</name>
@@ -2261,12 +2260,12 @@
             </items>
         </list>
 
-        <!-- Languages -->
+        <!-- 02_Languages -->
 
-        <list code="themes" hierarchical="0" system="0" vocabulary="1">
+        <list code="languageslist" hierarchical="0" system="0" vocabulary="1">
             <labels>
                 <label locale="en_US">
-                    <name>Themes</name>
+                    <name>Languages</name>
                 </label>
             </labels>
             <items>
@@ -3361,9 +3360,9 @@
             </items>
         </list>
 
-        <!-- Themes -->
+        <!-- 03_Themes -->
 
-        <list code="themes" hierarchical="0" system="0" vocabulary="1">
+        <list code="themeslist" hierarchical="0" system="0" vocabulary="1">
             <labels>
                 <label locale="en_US">
                     <name>Themes</name>
@@ -3614,9 +3613,9 @@
         </list>
 
 
-        <!-- Cultural Context -->
+        <!-- 04_Cultural Context -->
 
-        <list code="cultcontl" hierarchical="0" system="0" vocabulary="1">
+        <list code="cultcontlist" hierarchical="0" system="0" vocabulary="1">
             <labels>
                 <label locale="en_US">
                     <name>Cultural Context</name>
@@ -3875,12 +3874,12 @@
         </list>
 
 
-        <!-- Social Groups-->
+        <!-- 05_Social Groups-->
 
-        <list code="licences" hierarchical="0" system="0" vocabulary="1">
+        <list code="socialgrouplist" hierarchical="0" system="0" vocabulary="1">
             <labels>
                 <label locale="en_US">
-                    <name>Licences</name>
+                    <name>Social Groups</name>
                 </label>
             </labels>
             <items>
@@ -4199,9 +4198,9 @@
             </items>
         </list>
 
-        <!-- Licences -->
+        <!-- 06_Licences -->
 
-        <list code="licences" hierarchical="0" system="0" vocabulary="1">
+        <list code="licencelist" hierarchical="0" system="0" vocabulary="1">
             <labels>
                 <label locale="en_US">
                     <name>Licences</name>
@@ -4293,7 +4292,7 @@
             </items>
         </list>
 
-        <!-- Gender -->
+        <!-- 07_Gender -->
 
         <list code="genderl" hierarchical="0" system="0" vocabulary="1">
             <labels>
@@ -4337,7 +4336,7 @@
             </items>
         </list>
 
-        <!-- Cultural Sensitivity -->
+        <!-- 08_Cultural Sensitivity -->
 
         <list code="cultsens" hierarchical="0" system="0" vocabulary="1">
             <labels>
@@ -4386,7 +4385,7 @@
         </list>
 
 
-        <!-- Occupations-->
+        <!-- 09_Occupations-->
 
         <list code="occupations" hierarchical="0" system="0" vocabulary="1">
             <labels>
@@ -4403,652 +4402,524 @@
                         </label>
                     </labels>
                 </item>
+                <item idno="occupation_002" enabled="1" default="1">
+                    <labels>
+                        <label locale="en_US" preferred="1">
+                            <name_singular>Administrators</name_singular>
+                            <name_plural>Administrators</name_plural>
+                        </label>
+                    </labels>
+                </item>
+                <item idno="occupation_003" enabled="1" default="1">
+                    <labels>
+                        <label locale="en_US" preferred="1">
+                            <name_singular>Advertisers</name_singular>
+                            <name_plural>Advertisers</name_plural>
+                        </label>
+                    </labels>
+                </item>
+                <item idno="occupation_004" enabled="1" default="1">
+                    <labels>
+                        <label locale="en_US" preferred="1">
+                            <name_singular>Animal rights activists</name_singular>
+                            <name_plural>Animal rights activists</name_plural>
+                        </label>
+                    </labels>
+                </item>
+                <item idno="occupation_005" enabled="1" default="1">
+                    <labels>
+                        <label locale="en_US" preferred="1">
+                            <name_singular>Anthropologists</name_singular>
+                            <name_plural>Anthropologists</name_plural>
+                        </label>
+                    </labels>
+                </item>
+                <item idno="occupation_006" enabled="1" default="1">
+                    <labels>
+                        <label locale="en_US" preferred="1">
+                            <name_singular>Archaeologists</name_singular>
+                            <name_plural>Archaeologists</name_plural>
+                        </label>
+                    </labels>
+                </item>
+                <item idno="occupation_007" enabled="1" default="1">
+                    <labels>
+                        <label locale="en_US" preferred="1">
+                            <name_singular>Architects</name_singular>
+                            <name_plural>Architects</name_plural>
+                        </label>
+                    </labels>
+                </item>
+                <item idno="occupation_008" enabled="1" default="1">
+                    <labels>
+                        <label locale="en_US" preferred="1">
+                            <name_singular>Architectural historians</name_singular>
+                            <name_plural>Architectural historians</name_plural>
+                        </label>
+                    </labels>
+                </item>
+                <item idno="occupation_009" enabled="1" default="1">
+                    <labels>
+                        <label locale="en_US" preferred="1">
+                            <name_singular>Archivists</name_singular>
+                            <name_plural>Archivists</name_plural>
+                        </label>
+                    </labels>
+                </item>
+                <item idno="occupation_010" enabled="1" default="1">
+                    <labels>
+                        <label locale="en_US" preferred="1">
+                            <name_singular>Art collector/dealer/historian</name_singular>
+                            <name_plural>Art collector/dealer/historian</name_plural>
+                        </label>
+                    </labels>
+                </item>
+                <item idno="occupation_011" enabled="1" default="1">
+                    <labels>
+                        <label locale="en_US" preferred="1">
+                            <name_singular>Artists</name_singular>
+                            <name_plural>Artists</name_plural>
+                        </label>
+                    </labels>
+                </item>
+                <item idno="occupation_012" enabled="1" default="1">
+                    <labels>
+                        <label locale="en_US" preferred="1">
+                            <name_singular>Authors</name_singular>
+                            <name_plural>Authors</name_plural>
+                        </label>
+                    </labels>
+                </item>
+                <item idno="occupation_013" enabled="1" default="1">
+                    <labels>
+                        <label locale="en_US" preferred="1">
+                            <name_singular>Biographers</name_singular>
+                            <name_plural>Biographers</name_plural>
+                        </label>
+                    </labels>
+                </item>
+                <item idno="occupation_014" enabled="1" default="1">
+                    <labels>
+                        <label locale="en_US" preferred="1">
+                            <name_singular>Blacksmiths</name_singular>
+                            <name_plural>Blacksmiths</name_plural>
+                        </label>
+                    </labels>
+                </item>
+                <item idno="occupation_015" enabled="1" default="1">
+                    <labels>
+                        <label locale="en_US" preferred="1">
+                            <name_singular>Book designer/binder/seller</name_singular>
+                            <name_plural>Book designer/binder/seller</name_plural>
+                        </label>
+                    </labels>
+                </item>
+                <item idno="occupation_016" enabled="1" default="1">
+                    <labels>
+                        <label locale="en_US" preferred="1">
+                            <name_singular>Brickmaker/Builder</name_singular>
+                            <name_plural>Brickmaker/Builder</name_plural>
+                        </label>
+                    </labels>
+                </item>
+                <item idno="occupation_017" enabled="1" default="1">
+                    <labels>
+                        <label locale="en_US" preferred="1">
+                            <name_singular>Businessmen/women</name_singular>
+                            <name_plural>Businessmen/women</name_plural>
+                        </label>
+                    </labels>
+                </item>
+                <item idno="occupation_018" enabled="1" default="1">
+                    <labels>
+                        <label locale="en_US" preferred="1">
+                            <name_singular>Cameramen</name_singular>
+                            <name_plural>Cameramen</name_plural>
+                        </label>
+                    </labels>
+                </item>
+                <item idno="occupation_019" enabled="1" default="1">
+                    <labels>
+                        <label locale="en_US" preferred="1">
+                            <name_singular>Cartographers</name_singular>
+                            <name_plural>Cartographers</name_plural>
+                        </label>
+                    </labels>
+                </item>
+                <item idno="occupation_020" enabled="1" default="1">
+                    <labels>
+                        <label locale="en_US" preferred="1">
+                            <name_singular>Cartoonists</name_singular>
+                            <name_plural>Cartoonists</name_plural>
+                        </label>
+                    </labels>
+                </item>
+                <item idno="occupation_021" enabled="1" default="1">
+                    <labels>
+                        <label locale="en_US" preferred="1">
+                            <name_singular>Classicists</name_singular>
+                            <name_plural>Classicists</name_plural>
+                        </label>
+                    </labels>
+                </item>
+                <item idno="occupation_022" enabled="1" default="1">
+                    <labels>
+                        <label locale="en_US" preferred="1">
+                            <name_singular>Clergy</name_singular>
+                            <name_plural>Clergy</name_plural>
+                        </label>
+                    </labels>
+                </item>
+                <item idno="occupation_023" enabled="1" default="1">
+                    <labels>
+                        <label locale="en_US" preferred="1">
+                            <name_singular>Clerks</name_singular>
+                            <name_plural>Clerks</name_plural>
+                        </label>
+                    </labels>
+                </item>
+                <item idno="occupation_024" enabled="1" default="1">
+                    <labels>
+                        <label locale="en_US" preferred="1">
+                            <name_singular>Collectors</name_singular>
+                            <name_plural>Collectors</name_plural>
+                        </label>
+                    </labels>
+                </item>
+                <item idno="occupation_025" enabled="1" default="1">
+                    <labels>
+                        <label locale="en_US" preferred="1">
+                            <name_singular>College administrators</name_singular>
+                            <name_plural>College administrators</name_plural>
+                        </label>
+                    </labels>
+                </item>
+                <item idno="occupation_026" enabled="1" default="1">
+                    <labels>
+                        <label locale="en_US" preferred="1">
+                            <name_singular>Comedians</name_singular>
+                            <name_plural>Comedians</name_plural>
+                        </label>
+                    </labels>
+                </item>
+                <item idno="occupation_027" enabled="1" default="1">
+                    <labels>
+                        <label locale="en_US" preferred="1">
+                            <name_singular>Commentators</name_singular>
+                            <name_plural>Commentators</name_plural>
+                        </label>
+                    </labels>
+                </item>
+                <item idno="occupation_028" enabled="1" default="1">
+                    <labels>
+                        <label locale="en_US" preferred="1">
+                            <name_singular>Commercial agents</name_singular>
+                            <name_plural>Commercial agents</name_plural>
+                        </label>
+                    </labels>
+                </item>
+                <item idno="occupation_029" enabled="1" default="1">
+                    <labels>
+                        <label locale="en_US" preferred="1">
+                            <name_singular>Composers</name_singular>
+                            <name_plural>Composers</name_plural>
+                        </label>
+                    </labels>
+                </item>
+                <item idno="occupation_030" enabled="1" default="1">
+                    <labels>
+                        <label locale="en_US" preferred="1">
+                            <name_singular>Conservationists</name_singular>
+                            <name_plural>Conservationists</name_plural>
+                        </label>
+                    </labels>
+                </item>
+                <item idno="occupation_031" enabled="1" default="1">
+                    <labels>
+                        <label locale="en_US" preferred="1">
+                            <name_singular>Curators</name_singular>
+                            <name_plural>Curators</name_plural>
+                        </label>
+                    </labels>
+                </item>
+                <item idno="occupation_032" enabled="1" default="1">
+                    <labels>
+                        <label locale="en_US" preferred="1">
+                            <name_singular>Dancers</name_singular>
+                            <name_plural>Dancers</name_plural>
+                        </label>
+                    </labels>
+                </item>
+                <item idno="occupation_033" enabled="1" default="1">
+                    <labels>
+                        <label locale="en_US" preferred="1">
+                            <name_singular>Drafters</name_singular>
+                            <name_plural>Drafters</name_plural>
+                        </label>
+                    </labels>
+                </item>
+                <item idno="occupation_034" enabled="1" default="1">
+                    <labels>
+                        <label locale="en_US" preferred="1">
+                            <name_singular>Dramatists</name_singular>
+                            <name_plural>Dramatists</name_plural>
+                        </label>
+                    </labels>
+                </item>
+                <item idno="occupation_035" enabled="1" default="1">
+                    <labels>
+                        <label locale="en_US" preferred="1">
+                            <name_singular>Editors</name_singular>
+                            <name_plural>Editors</name_plural>
+                        </label>
+                    </labels>
+                </item>
+                <item idno="occupation_036" enabled="1" default="1">
+                    <labels>
+                        <label locale="en_US" preferred="1">
+                            <name_singular>Educators</name_singular>
+                            <name_plural>Educators</name_plural>
+                        </label>
+                    </labels>
+                </item>
+                <item idno="occupation_037" enabled="1" default="1">
+                    <labels>
+                        <label locale="en_US" preferred="1">
+                            <name_singular>Essayists</name_singular>
+                            <name_plural>Essayists</name_plural>
+                        </label>
+                    </labels>
+                </item>
+                <item idno="occupation_038" enabled="1" default="1">
+                    <labels>
+                        <label locale="en_US" preferred="1">
+                            <name_singular>Ethnologists</name_singular>
+                            <name_plural>Ethnologists</name_plural>
+                        </label>
+                    </labels>
+                </item>
+                <item idno="occupation_039" enabled="1" default="1">
+                    <labels>
+                        <label locale="en_US" preferred="1">
+                            <name_singular>Evangelists</name_singular>
+                            <name_plural>Evangelists</name_plural>
+                        </label>
+                    </labels>
+                </item>
+                <item idno="occupation_040" enabled="1" default="1">
+                    <labels>
+                        <label locale="en_US" preferred="1">
+                            <name_singular>Gay rights activists</name_singular>
+                            <name_plural>Gay rights activists</name_plural>
+                        </label>
+                    </labels>
+                </item>
+                <item idno="occupation_041" enabled="1" default="1">
+                    <labels>
+                        <label locale="en_US" preferred="1">
+                            <name_singular>Geographers</name_singular>
+                            <name_plural>Geographers</name_plural>
+                        </label>
+                    </labels>
+                </item>
+                <item idno="occupation_042" enabled="1" default="1">
+                    <labels>
+                        <label locale="en_US" preferred="1">
+                            <name_singular>Geologists</name_singular>
+                            <name_plural>Geologists</name_plural>
+                        </label>
+                    </labels>
+                </item>
+                <item idno="occupation_043" enabled="1" default="1">
+                    <labels>
+                        <label locale="en_US" preferred="1">
+                            <name_singular>Historians</name_singular>
+                            <name_plural>Historians</name_plural>
+                        </label>
+                    </labels>
+                </item>
+                <item idno="occupation_044" enabled="1" default="1">
+                    <labels>
+                        <label locale="en_US" preferred="1">
+                            <name_singular>Landscape architects</name_singular>
+                            <name_plural>Landscape architects</name_plural>
+                        </label>
+                    </labels>
+                </item>
+                <item idno="occupation_045" enabled="1" default="1">
+                    <labels>
+                        <label locale="en_US" preferred="1">
+                            <name_singular>Lawyers</name_singular>
+                            <name_plural>Lawyers</name_plural>
+                        </label>
+                    </labels>
+                </item>
+                <item idno="occupation_046" enabled="1" default="1">
+                    <labels>
+                        <label locale="en_US" preferred="1">
+                            <name_singular>Lecturers</name_singular>
+                            <name_plural>Lecturers</name_plural>
+                        </label>
+                    </labels>
+                </item>
+                <item idno="occupation_047" enabled="1" default="1">
+                    <labels>
+                        <label locale="en_US" preferred="1">
+                            <name_singular>Lexicographers</name_singular>
+                            <name_plural>Lexicographers</name_plural>
+                        </label>
+                    </labels>
+                </item>
+                <item idno="occupation_048" enabled="1" default="1">
+                    <labels>
+                        <label locale="en_US" preferred="1">
+                            <name_singular>Librarians</name_singular>
+                            <name_plural>Librarians</name_plural>
+                        </label>
+                    </labels>
+                </item>
+                <item idno="occupation_049" enabled="1" default="1">
+                    <labels>
+                        <label locale="en_US" preferred="1">
+                            <name_singular>Linguists</name_singular>
+                            <name_plural>Linguists</name_plural>
+                        </label>
+                    </labels>
+                </item>
+                <item idno="occupation_050" enabled="1" default="1">
+                    <labels>
+                        <label locale="en_US" preferred="1">
+                            <name_singular>Literary agents</name_singular>
+                            <name_plural>Literary agents</name_plural>
+                        </label>
+                    </labels>
+                </item>
+                <item idno="occupation_051" enabled="1" default="1">
+                    <labels>
+                        <label locale="en_US" preferred="1">
+                            <name_singular>Painters</name_singular>
+                            <name_plural>Painters</name_plural>
+                        </label>
+                    </labels>
+                </item>
+                <item idno="occupation_052" enabled="1" default="1">
+                    <labels>
+                        <label locale="en_US" preferred="1">
+                            <name_singular>Photographers</name_singular>
+                            <name_plural>Photographers</name_plural>
+                        </label>
+                    </labels>
+                </item>
+                <item idno="occupation_053" enabled="1" default="1">
+                    <labels>
+                        <label locale="en_US" preferred="1">
+                            <name_singular>Poets</name_singular>
+                            <name_plural>Poets</name_plural>
+                        </label>
+                    </labels>
+                </item>
+                <item idno="occupation_054" enabled="1" default="1">
+                    <labels>
+                        <label locale="en_US" preferred="1">
+                            <name_singular>Religious leaders</name_singular>
+                            <name_plural>Religious leaders</name_plural>
+                        </label>
+                    </labels>
+                </item>
+                <item idno="occupation_055" enabled="1" default="1">
+                    <labels>
+                        <label locale="en_US" preferred="1">
+                            <name_singular>Sculptors</name_singular>
+                            <name_plural>Sculptors</name_plural>
+                        </label>
+                    </labels>
+                </item>
+                <item idno="occupation_056" enabled="1" default="1">
+                    <labels>
+                        <label locale="en_US" preferred="1">
+                            <name_singular>Silversmiths</name_singular>
+                            <name_plural>Silversmiths</name_plural>
+                        </label>
+                    </labels>
+                </item>
+                <item idno="occupation_057" enabled="1" default="1">
+                    <labels>
+                        <label locale="en_US" preferred="1">
+                            <name_singular>Singers</name_singular>
+                            <name_plural>Singers</name_plural>
+                        </label>
+                    </labels>
+                </item>
+                <item idno="occupation_058" enabled="1" default="1">
+                    <labels>
+                        <label locale="en_US" preferred="1">
+                            <name_singular>Social activists</name_singular>
+                            <name_plural>Social activists</name_plural>
+                        </label>
+                    </labels>
+                </item>
+                <item idno="occupation_059" enabled="1" default="1">
+                    <labels>
+                        <label locale="en_US" preferred="1">
+                            <name_singular>Students</name_singular>
+                            <name_plural>Students</name_plural>
+                        </label>
+                    </labels>
+                </item>
+                <item idno="occupation_060" enabled="1" default="1">
+                    <labels>
+                        <label locale="en_US" preferred="1">
+                            <name_singular>Surveyors</name_singular>
+                            <name_plural>Surveyors</name_plural>
+                        </label>
+                    </labels>
+                </item>
+                <item idno="occupation_061" enabled="1" default="1">
+                    <labels>
+                        <label locale="en_US" preferred="1">
+                            <name_singular>Teachers</name_singular>
+                            <name_plural>Teachers</name_plural>
+                        </label>
+                    </labels>
+                </item>
+                <item idno="occupation_062" enabled="1" default="1">
+                    <labels>
+                        <label locale="en_US" preferred="1">
+                            <name_singular>Theatrical producers</name_singular>
+                            <name_plural>Theatrical producers</name_plural>
+                        </label>
+                    </labels>
+                </item>
+                <item idno="occupation_063" enabled="1" default="1">
+                    <labels>
+                        <label locale="en_US" preferred="1">
+                            <name_singular>Traders</name_singular>
+                            <name_plural>Traders</name_plural>
+                        </label>
+                    </labels>
+                </item>
+                <item idno="occupation_064" enabled="1" default="1">
+                    <labels>
+                        <label locale="en_US" preferred="1">
+                            <name_singular>Wood-carvers</name_singular>
+                            <name_plural>Wood-carvers</name_plural>
+                        </label>
+                    </labels>
+                </item>
+                <item idno="occupation_065" enabled="1" default="1">
+                    <labels>
+                        <label locale="en_US" preferred="1">
+                            <name_singular>Others</name_singular>
+                            <name_plural>Others</name_plural>
+                        </label>
+                    </labels>
+                </item>
             </items>
         </list>
-        <item idno="occupation_002" enabled="1" default="1">
-            <labels>
-                <label locale="en_US" preferred="1">
-                    <name_singular>Administrators</name_singular>
-                    <name_plural>Administrators</name_plural>
-                </label>
-            </labels>
-        </item>
-        </items>
-        </list>
-        <item idno="occupation_003" enabled="1" default="1">
-            <labels>
-                <label locale="en_US" preferred="1">
-                    <name_singular>Advertisers</name_singular>
-                    <name_plural>Advertisers</name_plural>
-                </label>
-            </labels>
-        </item>
-        </items>
-        </list>
-        <item idno="occupation_004" enabled="1" default="1">
-            <labels>
-                <label locale="en_US" preferred="1">
-                    <name_singular>Animal rights activists</name_singular>
-                    <name_plural>Animal rights activists</name_plural>
-                </label>
-            </labels>
-        </item>
-        </items>
-        </list>
-        <item idno="occupation_005" enabled="1" default="1">
-            <labels>
-                <label locale="en_US" preferred="1">
-                    <name_singular>Anthropologists</name_singular>
-                    <name_plural>Anthropologists</name_plural>
-                </label>
-            </labels>
-        </item>
-        </items>
-        </list>
-        <item idno="occupation_006" enabled="1" default="1">
-            <labels>
-                <label locale="en_US" preferred="1">
-                    <name_singular>Archaeologists</name_singular>
-                    <name_plural>Archaeologists</name_plural>
-                </label>
-            </labels>
-        </item>
-        </items>
-        </list>
-        <item idno="occupation_007" enabled="1" default="1">
-            <labels>
-                <label locale="en_US" preferred="1">
-                    <name_singular>Architects</name_singular>
-                    <name_plural>Architects</name_plural>
-                </label>
-            </labels>
-        </item>
-        </items>
-        </list>
-        <item idno="occupation_008" enabled="1" default="1">
-            <labels>
-                <label locale="en_US" preferred="1">
-                    <name_singular>Architectural historians</name_singular>
-                    <name_plural>Architectural historians</name_plural>
-                </label>
-            </labels>
-        </item>
-        </items>
-        </list>
-        <item idno="occupation_009" enabled="1" default="1">
-            <labels>
-                <label locale="en_US" preferred="1">
-                    <name_singular>Archivists</name_singular>
-                    <name_plural>Archivists</name_plural>
-                </label>
-            </labels>
-        </item>
-        </items>
-        </list>
-        <item idno="occupation_010" enabled="1" default="1">
-            <labels>
-                <label locale="en_US" preferred="1">
-                    <name_singular>Art collector/dealer/historian</name_singular>
-                    <name_plural>Art collector/dealer/historian</name_plural>
-                </label>
-            </labels>
-        </item>
-        </items>
-        </list>
-        <item idno="occupation_011" enabled="1" default="1">
-            <labels>
-                <label locale="en_US" preferred="1">
-                    <name_singular>Artists</name_singular>
-                    <name_plural>Artists</name_plural>
-                </label>
-            </labels>
-        </item>
-        </items>
-        </list>
-        <item idno="occupation_012" enabled="1" default="1">
-            <labels>
-                <label locale="en_US" preferred="1">
-                    <name_singular>Authors</name_singular>
-                    <name_plural>Authors</name_plural>
-                </label>
-            </labels>
-        </item>
-        </items>
-        </list>
-        <item idno="occupation_013" enabled="1" default="1">
-            <labels>
-                <label locale="en_US" preferred="1">
-                    <name_singular>Biographers</name_singular>
-                    <name_plural>Biographers</name_plural>
-                </label>
-            </labels>
-        </item>
-        </items>
-        </list>
-        <item idno="occupation_014" enabled="1" default="1">
-            <labels>
-                <label locale="en_US" preferred="1">
-                    <name_singular>Blacksmiths</name_singular>
-                    <name_plural>Blacksmiths</name_plural>
-                </label>
-            </labels>
-        </item>
-        </items>
-        </list>
-        <item idno="occupation_015" enabled="1" default="1">
-            <labels>
-                <label locale="en_US" preferred="1">
-                    <name_singular>Book designer/binder/seller</name_singular>
-                    <name_plural>Book designer/binder/seller</name_plural>
-                </label>
-            </labels>
-        </item>
-        </items>
-        </list>
-        <item idno="occupation_016" enabled="1" default="1">
-            <labels>
-                <label locale="en_US" preferred="1">
-                    <name_singular>Brickmaker/Builder</name_singular>
-                    <name_plural>Brickmaker/Builder</name_plural>
-                </label>
-            </labels>
-        </item>
-        </items>
-        </list>
-        <item idno="occupation_017" enabled="1" default="1">
-            <labels>
-                <label locale="en_US" preferred="1">
-                    <name_singular>Businessmen/women</name_singular>
-                    <name_plural>Businessmen/women</name_plural>
-                </label>
-            </labels>
-        </item>
-        </items>
-        </list>
-        <item idno="occupation_018" enabled="1" default="1">
-            <labels>
-                <label locale="en_US" preferred="1">
-                    <name_singular>Cameramen</name_singular>
-                    <name_plural>Cameramen</name_plural>
-                </label>
-            </labels>
-        </item>
-        </items>
-        </list>
-        <item idno="occupation_019" enabled="1" default="1">
-            <labels>
-                <label locale="en_US" preferred="1">
-                    <name_singular>Cartographers</name_singular>
-                    <name_plural>Cartographers</name_plural>
-                </label>
-            </labels>
-        </item>
-        </items>
-        </list>
-        <item idno="occupation_020" enabled="1" default="1">
-            <labels>
-                <label locale="en_US" preferred="1">
-                    <name_singular>Cartoonists</name_singular>
-                    <name_plural>Cartoonists</name_plural>
-                </label>
-            </labels>
-        </item>
-        </items>
-        </list>
-        <item idno="occupation_021" enabled="1" default="1">
-            <labels>
-                <label locale="en_US" preferred="1">
-                    <name_singular>Classicists</name_singular>
-                    <name_plural>Classicists</name_plural>
-                </label>
-            </labels>
-        </item>
-        </items>
-        </list>
-        <item idno="occupation_022" enabled="1" default="1">
-            <labels>
-                <label locale="en_US" preferred="1">
-                    <name_singular>Clergy</name_singular>
-                    <name_plural>Clergy</name_plural>
-                </label>
-            </labels>
-        </item>
-        </items>
-        </list>
-        <item idno="occupation_023" enabled="1" default="1">
-            <labels>
-                <label locale="en_US" preferred="1">
-                    <name_singular>Clerks</name_singular>
-                    <name_plural>Clerks</name_plural>
-                </label>
-            </labels>
-        </item>
-        </items>
-        </list>
-        <item idno="occupation_024" enabled="1" default="1">
-            <labels>
-                <label locale="en_US" preferred="1">
-                    <name_singular>Collectors</name_singular>
-                    <name_plural>Collectors</name_plural>
-                </label>
-            </labels>
-        </item>
-        </items>
-        </list>
-        <item idno="occupation_025" enabled="1" default="1">
-            <labels>
-                <label locale="en_US" preferred="1">
-                    <name_singular>College administrators</name_singular>
-                    <name_plural>College administrators</name_plural>
-                </label>
-            </labels>
-        </item>
-        </items>
-        </list>
-        <item idno="occupation_026" enabled="1" default="1">
-            <labels>
-                <label locale="en_US" preferred="1">
-                    <name_singular>Comedians</name_singular>
-                    <name_plural>Comedians</name_plural>
-                </label>
-            </labels>
-        </item>
-        </items>
-        </list>
-        <item idno="occupation_027" enabled="1" default="1">
-            <labels>
-                <label locale="en_US" preferred="1">
-                    <name_singular>Commentators</name_singular>
-                    <name_plural>Commentators</name_plural>
-                </label>
-            </labels>
-        </item>
-        </items>
-        </list>
-        <item idno="occupation_028" enabled="1" default="1">
-            <labels>
-                <label locale="en_US" preferred="1">
-                    <name_singular>Commercial agents</name_singular>
-                    <name_plural>Commercial agents</name_plural>
-                </label>
-            </labels>
-        </item>
-        </items>
-        </list>
-        <item idno="occupation_029" enabled="1" default="1">
-            <labels>
-                <label locale="en_US" preferred="1">
-                    <name_singular>Composers</name_singular>
-                    <name_plural>Composers</name_plural>
-                </label>
-            </labels>
-        </item>
-        </items>
-        </list>
-        <item idno="occupation_030" enabled="1" default="1">
-            <labels>
-                <label locale="en_US" preferred="1">
-                    <name_singular>Conservationists</name_singular>
-                    <name_plural>Conservationists</name_plural>
-                </label>
-            </labels>
-        </item>
-        </items>
-        </list>
-        <item idno="occupation_031" enabled="1" default="1">
-            <labels>
-                <label locale="en_US" preferred="1">
-                    <name_singular>Curators</name_singular>
-                    <name_plural>Curators</name_plural>
-                </label>
-            </labels>
-        </item>
-        </items>
-        </list>
-        <item idno="occupation_032" enabled="1" default="1">
-            <labels>
-                <label locale="en_US" preferred="1">
-                    <name_singular>Dancers</name_singular>
-                    <name_plural>Dancers</name_plural>
-                </label>
-            </labels>
-        </item>
-        </items>
-        </list>
-        <item idno="occupation_033" enabled="1" default="1">
-            <labels>
-                <label locale="en_US" preferred="1">
-                    <name_singular>Drafters</name_singular>
-                    <name_plural>Drafters</name_plural>
-                </label>
-            </labels>
-        </item>
-        </items>
-        </list>
-        <item idno="occupation_034" enabled="1" default="1">
-            <labels>
-                <label locale="en_US" preferred="1">
-                    <name_singular>Dramatists</name_singular>
-                    <name_plural>Dramatists</name_plural>
-                </label>
-            </labels>
-        </item>
-        </items>
-        </list>
-        <item idno="occupation_035" enabled="1" default="1">
-            <labels>
-                <label locale="en_US" preferred="1">
-                    <name_singular>Editors</name_singular>
-                    <name_plural>Editors</name_plural>
-                </label>
-            </labels>
-        </item>
-        </items>
-        </list>
-        <item idno="occupation_036" enabled="1" default="1">
-            <labels>
-                <label locale="en_US" preferred="1">
-                    <name_singular>Educators</name_singular>
-                    <name_plural>Educators</name_plural>
-                </label>
-            </labels>
-        </item>
-        </items>
-        </list>
-        <item idno="occupation_037" enabled="1" default="1">
-            <labels>
-                <label locale="en_US" preferred="1">
-                    <name_singular>Essayists</name_singular>
-                    <name_plural>Essayists</name_plural>
-                </label>
-            </labels>
-        </item>
-        </items>
-        </list>
-        <item idno="occupation_038" enabled="1" default="1">
-            <labels>
-                <label locale="en_US" preferred="1">
-                    <name_singular>Ethnologists</name_singular>
-                    <name_plural>Ethnologists</name_plural>
-                </label>
-            </labels>
-        </item>
-        </items>
-        </list>
-        <item idno="occupation_039" enabled="1" default="1">
-            <labels>
-                <label locale="en_US" preferred="1">
-                    <name_singular>Evangelists</name_singular>
-                    <name_plural>Evangelists</name_plural>
-                </label>
-            </labels>
-        </item>
-        </items>
-        </list>
-        <item idno="occupation_040" enabled="1" default="1">
-            <labels>
-                <label locale="en_US" preferred="1">
-                    <name_singular>Gay rights activists</name_singular>
-                    <name_plural>Gay rights activists</name_plural>
-                </label>
-            </labels>
-        </item>
-        </items>
-        </list>
-        <item idno="occupation_041" enabled="1" default="1">
-            <labels>
-                <label locale="en_US" preferred="1">
-                    <name_singular>Geographers</name_singular>
-                    <name_plural>Geographers</name_plural>
-                </label>
-            </labels>
-        </item>
-        </items>
-        </list>
-        <item idno="occupation_042" enabled="1" default="1">
-            <labels>
-                <label locale="en_US" preferred="1">
-                    <name_singular>Geologists</name_singular>
-                    <name_plural>Geologists</name_plural>
-                </label>
-            </labels>
-        </item>
-        </items>
-        </list>
-        <item idno="occupation_043" enabled="1" default="1">
-            <labels>
-                <label locale="en_US" preferred="1">
-                    <name_singular>Historians</name_singular>
-                    <name_plural>Historians</name_plural>
-                </label>
-            </labels>
-        </item>
-        </items>
-        </list>
-        <item idno="occupation_044" enabled="1" default="1">
-            <labels>
-                <label locale="en_US" preferred="1">
-                    <name_singular>Landscape architects</name_singular>
-                    <name_plural>Landscape architects</name_plural>
-                </label>
-            </labels>
-        </item>
-        </items>
-        </list>
-        <item idno="occupation_045" enabled="1" default="1">
-            <labels>
-                <label locale="en_US" preferred="1">
-                    <name_singular>Lawyers</name_singular>
-                    <name_plural>Lawyers</name_plural>
-                </label>
-            </labels>
-        </item>
-        </items>
-        </list>
-        <item idno="occupation_046" enabled="1" default="1">
-            <labels>
-                <label locale="en_US" preferred="1">
-                    <name_singular>Lecturers</name_singular>
-                    <name_plural>Lecturers</name_plural>
-                </label>
-            </labels>
-        </item>
-        </items>
-        </list>
-        <item idno="occupation_047" enabled="1" default="1">
-            <labels>
-                <label locale="en_US" preferred="1">
-                    <name_singular>Lexicographers</name_singular>
-                    <name_plural>Lexicographers</name_plural>
-                </label>
-            </labels>
-        </item>
-        </items>
-        </list>
-        <item idno="occupation_048" enabled="1" default="1">
-            <labels>
-                <label locale="en_US" preferred="1">
-                    <name_singular>Librarians</name_singular>
-                    <name_plural>Librarians</name_plural>
-                </label>
-            </labels>
-        </item>
-        </items>
-        </list>
-        <item idno="occupation_049" enabled="1" default="1">
-            <labels>
-                <label locale="en_US" preferred="1">
-                    <name_singular>Linguists</name_singular>
-                    <name_plural>Linguists</name_plural>
-                </label>
-            </labels>
-        </item>
-        </items>
-        </list>
-        <item idno="occupation_050" enabled="1" default="1">
-            <labels>
-                <label locale="en_US" preferred="1">
-                    <name_singular>Literary agents</name_singular>
-                    <name_plural>Literary agents</name_plural>
-                </label>
-            </labels>
-        </item>
-        </items>
-        </list>
-        <item idno="occupation_051" enabled="1" default="1">
-            <labels>
-                <label locale="en_US" preferred="1">
-                    <name_singular>Painters</name_singular>
-                    <name_plural>Painters</name_plural>
-                </label>
-            </labels>
-        </item>
-        </items>
-        </list>
-        <item idno="occupation_052" enabled="1" default="1">
-            <labels>
-                <label locale="en_US" preferred="1">
-                    <name_singular>Photographers</name_singular>
-                    <name_plural>Photographers</name_plural>
-                </label>
-            </labels>
-        </item>
-        </items>
-        </list>
-        <item idno="occupation_053" enabled="1" default="1">
-            <labels>
-                <label locale="en_US" preferred="1">
-                    <name_singular>Poets</name_singular>
-                    <name_plural>Poets</name_plural>
-                </label>
-            </labels>
-        </item>
-        </items>
-        </list>
-        <item idno="occupation_054" enabled="1" default="1">
-            <labels>
-                <label locale="en_US" preferred="1">
-                    <name_singular>Religious leaders</name_singular>
-                    <name_plural>Religious leaders</name_plural>
-                </label>
-            </labels>
-        </item>
-        </items>
-        </list>
-        <item idno="occupation_055" enabled="1" default="1">
-            <labels>
-                <label locale="en_US" preferred="1">
-                    <name_singular>Sculptors</name_singular>
-                    <name_plural>Sculptors</name_plural>
-                </label>
-            </labels>
-        </item>
-        </items>
-        </list>
-        <item idno="occupation_056" enabled="1" default="1">
-            <labels>
-                <label locale="en_US" preferred="1">
-                    <name_singular>Silversmiths</name_singular>
-                    <name_plural>Silversmiths</name_plural>
-                </label>
-            </labels>
-        </item>
-        </items>
-        </list>
-        <item idno="occupation_057" enabled="1" default="1">
-            <labels>
-                <label locale="en_US" preferred="1">
-                    <name_singular>Singers</name_singular>
-                    <name_plural>Singers</name_plural>
-                </label>
-            </labels>
-        </item>
-        </items>
-        </list>
-        <item idno="occupation_058" enabled="1" default="1">
-            <labels>
-                <label locale="en_US" preferred="1">
-                    <name_singular>Social activists</name_singular>
-                    <name_plural>Social activists</name_plural>
-                </label>
-            </labels>
-        </item>
-        </items>
-        </list>
-        <item idno="occupation_059" enabled="1" default="1">
-            <labels>
-                <label locale="en_US" preferred="1">
-                    <name_singular>Students</name_singular>
-                    <name_plural>Students</name_plural>
-                </label>
-            </labels>
-        </item>
-        </items>
-        </list>
-        <item idno="occupation_060" enabled="1" default="1">
-            <labels>
-                <label locale="en_US" preferred="1">
-                    <name_singular>Surveyors</name_singular>
-                    <name_plural>Surveyors</name_plural>
-                </label>
-            </labels>
-        </item>
-        </items>
-        </list>
-        <item idno="occupation_061" enabled="1" default="1">
-            <labels>
-                <label locale="en_US" preferred="1">
-                    <name_singular>Teachers</name_singular>
-                    <name_plural>Teachers</name_plural>
-                </label>
-            </labels>
-        </item>
-        </items>
-        </list>
-        <item idno="occupation_062" enabled="1" default="1">
-            <labels>
-                <label locale="en_US" preferred="1">
-                    <name_singular>Theatrical producers</name_singular>
-                    <name_plural>Theatrical producers</name_plural>
-                </label>
-            </labels>
-        </item>
-        </items>
-        </list>
-        <item idno="occupation_063" enabled="1" default="1">
-            <labels>
-                <label locale="en_US" preferred="1">
-                    <name_singular>Traders</name_singular>
-                    <name_plural>Traders</name_plural>
-                </label>
-            </labels>
-        </item>
-        </items>
-        </list>
-        <item idno="occupation_064" enabled="1" default="1">
-            <labels>
-                <label locale="en_US" preferred="1">
-                    <name_singular>Wood-carvers</name_singular>
-                    <name_plural>Wood-carvers</name_plural>
-                </label>
-            </labels>
-        </item>
-        </items>
-        </list>
-        <item idno="occupation_065" enabled="1" default="1">
-            <labels>
-                <label locale="en_US" preferred="1">
-                    <name_singular>Others</name_singular>
-                    <name_plural>Others</name_plural>
-                </label>
-            </labels>
-        </item>
-        </items>
-        </list>
 
-        <!-- Project Types-->
+        <!-- 10_Project Types-->
 
-        <list code="prjtypes" hierarchical="0" system="0" vocabulary="1">
+        <list code="prjtypelist" hierarchical="0" system="0" vocabulary="1">
             <labels>
                 <label locale="en_US">
                     <name>Project Types</name>
@@ -5063,38 +4934,328 @@
                         </label>
                     </labels>
                 </item>
+                <item idno="prjtype_02" enabled="1" default="1">
+                    <labels>
+                        <label locale="en_US" preferred="1">
+                            <name_singular>Follow On Grants (2021-2022)</name_singular>
+                            <name_plural>Follow On Grants (2021-2022)</name_plural>
+                        </label>
+                    </labels>
+                </item>
+                <item idno="prjtype_03" enabled="1" default="1">
+                    <labels>
+                        <label locale="en_US" preferred="1">
+                            <name_singular>Phase 1 Projects - Commissions (2021-2022)</name_singular>
+                            <name_plural>Phase 1 Projects - Commissions (2021-2022)</name_plural>
+                        </label>
+                    </labels>
+                </item>
+                <item idno="prjtype_04" enabled="1" default="1">
+                    <labels>
+                        <label locale="en_US" preferred="1">
+                            <name_singular>Phase 2 Projects - Commissions (Sep 2022-Sep 2023)</name_singular>
+                            <name_plural>Phase 2 Projects - Commissions (Sep 2022-Sep 2023)</name_plural>
+                        </label>
+                    </labels>
+                </item>
             </items>
         </list>
-        <item idno="prjtype_02" enabled="1" default="1">
+
+        <!-- 11_Project Regions-->
+
+        <list code="prjregionlist" hierarchical="0" system="0" vocabulary="1">
             <labels>
-                <label locale="en_US" preferred="1">
-                    <name_singular>Follow On Grants (2021-2022)</name_singular>
-                    <name_plural>Follow On Grants (2021-2022)</name_plural>
+                <label locale="en_US">
+                    <name>Project Regions</name>
                 </label>
             </labels>
-        </item>
-        </items>
-        </list>
-        <item idno="prjtype_03" enabled="1" default="1">
-            <labels>
-                <label locale="en_US" preferred="1">
-                    <name_singular>Phase 1 Projects - Commissions (2021-2022)</name_singular>
-                    <name_plural>Phase 1 Projects - Commissions (2021-2022)</name_plural>
-                </label>
-            </labels>
-        </item>
-        </items>
-        </list>
-        <item idno="prjtype_04" enabled="1" default="1">
-            <labels>
-                <label locale="en_US" preferred="1">
-                    <name_singular>Phase 2 Projects - Commissions (Sep 2022-Sep 2023)</name_singular>
-                    <name_plural>Phase 2 Projects - Commissions (Sep 2022-Sep 2023)</name_plural>
-                </label>
-            </labels>
-        </item>
-        </items>
+            <items>
+                <item idno="reg_01" enabled="1" default="1">
+                    <labels>
+                        <label locale="en_US" preferred="1">
+                            <name_singular>Africa</name_singular>
+                            <name_plural>Africa</name_plural>
+                        </label>
+                    </labels>
+                </item>
+                <item idno="reg_02" enabled="1" default="1">
+                    <labels>
+                        <label locale="en_US" preferred="1">
+                            <name_singular>Asia Pasific</name_singular>
+                            <name_plural>Asia Pasific</name_plural>
+                        </label>
+                    </labels>
+                </item>
+                <item idno="reg_03" enabled="1" default="1">
+                    <labels>
+                        <label locale="en_US" preferred="1">
+                            <name_singular>Central & South America</name_singular>
+                            <name_plural>Central & South America</name_plural>
+                        </label>
+                    </labels>
+                </item>
+                <item idno="reg_04" enabled="1" default="1">
+                    <labels>
+                        <label locale="en_US" preferred="1">
+                            <name_singular>Europe & Middle East</name_singular>
+                            <name_plural>Europe & Middle East</name_plural>
+                        </label>
+                    </labels>
+                </item>
+                <item idno="reg_05" enabled="1" default="1">
+                    <labels>
+                        <label locale="en_US" preferred="1">
+                            <name_singular>Various Locations</name_singular>
+                            <name_plural>Various Locations</name_plural>
+                        </label>
+                    </labels>
+                </item>
+                <item idno="reg_06" enabled="1" default="1">
+                    <labels>
+                        <label locale="en_US" preferred="1">
+                            <name_singular>North America</name_singular>
+                            <name_plural>North America</name_plural>
+                        </label>
+                    </labels>
+                </item>
+            </items>
         </list>
 
+
+        <!-- 12_Rights Statement-->
+
+        <list code="rightsstatelist" hierarchical="0" system="0" vocabulary="1">
+            <labels>
+                <label locale="en_US">
+                    <name>Rights Statement</name>
+                </label>
+            </labels>
+            <items>
+                <item idno="rs_001" enabled="1" default="1">
+                    <labels>
+                        <label locale="en_US" preferred="1">
+                            <name_singular>In Copyright (InC)</name_singular>
+                            <name_plural>In Copyright (InC)</name_plural>
+                            <description>indicates that the Item labeled with this Rights Statement
+                                is in
+                                copyright.</description>
+                        </label>
+                    </labels>
+                </item>
+                <item idno="rs_002" enabled="1" default="1">
+                    <labels>
+                        <label locale="en_US" preferred="1">
+                            <name_singular>In Copyright - EU Orphan Work (InC-OW-EU)</name_singular>
+                            <name_plural>In Copyright - EU Orphan Work (InC-OW-EU)</name_plural>
+                            <description>indicates that the Item labeled with this Rights Statement
+                                has been
+                                identified as an ‘Orphan Work’ under the terms of the EU Orphan
+                                Works
+                                Directive.</description>
+                        </label>
+                    </labels>
+                </item>
+                <item idno="rs_003" enabled="1" default="1">
+                    <labels>
+                        <label locale="en_US" preferred="1">
+                            <name_singular>In Copyright - Rights-holder(s) Unlocatable or
+                                Unidentifiable
+                                (InC-RUU)</name_singular>
+                            <name_plural>In Copyright - Rights-holder(s) Unlocatable or
+                                Unidentifiable
+                                (InC-RUU)</name_plural>
+                            <description>indicates that the Item labeled with this Rights Statement
+                                has been
+                                identified as in copyright, but whose rights-holder(s) either cannot
+                                be
+                                identified or cannot be located.</description>
+                        </label>
+                    </labels>
+                </item>
+                <item idno="rs_004" enabled="1" default="1">
+                    <labels>
+                        <label locale="en_US" preferred="1">
+                            <name_singular>In Copyright - Educational Use Permitted (InC-EDU)</name_singular>
+                            <name_plural>In Copyright - Educational Use Permitted (InC-EDU)</name_plural>
+                            <description>indicates that the Item labeled with this Rights Statement
+                                is in
+                                copyright but that educational use is allowed without the need to
+                                obtain
+                                additional permission.</description>
+                        </label>
+                    </labels>
+                </item>
+                <item idno="rs_005" enabled="1" default="1">
+                    <labels>
+                        <label locale="en_US" preferred="1">
+                            <name_singular>In Copyright - Non-Commercial Use Permitted (InC-NC)</name_singular>
+                            <name_plural>In Copyright - Non-Commercial Use Permitted (InC-NC)</name_plural>
+                            <description>indicates that the Item labeled with this Rights Statement
+                                is in
+                                copyright but that non-commercial use is allowed without the need to
+                                obtain
+                                additional permission.</description>
+                        </label>
+                    </labels>
+                </item>
+                <item idno="rs_006" enabled="1" default="1">
+                    <labels>
+                        <label locale="en_US" preferred="1">
+                            <name_singular>No Copyright - Non-Commercial Use Only (NoC-NC)</name_singular>
+                            <name_plural>No Copyright - Non-Commercial Use Only (NoC-NC)</name_plural>
+                            <description>indicates that the underlying Work is in the Public Domain,
+                                but the
+                                organization that has published the Item is contractually required
+                                to allow
+                                only non-commercial use by third parties.</description>
+                        </label>
+                    </labels>
+                </item>
+                <item idno="rs_007" enabled="1" default="1">
+                    <labels>
+                        <label locale="en_US" preferred="1">
+                            <name_singular>No Copyright - Contractual Restrictions (NoC-CR)</name_singular>
+                            <name_plural>No Copyright - Contractual Restrictions (NoC-CR)</name_plural>
+                            <description>indicates that the underlying Work is in the Public Domain,
+                                but the
+                                organization that has published the Item is contractually required
+                                to
+                                restrict certain forms of use by third parties.</description>
+                        </label>
+                    </labels>
+                </item>
+                <item idno="rs_008" enabled="1" default="1">
+                    <labels>
+                        <label locale="en_US" preferred="1">
+                            <name_singular>No Copyright - Other Known Legal Restrictions (NoC-OKLR)</name_singular>
+                            <name_plural>No Copyright - Other Known Legal Restrictions (NoC-OKLR)</name_plural>
+                            <description>indicates that the underlying Work is in the Public Domain,
+                                but
+                                that laws other than copyright impose restrictions on the use of the
+                                Item by
+                                third parties.</description>
+                        </label>
+                    </labels>
+                </item>
+                <item idno="rs_009" enabled="1" default="1">
+                    <labels>
+                        <label locale="en_US" preferred="1">
+                            <name_singular>No Copyright - United States (NoC-US)</name_singular>
+                            <name_plural>No Copyright - United States (NoC-US)</name_plural>
+                            <description>indicates that the underlying Work is in the Public Domain
+                                under
+                                the laws of the United States, but that a determination was not made
+                                as to
+                                its copyright status under the copyright laws of other countries.</description>
+                        </label>
+                    </labels>
+                </item>
+                <item idno="rs_010" enabled="1" default="1">
+                    <labels>
+                        <label locale="en_US" preferred="1">
+                            <name_singular>No Known Copyright (NKC)</name_singular>
+                            <name_plural>No Known Copyright (NKC)</name_plural>
+                            <description>indicates that the organization that has published the Item
+                                believes that no copyright or related rights are known to exist, but
+                                that a
+                                conclusive determination could not be made.</description>
+                        </label>
+                    </labels>
+                </item>
+                <item idno="rs_011" enabled="1" default="1">
+                    <labels>
+                        <label locale="en_US" preferred="1">
+                            <name_singular>Copyright Not Evaluated (CNE)</name_singular>
+                            <name_plural>Copyright Not Evaluated (CNE)</name_plural>
+                            <description>indicates that the organization that has published the Item
+                                has not
+                                evaluated the copyright and related rights status of the Item.</description>
+                        </label>
+                    </labels>
+                </item>
+                <item idno="rs_012" enabled="1" default="1">
+                    <labels>
+                        <label locale="en_US" preferred="1">
+                            <name_singular>Copyright Undetermined (UND)</name_singular>
+                            <name_plural>Copyright Undetermined (UND)</name_plural>
+                            <description>indicates that the organization that has made the Item
+                                available
+                                has reviewed the copyright and related rights status of the Item,
+                                but was
+                                unable to determine the copyright status of the Item.</description>
+                        </label>
+                    </labels>
+                </item>
+            </items>
+        </list>
+
+
+        <!-- 13_Roles-->
+
+        <list code="roleslist" hierarchical="0" system="0" vocabulary="1">
+            <labels>
+                <label locale="en_US">
+                    <name>Roles</name>
+                </label>
+            </labels>
+            <items>
+                <item idno="role_01" enabled="1" default="1">
+                    <labels>
+                        <label locale="en_US" preferred="1">
+                            <name_singular>Project leader</name_singular>
+                            <name_plural>Project leader</name_plural>
+                        </label>
+                    </labels>
+                </item>
+                <item idno="role_02" enabled="1" default="1">
+                    <labels>
+                        <label locale="en_US" preferred="1">
+                            <name_singular>Collector</name_singular>
+                            <name_plural>Collector</name_plural>
+                        </label>
+                    </labels>
+                </item>
+                <item idno="role_03" enabled="1" default="1">
+                    <labels>
+                        <label locale="en_US" preferred="1">
+                            <name_singular>Monitor</name_singular>
+                            <name_plural>Monitor</name_plural>
+                        </label>
+                    </labels>
+                </item>
+                <item idno="role_04" enabled="1" default="1">
+                    <labels>
+                        <label locale="en_US" preferred="1">
+                            <name_singular>Contributor</name_singular>
+                            <name_plural>Contributor</name_plural>
+                        </label>
+                    </labels>
+                </item>
+                <item idno="role_05" enabled="1" default="1">
+                    <labels>
+                        <label locale="en_US" preferred="1">
+                            <name_singular>Administrator</name_singular>
+                            <name_plural>Administrator</name_plural>
+                        </label>
+                    </labels>
+                </item>
+                <item idno="role_06" enabled="1" default="1">
+                    <labels>
+                        <label locale="en_US" preferred="1">
+                            <name_singular>Guest</name_singular>
+                            <name_plural>Guest</name_plural>
+                        </label>
+                    </labels>
+                </item>
+                <item idno="role_07" enabled="1" default="1">
+                    <labels>
+                        <label locale="en_US" preferred="1">
+                            <name_singular>Researcher</name_singular>
+                            <name_plural>Researcher</name_plural>
+                        </label>
+                    </labels>
+                </item>
+            </items>
+        </list>
     </lists>
 </profile>
