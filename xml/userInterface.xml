@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<profile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="profile.xsd" useForConfiguration="1" base="base"
+  infoUrl="http://providence.collectiveaccess.org/wiki/DefaultProfile">
+  <profileName>Imagining Futures Through Un/Archived Pasts</profileName>
+  <profileDescription>Archive management for Projects and Collections</profileDescription>
+  <version>0.1-alpha</version>
+
+  <!-- User Interfaces-->
+
+  <userInterfaces>
+    <userInterface code="objects_ui" type="ca_objects">
+      <labels>
+        <label locale="en_US">
+          <name>Standard object editor</name>
+        </label>
+      </labels>
+      <screens>
+        <screen idno="socioculturalscreen" default="0">
+              <labels>
+                <label locale="en_US">
+                  <name>Socio-cultural Context</name>
+                </label>
+              </labels>
+              <bundlePlacements>
+                <placement code="ca_attribute_cultgroup">
+                  <bundle>ca_attribute_cultgroup</bundle>
+                </placement>
+                <placement code="ca_attribute_cultcontext">
+                  <bundle>ca_attribute_cultcontext</bundle>
+                </placement>
+                <placement code="ca_attribute_socialgroup">
+                    <bundle>ca_attribute_socialgroup</bundle>
+                    <settings>
+                      <setting name="label" locale="en_US">Social Group</setting>
+                      <setting name="add_label" locale="en_US">Add Social Group</setting>
+                    </settings>
+                  </placement>
+              </bundlePlacements>
+            </screen>
+
+        <screen idno="datescreen" default="0">
+              <labels>
+                <label locale="en_US">
+                  <name>Dates</name>
+                </label>
+              </labels>
+              <bundlePlacements>
+                <placement code="ca_attribute_dates">
+                  <bundle>ca_attribute_dates</bundle>
+                  <settings>
+                    <setting name="label" locale="en_US">Dates</setting>
+                    <setting name="add_label" locale="en_US">Add Dates</setting>
+                  </settings>
+                </placement>
+              </bundlePlacements>
+            </screen>
+
+
+      </screens>
+    </userInterface>
+  </userInterfaces>
+</profile>
