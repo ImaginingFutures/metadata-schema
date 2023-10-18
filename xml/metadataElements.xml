@@ -42,6 +42,30 @@
                         <setting name="minimumAttributeBundlesToDisplay">1</setting>
                     </settings>
                 </restriction>
+                <restriction>
+                    <table>ca_entities</table>
+                    <settings>
+                        <setting name="minAttributesPerRow">0</setting>
+                        <setting name="maxAttributesPerRow">1</setting>
+                        <setting name="minimumAttributeBundlesToDisplay">1</setting>
+                    </settings>
+                </restriction>
+                <restriction>
+                    <table>ca_collections</table>
+                    <settings>
+                        <setting name="minAttributesPerRow">0</setting>
+                        <setting name="maxAttributesPerRow">1</setting>
+                        <setting name="minimumAttributeBundlesToDisplay">1</setting>
+                    </settings>
+                </restriction>
+                <restriction>
+                    <table>ca_places</table>
+                    <settings>
+                        <setting name="minAttributesPerRow">0</setting>
+                        <setting name="maxAttributesPerRow">1</setting>
+                        <setting name="minimumAttributeBundlesToDisplay">1</setting>
+                    </settings>
+                </restriction>
             </typeRestrictions>
         </metadataElement>
 
@@ -70,7 +94,7 @@
             </labels>
             <settings>
                 <setting name="fieldWidth">90</setting>
-                <setting name="fieldHeight">6</setting>
+                <setting name="fieldHeight">3</setting>
                 <setting name="minChars">0</setting>
                 <setting name="maxChars">65535</setting>
             </settings>
@@ -113,7 +137,7 @@
                     <table>ca_objects</table>
                     <settings>
                         <setting name="minAttributesPerRow">0</setting>
-                        <setting name="maxAttributesPerRow">1</setting>
+                        <setting name="maxAttributesPerRow">0</setting>
                         <setting name="minimumAttributeBundlesToDisplay">1</setting>
                     </settings>
                 </restriction>
@@ -183,41 +207,7 @@
                     <table>ca_objects</table>
                     <settings>
                         <setting name="minAttributesPerRow">0</setting>
-                        <setting name="maxAttributesPerRow">1</setting>
-                        <setting name="minimumAttributeBundlesToDisplay">1</setting>
-                    </settings>
-                </restriction>
-            </typeRestrictions>
-        </metadataElement>
-        <metadataElement code="object_representations" datatype="Media">
-            <labels>
-                <label locale="en_US">
-                    <name>Digital Representations</name>
-                    <description>Name of the digital file or the folder of multiple files.</description>
-                    <entry>String-Free text</entry>
-                    <dcequivalent></dcequivalent>
-                    <repeatable>No</repeatable>
-                    <modality>Mandatory</modality>
-                    <guideline>Provide the name of the digital file. Or if you have more than one
-                        file
-                        to
-                        represent,
-                        provide the path of the folder.</guideline>
-                    <example>Example_photo.jpg, UFC00800001/images/folder1</example>
-                </label>
-            </labels>
-            <settings>
-                <setting name="fieldWidth">90</setting>
-                <setting name="fieldHeight">3</setting>
-                <setting name="minChars">0</setting>
-                <setting name="maxChars">65535</setting>
-            </settings>
-            <typeRestrictions>
-                <restriction>
-                    <table>ca_objects</table>
-                    <settings>
-                        <setting name="minAttributesPerRow">0</setting>
-                        <setting name="maxAttributesPerRow">1</setting>
+                        <setting name="maxAttributesPerRow">0</setting>
                         <setting name="minimumAttributeBundlesToDisplay">1</setting>
                     </settings>
                 </restriction>
@@ -279,7 +269,15 @@
                     <table>ca_objects</table>
                     <settings>
                         <setting name="minAttributesPerRow">0</setting>
-                        <setting name="maxAttributesPerRow">1</setting>
+                        <setting name="maxAttributesPerRow">0</setting>
+                        <setting name="minimumAttributeBundlesToDisplay">1</setting>
+                    </settings>
+                </restriction>
+                <restriction>
+                    <table>ca_collections</table>
+                    <settings>
+                        <setting name="minAttributesPerRow">0</setting>
+                        <setting name="maxAttributesPerRow">0</setting>
                         <setting name="minimumAttributeBundlesToDisplay">1</setting>
                     </settings>
                 </restriction>
@@ -321,6 +319,22 @@
             <typeRestrictions>
                 <restriction>
                     <table>ca_objects</table>
+                    <settings>
+                        <setting name="minAttributesPerRow">0</setting>
+                        <setting name="maxAttributesPerRow">1</setting>
+                        <setting name="minimumAttributeBundlesToDisplay">1</setting>
+                    </settings>
+                </restriction>
+                <restriction>
+                    <table>ca_collections</table>
+                    <settings>
+                        <setting name="minAttributesPerRow">0</setting>
+                        <setting name="maxAttributesPerRow">1</setting>
+                        <setting name="minimumAttributeBundlesToDisplay">1</setting>
+                    </settings>
+                </restriction>
+                <restriction>
+                    <table>ca_places</table>
                     <settings>
                         <setting name="minAttributesPerRow">0</setting>
                         <setting name="maxAttributesPerRow">1</setting>
@@ -387,10 +401,10 @@
                 <setting name="maxChars">65535</setting>
             </settings>
             <elements>
-                <metadataElement code="primlang" datatype="List" list="languageslist">
+                <metadataElement code="lang" datatype="List" list="languageslist">
                     <labels>
                         <label locale="en_US">
-                            <name>Primary Language</name>
+                            <name>Language</name>
                             <description>The primary language spoken by the participant (if video or
                                 audio resource). The
                                 primary language written on the image or in the document.</description>
@@ -410,10 +424,10 @@
                         <setting name="fieldHeight">1</setting>
                     </settings>
                 </metadataElement>
-                <metadataElement code="otherlang" datatype="List" list="languageslist">
+                <metadataElement code="langlabel" datatype="List" list="langlabellist">
                     <labels>
                         <label locale="en_US">
-                            <name>Other Language</name>
+                            <name>Language Label</name>
                             <description>The other language spoken by the participant (if video or
                                 audio
                                 resource). The
@@ -439,7 +453,15 @@
                     <table>ca_objects</table>
                     <settings>
                         <setting name="minAttributesPerRow">0</setting>
-                        <setting name="maxAttributesPerRow">1</setting>
+                        <setting name="maxAttributesPerRow">0</setting>
+                        <setting name="minimumAttributeBundlesToDisplay">1</setting>
+                    </settings>
+                </restriction>
+                <restriction>
+                    <table>ca_entities</table>
+                    <settings>
+                        <setting name="minAttributesPerRow">0</setting>
+                        <setting name="maxAttributesPerRow">0</setting>
                         <setting name="minimumAttributeBundlesToDisplay">1</setting>
                     </settings>
                 </restriction>
@@ -473,7 +495,7 @@
                     <table>ca_objects</table>
                     <settings>
                         <setting name="minAttributesPerRow">0</setting>
-                        <setting name="maxAttributesPerRow">1</setting>
+                        <setting name="maxAttributesPerRow">0</setting>
                         <setting name="minimumAttributeBundlesToDisplay">1</setting>
                     </settings>
                 </restriction>
@@ -497,8 +519,8 @@
                 </label>
             </labels>
             <settings>
-                <setting name="fieldWidth">90</setting>
-                <setting name="fieldHeight">3</setting>
+                <setting name="fieldWidth">30</setting>
+                <setting name="fieldHeight">1</setting>
                 <setting name="minChars">0</setting>
                 <setting name="maxChars">65535</setting>
             </settings>
@@ -507,7 +529,7 @@
                     <table>ca_objects</table>
                     <settings>
                         <setting name="minAttributesPerRow">0</setting>
-                        <setting name="maxAttributesPerRow">1</setting>
+                        <setting name="maxAttributesPerRow">0</setting>
                         <setting name="minimumAttributeBundlesToDisplay">1</setting>
                     </settings>
                 </restriction>
@@ -574,6 +596,22 @@
             <typeRestrictions>
                 <restriction>
                     <table>ca_objects</table>
+                    <settings>
+                        <setting name="minAttributesPerRow">0</setting>
+                        <setting name="maxAttributesPerRow">1</setting>
+                        <setting name="minimumAttributeBundlesToDisplay">1</setting>
+                    </settings>
+                </restriction>
+                <restriction>
+                    <table>ca_entities</table>
+                    <settings>
+                        <setting name="minAttributesPerRow">0</setting>
+                        <setting name="maxAttributesPerRow">1</setting>
+                        <setting name="minimumAttributeBundlesToDisplay">1</setting>
+                    </settings>
+                </restriction>
+                <restriction>
+                    <table>ca_collections</table>
                     <settings>
                         <setting name="minAttributesPerRow">0</setting>
                         <setting name="maxAttributesPerRow">1</setting>
@@ -743,7 +781,7 @@
                     <table>ca_objects</table>
                     <settings>
                         <setting name="minAttributesPerRow">0</setting>
-                        <setting name="maxAttributesPerRow">1</setting>
+                        <setting name="maxAttributesPerRow">0</setting>
                         <setting name="minimumAttributeBundlesToDisplay">1</setting>
                     </settings>
                 </restriction>
@@ -766,8 +804,8 @@
                 </label>
             </labels>
             <settings>
-                <setting name="fieldWidth">90</setting>
-                <setting name="fieldHeight">3</setting>
+                <setting name="fieldWidth">30</setting>
+                <setting name="fieldHeight">1</setting>
                 <setting name="minChars">0</setting>
                 <setting name="maxChars">65535</setting>
             </settings>
@@ -776,7 +814,7 @@
                     <table>ca_objects</table>
                     <settings>
                         <setting name="minAttributesPerRow">0</setting>
-                        <setting name="maxAttributesPerRow">1</setting>
+                        <setting name="maxAttributesPerRow">0</setting>
                         <setting name="minimumAttributeBundlesToDisplay">1</setting>
                     </settings>
                 </restriction>
@@ -814,7 +852,7 @@
                     <table>ca_objects</table>
                     <settings>
                         <setting name="minAttributesPerRow">0</setting>
-                        <setting name="maxAttributesPerRow">1</setting>
+                        <setting name="maxAttributesPerRow">0</setting>
                         <setting name="minimumAttributeBundlesToDisplay">1</setting>
                     </settings>
                 </restriction>
@@ -853,7 +891,7 @@
                     <table>ca_objects</table>
                     <settings>
                         <setting name="minAttributesPerRow">0</setting>
-                        <setting name="maxAttributesPerRow">1</setting>
+                        <setting name="maxAttributesPerRow">0</setting>
                         <setting name="minimumAttributeBundlesToDisplay">1</setting>
                     </settings>
                 </restriction>
@@ -880,8 +918,8 @@
                 </label>
             </labels>
             <settings>
-                <setting name="fieldWidth">90</setting>
-                <setting name="fieldHeight">3</setting>
+                <setting name="fieldWidth">30</setting>
+                <setting name="fieldHeight">1</setting>
                 <setting name="minChars">0</setting>
                 <setting name="maxChars">65535</setting>
             </settings>
@@ -890,7 +928,7 @@
                     <table>ca_objects</table>
                     <settings>
                         <setting name="minAttributesPerRow">0</setting>
-                        <setting name="maxAttributesPerRow">1</setting>
+                        <setting name="maxAttributesPerRow">0</setting>
                         <setting name="minimumAttributeBundlesToDisplay">1</setting>
                     </settings>
                 </restriction>
@@ -913,8 +951,8 @@
                 </label>
             </labels>
             <settings>
-                <setting name="fieldWidth">90</setting>
-                <setting name="fieldHeight">3</setting>
+                <setting name="fieldWidth">30</setting>
+                <setting name="fieldHeight">1</setting>
                 <setting name="minChars">0</setting>
                 <setting name="maxChars">65535</setting>
             </settings>
@@ -923,7 +961,7 @@
                     <table>ca_objects</table>
                     <settings>
                         <setting name="minAttributesPerRow">0</setting>
-                        <setting name="maxAttributesPerRow">1</setting>
+                        <setting name="maxAttributesPerRow">0</setting>
                         <setting name="minimumAttributeBundlesToDisplay">1</setting>
                     </settings>
                 </restriction>
@@ -977,7 +1015,15 @@
                     <table>ca_objects</table>
                     <settings>
                         <setting name="minAttributesPerRow">0</setting>
-                        <setting name="maxAttributesPerRow">1</setting>
+                        <setting name="maxAttributesPerRow">0</setting>
+                        <setting name="minimumAttributeBundlesToDisplay">1</setting>
+                    </settings>
+                </restriction>
+                <restriction>
+                    <table>ca_entities</table>
+                    <settings>
+                        <setting name="minAttributesPerRow">0</setting>
+                        <setting name="maxAttributesPerRow">0</setting>
                         <setting name="minimumAttributeBundlesToDisplay">1</setting>
                     </settings>
                 </restriction>
@@ -1009,8 +1055,8 @@
                 </label>
             </labels>
             <settings>
-                <setting name="fieldWidth">90</setting>
-                <setting name="fieldHeight">3</setting>
+                <setting name="fieldWidth">30</setting>
+                <setting name="fieldHeight">1</setting>
                 <setting name="minChars">0</setting>
                 <setting name="maxChars">65535</setting>
             </settings>
@@ -1019,7 +1065,7 @@
                     <table>ca_objects</table>
                     <settings>
                         <setting name="minAttributesPerRow">0</setting>
-                        <setting name="maxAttributesPerRow">1</setting>
+                        <setting name="maxAttributesPerRow">0</setting>
                         <setting name="minimumAttributeBundlesToDisplay">1</setting>
                     </settings>
                 </restriction>
@@ -1055,7 +1101,7 @@
             </typeRestrictions>
         </metadataElement>
 
-        <metadataElement code="rightsstate" datatype="List" list="xxcomebackxx">
+        <metadataElement code="rightsstate" datatype="List" list="rightsstatelist">
             <labels>
                 <label locale="en_US">
                     <name>Rights Statement</name>
@@ -1081,7 +1127,7 @@
                     <table>ca_objects</table>
                     <settings>
                         <setting name="minAttributesPerRow">0</setting>
-                        <setting name="maxAttributesPerRow">1</setting>
+                        <setting name="maxAttributesPerRow">0</setting>
                         <setting name="minimumAttributeBundlesToDisplay">1</setting>
                     </settings>
                 </restriction>
@@ -1103,22 +1149,21 @@
                         of
                         the
                         resource. Consider this carefully before making your selection. ---Highly
-                        sensitive –
+                        sensitive
                         refers to resource that cannot be viewed, downloaded, print nor accessed.
                         The
                         resources
                         in this category are confidential. The depositor, persons connected to the
                         project and
                         repository administrators may have access to the resource. ;Moderately
-                        sensitive
-                        –
+                        sensitivy
                         refers to resources that are to be viewed only, not to be downloaded and
                         print.
-                        Retrievers interested in accessing the resource need to fill ‘Data Retrieval
-                        Form’ to
+                        Retrievers interested in accessing the resource need to fill Data Retrieval
+                        Form to
                         justify the need for the resource. Data Retrieval Form to be assessed and
                         approved by
-                        the Principal Investigator and co-PIs ;Low sensitivity – refers to resources
+                        the Principal Investigator and co-PIs ;Low sensitivity refers to resources
                         that are to
                         be shared openly. Retrievers will be able to view, download, print and use</guideline>
                     <example>Highly sensitive, Medium sensitivity, Low sensitivity</example>
@@ -1154,9 +1199,9 @@
                     <guideline>Select the level of access that is appropriate to the resource.
                         Consider
                         this
-                        carefully before making your selection. ---Yes – refers to resources that
+                        carefully before making your selection. ---Yes refers to resources that
                         are
-                        restricted. If you choose ‘Yes’, you need to justify ;No – refers to
+                        restricted. If you choose Yes, you need to justify ;No refers to
                         resources
                         with no
                         access restriction. Resources will be made openly available.</guideline>
@@ -1246,8 +1291,8 @@
                 </label>
             </labels>
             <settings>
-                <setting name="fieldWidth">90</setting>
-                <setting name="fieldHeight">3</setting>
+                <setting name="fieldWidth">30</setting>
+                <setting name="fieldHeight">1</setting>
                 <setting name="minChars">0</setting>
                 <setting name="maxChars">65535</setting>
             </settings>
@@ -1256,7 +1301,7 @@
                     <table>ca_objects</table>
                     <settings>
                         <setting name="minAttributesPerRow">0</setting>
-                        <setting name="maxAttributesPerRow">1</setting>
+                        <setting name="maxAttributesPerRow">0</setting>
                         <setting name="minimumAttributeBundlesToDisplay">1</setting>
                     </settings>
                 </restriction>
@@ -1282,8 +1327,8 @@
                 </label>
             </labels>
             <settings>
-                <setting name="fieldWidth">90</setting>
-                <setting name="fieldHeight">3</setting>
+                <setting name="fieldWidth">30</setting>
+                <setting name="fieldHeight">1</setting>
                 <setting name="minChars">0</setting>
                 <setting name="maxChars">65535</setting>
             </settings>
@@ -1292,7 +1337,7 @@
                     <table>ca_objects</table>
                     <settings>
                         <setting name="minAttributesPerRow">0</setting>
-                        <setting name="maxAttributesPerRow">1</setting>
+                        <setting name="maxAttributesPerRow">0</setting>
                         <setting name="minimumAttributeBundlesToDisplay">1</setting>
                     </settings>
                 </restriction>
@@ -1300,7 +1345,507 @@
         </metadataElement>
 
         <!-- Participants -->
+
+        <metadataElement code="anonymised" datatype="List" list="access_statuses">
+            <labels>
+                <label locale="en_US">
+                    <name>Anonymised</name>
+                    <description>Indicate if the ‘Full name’ of the participant has been anonymised
+                        using pseudo names.</description>
+                    <entry>Boolean</entry>
+                    <dcequivalent></dcequivalent>
+                    <repeatable>Yes</repeatable>
+                    <modality>Mandatory</modality>
+                    <guideline>Please state either ‘True’ or ‘False’ to indicate if the
+                        participant’s name has been anonymised.</guideline>
+                    <example>True, False</example>
+                </label>
+            </labels>
+            <settings>
+                <setting name="fieldWidth">30</setting>
+                <setting name="fieldHeight">1</setting>
+                <setting name="minChars">0</setting>
+                <setting name="maxChars">65535</setting>
+            </settings>
+            <typeRestrictions>
+                <restriction>
+                    <table>ca_entities</table>
+                    <settings>
+                        <setting name="minAttributesPerRow">0</setting>
+                        <setting name="maxAttributesPerRow">0</setting>
+                        <setting name="minimumAttributeBundlesToDisplay">1</setting>
+                    </settings>
+                </restriction>
+            </typeRestrictions>
+        </metadataElement>
+
+        <metadataElement code="ethniccom" datatype="Text">
+            <labels>
+                <label locale="en_US">
+                    <name>Ethnic Community</name>
+                    <description>This is the ethnic group which the participant identifies with.</description>
+                    <entry>Boolean</entry>
+                    <dcequivalent></dcequivalent>
+                    <repeatable>Yes</repeatable>
+                    <modality>Optional</modality>
+                    <guideline>Provide the name of the ethnic group of the participant identifies
+                        with. This is different from nationality.</guideline>
+                    <example>Yoruba, Abazins, Albanians</example>
+                </label>
+            </labels>
+            <settings>
+                <setting name="fieldWidth">30</setting>
+                <setting name="fieldHeight">1</setting>
+                <setting name="minChars">0</setting>
+                <setting name="maxChars">65535</setting>
+            </settings>
+            <typeRestrictions>
+                <restriction>
+                    <table>ca_entities</table>
+                    <settings>
+                        <setting name="minAttributesPerRow">0</setting>
+                        <setting name="maxAttributesPerRow">0</setting>
+                        <setting name="minimumAttributeBundlesToDisplay">1</setting>
+                    </settings>
+                </restriction>
+            </typeRestrictions>
+        </metadataElement>
+
+        <metadataElement code="gender" datatype="List" list="genderl">
+            <labels>
+                <label locale="en_US">
+                    <name>Gender</name>
+                    <description>The gender that the participant identifies with.</description>
+                    <entry>String-CV (Gender)</entry>
+                    <dcequivalent></dcequivalent>
+                    <repeatable>Yes</repeatable>
+                    <modality>Optional</modality>
+                    <guideline>Provide the gender of the participant. If the appropriate gender is
+                        not listed, please add it to the vocabulary. If the participant isn't alive
+                        or they don't give that information directly, please use "Unknown" term.</guideline>
+                    <example>Male, Female, Non-binary, Prefer not to say, Unknown</example>
+                </label>
+            </labels>
+            <settings>
+                <setting name="fieldWidth">30</setting>
+                <setting name="fieldHeight">1</setting>
+                <setting name="minChars">0</setting>
+                <setting name="maxChars">65535</setting>
+            </settings>
+            <typeRestrictions>
+                <restriction>
+                    <table>ca_entities</table>
+                    <settings>
+                        <setting name="minAttributesPerRow">0</setting>
+                        <setting name="maxAttributesPerRow">0</setting>
+                        <setting name="minimumAttributeBundlesToDisplay">1</setting>
+                    </settings>
+                </restriction>
+            </typeRestrictions>
+        </metadataElement>
+
+        <metadataElement code="occupation" datatype="List" list="occupationsl">
+            <labels>
+                <label locale="en_US">
+                    <name>Occupation</name>
+                    <description>The main economic work or activity of the participant.</description>
+                    <entry>String-CV (Occupation)</entry>
+                    <dcequivalent></dcequivalent>
+                    <repeatable>Yes</repeatable>
+                    <modality>Optional</modality>
+                    <guideline>Provide the main occupation of the participant with which the
+                        participant earns a living. If the participant is anonymised, pick
+                        ‘Unknown’.</guideline>
+                    <example>Student, Architect, Conservator</example>
+                </label>
+            </labels>
+            <settings>
+                <setting name="fieldWidth">30</setting>
+                <setting name="fieldHeight">1</setting>
+                <setting name="minChars">0</setting>
+                <setting name="maxChars">65535</setting>
+            </settings>
+            <typeRestrictions>
+                <restriction>
+                    <table>ca_entities</table>
+                    <settings>
+                        <setting name="minAttributesPerRow">0</setting>
+                        <setting name="maxAttributesPerRow">0</setting>
+                        <setting name="minimumAttributeBundlesToDisplay">1</setting>
+                    </settings>
+                </restriction>
+            </typeRestrictions>
+        </metadataElement>
+
+        <metadataElement code="roles" datatype="List" list="roleslist">
+            <labels>
+                <label locale="en_US">
+                    <name>Participant Role</name>
+                    <description>The main contributing role played by the participant in the context
+                        of the project.</description>
+                    <entry>String-CV (Role)</entry>
+                    <dcequivalent></dcequivalent>
+                    <repeatable>Yes</repeatable>
+                    <modality>Mandatory</modality>
+                    <guideline>Choose from the list, a role that is the nearest to the description
+                        of you involvement in the project. If the list does not contain a suitable
+                        descriptor, you can add additional roles. The listed roles are meant to
+                        broadly categorise participants and their contributions to the project.</guideline>
+                    <example>Project leader, Collector, Monitor, Contributor, Administrator, Guest,
+                        Researcher</example>
+                </label>
+            </labels>
+            <settings>
+                <setting name="fieldWidth">30</setting>
+                <setting name="fieldHeight">1</setting>
+                <setting name="minChars">0</setting>
+                <setting name="maxChars">65535</setting>
+            </settings>
+            <typeRestrictions>
+                <restriction>
+                    <table>ca_entities</table>
+                    <settings>
+                        <setting name="minAttributesPerRow">0</setting>
+                        <setting name="maxAttributesPerRow">0</setting>
+                        <setting name="minimumAttributeBundlesToDisplay">1</setting>
+                    </settings>
+                </restriction>
+            </typeRestrictions>
+        </metadataElement>
+
+
+        <metadataElement code="email" datatype="Text">
+            <labels>
+                <label locale="en_US">
+                    <name>Email</name>
+                    <description>Email of the person.</description>
+                </label>
+            </labels>
+            <typeRestrictions>
+                <restriction>
+                    <table>ca_entities</table>
+                    <settings>
+                        <setting name="minAttributesPerRow">0</setting>
+                        <setting name="maxAttributesPerRow">0</setting>
+                        <setting name="minimumAttributeBundlesToDisplay">1</setting>
+                    </settings>
+                </restriction>
+            </typeRestrictions>
+        </metadataElement>
+        <metadataElement code="phone" datatype="Text">
+            <labels>
+                <label locale="en_US">
+                    <name>Phone number of the person.</name>
+                    <description></description>
+                </label>
+            </labels>
+            <typeRestrictions>
+                <restriction>
+                    <table>ca_entities</table>
+                    <settings>
+                        <setting name="minAttributesPerRow">0</setting>
+                        <setting name="maxAttributesPerRow">0</setting>
+                        <setting name="minimumAttributeBundlesToDisplay">1</setting>
+                    </settings>
+                </restriction>
+            </typeRestrictions>
+        </metadataElement>
+        <metadataElement code="perswebsite" datatype="Url">
+            <labels>
+                <label locale="en_US">
+                    <name>Personal website of the person.</name>
+                    <description></description>
+                </label>
+            </labels>
+            <typeRestrictions>
+                <restriction>
+                    <table>ca_entities</table>
+                    <settings>
+                        <setting name="minAttributesPerRow">0</setting>
+                        <setting name="maxAttributesPerRow">0</setting>
+                        <setting name="minimumAttributeBundlesToDisplay">1</setting>
+                    </settings>
+                </restriction>
+            </typeRestrictions>
+        </metadataElement>
+
+        <metadataElement code="affiliation" datatype="Text">
+            <labels>
+                <label locale="en_US">
+                    <name>Affiliation</name>
+                    <description>The affiliation of the participant including institution,
+                        organisation etc the lead project investigator works for.</description>
+                    <entry>String-Free text</entry>
+                    <dcequivalent></dcequivalent>
+                    <repeatable>Yes</repeatable>
+                    <modality>Optional</modality>
+                    <guideline>Provide the affiliation and country of the lead project investigator.
+                        If self-employed, enter the name of your organisation.</guideline>
+                    <example>School of Archaeology and Heritage Studies, University of Ghana</example>
+                </label>
+            </labels>
+            <settings>
+                <setting name="fieldWidth">30</setting>
+                <setting name="fieldHeight">1</setting>
+                <setting name="minChars">0</setting>
+                <setting name="maxChars">65535</setting>
+            </settings>
+            <typeRestrictions>
+                <restriction>
+                    <table>ca_entities</table>
+                    <settings>
+                        <setting name="minAttributesPerRow">0</setting>
+                        <setting name="maxAttributesPerRow">0</setting>
+                        <setting name="minimumAttributeBundlesToDisplay">1</setting>
+                    </settings>
+                </restriction>
+            </typeRestrictions>
+        </metadataElement>
+
+        <metadataElement code="biographist" datatype="Text">
+            <labels>
+                <label locale="en_US">
+                    <name>Biographical History</name>
+                    <description>Information relevant to the understanding of the life, activities,
+                        and relationships of the person.</description>
+                    <entry>String-Free text</entry>
+                    <dcequivalent></dcequivalent>
+                    <repeatable>Yes</repeatable>
+                    <modality>Optional</modality>
+                    <guideline></guideline>
+                    <example></example>
+                </label>
+            </labels>
+            <settings>
+                <setting name="fieldWidth">30</setting>
+                <setting name="fieldHeight">1</setting>
+                <setting name="minChars">0</setting>
+                <setting name="maxChars">65535</setting>
+            </settings>
+            <typeRestrictions>
+                <restriction>
+                    <table>ca_entities</table>
+                    <settings>
+                        <setting name="minAttributesPerRow">0</setting>
+                        <setting name="maxAttributesPerRow">0</setting>
+                        <setting name="minimumAttributeBundlesToDisplay">1</setting>
+                    </settings>
+                </restriction>
+            </typeRestrictions>
+        </metadataElement>
+
+        <metadataElement code="otherinfo" datatype="Text">
+            <labels>
+                <label locale="en_US">
+                    <name>Other Significant Information</name>
+                    <description>Any other important information not recorded elsewhere in the
+                        biographical history.</description>
+                    <entry>String-Free text</entry>
+                    <dcequivalent></dcequivalent>
+                    <repeatable>Yes</repeatable>
+                    <modality>Optional</modality>
+                    <guideline></guideline>
+                    <example></example>
+                </label>
+            </labels>
+            <settings>
+                <setting name="fieldWidth">30</setting>
+                <setting name="fieldHeight">1</setting>
+                <setting name="minChars">0</setting>
+                <setting name="maxChars">65535</setting>
+            </settings>
+            <typeRestrictions>
+                <restriction>
+                    <table>ca_entities</table>
+                    <settings>
+                        <setting name="minAttributesPerRow">0</setting>
+                        <setting name="maxAttributesPerRow">0</setting>
+                        <setting name="minimumAttributeBundlesToDisplay">1</setting>
+                    </settings>
+                </restriction>
+            </typeRestrictions>
+        </metadataElement>
+
+        <metadataElement code="authorities" datatype="Container">
+            <labels>
+                <label locale="en_US">
+                    <name>Authority Sources</name>
+                    <description>Link to participants record on VIAF, IF website, ORCID, Wikidata.</description>
+                    <entry>String-Free text</entry>
+                    <dcequivalent></dcequivalent>
+                    <repeatable>Yes</repeatable>
+                    <modality>Optional</modality>
+                    <guideline></guideline>
+                    <example></example>
+                </label>
+            </labels>
+            <elements>
+                <metadataElement code="authurl" datatype="Url">
+                    <labels>
+                        <label locale="en_US">
+                            <name>Source URL</name>
+                            <description>Provide the URL of the source.</description>
+                        </label>
+                    </labels>
+                    <settings>
+                        <setting name="fieldWidth">40</setting>
+                        <setting name="fieldHeight">1</setting>
+                    </settings>
+                </metadataElement>
+                <metadataElement code="authtype" datatype="List" list="authoritylist">
+                    <labels>
+                        <label locale="en_US">
+                            <name>Source Type</name>
+                            <description>Provide the source type.</description>
+                        </label>
+                    </labels>
+                    <settings>
+                        <setting name="fieldWidth">40</setting>
+                        <setting name="fieldHeight">1</setting>
+                    </settings>
+                </metadataElement>
+            </elements>
+            <typeRestrictions>
+                <restriction>
+                    <table>ca_entities</table>
+                    <settings>
+                        <setting name="minAttributesPerRow">0</setting>
+                        <setting name="maxAttributesPerRow">0</setting>
+                        <setting name="minimumAttributeBundlesToDisplay">1</setting>
+                    </settings>
+                </restriction>
+            </typeRestrictions>
+        </metadataElement>
+
         <!-- Projects -->
+
+        <metadataElement code="prjtype" datatype="List" list="prjtypelist">
+            <labels>
+                <label locale="en_US">
+                    <name>Project Type</name>
+                    <description>The name of the Imagining Futures Project Type.</description>
+                    <entry>String-CV (Project types)</entry>
+                    <dcequivalent></dcequivalent>
+                    <repeatable>Yes</repeatable>
+                    <modality>Optional</modality>
+                    <guideline>Provide the IF project type information. Choose between from the
+                        list.</guideline>
+                    <example>Start Up Projects (2020-2021)</example>
+                </label>
+            </labels>
+            <settings>
+                <setting name="fieldWidth">30</setting>
+                <setting name="fieldHeight">1</setting>
+                <setting name="minChars">0</setting>
+                <setting name="maxChars">65535</setting>
+            </settings>
+            <typeRestrictions>
+                <restriction>
+                    <table>ca_collections</table>
+                    <settings>
+                        <setting name="minAttributesPerRow">0</setting>
+                        <setting name="maxAttributesPerRow">0</setting>
+                        <setting name="minimumAttributeBundlesToDisplay">1</setting>
+                    </settings>
+                </restriction>
+            </typeRestrictions>
+        </metadataElement>
+
+        <metadataElement code="prjregion" datatype="List" list="prjregionlist">
+            <labels>
+                <label locale="en_US">
+                    <name>Project Region</name>
+                    <description>The name of the Imagining Futures Project Regions.</description>
+                    <entry>String-CV (Project types)</entry>
+                    <dcequivalent></dcequivalent>
+                    <repeatable>Yes</repeatable>
+                    <modality>Optional</modality>
+                    <guideline>Provide the IF project region information. Choose between from the
+                        list.</guideline>
+                    <example>North America</example>
+                </label>
+            </labels>
+            <settings>
+                <setting name="fieldWidth">30</setting>
+                <setting name="fieldHeight">1</setting>
+                <setting name="minChars">0</setting>
+                <setting name="maxChars">65535</setting>
+            </settings>
+            <typeRestrictions>
+                <restriction>
+                    <table>ca_collections</table>
+                    <settings>
+                        <setting name="minAttributesPerRow">0</setting>
+                        <setting name="maxAttributesPerRow">0</setting>
+                        <setting name="minimumAttributeBundlesToDisplay">1</setting>
+                    </settings>
+                </restriction>
+            </typeRestrictions>
+        </metadataElement>
+
+        <metadataElement code="ifwebpage" datatype="Url">
+            <labels>
+                <label locale="en_US">
+                    <name>IF Webpage</name>
+                    <description>A link to the project's Imagining Futures website.</description>
+                    <entry>String-Free text</entry>
+                    <dcequivalent></dcequivalent>
+                    <repeatable>No</repeatable>
+                    <modality>Strongly Suggested</modality>
+                    <guideline>Provide the URL of the project's IF webpage.</guideline>
+                    <example>https://imaginingfutures.world/projects/in-search-of-la/</example>
+                </label>
+            </labels>
+            <settings>
+                <setting name="fieldWidth">30</setting>
+                <setting name="fieldHeight">1</setting>
+                <setting name="minChars">0</setting>
+                <setting name="maxChars">65535</setting>
+            </settings>
+            <typeRestrictions>
+                <restriction>
+                    <table>ca_collections</table>
+                    <settings>
+                        <setting name="minAttributesPerRow">0</setting>
+                        <setting name="maxAttributesPerRow">0</setting>
+                        <setting name="minimumAttributeBundlesToDisplay">1</setting>
+                    </settings>
+                </restriction>
+            </typeRestrictions>
+        </metadataElement>
+
+        <metadataElement code="exwebpage" datatype="Url">
+            <labels>
+                <label locale="en_US">
+                    <name>External Website</name>
+                    <description>A link to the project's alternative website.</description>
+                    <entry>String-Free text</entry>
+                    <dcequivalent></dcequivalent>
+                    <repeatable>No</repeatable>
+                    <modality>Optional</modality>
+                    <guideline>Provide the URL of the project'ss external webpage.</guideline>
+                    <example>https://phi.history.ucla.edu/la-storymap/</example>
+                </label>
+            </labels>
+            <settings>
+                <setting name="fieldWidth">30</setting>
+                <setting name="fieldHeight">1</setting>
+                <setting name="minChars">0</setting>
+                <setting name="maxChars">65535</setting>
+            </settings>
+            <typeRestrictions>
+                <restriction>
+                    <table>ca_collections</table>
+                    <settings>
+                        <setting name="minAttributesPerRow">0</setting>
+                        <setting name="maxAttributesPerRow">0</setting>
+                        <setting name="minimumAttributeBundlesToDisplay">1</setting>
+                    </settings>
+                </restriction>
+            </typeRestrictions>
+        </metadataElement>
+        <!-- Places -->
+
         <!-- Controlled Vocabularies -->
     </elementSets>
 </profile>
