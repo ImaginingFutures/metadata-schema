@@ -2,8 +2,8 @@
 <profile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:noNamespaceSchemaLocation="profile.xsd" useForConfiguration="1" base="base"
   infoUrl="http://providence.collectiveaccess.org/wiki/DefaultProfile">
-  <profileName>OrhunsOnly</profileName>
-  <profileDescription>Orhuun profilices collection</profileDescription>
+  <profileName>IF Custom Profile</profileName>
+  <profileDescription>If Custom Profile</profileDescription>
   <locales>
     <locale lang="en" country="US">English</locale>
     <locale lang="fr" country="FR">Français</locale>
@@ -2923,14 +2923,6 @@
                   </label>
               </labels>
           </item>
-          <item idno="socialgroup_005" enabled="1" default="1">
-              <labels>
-                  <label locale="en_US" preferred="1">
-                      <name_singular>Classmates</name_singular>
-                      <name_plural>Classmates</name_plural>
-                  </label>
-              </labels>
-          </item>
           <item idno="socialgroup_006" enabled="1" default="1">
               <labels>
                   <label locale="en_US" preferred="1">
@@ -4347,8 +4339,6 @@
           </item>
       </items>
   </list>
-
-
 </lists>
 
 
@@ -4890,152 +4880,6 @@
         </typeRestrictions>
     </metadataElement>
 
-    <metadataElement code="countrym" datatype="Places">
-        <labels>
-            <label locale="en_US">
-                <name>Country</name>
-                <description>The name of the country connected to the resource, where the
-                    content of
-                    the
-                    resource took place.</description>
-                <entry>String-CV (Countries)</entry>
-                <dcequivalent>dc:coverage</dcequivalent>
-                <repeatable>Yes</repeatable>
-                <modality>Optional</modality>
-                <guideline>Provide the name of the country that is connected to the resource.</guideline>
-                <example>Argentina, Ghana, South Africa</example>
-            </label>
-        </labels>
-        <settings>
-            <setting name="fieldWidth">90</setting>
-            <setting name="fieldHeight">3</setting>
-            <setting name="minChars">0</setting>
-            <setting name="maxChars">65535</setting>
-            <setting name="restrict_to_types">country</setting>
-        </settings>
-        <typeRestrictions>
-            <restriction>
-                <table>ca_objects</table>
-                <settings>
-                    <setting name="minAttributesPerRow">0</setting>
-                    <setting name="maxAttributesPerRow">1</setting>
-                    <setting name="minimumAttributeBundlesToDisplay">1</setting>
-                </settings>
-            </restriction>
-            <restriction>
-                <table>ca_entities</table>
-                <settings>
-                    <setting name="minAttributesPerRow">0</setting>
-                    <setting name="maxAttributesPerRow">1</setting>
-                    <setting name="minimumAttributeBundlesToDisplay">1</setting>
-                </settings>
-            </restriction>
-        </typeRestrictions>
-    </metadataElement>
-    <metadataElement code="regionm" datatype="Places">
-        <labels>
-            <label locale="en_US">
-                <name>Region</name>
-                <description>The name of the region or state connected to the resource, where
-                    the
-                    content of
-                    the resource took place.</description>
-                <entry>String-Free text</entry>
-                <dcequivalent>dc:coverage</dcequivalent>
-                <repeatable>Yes</repeatable>
-                <modality>Optional</modality>
-                <guideline>Provide the name of the region/state/province that is connected to
-                    the
-                    resource.</guideline>
-                <example>Osun, Chaco, Cape coast</example>
-            </label>
-        </labels>
-        <settings>
-            <setting name="fieldWidth">90</setting>
-            <setting name="fieldHeight">3</setting>
-            <setting name="minChars">0</setting>
-            <setting name="maxChars">65535</setting>
-            <setting name="restrict_to_types">region, xxcomebackxx</setting>
-        </settings>
-        <typeRestrictions>
-            <restriction>
-                <table>ca_objects</table>
-                <settings>
-                    <setting name="minAttributesPerRow">0</setting>
-                    <setting name="maxAttributesPerRow">1</setting>
-                    <setting name="minimumAttributeBundlesToDisplay">1</setting>
-                </settings>
-            </restriction>
-        </typeRestrictions>
-    </metadataElement>
-    <metadataElement code="citym" datatype="Places">
-        <labels>
-            <label locale="en_US">
-                <name>City</name>
-                <description></description>
-                <entry>String-Free text</entry>
-                <dcequivalent>dc:coverage</dcequivalent>
-                <repeatable>Yes</repeatable>
-                <modality>Optional</modality>
-                <guideline></guideline>
-                <example></example>
-            </label>
-        </labels>
-        <settings>
-            <setting name="fieldWidth">90</setting>
-            <setting name="fieldHeight">3</setting>
-            <setting name="minChars">0</setting>
-            <setting name="maxChars">65535</setting>
-            <setting name="restrict_to_types">city</setting>
-        </settings>
-        <typeRestrictions>
-            <restriction>
-                <table>ca_objects</table>
-                <settings>
-                    <setting name="minAttributesPerRow">0</setting>
-                    <setting name="maxAttributesPerRow">1</setting>
-                    <setting name="minimumAttributeBundlesToDisplay">1</setting>
-                </settings>
-            </restriction>
-        </typeRestrictions>
-    </metadataElement>
-    <metadataElement code="addressm" datatype="Places">
-        <labels>
-            <label locale="en_US">
-                <name>Address</name>
-                <description>The name of the place/street name/area connected to the resource,
-                    where
-                    the
-                    content of the resource took place.</description>
-                <entry>String-Free text</entry>
-                <dcequivalent>dc:coverage</dcequivalent>
-                <repeatable>Yes</repeatable>
-                <modality>Strongly Suggested</modality>
-                <guideline>Provide the name of the place/street name/area that is connected to
-                    the
-                    resource.</guideline>
-                <example>Gbongan, Kishi, Sidwell Street</example>
-            </label>
-        </labels>
-        <settings>
-            <setting name="fieldWidth">90</setting>
-            <setting name="fieldHeight">3</setting>
-            <setting name="minChars">0</setting>
-            <setting name="maxChars">65535</setting>
-            <setting name="restrict_to_types">address, xxcomebackxx</setting>
-        </settings>
-        <typeRestrictions>
-            <restriction>
-                <table>ca_objects</table>
-                <settings>
-                    <setting name="minAttributesPerRow">0</setting>
-                    <setting name="maxAttributesPerRow">1</setting>
-                    <setting name="minimumAttributeBundlesToDisplay">1</setting>
-                </settings>
-            </restriction>
-        </typeRestrictions>
-    </metadataElement>
-
     <metadataElement code="coordinates" datatype="Geocode">
         <labels>
             <label locale="en_US">
@@ -5066,39 +4910,7 @@
             </restriction>
         </typeRestrictions>
     </metadataElement>
-    <metadataElement code="nongeolocm" datatype="Places">
-        <labels>
-            <label locale="en_US">
-                <name>Non-Geolocated Place</name>
-                <description>This element captures the names of places that do not have specific
-                    geographical
-                    coordinates or are of imaginary or mythical nature.</description>
-                <entry>String-Free text</entry>
-                <dcequivalent>dc:coverage</dcequivalent>
-                <repeatable>Yes</repeatable>
-                <modality>Optional</modality>
-                <guideline>Provide the name of a place or space.</guideline>
-                <example>Aztlán, Atlantis, Tattooine</example>
-            </label>
-        </labels>
-        <settings>
-            <setting name="fieldWidth">90</setting>
-            <setting name="fieldHeight">3</setting>
-            <setting name="minChars">0</setting>
-            <setting name="maxChars">65535</setting>
-            <setting name="restrict_to_types">nongeoloc, xxcomebackxx</setting>
-        </settings>
-        <typeRestrictions>
-            <restriction>
-                <table>ca_objects</table>
-                <settings>
-                    <setting name="minAttributesPerRow">0</setting>
-                    <setting name="maxAttributesPerRow">0</setting>
-                    <setting name="minimumAttributeBundlesToDisplay">1</setting>
-                </settings>
-            </restriction>
-        </typeRestrictions>
-    </metadataElement>
+        
     <metadataElement code="cultgroup" datatype="Text">
         <labels>
             <label locale="en_US">
@@ -5342,48 +5154,6 @@
         </typeRestrictions>
     </metadataElement>
 
-
-    <metadataElement code="rightsownership" datatype="Entities">
-        <labels>
-            <label locale="en_US">
-                <name>Rights Ownership</name>
-                <description>Information about the
-                    individual/community/groups/organisation who owns the
-                    rights in and over the resource.</description>
-                <entry>String-CV
-                    (Participants)</entry>
-                <dcequivalent>
-                    dc:rightsHolder</dcequivalent>
-                <repeatable>Yes</repeatable>
-                <modality>
-                    Mandatory</modality>
-                <guideline>Select
-                    the participant or community that owns the rights in and over the resource
-                    from the participants vocabulary. You can add names of
-                    individual/community/organisation
-                    that are not on the list to the vocabulary list, then here.</guideline>
-                <example>Name
-                    Surname;University of Ghana;Ilesa community</example>
-            </label>
-        </labels>
-        <settings>
-            <setting name="fieldWidth">30</setting>
-            <setting name="fieldHeight">1</setting>
-            <setting name="minChars">0</setting>
-            <setting name="maxChars">65535</setting>
-        </settings>
-        <typeRestrictions>
-            <restriction>
-                <table>ca_objects</table>
-                <settings>
-                    <setting name="minAttributesPerRow">0</setting>
-                    <setting name="maxAttributesPerRow">0</setting>
-                    <setting name="minimumAttributeBundlesToDisplay">1</setting>
-                </settings>
-            </restriction>
-        </typeRestrictions>
-    </metadataElement>
-
     <metadataElement code="licence" datatype="List" list="licencelist">
         <labels>
             <label locale="en_US">
@@ -5579,96 +5349,6 @@
                     <setting name="minimumAttributeBundlesToDisplay">1</setting>
                 </settings>
             </restriction>
-        </typeRestrictions>
-    </metadataElement>
-
-    <metadataElement code="creator" datatype="Entities">
-        <labels>
-            <label locale="en_US">
-                <name>Creator</name>
-                <description>The individual that is primarily responsible for the production of
-                    the
-                    resource.</description>
-                <entry>String-CV (Participants)</entry>
-                <dcequivalent>dc:creator</dcequivalent>
-                <repeatable>Yes</repeatable>
-                <modality>Strongly Suggested</modality>
-                <guideline>Select the participant that is primarily responsible for the
-                    production
-                    of the
-                    resource. If many participants are involved, select the lead person for the
-                    production
-                    of the resource and list other as contributors.</guideline>
-                <example>Name Surname;Name2 Surname2</example>
-            </label>
-        </labels>
-        <settings>
-            <setting name="fieldWidth">30</setting>
-            <setting name="fieldHeight">1</setting>
-            <setting name="minChars">0</setting>
-            <setting name="maxChars">65535</setting>
-        </settings>
-        <typeRestrictions>
-            <restriction>
-                <table>ca_objects</table>
-                <settings>
-                    <setting name="minAttributesPerRow">0</setting>
-                    <setting name="maxAttributesPerRow">0</setting>
-                    <setting name="minimumAttributeBundlesToDisplay">1</setting>
-                </settings>
-            </restriction>
-            <restriction>
-              <table>ca_entities</table>
-              <settings>
-                  <setting name="minAttributesPerRow">0</setting>
-                  <setting name="maxAttributesPerRow">0</setting>
-                  <setting name="minimumAttributeBundlesToDisplay">1</setting>
-              </settings>
-          </restriction>
-        </typeRestrictions>
-    </metadataElement>
-
-    <metadataElement code="contributor" datatype="Entities">
-        <labels>
-            <label locale="en_US">
-                <name>Contributors</name>
-                <description>The individuals that supported the creator or contributed to the
-                    production of
-                    the resource.</description>
-                <entry>String-CV (Participants)</entry>
-                <dcequivalent>dc:contributor</dcequivalent>
-                <repeatable>Yes</repeatable>
-                <modality>Optional</modality>
-                <guideline>List all the individuals that contributed or supported the production
-                    of
-                    the
-                    resources. Separate each contributor with commas.</guideline>
-                <example>Name Surname;Name2 Surname2</example>
-            </label>
-        </labels>
-        <settings>
-            <setting name="fieldWidth">30</setting>
-            <setting name="fieldHeight">1</setting>
-            <setting name="minChars">0</setting>
-            <setting name="maxChars">65535</setting>
-        </settings>
-        <typeRestrictions>
-            <restriction>
-                <table>ca_objects</table>
-                <settings>
-                    <setting name="minAttributesPerRow">0</setting>
-                    <setting name="maxAttributesPerRow">0</setting>
-                    <setting name="minimumAttributeBundlesToDisplay">1</setting>
-                </settings>
-            </restriction>
-            <restriction>
-              <table>ca_entities</table>
-              <settings>
-                  <setting name="minAttributesPerRow">0</setting>
-                  <setting name="maxAttributesPerRow">0</setting>
-                  <setting name="minimumAttributeBundlesToDisplay">1</setting>
-              </settings>
-          </restriction>
         </typeRestrictions>
     </metadataElement>
 
