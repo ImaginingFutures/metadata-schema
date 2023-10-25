@@ -4605,27 +4605,14 @@
         <labels>
             <label locale="en_US">
                 <name>Resource Description</name>
-                <description>A textual description of the content of the resource (knowledge
-                    profile
-                    =
-                    images; documents) in any language, including event and significance
-                    connected
-                    to the
-                    resource. Content descriptions in the case of visual resources.</description>
-                <entry>String-Free text</entry>
-                <dcequivalent>dc:description</dcequivalent>
-                <repeatable>Yes</repeatable>
-                <modality>Strongly Suggested</modality>
-                <guideline>Provide textual description of the resource in English limited to
-                    maximum
-                    of
-                    three concise sentences. Include important keywords related to the
-                    significance
-                    of the
-                    resource. Since the description field is a potentially rich source of
-                    indexable
-                    vocabulary, care should be taken to provide this element when possible.</guideline>
-                <example>Ile alo ti awon omode eya Arika lo ni odun to ti pe</example>
+                <description>A textual description of the content of the resource (knowledge profile = 
+                images; documents) in any language, including event and significance connected to the 
+                resource. Content descriptions in the case of visual resources.</description>
+                <settings>
+                  <setting name="usewysiwygeditor">1</setting>
+                  <setting name="fieldWidth">70</setting>
+                  <setting name="fieldHeight">6</setting>
+                </settings>
             </label>
         </labels>
         <settings>
