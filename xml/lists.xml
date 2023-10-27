@@ -7,8 +7,1289 @@
     <version>0.1-alpha</version>
 
     <!-- Lists-->
+    <lists>
+<!-- Default Lists-->
+
+<list code="aat_vocabulary" hierarchical="1" system="0" vocabulary="1">
+    <labels>
+      <label locale="en_US">
+        <name>Art &amp;amp; Architecture Thesaurus</name>
+      </label>
+      <label locale="fr_FR">
+        <name>Thésaurus Art &amp;amp; Architecture</name>
+      </label>
+    </labels>
+    <items />
+  </list>
+  <list code="object_sources" hierarchical="1" system="0" vocabulary="0">
+    <labels>
+      <label locale="en_US">
+        <name>Object sources</name>
+      </label>
+      <label locale="fr_FR">
+        <name>Sources d\'objet</name>
+      </label>
+    </labels>
+    <items>
+      <item idno="permanent" enabled="1" default="1">
+        <labels>
+          <label locale="en_US" preferred="1">
+            <name_singular>Permanent Collection</name_singular>
+            <name_plural>Permanent Collections</name_plural>
+          </label>
+          <label locale="fr_FR" preferred="1">
+            <name_singular>Collection permanente</name_singular>
+            <name_plural>Collections permanentes</name_plural>
+          </label>
+        </labels>
+      </item>
+      <item idno="temporary" enabled="1" default="1">
+        <labels>
+          <label locale="en_US" preferred="1">
+            <name_singular>Temporary Collection</name_singular>
+            <name_plural>Temporary Collections</name_plural>
+          </label>
+          <label locale="fr_FR" preferred="1">
+            <name_singular>Collection temporaire</name_singular>
+            <name_plural>Collections temporaires</name_plural>
+          </label>
+        </labels>
+      </item>
+      <item idno="study" enabled="1" default="1">
+        <labels>
+          <label locale="en_US" preferred="1">
+            <name_singular>Study Collection</name_singular>
+            <name_plural>Study Collections</name_plural>
+          </label>
+          <label locale="fr_FR" preferred="1">
+            <name_singular>Collection d\'étude</name_singular>
+            <name_plural>Collections d\'étude</name_plural>
+          </label>
+        </labels>
+      </item>
+      <item idno="external" enabled="1" default="1">
+        <labels>
+          <label locale="en_US" preferred="1">
+            <name_singular>External Collection</name_singular>
+            <name_plural>External Collections</name_plural>
+          </label>
+          <label locale="fr_FR" preferred="1">
+            <name_singular>Collection externe</name_singular>
+            <name_plural>Collections externes</name_plural>
+          </label>
+        </labels>
+      </item>
+    </items>
+  </list>
+
+  <list code="object_types" hierarchical="1" system="0" vocabulary="0">
+    <labels>
+      <label locale="en_US">
+        <name>Object types</name>
+      </label>
+      <label locale="fr_FR">
+        <name>Types d\'objets</name>
+      </label>
+    </labels>
+    <items>
+      <item idno="document" enabled="1" default="1">
+        <labels>
+          <label locale="en_US" preferred="1">
+            <name_singular>Document</name_singular>
+            <name_plural>Documents</name_plural>
+          </label>
+          <label locale="fr_FR" preferred="1">
+            <name_singular>Document</name_singular>
+            <name_plural>Documents</name_plural>
+          </label>
+        </labels>
+      </item>
+      <item idno="drawing" enabled="1" default="1">
+        <labels>
+          <label locale="en_US" preferred="1">
+            <name_singular>Drawing</name_singular>
+            <name_plural>Drawings</name_plural>
+          </label>
+          <label locale="fr_FR" preferred="1">
+            <name_singular>Dessin</name_singular>
+            <name_plural>Dessins</name_plural>
+          </label>
+        </labels>
+      </item>
+      <item idno="film_media" enabled="1" default="1">
+        <labels>
+          <label locale="en_US" preferred="1">
+            <name_singular>Film &amp; Media</name_singular>
+            <name_plural>Film &amp; Media</name_plural>
+          </label>
+          <label locale="fr_FR" preferred="1">
+            <name_singular>Film &amp; Média</name_singular>
+            <name_plural>Film &amp; Média</name_plural>
+          </label>
+        </labels>
+      </item>
+      <item idno="painting" enabled="1" default="1">
+        <labels>
+          <label locale="en_US" preferred="1">
+            <name_singular>Painting</name_singular>
+            <name_plural>Paintings</name_plural>
+          </label>
+          <label locale="fr_FR" preferred="1">
+            <name_singular>Peinture</name_singular>
+            <name_plural>Peintures</name_plural>
+          </label>
+        </labels>
+      </item>
+      <item idno="photography" enabled="1" default="1">
+        <labels>
+          <label locale="en_US" preferred="1">
+            <name_singular>Photography</name_singular>
+            <name_plural>Photography</name_plural>
+          </label>
+          <label locale="fr_FR" preferred="1">
+            <name_singular>Photographie</name_singular>
+            <name_plural>Photographies</name_plural>
+          </label>
+        </labels>
+      </item>
+      <item idno="print" enabled="1" default="1">
+        <labels>
+          <label locale="en_US" preferred="1">
+            <name_singular>Print</name_singular>
+            <name_plural>Prints</name_plural>
+          </label>
+          <label locale="fr_FR" preferred="1">
+            <name_singular>Imprimé</name_singular>
+            <name_plural>Imprimés</name_plural>
+          </label>
+        </labels>
+      </item>
+      <item idno="sculpture" enabled="1" default="1">
+        <labels>
+          <label locale="en_US" preferred="1">
+            <name_singular>Sculpture</name_singular>
+            <name_plural>Sculptures</name_plural>
+          </label>
+          <label locale="fr_FR" preferred="1">
+            <name_singular>Sculpture</name_singular>
+            <name_plural>Sculptures</name_plural>
+          </label>
+        </labels>
+      </item>
+      <item idno="dataset" enabled="1" default="1">
+        <labels>
+          <label locale="en_US" preferred="1">
+            <name_singular>Dataset</name_singular>
+            <name_plural>Dataset</name_plural>
+          </label>
+        </labels>
+      </item>
+      <item idno="interview" enabled="1" default="1">
+        <labels>
+          <label locale="en_US" preferred="1">
+            <name_singular>Interview</name_singular>
+            <name_plural>Interview</name_plural>
+          </label>
+        </labels>
+      </item>
+      <item idno="recipe" enabled="1" default="1">
+        <labels>
+          <label locale="en_US" preferred="1">
+            <name_singular>Recipe</name_singular>
+            <name_plural>Recipe</name_plural>
+          </label>
+        </labels>
+      </item>
+      <item idno="workshop" enabled="1" default="1">
+        <labels>
+          <label locale="en_US" preferred="1">
+            <name_singular>Workshop</name_singular>
+            <name_plural>Workshop</name_plural>
+          </label>
+        </labels>
+      </item>
+      <item idno="performance" enabled="1" default="1">
+        <labels>
+          <label locale="en_US" preferred="1">
+            <name_singular>performance</name_singular>
+            <name_plural>performance</name_plural>
+          </label>
+        </labels>
+      </item>
+      <item idno="book" enabled="1" default="1">
+        <labels>
+          <label locale="en_US" preferred="1">
+            <name_singular>Book</name_singular>
+            <name_plural>Book</name_plural>
+          </label>
+        </labels>
+      </item>
+    </items>
+  </list>
+  <list code="object_statuses" hierarchical="0" system="0" vocabulary="0">
+    <labels>
+      <label locale="en_US">
+        <name>Object status values</name>
+      </label>
+      <label locale="fr_FR">
+        <name>Valeurs de statut d\'objets</name>
+      </label>
+    </labels>
+    <items>
+      <item idno="pending_accession" enabled="1" default="1">
+        <labels>
+          <label locale="en_US" preferred="1">
+            <name_singular>pending accession</name_singular>
+            <name_plural>pending accessions</name_plural>
+          </label>
+          <label locale="fr_FR" preferred="1">
+            <name_singular>acquisition en cours</name_singular>
+            <name_plural>acquisitions en cours</name_plural>
+          </label>
+        </labels>
+      </item>
+      <item idno="accession" enabled="1" default="0">
+        <labels>
+          <label locale="en_US" preferred="1">
+            <name_singular>accessioned</name_singular>
+            <name_plural>accessioned</name_plural>
+          </label>
+          <label locale="fr_FR" preferred="1">
+            <name_singular>acquis</name_singular>
+            <name_plural>acquis</name_plural>
+          </label>
+        </labels>
+      </item>
+      <item idno="loan" enabled="1" default="0">
+        <labels>
+          <label locale="en_US" preferred="1">
+            <name_singular>loan</name_singular>
+            <name_plural>loans</name_plural>
+          </label>
+          <label locale="fr_FR" preferred="1">
+            <name_singular>prêt</name_singular>
+            <name_plural>prêts</name_plural>
+          </label>
+        </labels>
+      </item>
+      <item idno="nonaccession" enabled="1" default="0">
+        <labels>
+          <label locale="en_US" preferred="1">
+            <name_singular>non-accessioned</name_singular>
+            <name_plural>non-accessioned</name_plural>
+          </label>
+          <label locale="fr_FR" preferred="1">
+            <name_singular>non acquis</name_singular>
+            <name_plural>non acquis</name_plural>
+          </label>
+        </labels>
+      </item>
+      <item idno="potential" enabled="1" default="0">
+        <labels>
+          <label locale="en_US" preferred="1">
+            <name_singular>potential acquisition</name_singular>
+            <name_plural>potential acquisitions</name_plural>
+          </label>
+          <label locale="fr_FR" preferred="1">
+            <name_singular>acquisition possible</name_singular>
+            <name_plural>acquisitions possibles</name_plural>
+          </label>
+        </labels>
+      </item>
+    </items>
+  </list>
+  <list code="object_acq_types" hierarchical="0" system="0" vocabulary="0">
+    <labels>
+      <label locale="en_US">
+        <name>Object acquisition types</name>
+      </label>
+      <label locale="fr_FR">
+        <name>Types d\'acquisition d\'objets</name>
+      </label>
+    </labels>
+    <items>
+      <item idno="gift" enabled="1" default="1">
+        <labels>
+          <label locale="en_US" preferred="1">
+            <name_singular>gift</name_singular>
+            <name_plural>gifts</name_plural>
+          </label>
+          <label locale="fr_FR" preferred="1">
+            <name_singular>don</name_singular>
+            <name_plural>dons</name_plural>
+          </label>
+        </labels>
+      </item>
+      <item idno="bequest" enabled="1" default="0">
+        <labels>
+          <label locale="en_US" preferred="1">
+            <name_singular>bequest</name_singular>
+            <name_plural>bequests</name_plural>
+          </label>
+          <label locale="fr_FR" preferred="1">
+            <name_singular>leg</name_singular>
+            <name_plural>legs</name_plural>
+          </label>
+        </labels>
+      </item>
+      <item idno="purchase" enabled="1" default="0">
+        <labels>
+          <label locale="en_US" preferred="1">
+            <name_singular>purchase</name_singular>
+            <name_plural>purchases</name_plural>
+          </label>
+          <label locale="fr_FR" preferred="1">
+            <name_singular>achat</name_singular>
+            <name_plural>achats</name_plural>
+          </label>
+        </labels>
+      </item>
+    </items>
+  </list>
+  <list code="object_label_types" hierarchical="0" system="0" vocabulary="0">
+    <labels>
+      <label locale="en_US">
+        <name>Object label type values</name>
+      </label>
+      <label locale="fr_FR">
+        <name>Valeurs de types de libellé objet</name>
+      </label>
+    </labels>
+    <items>
+      <item idno="alt" enabled="1" default="1">
+        <labels>
+          <label locale="en_US" preferred="1">
+            <name_singular>alternate</name_singular>
+            <name_plural>alternates</name_plural>
+          </label>
+          <label locale="fr_FR" preferred="1">
+            <name_singular>alternatif</name_singular>
+            <name_plural>alternatifs</name_plural>
+          </label>
+        </labels>
+      </item>
+      <item idno="uf" enabled="1" default="0">
+        <labels>
+          <label locale="en_US" preferred="1">
+            <name_singular>use for</name_singular>
+            <name_plural>use for</name_plural>
+          </label>
+          <label locale="fr_FR" preferred="1">
+            <name_singular>utiliser pour</name_singular>
+            <name_plural>utiliser pour</name_plural>
+          </label>
+        </labels>
+      </item>
+    </items>
+  </list>
+  <list code="object_lot_types" hierarchical="1" system="0" vocabulary="0">
+    <labels>
+      <label locale="en_US">
+        <name>Object lot types</name>
+      </label>
+      <label locale="fr_FR">
+        <name>Types de lot d\'objets</name>
+      </label>
+    </labels>
+    <items>
+      <item idno="donation" enabled="1" default="0">
+        <labels>
+          <label locale="en_US" preferred="1">
+            <name_singular>donation</name_singular>
+            <name_plural>donations</name_plural>
+          </label>
+          <label locale="fr_FR" preferred="1">
+            <name_singular>donation</name_singular>
+            <name_plural>donations</name_plural>
+          </label>
+        </labels>
+      </item>
+      <item idno="loan" enabled="1" default="1">
+        <labels>
+          <label locale="en_US" preferred="1">
+            <name_singular>loan</name_singular>
+            <name_plural>loans</name_plural>
+          </label>
+          <label locale="fr_FR" preferred="1">
+            <name_singular>prêt</name_singular>
+            <name_plural>prêts</name_plural>
+          </label>
+        </labels>
+      </item>
+      <item idno="purchase" enabled="1" default="0">
+        <labels>
+          <label locale="en_US" preferred="1">
+            <name_singular>purchase</name_singular>
+            <name_plural>purchases</name_plural>
+          </label>
+          <label locale="fr_FR" preferred="1">
+            <name_singular>achat</name_singular>
+            <name_plural>achats</name_plural>
+          </label>
+        </labels>
+      </item>
+      <item idno="promise" enabled="1" default="0">
+        <labels>
+          <label locale="en_US" preferred="1">
+            <name_singular>promised gift</name_singular>
+            <name_plural>promised gifts</name_plural>
+          </label>
+          <label locale="fr_FR" preferred="1">
+            <name_singular>objet promis</name_singular>
+            <name_plural>objets promis</name_plural>
+          </label>
+        </labels>
+      </item>
+    </items>
+  </list>
+  <list code="object_lot_statuses" hierarchical="0" system="0" vocabulary="0">
+    <labels>
+      <label locale="en_US">
+        <name>Object lot status values</name>
+      </label>
+      <label locale="fr_FR">
+        <name>Valeurs de statuts pour le lot d\'objets</name>
+      </label>
+    </labels>
+    <items>
+      <item idno="pending_accession" enabled="1" default="1">
+        <labels>
+          <label locale="en_US" preferred="1">
+            <name_singular>pending accession</name_singular>
+            <name_plural>pending accessions</name_plural>
+          </label>
+          <label locale="fr_FR" preferred="1">
+            <name_singular>acquisition en cours</name_singular>
+            <name_plural>acquisitions en cours</name_plural>
+          </label>
+        </labels>
+      </item>
+      <item idno="accession" enabled="1" default="0">
+        <labels>
+          <label locale="en_US" preferred="1">
+            <name_singular>accessioned</name_singular>
+            <name_plural>accessioned</name_plural>
+          </label>
+          <label locale="fr_FR" preferred="1">
+            <name_singular>répertorié</name_singular>
+            <name_plural>répertoriés</name_plural>
+          </label>
+        </labels>
+      </item>
+      <item idno="loan" enabled="1" default="0">
+        <labels>
+          <label locale="en_US" preferred="1">
+            <name_singular>loan</name_singular>
+            <name_plural>loans</name_plural>
+          </label>
+          <label locale="fr_FR" preferred="1">
+            <name_singular>prêt</name_singular>
+            <name_plural>prêts</name_plural>
+          </label>
+        </labels>
+      </item>
+      <item idno="nonaccession" enabled="1" default="0">
+        <labels>
+          <label locale="en_US" preferred="1">
+            <name_singular>non-accessioned</name_singular>
+            <name_plural>non-accessioned</name_plural>
+          </label>
+          <label locale="fr_FR" preferred="1">
+            <name_singular>non acquis</name_singular>
+            <name_plural>non acquis</name_plural>
+          </label>
+        </labels>
+      </item>
+      <item idno="potential" enabled="1" default="0">
+        <labels>
+          <label locale="en_US" preferred="1">
+            <name_singular>potential acquisition</name_singular>
+            <name_plural>potential acquisitions</name_plural>
+          </label>
+          <label locale="fr_FR" preferred="1">
+            <name_singular>acquisition potentielle</name_singular>
+            <name_plural>acquisitions potentielles</name_plural>
+          </label>
+        </labels>
+      </item>
+      <item idno="deaccessioned" enabled="1" default="0">
+        <labels>
+          <label locale="en_US" preferred="1">
+            <name_singular>deaccessioned</name_singular>
+            <name_plural>deaccessioned</name_plural>
+          </label>
+          <label locale="fr_FR" preferred="1">
+            <name_singular>sorti de l\'inventaire</name_singular>
+            <name_plural>sortis de l\'inventaire</name_plural>
+          </label>
+        </labels>
+      </item>
+    </items>
+  </list>
+  <list code="object_lot_label_types" hierarchical="0" system="0" vocabulary="0">
+    <labels>
+      <label locale="en_US">
+        <name>Object lot label type values</name>
+      </label>
+      <label locale="fr_FR">
+        <name>Valeurs de type de libellé pour les lots d\'objets</name>
+      </label>
+    </labels>
+    <items>
+      <item idno="alt" enabled="1" default="1">
+        <labels>
+          <label locale="en_US" preferred="1">
+            <name_singular>Alternate</name_singular>
+            <name_plural>Alternates</name_plural>
+          </label>
+          <label locale="fr_FR" preferred="1">
+            <name_singular>Alternatif</name_singular>
+            <name_plural>Alternatifs</name_plural>
+          </label>
+        </labels>
+      </item>
+      <item idno="uf" enabled="1" default="0">
+        <labels>
+          <label locale="en_US" preferred="1">
+            <name_singular>use for</name_singular>
+            <name_plural>use for</name_plural>
+          </label>
+          <label locale="fr_FR" preferred="1">
+            <name_singular>utiliser pour</name_singular>
+            <name_plural>utiliser pour</name_plural>
+          </label>
+        </labels>
+      </item>
+    </items>
+  </list>
+  <list code="place_hierarchies" hierarchical="1" system="0" vocabulary="0">
+    <labels>
+      <label locale="en_US">
+        <name>Place hierarchies</name>
+      </label>
+      <label locale="fr_FR">
+        <name>Hiérarchies des lieux</name>
+      </label>
+    </labels>
+    <items>
+      <item idno="places" enabled="1" default="1">
+        <labels>
+          <label locale="en_US" preferred="1">
+            <name_singular>Place Authority</name_singular>
+            <name_plural>Place Authority</name_plural>
+          </label>
+          <label locale="fr_FR" preferred="1">
+            <name_singular>Autorité lieu</name_singular>
+            <name_plural>Autorités lieux</name_plural>
+          </label>
+        </labels>
+      </item>
+    </items>
+  </list>
+  <list code="place_sources" hierarchical="1" system="0" vocabulary="0">
+    <labels>
+      <label locale="en_US">
+        <name>Place sources</name>
+      </label>
+      <label locale="fr_FR">
+        <name>Sources de lieux</name>
+      </label>
+    </labels>
+    <items>
+      <item idno="places" enabled="1" default="1">
+        <labels>
+          <label locale="en_US" preferred="1">
+            <name_singular>Place Authority</name_singular>
+            <name_plural>Place Authority</name_plural>
+          </label>
+          <label locale="fr_FR" preferred="1">
+            <name_singular>Autorité lieu</name_singular>
+            <name_plural>Autorités lieux</name_plural>
+          </label>
+        </labels>
+      </item>
+    </items>
+  </list>
+  <list code="entity_types" hierarchical="1" system="0" vocabulary="0">
+    <labels>
+      <label locale="en_US">
+        <name>Entity types</name>
+      </label>
+      <label locale="fr_FR">
+        <name>Types d\'entités</name>
+      </label>
+    </labels>
+    <items>
+      <item idno="individual" enabled="1" default="1">
+        <labels>
+          <label locale="en_US" preferred="1">
+            <name_singular>individual</name_singular>
+            <name_plural>individuals</name_plural>
+          </label>
+          <label locale="fr_FR" preferred="1">
+            <name_singular>personne physique</name_singular>
+            <name_plural>personnes physiques</name_plural>
+          </label>
+        </labels>
+      </item>
+      <item idno="organization" enabled="1" default="0">
+        <labels>
+          <label locale="en_US" preferred="1">
+            <name_singular>organization</name_singular>
+            <name_plural>organizations</name_plural>
+          </label>
+          <label locale="fr_FR" preferred="1">
+            <name_singular>organisation</name_singular>
+            <name_plural>organisations</name_plural>
+          </label>
+        </labels>
+      </item>
+    </items>
+  </list>
+  <list code="entity_label_types" hierarchical="0" system="0" vocabulary="0">
+    <labels>
+      <label locale="en_US">
+        <name>Entity label type values</name>
+      </label>
+      <label locale="fr_FR">
+        <name>Valeurs de type de libellés d\'entité</name>
+      </label>
+    </labels>
+    <items>
+      <item idno="alt" enabled="1" default="1">
+        <labels>
+          <label locale="en_US" preferred="1">
+            <name_singular>alternate</name_singular>
+            <name_plural>alternates</name_plural>
+          </label>
+          <label locale="fr_FR" preferred="1">
+            <name_singular>alternatif</name_singular>
+            <name_plural>alternatifs</name_plural>
+          </label>
+        </labels>
+      </item>
+      <item idno="uf" enabled="1" default="0">
+        <labels>
+          <label locale="en_US" preferred="1">
+            <name_singular>use for</name_singular>
+            <name_plural>use for</name_plural>
+          </label>
+          <label locale="fr_FR" preferred="1">
+            <name_singular>utiliser pour</name_singular>
+            <name_plural>utiliser pour</name_plural>
+          </label>
+        </labels>
+      </item>
+    </items>
+  </list>
+  <list code="entity_sources" hierarchical="1" system="0" vocabulary="0">
+    <labels>
+      <label locale="en_US">
+        <name>Entity sources</name>
+      </label>
+      <label locale="fr_FR">
+        <name>Sources d\'entités</name>
+      </label>
+    </labels>
+    <items>
+      <item idno="i1" enabled="1" default="1">
+        <labels>
+          <label locale="en_US" preferred="1">
+            <name_singular>Entity Sources</name_singular>
+            <name_plural>Entity Sources</name_plural>
+          </label>
+          <label locale="fr_FR" preferred="1">
+            <name_singular>Source d\'entité</name_singular>
+            <name_plural>Sources d\'entités</name_plural>
+          </label>
+        </labels>
+      </item>
+    </items>
+  </list>
+  <list code="collection_types" hierarchical="1" system="0" vocabulary="0">
+    <labels>
+      <label locale="en_US">
+        <name>Collection types</name>
+      </label>
+      <label locale="fr_FR">
+        <name>Types de collections</name>
+      </label>
+    </labels>
+    <items>
+      <item idno="internal" enabled="1" default="1">
+        <labels>
+          <label locale="en_US" preferred="1">
+            <name_singular>Internal</name_singular>
+            <name_plural>Internal</name_plural>
+          </label>
+          <label locale="fr_FR" preferred="1">
+            <name_singular>Interne</name_singular>
+            <name_plural>Interne</name_plural>
+          </label>
+        </labels>
+      </item>
+      <item idno="external" enabled="1" default="1">
+        <labels>
+          <label locale="en_US" preferred="1">
+            <name_singular>External</name_singular>
+            <name_plural>External</name_plural>
+          </label>
+          <label locale="fr_FR" preferred="1">
+            <name_singular>Externe</name_singular>
+            <name_plural>Externes</name_plural>
+          </label>
+        </labels>
+      </item>
+    </items>
+  </list>
+  <list code="collection_sources" hierarchical="1" system="0" vocabulary="0">
+    <labels>
+      <label locale="en_US">
+        <name>Collection sources</name>
+      </label>
+      <label locale="fr_FR">
+        <name>Sources de collection</name>
+      </label>
+    </labels>
+    <items>
+      <item idno="i1" enabled="1" default="1">
+        <labels>
+          <label locale="en_US" preferred="1">
+            <name_singular>Collection Sources</name_singular>
+            <name_plural>Collection Sources</name_plural>
+          </label>
+          <label locale="fr_FR" preferred="1">
+            <name_singular>Source de collection</name_singular>
+            <name_plural>Sources de collections</name_plural>
+          </label>
+        </labels>
+      </item>
+    </items>
+  </list>
+  <list code="occurrence_types" hierarchical="1" system="0" vocabulary="0">
+    <labels>
+      <label locale="en_US">
+        <name>Occurrence types</name>
+      </label>
+      <label locale="fr_FR">
+        <name>Types d\'occurence</name>
+      </label>
+    </labels>
+    <items>
+      <item idno="exhibitions" enabled="1" default="1">
+        <labels>
+          <label locale="en_US" preferred="1">
+            <name_singular>exhibition</name_singular>
+            <name_plural>exhibitions</name_plural>
+          </label>
+        </labels>
+      </item>
+    </items>
+  </list>
+  <list code="occurrence_sources" hierarchical="1" system="0" vocabulary="0">
+    <labels>
+      <label locale="en_US">
+        <name>Occurrence sources</name>
+      </label>
+      <label locale="fr_FR">
+        <name>Sources d\'occurence</name>
+      </label>
+    </labels>
+    <items>
+      <item idno="i1" enabled="1" default="1">
+        <labels>
+          <label locale="en_US" preferred="1">
+            <name_singular>Occurrence Source</name_singular>
+            <name_plural>Occurrence Source</name_plural>
+          </label>
+          <label locale="fr_FR" preferred="1">
+            <name_singular>Source d\'occurrence</name_singular>
+            <name_plural>Sources d\'occurence</name_plural>
+          </label>
+        </labels>
+      </item>
+    </items>
+  </list>
+  <list code="storage_location_types" hierarchical="1" system="0" vocabulary="0">
+    <labels>
+      <label locale="en_US">
+        <name>Storage location types</name>
+      </label>
+      <label locale="fr_FR">
+        <name>Types de localisation</name>
+      </label>
+    </labels>
+    <items>
+      <item idno="campus" enabled="1" default="1">
+        <labels>
+          <label locale="en_US" preferred="1">
+            <name_singular>campuses</name_singular>
+            <name_plural>campuses</name_plural>
+          </label>
+          <label locale="fr_FR" preferred="1">
+            <name_singular>campus</name_singular>
+            <name_plural>campus</name_plural>
+          </label>
+        </labels>
+      </item>
+      <item idno="building" enabled="1" default="0">
+        <labels>
+          <label locale="en_US" preferred="1">
+            <name_singular>building</name_singular>
+            <name_plural>buildings</name_plural>
+          </label>
+          <label locale="fr_FR" preferred="1">
+            <name_singular>bâtiment</name_singular>
+            <name_plural>bâtiments</name_plural>
+          </label>
+        </labels>
+      </item>
+      <item idno="floor" enabled="1" default="0">
+        <labels>
+          <label locale="en_US" preferred="1">
+            <name_singular>floor</name_singular>
+            <name_plural>floors</name_plural>
+          </label>
+          <label locale="fr_FR" preferred="1">
+            <name_singular>étage</name_singular>
+            <name_plural>étages</name_plural>
+          </label>
+        </labels>
+      </item>
+      <item idno="room" enabled="1" default="0">
+        <labels>
+          <label locale="en_US" preferred="1">
+            <name_singular>room</name_singular>
+            <name_plural>rooms</name_plural>
+          </label>
+          <label locale="fr_FR" preferred="1">
+            <name_singular>salle</name_singular>
+            <name_plural>salle</name_plural>
+          </label>
+        </labels>
+      </item>
+      <item idno="cabinet" enabled="1" default="0">
+        <labels>
+          <label locale="en_US" preferred="1">
+            <name_singular>cabinet</name_singular>
+            <name_plural>cabinets</name_plural>
+          </label>
+          <label locale="fr_FR" preferred="1">
+            <name_singular>armoire</name_singular>
+            <name_plural>armoires</name_plural>
+          </label>
+        </labels>
+      </item>
+      <item idno="drawer" enabled="1" default="0">
+        <labels>
+          <label locale="en_US" preferred="1">
+            <name_singular>drawer</name_singular>
+            <name_plural>drawer</name_plural>
+          </label>
+          <label locale="fr_FR" preferred="1">
+            <name_singular>étagère</name_singular>
+            <name_plural>étagères</name_plural>
+          </label>
+        </labels>
+      </item>
+    </items>
+  </list>
+  <list code="dimension_types" hierarchical="0" system="0" vocabulary="0">
+    <labels>
+      <label locale="en_US">
+        <name>Dimension types</name>
+      </label>
+      <label locale="fr_FR">
+        <name>Types de dimension</name>
+      </label>
+    </labels>
+    <items>
+      <item idno="overall_dimensions" enabled="1" default="1">
+        <labels>
+          <label locale="en_US" preferred="1">
+            <name_singular>Overall dimensions</name_singular>
+            <name_plural>Overall dimensions</name_plural>
+          </label>
+          <label locale="fr_FR" preferred="1">
+            <name_singular>Dimension totale</name_singular>
+            <name_plural>Dimensions totales</name_plural>
+          </label>
+        </labels>
+      </item>
+      <item idno="shipping_dimensions" enabled="1" default="0">
+        <labels>
+          <label locale="en_US" preferred="1">
+            <name_singular>Shipping dimensions</name_singular>
+            <name_plural>Shipping dimensions</name_plural>
+          </label>
+          <label locale="fr_FR" preferred="1">
+            <name_singular>Dimension pour expédition</name_singular>
+            <name_plural>Dimensions pour expédition</name_plural>
+          </label>
+        </labels>
+      </item>
+    </items>
+  </list>
+  <list code="alternate_pub_number_types" hierarchical="0" system="0" vocabulary="0">
+    <labels>
+      <label locale="en_US">
+        <name>Alternate Publication Number Types</name>
+      </label>
+      <label locale="fr_FR">
+        <name>Autres types de numérotations de publication</name>
+      </label>
+    </labels>
+    <items>
+      <item idno="issn" enabled="1" default="1">
+        <labels>
+          <label locale="en_US" preferred="1">
+            <name_singular>ISSN</name_singular>
+            <name_plural>ISSN</name_plural>
+          </label>
+          <label locale="fr_FR" preferred="1">
+            <name_singular>ISSN</name_singular>
+            <name_plural>ISSN</name_plural>
+          </label>
+        </labels>
+      </item>
+      <item idno="isbn" enabled="1" default="0">
+        <labels>
+          <label locale="en_US" preferred="1">
+            <name_singular>ISBN</name_singular>
+            <name_plural>ISBN</name_plural>
+          </label>
+          <label locale="fr_FR" preferred="1">
+            <name_singular>ISBN</name_singular>
+            <name_plural>ISBN</name_plural>
+          </label>
+        </labels>
+      </item>
+    </items>
+  </list>
+  <list code="conditions" hierarchical="0" system="0" vocabulary="0">
+    <labels>
+      <label locale="en_US">
+        <name>Condition values</name>
+      </label>
+      <label locale="fr_FR">
+        <name>Etat de conservation</name>
+      </label>
+    </labels>
+    <items>
+      <item idno="excellent" enabled="1" default="1">
+        <labels>
+          <label locale="en_US" preferred="1">
+            <name_singular>excellent</name_singular>
+            <name_plural>excellent</name_plural>
+          </label>
+          <label locale="fr_FR" preferred="1">
+            <name_singular>excellent</name_singular>
+            <name_plural>excellent</name_plural>
+          </label>
+        </labels>
+      </item>
+      <item idno="good" enabled="1" default="0">
+        <labels>
+          <label locale="en_US" preferred="1">
+            <name_singular>good</name_singular>
+            <name_plural>good</name_plural>
+          </label>
+          <label locale="fr_FR" preferred="1">
+            <name_singular>bon</name_singular>
+            <name_plural>bon</name_plural>
+          </label>
+        </labels>
+      </item>
+      <item idno="fair" enabled="1" default="0">
+        <labels>
+          <label locale="en_US" preferred="1">
+            <name_singular>fair</name_singular>
+            <name_plural>fair</name_plural>
+          </label>
+          <label locale="fr_FR" preferred="1">
+            <name_singular>assez bon</name_singular>
+            <name_plural>assez bon</name_plural>
+          </label>
+        </labels>
+      </item>
+      <item idno="poor" enabled="1" default="0">
+        <labels>
+          <label locale="en_US" preferred="1">
+            <name_singular>poor</name_singular>
+            <name_plural>poor</name_plural>
+          </label>
+          <label locale="fr_FR" preferred="1">
+            <name_singular>mauvais</name_singular>
+            <name_plural>mauvais</name_plural>
+          </label>
+        </labels>
+      </item>
+    </items>
+  </list>
+  <list code="color_type" hierarchical="0" system="0" vocabulary="0">
+    <labels>
+      <label locale="en_US">
+        <name>Color type</name>
+      </label>
+      <label locale="fr_FR">
+        <name>Couleur</name>
+      </label>
+    </labels>
+    <items>
+      <item idno="bw" enabled="1" default="1">
+        <labels>
+          <label locale="en_US" preferred="1">
+            <name_singular>black and white</name_singular>
+            <name_plural>black and white</name_plural>
+          </label>
+          <label locale="fr_FR" preferred="1">
+            <name_singular>noir et blanc</name_singular>
+            <name_plural>noir et blanc</name_plural>
+          </label>
+        </labels>
+      </item>
+      <item idno="color" enabled="1" default="0">
+        <labels>
+          <label locale="en_US" preferred="1">
+            <name_singular>color</name_singular>
+            <name_plural>color</name_plural>
+          </label>
+          <label locale="fr_FR" preferred="1">
+            <name_singular>couleur</name_singular>
+            <name_plural>couleur</name_plural>
+          </label>
+        </labels>
+      </item>
+      <item idno="null" enabled="1" default="0">
+        <labels>
+          <label locale="en_US" preferred="1">
+            <name_singular>null</name_singular>
+            <name_plural>null</name_plural>
+          </label>
+          <label locale="fr_FR" preferred="1">
+            <name_singular>non concerné</name_singular>
+            <name_plural>non concerné</name_plural>
+          </label>
+        </labels>
+      </item>
+    </items>
+  </list>
+  <list code="address_type" hierarchical="0" system="0" vocabulary="0">
+    <labels>
+      <label locale="en_US">
+        <name>Address type</name>
+      </label>
+      <label locale="fr_FR">
+        <name>Type d\'adresse</name>
+      </label>
+    </labels>
+    <items>
+      <item idno="home" enabled="1" default="1">
+        <labels>
+          <label locale="en_US" preferred="1">
+            <name_singular>home</name_singular>
+            <name_plural>home</name_plural>
+          </label>
+          <label locale="fr_FR" preferred="1">
+            <name_singular>domicile</name_singular>
+            <name_plural>domicile</name_plural>
+          </label>
+        </labels>
+      </item>
+      <item idno="work" enabled="1" default="0">
+        <labels>
+          <label locale="en_US" preferred="1">
+            <name_singular>work</name_singular>
+            <name_plural>work</name_plural>
+          </label>
+          <label locale="fr_FR" preferred="1">
+            <name_singular>travail</name_singular>
+            <name_plural>travail</name_plural>
+          </label>
+        </labels>
+      </item>
+      <item idno="other" enabled="1" default="0">
+        <labels>
+          <label locale="en_US" preferred="1">
+            <name_singular>other</name_singular>
+            <name_plural>other</name_plural>
+          </label>
+          <label locale="fr_FR" preferred="1">
+            <name_singular>autre</name_singular>
+            <name_plural>autres</name_plural>
+          </label>
+        </labels>
+      </item>
+    </items>
+  </list>
+  <list code="date_types" hierarchical="0" system="0" vocabulary="0">
+    <labels>
+      <label locale="en_US">
+        <name>Date types</name>
+      </label>
+      <label locale="fr_FR">
+        <name>Types de dates</name>
+      </label>
+    </labels>
+    <items>
+      <item idno="created" enabled="1" default="1">
+        <labels>
+          <label locale="en_US" preferred="1">
+            <name_singular>created</name_singular>
+            <name_plural>created</name_plural>
+          </label>
+          <label locale="fr_FR" preferred="1">
+            <name_singular>créé</name_singular>
+            <name_plural>créés</name_plural>
+          </label>
+        </labels>
+      </item>
+      <item idno="published" enabled="1" default="0">
+        <labels>
+          <label locale="en_US" preferred="1">
+            <name_singular>published</name_singular>
+            <name_plural>published</name_plural>
+          </label>
+          <label locale="fr_FR" preferred="1">
+            <name_singular>publié</name_singular>
+            <name_plural>publiés</name_plural>
+          </label>
+        </labels>
+      </item>
+      <item idno="exhibited" enabled="1" default="0">
+        <labels>
+          <label locale="en_US" preferred="1">
+            <name_singular>exhibited</name_singular>
+            <name_plural>exhibited</name_plural>
+          </label>
+          <label locale="fr_FR" preferred="1">
+            <name_singular>exposé</name_singular>
+            <name_plural>exposés</name_plural>
+          </label>
+        </labels>
+      </item>
+      <item idno="organized" enabled="1" default="0">
+        <labels>
+          <label locale="en_US" preferred="1">
+            <name_singular>organized</name_singular>
+            <name_plural>organized</name_plural>
+          </label>
+          <label locale="fr_FR" preferred="1">
+            <name_singular>organisé</name_singular>
+            <name_plural>organisés</name_plural>
+          </label>
+        </labels>
+      </item>
+      <item idno="edited" enabled="1" default="0">
+        <labels>
+          <label locale="en_US" preferred="1">
+            <name_singular>edited</name_singular>
+            <name_plural>edited</name_plural>
+          </label>
+          <label locale="fr_FR" preferred="1">
+            <name_singular>modifié</name_singular>
+            <name_plural>modifiés</name_plural>
+          </label>
+        </labels>
+      </item>
+      <item idno="reviewed" enabled="1" default="0">
+        <labels>
+          <label locale="en_US" preferred="1">
+            <name_singular>reviewed</name_singular>
+            <name_plural>reviewed</name_plural>
+          </label>
+          <label locale="fr_FR" preferred="1">
+            <name_singular>examiné</name_singular>
+            <name_plural>examinés</name_plural>
+          </label>
+        </labels>
+      </item>
+      <item idno="valid" enabled="1" default="0">
+        <labels>
+          <label locale="en_US" preferred="1">
+            <name_singular>valid</name_singular>
+            <name_plural>valid</name_plural>
+          </label>
+          <label locale="fr_FR" preferred="1">
+            <name_singular>validé</name_singular>
+            <name_plural>validés</name_plural>
+          </label>
+        </labels>
+      </item>
+      <item idno="available" enabled="1" default="0">
+        <labels>
+          <label locale="en_US" preferred="1">
+            <name_singular>available</name_singular>
+            <name_plural>available</name_plural>
+          </label>
+          <label locale="fr_FR" preferred="1">
+            <name_singular>disponible</name_singular>
+            <name_plural>disponibles</name_plural>
+          </label>
+        </labels>
+      </item>
+      <item idno="issued" enabled="1" default="0">
+        <labels>
+          <label locale="en_US" preferred="1">
+            <name_singular>issued</name_singular>
+            <name_plural>issued</name_plural>
+          </label>
+          <label locale="fr_FR" preferred="1">
+            <name_singular>paru</name_singular>
+            <name_plural>parus</name_plural>
+          </label>
+        </labels>
+      </item>
+      <item idno="birthdate" enabled="1" default="0">
+        <labels>
+          <label locale="en_US" preferred="1">
+            <name_singular>birthdate</name_singular>
+            <name_plural>birthdate</name_plural>
+          </label>
+        </labels>
+      </item>
+      <item idno="digitised" enabled="1" default="0">
+        <labels>
+          <label locale="en_US" preferred="1">
+            <name_singular>digitised</name_singular>
+            <name_plural>digitised</name_plural>
+          </label>
+        </labels>
+      </item>
+    </items>
+  </list>
+  <list code="object_media_license_types" hierarchical="0" system="0" vocabulary="0">
+    <labels>
+      <label locale="en_US">
+        <name>Object media license types</name>
+      </label>
+      <label locale="fr_FR">
+        <name>Type de licence des médias objet</name>
+      </label>
+    </labels>
+    <items>
+      <item idno="gvsu" enabled="1" default="1">
+        <labels>
+          <label locale="en_US" preferred="1">
+            <name_singular>Physical rights are retained by (your institution name here). Copyright
+              is retained in accordance with U.S. Copyright laws.</name_singular>
+            <name_plural>Physical rights are retained by (your institution name here). Copyright
+              is retained in accordance with U.S. Copyright laws.</name_plural>
+          </label>
+          <label locale="fr_FR" preferred="1">
+            <name_singular>Les droits sont réservés par (le nom de votre institution). Droits de
+              reproduction réservés en accord avec les lois sur le Copyright des Etats-Unis.</name_singular>
+            <name_plural>Les droits sont réservés par (le nom de votre institution). Droits de
+              reproduction réservés en accord avec les lois sur le Copyright des Etats-Unis.</name_plural>
+          </label>
+        </labels>
+      </item>
+    </items>
+  </list>
+
+
  <!-- IF Custom Lists-->
-<lists>
+
     <!-- 01_Languages -->
 
     <list code="languageslist" hierarchical="0" system="0" vocabulary="1">
@@ -25,6 +1306,9 @@
                         <name_plural>Abkhazian</name_plural>
                     </label>
                 </labels>
+                <options>
+                    <option code="access_type_public" type="config" enabled="1" value="1" />
+                </options>
             </item>
             <item idno="OM" enabled="1" default="1">
                 <labels>
