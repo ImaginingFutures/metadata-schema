@@ -10,18 +10,18 @@
 
 <userInterfaces>
 
-  <!-- Objects-->
+<!-- Objects-->
 
-  <userInterfaces>
+<userInterfaces>
 
-    <userInterface code="objects_ui" type="ca_objects">
-      <labels>
-        <label locale="en_US">
-          <name>Standard object editor</name>
-        </label>
-      </labels>
-      <screens>
-        <screen idno="identifierscr" default="0">
+  <userInterface code="objects_ui" type="ca_objects">
+    <labels>
+      <label locale="en_US">
+        <name>Standard object editor</name>
+      </label>
+    </labels>
+    <screens>
+      <screen idno="identifierscr" default="0">
             <labels>
               <label locale="en_US">
                 <name>Identifiers</name>
@@ -49,9 +49,12 @@
               <placement code="ca_attribute_exlink">
                 <bundle>ca_attribute_exlink</bundle>
               </placement>
+              <placement code="access">
+                <bundle>access</bundle>
+              </placement>
             </bundlePlacements>
           </screen>
-        <screen idno="scopeandcontentscr" default="0">
+      <screen idno="scopeandcontentscr" default="0">
             <labels>
               <label locale="en_US">
                 <name>Scope and Content</name>
@@ -78,7 +81,7 @@
               </placement>
             </bundlePlacements>
           </screen>
-        <screen idno="spatialscr" default="0">
+      <screen idno="spatialscr" default="0">
             <labels>
               <label locale="en_US">
                 <name>Spatial Coverage</name>
@@ -96,7 +99,7 @@
               </placement>
             </bundlePlacements>
           </screen>
-        <screen idno="datescr" default="0">
+      <screen idno="datescr" default="0">
             <labels>
               <label locale="en_US">
                 <name>Dates</name>
@@ -108,7 +111,7 @@
               </placement>
             </bundlePlacements>
           </screen>
-        <screen idno="socioculturalscr" default="0">
+      <screen idno="socioculturalscr" default="0">
                 <labels>
                   <label locale="en_US">
                     <name>Socio-cultural Context</name>
@@ -126,7 +129,7 @@
                     </placement>
                 </bundlePlacements>
               </screen>
-        <screen idno="technologyscr" default="0">
+      <screen idno="technologyscr" default="0">
                 <labels>
                   <label locale="en_US">
                     <name>Production Technique</name>
@@ -141,7 +144,7 @@
                   </placement>
                 </bundlePlacements>
               </screen>
-        <screen idno="intellectualpropertyscr" default="0">
+      <screen idno="intellectualpropertyscr" default="0">
                       <labels>
                         <label locale="en_US">
                           <name>Intellectual Property</name>
@@ -162,7 +165,7 @@
                           </placement>
                       </bundlePlacements>
                     </screen>
-        <screen idno="accessandsensitivity" default="0">
+      <screen idno="accessandsensitivity" default="0">
                       <labels>
                         <label locale="en_US">
                           <name>Access and Sensitivity</name>
@@ -177,7 +180,7 @@
                         </placement>
                       </bundlePlacements>
                     </screen>
-        <screen idno="media" default="0">
+      <screen idno="media" default="0">
                       <labels>
                         <label locale="en_US">
                           <name>Media</name>
@@ -189,8 +192,8 @@
                         </placement>
                       </bundlePlacements>
                     </screen>
-      </screens>
-    </userInterface>
+    </screens>
+  </userInterface>
 
   <!-- Entities-->
 
@@ -264,6 +267,9 @@
             </placement>
             <placement code="ca_attribute_authorities">
               <bundle>ca_attribute_authorities</bundle>
+            </placement>
+            <placement code="access">
+              <bundle>access</bundle>
             </placement>
           </bundlePlacements>
         </screen>
@@ -388,16 +394,16 @@
     </screens>
   </userInterface>
 
-<!-- Places -->
+  <!-- Places -->
 
- <userInterface code="places_ui" type="ca_places">
-      <labels>
-        <label locale="en_US">
-          <name>Place editor</name>
-        </label>
-      </labels>
-      <screens>
-        <screen idno="basic" default="1">
+  <userInterface code="places_ui" type="ca_places">
+    <labels>
+      <label locale="en_US">
+        <name>Place editor</name>
+      </label>
+    </labels>
+    <screens>
+      <screen idno="basic" default="1">
           <labels>
             <label locale="en_US">
               <name>Basic info</name>
@@ -428,7 +434,7 @@
             </placement>
           </bundlePlacements>
         </screen>
-        <screen idno="relationships" default="0">
+      <screen idno="relationships" default="0">
           <labels>
             <label locale="en_US">
               <name>Relationships</name>
@@ -455,8 +461,144 @@
             </placement>
           </bundlePlacements>
         </screen>
-      </screens>
-    </userInterface>
-    
+    </screens>
+  </userInterface>
+
+<!-- Occurrences (Themes Test)-->
+
+  <userInterface code="occurrences_ui" type="ca_occurrences">
+    <labels>
+      <label locale="en_US">
+        <name>Occurrences editor</name>
+      </label>
+    </labels>
+    <screens>
+      <screen idno="basic" default="1">
+        <labels>
+          <label locale="en_US">
+            <name>Basic info</name>
+          </label>
+        </labels>
+        <bundlePlacements>
+          <placement code="preferred_labels">
+            <bundle>preferred_labels</bundle>
+            <settings>
+              <setting name="label" locale="en_US">Title</setting>
+            </settings>
+          </placement>
+          <placement code="idno">
+            <bundle>idno</bundle>
+          </placement>
+          <placement code="access">
+            <bundle>access</bundle>
+          </placement>
+          <placement code="status">
+            <bundle>status</bundle>
+          </placement>
+          <placement code="source_id">
+            <bundle>source_id</bundle>
+          </placement>
+          <placement code="nonpreferred_labels">
+            <bundle>nonpreferred_labels</bundle>
+            <settings>
+              <setting name="label" locale="en_US">Alternate titles</setting>
+            </settings>
+          </placement>
+          <placement code="ca_attribute_date">
+            <bundle>ca_attribute_date</bundle>
+          </placement>
+          <placement code="ca_attribute_description">
+            <bundle>ca_attribute_description</bundle>
+          </placement>
+          <placement code="ca_attribute_citation">
+            <bundle>ca_attribute_citation</bundle>
+          </placement>
+          <placement code="ca_attribute_publication_info">
+            <bundle>ca_attribute_publication_info</bundle>
+          </placement>
+          <placement code="ca_attribute_alternate_pub_numbers">
+            <bundle>ca_attribute_alternate_pub_numbers</bundle>
+          </placement>
+          <placement code="ca_attribute_rights">
+            <bundle>ca_attribute_rights</bundle>
+          </placement>
+          <placement code="ca_entities">
+            <bundle>ca_entities</bundle>
+          </placement>
+          <placement code="ca_occurrences">
+            <bundle>ca_occurrences</bundle>
+          </placement>
+          <placement code="ca_attribute_internal_notes">
+            <bundle>ca_attribute_internal_notes</bundle>
+          </placement>
+          <placement code="ca_attribute_external_link">
+            <bundle>ca_attribute_external_link</bundle>
+            <settings>
+              <setting name="add_label" locale="en_US">Add external link</setting>
+            </settings>
+          </placement>
+        </bundlePlacements>
+      </screen>
+      <screen idno="relationships" default="0">
+        <labels>
+          <label locale="en_US">
+            <name>Relationships</name>
+          </label>
+        </labels>
+        <bundlePlacements>
+          <placement code="ca_objects">
+            <bundle>ca_objects</bundle>
+          </placement>
+          <placement code="ca_entities">
+            <bundle>ca_entities</bundle>
+          </placement>
+          <placement code="ca_occurrences">
+            <bundle>ca_occurrences</bundle>
+          </placement>
+          <placement code="ca_collections">
+            <bundle>ca_collections</bundle>
+          </placement>
+        </bundlePlacements>
+      </screen>
+      <screen idno="location" default="0">
+        <labels>
+          <label locale="en_US">
+            <name>Location</name>
+          </label>
+        </labels>
+        <bundlePlacements>
+          <placement code="ca_places">
+            <bundle>ca_places</bundle>
+          </placement>
+          <placement code="ca_attribute_georeference">
+            <bundle>ca_attribute_georeference</bundle>
+          </placement>
+          <placement code="ca_attribute_geonames">
+            <bundle>ca_attribute_geonames</bundle>
+          </placement>
+        </bundlePlacements>
+      </screen>
+      <screen idno="keywords" default="0">
+        <labels>
+          <label locale="en_US">
+            <name>Keywords</name>
+          </label>
+        </labels>
+        <bundlePlacements>
+          <placement code="ca_list_items">
+            <bundle>ca_list_items</bundle>
+          </placement>
+          <placement code="ca_attribute_lcsh_terms">
+            <bundle>ca_attribute_lcsh_terms</bundle>
+            <settings>
+              <setting name="label" locale="en_US">Library of Congress Subject Headings</setting>
+              <setting name="add_label" locale="en_US">Add new subject heading</setting>
+            </settings>
+          </placement>
+        </bundlePlacements>
+      </screen>
+    </screens>
+  </userInterface>
+
 
 </userInterfaces>
