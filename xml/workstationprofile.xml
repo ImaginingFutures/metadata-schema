@@ -1,7 +1,5 @@
-<?xml version="1.0" encoding="utf-8"?>
-<profile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:noNamespaceSchemaLocation="profile.xsd" useForConfiguration="1" base="base"
-  infoUrl="http://providence.collectiveaccess.org/wiki/DefaultProfile">
+<?xml version='1.0' encoding='utf-8'?>
+<profile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="profile.xsd" useForConfiguration="1" base="base" infoUrl="http://providence.collectiveaccess.org/wiki/DefaultProfile">
   <profileName>IF Custom Profile</profileName>
   <profileDescription>If Custom Profile</profileDescription>
   <locales>
@@ -1266,9 +1264,9 @@
       </items>
     </list>
 
-    <!-- IF Custom Lists-->
+    
 
-    <!-- 01_Languages -->
+    
 
     <list code="languageslist" hierarchical="0" system="0" vocabulary="1">
       <labels>
@@ -2368,7 +2366,7 @@
       </items>
   </list>
 
-  <!-- 02_Themes -->
+  
 
   <list code="themeslist" hierarchical="0" system="0" vocabulary="1">
       <labels>
@@ -2621,7 +2619,7 @@
   </list>
 
 
-  <!-- 03_Cultural Context -->
+  
 
   <list code="cultcontlist" hierarchical="0" system="0" vocabulary="1">
       <labels>
@@ -2882,7 +2880,7 @@
   </list>
 
 
-  <!-- 04_Social Groups-->
+  
 
   <list code="socialgrouplist" hierarchical="0" system="0" vocabulary="1">
       <labels>
@@ -3198,7 +3196,7 @@
       </items>
   </list>
 
-  <!-- 05_Licences -->
+  
 
   <list code="licencelist" hierarchical="0" system="0" vocabulary="1">
       <labels>
@@ -3290,7 +3288,7 @@
       </items>
   </list>
 
-  <!-- 06_Gender -->
+  
 
   <list code="genderl" hierarchical="0" system="0" vocabulary="1">
       <labels>
@@ -3334,7 +3332,7 @@
       </items>
   </list>
 
-  <!-- 07_Cultural Sensitivity -->
+  
 
   <list code="cultsenslist" hierarchical="0" system="0" vocabulary="1">
       <labels>
@@ -3383,7 +3381,7 @@
   </list>
 
 
-  <!-- 08_Occupations-->
+  
 
   <list code="occupationsl" hierarchical="0" system="0" vocabulary="1">
       <labels>
@@ -3915,7 +3913,7 @@
       </items>
   </list>
 
-  <!-- 09_Project Types-->
+  
 
   <list code="prjtypelist" hierarchical="0" system="0" vocabulary="1">
       <labels>
@@ -3967,7 +3965,7 @@
       </items>
   </list>
 
-  <!-- 10_Project Regions-->
+  
 
   <list code="prjregionlist" hierarchical="0" system="0" vocabulary="1">
       <labels>
@@ -4028,7 +4026,7 @@
   </list>
 
 
-  <!-- 11_Rights Statement-->
+  
 
   <list code="rightsstatelist" hierarchical="0" system="0" vocabulary="1">
       <labels>
@@ -4196,7 +4194,7 @@
   </list>
 
 
-  <!-- 12_Roles-->
+  
 
   <list code="roleslist" hierarchical="0" system="0" vocabulary="1">
       <labels>
@@ -4264,7 +4262,7 @@
       </items>
   </list>
 
-  <!-- 13_Language Types-->
+  
 
   <list code="langlabellist" hierarchical="0" system="0" vocabulary="1">
       <labels>
@@ -4292,7 +4290,7 @@
       </items>
   </list>
 
-  <!-- 14_Authority Sources-->
+  
 
   <list code="authoritylist" hierarchical="0" system="0" vocabulary="1">
       <labels>
@@ -4343,23 +4341,14 @@
 
 
   <elementSets>
-    <!-- Resources -->
+    
     <metadataElement code="idno" datatype="Text">
         <labels>
             <label locale="en_US">
                 <name>Unique Record Identifier</name>
                 <description>An alphanumeric identifier for the record created for the IF
                     Repository.</description>
-                <entry>String-CV. Derived from Projects ID</entry>
-                <dcequivalent>dc:identifier</dcequivalent>
-                <repeatable>No</repeatable>
-                <modality>Mandatory</modality>
-                <guideline>The PIs of each project will receive a pre-assigned unique project
-                    identifier.
-                    Unique
-                    ID's derivered from that ID and adding 4 digit secuential numbers.</guideline>
-                <example>UFC00800001</example>
-            </label>
+                </label>
         </labels>
         <settings>
             <setting name="fieldWidth">90</setting>
@@ -4402,21 +4391,7 @@
                 <description>Shows the parent collection or object which this record related
                     to/part
                     of.</description>
-                <entry>String-Free text</entry>
-                <dcequivalent></dcequivalent>
-                <repeatable>No</repeatable>
-                <modality>Optional</modality>
-                <guideline>International or local identifiers associated with the original
-                    material.</guideline>
-                <example>CO 1/25 (National Archives Reference), 309.6 P.97 (Dewey Classification
-                    Number),
-                    AGN
-                    COL CI Folder 75, Document 2 (ISADG classification), 2019SG07-0239 (Unique
-                    ID of
-                    a
-                    digital
-                    collection)</example>
-            </label>
+                </label>
         </labels>
         <settings>
             <setting name="fieldWidth">90</setting>
@@ -4443,14 +4418,7 @@
                 <description>Shows the parent collection or object which this record related
                     to/part
                     of.</description>
-                <entry>String-CV (Projects)</entry>
-                <dcequivalent>dc:isPartOf</dcequivalent>
-                <repeatable>Yes</repeatable>
-                <modality>Mandatory</modality>
-                <guideline>Provide the name of the project as it is on the "Projects" sheet.</guideline>
-                <example>Vernacular Songs as Archives and Modes of Social Redress in Jamestown,
-                    Accra</example>
-            </label>
+                </label>
         </labels>
         <settings>
             <setting name="fieldWidth">90</setting>
@@ -4476,18 +4444,7 @@
                 <name>Resource Title Preferred</name>
                 <description>The name given to the resource by the Creator (depositor) in any
                     language.</description>
-                <entry>String-Free text</entry>
-                <dcequivalent>dc:title</dcequivalent>
-                <repeatable>No</repeatable>
-                <modality>Mandatory</modality>
-                <guideline>Provide a short title for the resource in any language. Do not use
-                    any
-                    punctuation.
-                    Only capitalize the first alphabet of the project title, acronyms and any
-                    personal and
-                    geographic names.</guideline>
-                <example>Aso wiwo awon obinrin ile Yoruba</example>
-            </label>
+                </label>
         </labels>
         <settings>
             <setting name="fieldWidth">90</setting>
@@ -4512,15 +4469,7 @@
                 <name>Resource Title Alternative</name>
                 <description>The name given to the resource by the Creator (depositor) in other
                     language.</description>
-                <entry>String-Free text</entry>
-                <dcequivalent>dc:alternative</dcequivalent>
-                <repeatable>No</repeatable>
-                <modality>Optional</modality>
-                <guideline>Provide a translation or modified version of the title attributed to
-                    the
-                    record.</guideline>
-                <example>Local-made cloth of a typical Ghanian lady</example>
-            </label>
+                </label>
         </labels>
         <settings>
             <setting name="fieldWidth">90</setting>
@@ -4544,13 +4493,7 @@
             <label locale="en_US">
                 <name>External Link</name>
                 <description>Name and the url of the website where this resource was published.</description>
-                <entry>String-Free text</entry>
-                <dcequivalent></dcequivalent>
-                <repeatable>Yes</repeatable>
-                <modality>Optional</modality>
-                <guideline></guideline>
-                <example></example>
-            </label>
+                </label>
         </labels>
         <elements>
             <metadataElement code="exlink_name" datatype="Text">
@@ -4558,13 +4501,7 @@
                     <label locale="en_US">
                         <name>External Link Website Name</name>
                         <description>Name of the website where this resource was published.</description>
-                        <entry>String-Free text</entry>
-                        <dcequivalent></dcequivalent>
-                        <repeatable>Yes</repeatable>
-                        <modality>Optional</modality>
-                        <guideline></guideline>
-                        <example></example>
-                    </label>
+                        </label>
                 </labels>
                 <settings>
                     <setting name="fieldWidth">40</setting>
@@ -4576,13 +4513,7 @@
                     <label locale="en_US">
                         <name>External Link Website URL</name>
                         <description>URL of the website where this resource was published.</description>
-                        <entry>String-Free text</entry>
-                        <dcequivalent>dc:source</dcequivalent>
-                        <repeatable>No</repeatable>
-                        <modality>Optional</modality>
-                        <guideline></guideline>
-                        <example></example>
-                    </label>
+                        </label>
                 </labels>
                 <settings>
                     <setting name="fieldWidth">40</setting>
@@ -4605,30 +4536,13 @@
         <labels>
             <label locale="en_US">
                 <name>Resource Description</name>
-                <description>A textual description of the content of the resource (knowledge
-                    profile
-                    =
-                    images; documents) in any language, including event and significance
-                    connected
-                    to the
-                    resource. Content descriptions in the case of visual resources.</description>
-                <entry>String-Free text</entry>
-                <dcequivalent>dc:description</dcequivalent>
-                <repeatable>Yes</repeatable>
-                <modality>Strongly Suggested</modality>
-                <guideline>Provide textual description of the resource in English limited to
-                    maximum
-                    of
-                    three concise sentences. Include important keywords related to the
-                    significance
-                    of the
-                    resource. Since the description field is a potentially rich source of
-                    indexable
-                    vocabulary, care should be taken to provide this element when possible.</guideline>
-                <example>Ile alo ti awon omode eya Arika lo ni odun to ti pe</example>
+                <description>A textual description of the content of the resource (knowledge profile = 
+                images; documents) in any language, including event and significance connected to the 
+                resource. Content descriptions in the case of visual resources.</description>
             </label>
         </labels>
         <settings>
+            <setting name="usewysiwygeditor">1</setting>
             <setting name="fieldWidth">90</setting>
             <setting name="fieldHeight">3</setting>
             <setting name="minChars">0</setting>
@@ -4663,23 +4577,7 @@
                     descriptions
                     in the
                     case of visual resources.</description>
-                <entry>String-Free text</entry>
-                <dcequivalent>dc:description</dcequivalent>
-                <repeatable>Yes</repeatable>
-                <modality>Optional</modality>
-                <guideline>Provide textual description of the resource in other language limited
-                    to
-                    maximum
-                    of three concise sentences. Include important keywords related to the
-                    significance of
-                    the resource. Since the description field is a potentially rich source of
-                    indexable
-                    vocabulary, care should be taken to provide this element when possible.</guideline>
-                <example>Story book used for play by Pandalong children to understand the
-                    direction
-                    of the
-                    moon and sun. Created between 1908 and 1910.</example>
-            </label>
+                </label>
         </labels>
         <settings>
             <setting name="fieldWidth">90</setting>
@@ -4718,16 +4616,7 @@
                         <description>The primary language spoken by the participant (if video or
                             audio resource). The
                             primary language written on the image or in the document.</description>
-                        <entry>String-CV (Language)</entry>
-                        <dcequivalent>dc:language</dcequivalent>
-                        <repeatable>Yes</repeatable>
-                        <modality>Mandatory if</modality>
-                        <guideline>Select the primary language spoken in the audio or video
-                            file.
-                            Select the primary
-                            language written on the image or in the document.</guideline>
-                        <example>English;Yoruba;Arabic</example>
-                    </label>
+                        </label>
                 </labels>
                 <settings>
                     <setting name="fieldWidth">40</setting>
@@ -4742,15 +4631,7 @@
                             audio
                             resource). The
                             other language written on the image or in the document. </description>
-                        <entry>String-CV (Language)</entry>
-                        <dcequivalent>dc:language</dcequivalent>
-                        <repeatable>Yes</repeatable>
-                        <modality>Optional</modality>
-                        <guideline>Select the other language spoken in the audio or video file.
-                            Select the other
-                            language written on the image or in the document.</guideline>
-                        <example>English;Yoruba;Arabic</example>
-                    </label>
+                        </label>
                 </labels>
                 <settings>
                     <setting name="fieldWidth">40</setting>
@@ -4784,15 +4665,7 @@
                 <name>Themes</name>
                 <description>Descriptive words that are most significant and unique to the
                     resource</description>
-                <entry>String-CV (Themes)</entry>
-                <dcequivalent></dcequivalent>
-                <repeatable>Yes</repeatable>
-                <modality>Strongly Suggested</modality>
-                <guideline>Provide maximum of five most significant and unique words that can
-                    describe the
-                    content of the resource. Separate each word with comma.</guideline>
-                <example>Colonised;Forgotten;Inclusion;Post-conflict;Refugee</example>
-            </label>
+                </label>
         </labels>
         <settings>
             <setting name="fieldWidth">90</setting>
@@ -4818,15 +4691,7 @@
                 <name>Keywords</name>
                 <description>Descriptive words that are most significant and unique to the
                     resource.</description>
-                <entry>String-Free text</entry>
-                <dcequivalent>dc:subject</dcequivalent>
-                <repeatable>Yes</repeatable>
-                <modality>Strongly Suggested</modality>
-                <guideline>Provide maximum of five most significant and unique words that can
-                    describe the content of the resource. Separate each word with comma.
-                </guideline>
-                <example>Migration;Conflict;Community</example>
-            </label>
+                </label>
         </labels>
         <settings>
             <setting name="fieldWidth">30</setting>
@@ -4854,13 +4719,7 @@
                     not
                     find a
                     metadata field according to your need.</description>
-                <entry>String-Free text</entry>
-                <dcequivalent></dcequivalent>
-                <repeatable>Yes</repeatable>
-                <modality>Optional</modality>
-                <guideline></guideline>
-                <example></example>
-            </label>
+                </label>
         </labels>
         <settings>
             <setting name="fieldWidth">90</setting>
@@ -4885,13 +4744,7 @@
             <label locale="en_US">
                 <name>Coordinates</name>
                 <description>Coordinates of the resources.</description>
-                <entry>Integer</entry>
-                <dcequivalent>dc:coverage</dcequivalent>
-                <repeatable>Yes</repeatable>
-                <modality>Optional</modality>
-                <guideline>It should be written as [lang,lat]</guideline>
-                <example>[10.77555,106.701944]</example>
-            </label>
+                </label>
         </labels>
         <settings>
             <setting name="fieldWidth">90</setting>
@@ -4916,16 +4769,7 @@
             <label locale="en_US">
                 <name>Cultural Group</name>
                 <description>The cultural or ethnic group connected to the resource.</description>
-                <entry>String-Free text</entry>
-                <dcequivalent></dcequivalent>
-                <repeatable>Yes</repeatable>
-                <modality>Strongly Suggested</modality>
-                <guideline>Provide the names of all the cultural or ethnic group/community
-                    connected
-                    to the
-                    resource. This could be more than one.</guideline>
-                <example>Arabs;Assyrians;Balanta</example>
-            </label>
+                </label>
         </labels>
         <settings>
             <setting name="fieldWidth">30</setting>
@@ -4950,20 +4794,7 @@
             <label locale="en_US">
                 <name>Cultural Context</name>
                 <description>The cultural event or context associated with the resource. </description>
-                <entry>String-CV (Cultural Context)</entry>
-                <dcequivalent>t</dcequivalent>
-                <repeatable>Yes</repeatable>
-                <modality>Strongly Suggested</modality>
-                <guideline>Describe the cultural context or event associated with the resource.
-                    This
-                    descriptor responds to ‘What was happening when the resource was produced?’,
-                    ‘What event
-                    or practice is the resource recording?’ A list of suggested events is
-                    provided
-                    but add
-                    additional, more specific values to the vocabulary.</guideline>
-                <example>Dancing;Migration;Singing</example>
-            </label>
+                </label>
         </labels>
         <settings>
             <setting name="fieldWidth">90</setting>
@@ -4988,21 +4819,7 @@
             <label locale="en_US">
                 <name>Social Group Setting</name>
                 <description>The social group associated with or recorded by the resource.</description>
-                <entry>String-CV (Social Group)</entry>
-                <dcequivalent></dcequivalent>
-                <repeatable>Yes</repeatable>
-                <modality>Optional</modality>
-                <guideline>Describe the social group associated with the resource. This
-                    descriptor
-                    responds
-                    to ‘What is the description of the people recorded by the resources?’ A list
-                    of
-                    suggested social group is provided but add additional, more specific values
-                    to
-                    the
-                    vocabulary. e.g. https://simplicable.com/society/social-groups</guideline>
-                <example>Classmates;Family;Committees</example>
-            </label>
+                </label>
         </labels>
         <settings>
             <setting name="fieldWidth">90</setting>
@@ -5027,19 +4844,7 @@
             <label locale="en_US">
                 <name>Production Technique</name>
                 <description>The defined way adopted to produce the resource.</description>
-                <entry>String-Free text</entry>
-                <dcequivalent></dcequivalent>
-                <repeatable>Yes</repeatable>
-                <modality>Optional</modality>
-                <guideline>Describe the technique used in producing the resource. This
-                    descriptor
-                    responds
-                    to ‘How was the resource produced?’ A list of relevant production technique
-                    is
-                    provided
-                    but additional techniques can be added.</guideline>
-                <example>Photography;Report writing;Audio recording;Video recording</example>
-            </label>
+                </label>
         </labels>
         <settings>
             <setting name="fieldWidth">30</setting>
@@ -5063,16 +4868,7 @@
             <label locale="en_US">
                 <name>Equipment Used</name>
                 <description>The equipment used directly for the production of the resource.</description>
-                <entry>String-Free text</entry>
-                <dcequivalent></dcequivalent>
-                <repeatable>Yes</repeatable>
-                <modality>Optional</modality>
-                <guideline>List all the equipment used for the production of the resource.
-                    Provide
-                    the
-                    general names of each equipment, separated with commas.</guideline>
-                <example>Tripod stand;DSLR camera;Video recording</example>
-            </label>
+                </label>
         </labels>
         <settings>
             <setting name="fieldWidth">30</setting>
@@ -5097,18 +4893,7 @@
                 <name>Dates</name>
                 <description>A point or period of time associated with the creation of the
                     resource.</description>
-                <entry>Integer</entry>
-                <dcequivalent>dc:created</dcequivalent>
-                <repeatable>Yes</repeatable>
-                <modality>Strongly Suggested</modality>
-                <guideline>Enter the date the resource was created. Recommended practice is to
-                    express date
-                    using the format YYYY-MM-DD [ISO 8601-1]. If the full date is unknown, month
-                    and
-                    year
-                    (YYYY-MM) or just year (YYYY) may be used.</guideline>
-                <example>2022-01-04 or 2022-01 or 2022</example>
-            </label>
+                </label>
         </labels>
         <elements>
             <metadataElement code="dates_value" datatype="DateRange">
@@ -5161,15 +4946,7 @@
                 <description>Information about the shareability, distribution and adaptation of
                     the
                     resource.</description>
-                <entry>String-CV (Licence)</entry>
-                <dcequivalent>dc:licence</dcequivalent>
-                <repeatable>Yes</repeatable>
-                <modality>Mandatory</modality>
-                <guideline>Select which licence is applicable to the resource. Consider this
-                    carefully
-                    before making your selection.</guideline>
-                <example>CC BY-NC 4.0</example>
-            </label>
+                </label>
         </labels>
         <typeRestrictions>
             <restriction>
@@ -5190,13 +4967,7 @@
                 <description>A statement about the intellectual property rights (IPR) held in or
                     over a resource, a legal document giving official permission to do something
                     with a resource, or a statement about access rights.</description>
-                <entry>String-CV (Rights Statement)</entry>
-                <dcequivalent></dcequivalent>
-                <repeatable>Yes</repeatable>
-                <modality>Optional</modality>
-                <guideline>Choose a statement from "Rights Statement" list.</guideline>
-                <example>In Copyright - EU Orphan Work (InC-OW-EU)</example>
-            </label>
+                </label>
         </labels>
         <settings>
             <setting name="fieldWidth">90</setting>
@@ -5223,33 +4994,7 @@
                 <description>This refers to the attributed standard that governs the content and
                     knowledge of
                     the resources and who can access the resource.</description>
-                <entry>String-CV (Cultural Sensitivity)</entry>
-                <dcequivalent></dcequivalent>
-                <repeatable>Yes</repeatable>
-                <modality>Mandatory</modality>
-                <guideline>Select the level of cultural sensitivity of the content and knowledge
-                    of
-                    the
-                    resource. Consider this carefully before making your selection. ---Highly
-                    sensitive
-                    refers to resource that cannot be viewed, downloaded, print nor accessed.
-                    The
-                    resources
-                    in this category are confidential. The depositor, persons connected to the
-                    project and
-                    repository administrators may have access to the resource. ;Moderately
-                    sensitivy
-                    refers to resources that are to be viewed only, not to be downloaded and
-                    print.
-                    Retrievers interested in accessing the resource need to fill Data Retrieval
-                    Form to
-                    justify the need for the resource. Data Retrieval Form to be assessed and
-                    approved by
-                    the Principal Investigator and co-PIs ;Low sensitivity refers to resources
-                    that are to
-                    be shared openly. Retrievers will be able to view, download, print and use</guideline>
-                <example>Highly sensitive, Medium sensitivity, Low sensitivity</example>
-            </label>
+                </label>
         </labels>
         <settings>
             <setting name="fieldWidth">90</setting>
@@ -5274,21 +5019,7 @@
             <label locale="en_US">
                 <name>Access Restriction</name>
                 <description>This refers to availability of the resource.</description>
-                <entry>Boolean</entry>
-                <dcequivalent></dcequivalent>
-                <repeatable>Yes</repeatable>
-                <modality>Mandatory if</modality>
-                <guideline>Select the level of access that is appropriate to the resource.
-                    Consider
-                    this
-                    carefully before making your selection. ---Yes refers to resources that
-                    are
-                    restricted. If you choose Yes, you need to justify ;No refers to
-                    resources
-                    with no
-                    access restriction. Resources will be made openly available.</guideline>
-                <example>Yes, No</example>
-            </label>
+                </label>
         </labels>
         <settings>
             <setting name="fieldWidth">90</setting>
@@ -5313,26 +5044,7 @@
             <label locale="en_US">
                 <name>Reasons for Restriction</name>
                 <description>Justification for limiting access to the resources.</description>
-                <entry>String-Free text</entry>
-                <dcequivalent></dcequivalent>
-                <repeatable>Yes</repeatable>
-                <modality>Mandatory if</modality>
-                <guideline>The field is mandatory if the value for ‘Access restriction’ is Yes.
-                    Provide
-                    justifications for limiting the access to the resource and specify the
-                    consequences and
-                    potential impacts of making the resource accessible. Specify if access to
-                    the
-                    resource
-                    should ne restricted permanently or for a specific period of time.</guideline>
-                <example>The image records various civil protests and disobedience is countries
-                    that
-                    are
-                    repressive. Making the image accessible could make the persons connected to
-                    the
-                    image
-                    targets. Therefore, access to the image should be permanently restricted.</example>
-            </label>
+                </label>
         </labels>
         <settings>
             <setting name="fieldWidth">90</setting>
@@ -5352,7 +5064,7 @@
         </typeRestrictions>
     </metadataElement>
 
-    <!-- Participants -->
+    
 
     <metadataElement code="anonymised" datatype="List" list="access_statuses">
         <labels>
@@ -5360,14 +5072,7 @@
                 <name>Anonymised</name>
                 <description>Indicate if the ‘Full name’ of the participant has been anonymised
                     using pseudo names.</description>
-                <entry>Boolean</entry>
-                <dcequivalent></dcequivalent>
-                <repeatable>Yes</repeatable>
-                <modality>Mandatory</modality>
-                <guideline>Please state either ‘True’ or ‘False’ to indicate if the
-                    participant’s name has been anonymised.</guideline>
-                <example>True, False</example>
-            </label>
+                </label>
         </labels>
         <settings>
             <setting name="fieldWidth">30</setting>
@@ -5392,14 +5097,7 @@
             <label locale="en_US">
                 <name>Ethnic Community</name>
                 <description>This is the ethnic group which the participant identifies with.</description>
-                <entry>Boolean</entry>
-                <dcequivalent></dcequivalent>
-                <repeatable>Yes</repeatable>
-                <modality>Optional</modality>
-                <guideline>Provide the name of the ethnic group of the participant identifies
-                    with. This is different from nationality.</guideline>
-                <example>Yoruba, Abazins, Albanians</example>
-            </label>
+                </label>
         </labels>
         <settings>
             <setting name="fieldWidth">30</setting>
@@ -5424,15 +5122,7 @@
             <label locale="en_US">
                 <name>Gender</name>
                 <description>The gender that the participant identifies with.</description>
-                <entry>String-CV (Gender)</entry>
-                <dcequivalent></dcequivalent>
-                <repeatable>Yes</repeatable>
-                <modality>Optional</modality>
-                <guideline>Provide the gender of the participant. If the appropriate gender is
-                    not listed, please add it to the vocabulary. If the participant isn't alive
-                    or they don't give that information directly, please use "Unknown" term.</guideline>
-                <example>Male, Female, Non-binary, Prefer not to say, Unknown</example>
-            </label>
+                </label>
         </labels>
         <settings>
             <setting name="fieldWidth">30</setting>
@@ -5457,15 +5147,7 @@
             <label locale="en_US">
                 <name>Occupation</name>
                 <description>The main economic work or activity of the participant.</description>
-                <entry>String-CV (Occupation)</entry>
-                <dcequivalent></dcequivalent>
-                <repeatable>Yes</repeatable>
-                <modality>Optional</modality>
-                <guideline>Provide the main occupation of the participant with which the
-                    participant earns a living. If the participant is anonymised, pick
-                    ‘Unknown’.</guideline>
-                <example>Student, Architect, Conservator</example>
-            </label>
+                </label>
         </labels>
         <settings>
             <setting name="fieldWidth">30</setting>
@@ -5491,17 +5173,7 @@
                 <name>Participant Role</name>
                 <description>The main contributing role played by the participant in the context
                     of the project.</description>
-                <entry>String-CV (Role)</entry>
-                <dcequivalent></dcequivalent>
-                <repeatable>Yes</repeatable>
-                <modality>Mandatory</modality>
-                <guideline>Choose from the list, a role that is the nearest to the description
-                    of you involvement in the project. If the list does not contain a suitable
-                    descriptor, you can add additional roles. The listed roles are meant to
-                    broadly categorise participants and their contributions to the project.</guideline>
-                <example>Project leader, Collector, Monitor, Contributor, Administrator, Guest,
-                    Researcher</example>
-            </label>
+                </label>
         </labels>
         <settings>
             <setting name="fieldWidth">30</setting>
@@ -5584,13 +5256,7 @@
             <label locale="en_US">
                 <name>Affiliation</name>
                 <description>The affiliation of the participant including institution, organisation etc the lead project investigator works for.</description>
-                <entry>String-Free text</entry>
-                <dcequivalent></dcequivalent>
-                <repeatable>Yes</repeatable>
-                <modality>Optional</modality>
-                <guideline>Provide the affiliation and country of the lead project investigator. If self-employed, enter the name of your organisation.</guideline>
-                <example>School of Archaeology and Heritage Studies, University of Ghana</example>
-            </label>
+                </label>
         </labels>
         <settings>
             <setting name="fieldWidth">30</setting>
@@ -5615,13 +5281,7 @@
             <label locale="en_US">
                 <name>Biographical History</name>
                 <description>Information relevant to the understanding of the life, activities, and relationships of the person.</description>
-                <entry>String-Free text</entry>
-                <dcequivalent></dcequivalent>
-                <repeatable>Yes</repeatable>
-                <modality>Optional</modality>
-                <guideline></guideline>
-                <example></example>
-            </label>
+                </label>
         </labels>
         <settings>
             <setting name="fieldWidth">30</setting>
@@ -5646,13 +5306,7 @@
             <label locale="en_US">
                 <name>Other Significant Information</name>
                 <description>Any other important information not recorded elsewhere in the biographical history.</description>
-                <entry>String-Free text</entry>
-                <dcequivalent></dcequivalent>
-                <repeatable>Yes</repeatable>
-                <modality>Optional</modality>
-                <guideline></guideline>
-                <example></example>
-            </label>
+                </label>
         </labels>
         <settings>
             <setting name="fieldWidth">30</setting>
@@ -5677,13 +5331,7 @@
             <label locale="en_US">
                 <name>Authority Sources</name>
                 <description>Link to participants record on VIAF, IF website, ORCID, Wikidata.</description>
-                <entry>String-Free text</entry>
-                <dcequivalent></dcequivalent>
-                <repeatable>Yes</repeatable>
-                <modality>Optional</modality>
-                <guideline></guideline>
-                <example></example>
-            </label>
+                </label>
         </labels>
         <elements>
             <metadataElement code="authurl" datatype="Url">
@@ -5723,20 +5371,14 @@
         </typeRestrictions>
     </metadataElement>
 
-    <!-- Projects -->
+    
 
     <metadataElement code="prjtype" datatype="List" list="prjtypelist">
         <labels>
             <label locale="en_US">
                 <name>Project Type</name>
                 <description>The name of the Imagining Futures Project Type.</description>
-                <entry>String-CV (Project types)</entry>
-                <dcequivalent></dcequivalent>
-                <repeatable>Yes</repeatable>
-                <modality>Optional</modality>
-                <guideline>Provide the IF project type information. Choose between from the list.</guideline>
-                <example>Start Up Projects (2020-2021)</example>
-            </label>
+                </label>
         </labels>
         <settings>
             <setting name="fieldWidth">30</setting>
@@ -5761,13 +5403,7 @@
             <label locale="en_US">
                 <name>Project Region</name>
                 <description>The name of the Imagining Futures Project Regions.</description>
-                <entry>String-CV (Project types)</entry>
-                <dcequivalent></dcequivalent>
-                <repeatable>Yes</repeatable>
-                <modality>Optional</modality>
-                <guideline>Provide the IF project region information. Choose between from the list.</guideline>
-                <example>North America</example>
-            </label>
+                </label>
         </labels>
         <settings>
             <setting name="fieldWidth">30</setting>
@@ -5792,13 +5428,7 @@
           <label locale="en_US">
               <name>IF Webpage</name>
               <description>A link to the project's Imagining Futures website.</description>
-              <entry>String-Free text</entry>
-              <dcequivalent></dcequivalent>
-              <repeatable>No</repeatable>
-              <modality>Strongly Suggested</modality>
-              <guideline>Provide the URL of the project's IF webpage.</guideline>
-              <example>https://imaginingfutures.world/projects/in-search-of-la/</example>
-          </label>
+              </label>
       </labels>
       <settings>
           <setting name="fieldWidth">30</setting>
@@ -5823,13 +5453,7 @@
           <label locale="en_US">
               <name>External Website</name>
               <description>A link to the project's alternative website.</description>
-              <entry>String-Free text</entry>
-              <dcequivalent></dcequivalent>
-              <repeatable>No</repeatable>
-              <modality>Optional</modality>
-              <guideline>Provide the URL of the project'ss external webpage.</guideline>
-              <example>https://phi.history.ucla.edu/la-storymap/</example>
-          </label>
+              </label>
       </labels>
       <settings>
           <setting name="fieldWidth">30</setting>
@@ -5849,9 +5473,9 @@
       </typeRestrictions>
   </metadataElement>
 
-    <!-- Places -->
+    
 
-    <!-- Controlled Vocabularies -->
+    
 </elementSets>
 
 
@@ -6035,7 +5659,7 @@
       </screens>
     </userInterface>
   
-    <!-- Entities-->
+    
   
     <userInterface code="entities_ui" type="ca_entities">
       <labels>
@@ -6870,7 +6494,7 @@
             </label>
           </labels>
           <subTypeLeft> </subTypeLeft>
-          <subTypeRight></subTypeRight>
+          <subTypeRight />
         </type>
         <type code="rightsholder" default="1">
           <labels>
@@ -6880,7 +6504,7 @@
             </label>
           </labels>
           <subTypeLeft> </subTypeLeft>
-          <subTypeRight></subTypeRight>
+          <subTypeRight />
         </type>
         <type code="creator" default="1">
           <labels>
@@ -6890,7 +6514,7 @@
             </label>
           </labels>
           <subTypeLeft> </subTypeLeft>
-          <subTypeRight></subTypeRight>
+          <subTypeRight />
         </type>
         <type code="contributor" default="1">
           <labels>
@@ -6900,7 +6524,7 @@
             </label>
           </labels>
           <subTypeLeft> </subTypeLeft>
-          <subTypeRight></subTypeRight>
+          <subTypeRight />
         </type>
         <type code="curator" default="0">
           <labels>
@@ -6914,7 +6538,7 @@
             </label>
           </labels>
           <subTypeLeft> </subTypeLeft>
-          <subTypeRight></subTypeRight>
+          <subTypeRight />
         </type>
         <type code="moderator" default="0">
           <labels>
@@ -6928,7 +6552,7 @@
             </label>
           </labels>
           <subTypeLeft> </subTypeLeft>
-          <subTypeRight></subTypeRight>
+          <subTypeRight />
         </type>
         <type code="speaker" default="0">
           <labels>
@@ -6942,7 +6566,7 @@
             </label>
           </labels>
           <subTypeLeft> </subTypeLeft>
-          <subTypeRight></subTypeRight>
+          <subTypeRight />
         </type>
         <type code="panelist" default="0">
           <labels>
@@ -6956,7 +6580,7 @@
             </label>
           </labels>
           <subTypeLeft> </subTypeLeft>
-          <subTypeRight></subTypeRight>
+          <subTypeRight />
         </type>
         <type code="documentarian" default="0">
           <labels>
@@ -6970,7 +6594,7 @@
             </label>
           </labels>
           <subTypeLeft> </subTypeLeft>
-          <subTypeRight></subTypeRight>
+          <subTypeRight />
         </type>
         <type code="architect" default="0">
           <labels>
@@ -6984,7 +6608,7 @@
             </label>
           </labels>
           <subTypeLeft> </subTypeLeft>
-          <subTypeRight></subTypeRight>
+          <subTypeRight />
         </type>
         <type code="designer" default="0">
           <labels>
@@ -6998,7 +6622,7 @@
             </label>
           </labels>
           <subTypeLeft> </subTypeLeft>
-          <subTypeRight></subTypeRight>
+          <subTypeRight />
         </type>
         <type code="author" default="0">
           <labels>
@@ -7012,7 +6636,7 @@
             </label>
           </labels>
           <subTypeLeft>interview</subTypeLeft>
-          <subTypeRight></subTypeRight>
+          <subTypeRight />
         </type>
         <type code="performer" default="0">
           <labels>
@@ -7026,7 +6650,7 @@
             </label>
           </labels>
           <subTypeLeft> </subTypeLeft>
-          <subTypeRight></subTypeRight>
+          <subTypeRight />
         </type>
         <type code="staff_member" default="0">
           <labels>
@@ -7040,7 +6664,7 @@
             </label>
           </labels>
           <subTypeLeft>interview</subTypeLeft>
-          <subTypeRight></subTypeRight>
+          <subTypeRight />
         </type>
         <type code="consultant" default="0">
           <labels>
@@ -7054,7 +6678,7 @@
             </label>
           </labels>
           <subTypeLeft> </subTypeLeft>
-          <subTypeRight></subTypeRight>
+          <subTypeRight />
         </type>
         <type code="publisher" default="0">
           <labels>
@@ -7068,7 +6692,7 @@
             </label>
           </labels>
           <subTypeLeft> </subTypeLeft>
-          <subTypeRight></subTypeRight>
+          <subTypeRight />
         </type>
         <type code="sponsor" default="0">
           <labels>
@@ -7082,7 +6706,7 @@
             </label>
           </labels>
           <subTypeLeft> </subTypeLeft>
-          <subTypeRight></subTypeRight>
+          <subTypeRight />
         </type>
         <type code="partner_museum" default="0">
           <labels>
@@ -7096,7 +6720,7 @@
             </label>
           </labels>
           <subTypeLeft> </subTypeLeft>
-          <subTypeRight></subTypeRight>
+          <subTypeRight />
         </type>
       </types>
     </relationshipTable>
@@ -7114,7 +6738,7 @@
             </label>
           </labels>
           <subTypeLeft> </subTypeLeft>
-          <subTypeRight></subTypeRight>
+          <subTypeRight />
         </type>
       </types>
     </relationshipTable>
@@ -7132,7 +6756,7 @@
             </label>
           </labels>
           <subTypeLeft> </subTypeLeft>
-          <subTypeRight></subTypeRight>
+          <subTypeRight />
         </type>
         <type code="located" default="0">
           <labels>
@@ -7146,7 +6770,7 @@
             </label>
           </labels>
           <subTypeLeft>image</subTypeLeft>
-          <subTypeRight></subTypeRight>
+          <subTypeRight />
         </type>
         <type code="depicts" default="1">
           <labels>
@@ -7160,7 +6784,7 @@
             </label>
           </labels>
           <subTypeLeft> </subTypeLeft>
-          <subTypeRight></subTypeRight>
+          <subTypeRight />
         </type>
         <type code="describes" default="0">
           <labels>
@@ -7174,7 +6798,7 @@
             </label>
           </labels>
           <subTypeLeft> </subTypeLeft>
-          <subTypeRight></subTypeRight>
+          <subTypeRight />
         </type>
       </types>
     </relationshipTable>
@@ -7192,7 +6816,7 @@
             </label>
           </labels>
           <subTypeLeft> </subTypeLeft>
-          <subTypeRight></subTypeRight>
+          <subTypeRight />
         </type>
         <type code="used" default="0">
           <labels>
@@ -7206,7 +6830,7 @@
             </label>
           </labels>
           <subTypeLeft> </subTypeLeft>
-          <subTypeRight></subTypeRight>
+          <subTypeRight />
         </type>
         <type code="describes" default="0">
           <labels>
@@ -7220,7 +6844,7 @@
             </label>
           </labels>
           <subTypeLeft> </subTypeLeft>
-          <subTypeRight></subTypeRight>
+          <subTypeRight />
         </type>
       </types>
     </relationshipTable>
@@ -7238,7 +6862,7 @@
             </label>
           </labels>
           <subTypeLeft> </subTypeLeft>
-          <subTypeRight></subTypeRight>
+          <subTypeRight />
         </type>
         <type code="similar" default="0">
           <labels>
@@ -7252,7 +6876,7 @@
             </label>
           </labels>
           <subTypeLeft> </subTypeLeft>
-          <subTypeRight></subTypeRight>
+          <subTypeRight />
         </type>
         <type code="duplicate" default="0">
           <labels>
@@ -7266,7 +6890,7 @@
             </label>
           </labels>
           <subTypeLeft> </subTypeLeft>
-          <subTypeRight></subTypeRight>
+          <subTypeRight />
         </type>
         <type code="part_of" default="0">
           <labels>
@@ -7280,7 +6904,7 @@
             </label>
           </labels>
           <subTypeLeft> </subTypeLeft>
-          <subTypeRight></subTypeRight>
+          <subTypeRight />
         </type>
       </types>
     </relationshipTable>
@@ -7298,7 +6922,7 @@
             </label>
           </labels>
           <subTypeLeft> </subTypeLeft>
-          <subTypeRight></subTypeRight>
+          <subTypeRight />
         </type>
         <type code="depicts" default="0">
           <labels>
@@ -7312,7 +6936,7 @@
             </label>
           </labels>
           <subTypeLeft> </subTypeLeft>
-          <subTypeRight></subTypeRight>
+          <subTypeRight />
         </type>
       </types>
     </relationshipTable>
@@ -7330,7 +6954,7 @@
             </label>
           </labels>
           <subTypeLeft> </subTypeLeft>
-          <subTypeRight></subTypeRight>
+          <subTypeRight />
         </type>
         <type code="child" default="1">
           <labels>
@@ -7376,7 +7000,7 @@
             </label>
           </labels>
           <subTypeLeft> </subTypeLeft>
-          <subTypeRight></subTypeRight>
+          <subTypeRight />
         </type>
         <type code="residence" default="0">
           <labels>
@@ -7390,7 +7014,7 @@
             </label>
           </labels>
           <subTypeLeft> </subTypeLeft>
-          <subTypeRight></subTypeRight>
+          <subTypeRight />
         </type>
         <type code="workplace" default="0">
           <labels>
@@ -7404,7 +7028,7 @@
             </label>
           </labels>
           <subTypeLeft> </subTypeLeft>
-          <subTypeRight></subTypeRight>
+          <subTypeRight />
         </type>
         <type code="ownership" default="0">
           <labels>
@@ -7418,7 +7042,7 @@
             </label>
           </labels>
           <subTypeLeft> </subTypeLeft>
-          <subTypeRight></subTypeRight>
+          <subTypeRight />
         </type>
         <type code="built_by" default="0">
           <labels>
@@ -7432,7 +7056,7 @@
             </label>
           </labels>
           <subTypeLeft> </subTypeLeft>
-          <subTypeRight></subTypeRight>
+          <subTypeRight />
         </type>
       </types>
     </relationshipTable>
@@ -7450,7 +7074,7 @@
             </label>
           </labels>
           <subTypeLeft> </subTypeLeft>
-          <subTypeRight></subTypeRight>
+          <subTypeRight />
         </type>
         <type code="curator" default="0">
           <labels>
@@ -7464,7 +7088,7 @@
             </label>
           </labels>
           <subTypeLeft> </subTypeLeft>
-          <subTypeRight></subTypeRight>
+          <subTypeRight />
         </type>
         <type code="moderator" default="0">
           <labels>
@@ -7478,7 +7102,7 @@
             </label>
           </labels>
           <subTypeLeft> </subTypeLeft>
-          <subTypeRight></subTypeRight>
+          <subTypeRight />
         </type>
         <type code="panelist" default="0">
           <labels>
@@ -7492,7 +7116,7 @@
             </label>
           </labels>
           <subTypeLeft> </subTypeLeft>
-          <subTypeRight></subTypeRight>
+          <subTypeRight />
         </type>
         <type code="speaker" default="0">
           <labels>
@@ -7506,7 +7130,7 @@
             </label>
           </labels>
           <subTypeLeft> </subTypeLeft>
-          <subTypeRight></subTypeRight>
+          <subTypeRight />
         </type>
         <type code="documentarian" default="0">
           <labels>
@@ -7520,7 +7144,7 @@
             </label>
           </labels>
           <subTypeLeft> </subTypeLeft>
-          <subTypeRight></subTypeRight>
+          <subTypeRight />
         </type>
         <type code="architect" default="0">
           <labels>
@@ -7534,7 +7158,7 @@
             </label>
           </labels>
           <subTypeLeft> </subTypeLeft>
-          <subTypeRight></subTypeRight>
+          <subTypeRight />
         </type>
         <type code="designer" default="0">
           <labels>
@@ -7548,7 +7172,7 @@
             </label>
           </labels>
           <subTypeLeft> </subTypeLeft>
-          <subTypeRight></subTypeRight>
+          <subTypeRight />
         </type>
         <type code="author" default="0">
           <labels>
@@ -7562,7 +7186,7 @@
             </label>
           </labels>
           <subTypeLeft>interview</subTypeLeft>
-          <subTypeRight></subTypeRight>
+          <subTypeRight />
         </type>
         <type code="performer" default="0">
           <labels>
@@ -7576,7 +7200,7 @@
             </label>
           </labels>
           <subTypeLeft> </subTypeLeft>
-          <subTypeRight></subTypeRight>
+          <subTypeRight />
         </type>
         <type code="staff_member" default="0">
           <labels>
@@ -7590,7 +7214,7 @@
             </label>
           </labels>
           <subTypeLeft>interview</subTypeLeft>
-          <subTypeRight></subTypeRight>
+          <subTypeRight />
         </type>
         <type code="consultant" default="0">
           <labels>
@@ -7604,7 +7228,7 @@
             </label>
           </labels>
           <subTypeLeft> </subTypeLeft>
-          <subTypeRight></subTypeRight>
+          <subTypeRight />
         </type>
         <type code="publisher" default="0">
           <labels>
@@ -7618,7 +7242,7 @@
             </label>
           </labels>
           <subTypeLeft> </subTypeLeft>
-          <subTypeRight></subTypeRight>
+          <subTypeRight />
         </type>
         <type code="sponsor" default="0">
           <labels>
@@ -7632,7 +7256,7 @@
             </label>
           </labels>
           <subTypeLeft> </subTypeLeft>
-          <subTypeRight></subTypeRight>
+          <subTypeRight />
         </type>
         <type code="partner_museum" default="0">
           <labels>
@@ -7646,7 +7270,7 @@
             </label>
           </labels>
           <subTypeLeft> </subTypeLeft>
-          <subTypeRight></subTypeRight>
+          <subTypeRight />
         </type>
       </types>
     </relationshipTable>
@@ -7664,7 +7288,7 @@
             </label>
           </labels>
           <subTypeLeft> </subTypeLeft>
-          <subTypeRight></subTypeRight>
+          <subTypeRight />
         </type>
         <type code="provider" default="0">
           <labels>
@@ -7678,7 +7302,7 @@
             </label>
           </labels>
           <subTypeLeft> </subTypeLeft>
-          <subTypeRight></subTypeRight>
+          <subTypeRight />
         </type>
       </types>
     </relationshipTable>
@@ -7696,7 +7320,7 @@
             </label>
           </labels>
           <subTypeLeft> </subTypeLeft>
-          <subTypeRight></subTypeRight>
+          <subTypeRight />
         </type>
       </types>
     </relationshipTable>
@@ -7714,7 +7338,7 @@
             </label>
           </labels>
           <subTypeLeft> </subTypeLeft>
-          <subTypeRight></subTypeRight>
+          <subTypeRight />
         </type>
       </types>
     </relationshipTable>
@@ -7732,7 +7356,7 @@
             </label>
           </labels>
           <subTypeLeft> </subTypeLeft>
-          <subTypeRight></subTypeRight>
+          <subTypeRight />
         </type>
       </types>
     </relationshipTable>
@@ -7750,7 +7374,7 @@
             </label>
           </labels>
           <subTypeLeft> </subTypeLeft>
-          <subTypeRight></subTypeRight>
+          <subTypeRight />
         </type>
       </types>
     </relationshipTable>
@@ -7768,7 +7392,7 @@
             </label>
           </labels>
           <subTypeLeft> </subTypeLeft>
-          <subTypeRight></subTypeRight>
+          <subTypeRight />
         </type>
       </types>
     </relationshipTable>
@@ -7804,7 +7428,7 @@
             </label>
           </labels>
           <subTypeLeft> </subTypeLeft>
-          <subTypeRight></subTypeRight>
+          <subTypeRight />
         </type>
       </types>
     </relationshipTable>
@@ -7822,7 +7446,7 @@
             </label>
           </labels>
           <subTypeLeft> </subTypeLeft>
-          <subTypeRight></subTypeRight>
+          <subTypeRight />
         </type>
       </types>
     </relationshipTable>
@@ -7858,7 +7482,7 @@
             </label>
           </labels>
           <subTypeLeft> </subTypeLeft>
-          <subTypeRight></subTypeRight>
+          <subTypeRight />
         </type>
       </types>
     </relationshipTable>
@@ -7876,7 +7500,7 @@
             </label>
           </labels>
           <subTypeLeft> </subTypeLeft>
-          <subTypeRight></subTypeRight>
+          <subTypeRight />
         </type>
       </types>
     </relationshipTable>
@@ -7894,7 +7518,7 @@
             </label>
           </labels>
           <subTypeLeft> </subTypeLeft>
-          <subTypeRight></subTypeRight>
+          <subTypeRight />
         </type>
       </types>
     </relationshipTable>
@@ -7912,7 +7536,7 @@
             </label>
           </labels>
           <subTypeLeft> </subTypeLeft>
-          <subTypeRight></subTypeRight>
+          <subTypeRight />
         </type>
       </types>
     </relationshipTable>
@@ -7930,7 +7554,7 @@
             </label>
           </labels>
           <subTypeLeft> </subTypeLeft>
-          <subTypeRight></subTypeRight>
+          <subTypeRight />
         </type>
         <type code="illustrated" default="1">
           <labels>
@@ -7944,7 +7568,7 @@
             </label>
           </labels>
           <subTypeLeft> </subTypeLeft>
-          <subTypeRight></subTypeRight>
+          <subTypeRight />
         </type>
       </types>
     </relationshipTable>
@@ -7962,7 +7586,7 @@
             </label>
           </labels>
           <subTypeLeft> </subTypeLeft>
-          <subTypeRight></subTypeRight>
+          <subTypeRight />
         </type>
         <type code="describes" default="1">
           <labels>
@@ -7976,7 +7600,7 @@
             </label>
           </labels>
           <subTypeLeft> </subTypeLeft>
-          <subTypeRight></subTypeRight>
+          <subTypeRight />
         </type>
       </types>
     </relationshipTable>
@@ -7994,7 +7618,7 @@
             </label>
           </labels>
           <subTypeLeft> </subTypeLeft>
-          <subTypeRight></subTypeRight>
+          <subTypeRight />
         </type>
         <type code="describes" default="1">
           <labels>
@@ -8008,7 +7632,7 @@
             </label>
           </labels>
           <subTypeLeft> </subTypeLeft>
-          <subTypeRight></subTypeRight>
+          <subTypeRight />
         </type>
       </types>
     </relationshipTable>
@@ -8058,7 +7682,7 @@
             </label>
           </labels>
           <subTypeLeft> </subTypeLeft>
-          <subTypeRight></subTypeRight>
+          <subTypeRight />
         </type>
       </types>
     </relationshipTable>

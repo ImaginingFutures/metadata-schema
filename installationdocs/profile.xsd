@@ -195,12 +195,6 @@
           <xs:sequence>
             <xs:element name="name" type="stringRequired" minOccurs="1" maxOccurs="1" />
             <xs:element name="description" type="xs:string" minOccurs="0" maxOccurs="1" />
-            <xs:element name="entry" type="xs:string" minOccurs="0" maxOccurs="1" />
-            <xs:element name="dcequivalent" type="xs:string" minOccurs="0" maxOccurs="1" />
-            <xs:element name="repeatable" type="xs:string" minOccurs="0" maxOccurs="1" />
-            <xs:element name="modality" type="xs:string" minOccurs="0" maxOccurs="1" />
-            <xs:element name="guideline" type="xs:string" minOccurs="0" maxOccurs="1" />
-            <xs:element name="example" type="xs:string" minOccurs="0" maxOccurs="1" />
           </xs:sequence>
           <xs:attribute name="locale" type="localeType" use="required" />
           <xs:attribute name="preferred" type="booleanType" />
@@ -360,12 +354,6 @@
       </xs:element>
       <xs:element name="typeRestrictions" type="typeRestrictions" minOccurs="1" maxOccurs="1"/>
     </xs:sequence>
-    <xs:attribute name="entry" type="xs:string" use="optional" />
-    <xs:attribute name="dcequivalent" type="xs:string" use="optional" />
-    <xs:attribute name="repeatable" type="xs:string" use="optional" />
-    <xs:attribute name="modality" type="xs:string" use="optional" />
-    <xs:attribute name="guideline" type="xs:string" use="optional" />
-    <xs:attribute name="example" type="xs:string" use="optional" />
     <xs:attribute name="code" type="elementCodeType" use="required"/>
     <xs:attribute name="datatype" type="datatypeList" use="required"/>
     <xs:attribute name="list" type="xs:string" use="optional"/>
@@ -401,12 +389,6 @@
         </xs:complexType>
       </xs:element>
     </xs:sequence>
-    <xs:attribute name="entry" type="xs:string" use="optional" />
-    <xs:attribute name="dcequivalent" type="xs:string" use="optional" />
-    <xs:attribute name="repeatable" type="xs:string" use="optional" />
-    <xs:attribute name="modality" type="xs:string" use="optional" />
-    <xs:attribute name="guideline" type="xs:string" use="optional" />
-    <xs:attribute name="example" type="xs:string" use="optional" />
     <xs:attribute name="code" type="elementCodeType" use="required"/>
     <xs:attribute name="datatype" type="datatypeList" use="required"/>
     <xs:attribute name="list" type="xs:string" use="optional"/>
