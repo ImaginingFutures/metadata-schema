@@ -1,8 +1,8 @@
 #!/bin/bash
 
 # Check if Python is installed
-if ! [ -x "$(command -v python)" ]; then
-  echo 'Error: Python is not installed.' >&2
+if ! [ -x "$(command -v python3)" ]; then
+  echo 'Error: Python3 is not installed.' >&2
   exit 1
 fi
 
@@ -20,8 +20,8 @@ if [ ! -d "$validator_dir" ]; then
 fi
 
 requirements="$validator_dir/requirements.txt"
-python -m pip install -r "$requirements"
+python3 -m pip install -r "$requirements"
 
 validator_script="$validator_dir/validatexml-xsd.py"
 
-python "$validator_script" "$@"
+python3 "$validator_script" "$@"
