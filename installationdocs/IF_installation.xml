@@ -4570,6 +4570,7 @@
           </label>
       </labels>
       <settings>
+        <setting name="usewysiwygeditor">1</setting>
         <setting name="fieldWidth">90</setting>
         <setting name="fieldHeight">3</setting>
         <setting name="minChars">0</setting>
