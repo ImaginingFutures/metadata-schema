@@ -1,7 +1,7 @@
 import os
 import subprocess
 import pylightxl as xl
-
+import sys
 
 def get_map_name(map_name: dict) -> str:
     """
@@ -15,19 +15,30 @@ def get_map_name(map_name: dict) -> str:
     xls = xl.readxl(map_path)
     
     # Specify the sheet name you want to work with
-    sheet_name = xls.ws_names[0]
-    
-    # Get the data from the sheet
-    data = xls.ws(sheet_name).range('A1:C100')
-    
-    # Find the value based on your criteria
-    for row in data:
-        if row[0] == 'Setting' and row[1] == 'code':
-            mapname = row[2]
-            return mapname
+    sheet_names = xls.ws_names
 
-    # Return a default value or raise an exception if the value is not found
-    return None
+    # Iterate over the sheets until find the one with the map name
+    
+    sheet_index = 0
+
+    while sheet_names:
+        
+        #print(sheet_names[sheet_index])
+        # Get the data from the sheet
+        data = xls.ws(sheet_names[sheet_index]).range('A1:C100')
+        
+        # Find the value based on your criteria
+        for row in data:
+            if row[0] == 'Setting' and row[1] == 'code':
+                #print(f"Finding row: {row}")
+                mapname = row[2]
+                return mapname
+        
+        # If the sheet doesn't contain the map name, move to the next sheet
+        sheet_index += 1
+
+    # Raise exception if map is not found
+    return sys.exit(f"Map name not found in {map_path}. Please check the map file and try again.")
 
 
 def validate_map(base_comm: str, map_name: dict) -> str:
@@ -56,7 +67,6 @@ def create_command(map: dict, data: dict, installation_name: str,  sudo=False, i
     mapping = validate_map(base_command, map)
     base_import = f'import-data --source "{data["path"]}" --mapping "{mapping}"'
     format = f'--format {data["filename"].split(".")[-1].upper()}'
-    arguments = ' '.join([f'--{key.replace("_", "-")} {value}' for key, value in arguments.items()])
     
     # add sudo to execute the command
     if sudo:
@@ -85,6 +95,8 @@ def create_command(map: dict, data: dict, installation_name: str,  sudo=False, i
         except subprocess.CalledProcessError as e:
             print(f"Error while creating log directory: {e}")
     
+    arguments = ' '.join([f'--{key.replace("_", "-")} {value}' for key, value in arguments.items()])
+
     # Create command to run
     
     command = f'{base_command} {base_import} {format} {flag_string} {arguments}'
