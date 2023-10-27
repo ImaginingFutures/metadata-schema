@@ -186,5 +186,5 @@ def bulk_install(files_path: str, installation_name: str, sudo=False, import_all
     
 
 if __name__ == '__main__':
-    folder_path = os.path.join(os.getcwd(), 'installation_docs')
+    folder_path = input("Folder where maps and data are located (preferred abs. paths): ")
     bulk_install(folder_path, 'ifrepo-admin', log='/var/log/caImport', log_level="DEBUG")
