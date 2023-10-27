@@ -1,0 +1,604 @@
+<?xml version="1.0" encoding="utf-8"?>
+<profile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="profile.xsd" useForConfiguration="1" base="base"
+  infoUrl="http://providence.collectiveaccess.org/wiki/DefaultProfile">
+<profileName>Imagining Futures Through Un/Archived Pasts</profileName>
+<profileDescription>Archive management for Projects and Collections</profileDescription>
+<version>0.1-alpha</version>
+
+<!-- IF Custom User Interfaces-->
+
+<userInterfaces>
+
+<!-- Objects-->
+
+<userInterfaces>
+
+  <userInterface code="objects_ui" type="ca_objects">
+    <labels>
+      <label locale="en_US">
+        <name>Standard object editor</name>
+      </label>
+    </labels>
+    <screens>
+      <screen idno="identifierscr" default="0">
+            <labels>
+              <label locale="en_US">
+                <name>Identifiers</name>
+              </label>
+            </labels>
+            <bundlePlacements>
+              <placement code="ca_attribute_idno">
+                <bundle>ca_attribute_idno</bundle>
+              </placement>
+              <placement code="ca_attribute_originalid">
+                <bundle>ca_attribute_originalid</bundle>
+              </placement>
+              <placement code="ca_collections">
+                <bundle>ca_collections</bundle>
+                <settings>
+                  <setting name="label" locale="en_US">Member of</setting>
+                </settings>
+              </placement>
+              <placement code="preferred_labels">
+                <bundle>preferred_labels</bundle>
+              </placement>
+              <placement code="ca_attribute_alternativetitle">
+                <bundle>ca_attribute_alternativetitle</bundle>
+              </placement>
+              <placement code="ca_attribute_exlink">
+                <bundle>ca_attribute_exlink</bundle>
+              </placement>
+              <placement code="access">
+                <bundle>access</bundle>
+              </placement>
+            </bundlePlacements>
+          </screen>
+      <screen idno="scopeandcontentscr" default="0">
+            <labels>
+              <label locale="en_US">
+                <name>Scope and Content</name>
+              </label>
+            </labels>
+            <bundlePlacements>
+              <placement code="ca_attribute_description">
+                <bundle>ca_attribute_description</bundle>
+              </placement>
+              <placement code="ca_attribute_descriptionalt">
+                <bundle>ca_attribute_descriptionalt</bundle>
+              </placement>
+              <placement code="ca_attribute_langmaterial">
+                <bundle>ca_attribute_langmaterial</bundle>
+              </placement>
+              <placement code="ca_attribute_themes">
+                <bundle>ca_attribute_themes</bundle>
+              </placement>
+              <placement code="ca_attribute_keyword">
+                <bundle>ca_attribute_keyword</bundle>
+              </placement>
+              <placement code="ca_attribute_notes">
+                <bundle>ca_attribute_notes</bundle>
+              </placement>
+            </bundlePlacements>
+          </screen>
+      <screen idno="spatialscr" default="0">
+            <labels>
+              <label locale="en_US">
+                <name>Spatial Coverage</name>
+              </label>
+            </labels>
+            <bundlePlacements>
+              <placement code="ca_places">
+                <bundle>ca_places</bundle>
+                <settings>
+                  <setting name="label" locale="en_US">Locations</setting>
+                </settings>
+              </placement>
+              <placement code="ca_attribute_coordinates">
+                <bundle>ca_attribute_coordinates</bundle>
+              </placement>
+            </bundlePlacements>
+          </screen>
+      <screen idno="datescr" default="0">
+            <labels>
+              <label locale="en_US">
+                <name>Dates</name>
+              </label>
+            </labels>
+            <bundlePlacements>
+              <placement code="ca_attribute_dates">
+                <bundle>ca_attribute_dates</bundle>
+              </placement>
+            </bundlePlacements>
+          </screen>
+      <screen idno="socioculturalscr" default="0">
+                <labels>
+                  <label locale="en_US">
+                    <name>Socio-cultural Context</name>
+                  </label>
+                </labels>
+                <bundlePlacements>
+                  <placement code="ca_attribute_cultgroup">
+                    <bundle>ca_attribute_cultgroup</bundle>
+                  </placement>
+                  <placement code="ca_attribute_cultcontext">
+                    <bundle>ca_attribute_cultcontext</bundle>
+                  </placement>
+                  <placement code="ca_attribute_socialgroup">
+                      <bundle>ca_attribute_socialgroup</bundle>
+                    </placement>
+                </bundlePlacements>
+              </screen>
+      <screen idno="technologyscr" default="0">
+                <labels>
+                  <label locale="en_US">
+                    <name>Production Technique</name>
+                  </label>
+                </labels>
+                <bundlePlacements>
+                  <placement code="ca_attribute_prodtech">
+                    <bundle>ca_attribute_prodtech</bundle>
+                  </placement>
+                  <placement code="ca_attribute_equipused">
+                    <bundle>ca_attribute_equipused</bundle>
+                  </placement>
+                </bundlePlacements>
+              </screen>
+      <screen idno="intellectualpropertyscr" default="0">
+                      <labels>
+                        <label locale="en_US">
+                          <name>Intellectual Property</name>
+                        </label>
+                      </labels>
+                      <bundlePlacements>
+                        <placement code="ca_entities">
+                          <bundle>ca_entities</bundle>
+                          <settings>
+                            <setting name="label" locale="en_US">People</setting>
+                          </settings>
+                        </placement>
+                          <placement code="ca_attribute_licence">
+                            <bundle>ca_attribute_licence</bundle>
+                          </placement>
+                          <placement code="ca_attribute_rightsstate">
+                            <bundle>ca_attribute_rightsstate</bundle>
+                          </placement>
+                      </bundlePlacements>
+                    </screen>
+      <screen idno="accessandsensitivity" default="0">
+                      <labels>
+                        <label locale="en_US">
+                          <name>Access and Sensitivity</name>
+                        </label>
+                      </labels>
+                      <bundlePlacements>
+                        <placement code="ca_attribute_cultsens">
+                          <bundle>ca_attribute_cultsens</bundle>
+                        </placement>
+                        <placement code="ca_attribute_reasonforrest">
+                          <bundle>ca_attribute_reasonforrest</bundle>
+                        </placement>
+                      </bundlePlacements>
+                    </screen>
+      <screen idno="media" default="0">
+                      <labels>
+                        <label locale="en_US">
+                          <name>Media</name>
+                        </label>
+                      </labels>
+                      <bundlePlacements>
+                        <placement code="ca_object_representations">
+                          <bundle>ca_object_representations</bundle>
+                        </placement>
+                      </bundlePlacements>
+                    </screen>
+    </screens>
+  </userInterface>
+
+  <!-- Entities-->
+
+  <userInterface code="entities_ui" type="ca_entities">
+    <labels>
+      <label locale="en_US">
+        <name>Standard object editor</name>
+      </label>
+    </labels>
+    <screens>
+      <screen idno="identifierscr" default="0">
+          <labels>
+            <label locale="en_US">
+              <name>Identifiers</name>
+            </label>
+          </labels>
+          <bundlePlacements>
+            <placement code="ca_attribute_idno">
+              <bundle>ca_attribute_idno</bundle>
+            </placement>
+            <placement code="preferred_labels">
+              <bundle>preferred_labels</bundle>
+            </placement>
+            <placement code="ca_attribute_anonymised">
+              <bundle>ca_attribute_anonymised</bundle>
+            </placement>
+            <placement code="ca_attribute_ethniccom">
+              <bundle>ca_attribute_ethniccom</bundle>
+            </placement>
+            <placement code="ca_attribute_langmaterial">
+              <bundle>ca_attribute_langmaterial</bundle>
+              <settings>
+                <setting name="label" locale="en_US">Language of Participant</setting>
+              </settings>
+            </placement>
+            <placement code="ca_attribute_gender">
+              <bundle>ca_attribute_gender</bundle>
+            </placement>
+            <placement code="ca_attribute_dates">
+              <bundle>ca_attribute_dates</bundle>
+            </placement>
+            <placement code="ca_places">
+              <bundle>ca_places</bundle>
+              <settings>
+                <setting name="label" locale="en_US">Participant Country</setting>
+              </settings>
+            </placement>
+            <placement code="ca_attribute_occupation">
+              <bundle>ca_attribute_occupation</bundle>
+            </placement>
+            <placement code="ca_attribute_roles">
+              <bundle>ca_attribute_roles</bundle>
+            </placement>
+            <placement code="ca_attribute_email">
+              <bundle>ca_attribute_email</bundle>
+            </placement>
+            <placement code="ca_attribute_phone">
+              <bundle>ca_attribute_phone</bundle>
+            </placement>
+            <placement code="ca_attribute_perswebsite">
+              <bundle>ca_attribute_perswebsite</bundle>
+            </placement>
+            <placement code="ca_attribute_affiliation">
+              <bundle>ca_attribute_affiliation</bundle>
+            </placement>
+            <placement code="ca_attribute_biographist">
+              <bundle>ca_attribute_biographist</bundle>
+            </placement>
+            <placement code="ca_attribute_otherinfo">
+              <bundle>ca_attribute_otherinfo</bundle>
+            </placement>
+            <placement code="ca_attribute_authorities">
+              <bundle>ca_attribute_authorities</bundle>
+            </placement>
+            <placement code="access">
+              <bundle>access</bundle>
+            </placement>
+          </bundlePlacements>
+        </screen>
+
+      <screen idno="relationships" default="0">
+          <labels>
+            <label locale="en_US">
+              <name>Relationships</name>
+            </label>
+          </labels>
+          <bundlePlacements>
+            <placement code="ca_objects">
+              <bundle>ca_objects</bundle>
+            </placement>
+            <placement code="ca_entities">
+              <bundle>ca_entities</bundle>
+            </placement>
+            <placement code="ca_places">
+              <bundle>ca_places</bundle>
+            </placement>
+            <placement code="ca_occurrences">
+              <bundle>ca_occurrences</bundle>
+            </placement>
+            <placement code="ca_collections">
+              <bundle>ca_collections</bundle>
+            </placement>
+          </bundlePlacements>
+        </screen>
+    </screens>
+  </userInterface>
+
+  <!-- Collections-->
+
+  <userInterface code="collections_ui" type="ca_collections">
+    <labels>
+      <label locale="en_US">
+        <name>Standard object editor</name>
+      </label>
+    </labels>
+    <screens>
+      <screen idno="identifierscr" default="0">
+      <labels>
+        <label locale="en_US">
+          <name>Identifiers</name>
+        </label>
+      </labels>
+      <bundlePlacements>
+        <placement code="ca_attribute_idno">
+          <bundle>ca_attribute_idno</bundle>
+        </placement>
+        <placement code="preferred_labels">
+          <bundle>preferred_labels</bundle>
+        </placement>
+        <placement code="ca_attribute_description">
+          <bundle>ca_attribute_description</bundle>
+        </placement>
+        <placement code="ca_attribute_descriptionalt">
+          <bundle>ca_attribute_descriptionalt</bundle>
+        </placement>
+        <placement code="ca_attribute_prjtype">
+          <bundle>ca_attribute_prjtype</bundle>
+        </placement>
+        <placement code="ca_attribute_prjregion">
+          <bundle>ca_attribute_prjregion</bundle>
+        </placement>
+        <placement code="ca_entities">
+          <bundle>ca_entities</bundle>
+          <settings>
+            <setting name="label" locale="en_US">Project Leader</setting>
+          </settings>
+        </placement>
+        <placement code="ca_places">
+          <bundle>ca_places</bundle>
+          <settings>
+            <setting name="label" locale="en_US">Project Country</setting>
+          </settings>
+        </placement>
+        <placement code="ca_collections">
+          <bundle>ca_collections</bundle>
+          <settings>
+            <setting name="label" locale="en_US">Related Project</setting>
+          </settings>
+        </placement>
+        <placement code="ca_attribute_ifwebpage">
+          <bundle>ca_attribute_ifwebpage</bundle>
+        </placement>
+        <placement code="ca_attribute_exwebpage">
+          <bundle>ca_attribute_exwebpage</bundle>
+        </placement>
+        <placement code="access">
+          <bundle>access</bundle>
+        </placement>
+        <placement code="status">
+          <bundle>status</bundle>
+        </placement>
+      </bundlePlacements>
+    </screen>
+      <screen idno="relationships" default="0">
+      <labels>
+        <label locale="en_US">
+          <name>Relationships</name>
+        </label>
+      </labels>
+      <bundlePlacements>
+        <placement code="ca_objects">
+          <bundle>ca_objects</bundle>
+        </placement>
+        <placement code="ca_entities">
+          <bundle>ca_entities</bundle>
+        </placement>
+        <placement code="ca_places">
+          <bundle>ca_places</bundle>
+        </placement>
+        <placement code="ca_occurrences">
+          <bundle>ca_occurrences</bundle>
+        </placement>
+        <placement code="ca_collections">
+          <bundle>ca_collections</bundle>
+        </placement>
+      </bundlePlacements>
+    </screen>
+    </screens>
+  </userInterface>
+
+  <!-- Places -->
+
+  <userInterface code="places_ui" type="ca_places">
+    <labels>
+      <label locale="en_US">
+        <name>Place editor</name>
+      </label>
+    </labels>
+    <screens>
+      <screen idno="basic" default="1">
+          <labels>
+            <label locale="en_US">
+              <name>Basic info</name>
+            </label>
+          </labels>
+          <bundlePlacements>
+            <placement code="hierarchy_navigation">
+              <bundle>hierarchy_navigation</bundle>
+            </placement>
+            <placement code="ca_attribute_idno">
+              <bundle>ca_attribute_idno</bundle>
+            </placement>
+            <placement code="preferred_labels">
+              <bundle>preferred_labels</bundle>
+              <settings>
+                <setting name="label" locale="en_US">Name</setting>
+                <setting name="add_label" locale="en_US">Add name</setting>
+              </settings>
+            </placement>
+            <placement code="access">
+              <bundle>access</bundle>
+            </placement>
+            <placement code="status">
+              <bundle>status</bundle>
+            </placement>
+            <placement code="ca_attribute_description">
+              <bundle>ca_attribute_description</bundle>
+            </placement>
+          </bundlePlacements>
+        </screen>
+      <screen idno="relationships" default="0">
+          <labels>
+            <label locale="en_US">
+              <name>Relationships</name>
+            </label>
+            <label locale="fr_FR">
+              <name>Relations</name>
+            </label>
+          </labels>
+          <bundlePlacements>
+            <placement code="hierarchy_navigation">
+              <bundle>hierarchy_navigation</bundle>
+            </placement>
+            <placement code="ca_objects">
+              <bundle>ca_objects</bundle>
+            </placement>
+            <placement code="ca_entities">
+              <bundle>ca_entities</bundle>
+            </placement>
+            <placement code="ca_attribute_georeference">
+              <bundle>ca_attribute_georeference</bundle>
+            </placement>
+            <placement code="ca_attribute_geonames">
+              <bundle>ca_attribute_geonames</bundle>
+            </placement>
+          </bundlePlacements>
+        </screen>
+    </screens>
+  </userInterface>
+
+<!-- Occurrences (Themes Test)-->
+
+  <userInterface code="occurrences_ui" type="ca_occurrences">
+    <labels>
+      <label locale="en_US">
+        <name>Occurrences editor</name>
+      </label>
+    </labels>
+    <screens>
+      <screen idno="basic" default="1">
+        <labels>
+          <label locale="en_US">
+            <name>Basic info</name>
+          </label>
+        </labels>
+        <bundlePlacements>
+          <placement code="preferred_labels">
+            <bundle>preferred_labels</bundle>
+            <settings>
+              <setting name="label" locale="en_US">Title</setting>
+            </settings>
+          </placement>
+          <placement code="idno">
+            <bundle>idno</bundle>
+          </placement>
+          <placement code="access">
+            <bundle>access</bundle>
+          </placement>
+          <placement code="status">
+            <bundle>status</bundle>
+          </placement>
+          <placement code="source_id">
+            <bundle>source_id</bundle>
+          </placement>
+          <placement code="nonpreferred_labels">
+            <bundle>nonpreferred_labels</bundle>
+            <settings>
+              <setting name="label" locale="en_US">Alternate titles</setting>
+            </settings>
+          </placement>
+          <placement code="ca_attribute_date">
+            <bundle>ca_attribute_date</bundle>
+          </placement>
+          <placement code="ca_attribute_description">
+            <bundle>ca_attribute_description</bundle>
+          </placement>
+          <placement code="ca_attribute_citation">
+            <bundle>ca_attribute_citation</bundle>
+          </placement>
+          <placement code="ca_attribute_publication_info">
+            <bundle>ca_attribute_publication_info</bundle>
+          </placement>
+          <placement code="ca_attribute_alternate_pub_numbers">
+            <bundle>ca_attribute_alternate_pub_numbers</bundle>
+          </placement>
+          <placement code="ca_attribute_rights">
+            <bundle>ca_attribute_rights</bundle>
+          </placement>
+          <placement code="ca_entities">
+            <bundle>ca_entities</bundle>
+          </placement>
+          <placement code="ca_occurrences">
+            <bundle>ca_occurrences</bundle>
+          </placement>
+          <placement code="ca_attribute_internal_notes">
+            <bundle>ca_attribute_internal_notes</bundle>
+          </placement>
+          <placement code="ca_attribute_external_link">
+            <bundle>ca_attribute_external_link</bundle>
+            <settings>
+              <setting name="add_label" locale="en_US">Add external link</setting>
+            </settings>
+          </placement>
+        </bundlePlacements>
+      </screen>
+      <screen idno="relationships" default="0">
+        <labels>
+          <label locale="en_US">
+            <name>Relationships</name>
+          </label>
+        </labels>
+        <bundlePlacements>
+          <placement code="ca_objects">
+            <bundle>ca_objects</bundle>
+          </placement>
+          <placement code="ca_entities">
+            <bundle>ca_entities</bundle>
+          </placement>
+          <placement code="ca_occurrences">
+            <bundle>ca_occurrences</bundle>
+          </placement>
+          <placement code="ca_collections">
+            <bundle>ca_collections</bundle>
+          </placement>
+        </bundlePlacements>
+      </screen>
+      <screen idno="location" default="0">
+        <labels>
+          <label locale="en_US">
+            <name>Location</name>
+          </label>
+        </labels>
+        <bundlePlacements>
+          <placement code="ca_places">
+            <bundle>ca_places</bundle>
+          </placement>
+          <placement code="ca_attribute_georeference">
+            <bundle>ca_attribute_georeference</bundle>
+          </placement>
+          <placement code="ca_attribute_geonames">
+            <bundle>ca_attribute_geonames</bundle>
+          </placement>
+        </bundlePlacements>
+      </screen>
+      <screen idno="keywords" default="0">
+        <labels>
+          <label locale="en_US">
+            <name>Keywords</name>
+          </label>
+        </labels>
+        <bundlePlacements>
+          <placement code="ca_list_items">
+            <bundle>ca_list_items</bundle>
+          </placement>
+          <placement code="ca_attribute_lcsh_terms">
+            <bundle>ca_attribute_lcsh_terms</bundle>
+            <settings>
+              <setting name="label" locale="en_US">Library of Congress Subject Headings</setting>
+              <setting name="add_label" locale="en_US">Add new subject heading</setting>
+            </settings>
+          </placement>
+        </bundlePlacements>
+      </screen>
+    </screens>
+  </userInterface>
+
+
+</userInterfaces>
