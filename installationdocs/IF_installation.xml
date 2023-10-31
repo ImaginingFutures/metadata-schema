@@ -5696,7 +5696,7 @@
     <userInterface code="entities_ui" type="ca_entities">
       <labels>
         <label locale="en_US">
-          <name>Standard object editor</name>
+          <name>Standard entities editor</name>
         </label>
       </labels>
       <screens>
@@ -5802,7 +5802,7 @@
     <userInterface code="collections_ui" type="ca_collections">
       <labels>
         <label locale="en_US">
-          <name>Standard object editor</name>
+          <name>Standard collections editor</name>
         </label>
       </labels>
       <screens>
