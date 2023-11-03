@@ -8,7 +8,119 @@
   </locales>
   
   <lists>
-    
+    <list code="place_types" hierarchical="1" system="0" vocabulary="0">
+      <labels>
+        <label locale="en_US">
+          <name>Place types</name>
+        </label>
+      </labels>
+      <items>
+        <item idno="continent" access="1" enabled="1" default="0">
+          <labels>
+            <label locale="en_US" preferred="1">
+              <name_singular>continent</name_singular>
+              <name_plural>continents</name_plural>
+            </label>
+          </labels>
+        </item>
+        <item idno="country" access="1" enabled="1" default="1">
+          <labels>
+            <label locale="en_US" preferred="1">
+              <name_singular>country</name_singular>
+              <name_plural>countries</name_plural>
+            </label>
+          </labels>
+        </item>
+        <item idno="state" enabled="1" default="0">
+          <labels>
+            <label locale="en_US" preferred="1">
+              <name_singular>state/province</name_singular>
+              <name_plural>state/province</name_plural>
+            </label>
+          </labels>
+        </item>
+        <item idno="city" access="1" enabled="1" default="0">
+          <labels>
+            <label locale="en_US" preferred="1">
+              <name_singular>city</name_singular>
+              <name_plural>cities</name_plural>
+            </label>
+          </labels>
+        </item>
+        <item idno="region" access="1" enabled="1" default="0">
+          <labels>
+            <label locale="en_US" preferred="1">
+              <name_singular>region</name_singular>
+              <name_plural>regions</name_plural>
+            </label>
+          </labels>
+        </item>
+        <item idno="address" access="1" enabled="1" default="0">
+          <labels>
+            <label locale="en_US" preferred="1">
+              <name_singular>address</name_singular>
+              <name_plural>address</name_plural>
+            </label>
+          </labels>
+        </item>
+        <item idno="imaginary" access="1" enabled="1" default="0">
+          <labels>
+            <label locale="en_US" preferred="1">
+              <name_singular>imaginary</name_singular>
+              <name_plural>imaginary</name_plural>
+            </label>
+          </labels>
+        </item>
+        <item idno="county" enabled="1" default="0">
+          <labels>
+            <label locale="en_US" preferred="1">
+              <name_singular>county</name_singular>
+              <name_plural>counties</name_plural>
+            </label>
+          </labels>
+        </item>
+        <item idno="neighborhood" enabled="1" default="0">
+          <labels>
+            <label locale="en_US" preferred="1">
+              <name_singular>neighborhood</name_singular>
+              <name_plural>neighborhoods</name_plural>
+            </label>
+          </labels>
+        </item>
+        <item idno="location" enabled="1" default="0">
+          <labels>
+            <label locale="en_US" preferred="1">
+              <name_singular>location</name_singular>
+              <name_plural>locations</name_plural>
+            </label>
+          </labels>
+        </item>
+        <item idno="river" enabled="1" default="0">
+          <labels>
+            <label locale="en_US" preferred="1">
+              <name_singular>river</name_singular>
+              <name_plural>rivers</name_plural>
+            </label>
+          </labels>
+        </item>
+        <item idno="socken" enabled="1" default="0">
+          <labels>
+            <label locale="en_US" preferred="1">
+              <name_singular>parish</name_singular>
+              <name_plural>parishes</name_plural>
+            </label>
+          </labels>
+        </item>
+        <item idno="other" enabled="1" default="0">
+          <labels>
+            <label locale="en_US" preferred="1">
+              <name_singular>other feature</name_singular>
+              <name_plural>other features</name_plural>
+            </label>
+          </labels>
+        </item>
+      </items>
+    </list>
 
     <list code="aat_vocabulary" hierarchical="1" system="0" vocabulary="1">
       <labels>
@@ -1132,7 +1244,7 @@
         </label>
       </labels>
       <items>
-        <item idno="created" enabled="1" default="1">
+        <item idno="created" access="1" enabled="1" default="1">
           <labels>
             <label locale="en_US" preferred="1">
               <name_singular>created</name_singular>
@@ -1144,7 +1256,7 @@
             </label>
           </labels>
         </item>
-        <item idno="published" enabled="1" default="0">
+        <item idno="published" access="1" enabled="1" default="0">
           <labels>
             <label locale="en_US" preferred="1">
               <name_singular>published</name_singular>
@@ -1240,7 +1352,7 @@
             </label>
           </labels>
         </item>
-        <item idno="birthdate" enabled="1" default="0">
+        <item idno="birthdate" access="1" enabled="1" default="0">
           <labels>
             <label locale="en_US" preferred="1">
               <name_singular>birthdate</name_singular>
@@ -1248,7 +1360,7 @@
             </label>
           </labels>
         </item>
-        <item idno="digitised" enabled="1" default="0">
+        <item idno="digitised" access="1" enabled="1" default="0">
           <labels>
             <label locale="en_US" preferred="1">
               <name_singular>digitised</name_singular>
@@ -4687,32 +4799,6 @@
       </typeRestrictions>
     </metadataElement>
 
-    <metadataElement code="themes" datatype="List" list="themeslist">
-      <labels>
-        <label locale="en_US">
-          <name>Themes</name>
-          <description>Descriptive words that are most significant and unique to the
-                    resource</description>
-          </label>
-      </labels>
-      <settings>
-        <setting name="fieldWidth">90</setting>
-        <setting name="fieldHeight">3</setting>
-        <setting name="minChars">0</setting>
-        <setting name="maxChars">65535</setting>
-      </settings>
-      <typeRestrictions>
-        <restriction>
-          <table>ca_objects</table>
-          <settings>
-            <setting name="minAttributesPerRow">0</setting>
-            <setting name="maxAttributesPerRow">0</setting>
-            <setting name="minimumAttributeBundlesToDisplay">1</setting>
-          </settings>
-        </restriction>
-      </typeRestrictions>
-    </metadataElement>
-
     <metadataElement code="keyword" datatype="Text">
       <labels>
         <label locale="en_US">
@@ -4802,31 +4888,6 @@
       <settings>
         <setting name="fieldWidth">30</setting>
         <setting name="fieldHeight">1</setting>
-        <setting name="minChars">0</setting>
-        <setting name="maxChars">65535</setting>
-      </settings>
-      <typeRestrictions>
-        <restriction>
-          <table>ca_objects</table>
-          <settings>
-            <setting name="minAttributesPerRow">0</setting>
-            <setting name="maxAttributesPerRow">0</setting>
-            <setting name="minimumAttributeBundlesToDisplay">1</setting>
-          </settings>
-        </restriction>
-      </typeRestrictions>
-    </metadataElement>
-
-    <metadataElement code="cultcontext" datatype="List" list="cultcontlist">
-      <labels>
-        <label locale="en_US">
-          <name>Cultural Context</name>
-          <description>The cultural event or context associated with the resource. </description>
-          </label>
-      </labels>
-      <settings>
-        <setting name="fieldWidth">90</setting>
-        <setting name="fieldHeight">3</setting>
         <setting name="minChars">0</setting>
         <setting name="maxChars">65535</setting>
       </settings>
@@ -5566,9 +5627,15 @@
                   <placement code="ca_attribute_langmaterial">
                     <bundle>ca_attribute_langmaterial</bundle>
                   </placement>
-                  <placement code="ca_attribute_themes">
-                    <bundle>ca_attribute_themes</bundle>
+
+                  <placement code="ca_list_items_themes">
+                    <bundle>ca_list_items</bundle>
+                    <settings>
+                      <setting name="restrict_to_lists">themeslist</setting>
+                      <setting name="label" locale="en_US">Themes</setting>  
+                    </settings>
                   </placement>
+
                   <placement code="ca_attribute_keyword">
                     <bundle>ca_attribute_keyword</bundle>
                   </placement>
@@ -5584,10 +5651,39 @@
                   </label>
                 </labels>
                 <bundlePlacements>
-                  <placement code="ca_places">
+                  <placement code="ca_places_country">
                     <bundle>ca_places</bundle>
                     <settings>
-                      <setting name="label" locale="en_US">Locations</setting>
+                      <setting name="restrict_to_types">country</setting>
+                      <setting name="label" locale="en_US">Country</setting>
+                    </settings>
+                  </placement>
+                  <placement code="ca_places_region">
+                    <bundle>ca_places</bundle>
+                    <settings>
+                      <setting name="restrict_to_types">region</setting>
+                      <setting name="label" locale="en_US">Region</setting>
+                    </settings>
+                  </placement>     
+                  <placement code="ca_places_city">
+                    <bundle>ca_places</bundle>
+                    <settings>
+                      <setting name="restrict_to_types">city</setting>
+                      <setting name="label" locale="en_US">City</setting>
+                    </settings>
+                  </placement>
+                  <placement code="ca_places_address">
+                    <bundle>ca_places</bundle>
+                    <settings>
+                      <setting name="restrict_to_types">address</setting>
+                      <setting name="label" locale="en_US">Address</setting>
+                    </settings>
+                  </placement>
+                  <placement code="ca_places_imaginary">
+                    <bundle>ca_places</bundle>
+                    <settings>
+                      <setting name="restrict_to_types">imaginary</setting>
+                      <setting name="label" locale="en_US">Imaginary</setting>
                     </settings>
                   </placement>
                   <placement code="ca_attribute_coordinates">
@@ -5617,8 +5713,12 @@
                       <placement code="ca_attribute_cultgroup">
                         <bundle>ca_attribute_cultgroup</bundle>
                       </placement>
-                      <placement code="ca_attribute_cultcontext">
-                        <bundle>ca_attribute_cultcontext</bundle>
+                      <placement code="ca_list_items_cultcontlist">
+                        <bundle>ca_list_items</bundle>
+                        <settings>
+                          <setting name="restrict_to_lists">cultcontlist</setting>
+                          <setting name="label" locale="en_US">Cultural Context</setting>  
+                        </settings>
                       </placement>
                       <placement code="ca_attribute_socialgroup">
                           <bundle>ca_attribute_socialgroup</bundle>
@@ -5647,10 +5747,25 @@
                             </label>
                           </labels>
                           <bundlePlacements>
-                            <placement code="ca_entities">
+                            <placement code="ca_entities_creator">
                               <bundle>ca_entities</bundle>
                               <settings>
-                                <setting name="label" locale="en_US">People</setting>
+                                <setting name="label" locale="en_US">Creator</setting>
+                                  <setting name="restrict_to_relationship_types">creator</setting>
+                              </settings>
+                            </placement>
+                            <placement code="ca_entities_contributor">
+                              <bundle>ca_entities</bundle>
+                              <settings>
+                                  <setting name="label" locale="en_US">Contributor</setting>
+                                    <setting name="restrict_to_relationship_types">contributor</setting>                               
+                              </settings>
+                            </placement>
+                            <placement code="ca_entities_rightsowner">
+                              <bundle>ca_entities</bundle>
+                              <settings>
+                                <setting name="label" locale="en_US">Rights Holder</setting>
+                                <setting name="restrict_to_relationship_types">rightsholder</setting>  
                               </settings>
                             </placement>
                               <placement code="ca_attribute_licence">
@@ -6553,6 +6668,26 @@
             <label locale="fr_FR">
               <typename>représente</typename>
               <typename_reverse>est représenté dans</typename_reverse>
+            </label>
+          </labels>
+          <subTypeLeft> </subTypeLeft>
+          <subTypeRight />
+        </type>
+        <type code="theme" default="0">
+          <labels>
+            <label locale="en_US">
+              <typename>theme</typename>
+              <typename_reverse>theme</typename_reverse>
+            </label>
+          </labels>
+          <subTypeLeft> </subTypeLeft>
+          <subTypeRight />
+        </type>
+        <type code="culturalcontext" default="0">
+          <labels>
+            <label locale="en_US">
+              <typename>cultural context</typename>
+              <typename_reverse>cultural context</typename_reverse>
             </label>
           </labels>
           <subTypeLeft> </subTypeLeft>
