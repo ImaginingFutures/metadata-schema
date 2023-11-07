@@ -1360,11 +1360,11 @@
             </label>
           </labels>
         </item>
-        <item idno="digitised" access="1" enabled="1" default="0">
+        <item idno="digitized" access="1" enabled="1" default="0">
           <labels>
             <label locale="en_US" preferred="1">
-              <name_singular>digitised</name_singular>
-              <name_plural>digitised</name_plural>
+              <name_singular>digitized</name_singular>
+              <name_plural>digitized</name_plural>
             </label>
           </labels>
         </item>
@@ -1376,7 +1376,7 @@
           <name>Object media license types</name>
         </label>
         <label locale="fr_FR">
-          <name>Type de licence des médias objet</name>
+          <name>Type de license des médias objet</name>
         </label>
       </labels>
       <items>
@@ -3334,81 +3334,81 @@
 
     
 
-    <list code="licencelist" hierarchical="0" system="0" vocabulary="1">
+    <list code="licenses" hierarchical="0" system="0" vocabulary="1">
       <labels>
         <label locale="en_US">
-          <name>Licences</name>
+          <name>Licenses</name>
         </label>
       </labels>
       <items>
-        <item idno="licence_01" enabled="1" default="1">
+        <item idno="license_01" enabled="1" default="1">
           <labels>
             <label locale="en_US" preferred="1">
               <name_singular>CC BY 4.0</name_singular>
               <name_plural>CC BY 4.0</name_plural>
-              <description>Attribution---This licence lets others distribute, remix,
+              <description>Attribution---This license lets others distribute, remix,
                                   adapt, and build upon your work, even commercially, as long as they
                                   credit you for the original creation. This is the most accommodating
-                                  of licences offered. Recommended for maximum dissemination and use
-                                  of licenced materials.</description>
+                                  of licenses offered. Recommended for maximum dissemination and use
+                                  of licensed materials.</description>
             </label>
           </labels>
         </item>
-        <item idno="licence_02" enabled="1" default="1">
+        <item idno="license_02" enabled="1" default="1">
           <labels>
             <label locale="en_US" preferred="1">
               <name_singular>CC BY-SA 4.0</name_singular>
               <name_plural>CC BY-SA 4.0</name_plural>
-              <description>Attribution-ShareAlike---This licence lets others remix,
+              <description>Attribution-ShareAlike---This license lets others remix,
                                   adapt, and build upon your work even for commercial purposes, as
-                                  long as they credit you and licence their new creations under the
-                                  identical terms. This licence is often compared to “copyleft” free
-                                  and open source software licences. All new works based on yours will
-                                  carry the same licence, so any derivatives will also allow
-                                  commercial use. This is the licence used by Wikipedia, and is
+                                  long as they credit you and license their new creations under the
+                                  identical terms. This license is often compared to “copyleft” free
+                                  and open source software licenses. All new works based on yours will
+                                  carry the same license, so any derivatives will also allow
+                                  commercial use. This is the license used by Wikipedia, and is
                                   recommended for materials that would benefit from incorporating
-                                  content from Wikipedia and similarly licenced projects.</description>
+                                  content from Wikipedia and similarly licensed projects.</description>
             </label>
           </labels>
         </item>
-        <item idno="licence_03" enabled="1" default="1">
+        <item idno="license_03" enabled="1" default="1">
           <labels>
             <label locale="en_US" preferred="1">
               <name_singular>CC BY-ND 4.0</name_singular>
               <name_plural>CC BY-ND 4.0</name_plural>
-              <description>Attribution-NoDerivs---This licence lets others reuse the
+              <description>Attribution-NoDerivs---This license lets others reuse the
                                   work for any purpose, including commercially; however, it cannot be
                                   shared with others in adapted form, and credit must be provided to
                                   you.</description>
             </label>
           </labels>
         </item>
-        <item idno="licence_04" enabled="1" default="1">
+        <item idno="license_04" enabled="1" default="1">
           <labels>
             <label locale="en_US" preferred="1">
               <name_singular>CC BY-NC-SA 4.0</name_singular>
               <name_plural>CC BY-NC-SA 4.0</name_plural>
-              <description>Attribution-NonCommercial-ShareAlike---This licence lets
+              <description>Attribution-NonCommercial-ShareAlike---This license lets
                                   others remix, adapt, and build upon your work non-commercially, as
-                                  long as they credit you and licence their new creations under the
+                                  long as they credit you and license their new creations under the
                                   identical terms.</description>
             </label>
           </labels>
         </item>
-        <item idno="licence_05" enabled="1" default="1">
+        <item idno="license_05" enabled="1" default="1">
           <labels>
             <label locale="en_US" preferred="1">
               <name_singular>CC BY-NC-ND 4.0</name_singular>
               <name_plural>CC BY-NC-ND 4.0</name_plural>
-              <description>Attribution-NonCommercial-NoDerivs---This licence is the
-                                  most restrictive of our six main licences, only allowing others to
+              <description>Attribution-NonCommercial-NoDerivs---This license is the
+                                  most restrictive of our six main licenses, only allowing others to
                                   download your works and share them with others as long as they
                                   credit you, but they can’t change them in any way or use them
                                   commercially.</description>
             </label>
           </labels>
         </item>
-        <item idno="licence_06" enabled="1" default="1">
+        <item idno="license_06" enabled="1" default="1">
           <labels>
             <label locale="en_US" preferred="1">
               <name_singular>CC0</name_singular>
@@ -5028,10 +5028,10 @@
       </typeRestrictions>
     </metadataElement>
 
-    <metadataElement code="licence" datatype="List" list="licencelist">
+    <metadataElement code="license" datatype="List" list="licenses">
       <labels>
         <label locale="en_US">
-          <name>Licence</name>
+          <name>License</name>
           <description>Information about the shareability, distribution and adaptation of
                     the
                     resource.</description>
@@ -5042,7 +5042,7 @@
           <table>ca_objects</table>
           <settings>
             <setting name="minAttributesPerRow">0</setting>
-            <setting name="maxAttributesPerRow">1</setting>
+            <setting name="maxAttributesPerRow">0</setting>
             <setting name="minimumAttributeBundlesToDisplay">1</setting>
           </settings>
         </restriction>
@@ -5768,8 +5768,8 @@
                                 <setting name="restrict_to_relationship_types">rightsholder</setting>  
                               </settings>
                             </placement>
-                              <placement code="ca_attribute_licence">
-                                <bundle>ca_attribute_licence</bundle>
+                              <placement code="ca_attribute_license">
+                                <bundle>ca_attribute_license</bundle>
                               </placement>
                               <placement code="ca_attribute_rightsstate">
                                 <bundle>ca_attribute_rightsstate</bundle>
