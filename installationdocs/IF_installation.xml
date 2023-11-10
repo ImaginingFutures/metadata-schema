@@ -4853,7 +4853,7 @@
       </typeRestrictions>
     </metadataElement>
 
-    <metadataElement code="coordinates" datatype="Geocode">
+    <metadataElement code="georeference" datatype="Geocode">
       <labels>
         <label locale="en_US">
           <name>Coordinates</name>
@@ -5037,6 +5037,12 @@
                     resource.</description>
           </label>
       </labels>
+      <settings>
+        <setting name="fieldWidth">30</setting>
+        <setting name="fieldHeight">1</setting>
+        <setting name="minChars">0</setting>
+        <setting name="maxChars">65535</setting>
+      </settings>
       <typeRestrictions>
         <restriction>
           <table>ca_objects</table>
@@ -5686,8 +5692,8 @@
                       <setting name="label" locale="en_US">Imaginary</setting>
                     </settings>
                   </placement>
-                  <placement code="ca_attribute_coordinates">
-                    <bundle>ca_attribute_coordinates</bundle>
+                  <placement code="ca_attribute_georeference">
+                    <bundle>ca_attribute_georeference</bundle>
                   </placement>
                 </bundlePlacements>
               </screen>
@@ -5993,6 +5999,9 @@
             </placement>
             <placement code="ca_places">
               <bundle>ca_places</bundle>
+            </placement>
+            <placement code="ca_attribute_georeference">
+              <bundle>ca_attribute_georeference</bundle>
             </placement>
             <placement code="ca_occurrences">
               <bundle>ca_occurrences</bundle>
