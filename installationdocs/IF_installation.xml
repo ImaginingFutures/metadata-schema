@@ -4478,48 +4478,6 @@
 
   <elementSets>
     
-    <metadataElement code="idno" datatype="Text">
-      <labels>
-        <label locale="en_US">
-          <name>Unique Record Identifier</name>
-          <description>An alphanumeric identifier for the record created for the IF
-                    Repository.</description>
-          </label>
-      </labels>
-      <settings>
-        <setting name="fieldWidth">90</setting>
-        <setting name="fieldHeight">6</setting>
-        <setting name="minChars">0</setting>
-        <setting name="maxChars">65535</setting>
-      </settings>
-      <typeRestrictions>
-        <restriction>
-          <table>ca_objects</table>
-          <settings>
-            <setting name="minAttributesPerRow">0</setting>
-            <setting name="maxAttributesPerRow">1</setting>
-            <setting name="minimumAttributeBundlesToDisplay">1</setting>
-          </settings>
-        </restriction>
-        <restriction>
-          <table>ca_entities</table>
-          <settings>
-            <setting name="minAttributesPerRow">0</setting>
-            <setting name="maxAttributesPerRow">1</setting>
-            <setting name="minimumAttributeBundlesToDisplay">1</setting>
-          </settings>
-        </restriction>
-        <restriction>
-          <table>ca_collections</table>
-          <settings>
-            <setting name="minAttributesPerRow">0</setting>
-            <setting name="maxAttributesPerRow">1</setting>
-            <setting name="minimumAttributeBundlesToDisplay">1</setting>
-          </settings>
-        </restriction>
-      </typeRestrictions>
-    </metadataElement>
-
     <metadataElement code="originalid" datatype="Text">
       <labels>
         <label locale="en_US">
@@ -5567,15 +5525,10 @@
       </typeRestrictions>
     </metadataElement>
 
-    
-
-    
   </elementSets>
 
 
   <userInterfaces>
-
-  
 
     <userInterface code="objects_ui" type="ca_objects">
       <labels>
@@ -5591,8 +5544,8 @@
                   </label>
                 </labels>
                 <bundlePlacements>
-                  <placement code="ca_attribute_idno">
-                    <bundle>ca_attribute_idno</bundle>
+                  <placement code="idno">
+                    <bundle>idno</bundle>
                   </placement>
                   <placement code="ca_attribute_originalid">
                     <bundle>ca_attribute_originalid</bundle>
@@ -5828,8 +5781,8 @@
                 </label>
               </labels>
               <bundlePlacements>
-                <placement code="ca_attribute_idno">
-                  <bundle>ca_attribute_idno</bundle>
+                <placement code="idno">
+                  <bundle>idno</bundle>
                 </placement>
                 <placement code="preferred_labels">
                   <bundle>preferred_labels</bundle>
@@ -5934,8 +5887,8 @@
             </label>
           </labels>
           <bundlePlacements>
-            <placement code="ca_attribute_idno">
-              <bundle>ca_attribute_idno</bundle>
+            <placement code="idno">
+              <bundle>idno</bundle>
             </placement>
             <placement code="preferred_labels">
               <bundle>preferred_labels</bundle>
@@ -6033,8 +5986,8 @@
                 <placement code="hierarchy_navigation">
                   <bundle>hierarchy_navigation</bundle>
                 </placement>
-                <placement code="ca_attribute_idno">
-                  <bundle>ca_attribute_idno</bundle>
+                <placement code="idno">
+                  <bundle>idno</bundle>
                 </placement>
                 <placement code="preferred_labels">
                   <bundle>preferred_labels</bundle>
