@@ -2203,7 +2203,7 @@
         </label>
       </labels>
       <items>
-        <item idno="created" enabled="1" default="1" value="created" rank="177">
+        <item idno="created" access="1" enabled="1" default="1">
           <labels>
             <label locale="en_US" preferred="1">
               <name_singular>created</name_singular>
@@ -2217,7 +2217,7 @@
             </label>
           </labels>
         </item>
-        <item idno="published" enabled="1" default="0" value="published" rank="178">
+        <item idno="published" access="1" enabled="1" default="0">
           <labels>
             <label locale="fr_FR" preferred="1">
               <name_singular>publié</name_singular>
@@ -2329,7 +2329,7 @@
             </label>
           </labels>
         </item>
-        <item idno="birthdate" enabled="1" default="0" value="birthdate" rank="186">
+        <item idno="birthdate" access="1" enabled="1" default="0">
           <labels>
             <label locale="en_US" preferred="1">
               <name_singular>birthdate</name_singular>
@@ -2338,12 +2338,11 @@
             </label>
           </labels>
         </item>
-        <item idno="digitised" enabled="1" default="0" value="digitised" rank="187">
+        <item idno="digitized" access="1" enabled="1" default="0">
           <labels>
             <label locale="en_US" preferred="1">
-              <name_singular>digitised</name_singular>
-              <name_plural>digitised</name_plural>
-              <description/>
+              <name_singular>digitized</name_singular>
+              <name_plural>digitized</name_plural>
             </label>
           </labels>
         </item>
@@ -2355,7 +2354,7 @@
           <name>Object media license types</name>
         </label>
         <label locale="fr_FR">
-          <name>Type de licence des médias objet</name>
+          <name>Type de license des médias objet</name>
         </label>
       </labels>
       <items>
@@ -6671,25 +6670,6 @@ https://creativecommons.org/publicdomain/zero/1.0/</description>
         </restriction>
       </typeRestrictions>
     </metadataElement>
-    <metadataElement code="themes" datatype="List" list="themeslist">
-      <labels>
-        <label locale="en_US">
-          <name>Themes</name>
-          <description>Descriptive words that are most significant and unique to the
-                    resource</description>
-        </label>
-      </labels>
-      <typeRestrictions>
-        <restriction>
-          <table>ca_objects</table>
-          <settings>
-            <setting name="minAttributesPerRow">0</setting>
-            <setting name="maxAttributesPerRow">0</setting>
-            <setting name="minimumAttributeBundlesToDisplay">1</setting>
-          </settings>
-        </restriction>
-      </typeRestrictions>
-    </metadataElement>
     <metadataElement code="keyword" datatype="Text">
       <labels>
         <label locale="en_US">
@@ -6737,7 +6717,8 @@ https://creativecommons.org/publicdomain/zero/1.0/</description>
         </restriction>
       </typeRestrictions>
     </metadataElement>
-    <metadataElement code="coordinates" datatype="Geocode">
+
+    <metadataElement code="georeference" datatype="Geocode">
       <labels>
         <label locale="en_US">
           <name>Coordinates</name>
@@ -6778,24 +6759,6 @@ https://creativecommons.org/publicdomain/zero/1.0/</description>
       <settings>
         <setting name="fieldWidth">30</setting>
       </settings>
-      <typeRestrictions>
-        <restriction>
-          <table>ca_objects</table>
-          <settings>
-            <setting name="minAttributesPerRow">0</setting>
-            <setting name="maxAttributesPerRow">0</setting>
-            <setting name="minimumAttributeBundlesToDisplay">1</setting>
-          </settings>
-        </restriction>
-      </typeRestrictions>
-    </metadataElement>
-    <metadataElement code="cultcontext" datatype="List" list="cultcontlist">
-      <labels>
-        <label locale="en_US">
-          <name>Cultural Context</name>
-          <description>The cultural event or context associated with the resource. </description>
-        </label>
-      </labels>
       <typeRestrictions>
         <restriction>
           <table>ca_objects</table>
@@ -7463,128 +7426,321 @@ https://creativecommons.org/publicdomain/zero/1.0/</description>
     </metadataElement>
   </elementSets>
   <userInterfaces>
-    <userInterface code="loan_cataloguers_ui" type="ca_loans">
+
+    <userInterface code="objects_ui" type="ca_objects">
       <labels>
         <label locale="en_US">
           <name>Loan editor</name>
         </label>
       </labels>
       <screens>
-        <screen idno="basic" default="1">
-          <labels>
-            <label locale="en_US">
-              <name>Basic info</name>
-            </label>
-          </labels>
-          <bundlePlacements>
-            <placement code="preferred_labels">
-              <bundle>preferred_labels</bundle>
-              <settings>
-                <setting name="label" locale="en_US">Short description of loan</setting>
-                <setting name="add_label" locale="en_US">Add short description</setting>
-                <setting name="readonly">0</setting>
-                <setting name="expand_collapse_value">bubbles</setting>
-                <setting name="expand_collapse_no_value">bubbles</setting>
-                <setting name="usewysiwygeditor">0</setting>
-              </settings>
-            </placement>
-            <placement code="idno">
-              <bundle>ca_loans.idno</bundle>
-              <settings>
-                <setting name="readonly">0</setting>
-                <setting name="expand_collapse_value">bubbles</setting>
-                <setting name="expand_collapse_no_value">bubbles</setting>
-                <setting name="usewysiwygeditor">0</setting>
-              </settings>
-            </placement>
-            <placement code="ca_entities">
-              <bundle>ca_entities</bundle>
-              <settings>
-                <setting name="readonly">0</setting>
-                <setting name="expand_collapse_value">bubbles</setting>
-                <setting name="expand_collapse_no_value">bubbles</setting>
-                <setting name="dontShowRelationshipTypes">0</setting>
-                <setting name="dont_include_subtypes_in_type_restriction">0</setting>
-                <setting name="list_format">bubbles</setting>
-                <setting name="dontShowAddButton">0</setting>
-                <setting name="dontShowDeleteButton">0</setting>
-                <setting name="minRelationshipsPerRow">0</setting>
-                <setting name="maxRelationshipsPerRow">0</setting>
-                <setting name="disableQuickadd">0</setting>
-                <setting name="sortDirection">ASC</setting>
-                <setting name="disableSorts">0</setting>
-                <setting name="showCount">0</setting>
-                <setting name="numPerPage">100</setting>
-                <setting name="showBatchEditorButton">0</setting>
-                <setting name="showSetRepresentationButton">0</setting>
-              </settings>
-            </placement>
-            <placement code="ca_attribute_loan_authorization_date">
-              <bundle>ca_loans.loan_authorization_date</bundle>
-              <settings>
-                <setting name="readonly">0</setting>
-                <setting name="expand_collapse_value">bubbles</setting>
-                <setting name="expand_collapse_no_value">bubbles</setting>
-              </settings>
-            </placement>
-            <placement code="ca_attribute_loan_in_date">
-              <bundle>ca_loans.loan_in_date</bundle>
-              <settings>
-                <setting name="readonly">0</setting>
-                <setting name="expand_collapse_value">bubbles</setting>
-                <setting name="expand_collapse_no_value">bubbles</setting>
-              </settings>
-            </placement>
-            <placement code="ca_attribute_loan_out_date">
-              <bundle>ca_loans.loan_out_date</bundle>
-              <settings>
-                <setting name="readonly">0</setting>
-                <setting name="expand_collapse_value">bubbles</setting>
-                <setting name="expand_collapse_no_value">bubbles</setting>
-              </settings>
-            </placement>
-            <placement code="ca_attribute_loan_return_date">
-              <bundle>ca_loans.loan_return_date</bundle>
-              <settings>
-                <setting name="readonly">0</setting>
-                <setting name="expand_collapse_value">bubbles</setting>
-                <setting name="expand_collapse_no_value">bubbles</setting>
-              </settings>
-            </placement>
-            <placement code="ca_attribute_loan_renewal_date">
-              <bundle>ca_loans.loan_renewal_date</bundle>
-              <settings>
-                <setting name="readonly">0</setting>
-                <setting name="expand_collapse_value">bubbles</setting>
-                <setting name="expand_collapse_no_value">bubbles</setting>
-              </settings>
-            </placement>
-            <placement code="ca_attribute_loan_conditions">
-              <bundle>ca_loans.loan_conditions</bundle>
-              <settings>
-                <setting name="readonly">0</setting>
-                <setting name="expand_collapse_value">bubbles</setting>
-                <setting name="expand_collapse_no_value">bubbles</setting>
-              </settings>
-            </placement>
-            <placement code="ca_attribute_loan_note">
-              <bundle>ca_loans.loan_note</bundle>
-              <settings>
-                <setting name="readonly">0</setting>
-                <setting name="expand_collapse_value">bubbles</setting>
-                <setting name="expand_collapse_no_value">bubbles</setting>
-              </settings>
-            </placement>
-            <placement code="ca_attribute_loan_purpose">
-              <bundle>ca_loans.loan_purpose</bundle>
-              <settings>
-                <setting name="readonly">0</setting>
-                <setting name="expand_collapse_value">bubbles</setting>
-                <setting name="expand_collapse_no_value">bubbles</setting>
-              </settings>
-            </placement>
-          </bundlePlacements>
-        </screen>
+        <screen idno="identifierscr" default="0">
+                <labels>
+                  <label locale="en_US">
+                    <name>Identifiers</name>
+                  </label>
+                </labels>
+                <bundlePlacements>
+                  <placement code="idno">
+                    <bundle>idno</bundle>
+                  </placement>
+                  <placement code="ca_attribute_originalid">
+                    <bundle>ca_attribute_originalid</bundle>
+                  </placement>
+                  <placement code="ca_collections">
+                    <bundle>ca_collections</bundle>
+                    <settings>
+                      <setting name="label" locale="en_US">Member of</setting>
+                    </settings>
+                  </placement>
+                  <placement code="preferred_labels">
+                    <bundle>preferred_labels</bundle>
+                  </placement>
+                  <placement code="ca_attribute_alternativetitle">
+                    <bundle>ca_attribute_alternativetitle</bundle>
+                  </placement>
+                  <placement code="ca_attribute_exlink">
+                    <bundle>ca_attribute_exlink</bundle>
+                  </placement>
+                  <placement code="access">
+                    <bundle>access</bundle>
+                  </placement>
+                </bundlePlacements>
+              </screen>
+        <screen idno="scopeandcontentscr" default="0">
+                <labels>
+                  <label locale="en_US">
+                    <name>Scope and Content</name>
+                  </label>
+                </labels>
+                <bundlePlacements>
+                  <placement code="ca_attribute_description">
+                    <bundle>ca_attribute_description</bundle>
+                  </placement>
+                  <placement code="ca_attribute_descriptionalt">
+                    <bundle>ca_attribute_descriptionalt</bundle>
+                  </placement>
+                  <placement code="ca_attribute_langmaterial">
+                    <bundle>ca_attribute_langmaterial</bundle>
+                  </placement>
+
+                  <placement code="ca_list_items_themes">
+                    <bundle>ca_list_items</bundle>
+                    <settings>
+                      <setting name="restrict_to_lists">themeslist</setting>
+                      <setting name="label" locale="en_US">Themes</setting>  
+                    </settings>
+                  </placement>
+
+                  <placement code="ca_attribute_keyword">
+                    <bundle>ca_attribute_keyword</bundle>
+                  </placement>
+                  <placement code="ca_attribute_notes">
+                    <bundle>ca_attribute_notes</bundle>
+                  </placement>
+                </bundlePlacements>
+              </screen>
+        <screen idno="spatialscr" default="0">
+                <labels>
+                  <label locale="en_US">
+                    <name>Spatial Coverage</name>
+                  </label>
+                </labels>
+                <bundlePlacements>
+                  <placement code="ca_places_country">
+                    <bundle>ca_places</bundle>
+                    <settings>
+                      <setting name="restrict_to_types">country</setting>
+                      <setting name="label" locale="en_US">Country</setting>
+                    </settings>
+                  </placement>
+                  <placement code="ca_places_region">
+                    <bundle>ca_places</bundle>
+                    <settings>
+                      <setting name="restrict_to_types">region</setting>
+                      <setting name="label" locale="en_US">Region</setting>
+                    </settings>
+                  </placement>     
+                  <placement code="ca_places_city">
+                    <bundle>ca_places</bundle>
+                    <settings>
+                      <setting name="restrict_to_types">city</setting>
+                      <setting name="label" locale="en_US">City</setting>
+                    </settings>
+                  </placement>
+                  <placement code="ca_places_address">
+                    <bundle>ca_places</bundle>
+                    <settings>
+                      <setting name="restrict_to_types">address</setting>
+                      <setting name="label" locale="en_US">Address</setting>
+                    </settings>
+                  </placement>
+                  <placement code="ca_places_imaginary">
+                    <bundle>ca_places</bundle>
+                    <settings>
+                      <setting name="restrict_to_types">imaginary</setting>
+                      <setting name="label" locale="en_US">Imaginary</setting>
+                    </settings>
+                  </placement>
+                  <placement code="ca_attribute_georeference">
+                    <bundle>ca_attribute_georeference</bundle>
+                  </placement>
+                </bundlePlacements>
+              </screen>
+        <screen idno="datescr" default="0">
+                <labels>
+                  <label locale="en_US">
+                    <name>Dates</name>
+                  </label>
+                </labels>
+                <bundlePlacements>
+                  <placement code="ca_attribute_dates">
+                    <bundle>ca_attribute_dates</bundle>
+                  </placement>
+                </bundlePlacements>
+              </screen>
+        <screen idno="socioculturalscr" default="0">
+                    <labels>
+                      <label locale="en_US">
+                        <name>Socio-cultural Context</name>
+                      </label>
+                    </labels>
+                    <bundlePlacements>
+                      <placement code="ca_attribute_cultgroup">
+                        <bundle>ca_attribute_cultgroup</bundle>
+                      </placement>
+                      <placement code="ca_list_items_cultcontlist">
+                        <bundle>ca_list_items</bundle>
+                        <settings>
+                          <setting name="restrict_to_lists">cultcontlist</setting>
+                          <setting name="label" locale="en_US">Cultural Context</setting>  
+                        </settings>
+                      </placement>
+                      <placement code="ca_attribute_socialgroup">
+                          <bundle>ca_attribute_socialgroup</bundle>
+                        </placement>
+                    </bundlePlacements>
+                  </screen>
+        <screen idno="technologyscr" default="0">
+                    <labels>
+                      <label locale="en_US">
+                        <name>Production Technique</name>
+                      </label>
+                    </labels>
+                    <bundlePlacements>
+                      <placement code="ca_attribute_prodtech">
+                        <bundle>ca_attribute_prodtech</bundle>
+                      </placement>
+                      <placement code="ca_attribute_equipused">
+                        <bundle>ca_attribute_equipused</bundle>
+                      </placement>
+                    </bundlePlacements>
+                  </screen>
+        <screen idno="intellectualpropertyscr" default="0">
+                          <labels>
+                            <label locale="en_US">
+                              <name>Intellectual Property</name>
+                            </label>
+                          </labels>
+                          <bundlePlacements>
+                            <placement code="ca_entities_creator">
+                              <bundle>ca_entities</bundle>
+                              <settings>
+                                <setting name="label" locale="en_US">Creator</setting>
+                                  <setting name="restrict_to_relationship_types">creator</setting>
+                              </settings>
+                            </placement>
+                            <placement code="ca_entities_contributor">
+                              <bundle>ca_entities</bundle>
+                              <settings>
+                                  <setting name="label" locale="en_US">Contributor</setting>
+                                    <setting name="restrict_to_relationship_types">contributor</setting>                               
+                              </settings>
+                            </placement>
+                            <placement code="ca_entities_rightsowner">
+                              <bundle>ca_entities</bundle>
+                              <settings>
+                                <setting name="label" locale="en_US">Rights Holder</setting>
+                                <setting name="restrict_to_relationship_types">rightsholder</setting>  
+                              </settings>
+                            </placement>
+                              <placement code="ca_attribute_license">
+                                <bundle>ca_attribute_license</bundle>
+                              </placement>
+                              <placement code="ca_attribute_rightsstate">
+                                <bundle>ca_attribute_rightsstate</bundle>
+                              </placement>
+                          </bundlePlacements>
+                        </screen>
+        <screen idno="accessandsensitivity" default="0">
+                          <labels>
+                            <label locale="en_US">
+                              <name>Access and Sensitivity</name>
+                            </label>
+                          </labels>
+                          <bundlePlacements>
+                            <placement code="ca_attribute_cultsens">
+                              <bundle>ca_attribute_cultsens</bundle>
+                            </placement>
+                            <placement code="ca_attribute_reasonforrest">
+                              <bundle>ca_attribute_reasonforrest</bundle>
+                            </placement>
+                          </bundlePlacements>
+                        </screen>
+        <screen idno="media" default="0">
+                          <labels>
+                            <label locale="en_US">
+                              <name>Media</name>
+                            </label>
+                          </labels>
+                          <bundlePlacements>
+                            <placement code="ca_object_representations">
+                              <bundle>ca_object_representations</bundle>
+                            </placement>
+                          </bundlePlacements>
+                        </screen>
+      </screens>
+    </userInterface>
+
+    
+
+    <userInterface code="entities_ui" type="ca_entities">
+      <labels>
+        <label locale="en_US">
+          <name>Standard entities editor</name>
+        </label>
+      </labels>
+      <screens>
+        <screen idno="identifierscr" default="0">
+              <labels>
+                <label locale="en_US">
+                  <name>Identifiers</name>
+                </label>
+              </labels>
+              <bundlePlacements>
+                <placement code="idno">
+                  <bundle>idno</bundle>
+                </placement>
+                <placement code="preferred_labels">
+                  <bundle>preferred_labels</bundle>
+                </placement>
+                <placement code="ca_attribute_anonymised">
+                  <bundle>ca_attribute_anonymised</bundle>
+                </placement>
+                <placement code="ca_attribute_ethniccom">
+                  <bundle>ca_attribute_ethniccom</bundle>
+                </placement>
+                <placement code="ca_attribute_langmaterial">
+                  <bundle>ca_attribute_langmaterial</bundle>
+                  <settings>
+                    <setting name="label" locale="en_US">Language of Participant</setting>
+                  </settings>
+                </placement>
+                <placement code="ca_attribute_gender">
+                  <bundle>ca_attribute_gender</bundle>
+                </placement>
+                <placement code="ca_attribute_dates">
+                  <bundle>ca_attribute_dates</bundle>
+                </placement>
+                <placement code="ca_places">
+                  <bundle>ca_places</bundle>
+                  <settings>
+                    <setting name="label" locale="en_US">Participant Country</setting>
+                  </settings>
+                </placement>
+                <placement code="ca_attribute_occupation">
+                  <bundle>ca_attribute_occupation</bundle>
+                </placement>
+                <placement code="ca_attribute_roles">
+                  <bundle>ca_attribute_roles</bundle>
+                </placement>
+                <placement code="ca_attribute_email">
+                  <bundle>ca_attribute_email</bundle>
+                </placement>
+                <placement code="ca_attribute_phone">
+                  <bundle>ca_attribute_phone</bundle>
+                </placement>
+                <placement code="ca_attribute_perswebsite">
+                  <bundle>ca_attribute_perswebsite</bundle>
+                </placement>
+                <placement code="ca_attribute_affiliation">
+                  <bundle>ca_attribute_affiliation</bundle>
+                </placement>
+                <placement code="ca_attribute_biographist">
+                  <bundle>ca_attribute_biographist</bundle>
+                </placement>
+                <placement code="ca_attribute_otherinfo">
+                  <bundle>ca_attribute_otherinfo</bundle>
+                </placement>
+                <placement code="ca_attribute_authorities">
+                  <bundle>ca_attribute_authorities</bundle>
+                </placement>
+                <placement code="access">
+                  <bundle>access</bundle>
+                </placement>
+              </bundlePlacements>
+            </screen>
+
         <screen idno="relationships" default="0">
           <labels>
             <label locale="en_US">
@@ -9123,7 +9279,7 @@ https://creativecommons.org/publicdomain/zero/1.0/</description>
     <userInterface code="objects_ui" type="ca_objects">
       <labels>
         <label locale="en_US">
-          <name>Standard object editor</name>
+          <name>Standard collections editor</name>
         </label>
       </labels>
       <screens>
@@ -9134,8 +9290,26 @@ https://creativecommons.org/publicdomain/zero/1.0/</description>
             </label>
           </labels>
           <bundlePlacements>
-            <placement code="ca_attribute_idno">
-              <bundle>ca_objects.idno</bundle>
+            <placement code="idno">
+              <bundle>idno</bundle>
+            </placement>
+            <placement code="preferred_labels">
+              <bundle>preferred_labels</bundle>
+            </placement>
+            <placement code="ca_attribute_description">
+              <bundle>ca_attribute_description</bundle>
+            </placement>
+            <placement code="ca_attribute_descriptionalt">
+              <bundle>ca_attribute_descriptionalt</bundle>
+            </placement>
+            <placement code="ca_attribute_prjtype">
+              <bundle>ca_attribute_prjtype</bundle>
+            </placement>
+            <placement code="ca_attribute_prjregion">
+              <bundle>ca_attribute_prjregion</bundle>
+            </placement>
+            <placement code="ca_entities">
+              <bundle>ca_entities</bundle>
               <settings>
                 <setting name="readonly">0</setting>
                 <setting name="expand_collapse_value">bubbles</setting>
@@ -9755,6 +9929,9 @@ https://creativecommons.org/publicdomain/zero/1.0/</description>
                 <setting name="hierarchicalBrowserHeight">200px</setting>
               </settings>
             </placement>
+            <placement code="ca_attribute_georeference">
+              <bundle>ca_attribute_georeference</bundle>
+            </placement>
             <placement code="ca_occurrences">
               <bundle>ca_occurrences</bundle>
               <settings>
@@ -10131,61 +10308,36 @@ https://creativecommons.org/publicdomain/zero/1.0/</description>
       </labels>
       <screens>
         <screen idno="basic" default="1">
-          <labels>
-            <label locale="en_US">
-              <name>Basic info</name>
-            </label>
-          </labels>
-          <bundlePlacements>
-            <placement code="hierarchy_navigation">
-              <bundle>hierarchy_navigation</bundle>
-              <settings>
-                <setting name="readonly">0</setting>
-                <setting name="expand_collapse">dont_force</setting>
-                <setting name="open_hierarchy">1</setting>
-                <setting name="auto_shrink">0</setting>
-              </settings>
-            </placement>
-            <placement code="ca_attribute_idno">
-              <bundle>ca_places.idno</bundle>
-              <settings>
-                <setting name="readonly">0</setting>
-                <setting name="expand_collapse_value">bubbles</setting>
-                <setting name="expand_collapse_no_value">bubbles</setting>
-              </settings>
-            </placement>
-            <placement code="preferred_labels">
-              <bundle>preferred_labels</bundle>
-              <settings>
-                <setting name="label" locale="en_US">Name</setting>
-                <setting name="add_label" locale="en_US">Add name</setting>
-                <setting name="readonly">0</setting>
-                <setting name="expand_collapse_value">bubbles</setting>
-                <setting name="expand_collapse_no_value">bubbles</setting>
-                <setting name="usewysiwygeditor">0</setting>
-              </settings>
-            </placement>
-            <placement code="access">
-              <bundle>access</bundle>
-              <settings>
-                <setting name="readonly">0</setting>
-                <setting name="expand_collapse_value">bubbles</setting>
-                <setting name="expand_collapse_no_value">bubbles</setting>
-              </settings>
-            </placement>
-            <placement code="status">
-              <bundle>status</bundle>
-              <settings>
-                <setting name="readonly">0</setting>
-                <setting name="expand_collapse_value">bubbles</setting>
-                <setting name="expand_collapse_no_value">bubbles</setting>
-              </settings>
-            </placement>
-            <placement code="ca_attribute_coordinates6">
-              <bundle>ca_places.coordinates</bundle>
-            </placement>
-          </bundlePlacements>
-        </screen>
+              <labels>
+                <label locale="en_US">
+                  <name>Basic info</name>
+                </label>
+              </labels>
+              <bundlePlacements>
+                <placement code="hierarchy_navigation">
+                  <bundle>hierarchy_navigation</bundle>
+                </placement>
+                <placement code="idno">
+                  <bundle>idno</bundle>
+                </placement>
+                <placement code="preferred_labels">
+                  <bundle>preferred_labels</bundle>
+                  <settings>
+                    <setting name="label" locale="en_US">Name</setting>
+                    <setting name="add_label" locale="en_US">Add name</setting>
+                  </settings>
+                </placement>
+                <placement code="access">
+                  <bundle>access</bundle>
+                </placement>
+                <placement code="status">
+                  <bundle>status</bundle>
+                </placement>
+                <placement code="ca_attribute_description">
+                  <bundle>ca_attribute_description</bundle>
+                </placement>
+              </bundlePlacements>
+            </screen>
         <screen idno="relationships" default="0">
           <labels>
             <label locale="en_US">
@@ -10812,6 +10964,644 @@ https://creativecommons.org/publicdomain/zero/1.0/</description>
     <relationshipTable name="ca_representation_annotations_x_objects">
       <types>
         <type code="depicts" default="0">
+          <labels>
+            <label locale="en_US">
+              <typename>depicts</typename>
+              <typename_reverse>is depicted by</typename_reverse>
+            </label>
+            <label locale="fr_FR">
+              <typename>représente</typename>
+              <typename_reverse>est représenté dans</typename_reverse>
+            </label>
+          </labels>
+          <subTypeLeft> </subTypeLeft>
+          <subTypeRight />
+        </type>
+        <type code="theme" default="0">
+          <labels>
+            <label locale="en_US">
+              <typename>theme</typename>
+              <typename_reverse>theme</typename_reverse>
+            </label>
+          </labels>
+          <subTypeLeft> </subTypeLeft>
+          <subTypeRight />
+        </type>
+        <type code="culturalcontext" default="0">
+          <labels>
+            <label locale="en_US">
+              <typename>cultural context</typename>
+              <typename_reverse>cultural context</typename_reverse>
+            </label>
+          </labels>
+          <subTypeLeft> </subTypeLeft>
+          <subTypeRight />
+        </type>
+      </types>
+    </relationshipTable>
+    <relationshipTable name="ca_entities_x_entities">
+      <types>
+        <type code="related" default="1">
+          <labels>
+            <label locale="en_US">
+              <typename>is related to</typename>
+              <typename_reverse>is related to</typename_reverse>
+            </label>
+            <label locale="fr_FR">
+              <typename>est lié à</typename>
+              <typename_reverse>est lié à</typename_reverse>
+            </label>
+          </labels>
+          <subTypeLeft> </subTypeLeft>
+          <subTypeRight />
+        </type>
+        <type code="child" default="1">
+          <labels>
+            <label locale="en_US">
+              <typename>is child of</typename>
+              <typename_reverse>is parent of</typename_reverse>
+            </label>
+            <label locale="fr_FR">
+              <typename>est un enfant de</typename>
+              <typename_reverse>est un parent de</typename_reverse>
+            </label>
+          </labels>
+          <subTypeLeft>individual</subTypeLeft>
+          <subTypeRight>individual</subTypeRight>
+        </type>
+        <type code="spouse" default="1">
+          <labels>
+            <label locale="en_US">
+              <typename>is spouse of</typename>
+              <typename_reverse>is spouse of</typename_reverse>
+            </label>
+            <label locale="fr_FR">
+              <typename>est l\'époux/l\'épouse de</typename>
+              <typename_reverse>est l\'époux/l\'épouse de</typename_reverse>
+            </label>
+          </labels>
+          <subTypeLeft>individual</subTypeLeft>
+          <subTypeRight>individual</subTypeRight>
+        </type>
+      </types>
+    </relationshipTable>
+    <relationshipTable name="ca_entities_x_places">
+      <types>
+        <type code="birthplace" default="1">
+          <labels>
+            <label locale="en_US">
+              <typename>was born at</typename>
+              <typename_reverse>was birthplace of</typename_reverse>
+            </label>
+            <label locale="fr_FR">
+              <typename>est né à</typename>
+              <typename_reverse>est le lieu de naissance de</typename_reverse>
+            </label>
+          </labels>
+          <subTypeLeft> </subTypeLeft>
+          <subTypeRight />
+        </type>
+        <type code="residence" default="0">
+          <labels>
+            <label locale="en_US">
+              <typename>resided at</typename>
+              <typename_reverse>was residence of</typename_reverse>
+            </label>
+            <label locale="fr_FR">
+              <typename>a habité à</typename>
+              <typename_reverse>était le lieu de résidence de</typename_reverse>
+            </label>
+          </labels>
+          <subTypeLeft> </subTypeLeft>
+          <subTypeRight />
+        </type>
+        <type code="workplace" default="0">
+          <labels>
+            <label locale="en_US">
+              <typename>worked at</typename>
+              <typename_reverse>was workplace of</typename_reverse>
+            </label>
+            <label locale="fr_FR">
+              <typename>a travaillé à</typename>
+              <typename_reverse>était le lieu de travail de</typename_reverse>
+            </label>
+          </labels>
+          <subTypeLeft> </subTypeLeft>
+          <subTypeRight />
+        </type>
+        <type code="ownership" default="0">
+          <labels>
+            <label locale="en_US">
+              <typename>owned</typename>
+              <typename_reverse>was owned by</typename_reverse>
+            </label>
+            <label locale="fr_FR">
+              <typename>était le propriétaire de</typename>
+              <typename_reverse>appartenait à</typename_reverse>
+            </label>
+          </labels>
+          <subTypeLeft> </subTypeLeft>
+          <subTypeRight />
+        </type>
+        <type code="built_by" default="0">
+          <labels>
+            <label locale="en_US">
+              <typename>built</typename>
+              <typename_reverse>was built by</typename_reverse>
+            </label>
+            <label locale="fr_FR">
+              <typename>a construit</typename>
+              <typename_reverse>a été construit par</typename_reverse>
+            </label>
+          </labels>
+          <subTypeLeft> </subTypeLeft>
+          <subTypeRight />
+        </type>
+      </types>
+    </relationshipTable>
+    <relationshipTable name="ca_entities_x_occurrences">
+      <types>
+        <type code="artist" default="1">
+          <labels>
+            <label locale="en_US">
+              <typename>had as artist</typename>
+              <typename_reverse>was artist</typename_reverse>
+            </label>
+            <label locale="fr_FR">
+              <typename>avait pour artiste</typename>
+              <typename_reverse>était l\'artiste de</typename_reverse>
+            </label>
+          </labels>
+          <subTypeLeft> </subTypeLeft>
+          <subTypeRight />
+        </type>
+        <type code="curator" default="0">
+          <labels>
+            <label locale="en_US">
+              <typename>had as curator</typename>
+              <typename_reverse>was curator of</typename_reverse>
+            </label>
+            <label locale="fr_FR">
+              <typename>avait pour commissaire d\'exposition</typename>
+              <typename_reverse>était le commissaire d\'exposition de</typename_reverse>
+            </label>
+          </labels>
+          <subTypeLeft> </subTypeLeft>
+          <subTypeRight />
+        </type>
+        <type code="moderator" default="0">
+          <labels>
+            <label locale="en_US">
+              <typename>had as moderator</typename>
+              <typename_reverse>was moderator of</typename_reverse>
+            </label>
+            <label locale="fr_FR">
+              <typename>avait pour modérateur</typename>
+              <typename_reverse>était le modérateur de</typename_reverse>
+            </label>
+          </labels>
+          <subTypeLeft> </subTypeLeft>
+          <subTypeRight />
+        </type>
+        <type code="panelist" default="0">
+          <labels>
+            <label locale="en_US">
+              <typename>had as panelist</typename>
+              <typename_reverse>was panelist in</typename_reverse>
+            </label>
+            <label locale="fr_FR">
+              <typename>avait pour critique</typename>
+              <typename_reverse>était critique de</typename_reverse>
+            </label>
+          </labels>
+          <subTypeLeft> </subTypeLeft>
+          <subTypeRight />
+        </type>
+        <type code="speaker" default="0">
+          <labels>
+            <label locale="en_US">
+              <typename>had as speaker</typename>
+              <typename_reverse>was speaker in</typename_reverse>
+            </label>
+            <label locale="fr_FR">
+              <typename>avait pour orateur</typename>
+              <typename_reverse>était orateur dans</typename_reverse>
+            </label>
+          </labels>
+          <subTypeLeft> </subTypeLeft>
+          <subTypeRight />
+        </type>
+        <type code="documentarian" default="0">
+          <labels>
+            <label locale="en_US">
+              <typename>had as documentarian</typename>
+              <typename_reverse>is documentarian of</typename_reverse>
+            </label>
+            <label locale="fr_FR">
+              <typename>avait pour documentaliste</typename>
+              <typename_reverse>était le documentaliste de</typename_reverse>
+            </label>
+          </labels>
+          <subTypeLeft> </subTypeLeft>
+          <subTypeRight />
+        </type>
+        <type code="architect" default="0">
+          <labels>
+            <label locale="en_US">
+              <typename>had as architect</typename>
+              <typename_reverse>was architect of</typename_reverse>
+            </label>
+            <label locale="fr_FR">
+              <typename>avait pour architecte</typename>
+              <typename_reverse>était l\'architecte de</typename_reverse>
+            </label>
+          </labels>
+          <subTypeLeft> </subTypeLeft>
+          <subTypeRight />
+        </type>
+        <type code="designer" default="0">
+          <labels>
+            <label locale="en_US">
+              <typename>had as designer</typename>
+              <typename_reverse>was designer of</typename_reverse>
+            </label>
+            <label locale="fr_FR">
+              <typename>avait pour designer</typename>
+              <typename_reverse>était le designer de</typename_reverse>
+            </label>
+          </labels>
+          <subTypeLeft> </subTypeLeft>
+          <subTypeRight />
+        </type>
+        <type code="author" default="0">
+          <labels>
+            <label locale="en_US">
+              <typename>has as author</typename>
+              <typename_reverse>was author of</typename_reverse>
+            </label>
+            <label locale="fr_FR">
+              <typename>avait pour auteur</typename>
+              <typename_reverse>était l\'auteur de</typename_reverse>
+            </label>
+          </labels>
+          <subTypeLeft>interview</subTypeLeft>
+          <subTypeRight />
+        </type>
+        <type code="performer" default="0">
+          <labels>
+            <label locale="en_US">
+              <typename>had as performer</typename>
+              <typename_reverse>was performer in</typename_reverse>
+            </label>
+            <label locale="fr_FR">
+              <typename>avait pour performer</typename>
+              <typename_reverse>était le performer de</typename_reverse>
+            </label>
+          </labels>
+          <subTypeLeft> </subTypeLeft>
+          <subTypeRight />
+        </type>
+        <type code="staff_member" default="0">
+          <labels>
+            <label locale="en_US">
+              <typename>had as staff member</typename>
+              <typename_reverse>was staff member fo</typename_reverse>
+            </label>
+            <label locale="fr_FR">
+              <typename>avait parmi l\'équipe</typename>
+              <typename_reverse>faisait partie de l\'équipe de</typename_reverse>
+            </label>
+          </labels>
+          <subTypeLeft>interview</subTypeLeft>
+          <subTypeRight />
+        </type>
+        <type code="consultant" default="0">
+          <labels>
+            <label locale="en_US">
+              <typename>had as consultant</typename>
+              <typename_reverse>was consultant for</typename_reverse>
+            </label>
+            <label locale="fr_FR">
+              <typename>avait pour consultant</typename>
+              <typename_reverse>était le consultant de</typename_reverse>
+            </label>
+          </labels>
+          <subTypeLeft> </subTypeLeft>
+          <subTypeRight />
+        </type>
+        <type code="publisher" default="0">
+          <labels>
+            <label locale="en_US">
+              <typename>had as publisher</typename>
+              <typename_reverse>was publisher for</typename_reverse>
+            </label>
+            <label locale="fr_FR">
+              <typename>avait pour éditeur</typename>
+              <typename_reverse>était l\'éditeur de</typename_reverse>
+            </label>
+          </labels>
+          <subTypeLeft> </subTypeLeft>
+          <subTypeRight />
+        </type>
+        <type code="sponsor" default="0">
+          <labels>
+            <label locale="en_US">
+              <typename>had as sponsor</typename>
+              <typename_reverse>was sponsor for</typename_reverse>
+            </label>
+            <label locale="fr_FR">
+              <typename>avait pour sponsor</typename>
+              <typename_reverse>était le sponsor de</typename_reverse>
+            </label>
+          </labels>
+          <subTypeLeft> </subTypeLeft>
+          <subTypeRight />
+        </type>
+        <type code="partner_museum" default="0">
+          <labels>
+            <label locale="en_US">
+              <typename>had as partner museum</typename>
+              <typename_reverse>was partner museum for</typename_reverse>
+            </label>
+            <label locale="fr_FR">
+              <typename>avait pour musée partenaire</typename>
+              <typename_reverse>était le musée partenaire de</typename_reverse>
+            </label>
+          </labels>
+          <subTypeLeft> </subTypeLeft>
+          <subTypeRight />
+        </type>
+      </types>
+    </relationshipTable>
+    <relationshipTable name="ca_object_lots_x_entities">
+      <types>
+        <type code="donor" default="1">
+          <labels>
+            <label locale="en_US">
+              <typename>was donated by</typename>
+              <typename_reverse>is donor of</typename_reverse>
+            </label>
+            <label locale="fr_FR">
+              <typename>a été donné par</typename>
+              <typename_reverse>est le donateur de</typename_reverse>
+            </label>
+          </labels>
+          <subTypeLeft> </subTypeLeft>
+          <subTypeRight />
+        </type>
+        <type code="provider" default="0">
+          <labels>
+            <label locale="en_US">
+              <typename>was provided by</typename>
+              <typename_reverse>is provider of</typename_reverse>
+            </label>
+            <label locale="fr_FR">
+              <typename>a été fourni par</typename>
+              <typename_reverse>est le fournisseur de</typename_reverse>
+            </label>
+          </labels>
+          <subTypeLeft> </subTypeLeft>
+          <subTypeRight />
+        </type>
+      </types>
+    </relationshipTable>
+    <relationshipTable name="ca_object_lots_x_places">
+      <types>
+        <type code="originates" default="1">
+          <labels>
+            <label locale="en_US">
+              <typename>originates from</typename>
+              <typename_reverse>is origination location of</typename_reverse>
+            </label>
+            <label locale="fr_FR">
+              <typename>provient de</typename>
+              <typename_reverse>est la provenance de</typename_reverse>
+            </label>
+          </labels>
+          <subTypeLeft> </subTypeLeft>
+          <subTypeRight />
+        </type>
+      </types>
+    </relationshipTable>
+    <relationshipTable name="ca_object_lots_x_collections">
+      <types>
+        <type code="part_of" default="1">
+          <labels>
+            <label locale="en_US">
+              <typename>is part of</typename>
+              <typename_reverse>contains</typename_reverse>
+            </label>
+            <label locale="fr_FR">
+              <typename>fait partie de</typename>
+              <typename_reverse>contient</typename_reverse>
+            </label>
+          </labels>
+          <subTypeLeft> </subTypeLeft>
+          <subTypeRight />
+        </type>
+      </types>
+    </relationshipTable>
+    <relationshipTable name="ca_entities_x_collections">
+      <types>
+        <type code="related" default="1">
+          <labels>
+            <label locale="en_US">
+              <typename>is related to</typename>
+              <typename_reverse>is related to</typename_reverse>
+            </label>
+            <label locale="fr_FR">
+              <typename>est lié à</typename>
+              <typename_reverse>est lié à</typename_reverse>
+            </label>
+          </labels>
+          <subTypeLeft> </subTypeLeft>
+          <subTypeRight />
+        </type>
+      </types>
+    </relationshipTable>
+    <relationshipTable name="ca_entities_x_vocabulary_terms">
+      <types>
+        <type code="described" default="1">
+          <labels>
+            <label locale="en_US">
+              <typename>is described by</typename>
+              <typename_reverse>describes</typename_reverse>
+            </label>
+            <label locale="fr_FR">
+              <typename>est décrit par</typename>
+              <typename_reverse>décrit</typename_reverse>
+            </label>
+          </labels>
+          <subTypeLeft> </subTypeLeft>
+          <subTypeRight />
+        </type>
+      </types>
+    </relationshipTable>
+    <relationshipTable name="ca_places_x_places">
+      <types>
+        <type code="related" default="1">
+          <labels>
+            <label locale="en_US">
+              <typename>is related to</typename>
+              <typename_reverse>is related to</typename_reverse>
+            </label>
+            <label locale="fr_FR">
+              <typename>est lié à</typename>
+              <typename_reverse>est lié à</typename_reverse>
+            </label>
+          </labels>
+          <subTypeLeft> </subTypeLeft>
+          <subTypeRight />
+        </type>
+      </types>
+    </relationshipTable>
+    <relationshipTable name="ca_occurrences_x_occurrences">
+      <types>
+        <type code="related" default="1">
+          <labels>
+            <label locale="en_US">
+              <typename>is related to</typename>
+              <typename_reverse>is related to</typename_reverse>
+            </label>
+            <label locale="fr_FR">
+              <typename>est décrit par</typename>
+              <typename_reverse>est décrit par</typename_reverse>
+            </label>
+          </labels>
+          <subTypeLeft>event</subTypeLeft>
+          <subTypeRight>event</subTypeRight>
+        </type>
+      </types>
+    </relationshipTable>
+    <relationshipTable name="ca_places_x_vocabulary_terms">
+      <types>
+        <type code="describes" default="1">
+          <labels>
+            <label locale="en_US">
+              <typename>is described by</typename>
+              <typename_reverse>describes</typename_reverse>
+            </label>
+            <label locale="fr_FR">
+              <typename>est décrit par</typename>
+              <typename_reverse>décrit</typename_reverse>
+            </label>
+          </labels>
+          <subTypeLeft> </subTypeLeft>
+          <subTypeRight />
+        </type>
+      </types>
+    </relationshipTable>
+    <relationshipTable name="ca_occurrences_x_vocabulary_terms">
+      <types>
+        <type code="subject" default="1">
+          <labels>
+            <label locale="en_US">
+              <typename>has as subject</typename>
+              <typename_reverse>is subject of</typename_reverse>
+            </label>
+            <label locale="fr_FR">
+              <typename>a pour sujet</typename>
+              <typename_reverse>est le sujet de</typename_reverse>
+            </label>
+          </labels>
+          <subTypeLeft> </subTypeLeft>
+          <subTypeRight />
+        </type>
+      </types>
+    </relationshipTable>
+    <relationshipTable name="ca_places_x_occurrences">
+      <types>
+        <type code="location" default="1">
+          <labels>
+            <label locale="en_US">
+              <typename>was location of</typename>
+              <typename_reverse>occurred at</typename_reverse>
+            </label>
+            <label locale="fr_FR">
+              <typename>était la localisation de</typename>
+              <typename_reverse>a eu lieu à</typename_reverse>
+            </label>
+          </labels>
+          <subTypeLeft> </subTypeLeft>
+          <subTypeRight>subject_program</subTypeRight>
+        </type>
+      </types>
+    </relationshipTable>
+    <relationshipTable name="ca_collections_x_collections">
+      <types>
+        <type code="related" default="1">
+          <labels>
+            <label locale="en_US">
+              <typename>is related to</typename>
+              <typename_reverse>is related to</typename_reverse>
+            </label>
+            <label locale="fr_FR">
+              <typename>est lié à</typename>
+              <typename_reverse>est lié à</typename_reverse>
+            </label>
+          </labels>
+          <subTypeLeft> </subTypeLeft>
+          <subTypeRight />
+        </type>
+      </types>
+    </relationshipTable>
+    <relationshipTable name="ca_collections_x_vocabulary_terms">
+      <types>
+        <type code="described" default="1">
+          <labels>
+            <label locale="en_US">
+              <typename>is described by</typename>
+              <typename_reverse>describes</typename_reverse>
+            </label>
+            <label locale="fr_FR">
+              <typename>est décrit par</typename>
+              <typename_reverse>décrit</typename_reverse>
+            </label>
+          </labels>
+          <subTypeLeft> </subTypeLeft>
+          <subTypeRight />
+        </type>
+      </types>
+    </relationshipTable>
+    <relationshipTable name="ca_places_x_collections">
+      <types>
+        <type code="location" default="1">
+          <labels>
+            <label locale="en_US">
+              <typename>is location of</typename>
+              <typename_reverse>is located in</typename_reverse>
+            </label>
+            <label locale="fr_FR">
+              <typename>est le lieu de</typename>
+              <typename_reverse>a eu lieu à</typename_reverse>
+            </label>
+          </labels>
+          <subTypeLeft> </subTypeLeft>
+          <subTypeRight />
+        </type>
+      </types>
+    </relationshipTable>
+    <relationshipTable name="ca_list_items_x_list_items">
+      <types>
+        <type code="related" default="1">
+          <labels>
+            <label locale="en_US">
+              <typename>is related to</typename>
+              <typename_reverse>is related to</typename_reverse>
+            </label>
+            <label locale="fr_FR">
+              <typename>est lié à</typename>
+              <typename_reverse>est lié à</typename_reverse>
+            </label>
+          </labels>
+          <subTypeLeft> </subTypeLeft>
+          <subTypeRight />
+        </type>
+      </types>
+    </relationshipTable>
+    <relationshipTable name="ca_representation_annotations_x_objects">
+      <types>
+        <type code="depicts" default="1">
           <labels>
             <label locale="en_US">
               <typename>depicts</typename>
