@@ -2,7 +2,7 @@
 
 # Check if Python is installed
 if ! [ -x "$(command -v python3)" ]; then
-  echo 'Error: Python3 is not installed.' >&2
+  echo 'Error: Python is not installed.' >&2
   exit 1
 fi
 

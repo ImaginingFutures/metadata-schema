@@ -2,6 +2,13 @@
 
 ## [Unreleased]
 
+### Changed
+
+- Correction of names `Standard entities editor` in `entities_ui` and `Standard collections editor` in `collections_ui`.
+- Correction of values in `04.2_ProjectsAll.xlsx`.
+
+## [0.1.0] - 2023-10-27
+
 ### Added
 
 - Added settings features (`usewysiwygeditor`, `fieldWidth` and `fieldHeight`) to `metadataElement code="description"`.
