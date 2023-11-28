@@ -777,6 +777,7 @@
       <xs:sequence>
         <xs:element name="profileName" type="xs:string" minOccurs="1" maxOccurs="1"/>
         <xs:element name="profileDescription" type="xs:string" minOccurs="1" maxOccurs="1"/>
+        <xs:element name="profileVersion" type="xs:string" minOccurs="1" maxOccurs="1"/>
 
         <!-- LOCALES -->
 
