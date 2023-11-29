@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<profile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:noNamespaceSchemaLocation="profile.xsd" useForConfiguration="1" infoUrl="">
+<profile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="profile.xsd" useForConfiguration="1" infoUrl="">
   <profileName>IF Custom Profile</profileName>
   <profileDescription>IF Custom Profile</profileDescription>
-  <profileVersion>1.1</profileVersion>
+  <profileVersion>1.1.1</profileVersion>
   <locales>
     <locale lang="en" country="US">English</locale>
     <locale lang="en" country="CA" dontUseForCataloguing="1">English (Canadian)</locale>
@@ -32,7 +31,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>concept</name_singular>
               <name_plural>concepts</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -41,7 +40,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>facet</name_singular>
               <name_plural>facets</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -50,7 +49,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>guide term</name_singular>
               <name_plural>guide terms</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -59,7 +58,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>hierarchy name</name_singular>
               <name_plural>hierarchy names</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -77,7 +76,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>Local</name_singular>
               <name_plural>Local</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -95,7 +94,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>Use for</name_singular>
               <name_plural>Use for</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -104,7 +103,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>Alternate</name_singular>
               <name_plural>Alternate</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -122,17 +121,16 @@
             <label locale="en_US" preferred="1">
               <name_singular>User set</name_singular>
               <name_plural>User sets</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
-        <item idno="public_presentation" enabled="1" default="1" value="public_presentation"
-          rank="13">
+        <item idno="public_presentation" enabled="1" default="1" value="public_presentation" rank="13">
           <labels>
             <label locale="en_US" preferred="1">
               <name_singular>Public presentation</name_singular>
               <name_plural>Public presentations</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -150,17 +148,16 @@
             <label locale="en_US" preferred="1">
               <name_singular>Slideshow</name_singular>
               <name_plural>Slideshows</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
-        <item idno="thumbnail_image_list" enabled="1" default="0" value="thumbnail_image_list"
-          rank="16">
+        <item idno="thumbnail_image_list" enabled="1" default="0" value="thumbnail_image_list" rank="16">
           <labels>
             <label locale="en_US" preferred="1">
               <name_singular>Thumbnail image list</name_singular>
               <name_plural>Thumbnail image lists</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -169,7 +166,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>Title list</name_singular>
               <name_plural>Title lists</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -178,7 +175,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>Chronology</name_singular>
               <name_plural>Chronologies</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -196,7 +193,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>Is primary</name_singular>
               <name_plural>Is primary</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -205,7 +202,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>Is not primary</name_singular>
               <name_plural>Is not primary</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -226,22 +223,21 @@
             <label locale="en_US" preferred="1">
               <name_singular>Document</name_singular>
               <name_plural>Documents</name_plural>
-              <description />
+              <description/>
             </label>
             <label locale="fr_FR" preferred="1">
               <name_singular>Document</name_singular>
               <name_plural>Documents</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
           <items>
-            <item idno="case_study" enabled="1" default="0" value="case_study" rank="556"
-              type="concept">
+            <item idno="case_study" enabled="1" default="0" value="case_study" rank="556" type="concept">
               <labels>
                 <label locale="en_US" preferred="1">
                   <name_singular>Case Study</name_singular>
                   <name_plural>Case Studies</name_plural>
-                  <description />
+                  <description/>
                 </label>
               </labels>
             </item>
@@ -259,7 +255,7 @@
                 <label locale="en_US" preferred="1">
                   <name_singular>narrative report</name_singular>
                   <name_plural>narrative reports</name_plural>
-                  <description />
+                  <description/>
                 </label>
               </labels>
             </item>
@@ -270,12 +266,12 @@
             <label locale="fr_FR" preferred="1">
               <name_singular>Dessin</name_singular>
               <name_plural>Dessins</name_plural>
-              <description />
+              <description/>
             </label>
             <label locale="en_US" preferred="1">
               <name_singular>Drawing</name_singular>
               <name_plural>Drawings</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -284,12 +280,12 @@
             <label locale="en_US" preferred="1">
               <name_singular>Film &amp; Media</name_singular>
               <name_plural>Film &amp; Media</name_plural>
-              <description />
+              <description/>
             </label>
             <label locale="fr_FR" preferred="1">
               <name_singular>Film &amp; Média</name_singular>
               <name_plural>Film &amp; Média</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -298,12 +294,12 @@
             <label locale="en_US" preferred="1">
               <name_singular>Painting</name_singular>
               <name_plural>Paintings</name_plural>
-              <description />
+              <description/>
             </label>
             <label locale="fr_FR" preferred="1">
               <name_singular>Peinture</name_singular>
               <name_plural>Peintures</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -312,12 +308,12 @@
             <label locale="fr_FR" preferred="1">
               <name_singular>Photographie</name_singular>
               <name_plural>Photographies</name_plural>
-              <description />
+              <description/>
             </label>
             <label locale="en_US" preferred="1">
               <name_singular>Photography</name_singular>
               <name_plural>Photography</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -326,12 +322,12 @@
             <label locale="fr_FR" preferred="1">
               <name_singular>Imprimé</name_singular>
               <name_plural>Imprimés</name_plural>
-              <description />
+              <description/>
             </label>
             <label locale="en_US" preferred="1">
               <name_singular>Print</name_singular>
               <name_plural>Prints</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -340,12 +336,12 @@
             <label locale="en_US" preferred="1">
               <name_singular>Sculpture</name_singular>
               <name_plural>Sculptures</name_plural>
-              <description />
+              <description/>
             </label>
             <label locale="fr_FR" preferred="1">
               <name_singular>Sculpture</name_singular>
               <name_plural>Sculptures</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -354,7 +350,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>Dataset</name_singular>
               <name_plural>Dataset</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -363,7 +359,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>Interview</name_singular>
               <name_plural>Interview</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -372,7 +368,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>Recipe</name_singular>
               <name_plural>Recipe</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -381,7 +377,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>Workshop</name_singular>
               <name_plural>Workshop</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -390,7 +386,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>Performance</name_singular>
               <name_plural>Performance</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -399,7 +395,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>Book</name_singular>
               <name_plural>Book</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -420,12 +416,12 @@
             <label locale="fr_FR" preferred="1">
               <name_singular>Collection permanente</name_singular>
               <name_plural>Collections permanentes</name_plural>
-              <description />
+              <description/>
             </label>
             <label locale="en_US" preferred="1">
               <name_singular>Permanent Collection</name_singular>
               <name_plural>Permanent Collections</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -434,12 +430,12 @@
             <label locale="fr_FR" preferred="1">
               <name_singular>Collection temporaire</name_singular>
               <name_plural>Collections temporaires</name_plural>
-              <description />
+              <description/>
             </label>
             <label locale="en_US" preferred="1">
               <name_singular>Temporary Collection</name_singular>
               <name_plural>Temporary Collections</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -448,12 +444,12 @@
             <label locale="fr_FR" preferred="1">
               <name_singular>Collection d\'étude</name_singular>
               <name_plural>Collections d\'étude</name_plural>
-              <description />
+              <description/>
             </label>
             <label locale="en_US" preferred="1">
               <name_singular>Study Collection</name_singular>
               <name_plural>Study Collections</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -462,12 +458,12 @@
             <label locale="fr_FR" preferred="1">
               <name_singular>Collection externe</name_singular>
               <name_plural>Collections externes</name_plural>
-              <description />
+              <description/>
             </label>
             <label locale="en_US" preferred="1">
               <name_singular>External Collection</name_singular>
               <name_plural>External Collections</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -488,12 +484,12 @@
             <label locale="fr_FR" preferred="1">
               <name_singular>acquisition en cours</name_singular>
               <name_plural>acquisitions en cours</name_plural>
-              <description />
+              <description/>
             </label>
             <label locale="en_US" preferred="1">
               <name_singular>pending accession</name_singular>
               <name_plural>pending accessions</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -502,12 +498,12 @@
             <label locale="en_US" preferred="1">
               <name_singular>accessioned</name_singular>
               <name_plural>accessioned</name_plural>
-              <description />
+              <description/>
             </label>
             <label locale="fr_FR" preferred="1">
               <name_singular>acquis</name_singular>
               <name_plural>acquis</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -516,12 +512,12 @@
             <label locale="en_US" preferred="1">
               <name_singular>loan</name_singular>
               <name_plural>loans</name_plural>
-              <description />
+              <description/>
             </label>
             <label locale="fr_FR" preferred="1">
               <name_singular>prêt</name_singular>
               <name_plural>prêts</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -530,12 +526,12 @@
             <label locale="fr_FR" preferred="1">
               <name_singular>non acquis</name_singular>
               <name_plural>non acquis</name_plural>
-              <description />
+              <description/>
             </label>
             <label locale="en_US" preferred="1">
               <name_singular>non-accessioned</name_singular>
               <name_plural>non-accessioned</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -544,12 +540,12 @@
             <label locale="fr_FR" preferred="1">
               <name_singular>acquisition possible</name_singular>
               <name_plural>acquisitions possibles</name_plural>
-              <description />
+              <description/>
             </label>
             <label locale="en_US" preferred="1">
               <name_singular>potential acquisition</name_singular>
               <name_plural>potential acquisitions</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -567,7 +563,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>disposed</name_singular>
               <name_plural>disposed</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -588,12 +584,12 @@
             <label locale="fr_FR" preferred="1">
               <name_singular>don</name_singular>
               <name_plural>dons</name_plural>
-              <description />
+              <description/>
             </label>
             <label locale="en_US" preferred="1">
               <name_singular>gift</name_singular>
               <name_plural>gifts</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -602,12 +598,12 @@
             <label locale="en_US" preferred="1">
               <name_singular>bequest</name_singular>
               <name_plural>bequests</name_plural>
-              <description />
+              <description/>
             </label>
             <label locale="fr_FR" preferred="1">
               <name_singular>leg</name_singular>
               <name_plural>legs</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -616,12 +612,12 @@
             <label locale="fr_FR" preferred="1">
               <name_singular>achat</name_singular>
               <name_plural>achats</name_plural>
-              <description />
+              <description/>
             </label>
             <label locale="en_US" preferred="1">
               <name_singular>purchase</name_singular>
               <name_plural>purchases</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -642,12 +638,12 @@
             <label locale="en_US" preferred="1">
               <name_singular>alternate</name_singular>
               <name_plural>alternates</name_plural>
-              <description />
+              <description/>
             </label>
             <label locale="fr_FR" preferred="1">
               <name_singular>alternatif</name_singular>
               <name_plural>alternatifs</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -656,12 +652,12 @@
             <label locale="en_US" preferred="1">
               <name_singular>use for</name_singular>
               <name_plural>use for</name_plural>
-              <description />
+              <description/>
             </label>
             <label locale="fr_FR" preferred="1">
               <name_singular>utiliser pour</name_singular>
               <name_plural>utiliser pour</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -679,7 +675,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>new</name_singular>
               <name_plural>new</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -688,7 +684,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>editing in progress</name_singular>
               <name_plural>editing in progress</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -697,7 +693,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>editing complete</name_singular>
               <name_plural>editing complete</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -706,7 +702,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>review in progress</name_singular>
               <name_plural>review in progress</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -715,7 +711,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>completed</name_singular>
               <name_plural>completed</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -733,7 +729,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>not accessible to public</name_singular>
               <name_plural>not accessible to public</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -742,7 +738,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>restricted public access</name_singular>
               <name_plural>restricted public access</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -751,7 +747,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>accessible to public</name_singular>
               <name_plural>accessible to public</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -769,7 +765,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>Available</name_singular>
               <name_plural>Available</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -778,7 +774,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>In-library use only</name_singular>
               <name_plural>In-library use only</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -787,7 +783,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>Unavailable</name_singular>
               <name_plural>Unavailable</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -808,12 +804,12 @@
             <label locale="en_US" preferred="1">
               <name_singular>donation</name_singular>
               <name_plural>donations</name_plural>
-              <description />
+              <description/>
             </label>
             <label locale="fr_FR" preferred="1">
               <name_singular>donation</name_singular>
               <name_plural>donations</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -822,12 +818,12 @@
             <label locale="en_US" preferred="1">
               <name_singular>loan</name_singular>
               <name_plural>loans</name_plural>
-              <description />
+              <description/>
             </label>
             <label locale="fr_FR" preferred="1">
               <name_singular>prêt</name_singular>
               <name_plural>prêts</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -836,12 +832,12 @@
             <label locale="fr_FR" preferred="1">
               <name_singular>achat</name_singular>
               <name_plural>achats</name_plural>
-              <description />
+              <description/>
             </label>
             <label locale="en_US" preferred="1">
               <name_singular>purchase</name_singular>
               <name_plural>purchases</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -850,12 +846,12 @@
             <label locale="fr_FR" preferred="1">
               <name_singular>objet promis</name_singular>
               <name_plural>objets promis</name_plural>
-              <description />
+              <description/>
             </label>
             <label locale="en_US" preferred="1">
               <name_singular>promised gift</name_singular>
               <name_plural>promised gifts</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -883,12 +879,12 @@
             <label locale="fr_FR" preferred="1">
               <name_singular>acquisition en cours</name_singular>
               <name_plural>acquisitions en cours</name_plural>
-              <description />
+              <description/>
             </label>
             <label locale="en_US" preferred="1">
               <name_singular>pending accession</name_singular>
               <name_plural>pending accessions</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -897,12 +893,12 @@
             <label locale="en_US" preferred="1">
               <name_singular>accessioned</name_singular>
               <name_plural>accessioned</name_plural>
-              <description />
+              <description/>
             </label>
             <label locale="fr_FR" preferred="1">
               <name_singular>répertorié</name_singular>
               <name_plural>répertoriés</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -911,12 +907,12 @@
             <label locale="en_US" preferred="1">
               <name_singular>loan</name_singular>
               <name_plural>loans</name_plural>
-              <description />
+              <description/>
             </label>
             <label locale="fr_FR" preferred="1">
               <name_singular>prêt</name_singular>
               <name_plural>prêts</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -925,12 +921,12 @@
             <label locale="fr_FR" preferred="1">
               <name_singular>non acquis</name_singular>
               <name_plural>non acquis</name_plural>
-              <description />
+              <description/>
             </label>
             <label locale="en_US" preferred="1">
               <name_singular>non-accessioned</name_singular>
               <name_plural>non-accessioned</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -939,12 +935,12 @@
             <label locale="fr_FR" preferred="1">
               <name_singular>acquisition potentielle</name_singular>
               <name_plural>acquisitions potentielles</name_plural>
-              <description />
+              <description/>
             </label>
             <label locale="en_US" preferred="1">
               <name_singular>potential acquisition</name_singular>
               <name_plural>potential acquisitions</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -953,12 +949,12 @@
             <label locale="en_US" preferred="1">
               <name_singular>deaccessioned</name_singular>
               <name_plural>deaccessioned</name_plural>
-              <description />
+              <description/>
             </label>
             <label locale="fr_FR" preferred="1">
               <name_singular>sorti de l\'inventaire</name_singular>
               <name_plural>sortis de l\'inventaire</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -979,12 +975,12 @@
             <label locale="en_US" preferred="1">
               <name_singular>Alternate</name_singular>
               <name_plural>Alternates</name_plural>
-              <description />
+              <description/>
             </label>
             <label locale="fr_FR" preferred="1">
               <name_singular>Alternatif</name_singular>
               <name_plural>Alternatifs</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -993,12 +989,12 @@
             <label locale="en_US" preferred="1">
               <name_singular>use for</name_singular>
               <name_plural>use for</name_plural>
-              <description />
+              <description/>
             </label>
             <label locale="fr_FR" preferred="1">
               <name_singular>utiliser pour</name_singular>
               <name_plural>utiliser pour</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -1016,7 +1012,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>loan in</name_singular>
               <name_plural>loans in</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -1025,7 +1021,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>loan out</name_singular>
               <name_plural>loans out</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -1050,7 +1046,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>Movement</name_singular>
               <name_plural>Movements</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -1078,12 +1074,12 @@
             <label locale="en_US" preferred="1">
               <name_singular>individual</name_singular>
               <name_plural>individuals</name_plural>
-              <description />
+              <description/>
             </label>
             <label locale="fr_FR" preferred="1">
               <name_singular>personne physique</name_singular>
               <name_plural>personnes physiques</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -1092,28 +1088,27 @@
             <label locale="fr_FR" preferred="1">
               <name_singular>organisation</name_singular>
               <name_plural>organisations</name_plural>
-              <description />
+              <description/>
             </label>
             <label locale="en_US" preferred="1">
               <name_singular>organization</name_singular>
               <name_plural>organizations</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
-        <item idno="participant" enabled="1" default="1" value="participant" rank="580"
-          type="concept">
+        <item idno="participant" enabled="1" default="1" value="participant" rank="580" type="concept">
           <labels>
             <label locale="en_US" preferred="1">
               <name_singular>participant</name_singular>
               <name_plural>participants</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
           <settings>
             <setting name="entity_class">IND</setting>
             <setting name="use_suffix_for_orgs">1</setting>
-            <setting name="org_label" />
+            <setting name="org_label"/>
             <setting name="show_source_for_preferred_labels">0</setting>
             <setting name="show_source_for_nonpreferred_labels">0</setting>
             <setting name="show_checked_for_preferred_labels">0</setting>
@@ -1138,12 +1133,12 @@
             <label locale="en_US" preferred="1">
               <name_singular>Entity Sources</name_singular>
               <name_plural>Entity Sources</name_plural>
-              <description />
+              <description/>
             </label>
             <label locale="fr_FR" preferred="1">
               <name_singular>Source d\'entité</name_singular>
               <name_plural>Sources d\'entités</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -1164,12 +1159,12 @@
             <label locale="en_US" preferred="1">
               <name_singular>alternate</name_singular>
               <name_plural>alternates</name_plural>
-              <description />
+              <description/>
             </label>
             <label locale="fr_FR" preferred="1">
               <name_singular>alternatif</name_singular>
               <name_plural>alternatifs</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -1178,12 +1173,12 @@
             <label locale="en_US" preferred="1">
               <name_singular>use for</name_singular>
               <name_plural>use for</name_plural>
-              <description />
+              <description/>
             </label>
             <label locale="fr_FR" preferred="1">
               <name_singular>utiliser pour</name_singular>
               <name_plural>utiliser pour</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -1201,7 +1196,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>country</name_singular>
               <name_plural>countries</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
           <settings>
@@ -1215,7 +1210,7 @@
                 <label locale="en_US" preferred="1">
                   <name_singular>state/province</name_singular>
                   <name_plural>state/province</name_plural>
-                  <description />
+                  <description/>
                 </label>
               </labels>
               <settings>
@@ -1229,7 +1224,7 @@
                     <label locale="en_US" preferred="1">
                       <name_singular>parish</name_singular>
                       <name_plural>parishes</name_plural>
-                      <description />
+                      <description/>
                     </label>
                   </labels>
                   <settings>
@@ -1245,7 +1240,7 @@
                 <label locale="en_US" preferred="1">
                   <name_singular>county</name_singular>
                   <name_plural>counties</name_plural>
-                  <description />
+                  <description/>
                 </label>
               </labels>
               <settings>
@@ -1259,7 +1254,7 @@
                 <label locale="en_US" preferred="1">
                   <name_singular>region</name_singular>
                   <name_plural>region</name_plural>
-                  <description />
+                  <description/>
                 </label>
               </labels>
               <settings>
@@ -1273,7 +1268,7 @@
                     <label locale="en_US" preferred="1">
                       <name_singular>city</name_singular>
                       <name_plural>cities</name_plural>
-                      <description />
+                      <description/>
                     </label>
                   </labels>
                   <settings>
@@ -1282,13 +1277,12 @@
                     <setting name="render_in_new_menu">1</setting>
                   </settings>
                   <items>
-                    <item idno="neighborhood" enabled="1" default="0" value="neighborhood"
-                      rank="107">
+                    <item idno="neighborhood" enabled="1" default="0" value="neighborhood" rank="107">
                       <labels>
                         <label locale="en_US" preferred="1">
                           <name_singular>neighborhood</name_singular>
                           <name_plural>neighborhoods</name_plural>
-                          <description />
+                          <description/>
                         </label>
                       </labels>
                       <settings>
@@ -1302,7 +1296,7 @@
                         <label locale="en_US" preferred="1">
                           <name_singular>address</name_singular>
                           <name_plural>address</name_plural>
-                          <description />
+                          <description/>
                         </label>
                       </labels>
                       <settings>
@@ -1322,7 +1316,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>other feature</name_singular>
               <name_plural>other features</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -1331,12 +1325,11 @@
             <label locale="en_US" preferred="1">
               <name_singular>imaginary</name_singular>
               <name_plural>imaginary</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
           <items>
-            <item idno="imaginary_ancestral" enabled="1" default="0" value="imaginary_ancestral"
-              rank="576" type="concept">
+            <item idno="imaginary_ancestral" enabled="1" default="0" value="imaginary_ancestral" rank="576" type="concept">
               <labels>
                 <label locale="en_US" preferred="1">
                   <name_singular>Ancestral non-geographical place</name_singular>
@@ -1350,8 +1343,7 @@
                 <setting name="render_in_new_menu">1</setting>
               </settings>
             </item>
-            <item idno="imaginary_storytelling" enabled="1" default="0"
-              value="imaginary_storytelling" rank="577" type="concept">
+            <item idno="imaginary_storytelling" enabled="1" default="0" value="imaginary_storytelling" rank="577" type="concept">
               <labels>
                 <label locale="en_US" preferred="1">
                   <name_singular>Storytelling place</name_singular>
@@ -1362,8 +1354,7 @@
             </item>
           </items>
         </item>
-        <item idno="indigenous_territories" enabled="1" default="0" value="indigenous_territories"
-          rank="572" type="concept">
+        <item idno="indigenous_territories" enabled="1" default="0" value="indigenous_territories" rank="572" type="concept">
           <labels>
             <label locale="en_US" preferred="1">
               <name_singular>indigenous territory</name_singular>
@@ -1373,7 +1364,7 @@
             <label locale="en_US" preferred="0">
               <name_singular>Native Land</name_singular>
               <name_plural>Native Lands</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
           <settings>
@@ -1382,8 +1373,7 @@
             <setting name="render_in_new_menu">1</setting>
           </settings>
         </item>
-        <item idno="geographical_places" enabled="1" default="0" value="geographical_places"
-          rank="573" type="concept">
+        <item idno="geographical_places" enabled="1" default="0" value="geographical_places" rank="573" type="concept">
           <labels>
             <label locale="en_US" preferred="1">
               <name_singular>geographical space</name_singular>
@@ -1397,7 +1387,7 @@
                 <label locale="en_US" preferred="1">
                   <name_singular>continent</name_singular>
                   <name_plural>continents</name_plural>
-                  <description />
+                  <description/>
                 </label>
               </labels>
               <settings>
@@ -1411,7 +1401,7 @@
                 <label locale="en_US" preferred="1">
                   <name_singular>location</name_singular>
                   <name_plural>locations</name_plural>
-                  <description />
+                  <description/>
                 </label>
               </labels>
               <settings>
@@ -1425,7 +1415,7 @@
                 <label locale="en_US" preferred="1">
                   <name_singular>river</name_singular>
                   <name_plural>rivers</name_plural>
-                  <description />
+                  <description/>
                 </label>
               </labels>
               <settings>
@@ -1443,13 +1433,12 @@
                 </label>
               </labels>
             </item>
-            <item idno="geographical_places_other" enabled="1" default="0"
-              value="geographical_places_other" rank="575" type="concept">
+            <item idno="geographical_places_other" enabled="1" default="0" value="geographical_places_other" rank="575" type="concept">
               <labels>
                 <label locale="en_US" preferred="1">
                   <name_singular>Other geographical Space</name_singular>
                   <name_plural>Other Geographical Spaces</name_plural>
-                  <description />
+                  <description/>
                 </label>
               </labels>
             </item>
@@ -1469,7 +1458,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>use for</name_singular>
               <name_plural>use for</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -1478,7 +1467,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>alternate</name_singular>
               <name_plural>alternates</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -1499,12 +1488,12 @@
             <label locale="fr_FR" preferred="1">
               <name_singular>Autorité lieu</name_singular>
               <name_plural>Autorités lieux</name_plural>
-              <description />
+              <description/>
             </label>
             <label locale="en_US" preferred="1">
               <name_singular>Place Authority</name_singular>
               <name_plural>Place Authority</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -1525,7 +1514,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>exhibition</name_singular>
               <name_plural>exhibitions</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -1543,7 +1532,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>use for</name_singular>
               <name_plural>use for</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -1552,7 +1541,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>alternate</name_singular>
               <name_plural>alternates</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -1573,12 +1562,12 @@
             <label locale="en_US" preferred="1">
               <name_singular>Occurrence Source</name_singular>
               <name_plural>Occurrence Source</name_plural>
-              <description />
+              <description/>
             </label>
             <label locale="fr_FR" preferred="1">
               <name_singular>Source d\'occurrence</name_singular>
               <name_plural>Sources d\'occurence</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -1599,12 +1588,12 @@
             <label locale="en_US" preferred="1">
               <name_singular>Project</name_singular>
               <name_plural>Projects</name_plural>
-              <description />
+              <description/>
             </label>
             <label locale="fr_FR" preferred="1">
               <name_singular>Projet</name_singular>
               <name_plural>Projets</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
           <settings>
@@ -1618,22 +1607,21 @@
             <label locale="en_US" preferred="1">
               <name_singular>External</name_singular>
               <name_plural>External</name_plural>
-              <description />
+              <description/>
             </label>
             <label locale="fr_FR" preferred="1">
               <name_singular>Externe</name_singular>
               <name_plural>Externes</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
-        <item idno="collected" enabled="1" default="0" value="collected_works" rank="558"
-          type="concept">
+        <item idno="collected" enabled="1" default="0" value="collected_works" rank="558" type="concept">
           <labels>
             <label locale="en_US" preferred="1">
               <name_singular>Collected Work</name_singular>
               <name_plural>Collected Works</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
           <settings>
@@ -1642,23 +1630,21 @@
             <setting name="render_in_new_menu">1</setting>
           </settings>
           <items>
-            <item idno="case_studies" enabled="1" default="0" value="case_studies" rank="559"
-              type="concept">
+            <item idno="case_studies" enabled="1" default="0" value="case_studies" rank="559" type="concept">
               <labels>
                 <label locale="en_US" preferred="1">
                   <name_singular>Case Studies</name_singular>
                   <name_plural>Case Studies</name_plural>
-                  <description />
+                  <description/>
                 </label>
               </labels>
             </item>
-            <item idno="words_into_action" enabled="1" default="0" value="words_into_action"
-              rank="560" type="concept">
+            <item idno="words_into_action" enabled="1" default="0" value="words_into_action" rank="560" type="concept">
               <labels>
                 <label locale="en_US" preferred="1">
                   <name_singular>Words into Action</name_singular>
                   <name_plural>Words into Action</name_plural>
-                  <description />
+                  <description/>
                 </label>
               </labels>
             </item>
@@ -1681,12 +1667,12 @@
             <label locale="en_US" preferred="1">
               <name_singular>Collection Sources</name_singular>
               <name_plural>Collection Sources</name_plural>
-              <description />
+              <description/>
             </label>
             <label locale="fr_FR" preferred="1">
               <name_singular>Source de collection</name_singular>
               <name_plural>Sources de collections</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -1704,7 +1690,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>use for</name_singular>
               <name_plural>use for</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -1713,7 +1699,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>alternate</name_singular>
               <name_plural>alternates</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -1734,12 +1720,12 @@
             <label locale="fr_FR" preferred="1">
               <name_singular>campus</name_singular>
               <name_plural>campus</name_plural>
-              <description />
+              <description/>
             </label>
             <label locale="en_US" preferred="1">
               <name_singular>campuses</name_singular>
               <name_plural>campuses</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -1748,12 +1734,12 @@
             <label locale="fr_FR" preferred="1">
               <name_singular>bâtiment</name_singular>
               <name_plural>bâtiments</name_plural>
-              <description />
+              <description/>
             </label>
             <label locale="en_US" preferred="1">
               <name_singular>building</name_singular>
               <name_plural>buildings</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -1762,12 +1748,12 @@
             <label locale="fr_FR" preferred="1">
               <name_singular>étage</name_singular>
               <name_plural>étages</name_plural>
-              <description />
+              <description/>
             </label>
             <label locale="en_US" preferred="1">
               <name_singular>floor</name_singular>
               <name_plural>floors</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -1776,12 +1762,12 @@
             <label locale="en_US" preferred="1">
               <name_singular>room</name_singular>
               <name_plural>rooms</name_plural>
-              <description />
+              <description/>
             </label>
             <label locale="fr_FR" preferred="1">
               <name_singular>salle</name_singular>
               <name_plural>salle</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -1790,12 +1776,12 @@
             <label locale="fr_FR" preferred="1">
               <name_singular>armoire</name_singular>
               <name_plural>armoires</name_plural>
-              <description />
+              <description/>
             </label>
             <label locale="en_US" preferred="1">
               <name_singular>cabinet</name_singular>
               <name_plural>cabinets</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -1804,12 +1790,12 @@
             <label locale="en_US" preferred="1">
               <name_singular>drawer</name_singular>
               <name_plural>drawer</name_plural>
-              <description />
+              <description/>
             </label>
             <label locale="fr_FR" preferred="1">
               <name_singular>étagère</name_singular>
               <name_plural>étagères</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -1834,7 +1820,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>use for</name_singular>
               <name_plural>use for</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -1843,7 +1829,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>alternate</name_singular>
               <name_plural>alternates</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -1861,7 +1847,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>front</name_singular>
               <name_plural>front</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -1870,7 +1856,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>back</name_singular>
               <name_plural>back</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -1895,7 +1881,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>full tour</name_singular>
               <name_plural>full tours</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -1904,7 +1890,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>short tour</name_singular>
               <name_plural>short tours</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -1929,7 +1915,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>primary stop</name_singular>
               <name_plural>primary stops</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -1938,7 +1924,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>optional stop</name_singular>
               <name_plural>optional stops</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -1969,12 +1955,12 @@
             <label locale="fr_FR" preferred="1">
               <name_singular>Autorité lieu</name_singular>
               <name_plural>Autorités lieux</name_plural>
-              <description />
+              <description/>
             </label>
             <label locale="en_US" preferred="1">
               <name_singular>Place Authority</name_singular>
               <name_plural>Place Authority</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -1990,33 +1976,31 @@
         </label>
       </labels>
       <items>
-        <item idno="overall_dimensions" enabled="1" default="1" value="overall_dimensions"
-          rank="158">
+        <item idno="overall_dimensions" enabled="1" default="1" value="overall_dimensions" rank="158">
           <labels>
             <label locale="fr_FR" preferred="1">
               <name_singular>Dimension totale</name_singular>
               <name_plural>Dimensions totales</name_plural>
-              <description />
+              <description/>
             </label>
             <label locale="en_US" preferred="1">
               <name_singular>Overall dimensions</name_singular>
               <name_plural>Overall dimensions</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
-        <item idno="shipping_dimensions" enabled="1" default="0" value="shipping_dimensions"
-          rank="159">
+        <item idno="shipping_dimensions" enabled="1" default="0" value="shipping_dimensions" rank="159">
           <labels>
             <label locale="fr_FR" preferred="1">
               <name_singular>Dimension pour expédition</name_singular>
               <name_plural>Dimensions pour expédition</name_plural>
-              <description />
+              <description/>
             </label>
             <label locale="en_US" preferred="1">
               <name_singular>Shipping dimensions</name_singular>
               <name_plural>Shipping dimensions</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -2037,12 +2021,12 @@
             <label locale="en_US" preferred="1">
               <name_singular>ISSN</name_singular>
               <name_plural>ISSN</name_plural>
-              <description />
+              <description/>
             </label>
             <label locale="fr_FR" preferred="1">
               <name_singular>ISSN</name_singular>
               <name_plural>ISSN</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -2051,12 +2035,12 @@
             <label locale="en_US" preferred="1">
               <name_singular>ISBN</name_singular>
               <name_plural>ISBN</name_plural>
-              <description />
+              <description/>
             </label>
             <label locale="fr_FR" preferred="1">
               <name_singular>ISBN</name_singular>
               <name_plural>ISBN</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -2077,12 +2061,12 @@
             <label locale="en_US" preferred="1">
               <name_singular>excellent</name_singular>
               <name_plural>excellent</name_plural>
-              <description />
+              <description/>
             </label>
             <label locale="fr_FR" preferred="1">
               <name_singular>excellent</name_singular>
               <name_plural>excellent</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -2091,12 +2075,12 @@
             <label locale="fr_FR" preferred="1">
               <name_singular>bon</name_singular>
               <name_plural>bon</name_plural>
-              <description />
+              <description/>
             </label>
             <label locale="en_US" preferred="1">
               <name_singular>good</name_singular>
               <name_plural>good</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -2105,12 +2089,12 @@
             <label locale="fr_FR" preferred="1">
               <name_singular>assez bon</name_singular>
               <name_plural>assez bon</name_plural>
-              <description />
+              <description/>
             </label>
             <label locale="en_US" preferred="1">
               <name_singular>fair</name_singular>
               <name_plural>fair</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -2119,12 +2103,12 @@
             <label locale="fr_FR" preferred="1">
               <name_singular>mauvais</name_singular>
               <name_plural>mauvais</name_plural>
-              <description />
+              <description/>
             </label>
             <label locale="en_US" preferred="1">
               <name_singular>poor</name_singular>
               <name_plural>poor</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -2145,12 +2129,12 @@
             <label locale="en_US" preferred="1">
               <name_singular>black and white</name_singular>
               <name_plural>black and white</name_plural>
-              <description />
+              <description/>
             </label>
             <label locale="fr_FR" preferred="1">
               <name_singular>noir et blanc</name_singular>
               <name_plural>noir et blanc</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -2159,12 +2143,12 @@
             <label locale="en_US" preferred="1">
               <name_singular>color</name_singular>
               <name_plural>color</name_plural>
-              <description />
+              <description/>
             </label>
             <label locale="fr_FR" preferred="1">
               <name_singular>couleur</name_singular>
               <name_plural>couleur</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -2173,12 +2157,12 @@
             <label locale="fr_FR" preferred="1">
               <name_singular>non concerné</name_singular>
               <name_plural>non concerné</name_plural>
-              <description />
+              <description/>
             </label>
             <label locale="en_US" preferred="1">
               <name_singular>null</name_singular>
               <name_plural>null</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -2199,12 +2183,12 @@
             <label locale="fr_FR" preferred="1">
               <name_singular>domicile</name_singular>
               <name_plural>domicile</name_plural>
-              <description />
+              <description/>
             </label>
             <label locale="en_US" preferred="1">
               <name_singular>home</name_singular>
               <name_plural>home</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -2213,12 +2197,12 @@
             <label locale="fr_FR" preferred="1">
               <name_singular>travail</name_singular>
               <name_plural>travail</name_plural>
-              <description />
+              <description/>
             </label>
             <label locale="en_US" preferred="1">
               <name_singular>work</name_singular>
               <name_plural>work</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -2227,12 +2211,12 @@
             <label locale="fr_FR" preferred="1">
               <name_singular>autre</name_singular>
               <name_plural>autres</name_plural>
-              <description />
+              <description/>
             </label>
             <label locale="en_US" preferred="1">
               <name_singular>other</name_singular>
               <name_plural>other</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -2253,12 +2237,12 @@
             <label locale="en_US" preferred="1">
               <name_singular>created</name_singular>
               <name_plural>created</name_plural>
-              <description />
+              <description/>
             </label>
             <label locale="fr_FR" preferred="1">
               <name_singular>créé</name_singular>
               <name_plural>créés</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -2267,12 +2251,12 @@
             <label locale="fr_FR" preferred="1">
               <name_singular>publié</name_singular>
               <name_plural>publiés</name_plural>
-              <description />
+              <description/>
             </label>
             <label locale="en_US" preferred="1">
               <name_singular>published</name_singular>
               <name_plural>published</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -2281,12 +2265,12 @@
             <label locale="en_US" preferred="1">
               <name_singular>exhibited</name_singular>
               <name_plural>exhibited</name_plural>
-              <description />
+              <description/>
             </label>
             <label locale="fr_FR" preferred="1">
               <name_singular>exposé</name_singular>
               <name_plural>exposés</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -2295,12 +2279,12 @@
             <label locale="fr_FR" preferred="1">
               <name_singular>organisé</name_singular>
               <name_plural>organisés</name_plural>
-              <description />
+              <description/>
             </label>
             <label locale="en_US" preferred="1">
               <name_singular>organized</name_singular>
               <name_plural>organized</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -2309,12 +2293,12 @@
             <label locale="en_US" preferred="1">
               <name_singular>edited</name_singular>
               <name_plural>edited</name_plural>
-              <description />
+              <description/>
             </label>
             <label locale="fr_FR" preferred="1">
               <name_singular>modifié</name_singular>
               <name_plural>modifiés</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -2323,12 +2307,12 @@
             <label locale="fr_FR" preferred="1">
               <name_singular>examiné</name_singular>
               <name_plural>examinés</name_plural>
-              <description />
+              <description/>
             </label>
             <label locale="en_US" preferred="1">
               <name_singular>reviewed</name_singular>
               <name_plural>reviewed</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -2337,12 +2321,12 @@
             <label locale="en_US" preferred="1">
               <name_singular>valid</name_singular>
               <name_plural>valid</name_plural>
-              <description />
+              <description/>
             </label>
             <label locale="fr_FR" preferred="1">
               <name_singular>validé</name_singular>
               <name_plural>validés</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -2351,12 +2335,12 @@
             <label locale="en_US" preferred="1">
               <name_singular>available</name_singular>
               <name_plural>available</name_plural>
-              <description />
+              <description/>
             </label>
             <label locale="fr_FR" preferred="1">
               <name_singular>disponible</name_singular>
               <name_plural>disponibles</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -2365,12 +2349,12 @@
             <label locale="en_US" preferred="1">
               <name_singular>issued</name_singular>
               <name_plural>issued</name_plural>
-              <description />
+              <description/>
             </label>
             <label locale="fr_FR" preferred="1">
               <name_singular>paru</name_singular>
               <name_plural>parus</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -2379,7 +2363,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>birthdate</name_singular>
               <name_plural>birthdate</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -2388,7 +2372,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>digitized</name_singular>
               <name_plural>digitized</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -2411,14 +2395,14 @@
                 reproduction réservés en accord avec les lois sur le Copyright des Etats-Unis.</name_singular>
               <name_plural>Les droits sont réservés par (le nom de votre institution). Droits de
                 reproduction réservés en accord avec les lois sur le Copyright des Etats-Unis.</name_plural>
-              <description />
+              <description/>
             </label>
             <label locale="en_US" preferred="1">
               <name_singular>Physical rights are retained by (your institution name here). Copyright
                 is retained in accordance with U.S. Copyright laws.</name_singular>
               <name_plural>Physical rights are retained by (your institution name here). Copyright
                 is retained in accordance with U.S. Copyright laws.</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -2436,7 +2420,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>Abkhazian</name_singular>
               <name_plural>Abkhazian</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -2445,7 +2429,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>Afan (Oromo)</name_singular>
               <name_plural>Afan (Oromo)</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -2454,7 +2438,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>Afar</name_singular>
               <name_plural>Afar</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -2463,7 +2447,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>Afrikaans</name_singular>
               <name_plural>Afrikaans</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -2472,7 +2456,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>Albanian</name_singular>
               <name_plural>Albanian</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -2481,7 +2465,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>Amharic</name_singular>
               <name_plural>Amharic</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -2490,7 +2474,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>Arabic</name_singular>
               <name_plural>Arabic</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -2499,7 +2483,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>Armenian</name_singular>
               <name_plural>Armenian</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -2508,7 +2492,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>Assamese</name_singular>
               <name_plural>Assamese</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -2517,7 +2501,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>Aymara</name_singular>
               <name_plural>Aymara</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -2526,7 +2510,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>Azerbaijani</name_singular>
               <name_plural>Azerbaijani</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -2535,7 +2519,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>Bashkir</name_singular>
               <name_plural>Bashkir</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -2544,7 +2528,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>Basque</name_singular>
               <name_plural>Basque</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -2553,7 +2537,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>Bengali;Bangla</name_singular>
               <name_plural>Bengali;Bangla</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -2562,7 +2546,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>Bhutani</name_singular>
               <name_plural>Bhutani</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -2571,7 +2555,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>Bihari</name_singular>
               <name_plural>Bihari</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -2580,7 +2564,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>Bislama</name_singular>
               <name_plural>Bislama</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -2589,7 +2573,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>Breton</name_singular>
               <name_plural>Breton</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -2598,7 +2582,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>Bulgarian</name_singular>
               <name_plural>Bulgarian</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -2607,7 +2591,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>Burmese</name_singular>
               <name_plural>Burmese</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -2616,7 +2600,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>Byelorussian</name_singular>
               <name_plural>Byelorussian</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -2625,7 +2609,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>Cambodian</name_singular>
               <name_plural>Cambodian</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -2634,7 +2618,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>Catalan</name_singular>
               <name_plural>Catalan</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -2643,7 +2627,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>Chinese</name_singular>
               <name_plural>Chinese</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -2652,7 +2636,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>Corsican</name_singular>
               <name_plural>Corsican</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -2661,7 +2645,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>Croatian</name_singular>
               <name_plural>Croatian</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -2670,7 +2654,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>Czech</name_singular>
               <name_plural>Czech</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -2679,7 +2663,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>Danish</name_singular>
               <name_plural>Danish</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -2688,7 +2672,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>Dutch</name_singular>
               <name_plural>Dutch</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -2697,7 +2681,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>English</name_singular>
               <name_plural>English</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -2706,7 +2690,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>Esperanto</name_singular>
               <name_plural>Esperanto</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -2715,7 +2699,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>Estonian</name_singular>
               <name_plural>Estonian</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -2724,7 +2708,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>Faroese</name_singular>
               <name_plural>Faroese</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -2733,7 +2717,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>Fiji</name_singular>
               <name_plural>Fiji</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -2742,7 +2726,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>Finnish</name_singular>
               <name_plural>Finnish</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -2751,7 +2735,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>French</name_singular>
               <name_plural>French</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -2760,7 +2744,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>Frisian</name_singular>
               <name_plural>Frisian</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -2769,7 +2753,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>Galician</name_singular>
               <name_plural>Galician</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -2778,7 +2762,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>Georgian</name_singular>
               <name_plural>Georgian</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -2787,7 +2771,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>German</name_singular>
               <name_plural>German</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -2796,7 +2780,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>Greek</name_singular>
               <name_plural>Greek</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -2805,7 +2789,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>Greenlandic</name_singular>
               <name_plural>Greenlandic</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -2814,7 +2798,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>Guarani</name_singular>
               <name_plural>Guarani</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -2823,7 +2807,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>Gujarati</name_singular>
               <name_plural>Gujarati</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -2832,7 +2816,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>Hausa</name_singular>
               <name_plural>Hausa</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -2841,7 +2825,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>Hebrew</name_singular>
               <name_plural>Hebrew</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -2850,7 +2834,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>Hindi</name_singular>
               <name_plural>Hindi</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -2859,7 +2843,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>Hungarian</name_singular>
               <name_plural>Hungarian</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -2868,7 +2852,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>Icelandic</name_singular>
               <name_plural>Icelandic</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -2877,7 +2861,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>Indonesian</name_singular>
               <name_plural>Indonesian</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -2886,7 +2870,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>Interlingua</name_singular>
               <name_plural>Interlingua</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -2895,7 +2879,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>Interlingue</name_singular>
               <name_plural>Interlingue</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -2904,7 +2888,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>Inupiak</name_singular>
               <name_plural>Inupiak</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -2913,7 +2897,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>Irish</name_singular>
               <name_plural>Irish</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -2922,7 +2906,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>Italian</name_singular>
               <name_plural>Italian</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -2931,7 +2915,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>Japanese</name_singular>
               <name_plural>Japanese</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -2940,7 +2924,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>Javanese</name_singular>
               <name_plural>Javanese</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -2949,7 +2933,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>Kannada</name_singular>
               <name_plural>Kannada</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -2958,7 +2942,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>Kashmiri</name_singular>
               <name_plural>Kashmiri</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -2967,7 +2951,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>Kazakh</name_singular>
               <name_plural>Kazakh</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -2976,7 +2960,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>Kinyarwanda</name_singular>
               <name_plural>Kinyarwanda</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -2985,7 +2969,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>Kirghiz</name_singular>
               <name_plural>Kirghiz</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -2994,7 +2978,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>Korean</name_singular>
               <name_plural>Korean</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -3003,7 +2987,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>Kurdish</name_singular>
               <name_plural>Kurdish</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -3012,7 +2996,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>Kurundi</name_singular>
               <name_plural>Kurundi</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -3021,7 +3005,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>Laothian</name_singular>
               <name_plural>Laothian</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -3030,7 +3014,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>Latin</name_singular>
               <name_plural>Latin</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -3039,7 +3023,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>Latvian;Lettish</name_singular>
               <name_plural>Latvian;Lettish</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -3048,7 +3032,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>Lingala</name_singular>
               <name_plural>Lingala</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -3057,7 +3041,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>Lithuanian</name_singular>
               <name_plural>Lithuanian</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -3066,7 +3050,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>Macedonian</name_singular>
               <name_plural>Macedonian</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -3075,7 +3059,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>Malagasy</name_singular>
               <name_plural>Malagasy</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -3084,7 +3068,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>Malay</name_singular>
               <name_plural>Malay</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -3093,7 +3077,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>Malayalam</name_singular>
               <name_plural>Malayalam</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -3102,7 +3086,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>Maltese</name_singular>
               <name_plural>Maltese</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -3111,7 +3095,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>Maori</name_singular>
               <name_plural>Maori</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -3120,7 +3104,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>Marathi</name_singular>
               <name_plural>Marathi</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -3129,7 +3113,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>Moldavian</name_singular>
               <name_plural>Moldavian</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -3138,7 +3122,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>Mongolian</name_singular>
               <name_plural>Mongolian</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -3147,7 +3131,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>Nauru</name_singular>
               <name_plural>Nauru</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -3156,7 +3140,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>Nepali</name_singular>
               <name_plural>Nepali</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -3165,7 +3149,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>Norwegian</name_singular>
               <name_plural>Norwegian</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -3174,7 +3158,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>Occitan</name_singular>
               <name_plural>Occitan</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -3183,7 +3167,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>Oriya</name_singular>
               <name_plural>Oriya</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -3192,7 +3176,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>Pashto;Pushto</name_singular>
               <name_plural>Pashto;Pushto</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -3201,7 +3185,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>Persian (Farsi)</name_singular>
               <name_plural>Persian (Farsi)</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -3210,7 +3194,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>Polish</name_singular>
               <name_plural>Polish</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -3219,7 +3203,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>Portuguese</name_singular>
               <name_plural>Portuguese</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -3228,7 +3212,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>Punjabi</name_singular>
               <name_plural>Punjabi</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -3237,7 +3221,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>Quechua</name_singular>
               <name_plural>Quechua</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -3246,7 +3230,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>Rhaeto-Romance</name_singular>
               <name_plural>Rhaeto-Romance</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -3255,7 +3239,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>Romanian</name_singular>
               <name_plural>Romanian</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -3264,7 +3248,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>Russian</name_singular>
               <name_plural>Russian</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -3273,7 +3257,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>Samoan</name_singular>
               <name_plural>Samoan</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -3282,7 +3266,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>Sangho</name_singular>
               <name_plural>Sangho</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -3291,7 +3275,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>Sanskrit</name_singular>
               <name_plural>Sanskrit</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -3300,7 +3284,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>Scots Gaelic</name_singular>
               <name_plural>Scots Gaelic</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -3309,7 +3293,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>Serbian</name_singular>
               <name_plural>Serbian</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -3318,7 +3302,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>Serbo-Croatian</name_singular>
               <name_plural>Serbo-Croatian</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -3327,7 +3311,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>Sesotho</name_singular>
               <name_plural>Sesotho</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -3336,7 +3320,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>Setswana</name_singular>
               <name_plural>Setswana</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -3345,7 +3329,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>Shona</name_singular>
               <name_plural>Shona</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -3354,7 +3338,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>Sindhi</name_singular>
               <name_plural>Sindhi</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -3363,7 +3347,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>Singhalese</name_singular>
               <name_plural>Singhalese</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -3372,7 +3356,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>Siswati</name_singular>
               <name_plural>Siswati</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -3381,7 +3365,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>Slovak</name_singular>
               <name_plural>Slovak</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -3390,7 +3374,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>Slovenian</name_singular>
               <name_plural>Slovenian</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -3399,7 +3383,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>Somali</name_singular>
               <name_plural>Somali</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -3408,7 +3392,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>Spanish</name_singular>
               <name_plural>Spanish</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -3417,7 +3401,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>Sundanese</name_singular>
               <name_plural>Sundanese</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -3426,7 +3410,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>Swahili</name_singular>
               <name_plural>Swahili</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -3435,7 +3419,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>Swedish</name_singular>
               <name_plural>Swedish</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -3444,7 +3428,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>Tagalog</name_singular>
               <name_plural>Tagalog</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -3453,7 +3437,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>Tajik</name_singular>
               <name_plural>Tajik</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -3462,7 +3446,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>Tamil</name_singular>
               <name_plural>Tamil</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -3471,7 +3455,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>Tatar</name_singular>
               <name_plural>Tatar</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -3480,7 +3464,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>Telugu</name_singular>
               <name_plural>Telugu</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -3489,7 +3473,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>Thai</name_singular>
               <name_plural>Thai</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -3498,7 +3482,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>Tibetan</name_singular>
               <name_plural>Tibetan</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -3507,7 +3491,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>Tigrinya</name_singular>
               <name_plural>Tigrinya</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -3516,7 +3500,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>Tonga</name_singular>
               <name_plural>Tonga</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -3525,7 +3509,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>Tsonga</name_singular>
               <name_plural>Tsonga</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -3534,7 +3518,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>Turkish</name_singular>
               <name_plural>Turkish</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -3543,7 +3527,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>Turkmen</name_singular>
               <name_plural>Turkmen</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -3552,7 +3536,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>Twi</name_singular>
               <name_plural>Twi</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -3561,7 +3545,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>Ukrainian</name_singular>
               <name_plural>Ukrainian</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -3570,7 +3554,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>Urdu</name_singular>
               <name_plural>Urdu</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -3579,7 +3563,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>Uzbek</name_singular>
               <name_plural>Uzbek</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -3588,7 +3572,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>Vietnamese</name_singular>
               <name_plural>Vietnamese</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -3597,7 +3581,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>Volapuk</name_singular>
               <name_plural>Volapuk</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -3606,7 +3590,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>Welsh</name_singular>
               <name_plural>Welsh</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -3615,7 +3599,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>Wolof</name_singular>
               <name_plural>Wolof</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -3624,7 +3608,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>Xhosa</name_singular>
               <name_plural>Xhosa</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -3633,7 +3617,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>Yiddish</name_singular>
               <name_plural>Yiddish</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -3642,7 +3626,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>Yoruba</name_singular>
               <name_plural>Yoruba</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -3651,7 +3635,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>Zulu</name_singular>
               <name_plural>Zulu</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -3669,7 +3653,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>Access</name_singular>
               <name_plural>Access</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -3678,7 +3662,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>Co-creation</name_singular>
               <name_plural>Co-creation</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -3687,7 +3671,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>Colonised</name_singular>
               <name_plural>Colonised</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -3696,7 +3680,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>Community engagement</name_singular>
               <name_plural>Community engagement</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -3705,7 +3689,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>Confidence building</name_singular>
               <name_plural>Confidence building</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -3714,7 +3698,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>Conflict</name_singular>
               <name_plural>Conflict</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -3723,7 +3707,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>Cultural heritage</name_singular>
               <name_plural>Cultural heritage</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -3732,7 +3716,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>Discrimination</name_singular>
               <name_plural>Discrimination</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -3741,7 +3725,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>Displacement</name_singular>
               <name_plural>Displacement</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -3750,7 +3734,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>Forgotten</name_singular>
               <name_plural>Forgotten</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -3759,7 +3743,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>Gender</name_singular>
               <name_plural>Gender</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -3768,7 +3752,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>Identity</name_singular>
               <name_plural>Identity</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -3777,7 +3761,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>Inclusion</name_singular>
               <name_plural>Inclusion</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -3786,7 +3770,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>Intangible heritage</name_singular>
               <name_plural>Intangible heritage</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -3795,7 +3779,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>Lack of appreciation</name_singular>
               <name_plural>Lack of appreciation</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -3804,7 +3788,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>Local knowledge</name_singular>
               <name_plural>Local knowledge</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -3813,7 +3797,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>Memorialisation</name_singular>
               <name_plural>Memorialisation</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -3822,7 +3806,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>Natural heritage</name_singular>
               <name_plural>Natural heritage</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -3831,7 +3815,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>Negotiations</name_singular>
               <name_plural>Negotiations</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -3840,7 +3824,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>Policy</name_singular>
               <name_plural>Policy</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -3849,7 +3833,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>Post-Conflict</name_singular>
               <name_plural>Post-Conflict</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -3858,7 +3842,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>Reconstruction</name_singular>
               <name_plural>Reconstruction</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -3867,7 +3851,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>Refugee</name_singular>
               <name_plural>Refugee</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -3876,7 +3860,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>Re-imagining</name_singular>
               <name_plural>Re-imagining</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -3885,7 +3869,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>Remembered</name_singular>
               <name_plural>Remembered</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -3894,7 +3878,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>Self-archiving</name_singular>
               <name_plural>Self-archiving</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -3903,7 +3887,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>Shared history</name_singular>
               <name_plural>Shared history</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -3912,7 +3896,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>Tangible heritage</name_singular>
               <name_plural>Tangible heritage</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -3921,7 +3905,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>Tension</name_singular>
               <name_plural>Tension</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -3930,7 +3914,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>Trauma</name_singular>
               <name_plural>Trauma</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -3943,313 +3927,291 @@
         </label>
       </labels>
       <items>
-        <item idno="culturalcontext_001" enabled="1" default="0" value="culturalcontext_001"
-          rank="359">
+        <item idno="culturalcontext_001" enabled="1" default="0" value="culturalcontext_001" rank="359">
           <labels>
             <label locale="en_US" preferred="1">
               <name_singular>Dancing</name_singular>
               <name_plural>Dancing</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
-        <item idno="culturalcontext_002" enabled="1" default="0" value="culturalcontext_002"
-          rank="360">
+        <item idno="culturalcontext_002" enabled="1" default="0" value="culturalcontext_002" rank="360">
           <labels>
             <label locale="en_US" preferred="1">
               <name_singular>Drawing, painting and crafting</name_singular>
               <name_plural>Drawing, painting and crafting</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
-        <item idno="culturalcontext_003" enabled="1" default="0" value="culturalcontext_003"
-          rank="361">
+        <item idno="culturalcontext_003" enabled="1" default="0" value="culturalcontext_003" rank="361">
           <labels>
             <label locale="en_US" preferred="1">
               <name_singular>Music and singing</name_singular>
               <name_plural>Music and singing</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
-        <item idno="culturalcontext_004" enabled="1" default="0" value="culturalcontext_004"
-          rank="362">
+        <item idno="culturalcontext_004" enabled="1" default="0" value="culturalcontext_004" rank="362">
           <labels>
             <label locale="en_US" preferred="1">
               <name_singular>Photography and film</name_singular>
               <name_plural>Photography and film</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
-        <item idno="culturalcontext_005" enabled="1" default="0" value="culturalcontext_005"
-          rank="363">
+        <item idno="culturalcontext_005" enabled="1" default="0" value="culturalcontext_005" rank="363">
           <labels>
             <label locale="en_US" preferred="1">
               <name_singular>Festival</name_singular>
               <name_plural>Festival</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
-        <item idno="culturalcontext_006" enabled="1" default="0" value="culturalcontext_006"
-          rank="364">
+        <item idno="culturalcontext_006" enabled="1" default="0" value="culturalcontext_006" rank="364">
           <labels>
             <label locale="en_US" preferred="1">
               <name_singular>Charity event</name_singular>
               <name_plural>Charity event</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
-        <item idno="culturalcontext_007" enabled="1" default="0" value="culturalcontext_007"
-          rank="365">
+        <item idno="culturalcontext_007" enabled="1" default="0" value="culturalcontext_007" rank="365">
           <labels>
             <label locale="en_US" preferred="1">
               <name_singular>Sport event (Outdoor and Indoor)</name_singular>
               <name_plural>Sport event (Outdoor and Indoor)</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
-        <item idno="culturalcontext_008" enabled="1" default="0" value="culturalcontext_008"
-          rank="366">
+        <item idno="culturalcontext_008" enabled="1" default="0" value="culturalcontext_008" rank="366">
           <labels>
             <label locale="en_US" preferred="1">
               <name_singular>Visiting parks</name_singular>
               <name_plural>Visiting parks</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
-        <item idno="culturalcontext_009" enabled="1" default="0" value="culturalcontext_009"
-          rank="367">
+        <item idno="culturalcontext_009" enabled="1" default="0" value="culturalcontext_009" rank="367">
           <labels>
             <label locale="en_US" preferred="1">
               <name_singular>Volunteering in the local community</name_singular>
               <name_plural>Volunteering in the local community</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
-        <item idno="culturalcontext_010" enabled="1" default="0" value="culturalcontext_010"
-          rank="368">
+        <item idno="culturalcontext_010" enabled="1" default="0" value="culturalcontext_010" rank="368">
           <labels>
             <label locale="en_US" preferred="1">
               <name_singular>Cooking</name_singular>
               <name_plural>Cooking</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
-        <item idno="culturalcontext_011" enabled="1" default="0" value="culturalcontext_011"
-          rank="369">
+        <item idno="culturalcontext_011" enabled="1" default="0" value="culturalcontext_011" rank="369">
           <labels>
             <label locale="en_US" preferred="1">
               <name_singular>Shool act</name_singular>
               <name_plural>Shool act</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
-        <item idno="culturalcontext_012" enabled="1" default="0" value="culturalcontext_012"
-          rank="370">
+        <item idno="culturalcontext_012" enabled="1" default="0" value="culturalcontext_012" rank="370">
           <labels>
             <label locale="en_US" preferred="1">
               <name_singular>Carnival parade</name_singular>
               <name_plural>Carnival parade</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
-        <item idno="culturalcontext_013" enabled="1" default="0" value="culturalcontext_013"
-          rank="371">
+        <item idno="culturalcontext_013" enabled="1" default="0" value="culturalcontext_013" rank="371">
           <labels>
             <label locale="en_US" preferred="1">
               <name_singular>Circus performance</name_singular>
               <name_plural>Circus performance</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
-        <item idno="culturalcontext_014" enabled="1" default="0" value="culturalcontext_014"
-          rank="372">
+        <item idno="culturalcontext_014" enabled="1" default="0" value="culturalcontext_014" rank="372">
           <labels>
             <label locale="en_US" preferred="1">
               <name_singular>Exhibition in a museum</name_singular>
               <name_plural>Exhibition in a museum</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
-        <item idno="culturalcontext_015" enabled="1" default="0" value="culturalcontext_015"
-          rank="373">
+        <item idno="culturalcontext_015" enabled="1" default="0" value="culturalcontext_015" rank="373">
           <labels>
             <label locale="en_US" preferred="1">
               <name_singular>Folkloric rock</name_singular>
               <name_plural>Folkloric rock</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
-        <item idno="culturalcontext_016" enabled="1" default="0" value="culturalcontext_016"
-          rank="374">
+        <item idno="culturalcontext_016" enabled="1" default="0" value="culturalcontext_016" rank="374">
           <labels>
             <label locale="en_US" preferred="1">
               <name_singular>Book Fair</name_singular>
               <name_plural>Book Fair</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
-        <item idno="culturalcontext_017" enabled="1" default="0" value="culturalcontext_017"
-          rank="375">
+        <item idno="culturalcontext_017" enabled="1" default="0" value="culturalcontext_017" rank="375">
           <labels>
             <label locale="en_US" preferred="1">
               <name_singular>Classical ballet play</name_singular>
               <name_plural>Classical ballet play</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
-        <item idno="culturalcontext_018" enabled="1" default="0" value="culturalcontext_018"
-          rank="376">
+        <item idno="culturalcontext_018" enabled="1" default="0" value="culturalcontext_018" rank="376">
           <labels>
             <label locale="en_US" preferred="1">
               <name_singular>Kermesse</name_singular>
               <name_plural>Kermesse</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
-        <item idno="culturalcontext_019" enabled="1" default="0" value="culturalcontext_019"
-          rank="377">
+        <item idno="culturalcontext_019" enabled="1" default="0" value="culturalcontext_019" rank="377">
           <labels>
             <label locale="en_US" preferred="1">
               <name_singular>Percussion workshop</name_singular>
               <name_plural>Percussion workshop</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
-        <item idno="culturalcontext_020" enabled="1" default="0" value="culturalcontext_020"
-          rank="378">
+        <item idno="culturalcontext_020" enabled="1" default="0" value="culturalcontext_020" rank="378">
           <labels>
             <label locale="en_US" preferred="1">
               <name_singular>Dance competition</name_singular>
               <name_plural>Dance competition</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
-        <item idno="culturalcontext_021" enabled="1" default="0" value="culturalcontext_021"
-          rank="379">
+        <item idno="culturalcontext_021" enabled="1" default="0" value="culturalcontext_021" rank="379">
           <labels>
             <label locale="en_US" preferred="1">
               <name_singular>Japanese literature course</name_singular>
               <name_plural>Japanese literature course</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
-        <item idno="culturalcontext_022" enabled="1" default="0" value="culturalcontext_022"
-          rank="380">
+        <item idno="culturalcontext_022" enabled="1" default="0" value="culturalcontext_022" rank="380">
           <labels>
             <label locale="en_US" preferred="1">
               <name_singular>Gastronomic exhibition</name_singular>
               <name_plural>Gastronomic exhibition</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
-        <item idno="culturalcontext_023" enabled="1" default="0" value="culturalcontext_023"
-          rank="381">
+        <item idno="culturalcontext_023" enabled="1" default="0" value="culturalcontext_023" rank="381">
           <labels>
             <label locale="en_US" preferred="1">
               <name_singular>Pre-Columbian art show</name_singular>
               <name_plural>Pre-Columbian art show</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
-        <item idno="culturalcontext_024" enabled="1" default="0" value="culturalcontext_024"
-          rank="382">
+        <item idno="culturalcontext_024" enabled="1" default="0" value="culturalcontext_024" rank="382">
           <labels>
             <label locale="en_US" preferred="1">
               <name_singular>Handicraft fair</name_singular>
               <name_plural>Handicraft fair</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
-        <item idno="culturalcontext_025" enabled="1" default="0" value="culturalcontext_025"
-          rank="383">
+        <item idno="culturalcontext_025" enabled="1" default="0" value="culturalcontext_025" rank="383">
           <labels>
             <label locale="en_US" preferred="1">
               <name_singular>Comic fair</name_singular>
               <name_plural>Comic fair</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
-        <item idno="culturalcontext_026" enabled="1" default="0" value="culturalcontext_026"
-          rank="384">
+        <item idno="culturalcontext_026" enabled="1" default="0" value="culturalcontext_026" rank="384">
           <labels>
             <label locale="en_US" preferred="1">
               <name_singular>National holiday</name_singular>
               <name_plural>National holiday</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
-        <item idno="culturalcontext_027" enabled="1" default="0" value="culturalcontext_027"
-          rank="385">
+        <item idno="culturalcontext_027" enabled="1" default="0" value="culturalcontext_027" rank="385">
           <labels>
             <label locale="en_US" preferred="1">
               <name_singular>Outdoor cinema</name_singular>
               <name_plural>Outdoor cinema</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
-        <item idno="culturalcontext_028" enabled="1" default="0" value="culturalcontext_028"
-          rank="386">
+        <item idno="culturalcontext_028" enabled="1" default="0" value="culturalcontext_028" rank="386">
           <labels>
             <label locale="en_US" preferred="1">
               <name_singular>Open cooking class</name_singular>
               <name_plural>Open cooking class</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
-        <item idno="culturalcontext_029" enabled="1" default="0" value="culturalcontext_029"
-          rank="387">
+        <item idno="culturalcontext_029" enabled="1" default="0" value="culturalcontext_029" rank="387">
           <labels>
             <label locale="en_US" preferred="1">
               <name_singular>Traditionalist parade</name_singular>
               <name_plural>Traditionalist parade</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
-        <item idno="culturalcontext_030" enabled="1" default="0" value="culturalcontext_030"
-          rank="388">
+        <item idno="culturalcontext_030" enabled="1" default="0" value="culturalcontext_030" rank="388">
           <labels>
             <label locale="en_US" preferred="1">
               <name_singular>Urban music festival</name_singular>
               <name_plural>Urban music festival</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
-        <item idno="culturalcontext_031" enabled="1" default="1" value="culturalcontext_031"
-          rank="389">
+        <item idno="culturalcontext_031" enabled="1" default="1" value="culturalcontext_031" rank="389">
           <labels>
             <label locale="en_US" preferred="1">
               <name_singular>Mobile library</name_singular>
               <name_plural>Mobile library</name_plural>
-              <description />
+              <description/>
+            </label>
+          </labels>
+        </item>
+        <item idno="Conflict" enabled="1" default="0" value="Conflict" rank="584">
+          <labels>
+            <label locale="en_US" preferred="1">
+              <name_singular>Conflict</name_singular>
+              <name_plural>Conflict</name_plural>
+              <description/>
             </label>
           </labels>
         </item>
@@ -4267,7 +4229,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>Art Scenes</name_singular>
               <name_plural>Art Scenes</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -4276,7 +4238,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>Business associations</name_singular>
               <name_plural>Business associations</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -4285,7 +4247,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>Classmates</name_singular>
               <name_plural>Classmates</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -4294,7 +4256,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>Charities</name_singular>
               <name_plural>Charities</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -4303,7 +4265,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>Cliques</name_singular>
               <name_plural>Cliques</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -4312,7 +4274,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>Clubs</name_singular>
               <name_plural>Clubs</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -4321,7 +4283,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>Collectives</name_singular>
               <name_plural>Collectives</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -4330,7 +4292,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>Commissions</name_singular>
               <name_plural>Commissions</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -4339,7 +4301,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>Committees</name_singular>
               <name_plural>Committees</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -4348,7 +4310,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>Communities</name_singular>
               <name_plural>Communities</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -4357,7 +4319,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>Couples</name_singular>
               <name_plural>Couples</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -4366,7 +4328,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>Crews</name_singular>
               <name_plural>Crews</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -4375,7 +4337,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>Crowds</name_singular>
               <name_plural>Crowds</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -4384,7 +4346,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>Cultural groups</name_singular>
               <name_plural>Cultural groups</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -4393,7 +4355,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>Departments</name_singular>
               <name_plural>Departments</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -4402,7 +4364,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>Ethnicities</name_singular>
               <name_plural>Ethnicities</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -4411,7 +4373,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>Families</name_singular>
               <name_plural>Families</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -4420,7 +4382,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>Fashion scenes</name_singular>
               <name_plural>Fashion scenes</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -4429,7 +4391,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>Fraternities</name_singular>
               <name_plural>Fraternities</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -4438,7 +4400,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>Friends</name_singular>
               <name_plural>Friends</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -4447,7 +4409,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>Housemates</name_singular>
               <name_plural>Housemates</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -4456,7 +4418,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>Mobs</name_singular>
               <name_plural>Mobs</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -4465,7 +4427,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>Music artists</name_singular>
               <name_plural>Music artists</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -4474,7 +4436,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>Nationalities</name_singular>
               <name_plural>Nationalities</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -4483,7 +4445,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>Neighbourhood Associations</name_singular>
               <name_plural>Neighbourhood Associations</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -4492,7 +4454,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>Neighbours</name_singular>
               <name_plural>Neighbours</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -4501,7 +4463,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>Peer groups</name_singular>
               <name_plural>Peer groups</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -4510,7 +4472,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>Performance troupes</name_singular>
               <name_plural>Performance troupes</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -4519,7 +4481,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>Political associations</name_singular>
               <name_plural>Political associations</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -4528,7 +4490,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>Professional organisations</name_singular>
               <name_plural>Professional organisations</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -4537,7 +4499,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>Relatives</name_singular>
               <name_plural>Relatives</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -4546,7 +4508,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>Religious congregations</name_singular>
               <name_plural>Religious congregations</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -4555,7 +4517,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>Schools</name_singular>
               <name_plural>Schools</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -4564,7 +4526,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>Small businesses</name_singular>
               <name_plural>Small businesses</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -4573,7 +4535,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>Social movements</name_singular>
               <name_plural>Social movements</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -4582,7 +4544,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>Sport teams</name_singular>
               <name_plural>Sport teams</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -4591,7 +4553,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>Unions</name_singular>
               <name_plural>Unions</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -4600,7 +4562,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>Volunteer groups</name_singular>
               <name_plural>Volunteer groups</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -4618,7 +4580,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>Female</name_singular>
               <name_plural>Female</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -4627,7 +4589,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>Male</name_singular>
               <name_plural>Male</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -4636,7 +4598,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>Non-binary</name_singular>
               <name_plural>Non-binary</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -4645,7 +4607,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>Prefer not to say</name_singular>
               <name_plural>Prefer not to say</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -4708,7 +4670,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>Actor/Actress</name_singular>
               <name_plural>Actor/Actress</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -4717,7 +4679,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>Administrators</name_singular>
               <name_plural>Administrators</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -4726,7 +4688,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>Advertisers</name_singular>
               <name_plural>Advertisers</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -4735,7 +4697,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>Animal rights activists</name_singular>
               <name_plural>Animal rights activists</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -4744,7 +4706,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>Anthropologists</name_singular>
               <name_plural>Anthropologists</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -4753,7 +4715,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>Archaeologists</name_singular>
               <name_plural>Archaeologists</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -4762,7 +4724,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>Architects</name_singular>
               <name_plural>Architects</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -4771,7 +4733,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>Architectural historians</name_singular>
               <name_plural>Architectural historians</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -4780,7 +4742,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>Archivists</name_singular>
               <name_plural>Archivists</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -4789,7 +4751,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>Art collector/dealer/historian</name_singular>
               <name_plural>Art collector/dealer/historian</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -4798,7 +4760,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>Artists</name_singular>
               <name_plural>Artists</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -4807,7 +4769,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>Authors</name_singular>
               <name_plural>Authors</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -4816,7 +4778,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>Biographers</name_singular>
               <name_plural>Biographers</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -4825,7 +4787,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>Blacksmiths</name_singular>
               <name_plural>Blacksmiths</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -4834,7 +4796,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>Book designer/binder/seller</name_singular>
               <name_plural>Book designer/binder/seller</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -4843,7 +4805,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>Brickmaker/Builder</name_singular>
               <name_plural>Brickmaker/Builder</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -4852,7 +4814,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>Businessmen/women</name_singular>
               <name_plural>Businessmen/women</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -4861,7 +4823,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>Cameramen</name_singular>
               <name_plural>Cameramen</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -4870,7 +4832,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>Cartographers</name_singular>
               <name_plural>Cartographers</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -4879,7 +4841,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>Cartoonists</name_singular>
               <name_plural>Cartoonists</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -4888,7 +4850,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>Classicists</name_singular>
               <name_plural>Classicists</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -4897,7 +4859,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>Clergy</name_singular>
               <name_plural>Clergy</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -4906,7 +4868,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>Clerks</name_singular>
               <name_plural>Clerks</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -4915,7 +4877,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>Collectors</name_singular>
               <name_plural>Collectors</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -4924,7 +4886,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>College administrators</name_singular>
               <name_plural>College administrators</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -4933,7 +4895,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>Comedians</name_singular>
               <name_plural>Comedians</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -4942,7 +4904,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>Commentators</name_singular>
               <name_plural>Commentators</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -4951,7 +4913,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>Commercial agents</name_singular>
               <name_plural>Commercial agents</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -4960,7 +4922,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>Composers</name_singular>
               <name_plural>Composers</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -4969,7 +4931,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>Conservationists</name_singular>
               <name_plural>Conservationists</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -4978,7 +4940,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>Curators</name_singular>
               <name_plural>Curators</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -4987,7 +4949,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>Dancers</name_singular>
               <name_plural>Dancers</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -4996,7 +4958,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>Drafters</name_singular>
               <name_plural>Drafters</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -5005,7 +4967,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>Dramatists</name_singular>
               <name_plural>Dramatists</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -5014,7 +4976,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>Editors</name_singular>
               <name_plural>Editors</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -5023,7 +4985,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>Educators</name_singular>
               <name_plural>Educators</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -5032,7 +4994,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>Essayists</name_singular>
               <name_plural>Essayists</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -5041,7 +5003,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>Ethnologists</name_singular>
               <name_plural>Ethnologists</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -5050,7 +5012,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>Evangelists</name_singular>
               <name_plural>Evangelists</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -5059,7 +5021,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>Gay rights activists</name_singular>
               <name_plural>Gay rights activists</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -5068,7 +5030,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>Geographers</name_singular>
               <name_plural>Geographers</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -5077,7 +5039,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>Geologists</name_singular>
               <name_plural>Geologists</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -5086,7 +5048,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>Historians</name_singular>
               <name_plural>Historians</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -5095,7 +5057,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>Landscape architects</name_singular>
               <name_plural>Landscape architects</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -5104,7 +5066,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>Lawyers</name_singular>
               <name_plural>Lawyers</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -5113,7 +5075,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>Lecturers</name_singular>
               <name_plural>Lecturers</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -5122,7 +5084,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>Lexicographers</name_singular>
               <name_plural>Lexicographers</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -5131,7 +5093,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>Librarians</name_singular>
               <name_plural>Librarians</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -5140,7 +5102,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>Linguists</name_singular>
               <name_plural>Linguists</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -5149,7 +5111,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>Literary agents</name_singular>
               <name_plural>Literary agents</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -5158,7 +5120,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>Painters</name_singular>
               <name_plural>Painters</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -5167,7 +5129,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>Photographers</name_singular>
               <name_plural>Photographers</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -5176,7 +5138,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>Poets</name_singular>
               <name_plural>Poets</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -5185,7 +5147,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>Religious leaders</name_singular>
               <name_plural>Religious leaders</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -5194,7 +5156,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>Sculptors</name_singular>
               <name_plural>Sculptors</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -5203,7 +5165,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>Silversmiths</name_singular>
               <name_plural>Silversmiths</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -5212,7 +5174,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>Singers</name_singular>
               <name_plural>Singers</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -5221,7 +5183,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>Social activists</name_singular>
               <name_plural>Social activists</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -5230,7 +5192,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>Students</name_singular>
               <name_plural>Students</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -5239,7 +5201,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>Surveyors</name_singular>
               <name_plural>Surveyors</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -5248,7 +5210,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>Teachers</name_singular>
               <name_plural>Teachers</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -5257,7 +5219,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>Theatrical producers</name_singular>
               <name_plural>Theatrical producers</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -5266,7 +5228,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>Traders</name_singular>
               <name_plural>Traders</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -5275,7 +5237,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>Wood-carvers</name_singular>
               <name_plural>Wood-carvers</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -5284,7 +5246,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>Others</name_singular>
               <name_plural>Others</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -5302,7 +5264,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>Start Up Projects (2020-2021)</name_singular>
               <name_plural>Start Up Projects (2020-2021)</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -5311,7 +5273,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>Follow On Grants (2021-2022)</name_singular>
               <name_plural>Follow On Grants (2021-2022)</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -5320,7 +5282,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>Phase 1 Projects - Commissions (2021-2022)</name_singular>
               <name_plural>Phase 1 Projects - Commissions (2021-2022)</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -5329,7 +5291,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>Phase 2 Projects - Commissions (Sep 2022-Sep 2023)</name_singular>
               <name_plural>Phase 2 Projects - Commissions (Sep 2022-Sep 2023)</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -5338,7 +5300,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>MAs Projects</name_singular>
               <name_plural>MAs Projects</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -5356,16 +5318,16 @@
             <label locale="en_US" preferred="1">
               <name_singular>Sub-Saharan Africa</name_singular>
               <name_plural>Sub-Saharan Africa</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
         <item idno="APAC" enabled="1" default="0" value="APAC" rank="519">
           <labels>
             <label locale="en_US" preferred="1">
-              <name_singular>Asia–Pacific</name_singular>
-              <name_plural>Asia–Pacific</name_plural>
-              <description />
+              <name_singular>Asia Pacific</name_singular>
+              <name_plural>Asia Pacific</name_plural>
+              <description/>
             </label>
           </labels>
         </item>
@@ -5374,7 +5336,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>America</name_singular>
               <name_plural>Americas</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -5383,17 +5345,25 @@
             <label locale="en_US" preferred="1">
               <name_singular>Europe and Eurasia</name_singular>
               <name_plural>Europe and Eurasia</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
-        <item idno="middle_east_and_N_africa" enabled="1" default="1"
-          value="middle_east_and_N_africa" rank="523">
+        <item idno="middle_east_and_N_africa" enabled="1" default="1" value="middle_east_and_N_africa" rank="523">
           <labels>
             <label locale="en_US" preferred="1">
               <name_singular>Middle East and North Africa</name_singular>
               <name_plural>Middle East and North Africa</name_plural>
-              <description />
+              <description/>
+            </label>
+          </labels>
+        </item>
+        <item idno="Multiregional" enabled="1" default="0" value="Multiregional" rank="583" type="concept">
+          <labels>
+            <label locale="en_US" preferred="1">
+              <name_singular>Multiregional</name_singular>
+              <name_plural>Multiregional</name_plural>
+              <description/>
             </label>
           </labels>
         </item>
@@ -5411,7 +5381,7 @@
             <label locale="en_US" preferred="1">
               <name_singular>Creative Commons (CC)</name_singular>
               <name_plural>Creative Commons</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
           <items>
@@ -5438,8 +5408,8 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
             <item idno="cc_by_nc" enabled="1" default="0" value="cc-by-nc" rank="432">
               <labels>
                 <label locale="en_US" preferred="1">
-                  <name_singular>Creative Commons BY-NC (by-nc)</name_singular>
-                  <name_plural>Creative Commons BY-NC</name_plural>
+                  <name_singular>Creative Commons  BY-NC (by-nc)</name_singular>
+                  <name_plural>Creative Commons  BY-NC</name_plural>
                   <description>This license enables reusers to distribute, remix, adapt, and build upon the material in any medium or format for noncommercial purposes only, and only so long as attribution is given to the creator.
 https://creativecommons.org/licenses/by-nc/4.0/</description>
                 </label>
@@ -5465,8 +5435,7 @@ https://creativecommons.org/licenses/by-nd/4.0/</description>
                 </label>
               </labels>
             </item>
-            <item idno="cc_by_nc_nd" enabled="1" default="1" value="cc-by-nc-nd" rank="563"
-              type="concept">
+            <item idno="cc_by_nc_nd" enabled="1" default="1" value="cc-by-nc-nd" rank="563" type="concept">
               <labels>
                 <label locale="en_US" preferred="1">
                   <name_singular>Creative Commons BY-NC-ND (by-nc-nd)</name_singular>
@@ -5483,7 +5452,7 @@ https://creativecommons.org/licenses/by-nc-nd/4.0/</description>
             <label locale="en_US" preferred="1">
               <name_singular>Public Domain (PD)</name_singular>
               <name_plural>Public Domain</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
           <items>
@@ -5508,13 +5477,12 @@ https://creativecommons.org/publicdomain/zero/1.0/</description>
             </item>
           </items>
         </item>
-        <item idno="in_copyright" enabled="1" default="0" value="in-copyright" rank="564"
-          type="concept">
+        <item idno="in_copyright" enabled="1" default="0" value="in-copyright" rank="564" type="concept">
           <labels>
             <label locale="en_US" preferred="1">
               <name_singular>In Copyright (RS-InC)</name_singular>
               <name_plural>In Copyright</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
           <items>
@@ -5545,10 +5513,8 @@ https://creativecommons.org/publicdomain/zero/1.0/</description>
             <item idno="inc_ruu" enabled="1" default="0" value="inc-ruu" rank="527">
               <labels>
                 <label locale="en_US" preferred="1">
-                  <name_singular>In Copyright - Rights-holders Unlocatable or Unidentifiable
-                    (InC-RUU)</name_singular>
-                  <name_plural>In Copyright - Rights-holder(s) Unlocatable or Unidentifiable
-                    (InC-RUU)</name_plural>
+                  <name_singular>In Copyright - Rights-holders Unlocatable or Unidentifiable (InC-RUU)</name_singular>
+                  <name_plural>In Copyright - Rights-holder(s) Unlocatable or Unidentifiable (InC-RUU)</name_plural>
                   <description>indicates that the Item labeled with this Rights Statement
                                   has been
                                   identified as in copyright, but whose rights-holder(s) either cannot
@@ -5585,8 +5551,7 @@ https://creativecommons.org/publicdomain/zero/1.0/</description>
             </item>
           </items>
         </item>
-        <item idno="no_copyright" enabled="1" default="0" value="no-copyright" rank="566"
-          type="concept">
+        <item idno="no_copyright" enabled="1" default="0" value="no-copyright" rank="566" type="concept">
           <labels>
             <label locale="en_US" preferred="1">
               <name_singular>No Copyright (RS-NoC)</name_singular>
@@ -5710,7 +5675,7 @@ https://creativecommons.org/publicdomain/zero/1.0/</description>
             <label locale="en_US" preferred="1">
               <name_singular>Project leader</name_singular>
               <name_plural>Project leader</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -5719,7 +5684,7 @@ https://creativecommons.org/publicdomain/zero/1.0/</description>
             <label locale="en_US" preferred="1">
               <name_singular>Collector</name_singular>
               <name_plural>Collector</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -5728,7 +5693,7 @@ https://creativecommons.org/publicdomain/zero/1.0/</description>
             <label locale="en_US" preferred="1">
               <name_singular>Monitor</name_singular>
               <name_plural>Monitor</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -5737,7 +5702,7 @@ https://creativecommons.org/publicdomain/zero/1.0/</description>
             <label locale="en_US" preferred="1">
               <name_singular>Contributor</name_singular>
               <name_plural>Contributor</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -5746,7 +5711,7 @@ https://creativecommons.org/publicdomain/zero/1.0/</description>
             <label locale="en_US" preferred="1">
               <name_singular>Administrator</name_singular>
               <name_plural>Administrator</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -5755,7 +5720,7 @@ https://creativecommons.org/publicdomain/zero/1.0/</description>
             <label locale="en_US" preferred="1">
               <name_singular>Guest</name_singular>
               <name_plural>Guest</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -5764,7 +5729,7 @@ https://creativecommons.org/publicdomain/zero/1.0/</description>
             <label locale="en_US" preferred="1">
               <name_singular>Researcher</name_singular>
               <name_plural>Researcher</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -5782,7 +5747,7 @@ https://creativecommons.org/publicdomain/zero/1.0/</description>
             <label locale="en_US" preferred="1">
               <name_singular>Primary</name_singular>
               <name_plural>Primary</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -5791,7 +5756,7 @@ https://creativecommons.org/publicdomain/zero/1.0/</description>
             <label locale="en_US" preferred="1">
               <name_singular>Other</name_singular>
               <name_plural>Other</name_plural>
-              <description />
+              <description/>
             </label>
           </labels>
         </item>
@@ -6457,11 +6422,11 @@ https://creativecommons.org/publicdomain/zero/1.0/</description>
             <setting name="mustBeUnique">0</setting>
             <setting name="moveArticles">1</setting>
             <setting name="includeSourceData">0</setting>
-            <setting name="regex" />
-            <setting name="default_text" />
-            <setting name="displayTemplate" />
-            <setting name="dependentValueTemplate" />
-            <setting name="referenceMediaIn" />
+            <setting name="regex"/>
+            <setting name="default_text"/>
+            <setting name="displayTemplate"/>
+            <setting name="dependentValueTemplate"/>
+            <setting name="referenceMediaIn"/>
           </settings>
         </metadataElement>
         <metadataElement code="exlink_url" datatype="Url">
@@ -6490,9 +6455,9 @@ https://creativecommons.org/publicdomain/zero/1.0/</description>
             <setting name="canMakePDFForValue">0</setting>
             <setting name="displayDelimiter">; </setting>
             <setting name="includeSourceData">0</setting>
-            <setting name="regex" />
-            <setting name="default_text" />
-            <setting name="displayTemplate" />
+            <setting name="regex"/>
+            <setting name="default_text"/>
+            <setting name="displayTemplate"/>
           </settings>
         </metadataElement>
       </elements>
@@ -6612,9 +6577,9 @@ https://creativecommons.org/publicdomain/zero/1.0/</description>
             <setting name="separateDisabledValues">0</setting>
             <setting name="hideDisabledValues">0</setting>
             <setting name="includeSourceData">0</setting>
-            <setting name="displayTemplate" />
-            <setting name="restrictToTypes" />
-            <setting name="currentSelectionDisplayFormat" />
+            <setting name="displayTemplate"/>
+            <setting name="restrictToTypes"/>
+            <setting name="currentSelectionDisplayFormat"/>
           </settings>
         </metadataElement>
         <metadataElement code="langlabel" datatype="List" list="langlabellist">
@@ -6652,9 +6617,9 @@ https://creativecommons.org/publicdomain/zero/1.0/</description>
             <setting name="separateDisabledValues">0</setting>
             <setting name="hideDisabledValues">0</setting>
             <setting name="includeSourceData">0</setting>
-            <setting name="displayTemplate" />
-            <setting name="restrictToTypes" />
-            <setting name="currentSelectionDisplayFormat" />
+            <setting name="displayTemplate"/>
+            <setting name="restrictToTypes"/>
+            <setting name="currentSelectionDisplayFormat"/>
           </settings>
         </metadataElement>
       </elements>
@@ -6870,10 +6835,10 @@ https://creativecommons.org/publicdomain/zero/1.0/</description>
             <setting name="canMakePDFForValue">0</setting>
             <setting name="displayDelimiter">,</setting>
             <setting name="includeSourceData">0</setting>
-            <setting name="dateFormat" />
-            <setting name="dateRangeBoundaries" />
-            <setting name="default_text" />
-            <setting name="displayTemplate" />
+            <setting name="dateFormat"/>
+            <setting name="dateRangeBoundaries"/>
+            <setting name="default_text"/>
+            <setting name="displayTemplate"/>
           </settings>
         </metadataElement>
         <metadataElement code="dates_type" datatype="List" list="date_types">
@@ -6907,9 +6872,9 @@ https://creativecommons.org/publicdomain/zero/1.0/</description>
             <setting name="separateDisabledValues">0</setting>
             <setting name="hideDisabledValues">0</setting>
             <setting name="includeSourceData">0</setting>
-            <setting name="displayTemplate" />
-            <setting name="restrictToTypes" />
-            <setting name="currentSelectionDisplayFormat" />
+            <setting name="displayTemplate"/>
+            <setting name="restrictToTypes"/>
+            <setting name="currentSelectionDisplayFormat"/>
           </settings>
         </metadataElement>
       </elements>
@@ -7264,9 +7229,9 @@ https://creativecommons.org/publicdomain/zero/1.0/</description>
             <setting name="canMakePDFForValue">0</setting>
             <setting name="displayDelimiter">; </setting>
             <setting name="includeSourceData">0</setting>
-            <setting name="regex" />
-            <setting name="default_text" />
-            <setting name="displayTemplate" />
+            <setting name="regex"/>
+            <setting name="default_text"/>
+            <setting name="displayTemplate"/>
           </settings>
         </metadataElement>
         <metadataElement code="authtype" datatype="List" list="authoritylist">
@@ -7301,9 +7266,9 @@ https://creativecommons.org/publicdomain/zero/1.0/</description>
             <setting name="separateDisabledValues">0</setting>
             <setting name="hideDisabledValues">0</setting>
             <setting name="includeSourceData">0</setting>
-            <setting name="displayTemplate" />
-            <setting name="restrictToTypes" />
-            <setting name="currentSelectionDisplayFormat" />
+            <setting name="displayTemplate"/>
+            <setting name="restrictToTypes"/>
+            <setting name="currentSelectionDisplayFormat"/>
           </settings>
         </metadataElement>
       </elements>
@@ -7434,7 +7399,7 @@ https://creativecommons.org/publicdomain/zero/1.0/</description>
     <userInterface code="objects_ui" type="ca_objects">
       <labels>
         <label locale="en_US">
-          <name>Loan editor</name>
+          <name>Standard objects editor</name>
         </label>
       </labels>
       <screens>
@@ -7606,135 +7571,8 @@ https://creativecommons.org/publicdomain/zero/1.0/</description>
             </label>
           </labels>
           <bundlePlacements>
-            <placement code="ca_places_country">
+            <placement code="ca_places6">
               <bundle>ca_places</bundle>
-              <settings>
-                <setting name="label" locale="en_US">Country</setting>
-                <setting name="readonly">0</setting>
-                <setting name="expand_collapse_value">bubbles</setting>
-                <setting name="expand_collapse_no_value">bubbles</setting>
-                <setting name="dontShowRelationshipTypes">0</setting>
-                <setting name="restrict_to_types">country</setting>
-                <setting name="dont_include_subtypes_in_type_restriction">0</setting>
-                <setting name="list_format">bubbles</setting>
-                <setting name="dontShowAddButton">0</setting>
-                <setting name="dontShowDeleteButton">0</setting>
-                <setting name="minRelationshipsPerRow">0</setting>
-                <setting name="maxRelationshipsPerRow">0</setting>
-                <setting name="disableQuickadd">0</setting>
-                <setting name="sortDirection">ASC</setting>
-                <setting name="disableSorts">0</setting>
-                <setting name="showCount">0</setting>
-                <setting name="numPerPage">100</setting>
-                <setting name="showBatchEditorButton">0</setting>
-                <setting name="showSetRepresentationButton">0</setting>
-                <setting name="useHierarchicalBrowser">1</setting>
-                <setting name="hierarchicalBrowserHeight">200px</setting>
-              </settings>
-            </placement>
-            <placement code="ca_places_region">
-              <bundle>ca_places</bundle>
-              <settings>
-                <setting name="label" locale="en_US">Region</setting>
-                <setting name="readonly">0</setting>
-                <setting name="expand_collapse_value">bubbles</setting>
-                <setting name="expand_collapse_no_value">bubbles</setting>
-                <setting name="dontShowRelationshipTypes">0</setting>
-                <setting name="restrict_to_types">region</setting>
-                <setting name="dont_include_subtypes_in_type_restriction">0</setting>
-                <setting name="list_format">bubbles</setting>
-                <setting name="dontShowAddButton">0</setting>
-                <setting name="dontShowDeleteButton">0</setting>
-                <setting name="minRelationshipsPerRow">0</setting>
-                <setting name="maxRelationshipsPerRow">0</setting>
-                <setting name="disableQuickadd">0</setting>
-                <setting name="sortDirection">ASC</setting>
-                <setting name="disableSorts">0</setting>
-                <setting name="showCount">0</setting>
-                <setting name="numPerPage">100</setting>
-                <setting name="showBatchEditorButton">0</setting>
-                <setting name="showSetRepresentationButton">0</setting>
-                <setting name="useHierarchicalBrowser">1</setting>
-                <setting name="hierarchicalBrowserHeight">200px</setting>
-              </settings>
-            </placement>
-            <placement code="ca_places_city">
-              <bundle>ca_places</bundle>
-              <settings>
-                <setting name="label" locale="en_US">City</setting>
-                <setting name="readonly">0</setting>
-                <setting name="expand_collapse_value">bubbles</setting>
-                <setting name="expand_collapse_no_value">bubbles</setting>
-                <setting name="dontShowRelationshipTypes">0</setting>
-                <setting name="restrict_to_types">city</setting>
-                <setting name="dont_include_subtypes_in_type_restriction">0</setting>
-                <setting name="list_format">bubbles</setting>
-                <setting name="dontShowAddButton">0</setting>
-                <setting name="dontShowDeleteButton">0</setting>
-                <setting name="minRelationshipsPerRow">0</setting>
-                <setting name="maxRelationshipsPerRow">0</setting>
-                <setting name="disableQuickadd">0</setting>
-                <setting name="sortDirection">ASC</setting>
-                <setting name="disableSorts">0</setting>
-                <setting name="showCount">0</setting>
-                <setting name="numPerPage">100</setting>
-                <setting name="showBatchEditorButton">0</setting>
-                <setting name="showSetRepresentationButton">0</setting>
-                <setting name="useHierarchicalBrowser">1</setting>
-                <setting name="hierarchicalBrowserHeight">200px</setting>
-              </settings>
-            </placement>
-            <placement code="ca_places_address">
-              <bundle>ca_places</bundle>
-              <settings>
-                <setting name="label" locale="en_US">Address</setting>
-                <setting name="readonly">0</setting>
-                <setting name="expand_collapse_value">bubbles</setting>
-                <setting name="expand_collapse_no_value">bubbles</setting>
-                <setting name="dontShowRelationshipTypes">0</setting>
-                <setting name="restrict_to_types">address</setting>
-                <setting name="dont_include_subtypes_in_type_restriction">0</setting>
-                <setting name="list_format">bubbles</setting>
-                <setting name="dontShowAddButton">0</setting>
-                <setting name="dontShowDeleteButton">0</setting>
-                <setting name="minRelationshipsPerRow">0</setting>
-                <setting name="maxRelationshipsPerRow">0</setting>
-                <setting name="disableQuickadd">0</setting>
-                <setting name="sortDirection">ASC</setting>
-                <setting name="disableSorts">0</setting>
-                <setting name="showCount">0</setting>
-                <setting name="numPerPage">100</setting>
-                <setting name="showBatchEditorButton">0</setting>
-                <setting name="showSetRepresentationButton">0</setting>
-                <setting name="useHierarchicalBrowser">1</setting>
-                <setting name="hierarchicalBrowserHeight">200px</setting>
-              </settings>
-            </placement>
-            <placement code="ca_places_imaginary">
-              <bundle>ca_places</bundle>
-              <settings>
-                <setting name="label" locale="en_US">Imaginary</setting>
-                <setting name="readonly">0</setting>
-                <setting name="expand_collapse_value">bubbles</setting>
-                <setting name="expand_collapse_no_value">bubbles</setting>
-                <setting name="dontShowRelationshipTypes">0</setting>
-                <setting name="restrict_to_types">imaginary</setting>
-                <setting name="dont_include_subtypes_in_type_restriction">0</setting>
-                <setting name="list_format">bubbles</setting>
-                <setting name="dontShowAddButton">0</setting>
-                <setting name="dontShowDeleteButton">0</setting>
-                <setting name="minRelationshipsPerRow">0</setting>
-                <setting name="maxRelationshipsPerRow">0</setting>
-                <setting name="disableQuickadd">0</setting>
-                <setting name="sortDirection">ASC</setting>
-                <setting name="disableSorts">0</setting>
-                <setting name="showCount">0</setting>
-                <setting name="numPerPage">100</setting>
-                <setting name="showBatchEditorButton">0</setting>
-                <setting name="showSetRepresentationButton">0</setting>
-                <setting name="useHierarchicalBrowser">1</setting>
-                <setting name="hierarchicalBrowserHeight">200px</setting>
-              </settings>
             </placement>
             <placement code="ca_attribute_georeference">
               <bundle>ca_objects.georeference</bundle>
@@ -10135,10 +9973,22 @@ https://creativecommons.org/publicdomain/zero/1.0/</description>
                 <setting name="label" locale="en_US">Name</setting>
                 <setting name="add_label" locale="en_US">Add name</setting>
                 <setting name="readonly">0</setting>
-                <setting name="expand_collapse_value">bubbles</setting>
-                <setting name="expand_collapse_no_value">bubbles</setting>
+                <setting name="expand_collapse_value">dont_force</setting>
+                <setting name="expand_collapse_no_value">dont_force</setting>
                 <setting name="usewysiwygeditor">0</setting>
               </settings>
+            </placement>
+            <placement code="preferred_labels4">
+              <bundle>preferred_labels</bundle>
+              <settings>
+                <setting name="readonly">0</setting>
+                <setting name="expand_collapse_value">dont_force</setting>
+                <setting name="expand_collapse_no_value">dont_force</setting>
+                <setting name="usewysiwygeditor">1</setting>
+              </settings>
+            </placement>
+            <placement code="ca_attribute_georeference4">
+              <bundle>ca_places.georeference</bundle>
             </placement>
             <placement code="access">
               <bundle>access</bundle>
@@ -10692,19 +10542,18 @@ https://creativecommons.org/publicdomain/zero/1.0/</description>
         </screen>
       </screens>
     </userInterface>
-    <userInterface code="wia_editor" type="ca_objects" color="c42bc4" typeRestrictions="words"
-      includeSubtypes="0">
+    <userInterface code="wia_editor" type="ca_objects" color="c42bc4" typeRestrictions="words" includeSubtypes="0">
       <labels>
         <label locale="en_US">
           <name>Words into action editor</name>
         </label>
       </labels>
       <userAccess>
-        <permission user="administrator" access="edit" />
+        <permission user="administrator" access="edit"/>
       </userAccess>
       <groupAccess>
-        <permission group="cataloguer" access="edit" />
-        <permission group="admin" access="edit" />
+        <permission group="cataloguer" access="edit"/>
+        <permission group="admin" access="edit"/>
       </groupAccess>
       <screens>
         <screen idno="screen_23_0" default="0" color="000000">
