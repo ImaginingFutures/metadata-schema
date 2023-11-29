@@ -4,3 +4,4 @@ scraper
 data_procesor
 .venv
 *:Zone.Identifier
+*.xlsx
