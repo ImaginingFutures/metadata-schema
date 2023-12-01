@@ -2,6 +2,12 @@
 
 ## [Unreleased]
 
+## Fixed
+
+- Encoding and extra columns in csv mapings and data in `installationdocs`
+- Restore `themes` and `culturalcontext` types in `relationshipTable name="ca_objects_x_vocabulary_terms"`
+- Update splitter conditions in `installationdocs/04.1_ResourcesMapping.csv`.
+
 ### Changed
 
 - Reduce multiple `related_places` elements in the `Spatial Coverage` screen of `objects_ui`.
