@@ -1,4 +1,4 @@
-﻿Rule type,Source,CA table.element,Group,Options,Refinery,Refinery parameters,Original values,Replacement values,Notes
+Rule type,Source,CA table.element,Group,Options,Refinery,Refinery parameters,Original values,Replacement values,Notes
 Mapping,1,ca_places.idno,,,,,,,
 Mapping,2,ca_places.preferred_labels,,,,,,,
 Mapping,3,ca_places.description,,,,,,,

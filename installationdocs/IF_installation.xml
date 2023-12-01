@@ -11752,6 +11752,26 @@ https://creativecommons.org/publicdomain/zero/1.0/</description>
             </label>
           </labels>
         </type>
+        <type code="theme" default="0">
+          <labels>
+            <label locale="en_US">
+              <typename>theme</typename>
+              <typename_reverse>theme</typename_reverse>
+            </label>
+          </labels>
+          <subTypeLeft> </subTypeLeft>
+          <subTypeRight />
+        </type>
+        <type code="culturalcontext" default="0">
+          <labels>
+            <label locale="en_US">
+              <typename>cultural context</typename>
+              <typename_reverse>cultural context</typename_reverse>
+            </label>
+          </labels>
+          <subTypeLeft> </subTypeLeft>
+          <subTypeRight />
+        </type>
       </types>
     </relationshipTable>
     <relationshipTable name="ca_occurrences_x_collections">
