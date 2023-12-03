@@ -2,7 +2,7 @@
 <profile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="profile.xsd" useForConfiguration="1" infoUrl="">
   <profileName>IF Custom Profile</profileName>
   <profileDescription>IF Custom Profile</profileDescription>
-  <profileVersion>1.1.1</profileVersion>
+  <profileVersion>1.1.2</profileVersion>
   <locales>
     <locale lang="en" country="US">English</locale>
     <locale lang="en" country="CA" dontUseForCataloguing="1">English (Canadian)</locale>
@@ -1108,7 +1108,6 @@
           <settings>
             <setting name="entity_class">IND</setting>
             <setting name="use_suffix_for_orgs">1</setting>
-            <setting name="org_label"/>
             <setting name="show_source_for_preferred_labels">0</setting>
             <setting name="show_source_for_nonpreferred_labels">0</setting>
             <setting name="show_checked_for_preferred_labels">0</setting>
@@ -5807,6 +5806,33 @@ https://creativecommons.org/publicdomain/zero/1.0/</description>
         </item>
       </items>
     </list>
+    <list code="accesslevels" hierarchical="1" system="1" vocabulary="1">
+      <labels>
+        <label locale="en_US">
+          <name>Access Levels</name>
+        </label>
+      </labels>
+      <items>
+        <item idno="yes" enabled="1" default="1" value="yes" rank="577" type="concept">
+          <labels>
+            <label locale="en_US" preferred="1">
+              <name_singular>Yes</name_singular>
+              <name_plural>Yes</name_plural>
+              <description>refers to resources that are restricted. If you choose ‘Yes’, you need to justify </description>
+            </label>
+          </labels>
+        </item>
+        <item idno="No" enabled="1" default="0" rank="578" type="concept">
+          <labels>
+            <label locale="en_US" preferred="1">
+              <name_singular>No</name_singular>
+              <name_plural>No</name_plural>
+              <description>efers to resources with no access restriction. Resources will be made openly available.</description>
+            </label>
+          </labels>
+        </item>
+      </items>
+    </list>
   </lists>
   <elementSets>
     <metadataElement code="set_description" datatype="Text">
@@ -6943,13 +6969,17 @@ https://creativecommons.org/publicdomain/zero/1.0/</description>
         </restriction>
       </typeRestrictions>
     </metadataElement>
-    <metadataElement code="accessrest" datatype="List">
+    <metadataElement code="accessrest" datatype="List" list="accesslevels">
       <labels>
         <label locale="en_US">
           <name>Access Restriction</name>
           <description>This refers to availability of the resource.</description>
         </label>
       </labels>
+      <settings>
+        <setting name="render">select</setting>
+        <setting name="restrictToTypes">concept</setting>
+      </settings>
       <typeRestrictions>
         <restriction>
           <table>ca_objects</table>
@@ -7416,6 +7446,9 @@ https://creativecommons.org/publicdomain/zero/1.0/</description>
                 <setting name="readonly">0</setting>
                 <setting name="expand_collapse_value">bubbles</setting>
                 <setting name="expand_collapse_no_value">bubbles</setting>
+                <setting name="sort">1</setting>
+                <setting name="sortDirection">ASC</setting>
+                <setting name="dontShowDeleteButton">0</setting>
                 <setting name="usewysiwygeditor">0</setting>
               </settings>
             </placement>
@@ -7425,6 +7458,9 @@ https://creativecommons.org/publicdomain/zero/1.0/</description>
                 <setting name="readonly">0</setting>
                 <setting name="expand_collapse_value">bubbles</setting>
                 <setting name="expand_collapse_no_value">bubbles</setting>
+                <setting name="sort">1</setting>
+                <setting name="sortDirection">ASC</setting>
+                <setting name="dontShowDeleteButton">0</setting>
               </settings>
             </placement>
             <placement code="ca_collections">
@@ -7468,6 +7504,9 @@ https://creativecommons.org/publicdomain/zero/1.0/</description>
                 <setting name="readonly">0</setting>
                 <setting name="expand_collapse_value">bubbles</setting>
                 <setting name="expand_collapse_no_value">bubbles</setting>
+                <setting name="sort">1</setting>
+                <setting name="sortDirection">ASC</setting>
+                <setting name="dontShowDeleteButton">0</setting>
               </settings>
             </placement>
             <placement code="ca_attribute_exlink">
@@ -7476,6 +7515,9 @@ https://creativecommons.org/publicdomain/zero/1.0/</description>
                 <setting name="readonly">0</setting>
                 <setting name="expand_collapse_value">bubbles</setting>
                 <setting name="expand_collapse_no_value">bubbles</setting>
+                <setting name="sort">1</setting>
+                <setting name="sortDirection">ASC</setting>
+                <setting name="dontShowDeleteButton">0</setting>
               </settings>
             </placement>
             <placement code="access">
@@ -7501,6 +7543,9 @@ https://creativecommons.org/publicdomain/zero/1.0/</description>
                 <setting name="readonly">0</setting>
                 <setting name="expand_collapse_value">bubbles</setting>
                 <setting name="expand_collapse_no_value">bubbles</setting>
+                <setting name="sort">1</setting>
+                <setting name="sortDirection">ASC</setting>
+                <setting name="dontShowDeleteButton">0</setting>
               </settings>
             </placement>
             <placement code="ca_attribute_descriptionalt">
@@ -7509,6 +7554,9 @@ https://creativecommons.org/publicdomain/zero/1.0/</description>
                 <setting name="readonly">0</setting>
                 <setting name="expand_collapse_value">bubbles</setting>
                 <setting name="expand_collapse_no_value">bubbles</setting>
+                <setting name="sort">1</setting>
+                <setting name="sortDirection">ASC</setting>
+                <setting name="dontShowDeleteButton">0</setting>
               </settings>
             </placement>
             <placement code="ca_attribute_langmaterial">
@@ -7517,6 +7565,9 @@ https://creativecommons.org/publicdomain/zero/1.0/</description>
                 <setting name="readonly">0</setting>
                 <setting name="expand_collapse_value">bubbles</setting>
                 <setting name="expand_collapse_no_value">bubbles</setting>
+                <setting name="sort">1</setting>
+                <setting name="sortDirection">ASC</setting>
+                <setting name="dontShowDeleteButton">0</setting>
               </settings>
             </placement>
             <placement code="ca_list_items_themes">
@@ -7552,6 +7603,9 @@ https://creativecommons.org/publicdomain/zero/1.0/</description>
                 <setting name="readonly">0</setting>
                 <setting name="expand_collapse_value">bubbles</setting>
                 <setting name="expand_collapse_no_value">bubbles</setting>
+                <setting name="sort">1</setting>
+                <setting name="sortDirection">ASC</setting>
+                <setting name="dontShowDeleteButton">0</setting>
               </settings>
             </placement>
             <placement code="ca_attribute_notes">
@@ -7560,6 +7614,9 @@ https://creativecommons.org/publicdomain/zero/1.0/</description>
                 <setting name="readonly">0</setting>
                 <setting name="expand_collapse_value">bubbles</setting>
                 <setting name="expand_collapse_no_value">bubbles</setting>
+                <setting name="sort">1</setting>
+                <setting name="sortDirection">ASC</setting>
+                <setting name="dontShowDeleteButton">0</setting>
               </settings>
             </placement>
           </bundlePlacements>
@@ -7573,6 +7630,27 @@ https://creativecommons.org/publicdomain/zero/1.0/</description>
           <bundlePlacements>
             <placement code="ca_places6">
               <bundle>ca_places</bundle>
+              <settings>
+                <setting name="readonly">0</setting>
+                <setting name="expand_collapse_value">bubbles</setting>
+                <setting name="expand_collapse_no_value">bubbles</setting>
+                <setting name="dontShowRelationshipTypes">0</setting>
+                <setting name="dont_include_subtypes_in_type_restriction">0</setting>
+                <setting name="list_format">bubbles</setting>
+                <setting name="dontShowAddButton">0</setting>
+                <setting name="dontShowDeleteButton">0</setting>
+                <setting name="minRelationshipsPerRow">0</setting>
+                <setting name="maxRelationshipsPerRow">0</setting>
+                <setting name="disableQuickadd">0</setting>
+                <setting name="sortDirection">ASC</setting>
+                <setting name="disableSorts">0</setting>
+                <setting name="showCount">0</setting>
+                <setting name="numPerPage">100</setting>
+                <setting name="showBatchEditorButton">0</setting>
+                <setting name="showSetRepresentationButton">0</setting>
+                <setting name="useHierarchicalBrowser">1</setting>
+                <setting name="hierarchicalBrowserHeight">200px</setting>
+              </settings>
             </placement>
             <placement code="ca_attribute_georeference">
               <bundle>ca_objects.georeference</bundle>
@@ -7580,6 +7658,9 @@ https://creativecommons.org/publicdomain/zero/1.0/</description>
                 <setting name="readonly">0</setting>
                 <setting name="expand_collapse_value">bubbles</setting>
                 <setting name="expand_collapse_no_value">bubbles</setting>
+                <setting name="sort">1</setting>
+                <setting name="sortDirection">ASC</setting>
+                <setting name="dontShowDeleteButton">0</setting>
               </settings>
             </placement>
           </bundlePlacements>
@@ -7597,6 +7678,9 @@ https://creativecommons.org/publicdomain/zero/1.0/</description>
                 <setting name="readonly">0</setting>
                 <setting name="expand_collapse_value">bubbles</setting>
                 <setting name="expand_collapse_no_value">bubbles</setting>
+                <setting name="sort">1</setting>
+                <setting name="sortDirection">ASC</setting>
+                <setting name="dontShowDeleteButton">0</setting>
               </settings>
             </placement>
           </bundlePlacements>
@@ -7614,6 +7698,9 @@ https://creativecommons.org/publicdomain/zero/1.0/</description>
                 <setting name="readonly">0</setting>
                 <setting name="expand_collapse_value">bubbles</setting>
                 <setting name="expand_collapse_no_value">bubbles</setting>
+                <setting name="sort">1</setting>
+                <setting name="sortDirection">ASC</setting>
+                <setting name="dontShowDeleteButton">0</setting>
               </settings>
             </placement>
             <placement code="ca_list_items_cultcontlist">
@@ -7649,6 +7736,9 @@ https://creativecommons.org/publicdomain/zero/1.0/</description>
                 <setting name="readonly">0</setting>
                 <setting name="expand_collapse_value">bubbles</setting>
                 <setting name="expand_collapse_no_value">bubbles</setting>
+                <setting name="sort">1</setting>
+                <setting name="sortDirection">ASC</setting>
+                <setting name="dontShowDeleteButton">0</setting>
               </settings>
             </placement>
           </bundlePlacements>
@@ -7666,6 +7756,9 @@ https://creativecommons.org/publicdomain/zero/1.0/</description>
                 <setting name="readonly">0</setting>
                 <setting name="expand_collapse_value">bubbles</setting>
                 <setting name="expand_collapse_no_value">bubbles</setting>
+                <setting name="sort">1</setting>
+                <setting name="sortDirection">ASC</setting>
+                <setting name="dontShowDeleteButton">0</setting>
               </settings>
             </placement>
             <placement code="ca_attribute_equipused">
@@ -7674,6 +7767,9 @@ https://creativecommons.org/publicdomain/zero/1.0/</description>
                 <setting name="readonly">0</setting>
                 <setting name="expand_collapse_value">bubbles</setting>
                 <setting name="expand_collapse_no_value">bubbles</setting>
+                <setting name="sort">1</setting>
+                <setting name="sortDirection">ASC</setting>
+                <setting name="dontShowDeleteButton">0</setting>
               </settings>
             </placement>
           </bundlePlacements>
@@ -7763,6 +7859,9 @@ https://creativecommons.org/publicdomain/zero/1.0/</description>
                 <setting name="readonly">0</setting>
                 <setting name="expand_collapse_value">bubbles</setting>
                 <setting name="expand_collapse_no_value">bubbles</setting>
+                <setting name="sort">1</setting>
+                <setting name="sortDirection">ASC</setting>
+                <setting name="dontShowDeleteButton">0</setting>
               </settings>
             </placement>
           </bundlePlacements>
@@ -7780,7 +7879,13 @@ https://creativecommons.org/publicdomain/zero/1.0/</description>
                 <setting name="readonly">0</setting>
                 <setting name="expand_collapse_value">bubbles</setting>
                 <setting name="expand_collapse_no_value">bubbles</setting>
+                <setting name="sort">1</setting>
+                <setting name="sortDirection">ASC</setting>
+                <setting name="dontShowDeleteButton">0</setting>
               </settings>
+            </placement>
+            <placement code="ca_attribute_accessrest2">
+              <bundle>ca_objects.accessrest</bundle>
             </placement>
             <placement code="ca_attribute_reasonforrest">
               <bundle>ca_objects.reasonforrest</bundle>
@@ -7788,6 +7893,9 @@ https://creativecommons.org/publicdomain/zero/1.0/</description>
                 <setting name="readonly">0</setting>
                 <setting name="expand_collapse_value">bubbles</setting>
                 <setting name="expand_collapse_no_value">bubbles</setting>
+                <setting name="sort">1</setting>
+                <setting name="sortDirection">ASC</setting>
+                <setting name="dontShowDeleteButton">0</setting>
               </settings>
             </placement>
           </bundlePlacements>
@@ -7854,6 +7962,9 @@ https://creativecommons.org/publicdomain/zero/1.0/</description>
                 <setting name="readonly">0</setting>
                 <setting name="expand_collapse_value">bubbles</setting>
                 <setting name="expand_collapse_no_value">bubbles</setting>
+                <setting name="sort">1</setting>
+                <setting name="sortDirection">ASC</setting>
+                <setting name="dontShowDeleteButton">0</setting>
                 <setting name="usewysiwygeditor">0</setting>
               </settings>
             </placement>
@@ -7872,6 +7983,9 @@ https://creativecommons.org/publicdomain/zero/1.0/</description>
                 <setting name="readonly">0</setting>
                 <setting name="expand_collapse_value">bubbles</setting>
                 <setting name="expand_collapse_no_value">bubbles</setting>
+                <setting name="sort">1</setting>
+                <setting name="sortDirection">ASC</setting>
+                <setting name="dontShowDeleteButton">0</setting>
               </settings>
             </placement>
             <placement code="ca_attribute_ethniccom">
@@ -7880,6 +7994,9 @@ https://creativecommons.org/publicdomain/zero/1.0/</description>
                 <setting name="readonly">0</setting>
                 <setting name="expand_collapse_value">bubbles</setting>
                 <setting name="expand_collapse_no_value">bubbles</setting>
+                <setting name="sort">1</setting>
+                <setting name="sortDirection">ASC</setting>
+                <setting name="dontShowDeleteButton">0</setting>
               </settings>
             </placement>
             <placement code="ca_attribute_langmaterial">
@@ -7889,6 +8006,9 @@ https://creativecommons.org/publicdomain/zero/1.0/</description>
                 <setting name="readonly">0</setting>
                 <setting name="expand_collapse_value">bubbles</setting>
                 <setting name="expand_collapse_no_value">bubbles</setting>
+                <setting name="sort">1</setting>
+                <setting name="sortDirection">ASC</setting>
+                <setting name="dontShowDeleteButton">0</setting>
               </settings>
             </placement>
             <placement code="ca_attribute_gender">
@@ -7897,6 +8017,9 @@ https://creativecommons.org/publicdomain/zero/1.0/</description>
                 <setting name="readonly">0</setting>
                 <setting name="expand_collapse_value">bubbles</setting>
                 <setting name="expand_collapse_no_value">bubbles</setting>
+                <setting name="sort">1</setting>
+                <setting name="sortDirection">ASC</setting>
+                <setting name="dontShowDeleteButton">0</setting>
               </settings>
             </placement>
             <placement code="ca_attribute_dates">
@@ -7905,6 +8028,9 @@ https://creativecommons.org/publicdomain/zero/1.0/</description>
                 <setting name="readonly">0</setting>
                 <setting name="expand_collapse_value">bubbles</setting>
                 <setting name="expand_collapse_no_value">bubbles</setting>
+                <setting name="sort">1</setting>
+                <setting name="sortDirection">ASC</setting>
+                <setting name="dontShowDeleteButton">0</setting>
               </settings>
             </placement>
             <placement code="ca_places">
@@ -7938,6 +8064,9 @@ https://creativecommons.org/publicdomain/zero/1.0/</description>
                 <setting name="readonly">0</setting>
                 <setting name="expand_collapse_value">bubbles</setting>
                 <setting name="expand_collapse_no_value">bubbles</setting>
+                <setting name="sort">1</setting>
+                <setting name="sortDirection">ASC</setting>
+                <setting name="dontShowDeleteButton">0</setting>
               </settings>
             </placement>
             <placement code="ca_attribute_roles">
@@ -7946,6 +8075,9 @@ https://creativecommons.org/publicdomain/zero/1.0/</description>
                 <setting name="readonly">0</setting>
                 <setting name="expand_collapse_value">bubbles</setting>
                 <setting name="expand_collapse_no_value">bubbles</setting>
+                <setting name="sort">1</setting>
+                <setting name="sortDirection">ASC</setting>
+                <setting name="dontShowDeleteButton">0</setting>
               </settings>
             </placement>
             <placement code="ca_attribute_email">
@@ -7954,6 +8086,9 @@ https://creativecommons.org/publicdomain/zero/1.0/</description>
                 <setting name="readonly">0</setting>
                 <setting name="expand_collapse_value">bubbles</setting>
                 <setting name="expand_collapse_no_value">bubbles</setting>
+                <setting name="sort">1</setting>
+                <setting name="sortDirection">ASC</setting>
+                <setting name="dontShowDeleteButton">0</setting>
               </settings>
             </placement>
             <placement code="ca_attribute_phone">
@@ -7962,6 +8097,9 @@ https://creativecommons.org/publicdomain/zero/1.0/</description>
                 <setting name="readonly">0</setting>
                 <setting name="expand_collapse_value">bubbles</setting>
                 <setting name="expand_collapse_no_value">bubbles</setting>
+                <setting name="sort">1</setting>
+                <setting name="sortDirection">ASC</setting>
+                <setting name="dontShowDeleteButton">0</setting>
               </settings>
             </placement>
             <placement code="ca_attribute_perswebsite">
@@ -7970,6 +8108,9 @@ https://creativecommons.org/publicdomain/zero/1.0/</description>
                 <setting name="readonly">0</setting>
                 <setting name="expand_collapse_value">bubbles</setting>
                 <setting name="expand_collapse_no_value">bubbles</setting>
+                <setting name="sort">1</setting>
+                <setting name="sortDirection">ASC</setting>
+                <setting name="dontShowDeleteButton">0</setting>
               </settings>
             </placement>
             <placement code="ca_attribute_affiliation">
@@ -7978,6 +8119,9 @@ https://creativecommons.org/publicdomain/zero/1.0/</description>
                 <setting name="readonly">0</setting>
                 <setting name="expand_collapse_value">bubbles</setting>
                 <setting name="expand_collapse_no_value">bubbles</setting>
+                <setting name="sort">1</setting>
+                <setting name="sortDirection">ASC</setting>
+                <setting name="dontShowDeleteButton">0</setting>
               </settings>
             </placement>
             <placement code="ca_attribute_biographist">
@@ -7986,6 +8130,9 @@ https://creativecommons.org/publicdomain/zero/1.0/</description>
                 <setting name="readonly">0</setting>
                 <setting name="expand_collapse_value">bubbles</setting>
                 <setting name="expand_collapse_no_value">bubbles</setting>
+                <setting name="sort">1</setting>
+                <setting name="sortDirection">ASC</setting>
+                <setting name="dontShowDeleteButton">0</setting>
               </settings>
             </placement>
             <placement code="ca_attribute_otherinfo">
@@ -7994,6 +8141,9 @@ https://creativecommons.org/publicdomain/zero/1.0/</description>
                 <setting name="readonly">0</setting>
                 <setting name="expand_collapse_value">bubbles</setting>
                 <setting name="expand_collapse_no_value">bubbles</setting>
+                <setting name="sort">1</setting>
+                <setting name="sortDirection">ASC</setting>
+                <setting name="dontShowDeleteButton">0</setting>
               </settings>
             </placement>
             <placement code="ca_attribute_authorities">
@@ -8002,6 +8152,9 @@ https://creativecommons.org/publicdomain/zero/1.0/</description>
                 <setting name="readonly">0</setting>
                 <setting name="expand_collapse_value">bubbles</setting>
                 <setting name="expand_collapse_no_value">bubbles</setting>
+                <setting name="sort">1</setting>
+                <setting name="sortDirection">ASC</setting>
+                <setting name="dontShowDeleteButton">0</setting>
               </settings>
             </placement>
             <placement code="access">
@@ -9964,7 +10117,6 @@ https://creativecommons.org/publicdomain/zero/1.0/</description>
                 <setting name="readonly">0</setting>
                 <setting name="expand_collapse_value">bubbles</setting>
                 <setting name="expand_collapse_no_value">bubbles</setting>
-                <setting name="usewysiwygeditor">0</setting>
               </settings>
             </placement>
             <placement code="preferred_labels">
@@ -9989,6 +10141,14 @@ https://creativecommons.org/publicdomain/zero/1.0/</description>
             </placement>
             <placement code="ca_attribute_georeference4">
               <bundle>ca_places.georeference</bundle>
+              <settings>
+                <setting name="readonly">0</setting>
+                <setting name="expand_collapse_value">bubbles</setting>
+                <setting name="expand_collapse_no_value">bubbles</setting>
+                <setting name="sort">1</setting>
+                <setting name="sortDirection">ASC</setting>
+                <setting name="dontShowDeleteButton">0</setting>
+              </settings>
             </placement>
             <placement code="access">
               <bundle>access</bundle>
@@ -10689,14 +10849,16 @@ https://creativecommons.org/publicdomain/zero/1.0/</description>
                 <setting name="ca_collections_collected_includeFromChildren">0</setting>
                 <setting name="ca_collections_external_color">#EEEEEE</setting>
                 <setting name="ca_collections_external_includeFromChildren">0</setting>
-                <setting name="ca_collections_internal_color">#EEEEEE</setting>
-                <setting name="ca_collections_internal_includeFromChildren">0</setting>
+                <setting name="ca_collections_project_color">#EEEEEE</setting>
+                <setting name="ca_collections_project_includeFromChildren">0</setting>
                 <setting name="ca_collections_words_into_action_color">#EEEEEE</setting>
                 <setting name="ca_collections_words_into_action_includeFromChildren">0</setting>
                 <setting name="ca_entities_individual_color">#EEEEEE</setting>
                 <setting name="ca_entities_individual_includeFromChildren">0</setting>
                 <setting name="ca_entities_organization_color">#EEEEEE</setting>
                 <setting name="ca_entities_organization_includeFromChildren">0</setting>
+                <setting name="ca_entities_participant_color">#EEEEEE</setting>
+                <setting name="ca_entities_participant_includeFromChildren">0</setting>
                 <setting name="ca_movements_movement_color">#EEEEEE</setting>
                 <setting name="ca_movements_movement_includeFromChildren">0</setting>
                 <setting name="ca_loans_in_color">#EEEEEE</setting>
@@ -10719,6 +10881,8 @@ https://creativecommons.org/publicdomain/zero/1.0/</description>
                 <setting name="ca_objects_print_includeFromChildren">0</setting>
                 <setting name="ca_objects_interview_color">#EEEEEE</setting>
                 <setting name="ca_objects_interview_includeFromChildren">0</setting>
+                <setting name="ca_objects_report_color">#EEEEEE</setting>
+                <setting name="ca_objects_report_includeFromChildren">0</setting>
                 <setting name="ca_objects_painting_color">#EEEEEE</setting>
                 <setting name="ca_objects_painting_includeFromChildren">0</setting>
                 <setting name="ca_objects_performance_color">#EEEEEE</setting>
@@ -11759,8 +11923,6 @@ https://creativecommons.org/publicdomain/zero/1.0/</description>
               <typename_reverse>theme</typename_reverse>
             </label>
           </labels>
-          <subTypeLeft> </subTypeLeft>
-          <subTypeRight />
         </type>
         <type code="culturalcontext" default="0">
           <labels>
@@ -11769,8 +11931,6 @@ https://creativecommons.org/publicdomain/zero/1.0/</description>
               <typename_reverse>cultural context</typename_reverse>
             </label>
           </labels>
-          <subTypeLeft> </subTypeLeft>
-          <subTypeRight />
         </type>
       </types>
     </relationshipTable>
