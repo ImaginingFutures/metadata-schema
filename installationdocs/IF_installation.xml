@@ -5368,7 +5368,7 @@
         </item>
       </items>
     </list>
-    <list code="rightsstatelist" hierarchical="0" system="0" vocabulary="1">
+    <list code="rightslist" hierarchical="0" system="0" vocabulary="1">
       <labels>
         <label locale="en_US">
           <name>Usage Permissions</name>
@@ -6884,10 +6884,10 @@ https://creativecommons.org/publicdomain/zero/1.0/</description>
         </restriction>
       </typeRestrictions>
     </metadataElement>
-    <metadataElement code="rightsstate" datatype="List" list="rightsstatelist">
+    <metadataElement code="rights" datatype="List" list="rightslist">
       <labels>
         <label locale="en_US">
-          <name>Rights Statement</name>
+          <name>Rights</name>
           <description>A statement about the intellectual property rights (IPR) held in or
                     over a resource, a legal document giving official permission to do something
                     with a resource, or a statement about access rights.</description>
@@ -7590,7 +7590,7 @@ https://creativecommons.org/publicdomain/zero/1.0/</description>
             </label>
           </labels>
           <bundlePlacements>
-            <placement code="ca_places6">
+            <placement code="ca_places">
               <bundle>ca_places</bundle>
               <settings>
                 <setting name="readonly">0</setting>
@@ -7815,8 +7815,8 @@ https://creativecommons.org/publicdomain/zero/1.0/</description>
                 <setting name="showSetRepresentationButton">0</setting>
               </settings>
             </placement>
-            <placement code="ca_attribute_rightsstate">
-              <bundle>ca_objects.rightsstate</bundle>
+            <placement code="ca_attribute_rights">
+              <bundle>ca_objects.rights</bundle>
               <settings>
                 <setting name="readonly">0</setting>
                 <setting name="expand_collapse_value">bubbles</setting>
@@ -7846,7 +7846,7 @@ https://creativecommons.org/publicdomain/zero/1.0/</description>
                 <setting name="dontShowDeleteButton">0</setting>
               </settings>
             </placement>
-            <placement code="ca_attribute_accessrest2">
+            <placement code="ca_attribute_accessrest">
               <bundle>ca_objects.accessrest</bundle>
             </placement>
             <placement code="ca_attribute_reasonforrest">
@@ -9571,7 +9571,7 @@ https://creativecommons.org/publicdomain/zero/1.0/</description>
             </label>
           </labels>
           <bundlePlacements>
-            <placement code="preferred_labels1">
+            <placement code="preferred_labels">
               <bundle>preferred_labels</bundle>
               <settings>
                 <setting name="readonly">0</setting>
@@ -9580,7 +9580,7 @@ https://creativecommons.org/publicdomain/zero/1.0/</description>
                 <setting name="usewysiwygeditor">0</setting>
               </settings>
             </placement>
-            <placement code="idno2">
+            <placement code="idno">
               <bundle>ca_object_representations.idno</bundle>
               <settings>
                 <setting name="readonly">0</setting>
@@ -9612,7 +9612,7 @@ https://creativecommons.org/publicdomain/zero/1.0/</description>
                 <setting name="expand_collapse_no_value">bubbles</setting>
               </settings>
             </placement>
-            <placement code="access4">
+            <placement code="access">
               <bundle>access</bundle>
               <settings>
                 <setting name="readonly">0</setting>
@@ -9646,7 +9646,7 @@ https://creativecommons.org/publicdomain/zero/1.0/</description>
             </label>
           </labels>
           <bundlePlacements>
-            <placement code="preferred_labels1">
+            <placement code="preferred_labels">
               <bundle>preferred_labels</bundle>
               <settings>
                 <setting name="readonly">0</setting>
@@ -9655,7 +9655,7 @@ https://creativecommons.org/publicdomain/zero/1.0/</description>
                 <setting name="usewysiwygeditor">0</setting>
               </settings>
             </placement>
-            <placement code="bundle_name4">
+            <placement code="bundle_name">
               <bundle>bundle_name</bundle>
               <settings>
                 <setting name="readonly">0</setting>
@@ -9664,7 +9664,7 @@ https://creativecommons.org/publicdomain/zero/1.0/</description>
                 <setting name="usewysiwygeditor">0</setting>
               </settings>
             </placement>
-            <placement code="table_num4">
+            <placement code="table_num">
               <bundle>table_num</bundle>
               <settings>
                 <setting name="readonly">0</setting>
@@ -9672,7 +9672,7 @@ https://creativecommons.org/publicdomain/zero/1.0/</description>
                 <setting name="expand_collapse_no_value">bubbles</setting>
               </settings>
             </placement>
-            <placement code="ca_metadata_dictionary_rules6">
+            <placement code="ca_metadata_dictionary_rules">
               <bundle>ca_metadata_dictionary_rules</bundle>
               <settings>
                 <setting name="readonly">0</setting>
@@ -9680,7 +9680,7 @@ https://creativecommons.org/publicdomain/zero/1.0/</description>
                 <setting name="expand_collapse_no_value">bubbles</setting>
               </settings>
             </placement>
-            <placement code="settings6">
+            <placement code="settings">
               <bundle>settings</bundle>
               <settings>
                 <setting name="readonly">0</setting>
@@ -10005,7 +10005,7 @@ https://creativecommons.org/publicdomain/zero/1.0/</description>
             </label>
           </labels>
           <bundlePlacements>
-            <placement code="ca_object_representations1">
+            <placement code="ca_object_representations">
               <bundle>ca_object_representations</bundle>
               <settings>
                 <setting name="readonly">0</setting>
@@ -10036,7 +10036,7 @@ https://creativecommons.org/publicdomain/zero/1.0/</description>
                 <setting name="showReturnToHomeLocations">0</setting>
               </settings>
             </placement>
-            <placement code="ca_object_representations_related_list2">
+            <placement code="ca_object_representations_related_list">
               <bundle>ca_object_representations_related_list</bundle>
               <settings>
                 <setting name="readonly">0</setting>
@@ -10092,16 +10092,7 @@ https://creativecommons.org/publicdomain/zero/1.0/</description>
                 <setting name="usewysiwygeditor">0</setting>
               </settings>
             </placement>
-            <placement code="preferred_labels4">
-              <bundle>preferred_labels</bundle>
-              <settings>
-                <setting name="readonly">0</setting>
-                <setting name="expand_collapse_value">dont_force</setting>
-                <setting name="expand_collapse_no_value">dont_force</setting>
-                <setting name="usewysiwygeditor">1</setting>
-              </settings>
-            </placement>
-            <placement code="ca_attribute_georeference4">
+            <placement code="ca_attribute_georeference">
               <bundle>ca_places.georeference</bundle>
               <settings>
                 <setting name="readonly">0</setting>
