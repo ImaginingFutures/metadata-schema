@@ -1190,12 +1190,125 @@
         </label>
       </labels>
       <items>
-        <item idno="country" enabled="1" default="1" value="country" rank="103">
+        <item idno="continent" access="1" enabled="1" default="0">
+          <labels>
+            <label locale="en_US" preferred="1">
+              <name_singular>continent</name_singular>
+              <name_plural>continents</name_plural>
+            </label>
+          </labels>
+        </item>
+        <item idno="country" access="1" enabled="1" default="1">
           <labels>
             <label locale="en_US" preferred="1">
               <name_singular>country</name_singular>
               <name_plural>countries</name_plural>
-              <description/>
+            </label>
+          </labels>
+        </item>
+        <item idno="state" enabled="1" default="0">
+          <labels>
+            <label locale="en_US" preferred="1">
+              <name_singular>state/province</name_singular>
+              <name_plural>state/province</name_plural>
+            </label>
+          </labels>
+        </item>
+        <item idno="city" access="1" enabled="1" default="0">
+          <labels>
+            <label locale="en_US" preferred="1">
+              <name_singular>city</name_singular>
+              <name_plural>cities</name_plural>
+            </label>
+          </labels>
+        </item>
+        <item idno="region" access="1" enabled="1" default="0">
+          <labels>
+            <label locale="en_US" preferred="1">
+              <name_singular>region</name_singular>
+              <name_plural>regions</name_plural>
+            </label>
+          </labels>
+        </item>
+        <item idno="address" access="1" enabled="1" default="0">
+          <labels>
+            <label locale="en_US" preferred="1">
+              <name_singular>address</name_singular>
+              <name_plural>address</name_plural>
+            </label>
+          </labels>
+        </item>
+        <item idno="imaginary" access="1" enabled="1" default="0">
+          <labels>
+            <label locale="en_US" preferred="1">
+              <name_singular>imaginary</name_singular>
+              <name_plural>imaginary</name_plural>
+            </label>
+          </labels>
+        </item>
+        <item idno="county" enabled="1" default="0">
+          <labels>
+            <label locale="en_US" preferred="1">
+              <name_singular>county</name_singular>
+              <name_plural>counties</name_plural>
+            </label>
+          </labels>
+        </item>
+        <item idno="neighborhood" enabled="1" default="0">
+          <labels>
+            <label locale="en_US" preferred="1">
+              <name_singular>neighborhood</name_singular>
+              <name_plural>neighborhoods</name_plural>
+            </label>
+          </labels>
+        </item>
+        <item idno="location" enabled="1" default="0">
+          <labels>
+            <label locale="en_US" preferred="1">
+              <name_singular>location</name_singular>
+              <name_plural>locations</name_plural>
+            </label>
+          </labels>
+        </item>
+        <item idno="river" enabled="1" default="0">
+          <labels>
+            <label locale="en_US" preferred="1">
+              <name_singular>river</name_singular>
+              <name_plural>rivers</name_plural>
+            </label>
+          </labels>
+        </item>
+        <item idno="socken" enabled="1" default="0">
+          <labels>
+            <label locale="en_US" preferred="1">
+              <name_singular>parish</name_singular>
+              <name_plural>parishes</name_plural>
+            </label>
+          </labels>
+        </item>
+        <item idno="other" enabled="1" default="0">
+          <labels>
+            <label locale="en_US" preferred="1">
+              <name_singular>other feature</name_singular>
+              <name_plural>other features</name_plural>
+            </label>
+          </labels>
+        </item>
+        <item idno="imaginary_storytelling" enabled="1" default="0" value="imaginary_storytelling" rank="577" type="concept">
+          <labels>
+            <label locale="en_US" preferred="1">
+              <name_singular>Storytelling place</name_singular>
+              <name_plural>Storytelling places</name_plural>
+              <description>Places created with the purpose of serves as scenario for storytelling.</description>
+            </label>
+          </labels>
+        </item>
+        <item idno="imaginary_ancestral" enabled="1" default="0" value="imaginary_ancestral" rank="576" type="concept">
+          <labels>
+            <label locale="en_US" preferred="1">
+              <name_singular>Ancestral non-geographical place</name_singular>
+              <name_plural>Ancentral non-geographical places</name_plural>
+              <description>Places that are immersed into the traditions and original narrations of peoples, but there is no geographical coordinates for its location.</description>
             </label>
           </labels>
           <settings>
@@ -1203,155 +1316,6 @@
             <setting name="show_source_for_nonpreferred_labels">0</setting>
             <setting name="render_in_new_menu">1</setting>
           </settings>
-          <items>
-            <item idno="state" enabled="1" default="0" value="state" rank="104">
-              <labels>
-                <label locale="en_US" preferred="1">
-                  <name_singular>state/province</name_singular>
-                  <name_plural>state/province</name_plural>
-                  <description/>
-                </label>
-              </labels>
-              <settings>
-                <setting name="show_source_for_preferred_labels">0</setting>
-                <setting name="show_source_for_nonpreferred_labels">0</setting>
-                <setting name="render_in_new_menu">1</setting>
-              </settings>
-              <items>
-                <item idno="socken" enabled="1" default="0" value="socken" rank="110">
-                  <labels>
-                    <label locale="en_US" preferred="1">
-                      <name_singular>parish</name_singular>
-                      <name_plural>parishes</name_plural>
-                      <description/>
-                    </label>
-                  </labels>
-                  <settings>
-                    <setting name="show_source_for_preferred_labels">0</setting>
-                    <setting name="show_source_for_nonpreferred_labels">0</setting>
-                    <setting name="render_in_new_menu">1</setting>
-                  </settings>
-                </item>
-              </items>
-            </item>
-            <item idno="county" enabled="1" default="0" value="county" rank="106">
-              <labels>
-                <label locale="en_US" preferred="1">
-                  <name_singular>county</name_singular>
-                  <name_plural>counties</name_plural>
-                  <description/>
-                </label>
-              </labels>
-              <settings>
-                <setting name="show_source_for_preferred_labels">0</setting>
-                <setting name="show_source_for_nonpreferred_labels">0</setting>
-                <setting name="render_in_new_menu">1</setting>
-              </settings>
-            </item>
-            <item idno="region" enabled="1" default="0" value="region" rank="555">
-              <labels>
-                <label locale="en_US" preferred="1">
-                  <name_singular>region</name_singular>
-                  <name_plural>region</name_plural>
-                  <description/>
-                </label>
-              </labels>
-              <settings>
-                <setting name="show_source_for_preferred_labels">0</setting>
-                <setting name="show_source_for_nonpreferred_labels">0</setting>
-                <setting name="render_in_new_menu">1</setting>
-              </settings>
-              <items>
-                <item idno="city" enabled="1" default="0" value="city" rank="105">
-                  <labels>
-                    <label locale="en_US" preferred="1">
-                      <name_singular>city</name_singular>
-                      <name_plural>cities</name_plural>
-                      <description/>
-                    </label>
-                  </labels>
-                  <settings>
-                    <setting name="show_source_for_preferred_labels">0</setting>
-                    <setting name="show_source_for_nonpreferred_labels">0</setting>
-                    <setting name="render_in_new_menu">1</setting>
-                  </settings>
-                  <items>
-                    <item idno="neighborhood" enabled="1" default="0" value="neighborhood" rank="107">
-                      <labels>
-                        <label locale="en_US" preferred="1">
-                          <name_singular>neighborhood</name_singular>
-                          <name_plural>neighborhoods</name_plural>
-                          <description/>
-                        </label>
-                      </labels>
-                      <settings>
-                        <setting name="show_source_for_preferred_labels">0</setting>
-                        <setting name="show_source_for_nonpreferred_labels">0</setting>
-                        <setting name="render_in_new_menu">1</setting>
-                      </settings>
-                    </item>
-                    <item idno="address" enabled="1" default="0" value="address" rank="553">
-                      <labels>
-                        <label locale="en_US" preferred="1">
-                          <name_singular>address</name_singular>
-                          <name_plural>address</name_plural>
-                          <description/>
-                        </label>
-                      </labels>
-                      <settings>
-                        <setting name="show_source_for_preferred_labels">0</setting>
-                        <setting name="show_source_for_nonpreferred_labels">0</setting>
-                        <setting name="render_in_new_menu">1</setting>
-                      </settings>
-                    </item>
-                  </items>
-                </item>
-              </items>
-            </item>
-          </items>
-        </item>
-        <item idno="other" enabled="1" default="0" value="other" rank="111">
-          <labels>
-            <label locale="en_US" preferred="1">
-              <name_singular>other feature</name_singular>
-              <name_plural>other features</name_plural>
-              <description/>
-            </label>
-          </labels>
-        </item>
-        <item idno="imaginary" enabled="1" default="0" value="imaginary" rank="554">
-          <labels>
-            <label locale="en_US" preferred="1">
-              <name_singular>imaginary</name_singular>
-              <name_plural>imaginary</name_plural>
-              <description/>
-            </label>
-          </labels>
-          <items>
-            <item idno="imaginary_ancestral" enabled="1" default="0" value="imaginary_ancestral" rank="576" type="concept">
-              <labels>
-                <label locale="en_US" preferred="1">
-                  <name_singular>Ancestral non-geographical place</name_singular>
-                  <name_plural>Ancentral non-geographical places</name_plural>
-                  <description>Places that are immersed into the traditions and original narrations of peoples, but there is no geographical coordinates for its location.</description>
-                </label>
-              </labels>
-              <settings>
-                <setting name="show_source_for_preferred_labels">0</setting>
-                <setting name="show_source_for_nonpreferred_labels">0</setting>
-                <setting name="render_in_new_menu">1</setting>
-              </settings>
-            </item>
-            <item idno="imaginary_storytelling" enabled="1" default="0" value="imaginary_storytelling" rank="577" type="concept">
-              <labels>
-                <label locale="en_US" preferred="1">
-                  <name_singular>Storytelling place</name_singular>
-                  <name_plural>Storytelling places</name_plural>
-                  <description>Places created with the purpose of serves as scenario for storytelling.</description>
-                </label>
-              </labels>
-            </item>
-          </items>
         </item>
         <item idno="indigenous_territories" enabled="1" default="0" value="indigenous_territories" rank="572" type="concept">
           <labels>
@@ -1371,77 +1335,6 @@
             <setting name="show_source_for_nonpreferred_labels">0</setting>
             <setting name="render_in_new_menu">1</setting>
           </settings>
-        </item>
-        <item idno="geographical_places" enabled="1" default="0" value="geographical_places" rank="573" type="concept">
-          <labels>
-            <label locale="en_US" preferred="1">
-              <name_singular>geographical space</name_singular>
-              <name_plural>geographical spaces</name_plural>
-              <description>Places named by tradition that can be idenfied independently of the jurisdictional reclamations of ownership or domain. </description>
-            </label>
-          </labels>
-          <items>
-            <item idno="continent" enabled="1" default="0" value="continent" rank="102">
-              <labels>
-                <label locale="en_US" preferred="1">
-                  <name_singular>continent</name_singular>
-                  <name_plural>continents</name_plural>
-                  <description/>
-                </label>
-              </labels>
-              <settings>
-                <setting name="show_source_for_preferred_labels">0</setting>
-                <setting name="show_source_for_nonpreferred_labels">0</setting>
-                <setting name="render_in_new_menu">1</setting>
-              </settings>
-            </item>
-            <item idno="location" enabled="1" default="0" value="location" rank="108">
-              <labels>
-                <label locale="en_US" preferred="1">
-                  <name_singular>location</name_singular>
-                  <name_plural>locations</name_plural>
-                  <description/>
-                </label>
-              </labels>
-              <settings>
-                <setting name="show_source_for_preferred_labels">0</setting>
-                <setting name="show_source_for_nonpreferred_labels">0</setting>
-                <setting name="render_in_new_menu">1</setting>
-              </settings>
-            </item>
-            <item idno="river" enabled="1" default="0" value="river" rank="109">
-              <labels>
-                <label locale="en_US" preferred="1">
-                  <name_singular>river</name_singular>
-                  <name_plural>rivers</name_plural>
-                  <description/>
-                </label>
-              </labels>
-              <settings>
-                <setting name="show_source_for_preferred_labels">0</setting>
-                <setting name="show_source_for_nonpreferred_labels">0</setting>
-                <setting name="render_in_new_menu">1</setting>
-              </settings>
-            </item>
-            <item idno="sea" enabled="1" default="0" value="sea" rank="574" type="concept">
-              <labels>
-                <label locale="en_US" preferred="1">
-                  <name_singular>Sea</name_singular>
-                  <name_plural>Seas</name_plural>
-                  <description>Particular bodies of salty water and their traditional names</description>
-                </label>
-              </labels>
-            </item>
-            <item idno="geographical_places_other" enabled="1" default="0" value="geographical_places_other" rank="575" type="concept">
-              <labels>
-                <label locale="en_US" preferred="1">
-                  <name_singular>Other geographical Space</name_singular>
-                  <name_plural>Other Geographical Spaces</name_plural>
-                  <description/>
-                </label>
-              </labels>
-            </item>
-          </items>
         </item>
       </items>
     </list>
