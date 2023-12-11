@@ -6279,45 +6279,6 @@ https://creativecommons.org/publicdomain/zero/1.0/</description>
         </restriction>
       </typeRestrictions>
     </metadataElement>
-    <metadataElement code="idno" datatype="Text">
-      <labels>
-        <label locale="en_US">
-          <name>Unique Record Identifier</name>
-          <description>An alphanumeric identifier for the record created for the IF
-                    Repository.</description>
-        </label>
-      </labels>
-      <settings>
-        <setting name="fieldWidth">90</setting>
-        <setting name="fieldHeight">6</setting>
-      </settings>
-      <typeRestrictions>
-        <restriction>
-          <table>ca_objects</table>
-          <settings>
-            <setting name="minAttributesPerRow">0</setting>
-            <setting name="maxAttributesPerRow">1</setting>
-            <setting name="minimumAttributeBundlesToDisplay">1</setting>
-          </settings>
-        </restriction>
-        <restriction>
-          <table>ca_entities</table>
-          <settings>
-            <setting name="minAttributesPerRow">0</setting>
-            <setting name="maxAttributesPerRow">1</setting>
-            <setting name="minimumAttributeBundlesToDisplay">1</setting>
-          </settings>
-        </restriction>
-        <restriction>
-          <table>ca_collections</table>
-          <settings>
-            <setting name="minAttributesPerRow">0</setting>
-            <setting name="maxAttributesPerRow">1</setting>
-            <setting name="minimumAttributeBundlesToDisplay">1</setting>
-          </settings>
-        </restriction>
-      </typeRestrictions>
-    </metadataElement>
     <metadataElement code="originalid" datatype="Text">
       <labels>
         <label locale="en_US">
@@ -7424,6 +7385,7 @@ https://creativecommons.org/publicdomain/zero/1.0/</description>
         </restriction>
       </typeRestrictions>
     </metadataElement>
+
   </elementSets>
   <userInterfaces>
     <userInterface code="objects_ui" type="ca_objects">
@@ -7441,7 +7403,7 @@ https://creativecommons.org/publicdomain/zero/1.0/</description>
           </labels>
           <bundlePlacements>
             <placement code="idno">
-              <bundle>ca_objects.idno</bundle>
+              <bundle>idno</bundle>
               <settings>
                 <setting name="readonly">0</setting>
                 <setting name="expand_collapse_value">bubbles</setting>
@@ -7957,7 +7919,7 @@ https://creativecommons.org/publicdomain/zero/1.0/</description>
           </labels>
           <bundlePlacements>
             <placement code="idno">
-              <bundle>ca_entities.idno</bundle>
+              <bundle>idno</bundle>
               <settings>
                 <setting name="readonly">0</setting>
                 <setting name="expand_collapse_value">bubbles</setting>
@@ -9744,8 +9706,8 @@ https://creativecommons.org/publicdomain/zero/1.0/</description>
             </label>
           </labels>
           <bundlePlacements>
-            <placement code="ca_attribute_idno">
-              <bundle>ca_collections.idno</bundle>
+            <placement code="idno">
+              <bundle>idno</bundle>
               <settings>
                 <setting name="readonly">0</setting>
                 <setting name="expand_collapse_value">bubbles</setting>
@@ -10112,7 +10074,7 @@ https://creativecommons.org/publicdomain/zero/1.0/</description>
               </settings>
             </placement>
             <placement code="idno">
-              <bundle>ca_places.idno</bundle>
+              <bundle>idno</bundle>
               <settings>
                 <setting name="readonly">0</setting>
                 <setting name="expand_collapse_value">bubbles</setting>
