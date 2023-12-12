@@ -6259,29 +6259,6 @@ https://creativecommons.org/publicdomain/zero/1.0/</description>
         </restriction>
       </typeRestrictions>
     </metadataElement>
-    <metadataElement code="relplace" datatype="Places">
-      <labels>
-        <label locale="en_US">
-          <name>Related Place</name>
-          <description>Shows the parent collection or object which this record related
-                    to/part
-                    of.</description>
-        </label>
-      </labels>
-      <settings>
-        <setting name="fieldWidth">90</setting>
-      </settings>
-      <typeRestrictions>
-        <restriction>
-          <table>ca_objects</table>
-          <settings>
-            <setting name="minAttributesPerRow">0</setting>
-            <setting name="maxAttributesPerRow">0</setting>
-            <setting name="minimumAttributeBundlesToDisplay">1</setting>
-          </settings>
-        </restriction>
-      </typeRestrictions>
-    </metadataElement>
     <metadataElement code="preferred_lables" datatype="Text">
       <labels>
         <label locale="en_US">
@@ -7308,40 +7285,6 @@ https://creativecommons.org/publicdomain/zero/1.0/</description>
         </restriction>
       </typeRestrictions>
     </metadataElement>
-    <metadataElement code="rights_ownership" datatype="Text">
-      <labels>
-        <label locale="en_US">
-          <name>Rights Ownership</name>
-          <description>Information about the individual/community/groups/organisation who owns the rights in and over the resource. </description>
-        </label>
-      </labels>
-      <settings>
-        <setting name="allowLocales">cs_CZ</setting>
-        <setting name="allowLocales">de_DE</setting>
-        <setting name="allowLocales">de_AT</setting>
-        <setting name="allowLocales">en_US</setting>
-        <setting name="allowLocales">en_AU</setting>
-        <setting name="allowLocales">en_CA</setting>
-        <setting name="allowLocales">en_UK</setting>
-        <setting name="allowLocales">es_ES</setting>
-        <setting name="allowLocales">fr_FR</setting>
-        <setting name="allowLocales">fr_CA</setting>
-        <setting name="allowLocales">it_IT</setting>
-        <setting name="allowLocales">nl_NL</setting>
-        <setting name="allowLocales">sv_SE</setting>
-      </settings>
-      <typeRestrictions>
-        <restriction>
-          <table>ca_objects</table>
-          <settings>
-            <setting name="minAttributesPerRow">0</setting>
-            <setting name="maxAttributesPerRow">0</setting>
-            <setting name="minimumAttributeBundlesToDisplay">0</setting>
-          </settings>
-        </restriction>
-      </typeRestrictions>
-    </metadataElement>
-
   </elementSets>
   <userInterfaces>
     <userInterface code="objects_ui" type="ca_objects">
@@ -7841,31 +7784,7 @@ https://creativecommons.org/publicdomain/zero/1.0/</description>
                 <setting name="dontShowRelationshipTypes">0</setting>
                 <setting name="dont_include_subtypes_in_type_restriction">0</setting>
                 <setting name="list_format">bubbles</setting>
-                <setting name="dontShowAddButton">0</setting>
-                <setting name="dontShowDeleteButton">0</setting>
-                <setting name="minRelationshipsPerRow">0</setting>
-                <setting name="maxRelationshipsPerRow">0</setting>
-                <setting name="disableQuickadd">0</setting>
-                <setting name="sortDirection">ASC</setting>
-                <setting name="disableSorts">0</setting>
-                <setting name="showCount">0</setting>
-                <setting name="numPerPage">100</setting>
-                <setting name="showBatchEditorButton">0</setting>
-                <setting name="showSetRepresentationButton">0</setting>
-              </settings>
-            </placement>
-            <placement code="ca_entities_contributor">
-              <bundle>ca_entities</bundle>
-              <settings>
-                <setting name="label" locale="en_US">Contributor</setting>
-                <setting name="readonly">0</setting>
-                <setting name="expand_collapse_value">bubbles</setting>
-                <setting name="expand_collapse_no_value">bubbles</setting>
-                <setting name="restrict_to_relationship_types">contributor</setting>
-                <setting name="dontShowRelationshipTypes">0</setting>
-                <setting name="dont_include_subtypes_in_type_restriction">0</setting>
-                <setting name="list_format">bubbles</setting>
-                <setting name="dontShowAddButton">0</setting>
+                <setting name="dontShowAddButton">1</setting>
                 <setting name="dontShowDeleteButton">0</setting>
                 <setting name="minRelationshipsPerRow">0</setting>
                 <setting name="maxRelationshipsPerRow">0</setting>
@@ -7902,6 +7821,47 @@ https://creativecommons.org/publicdomain/zero/1.0/</description>
                 <setting name="showSetRepresentationButton">0</setting>
               </settings>
             </placement>
+            
+            <placement code="ca_entities">
+              <bundle>ca_entities</bundle>
+              <settings>             
+                  <setting name="label" locale="en_US">Contributors</setting>
+                  <setting name="readonly">0</setting>
+                  <setting name="expand_collapse_value">bubbles</setting>
+                  <setting name="expand_collapse_no_value">bubbles</setting>
+                  <setting name="restrict_to_relationship_types">staff_member</setting>
+                  <setting name="restrict_to_relationship_types">architect</setting>
+                  <setting name="restrict_to_relationship_types">artist</setting>
+                  <setting name="restrict_to_relationship_types">author</setting>
+                  <setting name="restrict_to_relationship_types">curator</setting>
+                  <setting name="restrict_to_relationship_types">consultant</setting>
+                  <setting name="restrict_to_relationship_types">panelist</setting>
+                  <setting name="restrict_to_relationship_types">designer</setting>
+                  <setting name="restrict_to_relationship_types">documentarian</setting>
+                  <setting name="restrict_to_relationship_types">publisher</setting>
+                  <setting name="restrict_to_relationship_types">moderator</setting>
+                  <setting name="restrict_to_relationship_types">speaker</setting>
+                  <setting name="restrict_to_relationship_types">partner_museum</setting>
+                  <setting name="restrict_to_relationship_types">performer</setting>
+                  <setting name="restrict_to_relationship_types">sponsor</setting>
+                  <setting name="restrict_to_relationship_types">contributor</setting>
+                  <setting name="dontShowRelationshipTypes">0</setting>
+                  <setting name="dont_include_subtypes_in_type_restriction">0</setting>
+                  <setting name="list_format">bubbles</setting>
+                  <setting name="dontShowAddButton">0</setting>
+                  <setting name="dontShowDeleteButton">0</setting>
+                  <setting name="minRelationshipsPerRow">0</setting>
+                  <setting name="maxRelationshipsPerRow">0</setting>
+                  <setting name="disableQuickadd">0</setting>
+                  <setting name="sortDirection">ASC</setting>
+                  <setting name="disableSorts">0</setting>
+                  <setting name="showCount">0</setting>
+                  <setting name="numPerPage">100</setting>
+                  <setting name="showBatchEditorButton">0</setting>
+                  <setting name="showSetRepresentationButton">0</setting>
+              </settings>
+            </placement>        
+
             <placement code="ca_attribute_rights">
               <bundle>ca_objects.rights</bundle>
               <settings>
