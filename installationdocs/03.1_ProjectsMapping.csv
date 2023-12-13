@@ -11,7 +11,11 @@ Mapping,9,ca_places,,,placeSplitter,"{""relationshipType"": ""location"",
 ""placeType"": ""country"", ""matchOn"": [""labels""]}",,,
 Mapping,10,ca_collections.ifwebpage,,,,,,,
 Mapping,11,ca_collections.exwebpage,,,,,,,
-Mapping,12,ca_collections.access,,,,,,,
+Mapping,12,ca_collections.access,,,,,"not accessible to public
+accessible to public
+restricted public access","internal_only
+public_access
+restricted_public_access",
 ,,,,,,,,,
 ,Setting name,Setting value,Description,Notes,,,,,
 Setting,name,03_Projects Mapping,Human readable name of the mapping,Arbitrary text,,,,,

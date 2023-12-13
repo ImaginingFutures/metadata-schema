@@ -1,10 +1,14 @@
-Rule type,Source,CA table.element,Group,Options,Refinery,Refinery parameters,Original values,Replacement values,Notes
+﻿Rule type,Source,CA table.element,Group,Options,Refinery,Refinery parameters,Original values,Replacement values,Notes
 Mapping,1,ca_entities.idno,,,,,,,
 Mapping,2,ca_entities.preferred_labels.displayname,name,,,,,,
 Mapping,3,ca_entities.preferred_labels.forename,,,,,,,
 Mapping,4,ca_entities.preferred_labels.middlename,,,,,,,
 Mapping,5,ca_entities.preferred_labels.surname,,,,,,,
-Mapping,6,ca_entities.access,,,,,,,
+Mapping,6,ca_entities.access,,,,,"not accessible to public
+accessible to public
+restricted public access","internal_only
+public_access
+restricted_public_access",
 Mapping,7,ca_entities.ethniccom,,"{""delimiter"": "";""} ",,,,,
 Mapping,8,ca_entities.langmaterial.lang,primary,"{""delimiter"": "";""} ",,,,,
 Constant,Primary,ca_entities.langmaterial.langlabel,primary,,,,,,
@@ -32,7 +36,6 @@ Mapping,23,ca_entities.authorities.authurl,orcauth,,,,,,
 Constant,ORCID,ca_entities.authorities.authtype,orcauth,,,,,,
 Mapping,24,ca_entities.authorities.authurl,wikiauth,,,,,,
 Constant,Wikidata,ca_entities.authorities.authtype,wikiauth,,,,,,
-,,,,,,,,,
 ,,,,,,,,,
 ,,,,,,,,,
 ,,,,,,,,,
