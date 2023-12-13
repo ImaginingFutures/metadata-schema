@@ -5739,33 +5739,6 @@ https://creativecommons.org/publicdomain/zero/1.0/</description>
         </item>
       </items>
     </list>
-    <list code="accesslevels" hierarchical="1" system="1" vocabulary="1">
-      <labels>
-        <label locale="en_US">
-          <name>Access Levels</name>
-        </label>
-      </labels>
-      <items>
-        <item idno="yes" enabled="1" default="1" value="yes" rank="577" type="concept">
-          <labels>
-            <label locale="en_US" preferred="1">
-              <name_singular>Yes</name_singular>
-              <name_plural>Yes</name_plural>
-              <description>refers to resources that are restricted. If you choose ‘Yes’, you need to justify </description>
-            </label>
-          </labels>
-        </item>
-        <item idno="No" enabled="1" default="0" rank="578" type="concept">
-          <labels>
-            <label locale="en_US" preferred="1">
-              <name_singular>No</name_singular>
-              <name_plural>No</name_plural>
-              <description>efers to resources with no access restriction. Resources will be made openly available.</description>
-            </label>
-          </labels>
-        </item>
-      </items>
-    </list>
   </lists>
   <elementSets>
     <metadataElement code="set_description" datatype="Text">
@@ -6863,28 +6836,6 @@ https://creativecommons.org/publicdomain/zero/1.0/</description>
         </restriction>
       </typeRestrictions>
     </metadataElement>
-    <metadataElement code="accessrest" datatype="List" list="accesslevels">
-      <labels>
-        <label locale="en_US">
-          <name>Access Restriction</name>
-          <description>This refers to availability of the resource.</description>
-        </label>
-      </labels>
-      <settings>
-        <setting name="render">select</setting>
-        <setting name="restrictToTypes">concept</setting>
-      </settings>
-      <typeRestrictions>
-        <restriction>
-          <table>ca_objects</table>
-          <settings>
-            <setting name="minAttributesPerRow">0</setting>
-            <setting name="maxAttributesPerRow">1</setting>
-            <setting name="minimumAttributeBundlesToDisplay">1</setting>
-          </settings>
-        </restriction>
-      </typeRestrictions>
-    </metadataElement>
     <metadataElement code="reasonforrest" datatype="Text">
       <labels>
         <label locale="en_US">
@@ -6902,25 +6853,6 @@ https://creativecommons.org/publicdomain/zero/1.0/</description>
           <settings>
             <setting name="minAttributesPerRow">0</setting>
             <setting name="maxAttributesPerRow">1</setting>
-            <setting name="minimumAttributeBundlesToDisplay">1</setting>
-          </settings>
-        </restriction>
-      </typeRestrictions>
-    </metadataElement>
-    <metadataElement code="anonymised" datatype="List" list="access_statuses">
-      <labels>
-        <label locale="en_US">
-          <name>Anonymised</name>
-          <description>Indicate if the ‘Full name’ of the participant has been anonymised
-                    using pseudo names.</description>
-        </label>
-      </labels>
-      <typeRestrictions>
-        <restriction>
-          <table>ca_entities</table>
-          <settings>
-            <setting name="minAttributesPerRow">0</setting>
-            <setting name="maxAttributesPerRow">0</setting>
             <setting name="minimumAttributeBundlesToDisplay">1</setting>
           </settings>
         </restriction>
@@ -7893,9 +7825,6 @@ https://creativecommons.org/publicdomain/zero/1.0/</description>
                 <setting name="dontShowDeleteButton">0</setting>
               </settings>
             </placement>
-            <placement code="ca_attribute_accessrest">
-              <bundle>ca_objects.accessrest</bundle>
-            </placement>
             <placement code="ca_attribute_reasonforrest">
               <bundle>ca_objects.reasonforrest</bundle>
               <settings>
@@ -7984,17 +7913,6 @@ https://creativecommons.org/publicdomain/zero/1.0/</description>
                 <setting name="expand_collapse_value">bubbles</setting>
                 <setting name="expand_collapse_no_value">bubbles</setting>
                 <setting name="usewysiwygeditor">0</setting>
-              </settings>
-            </placement>
-            <placement code="ca_attribute_anonymised">
-              <bundle>ca_entities.anonymised</bundle>
-              <settings>
-                <setting name="readonly">0</setting>
-                <setting name="expand_collapse_value">bubbles</setting>
-                <setting name="expand_collapse_no_value">bubbles</setting>
-                <setting name="sort">1</setting>
-                <setting name="sortDirection">ASC</setting>
-                <setting name="dontShowDeleteButton">0</setting>
               </settings>
             </placement>
             <placement code="ca_attribute_ethniccom">
