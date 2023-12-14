@@ -1472,7 +1472,7 @@
         </label>
       </labels>
       <items>
-        <item idno="project" enabled="1" default="0" value="project" rank="125">
+        <item idno="project" enabled="1" default="1" value="project" rank="125">
           <labels>
             <label locale="en_US" preferred="1">
               <name_singular>Project</name_singular>
@@ -1491,7 +1491,7 @@
             <setting name="render_in_new_menu">1</setting>
           </settings>
         </item>
-        <item idno="external" enabled="1" default="1" value="external" rank="126">
+        <item idno="external" enabled="1" default="0" value="external" rank="126">
           <labels>
             <label locale="en_US" preferred="1">
               <name_singular>External</name_singular>
@@ -5268,8 +5268,17 @@
         <item idno="eurasia" enabled="1" default="0" value="eurasia" rank="521">
           <labels>
             <label locale="en_US" preferred="1">
-              <name_singular>Europe and Eurasia</name_singular>
-              <name_plural>Europe and Eurasia</name_plural>
+              <name_singular>Europe and Central Asia</name_singular>
+              <name_plural>Europe and Central Asia</name_plural>
+              <description />
+            </label>
+          </labels>
+        </item>
+        <item idno="southasia" enabled="1" default="0" value="southasia" rank="522">
+          <labels>
+            <label locale="en_US" preferred="1">
+              <name_singular>South Asia</name_singular>
+              <name_plural>South Asia</name_plural>
               <description />
             </label>
           </labels>
