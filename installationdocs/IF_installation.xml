@@ -1188,6 +1188,398 @@
         </item>
       </items>
     </list>
+
+    <list code="tklabelslist" hierarchical="1" system="0" vocabulary="0">
+      <labels>
+        <label locale="en_US">
+          <name>Traditional Knowledge Labels</name>
+        </label>
+      </labels>
+      <items>
+        <item idno="tkprovenancelabels" access="1" enabled="1" default="0">
+          <labels>
+            <label locale="en_US" preferred="1">
+              <name_singular>Provenance Label</name_singular>
+              <name_plural>Provenance Labels</name_plural>
+              <description>Provenance Labels identify the group or sub-group which is the primary cultural authority for the material, and/or recognizes other interest in the materials.</description>
+            </label>
+          </labels>
+          <items>
+            <item idno="tka" access="1" enabled="1" default="0">
+              <labels>
+                <label locale="en_US" preferred="1">
+                  <name_singular>TK Attribution (TK A)</name_singular>
+                  <name_plural>TK Attribution (TK A)</name_plural>
+                  <description>This Label is being used to correct historical mistakes or exclusions pertaining to this material. This is especially in relation to the names of the people involved in performing or making this work and/or correctly naming the community from which it originally derives. As a user you are being asked to also apply the correct attribution in any future use of this work.</description>
+                </label>
+              </labels>
+            </item>
+            <item idno="tkcl" access="1" enabled="1" default="0">
+              <labels>
+                <label locale="en_US" preferred="1">
+                  <name_singular>TK Clan (TK CL)</name_singular>
+                  <name_plural>TK Clan (TK CL)</name_plural>
+                  <description>This Label is being used to indicate that this material is traditionally and usually not publicly available. The Label lets future users know that this material has specific conditions for use and sharing because of clan membership and/or relationships. This material is not, and never was, free, public, or available for everyone. This Label asks viewers of these materials to respect the cultural values and expectations about circulation and use defined by designated clans, members, and their internal relations.</description>
+                </label>
+              </labels>
+            </item>
+            <item idno="tkf" access="1" enabled="1" default="0">
+              <labels>
+                <label locale="en_US" preferred="1">
+                  <name_singular>TK Family (TK F)</name_singular>
+                  <name_plural>TK Family (TK F)</name_plural>
+                  <description>This Label is being used to indicate that this material is traditionally and usually not publicly available. The Label is correcting a misunderstanding about the circulation options for this material and letting any users know that this material has specific conditions for sharing between family members. Who these family members are, and how sharing occurs will be defined in each locale. This material is not, and never was, free, public, or available for everyone at anytime. This Label asks you to think about how you are going to use this material and to respect different cultural values and expectations about circulation and use.</description>
+                </label>
+              </labels>
+            </item>
+            <item idno="tkmc" access="1" enabled="1" default="0">
+              <labels>
+                <label locale="en_US" preferred="1">
+                  <name_singular>TK Multiple Communities (TK MC)</name_singular>
+                  <name_plural>TK Multiple Communities (TK MC)</name_plural>
+                  <description>Responsibility and ownership over this material is spread across several distinct communities. Use will be dependent upon discussion and negotiation with the multiple communities named herein [insert names]. Decisions about use will need to be decided collectively. As an external user of this material you are asked to recognize and respect cultural protocols in relation to the use of this material and clear your intended use with the relevant communities.</description>
+                </label>
+              </labels>
+            </item>
+            <item idno="tkcv" access="1" enabled="1" default="0">
+              <labels>
+                <label locale="en_US" preferred="1">
+                  <name_singular>TK Community Voice (TK CV)</name_singular>
+                  <name_plural>TK Community Voice (TK CV)</name_plural>
+                  <description>This Label is being used to encourage the sharing of stories and voices about this material. The Label indicates that existing knowledge or descriptions are incomplete or partial. Any community member is invited and welcome to contribute to our community knowledge about this event, photograph, recording or heritage item. Sharing our voices helps us reclaim our histories and knowledge. This sharing is an internal process.</description>
+                </label>
+              </labels>
+            </item>
+            <item idno="tkcr" access="1" enabled="1" default="0">
+              <labels>
+                <label locale="en_US" preferred="1">
+                  <name_singular>TK Creative (TK CR)</name_singular>
+                  <name_plural>TK Creative (TK CR)</name_plural>
+                  <description>This Label is being used to acknowledge the relationship between the creative practices of [name] and [community name] and the associated cultural responsibilities.</description>
+                </label>
+              </labels>
+            </item>
+          </items>
+        </item>
+        <item idno="tkprotocollabels" access="1" enabled="1" default="0">
+          <labels>
+            <label locale="en_US" preferred="1">
+              <name_singular>Protocol Label</name_singular>
+              <name_plural>Protocol Labels</name_plural>
+              <description>Protocol Labels outline traditional protocols associated with access to this material and invite viewers to respect community protocols.</description>
+            </label>
+          </labels>
+          <items>
+            <item idno="tkv" access="1" enabled="1" default="0">
+              <labels>
+                <label locale="en_US" preferred="1">
+                  <name_singular>TK Verified (TK V)</name_singular>
+                  <name_plural>TK Verified (TK V)</name_plural>
+                  <description>This Label affirms that the representation and presentation of this material is in keeping with community expectations and cultural protocols. It lets you know that for the individual, family or community represented in this material, use is considered fair, reasonable and respectful.</description>
+                </label>
+              </labels>
+            </item>
+            <item idno="tknv" access="1" enabled="1" default="0">
+              <labels>
+                <label locale="en_US" preferred="1">
+                  <name_singular>TK Non-Verified (TK NV)</name_singular>
+                  <name_plural>TK Non-Verified (TK NV)</name_plural>
+                  <description>This Label is being used because there are concerns about accuracy and/or representations made in this material. This material was not created through informed consent or community protocols for research and engagement. Therefore, questions about its accuracy and who/how it represents this community are being raised.</description>
+                </label>
+              </labels>
+            </item>
+            <item idno="tks" access="1" enabled="1" default="0">
+              <labels>
+                <label locale="en_US" preferred="1">
+                  <name_singular>TK Seasonal (TK S)</name_singular>
+                  <name_plural>TK Seasonal (TK S)</name_plural>
+                  <description>This Label is being used to indicate that this material traditionally and usually is heard and/or utilized at a particular time of year and in response to specific seasonal changes and conditions. For instance, many important ceremonies are held at very specific times of the year. This Label is being used to indicate sophisticated relationships between land and knowledge creation. It is also being used to highlight the relationships between recorded material and the specific contexts where it derives, especially the interconnected and embodied teachings that it conveys.</description>
+                </label>
+              </labels>
+            </item>
+            <item idno="tkwg" access="1" enabled="1" default="0">
+              <labels>
+                <label locale="en_US" preferred="1">
+                  <name_singular>TK Women General (TK WG)</name_singular>
+                  <name_plural>TK Women General (TK WG)</name_plural>
+                  <description>This material has specific gender restrictions on access. It is usually only to be accessed and used by women in the community. If you are not from the community and you have accessed this material, you are requested not to download, copy, remix or otherwise circulate this material to others without permission. This Label asks you to think about whether you should be using this material and to respect different cultural values and expectations about circulation and use.</description>
+                </label>
+              </labels>
+            </item>
+            <item idno="tkmg" access="1" enabled="1" default="0">
+              <labels>
+                <label locale="en_US" preferred="1">
+                  <name_singular>TK Men General (TK MG)</name_singular>
+                  <name_plural>TK Men General (TK MG)</name_plural>
+                  <description>This material has specific gender restrictions on access. It is usually only to be accessed and used by men in the community. If you are not from the community and you have accessed this material, you are requested to not download, copy, remix or otherwise circulate this material to others without permission. This Label asks you to think about whether you should be using this material and to respect different cultural values and expectations about circulation and use.</description>
+                </label>
+              </labels>
+            </item>
+            <item idno="tkmr" access="1" enabled="1" default="0">
+              <labels>
+                <label locale="en_US" preferred="1">
+                  <name_singular>TK Men Restricted (TK MR)</name_singular>
+                  <name_plural>TK Men Restricted (TK MR)</name_plural>
+                  <description>This material has specific gender restrictions on access. It is regarded as important secret and/or ceremonial material that has community-based laws in relation to who can access it. Given its nature it is only to be accessed and used by authorized [and/or initiated] men in the community. If you are an external third party user and you have accessed this material, you are requested to not download, copy, remix or otherwise circulate this material to others. This material is not freely available within the community and it therefore should not be considered freely available outside of the community. This Label asks you to think about whether you should be using this material and to respect different cultural values and expectations about circulation and use.</description>
+                </label>
+              </labels>
+            </item>
+            <item idno="tkwr" access="1" enabled="1" default="0">
+              <labels>
+                <label locale="en_US" preferred="1">
+                  <name_singular>TK Women Restricted (TK WR)</name_singular>
+                  <name_plural>TK Women Restricted (TK WR)</name_plural>
+                  <description>This material has specific gender restrictions on access. It is regarded as important secret and/or ceremonial material that has community-based laws in relation to who can access it. Given its nature it is only to be accessed and used by authorized [and/or initiated] women in the community. If you are an external third party user and you have accessed this material, you are requested to not download, copy, remix or otherwise circulate this material to others. This material is not freely available within the community and it therefore should not be considered freely available outside of the community. This Label asks you to think about whether you should be using this material and to respect different cultural values and expectations about circulation and use.</description>
+                </label>
+              </labels>
+            </item>
+            <item idno="tkcs" access="1" enabled="1" default="0">
+              <labels>
+                <label locale="en_US" preferred="1">
+                  <name_singular>TK Culturally Sensitive (TK CS)</name_singular>
+                  <name_plural>TK Culturally Sensitive (TK CS)</name_plural>
+                  <description>This Label is being used to indicate that this material has cultural and/or historical sensitivities. The Label asks for care to be taken when this material is accessed, used, and circulated, especially when materials are first returned or reunited with communities of origin. In some instances, this Label will indicate that there are specific permissions for use of this material required directly from the community itself.</description>
+                </label>
+              </labels>
+            </item>
+            <item idno="tkss" access="1" enabled="1" default="0">
+              <labels>
+                <label locale="en_US" preferred="1">
+                  <name_singular>TK Secret / Sacred (TK SS)</name_singular>
+                  <name_plural>TK Secret / Sacred (TK SS)</name_plural>
+                  <description>This Label is being used to indicate that this material is traditionally and usually not publicly available because it contains important secret or sacred components. The Label is correcting a misunderstanding about the significance of this material and therefore its circulation conditions. It is letting users know that because of its secret/sacred status it is not, and was never free, public, or available for everyone at anytime. This Label asks you to think about whether you should be using this material and to respect different cultural values and expectations about circulation and use.</description>
+                </label>
+              </labels>
+            </item>
+          </items>
+        </item>
+        <item idno="tkpermissionlabels" access="1" enabled="1" default="0">
+          <labels>
+            <label locale="en_US" preferred="1">
+              <name_singular>Permission Label</name_singular>
+              <name_plural>Permission Labels</name_plural>
+              <description>Permission Labels indicate what activities the community has approved as
+                generally acceptable. Other uses require direct engagement with primary cultural
+                authorities.</description>
+            </label>
+          </labels>
+          <items>
+            <item idno="tkoc" access="1" enabled="1" default="0">
+              <labels>
+                <label locale="en_US" preferred="1">
+                  <name_singular>TK Open to Commercialization (TK OC)</name_singular>
+                  <name_plural>TK Open to Commercialization (TK OC)</name_plural>
+                  <description>This Label is being used to indicate that [community name or
+                    authorized
+                    party] is open to commercialization opportunities that might derive from any
+                    cultural material with traditional knowledge to which this Label is connected
+                    to.
+                    As a primary party for any partnership and collaboration opportunities that
+                    emerge
+                    from the use of this cultural material and traditional knowledge, we retain an
+                    expressed interest in any future negotiations.</description>
+                </label>
+              </labels>
+            </item>
+            <item idno="tknc" access="1" enabled="1" default="0">
+              <labels>
+                <label locale="en_US" preferred="1">
+                  <name_singular>TK Non-Commercial (TK NC)</name_singular>
+                  <name_plural>TK Non-Commercial (TK NC)</name_plural>
+                  <description>This material has been designated as being available for
+                    non-commercial
+                    use. You are allowed to use this material for non-commercial purposes including
+                    for research, study, or public presentation and/or online in blogs or
+                    non-commercial websites. This Label asks you to think and act with fairness and
+                    responsibility towards this material and the original custodians.</description>
+                </label>
+              </labels>
+            </item>
+            <item idno="tkco" access="1" enabled="1" default="0">
+              <labels>
+                <label locale="en_US" preferred="1">
+                  <name_singular>TK Community Use Only (TK CO)</name_singular>
+                  <name_plural>TK Community Use Only (TK CO)</name_plural>
+                  <description>This Label is being used to indicate that this material is
+                    traditionally and usually not publicly available. The Label is correcting a
+                    misunderstanding about the circulation options for this material and letting any
+                    users know that this material has specific conditions for circulation within the
+                    community. It is not, and never was, free, public, or available for everyone at
+                    anytime. This Label asks you to think about how you are going to use this
+                    material
+                    and to respect different cultural values and expectations about circulation and
+                    use.</description>
+                </label>
+              </labels>
+            </item>
+            <item idno="tko" access="1" enabled="1" default="0">
+              <labels>
+                <label locale="en_US" preferred="1">
+                  <name_singular>TK Outreach (TK O)</name_singular>
+                  <name_plural>TK Outreach (TK O)</name_plural>
+                  <description>This Label is being used to indicate that this material is
+                    traditionally and usually not publicly available. The Label is correcting a
+                    misunderstanding about the circulation options for this material and letting any
+                    users know that this material can be used for educational outreach activities.
+                    This Label asks you to respect the designated circulation conditions for this
+                    material and additionally, where possible, to develop a means for fair and
+                    equitable reciprocal exchange for the use of this material with the relevant TK
+                    holders. This exchange might include access to educational or other resources
+                    that
+                    are difficult to access under normal circumstances.</description>
+                </label>
+              </labels>
+            </item>
+            <item idno="tkcb" access="1" enabled="1" default="0">
+              <labels>
+                <label locale="en_US" preferred="1">
+                  <name_singular>TK Open to Collaboration (TK CB)</name_singular>
+                  <name_plural>TK Open to Collaboration (TK CB)</name_plural>
+                  <description>This Label is being used to make clear [community name or authorizing
+                    body] is open to future engagement, collaboration, and partnership around
+                    research
+                    opportunities.</description>
+                </label>
+              </labels>
+            </item>
+          </items>
+        </item>
+      </items>
+    </list>
+
+    <list code="bclabelslist" hierarchical="1" system="0" vocabulary="0">
+      <labels>
+        <label locale="en_US">
+          <name>Biocultural Labels</name>
+        </label>
+      </labels>
+      <items>
+        <item idno="bcprovenancelabels" access="1" enabled="1" default="0">
+          <labels>
+            <label locale="en_US" preferred="1">
+              <name_singular>Provenance Label</name_singular>
+              <name_plural>Provenance Labels</name_plural>
+              <description>Provenance Labels identify the group or sub-group which is the primary cultural authority for the material, and/or recognizes other interest in the materials.</description>
+            </label>
+          </labels>
+          <items>
+            <item idno="bcp" access="1" enabled="1" default="0">
+              <labels>
+                <label locale="en_US" preferred="1">
+                  <name_singular>BC Provenance (BC P)</name_singular>
+                  <name_plural>BC Provenance (BC P)</name_plural>
+                  <description>This Label is being used to affirm an inherent interest Indigenous people have in the scientific collections and data about communities, peoples, and the biodiversity found within traditional lands, waters and territories. [Community name or authorizing party] retains the right to be named and associated with it into the future. This association reflects a significant relationship and responsibility to [the species or biological entity] and associated scientific collections and data.[Optional attribution statement]</description>
+                </label>
+              </labels>
+            </item>
+            <item idno="bcmc" access="1" enabled="1" default="0">
+              <labels>
+                <label locale="en_US" preferred="1">
+                  <name_singular>BC Multiple Communities (BC MC)</name_singular>
+                  <name_plural>BC Multiple Communities (BC MC)</name_plural>
+                  <description>This Label is being used to affirm that responsibility and ownership over this information, collection, data, and digital sequence information (DSI) is spread across several distinct communities. Use will be dependent upon discussion and negotiation with these multiple communities.</description>
+                </label>
+              </labels>
+            </item>
+            <item idno="bccl" access="1" enabled="1" default="0">
+              <labels>
+                <label locale="en_US" preferred="1">
+                  <name_singular>BC Clan (BC CL)</name_singular>
+                  <name_plural>BC Clan (BC CL)</name_plural>
+                  <description>This Label is being used to indicate that this material is traditionally and usually not publicly available. The Label lets future users know that this data has specific conditions for use and sharing because of clan membership and/or relationships. This Label asks viewers of this data to respect the cultural values and expectations about circulation and use defined by designated clans, members, and their internal relations.</description>
+                </label>
+              </labels>
+            </item>
+          </items>
+        </item>
+        <item idno="bcprotocollabels" access="1" enabled="1" default="0">
+          <labels>
+            <label locale="en_US" preferred="1">
+              <name_singular>Protocol Label</name_singular>
+              <name_plural>Protocol Labels</name_plural>
+              <description>Protocol Labels outline traditional protocols associated with access to this material and invite viewers to respect community protocols.</description>
+            </label>
+          </labels>
+          <items>
+            <item idno="bccv" access="1" enabled="1" default="0">
+              <labels>
+                <label locale="en_US" preferred="1">
+                  <name_singular>BC Consent Verified (BC CV)</name_singular>
+                  <name_plural>BC Consent Verified (BC CV)</name_plural>
+                  <description>This Label is being used to verify that [community name or authorizing party] have consent conditions in place for the use of this information, collections, data, and digital sequence information. [These can be found at ….].</description>
+                </label>
+              </labels>
+            </item>
+            <item idno="bccnv" access="1" enabled="1" default="0">
+              <labels>
+                <label locale="en_US" preferred="1">
+                  <name_singular>BC Consent Non-Verified (BC CNV)</name_singular>
+                  <name_plural>BC Consent Non-Verified (BC CNV)</name_plural>
+                  <description>This Label is being used because there are concerns about the accuracy of the consent and/or representations made for this data. This material was not created through informed consent or community protocols for research and engagement.</description>
+                </label>
+              </labels>
+            </item>
+          </items>
+        </item>
+        <item idno="bcpermissionlabels" access="1" enabled="1" default="0">
+          <labels>
+            <label locale="en_US" preferred="1">
+              <name_singular>Permission Label</name_singular>
+              <name_plural>Permission Labels</name_plural>
+              <description>Permission Labels indicate what activities the community has approved as generally acceptable. Other uses require direct engagement with primary cultural authorities.</description>
+            </label>
+          </labels>
+          <items>
+            <item idno="bcr" access="1" enabled="1" default="0">
+              <labels>
+                <label locale="en_US" preferred="1">
+                  <name_singular>BC Research Use (BC R)</name_singular>
+                  <name_plural>BC Research Use (BC R)</name_plural>
+                  <description>This Label is being used by [community name or authorizing body] to allow this information, collection, data, and digital sequence information (DSI) to be used for unspecified research purposes. This Label does not provide permission for commercialization activities.</description>
+                </label>
+              </labels>
+            </item>
+            <item idno="bccb" access="1" enabled="1" default="0">
+              <labels>
+                <label locale="en_US" preferred="1">
+                  <name_singular>BC Open to Collaboration (BC CB)</name_singular>
+                  <name_plural>BC Open to Collaboration (BC CB)</name_plural>
+                  <description>This Label is being used to make clear [community name or authorizing body] is open to future engagement, collaboration, and partnership around research and outreach opportunities.</description>
+                </label>
+              </labels>
+            </item>
+            <item idno="bcoc" access="1" enabled="1" default="0">
+              <labels>
+                <label locale="en_US" preferred="1">
+                  <name_singular>BC Open to Commercialization (BC OC)</name_singular>
+                  <name_plural>BC Open to Commercialization (BC OC)</name_plural>
+                  <description>This Label is being used to indicate that [community name or authorizing party] is open to commercialization opportunities that might derive from any information, collections, data, and digital sequence information (DSI) to which this Label is connected. As a primary party in any partnership and collaboration opportunity that emerges from the use of these resources, we retain an express interest in any future negotiations.</description>
+                </label>
+              </labels>
+            </item>
+            <item idno="bco" access="1" enabled="1" default="0">
+              <labels>
+                <label locale="en_US" preferred="1">
+                  <name_singular>BC Outreach (BC O)</name_singular>
+                  <name_plural>BC Outreach (BC O)</name_plural>
+                  <description>The Label is letting any users know that this data can be used for educational outreach activities. This Label asks you to respect the designated circulation conditions for these biocultural materials and/or data and additionally, where possible, to develop a means for fair and equitable reciprocal exchange for the use of this data with the relevant BC holders.</description>
+                </label>
+              </labels>
+            </item>
+            <item idno="bcnc" access="1" enabled="1" default="0">
+              <labels>
+                <label locale="en_US" preferred="1">
+                  <name_singular>BC Non-Commercial (BC NC)</name_singular>
+                  <name_plural>BC Non-Commercial (BC NC)</name_plural>
+                  <description>This Label is being used to indicate that these biocultural materials and/or data have been designated as being available for non-commercial use. You are allowed to use this material for non-commercial purposes including for research, study, or public presentation and/or online in blogs or non-commercial websites. This Label asks you to think and act with respect and responsibility towards this data and the original custodians.</description>
+                </label>
+              </labels>
+            </item>
+          </items>
+        </item>
+      </items>
+    </list>
+
     <list code="place_types" hierarchical="1" system="0" vocabulary="0">
       <labels>
         <label locale="en_US">
@@ -1195,7 +1587,6 @@
         </label>
       </labels>
       <items>
-
         <item idno="country" access="1" enabled="1" default="1">
           <labels>
             <label locale="en_US" preferred="1">
@@ -1244,7 +1635,8 @@
                 <label locale="en_US" preferred="1">
                   <name_singular>Storytelling place</name_singular>
                   <name_plural>Storytelling places</name_plural>
-                  <description>Places created with the purpose of serves as scenario for storytelling.</description>
+                  <description>Places created with the purpose of serves as scenario for
+                    storytelling.</description>
                 </label>
               </labels>
             </item>
@@ -1254,7 +1646,8 @@
                 <label locale="en_US" preferred="1">
                   <name_singular>Ancestral non-geographical place</name_singular>
                   <name_plural>Ancentral non-geographical places</name_plural>
-                  <description>Places that are immersed into the traditions and original narrations of peoples, but there is no geographical coordinates for its location.</description>
+                  <description>Places that are immersed into the traditions and original narrations
+                    of peoples, but there is no geographical coordinates for its location.</description>
                 </label>
               </labels>
               <settings>
@@ -1472,7 +1865,7 @@
         </label>
       </labels>
       <items>
-        <item idno="project" enabled="1" default="0" value="project" rank="125">
+        <item idno="project" enabled="1" default="1" value="project" rank="125">
           <labels>
             <label locale="en_US" preferred="1">
               <name_singular>Project</name_singular>
@@ -1491,7 +1884,7 @@
             <setting name="render_in_new_menu">1</setting>
           </settings>
         </item>
-        <item idno="external" enabled="1" default="1" value="external" rank="126">
+        <item idno="external" enabled="1" default="0" value="external" rank="126">
           <labels>
             <label locale="en_US" preferred="1">
               <name_singular>External</name_singular>
@@ -4551,10 +4944,10 @@
               <name_singular>Highly sensitive</name_singular>
               <name_plural>Highly sensitive</name_plural>
               <description>Highly sensitive – refers to resource that cannot be
-                                  viewed, downloaded, print nor accessed. The resources in this
-                                  category are confidential. The depositor, persons connected to the
-                                  project and repository administrators may have access to the
-                                  resource.</description>
+                viewed, downloaded, print nor accessed. The resources in this
+                category are confidential. The depositor, persons connected to the
+                project and repository administrators may have access to the
+                resource.</description>
             </label>
           </labels>
         </item>
@@ -4564,10 +4957,10 @@
               <name_singular>Moderately sensitive</name_singular>
               <name_plural>Moderately sensitive</name_plural>
               <description>Moderately sensitive – refers to resources that are to be
-                                  viewed only, not to be downloaded and print. Retrievers interested
-                                  in accessing the resource need to fill ‘Data Retrieval Form’ to
-                                  justify the need for the resource. Data Retrieval Form to be
-                                  assessed and approved by the Principal Investigator and co-PIs.</description>
+                viewed only, not to be downloaded and print. Retrievers interested
+                in accessing the resource need to fill ‘Data Retrieval Form’ to
+                justify the need for the resource. Data Retrieval Form to be
+                assessed and approved by the Principal Investigator and co-PIs.</description>
             </label>
           </labels>
         </item>
@@ -4577,7 +4970,7 @@
               <name_singular>Low sensitive</name_singular>
               <name_plural>Low sensitive</name_plural>
               <description>Low sensitive – refers to resources that are to be shared
-                                  openly. Retrievers will be able to view, download, print and use.</description>
+                openly. Retrievers will be able to view, download, print and use.</description>
             </label>
           </labels>
         </item>
@@ -5231,6 +5624,7 @@
         </item>
       </items>
     </list>
+
     <list code="prjregionlist" hierarchical="0" system="0" vocabulary="1">
       <labels>
         <label locale="en_US">
@@ -5238,64 +5632,57 @@
         </label>
       </labels>
       <items>
-        <item idno="africa" enabled="1" default="0" value="africa" rank="518">
+        <item idno="reg_01" enabled="1" default="1">
           <labels>
             <label locale="en_US" preferred="1">
-              <name_singular>Sub-Saharan Africa</name_singular>
-              <name_plural>Sub-Saharan Africa</name_plural>
-              <description />
+              <name_singular>Africa</name_singular>
+              <name_plural>Africa</name_plural>
             </label>
           </labels>
         </item>
-        <item idno="APAC" enabled="1" default="0" value="APAC" rank="519">
+        <item idno="reg_02" enabled="1" default="1">
           <labels>
             <label locale="en_US" preferred="1">
-              <name_singular>Asia Pacific</name_singular>
-              <name_plural>Asia Pacific</name_plural>
-              <description />
+              <name_singular>Asia Pasific</name_singular>
+              <name_plural>Asia Pasific</name_plural>
             </label>
           </labels>
         </item>
-        <item idno="americas" enabled="1" default="0" value="americas" rank="520">
+        <item idno="reg_03" enabled="1" default="1">
           <labels>
             <label locale="en_US" preferred="1">
-              <name_singular>America</name_singular>
-              <name_plural>Americas</name_plural>
-              <description />
+              <name_singular>Central and South America</name_singular>
+              <name_plural>Central and South America</name_plural>
             </label>
           </labels>
         </item>
-        <item idno="eurasia" enabled="1" default="0" value="eurasia" rank="521">
+        <item idno="reg_04" enabled="1" default="1">
           <labels>
             <label locale="en_US" preferred="1">
-              <name_singular>Europe and Eurasia</name_singular>
-              <name_plural>Europe and Eurasia</name_plural>
-              <description />
+              <name_singular>Europe and Middle East</name_singular>
+              <name_plural>Europe and Middle East</name_plural>
             </label>
           </labels>
         </item>
-        <item idno="middle_east_and_N_africa" enabled="1" default="1"
-          value="middle_east_and_N_africa" rank="523">
+        <item idno="reg_05" enabled="1" default="1">
           <labels>
             <label locale="en_US" preferred="1">
-              <name_singular>Middle East and North Africa</name_singular>
-              <name_plural>Middle East and North Africa</name_plural>
-              <description />
+              <name_singular>Various Locations</name_singular>
+              <name_plural>Various Locations</name_plural>
             </label>
           </labels>
         </item>
-        <item idno="Multiregional" enabled="1" default="0" value="Multiregional" rank="583"
-          type="concept">
+        <item idno="reg_06" enabled="1" default="1">
           <labels>
             <label locale="en_US" preferred="1">
-              <name_singular>Multiregional</name_singular>
-              <name_plural>Multiregional</name_plural>
-              <description />
+              <name_singular>North America</name_singular>
+              <name_plural>North America</name_plural>
             </label>
           </labels>
         </item>
       </items>
     </list>
+
     <list code="rightslist" hierarchical="0" system="0" vocabulary="1">
       <labels>
         <label locale="en_US">
@@ -5317,8 +5704,10 @@
                 <label locale="en_US" preferred="1">
                   <name_singular>Creative Commons - Attribution (by)</name_singular>
                   <name_plural>Creative Commons - Attribution</name_plural>
-                  <description>This license enables reusers to distribute, remix, adapt, and build upon the material in any medium or format, so long as attribution is given to the creator. The license allows for commercial use.
-https://creativecommons.org/licenses/by/4.0/</description>
+                  <description>This license enables reusers to distribute, remix, adapt, and build
+                    upon the material in any medium or format, so long as attribution is given to
+                    the creator. The license allows for commercial use.
+                    https://creativecommons.org/licenses/by/4.0/</description>
                 </label>
               </labels>
             </item>
@@ -5327,8 +5716,12 @@ https://creativecommons.org/licenses/by/4.0/</description>
                 <label locale="en_US" preferred="1">
                   <name_singular>Creative Commons BY-SA (by-sa)</name_singular>
                   <name_plural>Creative Commons BY-SA</name_plural>
-                  <description>This license enables reusers to distribute, remix, adapt, and build upon the material in any medium or format, so long as attribution is given to the creator. The license allows for commercial use. If you remix, adapt, or build upon the material, you must license the modified material under identical terms. 
-https://creativecommons.org/licenses/by-sa/4.0/</description>
+                  <description>This license enables reusers to distribute, remix, adapt, and build
+                    upon the material in any medium or format, so long as attribution is given to
+                    the creator. The license allows for commercial use. If you remix, adapt, or
+                    build upon the material, you must license the modified material under identical
+                    terms.
+                    https://creativecommons.org/licenses/by-sa/4.0/</description>
                 </label>
               </labels>
             </item>
@@ -5337,8 +5730,10 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
                 <label locale="en_US" preferred="1">
                   <name_singular>Creative Commons BY-NC (by-nc)</name_singular>
                   <name_plural>Creative Commons BY-NC</name_plural>
-                  <description>This license enables reusers to distribute, remix, adapt, and build upon the material in any medium or format for noncommercial purposes only, and only so long as attribution is given to the creator.
-https://creativecommons.org/licenses/by-nc/4.0/</description>
+                  <description>This license enables reusers to distribute, remix, adapt, and build
+                    upon the material in any medium or format for noncommercial purposes only, and
+                    only so long as attribution is given to the creator.
+                    https://creativecommons.org/licenses/by-nc/4.0/</description>
                 </label>
               </labels>
             </item>
@@ -5347,8 +5742,12 @@ https://creativecommons.org/licenses/by-nc/4.0/</description>
                 <label locale="en_US" preferred="1">
                   <name_singular>Creative Commons BY-NC-SA (by-nc-sa)</name_singular>
                   <name_plural>Creative Commons BY-NC-SA</name_plural>
-                  <description>This license enables reusers to distribute, remix, adapt, and build upon the material in any medium or format for noncommercial purposes only, and only so long as attribution is given to the creator. If you remix, adapt, or build upon the material, you must license the modified material under identical terms.
-https://creativecommons.org/licenses/by-nc-sa/4.0/</description>
+                  <description>This license enables reusers to distribute, remix, adapt, and build
+                    upon the material in any medium or format for noncommercial purposes only, and
+                    only so long as attribution is given to the creator. If you remix, adapt, or
+                    build upon the material, you must license the modified material under identical
+                    terms.
+                    https://creativecommons.org/licenses/by-nc-sa/4.0/</description>
                 </label>
               </labels>
             </item>
@@ -5357,8 +5756,10 @@ https://creativecommons.org/licenses/by-nc-sa/4.0/</description>
                 <label locale="en_US" preferred="1">
                   <name_singular>Creative Commons BY-ND (by-nd)</name_singular>
                   <name_plural>Creative Commons BY-ND</name_plural>
-                  <description>This license enables reusers to copy and distribute the material in any medium or format in unadapted form only, and only so long as attribution is given to the creator. 
-https://creativecommons.org/licenses/by-nd/4.0/</description>
+                  <description>This license enables reusers to copy and distribute the material in
+                    any medium or format in unadapted form only, and only so long as attribution is
+                    given to the creator.
+                    https://creativecommons.org/licenses/by-nd/4.0/</description>
                 </label>
               </labels>
             </item>
@@ -5368,8 +5769,10 @@ https://creativecommons.org/licenses/by-nd/4.0/</description>
                 <label locale="en_US" preferred="1">
                   <name_singular>Creative Commons BY-NC-ND (by-nc-nd)</name_singular>
                   <name_plural>Creative Commons BY-NC-ND</name_plural>
-                  <description>This license enables reusers to copy and distribute the material in any medium or format in unadapted form only, for noncommercial purposes only, and only so long as attribution is given to the creator. 
-https://creativecommons.org/licenses/by-nc-nd/4.0/</description>
+                  <description>This license enables reusers to copy and distribute the material in
+                    any medium or format in unadapted form only, for noncommercial purposes only,
+                    and only so long as attribution is given to the creator.
+                    https://creativecommons.org/licenses/by-nc-nd/4.0/</description>
                 </label>
               </labels>
             </item>
@@ -5389,8 +5792,11 @@ https://creativecommons.org/licenses/by-nc-nd/4.0/</description>
                 <label locale="en_US" preferred="1">
                   <name_singular>Creative Commons 0 (zero)</name_singular>
                   <name_plural>Creative Commons 0</name_plural>
-                  <description>CC0 (aka CC Zero) is a public dedication tool, which enables creators to give up their copyright and put their works into the worldwide public domain. CC0 enables reusers to distribute, remix, adapt, and build upon the material in any medium or format, with no conditions.
-https://creativecommons.org/publicdomain/zero/1.0/</description>
+                  <description>CC0 (aka CC Zero) is a public dedication tool, which enables creators
+                    to give up their copyright and put their works into the worldwide public domain.
+                    CC0 enables reusers to distribute, remix, adapt, and build upon the material in
+                    any medium or format, with no conditions.
+                    https://creativecommons.org/publicdomain/zero/1.0/</description>
                 </label>
               </labels>
             </item>
@@ -5399,7 +5805,8 @@ https://creativecommons.org/publicdomain/zero/1.0/</description>
                 <label locale="en_US" preferred="1">
                   <name_singular>Public Domain Mark (pd)</name_singular>
                   <name_plural>Public Domain Mark</name_plural>
-                  <description>The digital object is in Public Domain and can be reused by anyone without any restriction</description>
+                  <description>The digital object is in Public Domain and can be reused by anyone
+                    without any restriction</description>
                 </label>
               </labels>
             </item>
@@ -5421,8 +5828,8 @@ https://creativecommons.org/publicdomain/zero/1.0/</description>
                   <name_singular>In Copyright (InC)</name_singular>
                   <name_plural>In Copyright (InC)</name_plural>
                   <description>indicates that the Item labeled with this Rights Statement
-                                  is in
-                                  copyright.</description>
+                    is in
+                    copyright.</description>
                 </label>
               </labels>
             </item>
@@ -5432,10 +5839,10 @@ https://creativecommons.org/publicdomain/zero/1.0/</description>
                   <name_singular>In Copyright - EU Orphan Work (InC-OW-EU)</name_singular>
                   <name_plural>In Copyright - EU Orphan Work (InC-OW-EU)</name_plural>
                   <description>indicates that the Item labeled with this Rights Statement
-                                  has been
-                                  identified as an ‘Orphan Work’ under the terms of the EU Orphan
-                                  Works
-                                  Directive.</description>
+                    has been
+                    identified as an ‘Orphan Work’ under the terms of the EU Orphan
+                    Works
+                    Directive.</description>
                 </label>
               </labels>
             </item>
@@ -5447,10 +5854,10 @@ https://creativecommons.org/publicdomain/zero/1.0/</description>
                   <name_plural>In Copyright - Rights-holder(s) Unlocatable or Unidentifiable
                     (InC-RUU)</name_plural>
                   <description>indicates that the Item labeled with this Rights Statement
-                                  has been
-                                  identified as in copyright, but whose rights-holder(s) either cannot
-                                  be
-                                  identified or cannot be located.</description>
+                    has been
+                    identified as in copyright, but whose rights-holder(s) either cannot
+                    be
+                    identified or cannot be located.</description>
                 </label>
               </labels>
             </item>
@@ -5460,10 +5867,10 @@ https://creativecommons.org/publicdomain/zero/1.0/</description>
                   <name_singular>In Copyright - Educational Use Permitted (InC-EDU)</name_singular>
                   <name_plural>In Copyright - Educational Use Permitted (InC-EDU)</name_plural>
                   <description>indicates that the Item labeled with this Rights Statement
-                                  is in
-                                  copyright but that educational use is allowed without the need to
-                                  obtain
-                                  additional permission.</description>
+                    is in
+                    copyright but that educational use is allowed without the need to
+                    obtain
+                    additional permission.</description>
                 </label>
               </labels>
             </item>
@@ -5473,10 +5880,10 @@ https://creativecommons.org/publicdomain/zero/1.0/</description>
                   <name_singular>In Copyright - Non-Commercial Use Permitted (InC-NC)</name_singular>
                   <name_plural>In Copyright - Non-Commercial Use Permitted (InC-NC)</name_plural>
                   <description>indicates that the Item labeled with this Rights Statement
-                                  is in
-                                  copyright but that non-commercial use is allowed without the need to
-                                  obtain
-                                  additional permission.</description>
+                    is in
+                    copyright but that non-commercial use is allowed without the need to
+                    obtain
+                    additional permission.</description>
                 </label>
               </labels>
             </item>
@@ -5488,7 +5895,11 @@ https://creativecommons.org/publicdomain/zero/1.0/</description>
             <label locale="en_US" preferred="1">
               <name_singular>No Copyright (RS-NoC)</name_singular>
               <name_plural>No Copyright</name_plural>
-              <description>Works that are not in copyright but where there are restrictions other than copyright that prevent free re-use or where the out of copyright status has only been ascertained for a specific jurisdiction. These rights statements should only be used when it is not possible to use the Public Domain Mark or the CC0 Public Domain Dedication.</description>
+              <description>Works that are not in copyright but where there are restrictions other
+                than copyright that prevent free re-use or where the out of copyright status has
+                only been ascertained for a specific jurisdiction. These rights statements should
+                only be used when it is not possible to use the Public Domain Mark or the CC0 Public
+                Domain Dedication.</description>
             </label>
           </labels>
           <items>
@@ -5498,10 +5909,10 @@ https://creativecommons.org/publicdomain/zero/1.0/</description>
                   <name_singular>No Copyright - Non-Commercial Use Only (NoC-NC)</name_singular>
                   <name_plural>No Copyright - Non-Commercial Use Only (NoC-NC)</name_plural>
                   <description>indicates that the underlying Work is in the Public Domain,
-                                  but the
-                                  organization that has published the Item is contractually required
-                                  to allow
-                                  only non-commercial use by third parties.</description>
+                    but the
+                    organization that has published the Item is contractually required
+                    to allow
+                    only non-commercial use by third parties.</description>
                 </label>
               </labels>
             </item>
@@ -5511,10 +5922,10 @@ https://creativecommons.org/publicdomain/zero/1.0/</description>
                   <name_singular>No Copyright - Contractual Restrictions (NoC-CR)</name_singular>
                   <name_plural>No Copyright - Contractual Restrictions (NoC-CR)</name_plural>
                   <description>indicates that the underlying Work is in the Public Domain,
-                                  but the
-                                  organization that has published the Item is contractually required
-                                  to
-                                  restrict certain forms of use by third parties.</description>
+                    but the
+                    organization that has published the Item is contractually required
+                    to
+                    restrict certain forms of use by third parties.</description>
                 </label>
               </labels>
             </item>
@@ -5524,10 +5935,10 @@ https://creativecommons.org/publicdomain/zero/1.0/</description>
                   <name_singular>No Copyright - Other Known Legal Restrictions (NoC-OKLR)</name_singular>
                   <name_plural>No Copyright - Other Known Legal Restrictions (NoC-OKLR)</name_plural>
                   <description>indicates that the underlying Work is in the Public Domain,
-                                  but
-                                  that laws other than copyright impose restrictions on the use of the
-                                  Item by
-                                  third parties.</description>
+                    but
+                    that laws other than copyright impose restrictions on the use of the
+                    Item by
+                    third parties.</description>
                 </label>
               </labels>
             </item>
@@ -5537,10 +5948,10 @@ https://creativecommons.org/publicdomain/zero/1.0/</description>
                   <name_singular>No Copyright - United States (NoC-US)</name_singular>
                   <name_plural>No Copyright - United States (NoC-US)</name_plural>
                   <description>indicates that the underlying Work is in the Public Domain
-                                  under
-                                  the laws of the United States, but that a determination was not made
-                                  as to
-                                  its copyright status under the copyright laws of other countries.</description>
+                    under
+                    the laws of the United States, but that a determination was not made
+                    as to
+                    its copyright status under the copyright laws of other countries.</description>
                 </label>
               </labels>
             </item>
@@ -5551,7 +5962,10 @@ https://creativecommons.org/publicdomain/zero/1.0/</description>
             <label locale="en_US" preferred="1">
               <name_singular>Other Rights Statements (RS-Other)</name_singular>
               <name_plural>Other Rights Statements</name_plural>
-              <description>The following three rights statements are intended for use with digital objects where the copyright status has not been determined with certainty. These should only be used if it is not possible to use a clearer rights statement or license.</description>
+              <description>The following three rights statements are intended for use with digital
+                objects where the copyright status has not been determined with certainty. These
+                should only be used if it is not possible to use a clearer rights statement or
+                license.</description>
             </label>
           </labels>
           <items>
@@ -5561,9 +5975,9 @@ https://creativecommons.org/publicdomain/zero/1.0/</description>
                   <name_singular>No Known Copyright (NKC)</name_singular>
                   <name_plural>No Known Copyright (NKC)</name_plural>
                   <description>indicates that the organization that has published the Item
-                                  believes that no copyright or related rights are known to exist, but
-                                  that a
-                                  conclusive determination could not be made.</description>
+                    believes that no copyright or related rights are known to exist, but
+                    that a
+                    conclusive determination could not be made.</description>
                 </label>
               </labels>
             </item>
@@ -5573,8 +5987,8 @@ https://creativecommons.org/publicdomain/zero/1.0/</description>
                   <name_singular>Copyright Not Evaluated (CNE)</name_singular>
                   <name_plural>Copyright Not Evaluated (CNE)</name_plural>
                   <description>indicates that the organization that has published the Item
-                                  has not
-                                  evaluated the copyright and related rights status of the Item.</description>
+                    has not
+                    evaluated the copyright and related rights status of the Item.</description>
                 </label>
               </labels>
             </item>
@@ -5584,10 +5998,10 @@ https://creativecommons.org/publicdomain/zero/1.0/</description>
                   <name_singular>Copyright Undetermined (UND)</name_singular>
                   <name_plural>Copyright Undetermined (UND)</name_plural>
                   <description>indicates that the organization that has made the Item
-                                  available
-                                  has reviewed the copyright and related rights status of the Item,
-                                  but was
-                                  unable to determine the copyright status of the Item.</description>
+                    available
+                    has reviewed the copyright and related rights status of the Item,
+                    but was
+                    unable to determine the copyright status of the Item.</description>
                 </label>
               </labels>
             </item>
@@ -5706,7 +6120,8 @@ https://creativecommons.org/publicdomain/zero/1.0/</description>
             <label locale="en_US" preferred="1">
               <name_singular>VIAF</name_singular>
               <name_plural>VIAF</name_plural>
-              <description>The VIAF® (Virtual International Authority File) combines multiple name authority files into a single OCLC-hosted name authority service.</description>
+              <description>The VIAF® (Virtual International Authority File) combines multiple name
+                authority files into a single OCLC-hosted name authority service.</description>
             </label>
           </labels>
         </item>
@@ -5715,7 +6130,11 @@ https://creativecommons.org/publicdomain/zero/1.0/</description>
             <label locale="en_US" preferred="1">
               <name_singular>Wikidata</name_singular>
               <name_plural>Wikidata</name_plural>
-              <description>Wikidata is a collaboratively edited multilingual knowledge graph hosted by the Wikimedia Foundation. It is a common source of open data that Wikimedia projects such as Wikipedia, and anyone else, can use under the CC0 public domain license. Wikidata is a wiki powered by the software MediaWiki, including its extension for semi-structured data, the Wikibase.</description>
+              <description>Wikidata is a collaboratively edited multilingual knowledge graph hosted
+                by the Wikimedia Foundation. It is a common source of open data that Wikimedia
+                projects such as Wikipedia, and anyone else, can use under the CC0 public domain
+                license. Wikidata is a wiki powered by the software MediaWiki, including its
+                extension for semi-structured data, the Wikibase.</description>
             </label>
           </labels>
         </item>
@@ -5733,7 +6152,12 @@ https://creativecommons.org/publicdomain/zero/1.0/</description>
             <label locale="en_US" preferred="1">
               <name_singular>ORCID</name_singular>
               <name_plural>ORCID</name_plural>
-              <description>ORCID provides a persistent digital identifier (an ORCID iD) that you own and control, and that distinguishes you from every other researcher. You can connect your iD with your professional information — affiliations, grants, publications, peer review, and more. You can use your iD to share your information with other systems, ensuring you get recognition for all your contributions, saving you time and hassle, and reducing the risk of errors.</description>
+              <description>ORCID provides a persistent digital identifier (an ORCID iD) that you own
+                and control, and that distinguishes you from every other researcher. You can connect
+                your iD with your professional information — affiliations, grants, publications,
+                peer review, and more. You can use your iD to share your information with other
+                systems, ensuring you get recognition for all your contributions, saving you time
+                and hassle, and reducing the risk of errors.</description>
             </label>
           </labels>
         </item>
@@ -6816,6 +7240,56 @@ https://creativecommons.org/publicdomain/zero/1.0/</description>
         </restriction>
       </typeRestrictions>
     </metadataElement>
+
+    <metadataElement code="tklabel" datatype="List" list="tklabelslist">
+      <labels>
+        <label locale="en_US">
+          <name>Traditional Knowledge Label</name>
+          <description></description>
+        </label>
+      </labels>
+      <settings>
+        <setting name="requireValue">1</setting>
+        <setting name="useDefaultWhenNull">1</setting>
+        <setting name="render">select</setting>
+        <setting name="auto_shrink">1</setting>
+      </settings>
+      <typeRestrictions>
+        <restriction>
+          <table>ca_objects</table>
+          <settings>
+            <setting name="minAttributesPerRow">0</setting>
+            <setting name="maxAttributesPerRow">0</setting>
+            <setting name="minimumAttributeBundlesToDisplay">1</setting>
+          </settings>
+        </restriction>
+      </typeRestrictions>
+    </metadataElement>
+    <metadataElement code="bclabel" datatype="List" list="bclabelslist">
+      <labels>
+        <label locale="en_US">
+          <name>Biocultural Label</name>
+          <description></description>
+        </label>
+      </labels>
+      <settings>
+        <setting name="requireValue">1</setting>
+        <setting name="useDefaultWhenNull">1</setting>
+        <setting name="render">select</setting>
+        <setting name="auto_shrink">1</setting>
+      </settings>
+      <typeRestrictions>
+        <restriction>
+          <table>ca_objects</table>
+          <settings>
+            <setting name="minAttributesPerRow">0</setting>
+            <setting name="maxAttributesPerRow">0</setting>
+            <setting name="minimumAttributeBundlesToDisplay">1</setting>
+          </settings>
+        </restriction>
+      </typeRestrictions>
+    </metadataElement>
+
     <metadataElement code="cultsens" datatype="List" list="cultsenslist">
       <labels>
         <label locale="en_US">
@@ -7793,18 +8267,6 @@ https://creativecommons.org/publicdomain/zero/1.0/</description>
                   <setting name="showSetRepresentationButton">0</setting>
               </settings>
             </placement>        
-
-            <placement code="ca_attribute_rights">
-              <bundle>ca_objects.rights</bundle>
-              <settings>
-                <setting name="readonly">0</setting>
-                <setting name="expand_collapse_value">bubbles</setting>
-                <setting name="expand_collapse_no_value">bubbles</setting>
-                <setting name="sort">1</setting>
-                <setting name="sortDirection">ASC</setting>
-                <setting name="dontShowDeleteButton">0</setting>
-              </settings>
-            </placement>
           </bundlePlacements>
         </screen>
         <screen idno="accessandsensitivity" default="0">
@@ -7838,6 +8300,49 @@ https://creativecommons.org/publicdomain/zero/1.0/</description>
             </placement>
           </bundlePlacements>
         </screen>
+        <screen idno="licenseandnotices" default="0">
+          <labels>
+            <label locale="en_US">
+              <name>License and Notices</name>
+            </label>
+          </labels>
+          <bundlePlacements>
+            <placement code="ca_attribute_tklabel">
+              <bundle>ca_objects.tklabel</bundle>
+              <settings>
+                <setting name="readonly">0</setting>
+                <setting name="expand_collapse_value">bubbles</setting>
+                <setting name="expand_collapse_no_value">bubbles</setting>
+                <setting name="sort">1</setting>
+                <setting name="sortDirection">ASC</setting>
+                <setting name="dontShowDeleteButton">0</setting>
+              </settings>
+            </placement>
+            <placement code="ca_attribute_bclabel">
+              <bundle>ca_objects.bclabel</bundle>
+              <settings>
+                <setting name="readonly">0</setting>
+                <setting name="expand_collapse_value">bubbles</setting>
+                <setting name="expand_collapse_no_value">bubbles</setting>
+                <setting name="sort">1</setting>
+                <setting name="sortDirection">ASC</setting>
+                <setting name="dontShowDeleteButton">0</setting>
+              </settings>
+            </placement>
+            <placement code="ca_attribute_rights">
+              <bundle>ca_objects.rights</bundle>
+              <settings>
+                <setting name="readonly">0</setting>
+                <setting name="expand_collapse_value">bubbles</setting>
+                <setting name="expand_collapse_no_value">bubbles</setting>
+                <setting name="sort">1</setting>
+                <setting name="sortDirection">ASC</setting>
+                <setting name="dontShowDeleteButton">0</setting>
+              </settings>
+            </placement>
+          </bundlePlacements>
+        </screen>
+
         <screen idno="media" default="0">
           <labels>
             <label locale="en_US">
