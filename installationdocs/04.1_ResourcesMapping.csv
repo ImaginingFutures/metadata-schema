@@ -77,15 +77,17 @@ Mapping,29,ca_objects.dates.dates_value,published,,,,,,,
 Constant,published,ca_objects.dates.dates_type,published,,,,,,,
 Mapping,30,ca_entities,rightsholder,,entitySplitter,"{""relationshipType"": ""rightsholder"",""entityType"": ""*"", ""matchOn"": [""labels""], ""dontCreate"": ""1"", ""delimiter"": "";""}",,,,
 Mapping,31,ca_objects.rights,,,,,,,,
-Mapping,32,ca_objects.cultsens,,,,,,,,
-Mapping,33,ca_objects.access,,,,,"not accessible to public
+Mapping,32,ca_objects.tklabel,,"{""delimiter"": "";""} ",,,,,,
+Mapping,33,ca_objects.bclabel,,"{""delimiter"": "";""} ",,,,,,
+Mapping,34,ca_objects.cultsens,,,,,,,,
+Mapping,35,ca_objects.access,,,,,"not accessible to public
 accessible to public
 restricted public access","internal_only
 public_access
 restricted_public_access",,
-Mapping,34,ca_objects.reasonforrest,,,,,,,,
-Mapping,35,ca_entities,creator,,entitySplitter,"{""relationshipType"": ""creator"", ""entityType"": ""*"", ""matchOn"": [""labels""], ""dontCreate"": ""1"", ""delimiter"": "";""}",,,,
-Mapping,36,ca_entities,contributor,,entitySplitter,"{""relationshipType"": ""contributor"", ""entityType"": ""*""
+Mapping,36,ca_objects.reasonforrest,,,,,,,,
+Mapping,37,ca_entities,creator,,entitySplitter,"{""relationshipType"": ""creator"", ""entityType"": ""*"", ""matchOn"": [""labels""], ""dontCreate"": ""1"", ""delimiter"": "";""}",,,,
+Mapping,38,ca_entities,contributor,,entitySplitter,"{""relationshipType"": ""contributor"", ""entityType"": ""*""
   , ""matchOn"": [""labels""], ""dontCreate"": ""1"", ""delimiter"": "";""}",,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
