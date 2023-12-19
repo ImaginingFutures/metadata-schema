@@ -1,6 +1,6 @@
 # Changelog
 
-## [Unreleased]
+## [v1.2.0]
 
 ## Fixed
 
@@ -19,6 +19,7 @@
 ### Added
 
 - Include `georeference` to `places_ui`.
+- Included Traditional Knowledge and Biocultural labels as list.
 
 ### Fixed
 
