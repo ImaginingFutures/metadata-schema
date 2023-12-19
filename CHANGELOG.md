@@ -1,6 +1,6 @@
 # Changelog
 
-## [Unreleased]
+## [v1.2.0]
 
 ## Fixed
 
@@ -11,10 +11,15 @@
 ### Changed
 
 - Reduce multiple `related_places` elements in the `Spatial Coverage` screen of `objects_ui`.
+- Change defaul term in `collection_types` to `project`.
+- Replacing "Eurasia" label with "Europe and Central Asia" to separates Europe from the broader Asian context while including Central Asian countries.
+- Adding the label "South Asia" to distinct recognition of the countries in this region.
+
 
 ### Added
 
 - Include `georeference` to `places_ui`.
+- Included Traditional Knowledge and Biocultural labels as list.
 
 ### Fixed
 
