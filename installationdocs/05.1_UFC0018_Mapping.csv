@@ -1,0 +1,112 @@
+Rule type,Source,CA table.element,Group,Options,Refinery,Refinery parameters,Original values,Replacement values,Source description,Notes
+Mapping,1,ca_objects.idno,,,,,,,,
+Mapping,2,ca_objects.originalid,,"{""delimiter"": "";""} ",,,,,,
+Mapping,3,ca_collections,,,collectionSplitter,"{""relationshipType"": ""part_of"", ""collectionType"": ""internal"", ""matchOn"": [""labels""], ""dontCreate"": ""1"", ""delimiter"": "";""}",,,,
+Mapping,4,ca_objects.preferred_labels,,,,,,,,
+Mapping,5,ca_objects.alternativetitle,,,,,,,,
+Mapping,6,ca_object_representations,,,objectRepresentationSplitter,"{""objectRepresentationType"": ""front"",  ""matchOn"": [""idno""]}",,,,
+Mapping,7,ca_objects.exlink.exlink_name,source,,,,,,,
+Mapping,8,ca_objects.exlink.exlink_url,source,,,,,,,
+Mapping,9,ca_objects.description,,,,,,,,
+Mapping,10,ca_objects.descriptionalt,,,,,,,,
+Mapping,11,ca_objects.langmaterial.lang,Primary,"{""delimiter"": "";""} ",,,,,,
+Constant,Primary,ca_objects.langmaterial.langlabel,Primary,,,,,,,
+Mapping,12,ca_objects.langmaterial.lang,Other,"{""delimiter"": "";""} ",,,,,,
+Constant,Other,ca_objects.langmaterial.langlabel,Other,,,,,,,
+Mapping,13,ca_list_items,,,listItemSplitter,"{""relationshipType"": ""theme"", ""list"": ""themeslist"", ""delimiter"": "";""}",,,,
+Mapping,14,ca_objects.keyword,,"{""delimiter"": "";""} ",,,,,,
+Mapping,15,ca_objects.notes,,,,,,,,
+Mapping,16,ca_places,,,placeSplitter,"{ ""relationshipType"": ""created"", ""matchOn"": [""idno""], ""placeType"": ""countries""}",,,,
+Mapping,17,ca_places,,,placeSplitter,"{
+    ""relationshipType"": ""created"",
+    ""placeType"": ""region"", ""matchOn"": [""idno""], “ignoreParent”: “1”,
+    ""parents"": [        {
+            ""idno"": ""^16"",
+            ""name"": ""^16"",
+            ""type"": ""countries"",""matchOn"": [""idno""]
+        }
+    ]
+}",,,,
+Mapping,18,ca_places,,,placeSplitter,"{
+    ""relationshipType"": ""created"",
+    ""placeType"": ""city"", ""matchOn"": [""idno""], “ignoreParent”: “1”,
+    ""parents"": [        {
+            ""idno"": ""^17"",
+            ""name"": ""^17"",
+            ""type"": ""region"",""matchOn"": [""idno""],  },
+        {
+            ""idno"": ""^16"",
+            ""name"": ""^16"",
+            ""type"": ""countries"",""matchOn"": [""idno""], 
+        }
+    ]}",,,,
+Mapping,19,ca_places,,,placeSplitter,"{
+    ""relationshipType"": ""created"",
+    ""placeType"": ""address"" , ""matchOn"": [""idno""], “ignoreParent”: “1”,
+    ""parents"": [
+        {
+            ""idno"": ""^18"",
+            ""name"": ""^18"",
+            ""type"": ""city"",""matchOn"": [""idno""],   },
+        {
+            ""idno"": ""^17"",
+            ""name"": ""^17"",
+            ""type"": ""region"",""matchOn"": [""idno""],  },
+        {
+            ""idno"": ""^16"",
+            ""name"": ""^16"",
+            ""type"": ""countries"",""matchOn"": [""idno""], 
+        }
+    ],
+    ""attributes"": {
+        ""georeference"": ""^20""
+    }
+}",,,,
+Mapping,20,ca_objects.georeference,,,,,,,,
+Mapping,21,ca_places,,,placeSplitter,"{""relationshipType"": ""depicts"", ""placeType"": ""imaginary""}",,,,
+Mapping,22,ca_objects.cultgroup,,"{""delimiter"": "";""} ",,,,,,
+Mapping,23,ca_list_items,,,listItemSplitter,"{""relationshipType"": ""culturalcontext"", ""list"": ""cultcontlist"", ""delimiter"": "";""}",,,,
+Mapping,24,ca_objects.socialgroup,,"{""delimiter"": "";""}",,,,,,
+Mapping,25,ca_objects.prodtech,,"{""delimiter"": "";""} ",,,,,,
+Mapping,26,ca_objects.equipused,,"{""delimiter"": "";""} ",,,,,,
+Mapping,27,ca_objects.dates.dates_value,created,,,,,,,
+Constant,created,ca_objects.dates.dates_type,created,,,,,,,
+Mapping,28,ca_objects.dates.dates_value,digitized,,,,,,,
+Constant,digitized,ca_objects.dates.dates_type,digitized,,,,,,,
+Mapping,29,ca_objects.dates.dates_value,published,,,,,,,
+Constant,published,ca_objects.dates.dates_type,published,,,,,,,
+Mapping,30,ca_entities,rightsholder,,entitySplitter,"{""relationshipType"": ""rightsholder"",""entityType"": ""*"", ""matchOn"": [""labels""], ""dontCreate"": ""1"", ""delimiter"": "";""}",,,,
+Mapping,31,ca_objects.rights,,,,,,,,
+Mapping,32,ca_objects.tklabel,,"{""delimiter"": "";""} ",,,,,,
+Mapping,33,ca_objects.bclabel,,"{""delimiter"": "";""} ",,,,,,
+Mapping,34,ca_objects.cultsens,,,,,,,,
+Mapping,35,ca_objects.access,,,,,"not accessible to public
+accessible to public
+restricted public access","internal_only
+public_access
+restricted_public_access",,
+Mapping,36,ca_objects.reasonforrest,,,,,,,,
+Mapping,37,ca_entities,creator,,entitySplitter,"{""relationshipType"": ""creator"", ""entityType"": ""*"", ""matchOn"": [""labels""], ""dontCreate"": ""1"", ""delimiter"": "";""}",,,,
+Mapping,38,ca_entities,contributor,,entitySplitter,"{""relationshipType"": ""contributor"", ""entityType"": ""*""
+  , ""matchOn"": [""labels""], ""dontCreate"": ""1"", ""delimiter"": "";""}",,,,
+Mapping,39,ca_objects.timeperiod,,"{""delimiter"": "";""} ",,,,,,
+Mapping,40,ca_objects.genre,,"{""delimiter"": "";""} ",,,,,,
+Mapping,41,ca_objects.object,,"{""delimiter"": "";""} ",,,,,,
+Mapping,42,ca_objects.slogan,,"{""delimiter"": "";""} ",,,,,,
+Mapping,43,ca_objects.pandemicevent,,"{""delimiter"": "";""} ",,,,,,
+Mapping,44,ca_objects.setting,,"{""delimiter"": "";""} ",,,,,,
+Mapping,45,ca_objects.emotion,,"{""delimiter"": "";""} ",,,,,,
+Mapping,46,ca_objects.wayofliving,,"{""delimiter"": "";""} ",,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,Setting name,Setting value,Description,Notes,,,,,,
+Setting,name,05_UFC0018 Custom Mapping,Human readable name of the mapping,Arbitrary text,,,,,,
+Setting,code,UFC0018_CustomMapping,Alphanumeric code of the mapping,"Arbitrary, no special characters or spaces",,,,,,
+Setting,inputFormats,xlsx,Sets types of source (input) data that can be handled by this import mapping. Values are format codes defined by the various DataReader plugins. You can specify multiple formats by specifying their format codes in a semicolon delimited list.,,,,,,,
+Setting,table,ca_objects,Sets the table for the imported data,,,,,,,
+Setting,existingRecordPolicy,none,Determines how existing records are checked for and handled for the mapping,,,,,,,
+Setting,ignoreTypeForExistingRecordPolicy,0,Ignore record type when looking for existing records as specified by the existing records policy.,,,,,,,
+Setting,errorPolicy,stop,"Determines how errors are handled for the import. ""Stop"" will halt the entire import on any error.",,,,,,,
+Setting,numInitialRowsToSkip,2,Default locale for imported values. Must be set to a locale code defined in the target installation.,,,,,,,
+Setting,type,Photography,Number of rows to skip at start of file before beginning processings. Typically used to skip over header rows in delimited data sets.,"While intended for delimited data formats such as XLSX, tab-delimited and CSV, it will skip initial rows in any data format, including XML formats.",,,,,,
