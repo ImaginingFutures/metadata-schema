@@ -7691,7 +7691,189 @@
         </restriction>
       </typeRestrictions>
     </metadataElement>
+
+<!-- Custom Elements-->
+
+<metadataElement code="timeperiod" datatype="Text">
+  <labels>
+    <label locale="en_US">
+      <name>Time Period</name>
+      <description>Custom element for prj UFC0018_Archiving Covid Heritage in Ho Chi Minh city</description>
+    </label>
+  </labels>
+  <settings>
+    <setting name="fieldWidth">30</setting>
+  </settings>
+  <typeRestrictions>
+    <restriction>
+      <table>ca_objects</table>
+      <settings>
+        <setting name="minAttributesPerRow">0</setting>
+        <setting name="maxAttributesPerRow">0</setting>
+        <setting name="minimumAttributeBundlesToDisplay">1</setting>
+      </settings>
+    </restriction>
+  </typeRestrictions>
+</metadataElement>
+
+<metadataElement code="genre" datatype="Text">
+  <labels>
+    <label locale="en_US">
+      <name>Genre</name>
+      <description>Custom element for prj UFC0018_Archiving Covid Heritage in Ho Chi Minh city</description>
+    </label>
+  </labels>
+  <settings>
+    <setting name="fieldWidth">30</setting>
+  </settings>
+  <typeRestrictions>
+    <restriction>
+      <table>ca_objects</table>
+      <settings>
+        <setting name="minAttributesPerRow">0</setting>
+        <setting name="maxAttributesPerRow">0</setting>
+        <setting name="minimumAttributeBundlesToDisplay">1</setting>
+      </settings>
+    </restriction>
+  </typeRestrictions>
+</metadataElement>
+
+<metadataElement code="object" datatype="Text">
+  <labels>
+    <label locale="en_US">
+      <name>Object</name>
+      <description>Custom element for prj UFC0018_Archiving Covid Heritage in Ho Chi Minh city</description>
+    </label>
+  </labels>
+  <settings>
+    <setting name="fieldWidth">30</setting>
+  </settings>
+  <typeRestrictions>
+    <restriction>
+      <table>ca_objects</table>
+      <settings>
+        <setting name="minAttributesPerRow">0</setting>
+        <setting name="maxAttributesPerRow">0</setting>
+        <setting name="minimumAttributeBundlesToDisplay">1</setting>
+      </settings>
+    </restriction>
+  </typeRestrictions>
+</metadataElement>
+
+<metadataElement code="slogan" datatype="Text">
+  <labels>
+    <label locale="en_US">
+      <name>Slogans</name>
+      <description>Custom element for prj UFC0018_Archiving Covid Heritage in Ho Chi Minh city</description>
+    </label>
+  </labels>
+  <settings>
+    <setting name="fieldWidth">30</setting>
+  </settings>
+  <typeRestrictions>
+    <restriction>
+      <table>ca_objects</table>
+      <settings>
+        <setting name="minAttributesPerRow">0</setting>
+        <setting name="maxAttributesPerRow">0</setting>
+        <setting name="minimumAttributeBundlesToDisplay">1</setting>
+      </settings>
+    </restriction>
+  </typeRestrictions>
+</metadataElement>
+
+<metadataElement code="pandemicevent" datatype="Text">
+  <labels>
+    <label locale="en_US">
+      <name>Pandemic Event</name>
+      <description>Custom element for prj UFC0018_Archiving Covid Heritage in Ho Chi Minh city</description>
+    </label>
+  </labels>
+  <settings>
+    <setting name="fieldWidth">30</setting>
+  </settings>
+  <typeRestrictions>
+    <restriction>
+      <table>ca_objects</table>
+      <settings>
+        <setting name="minAttributesPerRow">0</setting>
+        <setting name="maxAttributesPerRow">0</setting>
+        <setting name="minimumAttributeBundlesToDisplay">1</setting>
+      </settings>
+    </restriction>
+  </typeRestrictions>
+</metadataElement>
+
+<metadataElement code="setting" datatype="Text">
+  <labels>
+    <label locale="en_US">
+      <name>Setting</name>
+      <description>Custom element for prj UFC0018_Archiving Covid Heritage in Ho Chi Minh city</description>
+    </label>
+  </labels>
+  <settings>
+    <setting name="fieldWidth">30</setting>
+  </settings>
+  <typeRestrictions>
+    <restriction>
+      <table>ca_objects</table>
+      <settings>
+        <setting name="minAttributesPerRow">0</setting>
+        <setting name="maxAttributesPerRow">0</setting>
+        <setting name="minimumAttributeBundlesToDisplay">1</setting>
+      </settings>
+    </restriction>
+  </typeRestrictions>
+</metadataElement>
+
+<metadataElement code="emotion" datatype="Text">
+  <labels>
+    <label locale="en_US">
+      <name>Emotion</name>
+      <description>Custom element for prj UFC0018_Archiving Covid Heritage in Ho Chi Minh city</description>
+    </label>
+  </labels>
+  <settings>
+    <setting name="fieldWidth">30</setting>
+  </settings>
+  <typeRestrictions>
+    <restriction>
+      <table>ca_objects</table>
+      <settings>
+        <setting name="minAttributesPerRow">0</setting>
+        <setting name="maxAttributesPerRow">0</setting>
+        <setting name="minimumAttributeBundlesToDisplay">1</setting>
+      </settings>
+    </restriction>
+  </typeRestrictions>
+</metadataElement>
+
+<metadataElement code="wayofliving" datatype="Text">
+  <labels>
+    <label locale="en_US">
+      <name>Way of Living</name>
+      <description>Custom element for prj UFC0018_Archiving Covid Heritage in Ho Chi Minh city</description>
+    </label>
+  </labels>
+  <settings>
+    <setting name="fieldWidth">30</setting>
+  </settings>
+  <typeRestrictions>
+    <restriction>
+      <table>ca_objects</table>
+      <settings>
+        <setting name="minAttributesPerRow">0</setting>
+        <setting name="maxAttributesPerRow">0</setting>
+        <setting name="minimumAttributeBundlesToDisplay">1</setting>
+      </settings>
+    </restriction>
+  </typeRestrictions>
+</metadataElement>
+
+  <!-- End of Custom Elements-->
   </elementSets>
+
+
   <userInterfaces>
     <userInterface code="objects_ui" type="ca_objects">
       <labels>
@@ -8383,6 +8565,105 @@
             </placement>
           </bundlePlacements>
         </screen>
+
+        <screen idno="custom" default="0">
+          <labels>
+            <label locale="en_US">
+              <name>Custom Metadata</name>
+            </label>
+          </labels>
+          <bundlePlacements>
+            <placement code="ca_attribute_timeperiod">
+              <bundle>ca_objects.timeperiod</bundle>
+              <settings>
+                <setting name="readonly">0</setting>
+                <setting name="expand_collapse_value">bubbles</setting>
+                <setting name="expand_collapse_no_value">bubbles</setting>
+                <setting name="sort">1</setting>
+                <setting name="sortDirection">ASC</setting>
+                <setting name="dontShowDeleteButton">0</setting>
+              </settings>
+            </placement>
+            <placement code="ca_attribute_genre">
+              <bundle>ca_objects.genre</bundle>
+              <settings>
+                <setting name="readonly">0</setting>
+                <setting name="expand_collapse_value">bubbles</setting>
+                <setting name="expand_collapse_no_value">bubbles</setting>
+                <setting name="sort">1</setting>
+                <setting name="sortDirection">ASC</setting>
+                <setting name="dontShowDeleteButton">0</setting>
+              </settings>
+            </placement>
+            <placement code="ca_attribute_object">
+              <bundle>ca_objects.object</bundle>
+              <settings>
+                <setting name="readonly">0</setting>
+                <setting name="expand_collapse_value">bubbles</setting>
+                <setting name="expand_collapse_no_value">bubbles</setting>
+                <setting name="sort">1</setting>
+                <setting name="sortDirection">ASC</setting>
+                <setting name="dontShowDeleteButton">0</setting>
+              </settings>
+            </placement>
+            <placement code="ca_attribute_slogan">
+              <bundle>ca_objects.slogan</bundle>
+              <settings>
+                <setting name="readonly">0</setting>
+                <setting name="expand_collapse_value">bubbles</setting>
+                <setting name="expand_collapse_no_value">bubbles</setting>
+                <setting name="sort">1</setting>
+                <setting name="sortDirection">ASC</setting>
+                <setting name="dontShowDeleteButton">0</setting>
+              </settings>
+            </placement>
+            <placement code="ca_attribute_pandemicevent">
+              <bundle>ca_objects.pandemicevent</bundle>
+              <settings>
+                <setting name="readonly">0</setting>
+                <setting name="expand_collapse_value">bubbles</setting>
+                <setting name="expand_collapse_no_value">bubbles</setting>
+                <setting name="sort">1</setting>
+                <setting name="sortDirection">ASC</setting>
+                <setting name="dontShowDeleteButton">0</setting>
+              </settings>
+            </placement>
+            <placement code="ca_attribute_setting">
+              <bundle>ca_objects.setting</bundle>
+              <settings>
+                <setting name="readonly">0</setting>
+                <setting name="expand_collapse_value">bubbles</setting>
+                <setting name="expand_collapse_no_value">bubbles</setting>
+                <setting name="sort">1</setting>
+                <setting name="sortDirection">ASC</setting>
+                <setting name="dontShowDeleteButton">0</setting>
+              </settings>
+            </placement>
+            <placement code="ca_attribute_emotion">
+              <bundle>ca_objects.emotion</bundle>
+              <settings>
+                <setting name="readonly">0</setting>
+                <setting name="expand_collapse_value">bubbles</setting>
+                <setting name="expand_collapse_no_value">bubbles</setting>
+                <setting name="sort">1</setting>
+                <setting name="sortDirection">ASC</setting>
+                <setting name="dontShowDeleteButton">0</setting>
+              </settings>
+            </placement>
+            <placement code="ca_attribute_wayofliving">
+              <bundle>ca_objects.wayofliving</bundle>
+              <settings>
+                <setting name="readonly">0</setting>
+                <setting name="expand_collapse_value">bubbles</setting>
+                <setting name="expand_collapse_no_value">bubbles</setting>
+                <setting name="sort">1</setting>
+                <setting name="sortDirection">ASC</setting>
+                <setting name="dontShowDeleteButton">0</setting>
+              </settings>
+            </placement>
+          </bundlePlacements>
+        </screen>
+
       </screens>
     </userInterface>
     <userInterface code="entities_ui" type="ca_entities">
