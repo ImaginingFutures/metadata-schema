@@ -3035,6 +3035,15 @@
             </label>
           </labels>
         </item>
+        <item idno="GA_lang" access="1" enabled="1" default="0" value="GA_lang" rank="191">
+          <labels>
+            <label locale="en_US" preferred="1">
+              <name_singular>Ga</name_singular>
+              <name_plural>Ga</name_plural>
+              <description />
+            </label>
+          </labels>
+        </item>
         <item idno="GL" access="1" enabled="1" default="0" value="GL" rank="228">
           <labels>
             <label locale="en_US" preferred="1">
