@@ -1,5 +1,15 @@
 # Changelog
 
+## [unreleased]
+
+### Fixed
+
+- Removed character `U+00a0` (non-breaking space) from csv files.
+
+### Changed
+
+- Change `Project title` in project `UFC0001` from 'Animating cycles for living and archiving the foodways of a Maya community in Yucatan' to 'Yucatan to Living and archiving Sotuta’s foodways'.
+
 ## [v1.2.0]
 
 ## Fixed
