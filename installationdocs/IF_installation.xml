@@ -12827,6 +12827,14 @@
             </label>
           </labels>
         </type>
+        <type code="bio_photo" default="1">
+          <labels>
+            <label locale="en_US">
+              <typename>bio photo</typename>
+              <typename_reverse>bio photo</typename_reverse>
+            </label>
+          </labels>
+        </type>
       </types>
     </relationshipTable>
     <relationshipTable name="ca_object_representations_x_occurrences">
