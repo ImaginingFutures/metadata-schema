@@ -6172,7 +6172,61 @@
         </item>
       </items>
     </list>
+
+    <list code="exresourcelist" hierarchical="0" system="0" vocabulary="1">
+      <labels>
+        <label locale="en_US">
+          <name>External Resources</name>
+        </label>
+      </labels>
+      <items>
+        <item idno="exres_01" access="1" enabled="1" default="0" value="auths_01" rank="549">
+          <labels>
+            <label locale="en_US" preferred="1">
+              <name_singular>Exhibition</name_singular>
+              <name_plural>Exhibition</name_plural>
+              <description></description>
+            </label>
+          </labels>
+        </item>
+        <item idno="exres_02" access="1" enabled="1" default="0" value="exres_02" rank="550">
+          <labels>
+            <label locale="en_US" preferred="1">
+              <name_singular>Map</name_singular>
+              <name_plural>Map</name_plural>
+              <description></description>
+            </label>
+          </labels>
+        </item>
+        <item idno="exres_03" access="1" enabled="1" default="0" value="exres_03" rank="551">
+          <labels>
+            <label locale="en_US" preferred="1">
+              <name_singular>Channel</name_singular>
+              <name_plural>Channel</name_plural>
+              <description></description>
+            </label>
+          </labels>
+        </item>
+        <item idno="exres_04" access="1" enabled="1" default="1" value="exres_04" rank="552">
+          <labels>
+            <label locale="en_US" preferred="1">
+              <name_singular>Interactive Form</name_singular>
+              <name_plural>Interactive Form</name_plural>
+              <description></description>
+            </label>
+          </labels>
+        </item>
+      </items>
+    </list>
+
   </lists>
+
+
+  
+
+<!-- METADATA ELEMENTS-->
+
+
   <elementSets>
     <metadataElement code="set_description" datatype="Text">
       <labels>
@@ -7534,94 +7588,7 @@
         </restriction>
       </typeRestrictions>
     </metadataElement>
-    <metadataElement code="authorities" datatype="Container">
-      <labels>
-        <label locale="en_US">
-          <name>Authority Sources</name>
-          <description>Link to participants record on VIAF, IF website, ORCID, Wikidata.</description>
-        </label>
-      </labels>
-      <elements>
-        <metadataElement code="authurl" datatype="Url">
-          <labels>
-            <label locale="en_US">
-              <name>Source URL</name>
-              <description>Provide the URL of the source.</description>
-            </label>
-          </labels>
-          <settings>
-            <setting name="fieldWidth">40</setting>
-            <setting name="fieldHeight">1</setting>
-            <setting name="minChars">0</setting>
-            <setting name="maxChars">65535</setting>
-            <setting name="doesNotTakeLocale">1</setting>
-            <setting name="singleValuePerLocale">0</setting>
-            <setting name="requireValue">0</setting>
-            <setting name="allowDuplicateValues">0</setting>
-            <setting name="raiseErrorOnDuplicateValue">0</setting>
-            <setting name="canBeUsedInSort">1</setting>
-            <setting name="suggestExistingValues">0</setting>
-            <setting name="suggestExistingValueSort">value</setting>
-            <setting name="canBeUsedInSearchForm">1</setting>
-            <setting name="canBeUsedInDisplay">1</setting>
-            <setting name="canMakePDF">0</setting>
-            <setting name="canMakePDFForValue">0</setting>
-            <setting name="displayDelimiter">; </setting>
-            <setting name="includeSourceData">0</setting>
-            <setting name="regex" />
-            <setting name="default_text" />
-            <setting name="displayTemplate" />
-          </settings>
-        </metadataElement>
-        <metadataElement code="authtype" datatype="List" list="authoritylist">
-          <labels>
-            <label locale="en_US">
-              <name>Source Type</name>
-              <description>Provide the source type.</description>
-            </label>
-          </labels>
-          <settings>
-            <setting name="listWidth">40</setting>
-            <setting name="listHeight">200px</setting>
-            <setting name="doesNotTakeLocale">1</setting>
-            <setting name="singleValuePerLocale">0</setting>
-            <setting name="requireValue">0</setting>
-            <setting name="allowDuplicateValues">0</setting>
-            <setting name="raiseErrorOnDuplicateValue">0</setting>
-            <setting name="implicitNullOption">0</setting>
-            <setting name="nullOptionText">Not set</setting>
-            <setting name="useDefaultWhenNull">0</setting>
-            <setting name="canBeUsedInSort">1</setting>
-            <setting name="render">1</setting>
-            <setting name="auto_shrink">0</setting>
-            <setting name="maxColumns">3</setting>
-            <setting name="canBeUsedInSearchForm">1</setting>
-            <setting name="canBeUsedInDisplay">1</setting>
-            <setting name="canMakePDF">0</setting>
-            <setting name="canMakePDFForValue">0</setting>
-            <setting name="displayDelimiter">; </setting>
-            <setting name="minimizeExistingValues">0</setting>
-            <setting name="deferHierarchyLoad">0</setting>
-            <setting name="separateDisabledValues">0</setting>
-            <setting name="hideDisabledValues">0</setting>
-            <setting name="includeSourceData">0</setting>
-            <setting name="displayTemplate" />
-            <setting name="restrictToTypes" />
-            <setting name="currentSelectionDisplayFormat" />
-          </settings>
-        </metadataElement>
-      </elements>
-      <typeRestrictions>
-        <restriction>
-          <table>ca_entities</table>
-          <settings>
-            <setting name="minAttributesPerRow">0</setting>
-            <setting name="maxAttributesPerRow">0</setting>
-            <setting name="minimumAttributeBundlesToDisplay">1</setting>
-          </settings>
-        </restriction>
-      </typeRestrictions>
-    </metadataElement>
+   
     <metadataElement code="prjtype" datatype="List" list="prjtypelist">
       <labels>
         <label locale="en_US">
@@ -7700,6 +7667,133 @@
         </restriction>
       </typeRestrictions>
     </metadataElement>
+
+
+
+
+
+    <metadataElement code="exresource" datatype="Container">
+      <labels>
+        <label locale="en_US">
+          <name>External Resource</name>
+          <description>External exhibition.</description>
+        </label>
+      </labels>
+      <elements>
+        <metadataElement code="exname" datatype="Text">
+          <labels>
+            <label locale="en_US">
+              <name>Resource Name</name>
+              <description>Provide the name of the resource.</description>
+            </label>
+          </labels>
+          <settings>
+            <setting name="fieldWidth">40</setting>
+            <setting name="fieldHeight">1</setting>
+            <setting name="minChars">0</setting>
+            <setting name="maxChars">65535</setting>
+            <setting name="doesNotTakeLocale">1</setting>
+            <setting name="singleValuePerLocale">0</setting>
+            <setting name="requireValue">0</setting>
+            <setting name="allowDuplicateValues">0</setting>
+            <setting name="raiseErrorOnDuplicateValue">0</setting>
+            <setting name="canBeUsedInSort">1</setting>
+            <setting name="suggestExistingValues">0</setting>
+            <setting name="suggestExistingValueSort">value</setting>
+            <setting name="canBeUsedInSearchForm">1</setting>
+            <setting name="canBeUsedInDisplay">1</setting>
+            <setting name="canMakePDF">0</setting>
+            <setting name="canMakePDFForValue">0</setting>
+            <setting name="displayDelimiter">; </setting>
+            <setting name="includeSourceData">0</setting>
+            <setting name="regex" />
+            <setting name="default_text" />
+            <setting name="displayTemplate" />
+          </settings>
+        </metadataElement>
+        <metadataElement code="exurl" datatype="Url">
+          <labels>
+            <label locale="en_US">
+              <name>Resource URL</name>
+              <description>Provide the URL of the resource.</description>
+            </label>
+          </labels>
+          <settings>
+            <setting name="fieldWidth">40</setting>
+            <setting name="fieldHeight">1</setting>
+            <setting name="minChars">0</setting>
+            <setting name="maxChars">65535</setting>
+            <setting name="doesNotTakeLocale">1</setting>
+            <setting name="singleValuePerLocale">0</setting>
+            <setting name="requireValue">0</setting>
+            <setting name="allowDuplicateValues">0</setting>
+            <setting name="raiseErrorOnDuplicateValue">0</setting>
+            <setting name="canBeUsedInSort">1</setting>
+            <setting name="suggestExistingValues">0</setting>
+            <setting name="suggestExistingValueSort">value</setting>
+            <setting name="canBeUsedInSearchForm">1</setting>
+            <setting name="canBeUsedInDisplay">1</setting>
+            <setting name="canMakePDF">0</setting>
+            <setting name="canMakePDFForValue">0</setting>
+            <setting name="displayDelimiter">; </setting>
+            <setting name="includeSourceData">0</setting>
+            <setting name="regex" />
+            <setting name="default_text" />
+            <setting name="displayTemplate" />
+          </settings>
+        </metadataElement>
+        <metadataElement code="exlist" datatype="List" list="exresourcelist">
+          <labels>
+            <label locale="en_US">
+              <name>Resource Type</name>
+              <description>Provide the external resource type.</description>
+            </label>
+          </labels>
+          <settings>
+            <setting name="listWidth">40</setting>
+            <setting name="listHeight">200px</setting>
+            <setting name="doesNotTakeLocale">1</setting>
+            <setting name="singleValuePerLocale">0</setting>
+            <setting name="requireValue">0</setting>
+            <setting name="allowDuplicateValues">0</setting>
+            <setting name="raiseErrorOnDuplicateValue">0</setting>
+            <setting name="implicitNullOption">0</setting>
+            <setting name="nullOptionText">Not set</setting>
+            <setting name="useDefaultWhenNull">0</setting>
+            <setting name="canBeUsedInSort">1</setting>
+            <setting name="render">1</setting>
+            <setting name="auto_shrink">0</setting>
+            <setting name="maxColumns">3</setting>
+            <setting name="canBeUsedInSearchForm">1</setting>
+            <setting name="canBeUsedInDisplay">1</setting>
+            <setting name="canMakePDF">0</setting>
+            <setting name="canMakePDFForValue">0</setting>
+            <setting name="displayDelimiter">; </setting>
+            <setting name="minimizeExistingValues">0</setting>
+            <setting name="deferHierarchyLoad">0</setting>
+            <setting name="separateDisabledValues">0</setting>
+            <setting name="hideDisabledValues">0</setting>
+            <setting name="includeSourceData">0</setting>
+            <setting name="displayTemplate" />
+            <setting name="restrictToTypes" />
+            <setting name="currentSelectionDisplayFormat" />
+          </settings>
+        </metadataElement>
+      </elements>
+      <typeRestrictions>
+        <restriction>
+          <table>ca_collections</table>
+          <settings>
+            <setting name="minAttributesPerRow">0</setting>
+            <setting name="maxAttributesPerRow">0</setting>
+            <setting name="minimumAttributeBundlesToDisplay">1</setting>
+          </settings>
+        </restriction>
+      </typeRestrictions>
+    </metadataElement>
+
+
+
 
 <!-- Custom Elements-->
 
@@ -10572,6 +10666,19 @@
                 <setting name="dontShowDeleteButton">0</setting>
               </settings>
             </placement>
+
+            <placement code="ca_attribute_exresource">
+              <bundle>ca_attribute_exresource</bundle>
+              <settings>
+                <setting name="readonly">0</setting>
+                <setting name="expand_collapse_value">bubbles</setting>
+                <setting name="expand_collapse_no_value">bubbles</setting>
+                <setting name="sort">1</setting>
+                <setting name="sortDirection">ASC</setting>
+                <setting name="dontShowDeleteButton">0</setting>
+              </settings>
+            </placement>
+
             <placement code="ca_entities">
               <bundle>ca_entities</bundle>
               <settings>

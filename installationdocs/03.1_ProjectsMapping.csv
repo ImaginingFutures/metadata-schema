@@ -16,6 +16,14 @@ accessible to public
 restricted public access","internal_only
 public_access
 restricted_public_access",
+Mapping,13,ca_collections.exresource.exname,exresource,,,,,,
+Mapping,14,ca_collections.exresource.exurl,exresource,,,,,,
+Mapping,15,ca_collections.exresource.exlist,exresource,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
 ,,,,,,,,,
 ,Setting name,Setting value,Description,Notes,,,,,
 Setting,name,03_Projects Mapping,Human readable name of the mapping,Arbitrary text,,,,,
