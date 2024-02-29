@@ -7668,10 +7668,6 @@
       </typeRestrictions>
     </metadataElement>
 
-
-
-
-
     <metadataElement code="exresource" datatype="Container">
       <labels>
         <label locale="en_US">
@@ -7792,8 +7788,88 @@
       </typeRestrictions>
     </metadataElement>
 
-
-
+    <metadataElement code="contribution" datatype="Container">
+      <labels>
+        <label locale="en_US">
+          <name>Contribution</name>
+          <description>Choose if you want contribution from people.</description>
+        </label>
+      </labels>
+      <elements>
+        <metadataElement code="cont_text" datatype="Text">
+          <labels>
+            <label locale="en_US">
+              <name>Contribution Name</name>
+              <description>Informative text for contribution.</description>
+            </label>
+          </labels>
+          <settings>
+            <setting name="fieldWidth">40</setting>
+            <setting name="fieldHeight">1</setting>
+            <setting name="minChars">0</setting>
+            <setting name="maxChars">65535</setting>
+            <setting name="doesNotTakeLocale">1</setting>
+            <setting name="singleValuePerLocale">0</setting>
+            <setting name="requireValue">0</setting>
+            <setting name="allowDuplicateValues">0</setting>
+            <setting name="raiseErrorOnDuplicateValue">0</setting>
+            <setting name="canBeUsedInSort">1</setting>
+            <setting name="suggestExistingValues">0</setting>
+            <setting name="suggestExistingValueSort">value</setting>
+            <setting name="canBeUsedInSearchForm">1</setting>
+            <setting name="canBeUsedInDisplay">1</setting>
+            <setting name="canMakePDF">0</setting>
+            <setting name="canMakePDFForValue">0</setting>
+            <setting name="displayDelimiter">; </setting>
+            <setting name="includeSourceData">0</setting>
+            <setting name="regex" />
+            <setting name="default_text" />
+            <setting name="displayTemplate" />
+          </settings>
+        </metadataElement>
+        <metadataElement code="cont_url" datatype="Url">
+          <labels>
+            <label locale="en_US">
+              <name>Contribution Form URL</name>
+              <description>Provide the URL for the contribution.</description>
+            </label>
+          </labels>
+          <settings>
+            <setting name="fieldWidth">40</setting>
+            <setting name="fieldHeight">1</setting>
+            <setting name="minChars">0</setting>
+            <setting name="maxChars">65535</setting>
+            <setting name="doesNotTakeLocale">1</setting>
+            <setting name="singleValuePerLocale">0</setting>
+            <setting name="requireValue">0</setting>
+            <setting name="allowDuplicateValues">0</setting>
+            <setting name="raiseErrorOnDuplicateValue">0</setting>
+            <setting name="canBeUsedInSort">1</setting>
+            <setting name="suggestExistingValues">0</setting>
+            <setting name="suggestExistingValueSort">value</setting>
+            <setting name="canBeUsedInSearchForm">1</setting>
+            <setting name="canBeUsedInDisplay">1</setting>
+            <setting name="canMakePDF">0</setting>
+            <setting name="canMakePDFForValue">0</setting>
+            <setting name="displayDelimiter">; </setting>
+            <setting name="includeSourceData">0</setting>
+            <setting name="regex" />
+            <setting name="default_text" />
+            <setting name="displayTemplate" />
+          </settings>
+        </metadataElement>
+      </elements>
+      <typeRestrictions>
+        <restriction>
+          <table>ca_collections</table>
+          <settings>
+            <setting name="minAttributesPerRow">0</setting>
+            <setting name="maxAttributesPerRow">0</setting>
+            <setting name="minimumAttributeBundlesToDisplay">1</setting>
+          </settings>
+        </restriction>
+      </typeRestrictions>
+    </metadataElement>
 
 <!-- Custom Elements-->
 
@@ -10678,6 +10754,18 @@
                 <setting name="dontShowDeleteButton">0</setting>
               </settings>
             </placement>
+
+            <placement code="ca_attribute_contribution">
+              <bundle>ca_attribute_contribution</bundle>
+              <settings>
+                <setting name="readonly">0</setting>
+                <setting name="expand_collapse_value">bubbles</setting>
+                <setting name="expand_collapse_no_value">bubbles</setting>
+                <setting name="sort">1</setting>
+                <setting name="sortDirection">ASC</setting>
+                <setting name="dontShowDeleteButton">0</setting>
+              </settings>
+            </placement> 
 
             <placement code="ca_entities">
               <bundle>ca_entities</bundle>
