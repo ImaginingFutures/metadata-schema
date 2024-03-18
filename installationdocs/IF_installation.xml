@@ -7871,6 +7871,33 @@
       </typeRestrictions>
     </metadataElement>
 
+
+    <metadataElement code="alt_place_name" datatype="Text">
+      <labels>
+        <label locale="en_US">
+          <name>Alternative Place Name</name>
+          <description>Alternative name of the place.</description>
+        </label>
+      </labels>
+      <settings>
+        <setting name="fieldWidth">90</setting>
+        <setting name="fieldHeight">3</setting>
+        <setting name="displayDelimiter">; </setting>
+      </settings>
+      <typeRestrictions>
+        <restriction>
+          <table>ca_places</table>
+          <settings>
+            <setting name="minAttributesPerRow">0</setting>
+            <setting name="maxAttributesPerRow">0</setting>
+            <setting name="minimumAttributeBundlesToDisplay">1</setting>
+            <setting name="displayDelimiter">; </setting>
+          </settings>
+        </restriction>
+      </typeRestrictions>
+    </metadataElement>
+
+
 <!-- Custom Elements-->
 
 <metadataElement code="timeperiod" datatype="Text">
@@ -8044,6 +8071,7 @@
         <setting name="minAttributesPerRow">0</setting>
         <setting name="maxAttributesPerRow">0</setting>
         <setting name="minimumAttributeBundlesToDisplay">1</setting>
+        <setting name="displayDelimiter">; </setting>
       </settings>
     </restriction>
   </typeRestrictions>
@@ -8256,152 +8284,14 @@
             </label>
           </labels>
           <bundlePlacements>
-            
-            <placement code="ca_places_country">
+            <placement code="ca_places">
               <bundle>ca_places</bundle>
               <settings>
-                <setting name="restrict_to_types">country</setting>
-                <setting name="label" locale="en_US">Country</setting>
                 <setting name="readonly">0</setting>
                 <setting name="expand_collapse_value">bubbles</setting>
                 <setting name="expand_collapse_no_value">bubbles</setting>
                 <setting name="dontShowRelationshipTypes">0</setting>
                 <setting name="dont_include_subtypes_in_type_restriction">1</setting>
-                <setting name="list_format">bubbles</setting>
-                <setting name="dontShowAddButton">0</setting>
-                <setting name="dontShowDeleteButton">0</setting>
-                <setting name="minRelationshipsPerRow">0</setting>
-                <setting name="maxRelationshipsPerRow">0</setting>
-                <setting name="disableQuickadd">0</setting>
-                <setting name="sortDirection">ASC</setting>
-                <setting name="disableSorts">0</setting>
-                <setting name="showCount">0</setting>
-                <setting name="numPerPage">100</setting>
-                <setting name="showBatchEditorButton">0</setting>
-                <setting name="showSetRepresentationButton">0</setting>
-                <setting name="showReturnToHomeLocations">0</setting>
-                <setting name="useHierarchicalBrowser">0</setting>
-                <setting name="hierarchicalBrowserHeight">200px</setting>
-              </settings>
-            </placement>
-            <placement code="ca_places_region">
-              <bundle>ca_places</bundle>
-              <settings>
-                <setting name="restrict_to_types">region</setting>
-                <setting name="label" locale="en_US">Region</setting>
-                <setting name="readonly">0</setting>
-                <setting name="expand_collapse_value">bubbles</setting>
-                <setting name="expand_collapse_no_value">bubbles</setting>
-                <setting name="dontShowRelationshipTypes">0</setting>
-                <setting name="dont_include_subtypes_in_type_restriction">1</setting>
-                <setting name="list_format">bubbles</setting>
-                <setting name="dontShowAddButton">0</setting>
-                <setting name="dontShowDeleteButton">0</setting>
-                <setting name="minRelationshipsPerRow">0</setting>
-                <setting name="maxRelationshipsPerRow">0</setting>
-                <setting name="disableQuickadd">0</setting>
-                <setting name="sortDirection">ASC</setting>
-                <setting name="disableSorts">0</setting>
-                <setting name="showCount">0</setting>
-                <setting name="numPerPage">100</setting>
-                <setting name="showBatchEditorButton">0</setting>
-                <setting name="showSetRepresentationButton">0</setting>
-                <setting name="showReturnToHomeLocations">0</setting>
-                <setting name="useHierarchicalBrowser">0</setting>
-                <setting name="hierarchicalBrowserHeight">200px</setting>
-              </settings>
-            </placement>
-            <placement code="ca_places_city">
-              <bundle>ca_places</bundle>
-              <settings>
-                <setting name="restrict_to_types">city</setting>
-                <setting name="label" locale="en_US">City</setting>
-                <setting name="readonly">0</setting>
-                <setting name="expand_collapse_value">bubbles</setting>
-                <setting name="expand_collapse_no_value">bubbles</setting>
-                <setting name="dontShowRelationshipTypes">0</setting>
-                <setting name="dont_include_subtypes_in_type_restriction">0</setting>
-                <setting name="list_format">bubbles</setting>
-                <setting name="dontShowAddButton">0</setting>
-                <setting name="dontShowDeleteButton">0</setting>
-                <setting name="minRelationshipsPerRow">0</setting>
-                <setting name="maxRelationshipsPerRow">0</setting>
-                <setting name="disableQuickadd">0</setting>
-                <setting name="sortDirection">ASC</setting>
-                <setting name="disableSorts">0</setting>
-                <setting name="showCount">0</setting>
-                <setting name="numPerPage">100</setting>
-                <setting name="showBatchEditorButton">0</setting>
-                <setting name="showSetRepresentationButton">0</setting>
-                <setting name="showReturnToHomeLocations">0</setting>
-                <setting name="useHierarchicalBrowser">0</setting>
-                <setting name="hierarchicalBrowserHeight">200px</setting>
-              </settings>
-            </placement>
-            <placement code="ca_places_address">
-              <bundle>ca_places</bundle>
-              <settings>
-                <setting name="restrict_to_types">address</setting>
-                <setting name="label" locale="en_US">Address</setting>
-                <setting name="readonly">0</setting>
-                <setting name="expand_collapse_value">bubbles</setting>
-                <setting name="expand_collapse_no_value">bubbles</setting>
-                <setting name="dontShowRelationshipTypes">0</setting>
-                <setting name="dont_include_subtypes_in_type_restriction">1</setting>
-                <setting name="list_format">bubbles</setting>
-                <setting name="dontShowAddButton">0</setting>
-                <setting name="dontShowDeleteButton">0</setting>
-                <setting name="minRelationshipsPerRow">0</setting>
-                <setting name="maxRelationshipsPerRow">0</setting>
-                <setting name="disableQuickadd">0</setting>
-                <setting name="sortDirection">ASC</setting>
-                <setting name="disableSorts">0</setting>
-                <setting name="showCount">0</setting>
-                <setting name="numPerPage">100</setting>
-                <setting name="showBatchEditorButton">0</setting>
-                <setting name="showSetRepresentationButton">0</setting>
-                <setting name="showReturnToHomeLocations">0</setting>
-                <setting name="useHierarchicalBrowser">0</setting>
-                <setting name="hierarchicalBrowserHeight">200px</setting>
-              </settings>
-            </placement>
-            <placement code="ca_places_imaginary">
-              <bundle>ca_places</bundle>
-              <settings>
-                <setting name="restrict_to_types">imaginary</setting>
-                <setting name="label" locale="en_US">Imaginary</setting>
-                <setting name="readonly">0</setting>
-                <setting name="expand_collapse_value">bubbles</setting>
-                <setting name="expand_collapse_no_value">bubbles</setting>
-                <setting name="dontShowRelationshipTypes">0</setting>
-                <setting name="dont_include_subtypes_in_type_restriction">0</setting>
-                <setting name="list_format">bubbles</setting>
-                <setting name="dontShowAddButton">0</setting>
-                <setting name="dontShowDeleteButton">0</setting>
-                <setting name="minRelationshipsPerRow">0</setting>
-                <setting name="maxRelationshipsPerRow">0</setting>
-                <setting name="disableQuickadd">0</setting>
-                <setting name="sortDirection">ASC</setting>
-                <setting name="disableSorts">0</setting>
-                <setting name="showCount">0</setting>
-                <setting name="numPerPage">100</setting>
-                <setting name="showBatchEditorButton">0</setting>
-                <setting name="showSetRepresentationButton">0</setting>
-                <setting name="showReturnToHomeLocations">0</setting>
-                <setting name="useHierarchicalBrowser">0</setting>
-                <setting name="hierarchicalBrowserHeight">200px</setting>
-              </settings>
-            </placement>
-            <placement code="ca_places_other">
-              <bundle>ca_places</bundle>
-              <settings>
-                <setting name="restrict_to_types">other</setting>
-                <setting name="label" locale="en_US">Other Places</setting>
-                <setting name="readonly">0</setting>
-                <setting name="expand_collapse_value">bubbles</setting>
-                <setting name="expand_collapse_no_value">bubbles</setting>
-                <setting name="dontShowRelationshipTypes">0</setting>
-                <setting name="dont_include_subtypes_in_type_restriction">0</setting>
                 <setting name="list_format">bubbles</setting>
                 <setting name="dontShowAddButton">0</setting>
                 <setting name="dontShowDeleteButton">0</setting>
@@ -11093,6 +10983,17 @@
               <bundle>preferred_labels</bundle>
               <settings>
                 <setting name="label" locale="en_US">Name</setting>
+                <setting name="add_label" locale="en_US">Add name</setting>
+                <setting name="readonly">0</setting>
+                <setting name="expand_collapse_value">dont_force</setting>
+                <setting name="expand_collapse_no_value">dont_force</setting>
+                <setting name="usewysiwygeditor">0</setting>
+              </settings>
+            </placement>
+            <placement code="alt_place_name">
+              <bundle>alt_place_name</bundle>
+              <settings>
+                <setting name="label" locale="en_US">Alternative Name</setting>
                 <setting name="add_label" locale="en_US">Add name</setting>
                 <setting name="readonly">0</setting>
                 <setting name="expand_collapse_value">dont_force</setting>
