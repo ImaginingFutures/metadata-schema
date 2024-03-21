@@ -16,14 +16,15 @@ Constant,Other,ca_objects.langmaterial.langlabel,Other,,,,,,,
 Mapping,13,ca_list_items,,,listItemSplitter,"{""relationshipType"": ""theme"", ""list"": ""themeslist"", ""delimiter"": "";""}",,,,
 Mapping,14,ca_objects.keyword,,"{""delimiter"": "";""} ",,,,,,
 Mapping,15,ca_objects.notes,,,,,,,,
-Mapping,16,ca_places,,,placeSplitter,"{ ""delimiter"": "";"", 
+Mapping,16,ca_places,,"{""delimiter"": "";""} ",placeSplitter,"{ ""delimiter"": "";"", 
     ""relationshipType"": ""created"",
     ""placeType"": ""^17"" , ""matchOn"": [""idno""], 
     ""attributes"": {
-        ""georeference"": ""^18"", ""alt_place_name"":""^19"", ""delimiter"": "";""
+         ""georeference"": ""^18"",""alt_place_name"":""^19""
     }
 }",,,,
-Mapping,18,ca_objects.georeference,,,,,,,,
+Mapping,18,ca_objects.georeference,,"{""delimiter"": "";""} ",,,,,,
+Skip,19,ca_objects,,,,,,,,
 Mapping,20,ca_objects.cultgroup,,"{""delimiter"": "";""} ",,,,,,
 Mapping,21,ca_list_items,,,listItemSplitter,"{""relationshipType"": ""culturalcontext"", ""list"": ""cultcontlist"", ""delimiter"": "";""}",,,,
 Mapping,22,ca_objects.socialgroup,,"{""delimiter"": "";""}",,,,,,
