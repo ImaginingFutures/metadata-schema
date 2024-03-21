@@ -5631,6 +5631,15 @@
             </label>
           </labels>
         </item>
+        <item idno="prjtype_06" access="1" enabled="1" default="1" value="prjtype_06" rank="516">
+          <labels>
+            <label locale="en_US" preferred="1">
+              <name_singular>Further Initiatives (2023-2024)</name_singular>
+              <name_plural>Further Initiatives (2023-2024)</name_plural>
+              <description />
+            </label>
+          </labels>
+        </item>
       </items>
     </list>
 
