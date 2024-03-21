@@ -16,87 +16,48 @@ Constant,Other,ca_objects.langmaterial.langlabel,Other,,,,,,,
 Mapping,13,ca_list_items,,,listItemSplitter,"{""relationshipType"": ""theme"", ""list"": ""themeslist"", ""delimiter"": "";""}",,,,
 Mapping,14,ca_objects.keyword,,"{""delimiter"": "";""} ",,,,,,
 Mapping,15,ca_objects.notes,,,,,,,,
-Mapping,16,ca_places,,,placeSplitter,"{ ""relationshipType"": ""created"", ""matchOn"": [""idno""], ""placeType"": ""countries""}",,,,
-Mapping,17,ca_places,,,placeSplitter,"{
+Mapping,16,ca_places,,"{""delimiter"": "";""} ",placeSplitter,"{ ""delimiter"": "";"", 
     ""relationshipType"": ""created"",
-    ""placeType"": ""region"", ""matchOn"": [""idno""], “ignoreParent”: “1”,
-    ""parents"": [        {
-            ""idno"": ""^16"",
-            ""name"": ""^16"",
-            ""type"": ""countries"",""matchOn"": [""idno""]
-        }
-    ]
-}",,,,
-Mapping,18,ca_places,,,placeSplitter,"{
-    ""relationshipType"": ""created"",
-    ""placeType"": ""city"", ""matchOn"": [""idno""], “ignoreParent”: “1”,
-    ""parents"": [        {
-            ""idno"": ""^17"",
-            ""name"": ""^17"",
-            ""type"": ""region"",""matchOn"": [""idno""],  },
-        {
-            ""idno"": ""^16"",
-            ""name"": ""^16"",
-            ""type"": ""countries"",""matchOn"": [""idno""], 
-        }
-    ]}",,,,
-Mapping,19,ca_places,,,placeSplitter,"{
-    ""relationshipType"": ""created"",
-    ""placeType"": ""address"" , ""matchOn"": [""idno""], “ignoreParent”: “1”,
-    ""parents"": [
-        {
-            ""idno"": ""^18"",
-            ""name"": ""^18"",
-            ""type"": ""city"",""matchOn"": [""idno""],   },
-        {
-            ""idno"": ""^17"",
-            ""name"": ""^17"",
-            ""type"": ""region"",""matchOn"": [""idno""],  },
-        {
-            ""idno"": ""^16"",
-            ""name"": ""^16"",
-            ""type"": ""countries"",""matchOn"": [""idno""], 
-        }
-    ],
+    ""placeType"": ""^17"" , ""matchOn"": [""idno""], 
     ""attributes"": {
-        ""georeference"": ""^20""
+         ""georeference"": ""^18"",""alt_place_name"":""^19""
     }
 }",,,,
-Mapping,20,ca_objects.georeference,,,,,,,,
-Mapping,21,ca_places,,,placeSplitter,"{""relationshipType"": ""depicts"", ""placeType"": ""imaginary""}",,,,
-Mapping,22,ca_objects.cultgroup,,"{""delimiter"": "";""} ",,,,,,
-Mapping,23,ca_list_items,,,listItemSplitter,"{""relationshipType"": ""culturalcontext"", ""list"": ""cultcontlist"", ""delimiter"": "";""}",,,,
-Mapping,24,ca_objects.socialgroup,,"{""delimiter"": "";""}",,,,,,
-Mapping,25,ca_objects.prodtech,,"{""delimiter"": "";""} ",,,,,,
-Mapping,26,ca_objects.equipused,,"{""delimiter"": "";""} ",,,,,,
-Mapping,27,ca_objects.dates.dates_value,created,,,,,,,
+Mapping,18,ca_objects.georeference,,"{""delimiter"": "";""} ",,,,,,
+Skip,19,ca_objects,,,,,,,,
+Mapping,20,ca_objects.cultgroup,,"{""delimiter"": "";""} ",,,,,,
+Mapping,21,ca_list_items,,,listItemSplitter,"{""relationshipType"": ""culturalcontext"", ""list"": ""cultcontlist"", ""delimiter"": "";""}",,,,
+Mapping,22,ca_objects.socialgroup,,"{""delimiter"": "";""}",,,,,,
+Mapping,23,ca_objects.prodtech,,"{""delimiter"": "";""} ",,,,,,
+Mapping,24,ca_objects.equipused,,"{""delimiter"": "";""} ",,,,,,
+Mapping,25,ca_objects.dates.dates_value,created,,,,,,,
 Constant,created,ca_objects.dates.dates_type,created,,,,,,,
-Mapping,28,ca_objects.dates.dates_value,digitized,,,,,,,
+Mapping,26,ca_objects.dates.dates_value,digitized,,,,,,,
 Constant,digitized,ca_objects.dates.dates_type,digitized,,,,,,,
-Mapping,29,ca_objects.dates.dates_value,published,,,,,,,
+Mapping,27,ca_objects.dates.dates_value,published,,,,,,,
 Constant,published,ca_objects.dates.dates_type,published,,,,,,,
-Mapping,30,ca_entities,rightsholder,,entitySplitter,"{""relationshipType"": ""rightsholder"",""entityType"": ""*"", ""matchOn"": [""labels""], ""dontCreate"": ""1"", ""delimiter"": "";""}",,,,
-Mapping,31,ca_objects.rights,,,,,,,,
-Mapping,32,ca_objects.tklabel,,"{""delimiter"": "";""} ",,,,,,
-Mapping,33,ca_objects.bclabel,,"{""delimiter"": "";""} ",,,,,,
-Mapping,34,ca_objects.cultsens,,,,,,,,
-Mapping,35,ca_objects.access,,,,,"not accessible to public
+Mapping,28,ca_entities,rightsholder,,entitySplitter,"{""relationshipType"": ""rightsholder"",""entityType"": ""*"", ""matchOn"": [""labels""], ""dontCreate"": ""1"", ""delimiter"": "";""}",,,,
+Mapping,29,ca_objects.rights,,,,,,,,
+Mapping,30,ca_objects.tklabel,,"{""delimiter"": "";""} ",,,,,,
+Mapping,31,ca_objects.bclabel,,"{""delimiter"": "";""} ",,,,,,
+Mapping,32,ca_objects.cultsens,,,,,,,,
+Mapping,33,ca_objects.access,,,,,"not accessible to public
 accessible to public
 restricted public access","internal_only
 public_access
 restricted_public_access",,
-Mapping,36,ca_objects.reasonforrest,,,,,,,,
-Mapping,37,ca_entities,creator,,entitySplitter,"{""relationshipType"": ""creator"", ""entityType"": ""*"", ""matchOn"": [""labels""], ""dontCreate"": ""1"", ""delimiter"": "";""}",,,,
-Mapping,38,ca_entities,contributor,,entitySplitter,"{""relationshipType"": ""contributor"", ""entityType"": ""*""
+Mapping,34,ca_objects.reasonforrest,,,,,,,,
+Mapping,35,ca_entities,creator,,entitySplitter,"{""relationshipType"": ""creator"", ""entityType"": ""*"", ""matchOn"": [""labels""], ""dontCreate"": ""1"", ""delimiter"": "";""}",,,,
+Mapping,36,ca_entities,contributor,,entitySplitter,"{""relationshipType"": ""contributor"", ""entityType"": ""*""
   , ""matchOn"": [""labels""], ""dontCreate"": ""1"", ""delimiter"": "";""}",,,,
-Mapping,39,ca_objects.timeperiod,,"{""delimiter"": "";""} ",,,,,,
-Mapping,40,ca_objects.genre,,"{""delimiter"": "";""} ",,,,,,
-Mapping,41,ca_objects.object,,"{""delimiter"": "";""} ",,,,,,
-Mapping,42,ca_objects.slogan,,"{""delimiter"": "";""} ",,,,,,
-Mapping,43,ca_objects.pandemicevent,,"{""delimiter"": "";""} ",,,,,,
-Mapping,44,ca_objects.setting,,"{""delimiter"": "";""} ",,,,,,
-Mapping,45,ca_objects.emotion,,"{""delimiter"": "";""} ",,,,,,
-Mapping,46,ca_objects.wayofliving,,"{""delimiter"": "";""} ",,,,,,
+Mapping,37,ca_objects.timeperiod,,"{""delimiter"": "";""} ",,,,,,
+Mapping,38,ca_objects.genre,,"{""delimiter"": "";""} ",,,,,,
+Mapping,39,ca_objects.object,,"{""delimiter"": "";""} ",,,,,,
+Mapping,40,ca_objects.slogan,,"{""delimiter"": "";""} ",,,,,,
+Mapping,41,ca_objects.pandemicevent,,"{""delimiter"": "";""} ",,,,,,
+Mapping,42,ca_objects.setting,,"{""delimiter"": "";""} ",,,,,,
+Mapping,43,ca_objects.emotion,,"{""delimiter"": "";""} ",,,,,,
+Mapping,44,ca_objects.wayofliving,,"{""delimiter"": "";""} ",,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
