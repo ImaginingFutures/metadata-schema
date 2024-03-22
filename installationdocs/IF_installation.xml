@@ -7304,6 +7304,14 @@
       </settings>
       <typeRestrictions>
         <restriction>
+          <table>ca_object_representations</table>
+          <settings>
+            <setting name="minAttributesPerRow">0</setting>
+            <setting name="maxAttributesPerRow">0</setting>
+            <setting name="minimumAttributeBundlesToDisplay">1</setting>
+          </settings>
+        </restriction>
+        <restriction>
           <table>ca_objects</table>
           <settings>
             <setting name="minAttributesPerRow">0</setting>
@@ -10419,6 +10427,7 @@
                 <setting name="dontShowDeleteButton">0</setting>
               </settings>
             </placement>
+
             <placement code="status5">
               <bundle>status</bundle>
               <settings>
