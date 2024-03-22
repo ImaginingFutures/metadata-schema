@@ -19,8 +19,7 @@ Mapping,15,ca_objects.notes,,,,,,,,
 Mapping,16,ca_places,,"{""delimiter"": "";""} ",placeSplitter,"{ ""delimiter"": "";"", 
     ""relationshipType"": ""created"",
     ""placeType"": ""^17"" , ""matchOn"": [""idno""], 
-    ""attributes"": {
-         ""georeference"": ""^18"",""alt_place_name"":""^19""
+    ""attributes"": {""alt_place_name"":""^19""
     }
 }",,,,
 Mapping,18,ca_objects.georeference,,"{""delimiter"": "";""} ",,,,,,
