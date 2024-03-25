@@ -3937,10 +3937,10 @@
         </item>
       </items>
     </list>
-    <list code="themeslist" hierarchical="0" system="0" vocabulary="1">
+    <list code="keywordslist" hierarchical="0" system="0" vocabulary="1">
       <labels>
         <label locale="en_US">
-          <name>Themes</name>
+          <name>Keywords</name>
         </label>
       </labels>
       <items>
@@ -7031,36 +7031,12 @@
         </restriction>
       </typeRestrictions>
     </metadataElement>
-    <metadataElement code="keyword" datatype="Text">
-      <labels>
-        <label locale="en_US">
-          <name>Keywords</name>
-          <description>Descriptive words that are most significant and unique to the
-                    resource.</description>
-        </label>
-      </labels>
-      <settings>
-        <setting name="fieldWidth">30</setting>
-      </settings>
-      <typeRestrictions>
-        <restriction>
-          <table>ca_objects</table>
-          <settings>
-            <setting name="minAttributesPerRow">0</setting>
-            <setting name="maxAttributesPerRow">0</setting>
-            <setting name="minimumAttributeBundlesToDisplay">1</setting>
-          </settings>
-        </restriction>
-      </typeRestrictions>
-    </metadataElement>
+
     <metadataElement code="notes" datatype="Text">
       <labels>
         <label locale="en_US">
           <name>Notes</name>
-          <description>Any information that you want to add about this data, if you can
-                    not
-                    find a
-                    metadata field according to your need.</description>
+          <description>Any information that you want to add about this data, if you can not find a metadata field according to your need.</description>
         </label>
       </labels>
       <settings>
@@ -7625,24 +7601,7 @@
         </restriction>
       </typeRestrictions>
     </metadataElement>
-    <metadataElement code="prjregion" datatype="List" list="prjregionlist">
-      <labels>
-        <label locale="en_US">
-          <name>Project Region</name>
-          <description>The name of the Imagining Futures Project Regions.</description>
-        </label>
-      </labels>
-      <typeRestrictions>
-        <restriction>
-          <table>ca_collections</table>
-          <settings>
-            <setting name="minAttributesPerRow">0</setting>
-            <setting name="maxAttributesPerRow">0</setting>
-            <setting name="minimumAttributeBundlesToDisplay">1</setting>
-          </settings>
-        </restriction>
-      </typeRestrictions>
-    </metadataElement>
+
     <metadataElement code="ifwebpage" datatype="Url">
       <labels>
         <label locale="en_US">
@@ -7821,6 +7780,15 @@
       <typeRestrictions>
         <restriction>
           <table>ca_places</table>
+          <settings>
+            <setting name="minAttributesPerRow">0</setting>
+            <setting name="maxAttributesPerRow">0</setting>
+            <setting name="minimumAttributeBundlesToDisplay">1</setting>
+            <setting name="displayDelimiter">; </setting>
+          </settings>
+        </restriction>
+                <restriction>
+          <table>ca_objects</table>
           <settings>
             <setting name="minAttributesPerRow">0</setting>
             <setting name="maxAttributesPerRow">0</setting>
@@ -8160,13 +8128,15 @@
                 <setting name="dontShowDeleteButton">0</setting>
               </settings>
             </placement>
-            <placement code="ca_list_items_themes">
+            <placement code="ca_list_items_keywords">
               <bundle>ca_list_items</bundle>
               <settings>
-                <setting name="label" locale="en_US">Themes</setting>
+            <setting name="label" locale="en_US">Keywords</setting>
+                <setting name="add_label" locale="en_US">Add Keyword</setting>
                 <setting name="readonly">0</setting>
                 <setting name="expand_collapse_value">bubbles</setting>
                 <setting name="expand_collapse_no_value">bubbles</setting>
+                <setting name="usewysiwygeditor">1</setting>
                 <setting name="dontShowRelationshipTypes">0</setting>
                 <setting name="dont_include_subtypes_in_type_restriction">0</setting>
                 <setting name="list_format">bubbles</setting>
@@ -8181,21 +8151,8 @@
                 <setting name="numPerPage">100</setting>
                 <setting name="showBatchEditorButton">0</setting>
                 <setting name="showSetRepresentationButton">0</setting>
-                <setting name="restrict_to_lists">themeslist</setting>
-                <setting name="useHierarchicalBrowser">1</setting>
-                <setting name="hierarchicalBrowserHeight">200px</setting>
+                <setting name="restrict_to_lists">keywordslist</setting>
                 <setting name="restrictToTermsRelatedToCollection">0</setting>
-              </settings>
-            </placement>
-            <placement code="ca_attribute_keyword">
-              <bundle>ca_objects.keyword</bundle>
-              <settings>
-                <setting name="readonly">0</setting>
-                <setting name="expand_collapse_value">bubbles</setting>
-                <setting name="expand_collapse_no_value">bubbles</setting>
-                <setting name="sort">1</setting>
-                <setting name="sortDirection">ASC</setting>
-                <setting name="dontShowDeleteButton">0</setting>
               </settings>
             </placement>
             <placement code="ca_attribute_notes">
@@ -8241,6 +8198,19 @@
                 <setting name="showReturnToHomeLocations">0</setting>
                 <setting name="useHierarchicalBrowser">0</setting>
                 <setting name="hierarchicalBrowserHeight">200px</setting>
+              </settings>
+            </placement>
+            <placement code="alt_place_name">
+              <bundle>alt_place_name</bundle>
+              <settings>
+              <setting name="label" locale="en_US">Alternative Place Name</setting>
+                <setting name="add_label" locale="en_US">Add Alternative Place Name</setting>
+                <setting name="readonly">0</setting>
+                <setting name="expand_collapse_value">bubbles</setting>
+                <setting name="expand_collapse_no_value">bubbles</setting>
+                <setting name="sort">1</setting>
+                <setting name="sortDirection">ASC</setting>
+                <setting name="dontShowDeleteButton">0</setting>
               </settings>
             </placement>
             <placement code="ca_attribute_georeference">
@@ -8436,6 +8406,20 @@
                   <setting name="restrict_to_relationship_types">performer</setting>
                   <setting name="restrict_to_relationship_types">sponsor</setting>
                   <setting name="restrict_to_relationship_types">contributor</setting>
+                  <setting name="restrict_to_relationship_types">written_by</setting>
+                  <setting name="restrict_to_relationship_types">directed_by</setting>
+                  <setting name="restrict_to_relationship_types">produced_by</setting>
+                  <setting name="restrict_to_relationship_types">cinematography_by</setting>
+                  <setting name="restrict_to_relationship_types">lightning_by</setting>
+                  <setting name="restrict_to_relationship_types">sound_by</setting>
+                  <setting name="restrict_to_relationship_types">edition_by</setting>
+                  <setting name="restrict_to_relationship_types">music_titles</setting>
+                  <setting name="restrict_to_relationship_types">music_authors</setting>
+                  <setting name="restrict_to_relationship_types">music_performed_by</setting>
+                  <setting name="restrict_to_relationship_types">music_produced_by</setting>
+                  <setting name="restrict_to_relationship_types">music_mixed_by</setting>
+                  <setting name="restrict_to_relationship_types">music_rights</setting>
+                  <setting name="restrict_to_relationship_types">music_rights_held</setting>
                   <setting name="dontShowRelationshipTypes">0</setting>
                   <setting name="dont_include_subtypes_in_type_restriction">0</setting>
                   <setting name="list_format">bubbles</setting>
@@ -10692,6 +10676,35 @@
                 <setting name="dontShowDeleteButton">0</setting>
               </settings>
             </placement>
+            <placement code="ca_list_items_keywords">
+              <bundle>ca_list_items</bundle>
+              <settings>
+                <setting name="label" locale="en_US">Keywords</setting>
+                <setting name="add_label" locale="en_US">Add Keyword</setting>
+                <setting name="readonly">0</setting>
+                <setting name="expand_collapse_value">bubbles</setting>
+                <setting name="expand_collapse_no_value">bubbles</setting>
+                <setting name="usewysiwygeditor">1</setting>
+                <setting name="dontShowRelationshipTypes">0</setting>
+                <setting name="dont_include_subtypes_in_type_restriction">0</setting>
+                <setting name="list_format">bubbles</setting>
+                <setting name="dontShowAddButton">0</setting>
+                <setting name="dontShowDeleteButton">0</setting>
+                <setting name="minRelationshipsPerRow">0</setting>
+                <setting name="maxRelationshipsPerRow">0</setting>
+                <setting name="disableQuickadd">0</setting>
+                <setting name="sortDirection">ASC</setting>
+                <setting name="disableSorts">0</setting>
+                <setting name="showCount">0</setting>
+                <setting name="numPerPage">100</setting>
+                <setting name="showBatchEditorButton">0</setting>
+                <setting name="showSetRepresentationButton">0</setting>
+                <setting name="restrict_to_lists">keywordslist</setting>
+                <setting name="useHierarchicalBrowser">1</setting>
+                <setting name="hierarchicalBrowserHeight">200px</setting>
+                <setting name="restrictToTermsRelatedToCollection">0</setting>
+              </settings>
+            </placement>
             <placement code="access">
               <bundle>access</bundle>
               <settings>
@@ -12554,6 +12567,126 @@
             </label>
           </labels>
         </type>
+<type code="written_by" default="0">
+    <labels>
+        <label locale="en_US">
+            <typename>Written by</typename>
+            <typename_reverse>Wrote</typename_reverse>
+        </label>
+    </labels>
+</type>
+<type code="directed_by" default="0">
+    <labels>
+        <label locale="en_US">
+            <typename>Directed by</typename>
+            <typename_reverse>Directed</typename_reverse>
+        </label>
+    </labels>
+</type>
+<type code="produced_by" default="0">
+    <labels>
+        <label locale="en_US">
+            <typename>Produced by</typename>
+            <typename_reverse>Produced</typename_reverse>
+        </label>
+    </labels>
+</type>
+<type code="cinematography_by" default="0">
+    <labels>
+        <label locale="en_US">
+            <typename>Cinematography by</typename>
+            <typename_reverse>Handled Cinematography for</typename_reverse>
+        </label>
+    </labels>
+</type>
+<type code="lightning_by" default="0">
+    <labels>
+        <label locale="en_US">
+            <typename>Lightning by</typename>
+            <typename_reverse>Managed Lighting for</typename_reverse>
+        </label>
+    </labels>
+</type>
+<type code="sound_by" default="0">
+    <labels>
+        <label locale="en_US">
+            <typename>Sound by</typename>
+            <typename_reverse>Responsible for Sound in</typename_reverse>
+        </label>
+    </labels>
+</type>
+<type code="edition_by" default="0">
+    <labels>
+        <label locale="en_US">
+            <typename>Edition by</typename>
+            <typename_reverse>Edited</typename_reverse>
+        </label>
+    </labels>
+</type>
+<type code="music_titles" default="0">
+    <labels>
+        <label locale="en_US">
+            <typename>Music titles</typename>
+            <typename_reverse>Title for Music</typename_reverse>
+        </label>
+    </labels>
+</type>
+
+<type code="music_authors" default="0">
+    <labels>
+        <label locale="en_US">
+            <typename>Music authors</typename>
+            <typename_reverse>Authored Music for</typename_reverse>
+        </label>
+    </labels>
+</type>
+
+<type code="music_performed_by" default="0">
+    <labels>
+        <label locale="en_US">
+            <typename>Music performed by</typename>
+            <typename_reverse>Performed Music for</typename_reverse>
+        </label>
+    </labels>
+</type>
+<type code="music_produced_by" default="0">
+    <labels>
+        <label locale="en_US">
+            <typename>Music produced by</typename>
+            <typename_reverse>Produced Music for</typename_reverse>
+        </label>
+    </labels>
+</type>
+
+<type code="music_mixed_by" default="0">
+    <labels>
+        <label locale="en_US">
+            <typename>Music Mixed by</typename>
+            <typename_reverse>Mixed Music for</typename_reverse>
+        </label>
+    </labels>
+</type>
+
+<type code="music_rights" default="0">
+    <labels>
+        <label locale="en_US">
+            <typename>Music Rights</typename>
+            <typename_reverse>Owns Rights to Music in</typename_reverse>
+        </label>
+    </labels>
+</type>
+
+<type code="music_rights_held" default="0">
+    <labels>
+        <label locale="en_US">
+            <typename>Music Rights Held</typename>
+            <typename_reverse>Holds Rights to Music in</typename_reverse>
+        </label>
+    </labels>
+</type>
+
+
+
       </types>
     </relationshipTable>
     <relationshipTable name="ca_objects_x_objects">
@@ -12726,11 +12859,11 @@
             </label>
           </labels>
         </type>
-        <type code="theme" default="0">
+        <type code="keyword" default="0">
           <labels>
             <label locale="en_US">
-              <typename>theme</typename>
-              <typename_reverse>theme</typename_reverse>
+              <typename>keyword</typename>
+              <typename_reverse>keyword</typename_reverse>
             </label>
           </labels>
         </type>
