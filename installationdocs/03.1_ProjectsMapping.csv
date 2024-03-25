@@ -21,7 +21,7 @@ Mapping,14,ca_collections.exresource.exname,exresource,"{""delimiter"": "";""} "
 Mapping,15,ca_collections.exresource.exurl,exresource,"{""delimiter"": "";""} ",,,,,
 Mapping,16,ca_collections.exresource.exlist,exresource,"{""delimiter"": "";""} ",,,,,
 Mapping,17,ca_collections.parent_id,,,,,,,
-,,,,,,,,,
+Mapping,18,ca_list_items,,,listItemSplitter,"{""relationshipType"": ""keyword"", ""list"": ""keywordslist"", ""delimiter"": "";""}",,,
 ,,,,,,,,,
 ,,,,,,,,,
 ,Setting name,Setting value,Description,Notes,,,,,
