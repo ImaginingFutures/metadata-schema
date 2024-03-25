@@ -11927,6 +11927,14 @@
             </label>
           </labels>
         </type>
+        <type code="keyword" default="0">
+          <labels>
+            <label locale="en_US">
+              <typename>keyword</typename>
+              <typename_reverse>keyword</typename_reverse>
+            </label>
+          </labels>
+        </type>
       </types>
     </relationshipTable>
     <relationshipTable name="ca_entities_x_collections">
