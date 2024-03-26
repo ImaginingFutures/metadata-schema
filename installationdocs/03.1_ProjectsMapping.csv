@@ -1,7 +1,7 @@
 Rule type,Source,CA table.element,Group,Options,Refinery,Refinery parameters,Original values,Replacement values,Notes
 Mapping,1,ca_collections.idno,,,,,,,
 Mapping,2,ca_collections.preferred_labels,,,,,,,
-Mapping,3,ca_collections.prjtype,,"{""delimiter"": "";""} ",,,,,
+Mapping,3,ca_list_items,,,listItemSplitter,"{""relationshipType"": ""prjtype"", ""list"": ""prjtypelist"", ""delimiter"": "";""}",,,
 Mapping,4,ca_list_items,,,listItemSplitter,"{""relationshipType"": ""prjregion"", ""list"": ""prjregionlist"", ""delimiter"": "";""}",,,
 Mapping,5,ca_object_representations,,,objectRepresentationSplitter,"{""relationshipType"": ""depicts"", ""objectRepresentationType"": ""front"",  ""matchOn"": [""idno""]}",,,
 Mapping,6,ca_collections,,,collectionSplitter,"{""relationshipType"": ""related"", ""collectionType"": ""internal"", ""matchOn"": [""labels""], ""dontCreate"": ""1"", ""delimiter"": "";""}",,,
