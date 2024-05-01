@@ -8503,6 +8503,8 @@
                   <setting name="restrict_to_relationship_types">music_mixed_by</setting>
                   <setting name="restrict_to_relationship_types">music_rights</setting>
                   <setting name="restrict_to_relationship_types">music_rights_held</setting>
+                  <setting name="restrict_to_relationship_types">interviewee</setting>
+                  <setting name="restrict_to_relationship_types">photographer</setting>
                   <setting name="dontShowRelationshipTypes">0</setting>
                   <setting name="dont_include_subtypes_in_type_restriction">0</setting>
                   <setting name="list_format">bubbles</setting>
@@ -12723,6 +12725,22 @@
             </label>
           </labels>
         </type>
+<type code="interviewee" default="0">
+    <labels>
+        <label locale="en_US">
+            <typename>interviewee</typename>
+            <typename_reverse>interviewee</typename_reverse>
+        </label>
+    </labels>
+</type>
+<type code="photographer" default="0">
+    <labels>
+        <label locale="en_US">
+            <typename>photographer</typename>
+            <typename_reverse>photographer</typename_reverse>
+        </label>
+    </labels>
+</type>
 <type code="written_by" default="0">
     <labels>
         <label locale="en_US">
