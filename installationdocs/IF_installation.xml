@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <profile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:noNamespaceSchemaLocation="profile.xsd" useForConfiguration="1" infoUrl="">
-  <profileName>IF Custom Profile 0.1.1</profileName>
+  <profileName>IF Custom Profile 2.0</profileName>
   <profileDescription>IF Custom Profile</profileDescription>
-  <profileVersion>0.1.1</profileVersion>
+  <profileVersion>2.0</profileVersion>
   <locales>
     <locale lang="en" country="US">English</locale>
     <locale lang="en" country="CA" dontUseForCataloguing="1">English (Canadian)</locale>
@@ -221,184 +221,20 @@
         </label>
       </labels>
       <items>
-        <item idno="document" access="1" enabled="1" default="0" value="document" rank="23">
+        <item idno="object" access="1" enabled="1" default="0" value="object">
           <labels>
             <label locale="en_US" preferred="1">
-              <name_singular>Document</name_singular>
-              <name_plural>Documents</name_plural>
-              <description />
-            </label>
-            <label locale="fr_FR" preferred="1">
-              <name_singular>Document</name_singular>
-              <name_plural>Documents</name_plural>
-              <description />
-            </label>
-          </labels>
-          <items>
-            <item idno="case_study" access="1" enabled="1" default="0" value="case_study" rank="556"
-              type="concept">
-              <labels>
-                <label locale="en_US" preferred="1">
-                  <name_singular>Case Study</name_singular>
-                  <name_plural>Case Studies</name_plural>
-                  <description />
-                </label>
-              </labels>
-            </item>
-            <item idno="words" access="1" enabled="1" default="0" value="words" rank="557" type="concept">
-              <labels>
-                <label locale="en_US" preferred="1">
-                  <name_singular>Words into Action</name_singular>
-                  <name_plural>Words into Action</name_plural>
-                  <description>The aim of volume is to gather the expertise and experience of the IF network, and produce a practical, accessible document that can be used in the future by other groups engaging in egalitarian archival practices. This draws on your own practice and knowledge that you would be keen to share about egalitarian archival practices (providing links for any existing resources)</description>
-                </label>
-              </labels>
-            </item>
-            <item idno="report" access="1" enabled="1" default="0" value="report" rank="581" type="concept">
-              <labels>
-                <label locale="en_US" preferred="1">
-                  <name_singular>narrative report</name_singular>
-                  <name_plural>narrative reports</name_plural>
-                  <description />
-                </label>
-              </labels>
-            </item>
-          </items>
-        </item>
-        <item idno="drawing" access="1" enabled="1" default="0" value="drawing" rank="24">
-          <labels>
-            <label locale="fr_FR" preferred="1">
-              <name_singular>Dessin</name_singular>
-              <name_plural>Dessins</name_plural>
-              <description />
-            </label>
-            <label locale="en_US" preferred="1">
-              <name_singular>Drawing</name_singular>
-              <name_plural>Drawings</name_plural>
+              <name_singular>Object</name_singular>
+              <name_plural>Objects</name_plural>
               <description />
             </label>
           </labels>
         </item>
-        <item idno="film_media" access="1" enabled="1" default="0" value="film_media" rank="25">
+        <item idno="alternative" access="1" enabled="1" default="1" value="alternative">
           <labels>
             <label locale="en_US" preferred="1">
-              <name_singular>Film &amp; Media</name_singular>
-              <name_plural>Film &amp; Media</name_plural>
-              <description />
-            </label>
-            <label locale="fr_FR" preferred="1">
-              <name_singular>Film &amp; Média</name_singular>
-              <name_plural>Film &amp; Média</name_plural>
-              <description />
-            </label>
-          </labels>
-        </item>
-        <item idno="painting" access="1" enabled="1" default="0" value="painting" rank="26">
-          <labels>
-            <label locale="en_US" preferred="1">
-              <name_singular>Painting</name_singular>
-              <name_plural>Paintings</name_plural>
-              <description />
-            </label>
-            <label locale="fr_FR" preferred="1">
-              <name_singular>Peinture</name_singular>
-              <name_plural>Peintures</name_plural>
-              <description />
-            </label>
-          </labels>
-        </item>
-        <item idno="photography" access="1" enabled="1" default="0" value="photography" rank="27">
-          <labels>
-            <label locale="fr_FR" preferred="1">
-              <name_singular>Photographie</name_singular>
-              <name_plural>Photographies</name_plural>
-              <description />
-            </label>
-            <label locale="en_US" preferred="1">
-              <name_singular>Photography</name_singular>
-              <name_plural>Photography</name_plural>
-              <description />
-            </label>
-          </labels>
-        </item>
-        <item idno="print" access="1" enabled="1" default="0" value="print" rank="28">
-          <labels>
-            <label locale="fr_FR" preferred="1">
-              <name_singular>Imprimé</name_singular>
-              <name_plural>Imprimés</name_plural>
-              <description />
-            </label>
-            <label locale="en_US" preferred="1">
-              <name_singular>Print</name_singular>
-              <name_plural>Prints</name_plural>
-              <description />
-            </label>
-          </labels>
-        </item>
-        <item idno="sculpture" access="1" enabled="1" default="0" value="sculpture" rank="29">
-          <labels>
-            <label locale="en_US" preferred="1">
-              <name_singular>Sculpture</name_singular>
-              <name_plural>Sculptures</name_plural>
-              <description />
-            </label>
-            <label locale="fr_FR" preferred="1">
-              <name_singular>Sculpture</name_singular>
-              <name_plural>Sculptures</name_plural>
-              <description />
-            </label>
-          </labels>
-        </item>
-        <item idno="dataset" access="1" enabled="1" default="0" value="dataset" rank="30">
-          <labels>
-            <label locale="en_US" preferred="1">
-              <name_singular>Dataset</name_singular>
-              <name_plural>Dataset</name_plural>
-              <description />
-            </label>
-          </labels>
-        </item>
-        <item idno="interview" access="1" enabled="1" default="0" value="interview" rank="31">
-          <labels>
-            <label locale="en_US" preferred="1">
-              <name_singular>Interview</name_singular>
-              <name_plural>Interview</name_plural>
-              <description />
-            </label>
-          </labels>
-        </item>
-        <item idno="recipe" access="1" enabled="1" default="0" value="recipe" rank="32">
-          <labels>
-            <label locale="en_US" preferred="1">
-              <name_singular>Recipe</name_singular>
-              <name_plural>Recipe</name_plural>
-              <description />
-            </label>
-          </labels>
-        </item>
-        <item idno="workshop" access="1" enabled="1" default="0" value="workshop" rank="33">
-          <labels>
-            <label locale="en_US" preferred="1">
-              <name_singular>Workshop</name_singular>
-              <name_plural>Workshop</name_plural>
-              <description />
-            </label>
-          </labels>
-        </item>
-        <item idno="performance" access="1" enabled="1" default="0" value="performance" rank="34">
-          <labels>
-            <label locale="en_US" preferred="1">
-              <name_singular>Performance</name_singular>
-              <name_plural>Performance</name_plural>
-              <description />
-            </label>
-          </labels>
-        </item>
-        <item idno="book" access="1" enabled="1" default="1" value="book" rank="35">
-          <labels>
-            <label locale="en_US" preferred="1">
-              <name_singular>Book</name_singular>
-              <name_plural>Book</name_plural>
+              <name_singular>Alternative</name_singular>
+              <name_plural>Alternatives</name_plural>
               <description />
             </label>
           </labels>
@@ -1073,52 +909,23 @@
         </label>
       </labels>
       <items>
-        <item idno="individual" access="1" enabled="1" default="0" value="individual" rank="94">
+        <item idno="team_member" access="1" enabled="1" default="0" value="team_member">
           <labels>
             <label locale="en_US" preferred="1">
-              <name_singular>individual</name_singular>
-              <name_plural>individuals</name_plural>
-              <description />
-            </label>
-            <label locale="fr_FR" preferred="1">
-              <name_singular>personne physique</name_singular>
-              <name_plural>personnes physiques</name_plural>
+              <name_singular>Team Member</name_singular>
+              <name_plural>Team Members</name_plural>
               <description />
             </label>
           </labels>
         </item>
-        <item idno="organization" access="1" enabled="1" default="0" value="organization" rank="95">
+        <item idno="contributor" access="1" enabled="1" default="0" value="contributor">
           <labels>
-            <label locale="fr_FR" preferred="1">
-              <name_singular>organisation</name_singular>
-              <name_plural>organisations</name_plural>
-              <description />
-            </label>
             <label locale="en_US" preferred="1">
-              <name_singular>organization</name_singular>
-              <name_plural>organizations</name_plural>
+              <name_singular>Contributor</name_singular>
+              <name_plural>Contributors</name_plural>
               <description />
             </label>
           </labels>
-        </item>
-        <item idno="participant" access="1" enabled="1" default="1" value="participant" rank="580"
-          type="concept">
-          <labels>
-            <label locale="en_US" preferred="1">
-              <name_singular>participant</name_singular>
-              <name_plural>participants</name_plural>
-              <description />
-            </label>
-          </labels>
-          <settings>
-            <setting name="entity_class">IND</setting>
-            <setting name="use_suffix_for_orgs">1</setting>
-            <setting name="show_source_for_preferred_labels">0</setting>
-            <setting name="show_source_for_nonpreferred_labels">0</setting>
-            <setting name="show_checked_for_preferred_labels">0</setting>
-            <setting name="show_checked_for_nonpreferred_labels">0</setting>
-            <setting name="render_in_new_menu">1</setting>
-          </settings>
         </item>
       </items>
     </list>
@@ -1883,69 +1690,17 @@
             <setting name="show_source_for_nonpreferred_labels">0</setting>
             <setting name="render_in_new_menu">1</setting>
           </settings>
-          <items>
-          <item idno="sub_col" access="1" enabled="1" default="0" value="case_studies" rank="561"
-              type="concept">
-              <labels>
-                <label locale="en_US" preferred="1">
-                  <name_singular>Sub Collection</name_singular>
-                  <name_plural>Sub Collections</name_plural>
-                  <description />
-                </label>
-              </labels>
-            </item>
-            </items>
-        </item>
-        <item idno="external" access="1" enabled="1" default="0" value="external" rank="126">
+        <items>
+        <item idno="collection" access="1" enabled="1" default="0" value="collection" rank="126">
           <labels>
             <label locale="en_US" preferred="1">
-              <name_singular>External</name_singular>
-              <name_plural>External</name_plural>
-              <description />
-            </label>
-            <label locale="fr_FR" preferred="1">
-              <name_singular>Externe</name_singular>
-              <name_plural>Externes</name_plural>
+              <name_singular>Collection</name_singular>
+              <name_plural>Collections</name_plural>
               <description />
             </label>
           </labels>
         </item>
-        <item idno="collected" access="1" enabled="1" default="0" value="collected_works" rank="558"
-          type="concept">
-          <labels>
-            <label locale="en_US" preferred="1">
-              <name_singular>Collected Work</name_singular>
-              <name_plural>Collected Works</name_plural>
-              <description />
-            </label>
-          </labels>
-          <settings>
-            <setting name="show_source_for_preferred_labels">0</setting>
-            <setting name="show_source_for_nonpreferred_labels">0</setting>
-            <setting name="render_in_new_menu">1</setting>
-          </settings>
-          <items>
-            <item idno="case_studies" access="1" enabled="1" default="0" value="case_studies" rank="559"
-              type="concept">
-              <labels>
-                <label locale="en_US" preferred="1">
-                  <name_singular>Case Studies</name_singular>
-                  <name_plural>Case Studies</name_plural>
-                  <description />
-                </label>
-              </labels>
-            </item>
-            <item idno="words_into_action" access="1" enabled="1" default="0" value="words_into_action"
-              rank="560" type="concept">
-              <labels>
-                <label locale="en_US" preferred="1">
-                  <name_singular>Words into Action</name_singular>
-                  <name_plural>Words into Action</name_plural>
-                  <description />
-                </label>
-              </labels>
-            </item>
-          </items>
+        </items>
         </item>
       </items>
     </list>
@@ -6240,6 +5995,211 @@
       </items>
     </list>
 
+    <list code="resource_types" hierarchical="0" system="0" vocabulary="1">
+      <labels>
+        <label locale="en_US">
+          <name>Resource types</name>
+        </label>
+        <label locale="fr_FR">
+          <name>Types d\'objets</name>
+        </label>
+      </labels>
+      <items>
+        <item idno="document" access="1" enabled="1" default="0" value="document" rank="23">
+          <labels>
+            <label locale="en_US" preferred="1">
+              <name_singular>Document</name_singular>
+              <name_plural>Documents</name_plural>
+              <description />
+            </label>
+            <label locale="fr_FR" preferred="1">
+              <name_singular>Document</name_singular>
+              <name_plural>Documents</name_plural>
+              <description />
+            </label>
+          </labels>
+          <items>
+            <item idno="case_study" access="1" enabled="1" default="0" value="case_study" rank="556"
+              type="concept">
+              <labels>
+                <label locale="en_US" preferred="1">
+                  <name_singular>Case Study</name_singular>
+                  <name_plural>Case Studies</name_plural>
+                  <description />
+                </label>
+              </labels>
+            </item>
+            <item idno="words" access="1" enabled="1" default="0" value="words" rank="557" type="concept">
+              <labels>
+                <label locale="en_US" preferred="1">
+                  <name_singular>Words into Action</name_singular>
+                  <name_plural>Words into Action</name_plural>
+                  <description>The aim of volume is to gather the expertise and experience of the IF network, and produce a practical, accessible document that can be used in the future by other groups engaging in egalitarian archival practices. This draws on your own practice and knowledge that you would be keen to share about egalitarian archival practices (providing links for any existing resources)</description>
+                </label>
+              </labels>
+            </item>
+            <item idno="report" access="1" enabled="1" default="0" value="report" rank="581" type="concept">
+              <labels>
+                <label locale="en_US" preferred="1">
+                  <name_singular>narrative report</name_singular>
+                  <name_plural>narrative reports</name_plural>
+                  <description />
+                </label>
+              </labels>
+            </item>
+          </items>
+        </item>
+        <item idno="drawing" access="1" enabled="1" default="0" value="drawing" rank="24">
+          <labels>
+            <label locale="fr_FR" preferred="1">
+              <name_singular>Dessin</name_singular>
+              <name_plural>Dessins</name_plural>
+              <description />
+            </label>
+            <label locale="en_US" preferred="1">
+              <name_singular>Drawing</name_singular>
+              <name_plural>Drawings</name_plural>
+              <description />
+            </label>
+          </labels>
+        </item>
+        <item idno="film_media" access="1" enabled="1" default="0" value="film_media" rank="25">
+          <labels>
+            <label locale="en_US" preferred="1">
+              <name_singular>Film &amp; Media</name_singular>
+              <name_plural>Film &amp; Media</name_plural>
+              <description />
+            </label>
+            <label locale="fr_FR" preferred="1">
+              <name_singular>Film &amp; Média</name_singular>
+              <name_plural>Film &amp; Média</name_plural>
+              <description />
+            </label>
+          </labels>
+        </item>
+        <item idno="painting" access="1" enabled="1" default="0" value="painting" rank="26">
+          <labels>
+            <label locale="en_US" preferred="1">
+              <name_singular>Painting</name_singular>
+              <name_plural>Paintings</name_plural>
+              <description />
+            </label>
+            <label locale="fr_FR" preferred="1">
+              <name_singular>Peinture</name_singular>
+              <name_plural>Peintures</name_plural>
+              <description />
+            </label>
+          </labels>
+        </item>
+        <item idno="photography" access="1" enabled="1" default="0" value="photography" rank="27">
+          <labels>
+            <label locale="fr_FR" preferred="1">
+              <name_singular>Photographie</name_singular>
+              <name_plural>Photographies</name_plural>
+              <description />
+            </label>
+            <label locale="en_US" preferred="1">
+              <name_singular>Photography</name_singular>
+              <name_plural>Photography</name_plural>
+              <description />
+            </label>
+          </labels>
+        </item>
+        <item idno="print" access="1" enabled="1" default="0" value="print" rank="28">
+          <labels>
+            <label locale="fr_FR" preferred="1">
+              <name_singular>Imprimé</name_singular>
+              <name_plural>Imprimés</name_plural>
+              <description />
+            </label>
+            <label locale="en_US" preferred="1">
+              <name_singular>Print</name_singular>
+              <name_plural>Prints</name_plural>
+              <description />
+            </label>
+          </labels>
+        </item>
+        <item idno="sculpture" access="1" enabled="1" default="0" value="sculpture" rank="29">
+          <labels>
+            <label locale="en_US" preferred="1">
+              <name_singular>Sculpture</name_singular>
+              <name_plural>Sculptures</name_plural>
+              <description />
+            </label>
+            <label locale="fr_FR" preferred="1">
+              <name_singular>Sculpture</name_singular>
+              <name_plural>Sculptures</name_plural>
+              <description />
+            </label>
+          </labels>
+        </item>
+        <item idno="dataset" access="1" enabled="1" default="0" value="dataset" rank="30">
+          <labels>
+            <label locale="en_US" preferred="1">
+              <name_singular>Dataset</name_singular>
+              <name_plural>Dataset</name_plural>
+              <description />
+            </label>
+          </labels>
+        </item>
+        <item idno="interview" access="1" enabled="1" default="0" value="interview" rank="31">
+          <labels>
+            <label locale="en_US" preferred="1">
+              <name_singular>Interview</name_singular>
+              <name_plural>Interview</name_plural>
+              <description />
+            </label>
+          </labels>
+        </item>
+        <item idno="recipe" access="1" enabled="1" default="0" value="recipe" rank="32">
+          <labels>
+            <label locale="en_US" preferred="1">
+              <name_singular>Recipe</name_singular>
+              <name_plural>Recipe</name_plural>
+              <description />
+            </label>
+          </labels>
+        </item>
+        <item idno="workshop" access="1" enabled="1" default="0" value="workshop" rank="33">
+          <labels>
+            <label locale="en_US" preferred="1">
+              <name_singular>Workshop</name_singular>
+              <name_plural>Workshop</name_plural>
+              <description />
+            </label>
+          </labels>
+        </item>
+        <item idno="performance" access="1" enabled="1" default="0" value="performance" rank="34">
+          <labels>
+            <label locale="en_US" preferred="1">
+              <name_singular>Performance</name_singular>
+              <name_plural>Performance</name_plural>
+              <description />
+            </label>
+          </labels>
+        </item>
+        <item idno="book" access="1" enabled="1" default="1" value="book" rank="35">
+          <labels>
+            <label locale="en_US" preferred="1">
+              <name_singular>Book</name_singular>
+              <name_plural>Book</name_plural>
+              <description />
+            </label>
+          </labels>
+        </item>
+        <item idno="3d" access="1" enabled="1" default="0" value="3d">
+          <labels>
+            <label locale="en_US" preferred="1">
+              <name_singular>3D Object</name_singular>
+              <name_plural>3D Objects</name_plural>
+              <description />
+            </label>
+          </labels>
+        </item>
+
+      </items>
+    </list>
+
   </lists>
 
 
@@ -8148,6 +8108,33 @@
                 <setting name="sort">1</setting>
                 <setting name="sortDirection">ASC</setting>
                 <setting name="dontShowDeleteButton">0</setting>
+              </settings>
+            </placement>
+            <placement code="ca_list_items_res_types">
+              <bundle>ca_list_items</bundle>
+              <settings>
+            <setting name="label" locale="en_US">Resource Types</setting>
+                <setting name="add_label" locale="en_US">Add Resosource Types</setting>
+                <setting name="readonly">0</setting>
+                <setting name="expand_collapse_value">bubbles</setting>
+                <setting name="expand_collapse_no_value">bubbles</setting>
+                <setting name="usewysiwygeditor">1</setting>
+                <setting name="dontShowRelationshipTypes">0</setting>
+                <setting name="dont_include_subtypes_in_type_restriction">0</setting>
+                <setting name="list_format">bubbles</setting>
+                <setting name="dontShowAddButton">0</setting>
+                <setting name="dontShowDeleteButton">0</setting>
+                <setting name="minRelationshipsPerRow">0</setting>
+                <setting name="maxRelationshipsPerRow">0</setting>
+                <setting name="disableQuickadd">0</setting>
+                <setting name="sortDirection">ASC</setting>
+                <setting name="disableSorts">0</setting>
+                <setting name="showCount">0</setting>
+                <setting name="numPerPage">100</setting>
+                <setting name="showBatchEditorButton">0</setting>
+                <setting name="showSetRepresentationButton">0</setting>
+                <setting name="restrict_to_lists">resource_types</setting>
+                <setting name="restrictToTermsRelatedToCollection">0</setting>
               </settings>
             </placement>
             <placement code="ca_attribute_exlink">
@@ -13046,6 +13033,14 @@
             <label locale="en_US">
               <typename>cultural context</typename>
               <typename_reverse>cultural context</typename_reverse>
+            </label>
+          </labels>
+        </type>
+        <type code="resource_type" default="0">
+          <labels>
+            <label locale="en_US">
+              <typename>resource type</typename>
+              <typename_reverse>resource type</typename_reverse>
             </label>
           </labels>
         </type>
