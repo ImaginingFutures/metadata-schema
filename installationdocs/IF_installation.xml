@@ -1700,6 +1700,8 @@
             </label>
           </labels>
         </item>
+        </items>
+        </item>
         <item idno="labs" access="1" enabled="1" default="1" value="labs">
           <labels>
             <label locale="en_US" preferred="1">
