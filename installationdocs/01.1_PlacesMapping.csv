@@ -7,7 +7,9 @@ accessible to public
 restricted public access","internal_only
 public_access
 restricted_public_access",
-,,,,,,,,,
+Mapping,8,ca_places.type_id,,,,,,,
+Mapping,9,ca_places.alt_place_name,,"{""delimiter"": "";""} ",,,,,
+Mapping,10,ca_places.georeference,,,,,,,
 ,,,,,,,,,
 ,Setting name,Setting value,Description,Notes,,,,,
 Setting,name,01_Places Mapping,Human readable name of the mapping,Arbitrary text,,,,,

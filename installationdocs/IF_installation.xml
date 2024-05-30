@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <profile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:noNamespaceSchemaLocation="profile.xsd" useForConfiguration="1" infoUrl="">
-  <profileName>IF Custom Profile</profileName>
+  <profileName>IF Custom Profile 2.0</profileName>
   <profileDescription>IF Custom Profile</profileDescription>
-  <profileVersion>1.1.2</profileVersion>
+  <profileVersion>2.0</profileVersion>
   <locales>
     <locale lang="en" country="US">English</locale>
     <locale lang="en" country="CA" dontUseForCataloguing="1">English (Canadian)</locale>
@@ -221,184 +221,20 @@
         </label>
       </labels>
       <items>
-        <item idno="document" access="1" enabled="1" default="0" value="document" rank="23">
+        <item idno="object" access="1" enabled="1" default="0" value="object">
           <labels>
             <label locale="en_US" preferred="1">
-              <name_singular>Document</name_singular>
-              <name_plural>Documents</name_plural>
-              <description />
-            </label>
-            <label locale="fr_FR" preferred="1">
-              <name_singular>Document</name_singular>
-              <name_plural>Documents</name_plural>
-              <description />
-            </label>
-          </labels>
-          <items>
-            <item idno="case_study" access="1" enabled="1" default="0" value="case_study" rank="556"
-              type="concept">
-              <labels>
-                <label locale="en_US" preferred="1">
-                  <name_singular>Case Study</name_singular>
-                  <name_plural>Case Studies</name_plural>
-                  <description />
-                </label>
-              </labels>
-            </item>
-            <item idno="words" access="1" enabled="1" default="0" value="words" rank="557" type="concept">
-              <labels>
-                <label locale="en_US" preferred="1">
-                  <name_singular>Words into Action</name_singular>
-                  <name_plural>Words into Action</name_plural>
-                  <description>The aim of volume is to gather the expertise and experience of the IF network, and produce a practical, accessible document that can be used in the future by other groups engaging in egalitarian archival practices. This draws on your own practice and knowledge that you would be keen to share about egalitarian archival practices (providing links for any existing resources)</description>
-                </label>
-              </labels>
-            </item>
-            <item idno="report" access="1" enabled="1" default="0" value="report" rank="581" type="concept">
-              <labels>
-                <label locale="en_US" preferred="1">
-                  <name_singular>narrative report</name_singular>
-                  <name_plural>narrative reports</name_plural>
-                  <description />
-                </label>
-              </labels>
-            </item>
-          </items>
-        </item>
-        <item idno="drawing" access="1" enabled="1" default="0" value="drawing" rank="24">
-          <labels>
-            <label locale="fr_FR" preferred="1">
-              <name_singular>Dessin</name_singular>
-              <name_plural>Dessins</name_plural>
-              <description />
-            </label>
-            <label locale="en_US" preferred="1">
-              <name_singular>Drawing</name_singular>
-              <name_plural>Drawings</name_plural>
+              <name_singular>Object</name_singular>
+              <name_plural>Objects</name_plural>
               <description />
             </label>
           </labels>
         </item>
-        <item idno="film_media" access="1" enabled="1" default="0" value="film_media" rank="25">
+        <item idno="alternative" access="1" enabled="1" default="1" value="alternative">
           <labels>
             <label locale="en_US" preferred="1">
-              <name_singular>Film &amp; Media</name_singular>
-              <name_plural>Film &amp; Media</name_plural>
-              <description />
-            </label>
-            <label locale="fr_FR" preferred="1">
-              <name_singular>Film &amp; Média</name_singular>
-              <name_plural>Film &amp; Média</name_plural>
-              <description />
-            </label>
-          </labels>
-        </item>
-        <item idno="painting" access="1" enabled="1" default="0" value="painting" rank="26">
-          <labels>
-            <label locale="en_US" preferred="1">
-              <name_singular>Painting</name_singular>
-              <name_plural>Paintings</name_plural>
-              <description />
-            </label>
-            <label locale="fr_FR" preferred="1">
-              <name_singular>Peinture</name_singular>
-              <name_plural>Peintures</name_plural>
-              <description />
-            </label>
-          </labels>
-        </item>
-        <item idno="photography" access="1" enabled="1" default="0" value="photography" rank="27">
-          <labels>
-            <label locale="fr_FR" preferred="1">
-              <name_singular>Photographie</name_singular>
-              <name_plural>Photographies</name_plural>
-              <description />
-            </label>
-            <label locale="en_US" preferred="1">
-              <name_singular>Photography</name_singular>
-              <name_plural>Photography</name_plural>
-              <description />
-            </label>
-          </labels>
-        </item>
-        <item idno="print" access="1" enabled="1" default="0" value="print" rank="28">
-          <labels>
-            <label locale="fr_FR" preferred="1">
-              <name_singular>Imprimé</name_singular>
-              <name_plural>Imprimés</name_plural>
-              <description />
-            </label>
-            <label locale="en_US" preferred="1">
-              <name_singular>Print</name_singular>
-              <name_plural>Prints</name_plural>
-              <description />
-            </label>
-          </labels>
-        </item>
-        <item idno="sculpture" access="1" enabled="1" default="0" value="sculpture" rank="29">
-          <labels>
-            <label locale="en_US" preferred="1">
-              <name_singular>Sculpture</name_singular>
-              <name_plural>Sculptures</name_plural>
-              <description />
-            </label>
-            <label locale="fr_FR" preferred="1">
-              <name_singular>Sculpture</name_singular>
-              <name_plural>Sculptures</name_plural>
-              <description />
-            </label>
-          </labels>
-        </item>
-        <item idno="dataset" access="1" enabled="1" default="0" value="dataset" rank="30">
-          <labels>
-            <label locale="en_US" preferred="1">
-              <name_singular>Dataset</name_singular>
-              <name_plural>Dataset</name_plural>
-              <description />
-            </label>
-          </labels>
-        </item>
-        <item idno="interview" access="1" enabled="1" default="0" value="interview" rank="31">
-          <labels>
-            <label locale="en_US" preferred="1">
-              <name_singular>Interview</name_singular>
-              <name_plural>Interview</name_plural>
-              <description />
-            </label>
-          </labels>
-        </item>
-        <item idno="recipe" access="1" enabled="1" default="0" value="recipe" rank="32">
-          <labels>
-            <label locale="en_US" preferred="1">
-              <name_singular>Recipe</name_singular>
-              <name_plural>Recipe</name_plural>
-              <description />
-            </label>
-          </labels>
-        </item>
-        <item idno="workshop" access="1" enabled="1" default="0" value="workshop" rank="33">
-          <labels>
-            <label locale="en_US" preferred="1">
-              <name_singular>Workshop</name_singular>
-              <name_plural>Workshop</name_plural>
-              <description />
-            </label>
-          </labels>
-        </item>
-        <item idno="performance" access="1" enabled="1" default="0" value="performance" rank="34">
-          <labels>
-            <label locale="en_US" preferred="1">
-              <name_singular>Performance</name_singular>
-              <name_plural>Performance</name_plural>
-              <description />
-            </label>
-          </labels>
-        </item>
-        <item idno="book" access="1" enabled="1" default="1" value="book" rank="35">
-          <labels>
-            <label locale="en_US" preferred="1">
-              <name_singular>Book</name_singular>
-              <name_plural>Book</name_plural>
+              <name_singular>Alternative</name_singular>
+              <name_plural>Alternatives</name_plural>
               <description />
             </label>
           </labels>
@@ -1073,52 +909,23 @@
         </label>
       </labels>
       <items>
-        <item idno="individual" access="1" enabled="1" default="0" value="individual" rank="94">
+        <item idno="team_member" access="1" enabled="1" default="0" value="team_member">
           <labels>
             <label locale="en_US" preferred="1">
-              <name_singular>individual</name_singular>
-              <name_plural>individuals</name_plural>
-              <description />
-            </label>
-            <label locale="fr_FR" preferred="1">
-              <name_singular>personne physique</name_singular>
-              <name_plural>personnes physiques</name_plural>
+              <name_singular>Team Member</name_singular>
+              <name_plural>Team Members</name_plural>
               <description />
             </label>
           </labels>
         </item>
-        <item idno="organization" access="1" enabled="1" default="0" value="organization" rank="95">
+        <item idno="contributor" access="1" enabled="1" default="0" value="contributor">
           <labels>
-            <label locale="fr_FR" preferred="1">
-              <name_singular>organisation</name_singular>
-              <name_plural>organisations</name_plural>
-              <description />
-            </label>
             <label locale="en_US" preferred="1">
-              <name_singular>organization</name_singular>
-              <name_plural>organizations</name_plural>
+              <name_singular>Contributor</name_singular>
+              <name_plural>Contributors</name_plural>
               <description />
             </label>
           </labels>
-        </item>
-        <item idno="participant" access="1" enabled="1" default="1" value="participant" rank="580"
-          type="concept">
-          <labels>
-            <label locale="en_US" preferred="1">
-              <name_singular>participant</name_singular>
-              <name_plural>participants</name_plural>
-              <description />
-            </label>
-          </labels>
-          <settings>
-            <setting name="entity_class">IND</setting>
-            <setting name="use_suffix_for_orgs">1</setting>
-            <setting name="show_source_for_preferred_labels">0</setting>
-            <setting name="show_source_for_nonpreferred_labels">0</setting>
-            <setting name="show_checked_for_preferred_labels">0</setting>
-            <setting name="show_checked_for_nonpreferred_labels">0</setting>
-            <setting name="render_in_new_menu">1</setting>
-          </settings>
         </item>
       </items>
     </list>
@@ -1883,57 +1690,17 @@
             <setting name="show_source_for_nonpreferred_labels">0</setting>
             <setting name="render_in_new_menu">1</setting>
           </settings>
-        </item>
-        <item idno="external" access="1" enabled="1" default="0" value="external" rank="126">
+        <items>
+        <item idno="collection" access="1" enabled="1" default="0" value="collection" rank="126">
           <labels>
             <label locale="en_US" preferred="1">
-              <name_singular>External</name_singular>
-              <name_plural>External</name_plural>
-              <description />
-            </label>
-            <label locale="fr_FR" preferred="1">
-              <name_singular>Externe</name_singular>
-              <name_plural>Externes</name_plural>
+              <name_singular>Collection</name_singular>
+              <name_plural>Collections</name_plural>
               <description />
             </label>
           </labels>
         </item>
-        <item idno="collected" access="1" enabled="1" default="0" value="collected_works" rank="558"
-          type="concept">
-          <labels>
-            <label locale="en_US" preferred="1">
-              <name_singular>Collected Work</name_singular>
-              <name_plural>Collected Works</name_plural>
-              <description />
-            </label>
-          </labels>
-          <settings>
-            <setting name="show_source_for_preferred_labels">0</setting>
-            <setting name="show_source_for_nonpreferred_labels">0</setting>
-            <setting name="render_in_new_menu">1</setting>
-          </settings>
-          <items>
-            <item idno="case_studies" access="1" enabled="1" default="0" value="case_studies" rank="559"
-              type="concept">
-              <labels>
-                <label locale="en_US" preferred="1">
-                  <name_singular>Case Studies</name_singular>
-                  <name_plural>Case Studies</name_plural>
-                  <description />
-                </label>
-              </labels>
-            </item>
-            <item idno="words_into_action" access="1" enabled="1" default="0" value="words_into_action"
-              rank="560" type="concept">
-              <labels>
-                <label locale="en_US" preferred="1">
-                  <name_singular>Words into Action</name_singular>
-                  <name_plural>Words into Action</name_plural>
-                  <description />
-                </label>
-              </labels>
-            </item>
-          </items>
+        </items>
         </item>
       </items>
     </list>
@@ -3937,10 +3704,10 @@
         </item>
       </items>
     </list>
-    <list code="themeslist" hierarchical="0" system="0" vocabulary="1">
+    <list code="keywordslist" hierarchical="0" system="0" vocabulary="1">
       <labels>
         <label locale="en_US">
-          <name>Themes</name>
+          <name>Keywords</name>
         </label>
       </labels>
       <items>
@@ -5631,6 +5398,15 @@
             </label>
           </labels>
         </item>
+        <item idno="prjtype_06" access="1" enabled="1" default="1" value="prjtype_06" rank="516">
+          <labels>
+            <label locale="en_US" preferred="1">
+              <name_singular>Further Initiatives (2023-2024)</name_singular>
+              <name_plural>Further Initiatives (2023-2024)</name_plural>
+              <description />
+            </label>
+          </labels>
+        </item>
       </items>
     </list>
 
@@ -5652,8 +5428,8 @@
         <item idno="reg_02" access="1" enabled="1" default="1">
           <labels>
             <label locale="en_US" preferred="1">
-              <name_singular>Asia Pasific</name_singular>
-              <name_plural>Asia Pasific</name_plural>
+              <name_singular>Asia Pacific</name_singular>
+              <name_plural>Asia Pacific</name_plural>
             </label>
           </labels>
         </item>
@@ -6172,7 +5948,266 @@
         </item>
       </items>
     </list>
+
+    <list code="exresourcelist" hierarchical="0" system="0" vocabulary="1">
+      <labels>
+        <label locale="en_US">
+          <name>External Resources</name>
+        </label>
+      </labels>
+      <items>
+        <item idno="exres_01" access="1" enabled="1" default="0" value="auths_01" rank="549">
+          <labels>
+            <label locale="en_US" preferred="1">
+              <name_singular>Exhibition</name_singular>
+              <name_plural>Exhibition</name_plural>
+              <description></description>
+            </label>
+          </labels>
+        </item>
+        <item idno="exres_02" access="1" enabled="1" default="0" value="exres_02" rank="550">
+          <labels>
+            <label locale="en_US" preferred="1">
+              <name_singular>Map</name_singular>
+              <name_plural>Map</name_plural>
+              <description></description>
+            </label>
+          </labels>
+        </item>
+        <item idno="exres_03" access="1" enabled="1" default="0" value="exres_03" rank="551">
+          <labels>
+            <label locale="en_US" preferred="1">
+              <name_singular>Channel</name_singular>
+              <name_plural>Channel</name_plural>
+              <description></description>
+            </label>
+          </labels>
+        </item>
+        <item idno="exres_04" access="1" enabled="1" default="1" value="exres_04" rank="552">
+          <labels>
+            <label locale="en_US" preferred="1">
+              <name_singular>Interactive Form</name_singular>
+              <name_plural>Interactive Form</name_plural>
+              <description></description>
+            </label>
+          </labels>
+        </item>
+      </items>
+    </list>
+
+    <list code="resource_types" hierarchical="0" system="0" vocabulary="1">
+      <labels>
+        <label locale="en_US">
+          <name>Resource types</name>
+        </label>
+        <label locale="fr_FR">
+          <name>Types d\'objets</name>
+        </label>
+      </labels>
+      <items>
+        <item idno="document" access="1" enabled="1" default="0" value="document" rank="23">
+          <labels>
+            <label locale="en_US" preferred="1">
+              <name_singular>Document</name_singular>
+              <name_plural>Documents</name_plural>
+              <description />
+            </label>
+            <label locale="fr_FR" preferred="1">
+              <name_singular>Document</name_singular>
+              <name_plural>Documents</name_plural>
+              <description />
+            </label>
+          </labels>
+          <items>
+            <item idno="case_study" access="1" enabled="1" default="0" value="case_study" rank="556"
+              type="concept">
+              <labels>
+                <label locale="en_US" preferred="1">
+                  <name_singular>Case Study</name_singular>
+                  <name_plural>Case Studies</name_plural>
+                  <description />
+                </label>
+              </labels>
+            </item>
+            <item idno="words" access="1" enabled="1" default="0" value="words" rank="557" type="concept">
+              <labels>
+                <label locale="en_US" preferred="1">
+                  <name_singular>Words into Action</name_singular>
+                  <name_plural>Words into Action</name_plural>
+                  <description>The aim of volume is to gather the expertise and experience of the IF network, and produce a practical, accessible document that can be used in the future by other groups engaging in egalitarian archival practices. This draws on your own practice and knowledge that you would be keen to share about egalitarian archival practices (providing links for any existing resources)</description>
+                </label>
+              </labels>
+            </item>
+            <item idno="report" access="1" enabled="1" default="0" value="report" rank="581" type="concept">
+              <labels>
+                <label locale="en_US" preferred="1">
+                  <name_singular>narrative report</name_singular>
+                  <name_plural>narrative reports</name_plural>
+                  <description />
+                </label>
+              </labels>
+            </item>
+          </items>
+        </item>
+        <item idno="drawing" access="1" enabled="1" default="0" value="drawing" rank="24">
+          <labels>
+            <label locale="fr_FR" preferred="1">
+              <name_singular>Dessin</name_singular>
+              <name_plural>Dessins</name_plural>
+              <description />
+            </label>
+            <label locale="en_US" preferred="1">
+              <name_singular>Drawing</name_singular>
+              <name_plural>Drawings</name_plural>
+              <description />
+            </label>
+          </labels>
+        </item>
+        <item idno="film_media" access="1" enabled="1" default="0" value="film_media" rank="25">
+          <labels>
+            <label locale="en_US" preferred="1">
+              <name_singular>Film &amp; Media</name_singular>
+              <name_plural>Film &amp; Media</name_plural>
+              <description />
+            </label>
+            <label locale="fr_FR" preferred="1">
+              <name_singular>Film &amp; Média</name_singular>
+              <name_plural>Film &amp; Média</name_plural>
+              <description />
+            </label>
+          </labels>
+        </item>
+        <item idno="painting" access="1" enabled="1" default="0" value="painting" rank="26">
+          <labels>
+            <label locale="en_US" preferred="1">
+              <name_singular>Painting</name_singular>
+              <name_plural>Paintings</name_plural>
+              <description />
+            </label>
+            <label locale="fr_FR" preferred="1">
+              <name_singular>Peinture</name_singular>
+              <name_plural>Peintures</name_plural>
+              <description />
+            </label>
+          </labels>
+        </item>
+        <item idno="photography" access="1" enabled="1" default="0" value="photography" rank="27">
+          <labels>
+            <label locale="fr_FR" preferred="1">
+              <name_singular>Photographie</name_singular>
+              <name_plural>Photographies</name_plural>
+              <description />
+            </label>
+            <label locale="en_US" preferred="1">
+              <name_singular>Photography</name_singular>
+              <name_plural>Photography</name_plural>
+              <description />
+            </label>
+          </labels>
+        </item>
+        <item idno="print" access="1" enabled="1" default="0" value="print" rank="28">
+          <labels>
+            <label locale="fr_FR" preferred="1">
+              <name_singular>Imprimé</name_singular>
+              <name_plural>Imprimés</name_plural>
+              <description />
+            </label>
+            <label locale="en_US" preferred="1">
+              <name_singular>Print</name_singular>
+              <name_plural>Prints</name_plural>
+              <description />
+            </label>
+          </labels>
+        </item>
+        <item idno="sculpture" access="1" enabled="1" default="0" value="sculpture" rank="29">
+          <labels>
+            <label locale="en_US" preferred="1">
+              <name_singular>Sculpture</name_singular>
+              <name_plural>Sculptures</name_plural>
+              <description />
+            </label>
+            <label locale="fr_FR" preferred="1">
+              <name_singular>Sculpture</name_singular>
+              <name_plural>Sculptures</name_plural>
+              <description />
+            </label>
+          </labels>
+        </item>
+        <item idno="dataset" access="1" enabled="1" default="0" value="dataset" rank="30">
+          <labels>
+            <label locale="en_US" preferred="1">
+              <name_singular>Dataset</name_singular>
+              <name_plural>Dataset</name_plural>
+              <description />
+            </label>
+          </labels>
+        </item>
+        <item idno="interview" access="1" enabled="1" default="0" value="interview" rank="31">
+          <labels>
+            <label locale="en_US" preferred="1">
+              <name_singular>Interview</name_singular>
+              <name_plural>Interview</name_plural>
+              <description />
+            </label>
+          </labels>
+        </item>
+        <item idno="recipe" access="1" enabled="1" default="0" value="recipe" rank="32">
+          <labels>
+            <label locale="en_US" preferred="1">
+              <name_singular>Recipe</name_singular>
+              <name_plural>Recipe</name_plural>
+              <description />
+            </label>
+          </labels>
+        </item>
+        <item idno="workshop" access="1" enabled="1" default="0" value="workshop" rank="33">
+          <labels>
+            <label locale="en_US" preferred="1">
+              <name_singular>Workshop</name_singular>
+              <name_plural>Workshop</name_plural>
+              <description />
+            </label>
+          </labels>
+        </item>
+        <item idno="performance" access="1" enabled="1" default="0" value="performance" rank="34">
+          <labels>
+            <label locale="en_US" preferred="1">
+              <name_singular>Performance</name_singular>
+              <name_plural>Performance</name_plural>
+              <description />
+            </label>
+          </labels>
+        </item>
+        <item idno="book" access="1" enabled="1" default="1" value="book" rank="35">
+          <labels>
+            <label locale="en_US" preferred="1">
+              <name_singular>Book</name_singular>
+              <name_plural>Book</name_plural>
+              <description />
+            </label>
+          </labels>
+        </item>
+        <item idno="3d" access="1" enabled="1" default="0" value="3d">
+          <labels>
+            <label locale="en_US" preferred="1">
+              <name_singular>3D Object</name_singular>
+              <name_plural>3D Objects</name_plural>
+              <description />
+            </label>
+          </labels>
+        </item>
+
+      </items>
+    </list>
+
   </lists>
+
+
+  
+
+<!-- METADATA ELEMENTS-->
+
+
   <elementSets>
     <metadataElement code="set_description" datatype="Text">
       <labels>
@@ -6646,9 +6681,7 @@
       <labels>
         <label locale="en_US">
           <name>Member of</name>
-          <description>Shows the parent collection or object which this record related
-                    to/part
-                    of.</description>
+          <description>Shows the parent collection or object which this record related to/part of.</description>
         </label>
       </labels>
       <settings>
@@ -6657,6 +6690,14 @@
       <typeRestrictions>
         <restriction>
           <table>ca_objects</table>
+          <settings>
+            <setting name="minAttributesPerRow">0</setting>
+            <setting name="maxAttributesPerRow">0</setting>
+            <setting name="minimumAttributeBundlesToDisplay">1</setting>
+          </settings>
+        </restriction>
+        <restriction>
+          <table>ca_collections</table>
           <settings>
             <setting name="minAttributesPerRow">0</setting>
             <setting name="maxAttributesPerRow">0</setting>
@@ -6825,6 +6866,90 @@
             <setting name="minimumAttributeBundlesToDisplay">1</setting>
           </settings>
         </restriction>
+      </typeRestrictions>
+    </metadataElement>    
+    <metadataElement code="synopsis" datatype="Text">
+      <labels>
+        <label locale="en_US">
+          <name>Synopsis and Position</name>
+          <description></description>
+        </label>
+      </labels>
+      <settings>
+        <setting name="usewysiwygeditor">1</setting>
+        <setting name="fieldWidth">90</setting>
+        <setting name="fieldHeight">3</setting>
+      </settings>
+      <typeRestrictions>
+        <restriction>
+          <table>ca_collections</table>
+          <settings>
+            <setting name="minAttributesPerRow">0</setting>
+            <setting name="maxAttributesPerRow">1</setting>
+            <setting name="minimumAttributeBundlesToDisplay">1</setting>
+          </settings>
+        </restriction>
+      </typeRestrictions>
+    </metadataElement>
+    <metadataElement code="objectivesmethods" datatype="Text">
+      <labels>
+        <label locale="en_US">
+          <name>Objectives and Methods</name>
+          <description></description>
+        </label>
+      </labels>
+      <settings>
+        <setting name="usewysiwygeditor">1</setting>
+        <setting name="fieldWidth">90</setting>
+        <setting name="fieldHeight">3</setting>
+      </settings>
+      <typeRestrictions>
+        <restriction>
+          <table>ca_collections</table>
+          <settings>
+            <setting name="minAttributesPerRow">0</setting>
+            <setting name="maxAttributesPerRow">1</setting>
+            <setting name="minimumAttributeBundlesToDisplay">1</setting>
+          </settings>
+        </restriction>
+      </typeRestrictions>
+    </metadataElement>
+    <metadataElement code="workshopsevents" datatype="Text">
+      <labels>
+        <label locale="en_US">
+          <name>Workshops and Events</name>
+          <description></description>
+        </label>
+      </labels>
+      <settings>
+        <setting name="usewysiwygeditor">1</setting>
+        <setting name="fieldWidth">90</setting>
+        <setting name="fieldHeight">3</setting>
+      </settings>
+      <typeRestrictions>
+        <restriction>
+          <table>ca_collections</table>
+          <settings>
+            <setting name="minAttributesPerRow">0</setting>
+            <setting name="maxAttributesPerRow">1</setting>
+            <setting name="minimumAttributeBundlesToDisplay">1</setting>
+          </settings>
+        </restriction>
+      </typeRestrictions>
+    </metadataElement>
+    <metadataElement code="activities" datatype="Text">
+      <labels>
+        <label locale="en_US">
+          <name>Activities</name>
+          <description></description>
+        </label>
+      </labels>
+      <settings>
+        <setting name="usewysiwygeditor">1</setting>
+        <setting name="fieldWidth">90</setting>
+        <setting name="fieldHeight">3</setting>
+      </settings>
+      <typeRestrictions>
         <restriction>
           <table>ca_collections</table>
           <settings>
@@ -6968,36 +7093,12 @@
         </restriction>
       </typeRestrictions>
     </metadataElement>
-    <metadataElement code="keyword" datatype="Text">
-      <labels>
-        <label locale="en_US">
-          <name>Keywords</name>
-          <description>Descriptive words that are most significant and unique to the
-                    resource.</description>
-        </label>
-      </labels>
-      <settings>
-        <setting name="fieldWidth">30</setting>
-      </settings>
-      <typeRestrictions>
-        <restriction>
-          <table>ca_objects</table>
-          <settings>
-            <setting name="minAttributesPerRow">0</setting>
-            <setting name="maxAttributesPerRow">0</setting>
-            <setting name="minimumAttributeBundlesToDisplay">1</setting>
-          </settings>
-        </restriction>
-      </typeRestrictions>
-    </metadataElement>
+
     <metadataElement code="notes" datatype="Text">
       <labels>
         <label locale="en_US">
           <name>Notes</name>
-          <description>Any information that you want to add about this data, if you can
-                    not
-                    find a
-                    metadata field according to your need.</description>
+          <description>Any information that you want to add about this data, if you can not find a metadata field according to your need.</description>
         </label>
       </labels>
       <settings>
@@ -7026,6 +7127,7 @@
         <setting name="fieldWidth">90</setting>
         <setting name="fieldHeight">3</setting>
         <setting name="defaultZoomLevel">-1</setting>
+        <setting name="displayDelimiter">;</setting>
       </settings>
       <typeRestrictions>
         <restriction>
@@ -7040,8 +7142,8 @@
           <table>ca_places</table>
           <settings>
             <setting name="minAttributesPerRow">0</setting>
-            <setting name="maxAttributesPerRow">0</setting>
-            <setting name="minimumAttributeBundlesToDisplay">0</setting>
+            <setting name="maxAttributesPerRow">1</setting>
+            <setting name="minimumAttributeBundlesToDisplay">1</setting>
           </settings>
         </restriction>
       </typeRestrictions>
@@ -7239,6 +7341,14 @@
         <setting name="auto_shrink">1</setting>
       </settings>
       <typeRestrictions>
+        <restriction>
+          <table>ca_object_representations</table>
+          <settings>
+            <setting name="minAttributesPerRow">0</setting>
+            <setting name="maxAttributesPerRow">0</setting>
+            <setting name="minimumAttributeBundlesToDisplay">1</setting>
+          </settings>
+        </restriction>
         <restriction>
           <table>ca_objects</table>
           <settings>
@@ -7534,130 +7644,7 @@
         </restriction>
       </typeRestrictions>
     </metadataElement>
-    <metadataElement code="authorities" datatype="Container">
-      <labels>
-        <label locale="en_US">
-          <name>Authority Sources</name>
-          <description>Link to participants record on VIAF, IF website, ORCID, Wikidata.</description>
-        </label>
-      </labels>
-      <elements>
-        <metadataElement code="authurl" datatype="Url">
-          <labels>
-            <label locale="en_US">
-              <name>Source URL</name>
-              <description>Provide the URL of the source.</description>
-            </label>
-          </labels>
-          <settings>
-            <setting name="fieldWidth">40</setting>
-            <setting name="fieldHeight">1</setting>
-            <setting name="minChars">0</setting>
-            <setting name="maxChars">65535</setting>
-            <setting name="doesNotTakeLocale">1</setting>
-            <setting name="singleValuePerLocale">0</setting>
-            <setting name="requireValue">0</setting>
-            <setting name="allowDuplicateValues">0</setting>
-            <setting name="raiseErrorOnDuplicateValue">0</setting>
-            <setting name="canBeUsedInSort">1</setting>
-            <setting name="suggestExistingValues">0</setting>
-            <setting name="suggestExistingValueSort">value</setting>
-            <setting name="canBeUsedInSearchForm">1</setting>
-            <setting name="canBeUsedInDisplay">1</setting>
-            <setting name="canMakePDF">0</setting>
-            <setting name="canMakePDFForValue">0</setting>
-            <setting name="displayDelimiter">; </setting>
-            <setting name="includeSourceData">0</setting>
-            <setting name="regex" />
-            <setting name="default_text" />
-            <setting name="displayTemplate" />
-          </settings>
-        </metadataElement>
-        <metadataElement code="authtype" datatype="List" list="authoritylist">
-          <labels>
-            <label locale="en_US">
-              <name>Source Type</name>
-              <description>Provide the source type.</description>
-            </label>
-          </labels>
-          <settings>
-            <setting name="listWidth">40</setting>
-            <setting name="listHeight">200px</setting>
-            <setting name="doesNotTakeLocale">1</setting>
-            <setting name="singleValuePerLocale">0</setting>
-            <setting name="requireValue">0</setting>
-            <setting name="allowDuplicateValues">0</setting>
-            <setting name="raiseErrorOnDuplicateValue">0</setting>
-            <setting name="implicitNullOption">0</setting>
-            <setting name="nullOptionText">Not set</setting>
-            <setting name="useDefaultWhenNull">0</setting>
-            <setting name="canBeUsedInSort">1</setting>
-            <setting name="render">1</setting>
-            <setting name="auto_shrink">0</setting>
-            <setting name="maxColumns">3</setting>
-            <setting name="canBeUsedInSearchForm">1</setting>
-            <setting name="canBeUsedInDisplay">1</setting>
-            <setting name="canMakePDF">0</setting>
-            <setting name="canMakePDFForValue">0</setting>
-            <setting name="displayDelimiter">; </setting>
-            <setting name="minimizeExistingValues">0</setting>
-            <setting name="deferHierarchyLoad">0</setting>
-            <setting name="separateDisabledValues">0</setting>
-            <setting name="hideDisabledValues">0</setting>
-            <setting name="includeSourceData">0</setting>
-            <setting name="displayTemplate" />
-            <setting name="restrictToTypes" />
-            <setting name="currentSelectionDisplayFormat" />
-          </settings>
-        </metadataElement>
-      </elements>
-      <typeRestrictions>
-        <restriction>
-          <table>ca_entities</table>
-          <settings>
-            <setting name="minAttributesPerRow">0</setting>
-            <setting name="maxAttributesPerRow">0</setting>
-            <setting name="minimumAttributeBundlesToDisplay">1</setting>
-          </settings>
-        </restriction>
-      </typeRestrictions>
-    </metadataElement>
-    <metadataElement code="prjtype" datatype="List" list="prjtypelist">
-      <labels>
-        <label locale="en_US">
-          <name>Project Type</name>
-          <description>The name of the Imagining Futures Project Type.</description>
-        </label>
-      </labels>
-      <typeRestrictions>
-        <restriction>
-          <table>ca_collections</table>
-          <settings>
-            <setting name="minAttributesPerRow">0</setting>
-            <setting name="maxAttributesPerRow">0</setting>
-            <setting name="minimumAttributeBundlesToDisplay">1</setting>
-          </settings>
-        </restriction>
-      </typeRestrictions>
-    </metadataElement>
-    <metadataElement code="prjregion" datatype="List" list="prjregionlist">
-      <labels>
-        <label locale="en_US">
-          <name>Project Region</name>
-          <description>The name of the Imagining Futures Project Regions.</description>
-        </label>
-      </labels>
-      <typeRestrictions>
-        <restriction>
-          <table>ca_collections</table>
-          <settings>
-            <setting name="minAttributesPerRow">0</setting>
-            <setting name="maxAttributesPerRow">0</setting>
-            <setting name="minimumAttributeBundlesToDisplay">1</setting>
-          </settings>
-        </restriction>
-      </typeRestrictions>
-    </metadataElement>
+
     <metadataElement code="ifwebpage" datatype="Url">
       <labels>
         <label locale="en_US">
@@ -7700,6 +7687,161 @@
         </restriction>
       </typeRestrictions>
     </metadataElement>
+
+    <metadataElement code="exresource" datatype="Container">
+      <labels>
+        <label locale="en_US">
+          <name>External Resource</name>
+          <description>External exhibition.</description>
+        </label>
+      </labels>
+      <elements>
+        <metadataElement code="exname" datatype="Text">
+          <labels>
+            <label locale="en_US">
+              <name>Resource Name</name>
+              <description>Provide the name of the resource.</description>
+            </label>
+          </labels>
+          <settings>
+            <setting name="fieldWidth">40</setting>
+            <setting name="fieldHeight">1</setting>
+            <setting name="minChars">0</setting>
+            <setting name="maxChars">65535</setting>
+            <setting name="doesNotTakeLocale">1</setting>
+            <setting name="singleValuePerLocale">0</setting>
+            <setting name="requireValue">0</setting>
+            <setting name="allowDuplicateValues">0</setting>
+            <setting name="raiseErrorOnDuplicateValue">0</setting>
+            <setting name="canBeUsedInSort">1</setting>
+            <setting name="suggestExistingValues">0</setting>
+            <setting name="suggestExistingValueSort">value</setting>
+            <setting name="canBeUsedInSearchForm">1</setting>
+            <setting name="canBeUsedInDisplay">1</setting>
+            <setting name="canMakePDF">0</setting>
+            <setting name="canMakePDFForValue">0</setting>
+            <setting name="displayDelimiter">; </setting>
+            <setting name="includeSourceData">0</setting>
+            <setting name="regex" />
+            <setting name="default_text" />
+            <setting name="displayTemplate" />
+          </settings>
+        </metadataElement>
+        <metadataElement code="exurl" datatype="Url">
+          <labels>
+            <label locale="en_US">
+              <name>Resource URL</name>
+              <description>Provide the URL of the resource.</description>
+            </label>
+          </labels>
+          <settings>
+            <setting name="fieldWidth">40</setting>
+            <setting name="fieldHeight">1</setting>
+            <setting name="minChars">0</setting>
+            <setting name="maxChars">65535</setting>
+            <setting name="doesNotTakeLocale">1</setting>
+            <setting name="singleValuePerLocale">0</setting>
+            <setting name="requireValue">0</setting>
+            <setting name="allowDuplicateValues">0</setting>
+            <setting name="raiseErrorOnDuplicateValue">0</setting>
+            <setting name="canBeUsedInSort">1</setting>
+            <setting name="suggestExistingValues">0</setting>
+            <setting name="suggestExistingValueSort">value</setting>
+            <setting name="canBeUsedInSearchForm">1</setting>
+            <setting name="canBeUsedInDisplay">1</setting>
+            <setting name="canMakePDF">0</setting>
+            <setting name="canMakePDFForValue">0</setting>
+            <setting name="displayDelimiter">; </setting>
+            <setting name="includeSourceData">0</setting>
+            <setting name="regex" />
+            <setting name="default_text" />
+            <setting name="displayTemplate" />
+          </settings>
+        </metadataElement>
+        <metadataElement code="exlist" datatype="List" list="exresourcelist">
+          <labels>
+            <label locale="en_US">
+              <name>Resource Type</name>
+              <description>Provide the external resource type.</description>
+            </label>
+          </labels>
+          <settings>
+            <setting name="listWidth">40</setting>
+            <setting name="listHeight">200px</setting>
+            <setting name="doesNotTakeLocale">1</setting>
+            <setting name="singleValuePerLocale">0</setting>
+            <setting name="requireValue">0</setting>
+            <setting name="allowDuplicateValues">0</setting>
+            <setting name="raiseErrorOnDuplicateValue">0</setting>
+            <setting name="implicitNullOption">0</setting>
+            <setting name="nullOptionText">Not set</setting>
+            <setting name="useDefaultWhenNull">0</setting>
+            <setting name="canBeUsedInSort">1</setting>
+            <setting name="render">1</setting>
+            <setting name="auto_shrink">0</setting>
+            <setting name="maxColumns">3</setting>
+            <setting name="canBeUsedInSearchForm">1</setting>
+            <setting name="canBeUsedInDisplay">1</setting>
+            <setting name="canMakePDF">0</setting>
+            <setting name="canMakePDFForValue">0</setting>
+            <setting name="displayDelimiter">; </setting>
+            <setting name="minimizeExistingValues">0</setting>
+            <setting name="deferHierarchyLoad">0</setting>
+            <setting name="separateDisabledValues">0</setting>
+            <setting name="hideDisabledValues">0</setting>
+            <setting name="includeSourceData">0</setting>
+            <setting name="displayTemplate" />
+            <setting name="restrictToTypes" />
+            <setting name="currentSelectionDisplayFormat" />
+          </settings>
+        </metadataElement>
+      </elements>
+      <typeRestrictions>
+        <restriction>
+          <table>ca_collections</table>
+          <settings>
+            <setting name="minAttributesPerRow">0</setting>
+            <setting name="maxAttributesPerRow">0</setting>
+            <setting name="minimumAttributeBundlesToDisplay">1</setting>
+          </settings>
+        </restriction>
+      </typeRestrictions>
+    </metadataElement>
+
+    <metadataElement code="alt_place_name" datatype="Text">
+      <labels>
+        <label locale="en_US">
+          <name>Alternative Place Name</name>
+          <description>Alternative name of the place.</description>
+        </label>
+      </labels>
+      <settings>
+        <setting name="fieldWidth">90</setting>
+        <setting name="fieldHeight">3</setting>
+        <setting name="displayDelimiter">; </setting>
+      </settings>
+      <typeRestrictions>
+        <restriction>
+          <table>ca_places</table>
+          <settings>
+            <setting name="minAttributesPerRow">0</setting>
+            <setting name="maxAttributesPerRow">0</setting>
+            <setting name="minimumAttributeBundlesToDisplay">1</setting>
+            <setting name="displayDelimiter">; </setting>
+          </settings>
+        </restriction>
+                <restriction>
+          <table>ca_objects</table>
+          <settings>
+            <setting name="minAttributesPerRow">0</setting>
+            <setting name="maxAttributesPerRow">0</setting>
+            <setting name="minimumAttributeBundlesToDisplay">1</setting>
+            <setting name="displayDelimiter">; </setting>
+          </settings>
+        </restriction>
+      </typeRestrictions>
+    </metadataElement>
+
 
 <!-- Custom Elements-->
 
@@ -7874,6 +8016,7 @@
         <setting name="minAttributesPerRow">0</setting>
         <setting name="maxAttributesPerRow">0</setting>
         <setting name="minimumAttributeBundlesToDisplay">1</setting>
+        <setting name="displayDelimiter">; </setting>
       </settings>
     </restriction>
   </typeRestrictions>
@@ -7967,6 +8110,33 @@
                 <setting name="dontShowDeleteButton">0</setting>
               </settings>
             </placement>
+            <placement code="ca_list_items_res_types">
+              <bundle>ca_list_items</bundle>
+              <settings>
+            <setting name="label" locale="en_US">Resource Types</setting>
+                <setting name="add_label" locale="en_US">Add Resosource Types</setting>
+                <setting name="readonly">0</setting>
+                <setting name="expand_collapse_value">bubbles</setting>
+                <setting name="expand_collapse_no_value">bubbles</setting>
+                <setting name="usewysiwygeditor">1</setting>
+                <setting name="dontShowRelationshipTypes">0</setting>
+                <setting name="dont_include_subtypes_in_type_restriction">0</setting>
+                <setting name="list_format">bubbles</setting>
+                <setting name="dontShowAddButton">0</setting>
+                <setting name="dontShowDeleteButton">0</setting>
+                <setting name="minRelationshipsPerRow">0</setting>
+                <setting name="maxRelationshipsPerRow">0</setting>
+                <setting name="disableQuickadd">0</setting>
+                <setting name="sortDirection">ASC</setting>
+                <setting name="disableSorts">0</setting>
+                <setting name="showCount">0</setting>
+                <setting name="numPerPage">100</setting>
+                <setting name="showBatchEditorButton">0</setting>
+                <setting name="showSetRepresentationButton">0</setting>
+                <setting name="restrict_to_lists">resource_types</setting>
+                <setting name="restrictToTermsRelatedToCollection">0</setting>
+              </settings>
+            </placement>
             <placement code="ca_attribute_exlink">
               <bundle>ca_objects.exlink</bundle>
               <settings>
@@ -8028,13 +8198,15 @@
                 <setting name="dontShowDeleteButton">0</setting>
               </settings>
             </placement>
-            <placement code="ca_list_items_themes">
+            <placement code="ca_list_items_keywords">
               <bundle>ca_list_items</bundle>
               <settings>
-                <setting name="label" locale="en_US">Themes</setting>
+            <setting name="label" locale="en_US">Keywords</setting>
+                <setting name="add_label" locale="en_US">Add Keyword</setting>
                 <setting name="readonly">0</setting>
                 <setting name="expand_collapse_value">bubbles</setting>
                 <setting name="expand_collapse_no_value">bubbles</setting>
+                <setting name="usewysiwygeditor">1</setting>
                 <setting name="dontShowRelationshipTypes">0</setting>
                 <setting name="dont_include_subtypes_in_type_restriction">0</setting>
                 <setting name="list_format">bubbles</setting>
@@ -8049,21 +8221,8 @@
                 <setting name="numPerPage">100</setting>
                 <setting name="showBatchEditorButton">0</setting>
                 <setting name="showSetRepresentationButton">0</setting>
-                <setting name="restrict_to_lists">themeslist</setting>
-                <setting name="useHierarchicalBrowser">1</setting>
-                <setting name="hierarchicalBrowserHeight">200px</setting>
+                <setting name="restrict_to_lists">keywordslist</setting>
                 <setting name="restrictToTermsRelatedToCollection">0</setting>
-              </settings>
-            </placement>
-            <placement code="ca_attribute_keyword">
-              <bundle>ca_objects.keyword</bundle>
-              <settings>
-                <setting name="readonly">0</setting>
-                <setting name="expand_collapse_value">bubbles</setting>
-                <setting name="expand_collapse_no_value">bubbles</setting>
-                <setting name="sort">1</setting>
-                <setting name="sortDirection">ASC</setting>
-                <setting name="dontShowDeleteButton">0</setting>
               </settings>
             </placement>
             <placement code="ca_attribute_notes">
@@ -8086,12 +8245,9 @@
             </label>
           </labels>
           <bundlePlacements>
-            
-            <placement code="ca_places_country">
+            <placement code="ca_places">
               <bundle>ca_places</bundle>
               <settings>
-                <setting name="restrict_to_types">country</setting>
-                <setting name="label" locale="en_US">Country</setting>
                 <setting name="readonly">0</setting>
                 <setting name="expand_collapse_value">bubbles</setting>
                 <setting name="expand_collapse_no_value">bubbles</setting>
@@ -8114,139 +8270,17 @@
                 <setting name="hierarchicalBrowserHeight">200px</setting>
               </settings>
             </placement>
-            <placement code="ca_places_region">
-              <bundle>ca_places</bundle>
+            <placement code="alt_place_name">
+              <bundle>alt_place_name</bundle>
               <settings>
-                <setting name="restrict_to_types">region</setting>
-                <setting name="label" locale="en_US">Region</setting>
+              <setting name="label" locale="en_US">Alternative Place Name</setting>
+                <setting name="add_label" locale="en_US">Add Alternative Place Name</setting>
                 <setting name="readonly">0</setting>
                 <setting name="expand_collapse_value">bubbles</setting>
                 <setting name="expand_collapse_no_value">bubbles</setting>
-                <setting name="dontShowRelationshipTypes">0</setting>
-                <setting name="dont_include_subtypes_in_type_restriction">1</setting>
-                <setting name="list_format">bubbles</setting>
-                <setting name="dontShowAddButton">0</setting>
-                <setting name="dontShowDeleteButton">0</setting>
-                <setting name="minRelationshipsPerRow">0</setting>
-                <setting name="maxRelationshipsPerRow">0</setting>
-                <setting name="disableQuickadd">0</setting>
+                <setting name="sort">1</setting>
                 <setting name="sortDirection">ASC</setting>
-                <setting name="disableSorts">0</setting>
-                <setting name="showCount">0</setting>
-                <setting name="numPerPage">100</setting>
-                <setting name="showBatchEditorButton">0</setting>
-                <setting name="showSetRepresentationButton">0</setting>
-                <setting name="showReturnToHomeLocations">0</setting>
-                <setting name="useHierarchicalBrowser">0</setting>
-                <setting name="hierarchicalBrowserHeight">200px</setting>
-              </settings>
-            </placement>
-            <placement code="ca_places_city">
-              <bundle>ca_places</bundle>
-              <settings>
-                <setting name="restrict_to_types">city</setting>
-                <setting name="label" locale="en_US">City</setting>
-                <setting name="readonly">0</setting>
-                <setting name="expand_collapse_value">bubbles</setting>
-                <setting name="expand_collapse_no_value">bubbles</setting>
-                <setting name="dontShowRelationshipTypes">0</setting>
-                <setting name="dont_include_subtypes_in_type_restriction">0</setting>
-                <setting name="list_format">bubbles</setting>
-                <setting name="dontShowAddButton">0</setting>
                 <setting name="dontShowDeleteButton">0</setting>
-                <setting name="minRelationshipsPerRow">0</setting>
-                <setting name="maxRelationshipsPerRow">0</setting>
-                <setting name="disableQuickadd">0</setting>
-                <setting name="sortDirection">ASC</setting>
-                <setting name="disableSorts">0</setting>
-                <setting name="showCount">0</setting>
-                <setting name="numPerPage">100</setting>
-                <setting name="showBatchEditorButton">0</setting>
-                <setting name="showSetRepresentationButton">0</setting>
-                <setting name="showReturnToHomeLocations">0</setting>
-                <setting name="useHierarchicalBrowser">0</setting>
-                <setting name="hierarchicalBrowserHeight">200px</setting>
-              </settings>
-            </placement>
-            <placement code="ca_places_address">
-              <bundle>ca_places</bundle>
-              <settings>
-                <setting name="restrict_to_types">address</setting>
-                <setting name="label" locale="en_US">Address</setting>
-                <setting name="readonly">0</setting>
-                <setting name="expand_collapse_value">bubbles</setting>
-                <setting name="expand_collapse_no_value">bubbles</setting>
-                <setting name="dontShowRelationshipTypes">0</setting>
-                <setting name="dont_include_subtypes_in_type_restriction">1</setting>
-                <setting name="list_format">bubbles</setting>
-                <setting name="dontShowAddButton">0</setting>
-                <setting name="dontShowDeleteButton">0</setting>
-                <setting name="minRelationshipsPerRow">0</setting>
-                <setting name="maxRelationshipsPerRow">0</setting>
-                <setting name="disableQuickadd">0</setting>
-                <setting name="sortDirection">ASC</setting>
-                <setting name="disableSorts">0</setting>
-                <setting name="showCount">0</setting>
-                <setting name="numPerPage">100</setting>
-                <setting name="showBatchEditorButton">0</setting>
-                <setting name="showSetRepresentationButton">0</setting>
-                <setting name="showReturnToHomeLocations">0</setting>
-                <setting name="useHierarchicalBrowser">0</setting>
-                <setting name="hierarchicalBrowserHeight">200px</setting>
-              </settings>
-            </placement>
-            <placement code="ca_places_imaginary">
-              <bundle>ca_places</bundle>
-              <settings>
-                <setting name="restrict_to_types">imaginary</setting>
-                <setting name="label" locale="en_US">Imaginary</setting>
-                <setting name="readonly">0</setting>
-                <setting name="expand_collapse_value">bubbles</setting>
-                <setting name="expand_collapse_no_value">bubbles</setting>
-                <setting name="dontShowRelationshipTypes">0</setting>
-                <setting name="dont_include_subtypes_in_type_restriction">0</setting>
-                <setting name="list_format">bubbles</setting>
-                <setting name="dontShowAddButton">0</setting>
-                <setting name="dontShowDeleteButton">0</setting>
-                <setting name="minRelationshipsPerRow">0</setting>
-                <setting name="maxRelationshipsPerRow">0</setting>
-                <setting name="disableQuickadd">0</setting>
-                <setting name="sortDirection">ASC</setting>
-                <setting name="disableSorts">0</setting>
-                <setting name="showCount">0</setting>
-                <setting name="numPerPage">100</setting>
-                <setting name="showBatchEditorButton">0</setting>
-                <setting name="showSetRepresentationButton">0</setting>
-                <setting name="showReturnToHomeLocations">0</setting>
-                <setting name="useHierarchicalBrowser">0</setting>
-                <setting name="hierarchicalBrowserHeight">200px</setting>
-              </settings>
-            </placement>
-            <placement code="ca_places_other">
-              <bundle>ca_places</bundle>
-              <settings>
-                <setting name="restrict_to_types">other</setting>
-                <setting name="label" locale="en_US">Other Places</setting>
-                <setting name="readonly">0</setting>
-                <setting name="expand_collapse_value">bubbles</setting>
-                <setting name="expand_collapse_no_value">bubbles</setting>
-                <setting name="dontShowRelationshipTypes">0</setting>
-                <setting name="dont_include_subtypes_in_type_restriction">0</setting>
-                <setting name="list_format">bubbles</setting>
-                <setting name="dontShowAddButton">0</setting>
-                <setting name="dontShowDeleteButton">0</setting>
-                <setting name="minRelationshipsPerRow">0</setting>
-                <setting name="maxRelationshipsPerRow">0</setting>
-                <setting name="disableQuickadd">0</setting>
-                <setting name="sortDirection">ASC</setting>
-                <setting name="disableSorts">0</setting>
-                <setting name="showCount">0</setting>
-                <setting name="numPerPage">100</setting>
-                <setting name="showBatchEditorButton">0</setting>
-                <setting name="showSetRepresentationButton">0</setting>
-                <setting name="showReturnToHomeLocations">0</setting>
-                <setting name="useHierarchicalBrowser">0</setting>
-                <setting name="hierarchicalBrowserHeight">200px</setting>
               </settings>
             </placement>
             <placement code="ca_attribute_georeference">
@@ -8442,6 +8476,22 @@
                   <setting name="restrict_to_relationship_types">performer</setting>
                   <setting name="restrict_to_relationship_types">sponsor</setting>
                   <setting name="restrict_to_relationship_types">contributor</setting>
+                  <setting name="restrict_to_relationship_types">written_by</setting>
+                  <setting name="restrict_to_relationship_types">directed_by</setting>
+                  <setting name="restrict_to_relationship_types">produced_by</setting>
+                  <setting name="restrict_to_relationship_types">cinematography_by</setting>
+                  <setting name="restrict_to_relationship_types">lightning_by</setting>
+                  <setting name="restrict_to_relationship_types">sound_by</setting>
+                  <setting name="restrict_to_relationship_types">edition_by</setting>
+                  <setting name="restrict_to_relationship_types">music_titles</setting>
+                  <setting name="restrict_to_relationship_types">music_authors</setting>
+                  <setting name="restrict_to_relationship_types">music_performed_by</setting>
+                  <setting name="restrict_to_relationship_types">music_produced_by</setting>
+                  <setting name="restrict_to_relationship_types">music_mixed_by</setting>
+                  <setting name="restrict_to_relationship_types">music_rights</setting>
+                  <setting name="restrict_to_relationship_types">music_rights_held</setting>
+                  <setting name="restrict_to_relationship_types">interviewee</setting>
+                  <setting name="restrict_to_relationship_types">photographer</setting>
                   <setting name="dontShowRelationshipTypes">0</setting>
                   <setting name="dont_include_subtypes_in_type_restriction">0</setting>
                   <setting name="list_format">bubbles</setting>
@@ -8941,8 +8991,8 @@
                 <setting name="showSetRepresentationButton">0</setting>
               </settings>
             </placement>
-            <placement code="ca_movements">
-              <bundle>ca_movements</bundle>
+            <placement code="ca_collections">
+              <bundle>ca_collections</bundle>
               <settings>
                 <setting name="readonly">0</setting>
                 <setting name="expand_collapse_value">bubbles</setting>
@@ -8965,6 +9015,48 @@
             </placement>
           </bundlePlacements>
         </screen>
+
+        <screen idno="media" default="0">
+          <labels>
+            <label locale="en_US">
+              <name>Media</name>
+            </label>
+          </labels>
+          <bundlePlacements>
+            <placement code="ca_object_representations">
+              <bundle>ca_object_representations</bundle>
+              <settings>
+                <setting name="readonly">0</setting>
+                <setting name="expand_collapse_value">bubbles</setting>
+                <setting name="expand_collapse_no_value">bubbles</setting>
+                <setting name="dontShowRelationshipTypes">0</setting>
+                <setting name="dont_include_subtypes_in_type_restriction">0</setting>
+                <setting name="dontShowAddButton">0</setting>
+                <setting name="dontShowDeleteButton">0</setting>
+                <setting name="minRelationshipsPerRow">0</setting>
+                <setting name="maxRelationshipsPerRow">0</setting>
+                <setting name="sortDirection">ASC</setting>
+                <setting name="disableSorts">0</setting>
+                <setting name="showCount">0</setting>
+                <setting name="numPerPage">100</setting>
+                <setting name="showBatchEditorButton">0</setting>
+                <setting name="showSetRepresentationButton">0</setting>
+                <setting name="dontAllowRelationshipsToExistingRepresentations">0</setting>
+                <setting name="dontAllowAccessToImportDirectory">0</setting>
+                <setting name="dontShowPreferredLabel">0</setting>
+                <setting name="dontShowIdno">0</setting>
+                <setting name="dontShowStatus">0</setting>
+                <setting name="dontShowAccess">0</setting>
+                <setting name="dontShowTranscribe">0</setting>
+                <setting name="uiStyle">NEW_UI</setting>
+                <setting name="showBundlesForEditing">idno</setting>
+                <setting name="showBundlesForEditing">access</setting>
+                <setting name="showReturnToHomeLocations">0</setting>
+              </settings>
+            </placement>
+          </bundlePlacements>
+        </screen>
+
       </screens>
     </userInterface>
     <userInterface code="movement_cataloguers_ui" type="ca_movements">
@@ -10380,6 +10472,18 @@
                 <setting name="expand_collapse_no_value">bubbles</setting>
               </settings>
             </placement>
+            <placement code="ca_attribute_rights">
+              <bundle>ca_objects.rights</bundle>
+              <settings>
+                <setting name="readonly">0</setting>
+                <setting name="expand_collapse_value">bubbles</setting>
+                <setting name="expand_collapse_no_value">bubbles</setting>
+                <setting name="sort">1</setting>
+                <setting name="sortDirection">ASC</setting>
+                <setting name="dontShowDeleteButton">0</setting>
+              </settings>
+            </placement>
+
             <placement code="status5">
               <bundle>status</bundle>
               <settings>
@@ -10486,8 +10590,17 @@
                 <setting name="usewysiwygeditor">0</setting>
               </settings>
             </placement>
-            <placement code="ca_attribute_description">
-              <bundle>ca_collections.description</bundle>
+            <placement code="hierarchy_navigation">
+              <bundle>hierarchy_navigation</bundle>
+              <settings>
+                <setting name="readonly">0</setting>
+                <setting name="expand_collapse">dont_force</setting>
+                <setting name="open_hierarchy">1</setting>
+                <setting name="auto_shrink">0</setting>
+              </settings>
+            </placement>
+            <placement code="ca_attribute_synopsis">
+              <bundle>ca_collections.synopsis</bundle>
               <settings>
                 <setting name="readonly">0</setting>
                 <setting name="expand_collapse_value">bubbles</setting>
@@ -10497,8 +10610,8 @@
                 <setting name="dontShowDeleteButton">0</setting>
               </settings>
             </placement>
-            <placement code="ca_attribute_prjtype">
-              <bundle>ca_collections.prjtype</bundle>
+                        <placement code="ca_attribute_objectivesmethods">
+              <bundle>ca_collections.objectivesmethods</bundle>
               <settings>
                 <setting name="readonly">0</setting>
                 <setting name="expand_collapse_value">bubbles</setting>
@@ -10508,8 +10621,8 @@
                 <setting name="dontShowDeleteButton">0</setting>
               </settings>
             </placement>
-            <placement code="ca_attribute_prjregion">
-              <bundle>ca_collections.prjregion</bundle>
+            <placement code="ca_attribute_workshopsevents">
+              <bundle>ca_collections.workshopsevents</bundle>
               <settings>
                 <setting name="readonly">0</setting>
                 <setting name="expand_collapse_value">bubbles</setting>
@@ -10519,6 +10632,83 @@
                 <setting name="dontShowDeleteButton">0</setting>
               </settings>
             </placement>
+            <placement code="ca_attribute_activities">
+              <bundle>ca_collections.activities</bundle>
+              <settings>
+                <setting name="readonly">0</setting>
+                <setting name="expand_collapse_value">bubbles</setting>
+                <setting name="expand_collapse_no_value">bubbles</setting>
+                <setting name="sort">1</setting>
+                <setting name="sortDirection">ASC</setting>
+                <setting name="dontShowDeleteButton">0</setting>
+              </settings>
+            </placement>
+            <placement code="ca_list_items_prjregions">
+              <bundle>ca_list_items</bundle>
+              <settings>
+                <setting name="label" locale="en_US">Project Region</setting>
+                <setting name="readonly">0</setting>
+                <setting name="expand_collapse_value">bubbles</setting>
+                <setting name="expand_collapse_no_value">bubbles</setting>
+                <setting name="dontShowRelationshipTypes">0</setting>
+                <setting name="dont_include_subtypes_in_type_restriction">0</setting>
+                <setting name="list_format">bubbles</setting>
+                <setting name="dontShowAddButton">0</setting>
+                <setting name="dontShowDeleteButton">0</setting>
+                <setting name="minRelationshipsPerRow">0</setting>
+                <setting name="maxRelationshipsPerRow">0</setting>
+                <setting name="disableQuickadd">0</setting>
+                <setting name="sortDirection">ASC</setting>
+                <setting name="disableSorts">0</setting>
+                <setting name="showCount">0</setting>
+                <setting name="numPerPage">100</setting>
+                <setting name="showBatchEditorButton">0</setting>
+                <setting name="showSetRepresentationButton">0</setting>
+                <setting name="restrict_to_lists">prjregionlist</setting>
+                <setting name="useHierarchicalBrowser">1</setting>
+                <setting name="hierarchicalBrowserHeight">200px</setting>
+                <setting name="restrictToTermsRelatedToCollection">0</setting>
+              </settings>
+            </placement>
+            <placement code="ca_list_items_prjtypes">
+              <bundle>ca_list_items</bundle>
+              <settings>
+                <setting name="label" locale="en_US">Project Types</setting>
+                <setting name="readonly">0</setting>
+                <setting name="expand_collapse_value">bubbles</setting>
+                <setting name="expand_collapse_no_value">bubbles</setting>
+                <setting name="dontShowRelationshipTypes">0</setting>
+                <setting name="dont_include_subtypes_in_type_restriction">0</setting>
+                <setting name="list_format">bubbles</setting>
+                <setting name="dontShowAddButton">0</setting>
+                <setting name="dontShowDeleteButton">0</setting>
+                <setting name="minRelationshipsPerRow">0</setting>
+                <setting name="maxRelationshipsPerRow">0</setting>
+                <setting name="disableQuickadd">0</setting>
+                <setting name="sortDirection">ASC</setting>
+                <setting name="disableSorts">0</setting>
+                <setting name="showCount">0</setting>
+                <setting name="numPerPage">100</setting>
+                <setting name="showBatchEditorButton">0</setting>
+                <setting name="showSetRepresentationButton">0</setting>
+                <setting name="restrict_to_lists">prjtypelist</setting>
+                <setting name="useHierarchicalBrowser">1</setting>
+                <setting name="hierarchicalBrowserHeight">200px</setting>
+                <setting name="restrictToTermsRelatedToCollection">0</setting>
+              </settings>
+            </placement>
+            <placement code="ca_attribute_exresource">
+              <bundle>ca_attribute_exresource</bundle>
+              <settings>
+                <setting name="readonly">0</setting>
+                <setting name="expand_collapse_value">bubbles</setting>
+                <setting name="expand_collapse_no_value">bubbles</setting>
+                <setting name="sort">1</setting>
+                <setting name="sortDirection">ASC</setting>
+                <setting name="dontShowDeleteButton">0</setting>
+              </settings>
+            </placement>
+
             <placement code="ca_entities">
               <bundle>ca_entities</bundle>
               <settings>
@@ -10613,6 +10803,35 @@
                 <setting name="sort">1</setting>
                 <setting name="sortDirection">ASC</setting>
                 <setting name="dontShowDeleteButton">0</setting>
+              </settings>
+            </placement>
+            <placement code="ca_list_items_keywords">
+              <bundle>ca_list_items</bundle>
+              <settings>
+                <setting name="label" locale="en_US">Keywords</setting>
+                <setting name="add_label" locale="en_US">Add Keyword</setting>
+                <setting name="readonly">0</setting>
+                <setting name="expand_collapse_value">bubbles</setting>
+                <setting name="expand_collapse_no_value">bubbles</setting>
+                <setting name="usewysiwygeditor">1</setting>
+                <setting name="dontShowRelationshipTypes">0</setting>
+                <setting name="dont_include_subtypes_in_type_restriction">0</setting>
+                <setting name="list_format">bubbles</setting>
+                <setting name="dontShowAddButton">0</setting>
+                <setting name="dontShowDeleteButton">0</setting>
+                <setting name="minRelationshipsPerRow">0</setting>
+                <setting name="maxRelationshipsPerRow">0</setting>
+                <setting name="disableQuickadd">0</setting>
+                <setting name="sortDirection">ASC</setting>
+                <setting name="disableSorts">0</setting>
+                <setting name="showCount">0</setting>
+                <setting name="numPerPage">100</setting>
+                <setting name="showBatchEditorButton">0</setting>
+                <setting name="showSetRepresentationButton">0</setting>
+                <setting name="restrict_to_lists">keywordslist</setting>
+                <setting name="useHierarchicalBrowser">1</setting>
+                <setting name="hierarchicalBrowserHeight">200px</setting>
+                <setting name="restrictToTermsRelatedToCollection">0</setting>
               </settings>
             </placement>
             <placement code="access">
@@ -10845,6 +11064,17 @@
               <bundle>preferred_labels</bundle>
               <settings>
                 <setting name="label" locale="en_US">Name</setting>
+                <setting name="add_label" locale="en_US">Add name</setting>
+                <setting name="readonly">0</setting>
+                <setting name="expand_collapse_value">dont_force</setting>
+                <setting name="expand_collapse_no_value">dont_force</setting>
+                <setting name="usewysiwygeditor">0</setting>
+              </settings>
+            </placement>
+            <placement code="alt_place_name">
+              <bundle>alt_place_name</bundle>
+              <settings>
+                <setting name="label" locale="en_US">Alternative Name</setting>
                 <setting name="add_label" locale="en_US">Add name</setting>
                 <setting name="readonly">0</setting>
                 <setting name="expand_collapse_value">dont_force</setting>
@@ -11818,6 +12048,30 @@
             </label>
           </labels>
         </type>
+        <type code="prjregion" default="1">
+          <labels>
+            <label locale="en_US">
+              <typename>project region</typename>
+              <typename_reverse>project region</typename_reverse>
+            </label>
+          </labels>
+        </type>
+        <type code="prjtype" default="1">
+          <labels>
+            <label locale="en_US">
+              <typename>project type</typename>
+              <typename_reverse>project type</typename_reverse>
+            </label>
+          </labels>
+        </type>
+        <type code="keyword" default="0">
+          <labels>
+            <label locale="en_US">
+              <typename>keyword</typename>
+              <typename_reverse>keyword</typename_reverse>
+            </label>
+          </labels>
+        </type>
       </types>
     </relationshipTable>
     <relationshipTable name="ca_entities_x_collections">
@@ -12458,6 +12712,142 @@
             </label>
           </labels>
         </type>
+<type code="interviewee" default="0">
+    <labels>
+        <label locale="en_US">
+            <typename>interviewee</typename>
+            <typename_reverse>interviewee</typename_reverse>
+        </label>
+    </labels>
+</type>
+<type code="photographer" default="0">
+    <labels>
+        <label locale="en_US">
+            <typename>photographer</typename>
+            <typename_reverse>photographer</typename_reverse>
+        </label>
+    </labels>
+</type>
+<type code="written_by" default="0">
+    <labels>
+        <label locale="en_US">
+            <typename>Written by</typename>
+            <typename_reverse>Wrote</typename_reverse>
+        </label>
+    </labels>
+</type>
+<type code="directed_by" default="0">
+    <labels>
+        <label locale="en_US">
+            <typename>Directed by</typename>
+            <typename_reverse>Directed</typename_reverse>
+        </label>
+    </labels>
+</type>
+<type code="produced_by" default="0">
+    <labels>
+        <label locale="en_US">
+            <typename>Produced by</typename>
+            <typename_reverse>Produced</typename_reverse>
+        </label>
+    </labels>
+</type>
+<type code="cinematography_by" default="0">
+    <labels>
+        <label locale="en_US">
+            <typename>Cinematography by</typename>
+            <typename_reverse>Handled Cinematography for</typename_reverse>
+        </label>
+    </labels>
+</type>
+<type code="lightning_by" default="0">
+    <labels>
+        <label locale="en_US">
+            <typename>Lightning by</typename>
+            <typename_reverse>Managed Lighting for</typename_reverse>
+        </label>
+    </labels>
+</type>
+<type code="sound_by" default="0">
+    <labels>
+        <label locale="en_US">
+            <typename>Sound by</typename>
+            <typename_reverse>Responsible for Sound in</typename_reverse>
+        </label>
+    </labels>
+</type>
+<type code="edition_by" default="0">
+    <labels>
+        <label locale="en_US">
+            <typename>Edition by</typename>
+            <typename_reverse>Edited</typename_reverse>
+        </label>
+    </labels>
+</type>
+<type code="music_titles" default="0">
+    <labels>
+        <label locale="en_US">
+            <typename>Music titles</typename>
+            <typename_reverse>Title for Music</typename_reverse>
+        </label>
+    </labels>
+</type>
+
+<type code="music_authors" default="0">
+    <labels>
+        <label locale="en_US">
+            <typename>Music authors</typename>
+            <typename_reverse>Authored Music for</typename_reverse>
+        </label>
+    </labels>
+</type>
+
+<type code="music_performed_by" default="0">
+    <labels>
+        <label locale="en_US">
+            <typename>Music performed by</typename>
+            <typename_reverse>Performed Music for</typename_reverse>
+        </label>
+    </labels>
+</type>
+<type code="music_produced_by" default="0">
+    <labels>
+        <label locale="en_US">
+            <typename>Music produced by</typename>
+            <typename_reverse>Produced Music for</typename_reverse>
+        </label>
+    </labels>
+</type>
+
+<type code="music_mixed_by" default="0">
+    <labels>
+        <label locale="en_US">
+            <typename>Music Mixed by</typename>
+            <typename_reverse>Mixed Music for</typename_reverse>
+        </label>
+    </labels>
+</type>
+
+<type code="music_rights" default="0">
+    <labels>
+        <label locale="en_US">
+            <typename>Music Rights</typename>
+            <typename_reverse>Owns Rights to Music in</typename_reverse>
+        </label>
+    </labels>
+</type>
+
+<type code="music_rights_held" default="0">
+    <labels>
+        <label locale="en_US">
+            <typename>Music Rights Held</typename>
+            <typename_reverse>Holds Rights to Music in</typename_reverse>
+        </label>
+    </labels>
+</type>
+
+
+
       </types>
     </relationshipTable>
     <relationshipTable name="ca_objects_x_objects">
@@ -12630,11 +13020,11 @@
             </label>
           </labels>
         </type>
-        <type code="theme" default="0">
+        <type code="keyword" default="0">
           <labels>
             <label locale="en_US">
-              <typename>theme</typename>
-              <typename_reverse>theme</typename_reverse>
+              <typename>keyword</typename>
+              <typename_reverse>keyword</typename_reverse>
             </label>
           </labels>
         </type>
@@ -12643,6 +13033,14 @@
             <label locale="en_US">
               <typename>cultural context</typename>
               <typename_reverse>cultural context</typename_reverse>
+            </label>
+          </labels>
+        </type>
+        <type code="resource_type" default="0">
+          <labels>
+            <label locale="en_US">
+              <typename>resource type</typename>
+              <typename_reverse>resource type</typename_reverse>
             </label>
           </labels>
         </type>
@@ -12771,6 +13169,14 @@
             <label locale="en_US">
               <typename>rights held by</typename>
               <typename_reverse>is rights holder</typename_reverse>
+            </label>
+          </labels>
+        </type>
+        <type code="bio_photo" default="1">
+          <labels>
+            <label locale="en_US">
+              <typename>bio photo</typename>
+              <typename_reverse>bio photo</typename_reverse>
             </label>
           </labels>
         </type>
