@@ -1,8 +1,19 @@
 # Changelog
 
-## [v1.2.0]
+## [v1.3.0] - 2024-05-14
 
-## Fixed
+### Fixed
+
+- Utf-8 encoding for csv files.
+
+### Changes
+
+- Projects names convention changed from UFC* to IF-PRJ-* to improve semantic reading
+- Simplification of places (no attached to geographical hiserarchy)
+
+## [v1.2.0] - 2023-12-19
+
+### Fixed
 
 - Encoding and extra columns in csv mapings and data in `installationdocs`
 - Restore `themes` and `culturalcontext` types in `relationshipTable name="ca_objects_x_vocabulary_terms"`
