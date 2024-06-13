@@ -6190,6 +6190,38 @@
       </items>
     </list>
 
+
+    <list code="vol_type" hierarchical="0" system="0" vocabulary="1">
+      <labels>
+        <label locale="en_US">
+          <name>Volume Type</name>
+        </label>
+      </labels>
+      <items>
+        <item idno="vol_a" access="1" enabled="1" default="0">
+          <labels>
+            <label locale="en_US" preferred="1">
+              <name_singular>Volume A</name_singular>
+              <name_plural>Volume A</name_plural>
+              <description />
+            </label>
+          </labels>
+        </item>
+        <item idno="vol_b" access="1" enabled="1" default="0">
+          <labels>
+            <label locale="en_US" preferred="1">
+              <name_singular>Volume B</name_singular>
+              <name_plural>Volume B</name_plural>
+              <description />
+            </label>
+          </labels>
+        </item>
+      </items>
+    </list>
+
+
+
+
   </lists>
 
 
@@ -6756,6 +6788,14 @@
       <typeRestrictions>
         <restriction>
           <table>ca_objects</table>
+          <settings>
+            <setting name="minAttributesPerRow">0</setting>
+            <setting name="maxAttributesPerRow">0</setting>
+            <setting name="minimumAttributeBundlesToDisplay">1</setting>
+          </settings>
+        </restriction>
+        <restriction>
+          <table>ca_collections</table>
           <settings>
             <setting name="minAttributesPerRow">0</setting>
             <setting name="maxAttributesPerRow">0</setting>
@@ -7805,7 +7845,129 @@
       </typeRestrictions>
     </metadataElement>
 
-
+    <metadataElement code="publication" datatype="Container">
+      <labels>
+        <label locale="en_US">
+          <name>Publications</name>
+          <description></description>
+        </label>
+      </labels>
+      <elements>
+        <metadataElement code="pub_title" datatype="Text">
+          <labels>
+            <label locale="en_US">
+              <name>Publication Title</name>
+              <description></description>
+            </label>
+          </labels>
+          <settings>
+            <setting name="fieldWidth">40</setting>
+            <setting name="fieldHeight">1</setting>
+            <setting name="minChars">0</setting>
+            <setting name="maxChars">65535</setting>
+            <setting name="usewysiwygeditor">0</setting>
+            <setting name="doesNotTakeLocale">0</setting>
+            <setting name="singleValuePerLocale">0</setting>
+            <setting name="allowDuplicateValues">0</setting>
+            <setting name="raiseErrorOnDuplicateValue">0</setting>
+            <setting name="canBeUsedInSort">1</setting>
+            <setting name="suggestExistingValues">0</setting>
+            <setting name="suggestExistingValueSort">value</setting>
+            <setting name="canBeUsedInSearchForm">1</setting>
+            <setting name="canBeUsedInDisplay">1</setting>
+            <setting name="canMakePDF">0</setting>
+            <setting name="canMakePDFForValue">0</setting>
+            <setting name="displayDelimiter">; </setting>
+            <setting name="isDependentValue">0</setting>
+            <setting name="mustBeUnique">0</setting>
+            <setting name="moveArticles">1</setting>
+            <setting name="includeSourceData">0</setting>
+            <setting name="regex" />
+            <setting name="default_text" />
+            <setting name="displayTemplate" />
+            <setting name="dependentValueTemplate" />
+            <setting name="referenceMediaIn" />
+          </settings>
+        </metadataElement>
+        <metadataElement code="vol_type" datatype="List" list="vol_type">
+          <labels>
+            <label locale="en_US">
+              <name>Volume Type</name>
+              <description></description>
+            </label>
+          </labels>
+          <settings>
+            <setting name="fieldWidth">40</setting>
+            <setting name="fieldHeight">1</setting>
+            <setting name="minChars">0</setting>
+            <setting name="maxChars">65535</setting>
+            <setting name="usewysiwygeditor">0</setting>
+            <setting name="doesNotTakeLocale">0</setting>
+            <setting name="singleValuePerLocale">0</setting>
+            <setting name="allowDuplicateValues">0</setting>
+            <setting name="raiseErrorOnDuplicateValue">0</setting>
+            <setting name="canBeUsedInSort">1</setting>
+            <setting name="suggestExistingValues">0</setting>
+            <setting name="suggestExistingValueSort">value</setting>
+            <setting name="canBeUsedInSearchForm">1</setting>
+            <setting name="canBeUsedInDisplay">1</setting>
+            <setting name="canMakePDF">0</setting>
+            <setting name="canMakePDFForValue">0</setting>
+            <setting name="displayDelimiter">; </setting>
+            <setting name="isDependentValue">0</setting>
+            <setting name="mustBeUnique">0</setting>
+            <setting name="moveArticles">1</setting>
+            <setting name="includeSourceData">0</setting>
+            <setting name="regex" />
+            <setting name="default_text" />
+            <setting name="displayTemplate" />
+            <setting name="dependentValueTemplate" />
+            <setting name="referenceMediaIn" />
+          </settings>
+        </metadataElement>
+        <metadataElement code="pub_url" datatype="Url">
+          <labels>
+            <label locale="en_US">
+              <name>Publication URL</name>
+              <description></description>
+            </label>
+          </labels>
+          <settings>
+            <setting name="fieldWidth">40</setting>
+            <setting name="fieldHeight">1</setting>
+            <setting name="minChars">0</setting>
+            <setting name="maxChars">65535</setting>
+            <setting name="doesNotTakeLocale">1</setting>
+            <setting name="singleValuePerLocale">0</setting>
+            <setting name="requireValue">0</setting>
+            <setting name="allowDuplicateValues">0</setting>
+            <setting name="raiseErrorOnDuplicateValue">0</setting>
+            <setting name="canBeUsedInSort">1</setting>
+            <setting name="suggestExistingValues">0</setting>
+            <setting name="suggestExistingValueSort">value</setting>
+            <setting name="canBeUsedInSearchForm">1</setting>
+            <setting name="canBeUsedInDisplay">1</setting>
+            <setting name="canMakePDF">0</setting>
+            <setting name="canMakePDFForValue">0</setting>
+            <setting name="displayDelimiter">; </setting>
+            <setting name="includeSourceData">0</setting>
+            <setting name="regex" />
+            <setting name="default_text" />
+            <setting name="displayTemplate" />
+          </settings>
+        </metadataElement>
+      </elements>
+      <typeRestrictions>
+        <restriction>
+          <table>ca_collections</table>
+          <settings>
+            <setting name="minAttributesPerRow">0</setting>
+            <setting name="maxAttributesPerRow">0</setting>
+            <setting name="minimumAttributeBundlesToDisplay">1</setting>
+          </settings>
+        </restriction>
+      </typeRestrictions>
+    </metadataElement>
 <!-- Custom Elements-->
 
 <metadataElement code="timeperiod" datatype="Text">
@@ -10894,6 +11056,28 @@
                 <setting name="useHierarchicalBrowser">1</setting>
                 <setting name="hierarchicalBrowserHeight">200px</setting>
                 <setting name="restrictToTermsRelatedToCollection">0</setting>
+              </settings>
+            </placement>
+            <placement code="ca_attribute_publication">
+              <bundle>ca_collections.publication</bundle>
+              <settings>
+                <setting name="readonly">0</setting>
+                <setting name="expand_collapse_value">bubbles</setting>
+                <setting name="expand_collapse_no_value">bubbles</setting>
+                <setting name="sort">1</setting>
+                <setting name="sortDirection">ASC</setting>
+                <setting name="dontShowDeleteButton">0</setting>
+              </settings>
+            </placement>
+            <placement code="ca_attribute_handle">
+              <bundle>ca_collections.handle</bundle>
+              <settings>
+                <setting name="readonly">0</setting>
+                <setting name="expand_collapse_value">bubbles</setting>
+                <setting name="expand_collapse_no_value">bubbles</setting>
+                <setting name="sort">1</setting>
+                <setting name="sortDirection">ASC</setting>
+                <setting name="dontShowDeleteButton">0</setting>
               </settings>
             </placement>
             <placement code="access">
