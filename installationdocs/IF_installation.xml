@@ -5865,8 +5865,8 @@
         <item idno="role_06" access="1" enabled="1" default="0" value="role_06" rank="543">
           <labels>
             <label locale="en_US" preferred="1">
-              <name_singular>Guest</name_singular>
-              <name_plural>Guest</name_plural>
+              <name_singular>Organisation</name_singular>
+              <name_plural>Organisations</name_plural>
               <description />
             </label>
           </labels>
@@ -5874,8 +5874,17 @@
         <item idno="role_07" access="1" enabled="1" default="1" value="role_07" rank="544">
           <labels>
             <label locale="en_US" preferred="1">
-              <name_singular>Researcher</name_singular>
-              <name_plural>Researcher</name_plural>
+              <name_singular>Advisors</name_singular>
+              <name_plural>Advisors</name_plural>
+              <description />
+            </label>
+          </labels>
+        </item>
+        <item idno="role_08" access="1" enabled="1" default="1" value="role_08">
+          <labels>
+            <label locale="en_US" preferred="1">
+              <name_singular>Support Team</name_singular>
+              <name_plural>Support Team</name_plural>
               <description />
             </label>
           </labels>
