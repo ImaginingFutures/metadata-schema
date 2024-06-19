@@ -1,7 +1,8 @@
-installationdocs/02.2_Participants.csv
+
 ~$*
 scraper
 data_procesor
 .venv
 *:Zone.Identifier
 *.xlsx
+installationdocs/IF_installation_exported.xml

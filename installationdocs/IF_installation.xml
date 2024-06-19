@@ -1426,7 +1426,14 @@
             </label>
           </labels>
         </item>
-
+        <item idno="town" access="1" enabled="1" default="0">
+          <labels>
+            <label locale="en_US" preferred="1">
+              <name_singular>town</name_singular>
+              <name_plural>town</name_plural>
+            </label>
+          </labels>
+        </item>
         <item idno="imaginary" access="1" enabled="1" default="0">
           <labels>
             <label locale="en_US" preferred="1">
@@ -1701,6 +1708,15 @@
           </labels>
         </item>
         </items>
+        </item>
+        <item idno="labs" access="1" enabled="1" default="1" value="labs">
+          <labels>
+            <label locale="en_US" preferred="1">
+              <name_singular>Lab</name_singular>
+              <name_plural>Labs</name_plural>
+              <description />
+            </label>
+          </labels>
         </item>
       </items>
     </list>
@@ -5804,8 +5820,8 @@
         <item idno="role_01" access="1" enabled="1" default="0" value="role_01" rank="538">
           <labels>
             <label locale="en_US" preferred="1">
-              <name_singular>Project leader</name_singular>
-              <name_plural>Project leader</name_plural>
+              <name_singular>Fellows</name_singular>
+              <name_plural>Fellows</name_plural>
               <description />
             </label>
           </labels>
@@ -5813,8 +5829,8 @@
         <item idno="role_02" access="1" enabled="1" default="0" value="role_02" rank="539">
           <labels>
             <label locale="en_US" preferred="1">
-              <name_singular>Collector</name_singular>
-              <name_plural>Collector</name_plural>
+              <name_singular>Research Partners</name_singular>
+              <name_plural>Research Partners</name_plural>
               <description />
             </label>
           </labels>
@@ -5822,8 +5838,8 @@
         <item idno="role_03" access="1" enabled="1" default="0" value="role_03" rank="540">
           <labels>
             <label locale="en_US" preferred="1">
-              <name_singular>Monitor</name_singular>
-              <name_plural>Monitor</name_plural>
+              <name_singular>MA Fellows</name_singular>
+              <name_plural>MA Fellows</name_plural>
               <description />
             </label>
           </labels>
@@ -5831,8 +5847,8 @@
         <item idno="role_04" access="1" enabled="1" default="0" value="role_04" rank="541">
           <labels>
             <label locale="en_US" preferred="1">
-              <name_singular>Contributor</name_singular>
-              <name_plural>Contributor</name_plural>
+              <name_singular>Core Team</name_singular>
+              <name_plural>Core Team</name_plural>
               <description />
             </label>
           </labels>
@@ -5849,8 +5865,8 @@
         <item idno="role_06" access="1" enabled="1" default="0" value="role_06" rank="543">
           <labels>
             <label locale="en_US" preferred="1">
-              <name_singular>Guest</name_singular>
-              <name_plural>Guest</name_plural>
+              <name_singular>Organisation</name_singular>
+              <name_plural>Organisations</name_plural>
               <description />
             </label>
           </labels>
@@ -5858,41 +5874,24 @@
         <item idno="role_07" access="1" enabled="1" default="1" value="role_07" rank="544">
           <labels>
             <label locale="en_US" preferred="1">
-              <name_singular>Researcher</name_singular>
-              <name_plural>Researcher</name_plural>
+              <name_singular>Advisors</name_singular>
+              <name_plural>Advisors</name_plural>
+              <description />
+            </label>
+          </labels>
+        </item>
+        <item idno="role_08" access="1" enabled="1" default="1" value="role_08">
+          <labels>
+            <label locale="en_US" preferred="1">
+              <name_singular>Support Team</name_singular>
+              <name_plural>Support Team</name_plural>
               <description />
             </label>
           </labels>
         </item>
       </items>
     </list>
-    <list code="langlabellist" hierarchical="0" system="0" vocabulary="1">
-      <labels>
-        <label locale="en_US">
-          <name>Language Labels</name>
-        </label>
-      </labels>
-      <items>
-        <item idno="langlabel_01" access="1" enabled="1" default="0" value="langlabel_01" rank="546">
-          <labels>
-            <label locale="en_US" preferred="1">
-              <name_singular>Primary</name_singular>
-              <name_plural>Primary</name_plural>
-              <description />
-            </label>
-          </labels>
-        </item>
-        <item idno="langlabel_02" access="1" enabled="1" default="1" value="langlabel_02" rank="547">
-          <labels>
-            <label locale="en_US" preferred="1">
-              <name_singular>Other</name_singular>
-              <name_plural>Other</name_plural>
-              <description />
-            </label>
-          </labels>
-        </item>
-      </items>
-    </list>
+
     <list code="authoritylist" hierarchical="0" system="0" vocabulary="1">
       <labels>
         <label locale="en_US">
@@ -6199,6 +6198,38 @@
 
       </items>
     </list>
+
+
+    <list code="vol_type" hierarchical="0" system="0" vocabulary="1">
+      <labels>
+        <label locale="en_US">
+          <name>Volume Type</name>
+        </label>
+      </labels>
+      <items>
+        <item idno="vol_a" access="1" enabled="1" default="0">
+          <labels>
+            <label locale="en_US" preferred="1">
+              <name_singular>Volume A</name_singular>
+              <name_plural>Volume A</name_plural>
+              <description />
+            </label>
+          </labels>
+        </item>
+        <item idno="vol_b" access="1" enabled="1" default="0">
+          <labels>
+            <label locale="en_US" preferred="1">
+              <name_singular>Volume B</name_singular>
+              <name_plural>Volume B</name_plural>
+              <description />
+            </label>
+          </labels>
+        </item>
+      </items>
+    </list>
+
+
+
 
   </lists>
 
@@ -6752,6 +6783,36 @@
         </restriction>
       </typeRestrictions>
     </metadataElement>
+    <metadataElement code="handle" datatype="Url">
+      <labels>
+        <label locale="en_US">
+          <name>Handle URL</name>
+          <description></description>
+        </label>
+      </labels>
+      <settings>
+        <setting name="fieldWidth">90</setting>
+        <setting name="fieldHeight">3</setting>
+      </settings>
+      <typeRestrictions>
+        <restriction>
+          <table>ca_objects</table>
+          <settings>
+            <setting name="minAttributesPerRow">1</setting>
+            <setting name="maxAttributesPerRow">1</setting>
+            <setting name="minimumAttributeBundlesToDisplay">1</setting>
+          </settings>
+        </restriction>
+        <restriction>
+          <table>ca_collections</table>
+          <settings>
+            <setting name="minAttributesPerRow">0</setting>
+            <setting name="maxAttributesPerRow">0</setting>
+            <setting name="minimumAttributeBundlesToDisplay">1</setting>
+          </settings>
+        </restriction>
+      </typeRestrictions>
+    </metadataElement>
     <metadataElement code="exlink" datatype="Container">
       <labels>
         <label locale="en_US">
@@ -6860,6 +6921,14 @@
       <typeRestrictions>
         <restriction>
           <table>ca_objects</table>
+          <settings>
+            <setting name="minAttributesPerRow">0</setting>
+            <setting name="maxAttributesPerRow">1</setting>
+            <setting name="minimumAttributeBundlesToDisplay">1</setting>
+          </settings>
+        </restriction>
+        <restriction>
+          <table>ca_collections</table>
           <settings>
             <setting name="minAttributesPerRow">0</setting>
             <setting name="maxAttributesPerRow">1</setting>
@@ -6985,109 +7054,11 @@
             <setting name="minimumAttributeBundlesToDisplay">1</setting>
           </settings>
         </restriction>
-      </typeRestrictions>
-    </metadataElement>
-    <metadataElement code="langmaterial" datatype="Container">
-      <labels>
-        <label locale="en_US">
-          <name>Language of Material</name>
-        </label>
-      </labels>
-      <elements>
-        <metadataElement code="lang" datatype="List" list="languageslist">
-          <labels>
-            <label locale="en_US">
-              <name>Language</name>
-              <description>The primary language spoken by the participant (if video or
-                            audio resource). The
-                            primary language written on the image or in the document.</description>
-            </label>
-          </labels>
-          <settings>
-            <setting name="listWidth">40</setting>
-            <setting name="listHeight">200px</setting>
-            <setting name="doesNotTakeLocale">1</setting>
-            <setting name="singleValuePerLocale">0</setting>
-            <setting name="requireValue">0</setting>
-            <setting name="allowDuplicateValues">0</setting>
-            <setting name="raiseErrorOnDuplicateValue">0</setting>
-            <setting name="implicitNullOption">0</setting>
-            <setting name="nullOptionText">Not set</setting>
-            <setting name="useDefaultWhenNull">0</setting>
-            <setting name="canBeUsedInSort">1</setting>
-            <setting name="render">1</setting>
-            <setting name="auto_shrink">0</setting>
-            <setting name="maxColumns">3</setting>
-            <setting name="canBeUsedInSearchForm">1</setting>
-            <setting name="canBeUsedInDisplay">1</setting>
-            <setting name="canMakePDF">0</setting>
-            <setting name="canMakePDFForValue">0</setting>
-            <setting name="displayDelimiter">; </setting>
-            <setting name="minimizeExistingValues">0</setting>
-            <setting name="deferHierarchyLoad">0</setting>
-            <setting name="separateDisabledValues">0</setting>
-            <setting name="hideDisabledValues">0</setting>
-            <setting name="includeSourceData">0</setting>
-            <setting name="displayTemplate" />
-            <setting name="restrictToTypes" />
-            <setting name="currentSelectionDisplayFormat" />
-          </settings>
-        </metadataElement>
-        <metadataElement code="langlabel" datatype="List" list="langlabellist">
-          <labels>
-            <label locale="en_US">
-              <name>Language Label</name>
-              <description>The other language spoken by the participant (if video or
-                            audio
-                            resource). The
-                            other language written on the image or in the document. </description>
-            </label>
-          </labels>
-          <settings>
-            <setting name="listWidth">40</setting>
-            <setting name="listHeight">200px</setting>
-            <setting name="doesNotTakeLocale">1</setting>
-            <setting name="singleValuePerLocale">0</setting>
-            <setting name="requireValue">0</setting>
-            <setting name="allowDuplicateValues">0</setting>
-            <setting name="raiseErrorOnDuplicateValue">0</setting>
-            <setting name="implicitNullOption">0</setting>
-            <setting name="nullOptionText">Not set</setting>
-            <setting name="useDefaultWhenNull">0</setting>
-            <setting name="canBeUsedInSort">1</setting>
-            <setting name="render">1</setting>
-            <setting name="auto_shrink">0</setting>
-            <setting name="maxColumns">3</setting>
-            <setting name="canBeUsedInSearchForm">1</setting>
-            <setting name="canBeUsedInDisplay">1</setting>
-            <setting name="canMakePDF">0</setting>
-            <setting name="canMakePDFForValue">0</setting>
-            <setting name="displayDelimiter">; </setting>
-            <setting name="minimizeExistingValues">0</setting>
-            <setting name="deferHierarchyLoad">0</setting>
-            <setting name="separateDisabledValues">0</setting>
-            <setting name="hideDisabledValues">0</setting>
-            <setting name="includeSourceData">0</setting>
-            <setting name="displayTemplate" />
-            <setting name="restrictToTypes" />
-            <setting name="currentSelectionDisplayFormat" />
-          </settings>
-        </metadataElement>
-      </elements>
-      <typeRestrictions>
         <restriction>
-          <table>ca_objects</table>
+          <table>ca_collections</table>
           <settings>
             <setting name="minAttributesPerRow">0</setting>
-            <setting name="maxAttributesPerRow">0</setting>
-            <setting name="minimumAttributeBundlesToDisplay">1</setting>
-          </settings>
-        </restriction>
-        <restriction>
-          <table>ca_entities</table>
-          <settings>
-            <setting name="minAttributesPerRow">0</setting>
-            <setting name="maxAttributesPerRow">0</setting>
+            <setting name="maxAttributesPerRow">1</setting>
             <setting name="minimumAttributeBundlesToDisplay">1</setting>
           </settings>
         </restriction>
@@ -7229,102 +7200,7 @@
         </restriction>
       </typeRestrictions>
     </metadataElement>
-    <metadataElement code="dates" datatype="Container">
-      <labels>
-        <label locale="en_US">
-          <name>Dates</name>
-          <description>A point or period of time associated with the creation of the
-                    resource.</description>
-        </label>
-      </labels>
-      <elements>
-        <metadataElement code="dates_value" datatype="DateRange">
-          <labels>
-            <label locale="en_US">
-              <name>Date value </name>
-            </label>
-          </labels>
-          <settings>
-            <setting name="fieldWidth">40</setting>
-            <setting name="doesNotTakeLocale">1</setting>
-            <setting name="singleValuePerLocale">0</setting>
-            <setting name="allowDuplicateValues">0</setting>
-            <setting name="raiseErrorOnDuplicateValue">0</setting>
-            <setting name="canBeUsedInSort">1</setting>
-            <setting name="useDatePicker">0</setting>
-            <setting name="datePickerDateFormat">yy-mm-dd</setting>
-            <setting name="mustNotBeBlank">0</setting>
-            <setting name="isLifespan">0</setting>
-            <setting name="suggestExistingValues">0</setting>
-            <setting name="suggestExistingValueSort">value</setting>
-            <setting name="canBeUsedInSearchForm">1</setting>
-            <setting name="canBeUsedInDisplay">1</setting>
-            <setting name="canMakePDF">0</setting>
-            <setting name="canMakePDFForValue">0</setting>
-            <setting name="displayDelimiter">,</setting>
-            <setting name="includeSourceData">0</setting>
-            <setting name="dateFormat" />
-            <setting name="dateRangeBoundaries" />
-            <setting name="default_text" />
-            <setting name="displayTemplate" />
-          </settings>
-        </metadataElement>
-        <metadataElement code="dates_type" datatype="List" list="date_types">
-          <labels>
-            <label locale="en_US">
-              <name>Date type</name>
-            </label>
-          </labels>
-          <settings>
-            <setting name="listWidth">40</setting>
-            <setting name="listHeight">200px</setting>
-            <setting name="doesNotTakeLocale">1</setting>
-            <setting name="singleValuePerLocale">0</setting>
-            <setting name="requireValue">0</setting>
-            <setting name="allowDuplicateValues">0</setting>
-            <setting name="raiseErrorOnDuplicateValue">0</setting>
-            <setting name="implicitNullOption">0</setting>
-            <setting name="nullOptionText">Not set</setting>
-            <setting name="useDefaultWhenNull">0</setting>
-            <setting name="canBeUsedInSort">1</setting>
-            <setting name="render">1</setting>
-            <setting name="auto_shrink">0</setting>
-            <setting name="maxColumns">3</setting>
-            <setting name="canBeUsedInSearchForm">1</setting>
-            <setting name="canBeUsedInDisplay">1</setting>
-            <setting name="canMakePDF">0</setting>
-            <setting name="canMakePDFForValue">0</setting>
-            <setting name="displayDelimiter">; </setting>
-            <setting name="minimizeExistingValues">0</setting>
-            <setting name="deferHierarchyLoad">0</setting>
-            <setting name="separateDisabledValues">0</setting>
-            <setting name="hideDisabledValues">0</setting>
-            <setting name="includeSourceData">0</setting>
-            <setting name="displayTemplate" />
-            <setting name="restrictToTypes" />
-            <setting name="currentSelectionDisplayFormat" />
-          </settings>
-        </metadataElement>
-      </elements>
-      <typeRestrictions>
-        <restriction>
-          <table>ca_objects</table>
-          <settings>
-            <setting name="minAttributesPerRow">0</setting>
-            <setting name="maxAttributesPerRow">0</setting>
-            <setting name="minimumAttributeBundlesToDisplay">1</setting>
-          </settings>
-        </restriction>
-        <restriction>
-          <table>ca_entities</table>
-          <settings>
-            <setting name="minAttributesPerRow">0</setting>
-            <setting name="maxAttributesPerRow">0</setting>
-            <setting name="minimumAttributeBundlesToDisplay">1</setting>
-          </settings>
-        </restriction>
-      </typeRestrictions>
-    </metadataElement>
+    
     <metadataElement code="rights" datatype="List" list="rightslist">
       <labels>
         <label locale="en_US">
@@ -7527,6 +7403,134 @@
         </restriction>
       </typeRestrictions>
     </metadataElement>
+
+    <metadataElement code="primarylang" datatype="List" list="languageslist">
+      <labels>
+        <label locale="en_US">
+          <name>Primary Language</name>
+          <description></description>
+        </label>
+      </labels>
+      <typeRestrictions>
+        <restriction>
+          <table>ca_entities</table>
+          <settings>
+            <setting name="minAttributesPerRow">0</setting>
+            <setting name="maxAttributesPerRow">0</setting>
+            <setting name="minimumAttributeBundlesToDisplay">1</setting>
+          </settings>
+        </restriction>
+        <restriction>
+          <table>ca_objects</table>
+          <settings>
+            <setting name="minAttributesPerRow">0</setting>
+            <setting name="maxAttributesPerRow">0</setting>
+            <setting name="minimumAttributeBundlesToDisplay">1</setting>
+          </settings>
+        </restriction>
+      </typeRestrictions>
+    </metadataElement>
+
+    <metadataElement code="otherlang" datatype="List" list="languageslist">
+      <labels>
+        <label locale="en_US">
+          <name>Other Language</name>
+          <description></description>
+        </label>
+      </labels>
+      <typeRestrictions>
+        <restriction>
+          <table>ca_entities</table>
+          <settings>
+            <setting name="minAttributesPerRow">0</setting>
+            <setting name="maxAttributesPerRow">0</setting>
+            <setting name="minimumAttributeBundlesToDisplay">1</setting>
+          </settings>
+        </restriction>
+        <restriction>
+          <table>ca_objects</table>
+          <settings>
+            <setting name="minAttributesPerRow">0</setting>
+            <setting name="maxAttributesPerRow">0</setting>
+            <setting name="minimumAttributeBundlesToDisplay">1</setting>
+          </settings>
+        </restriction>
+      </typeRestrictions>
+    </metadataElement>
+
+    <metadataElement code="birthdate" datatype="DateRange">
+      <labels>
+        <label locale="en_US">
+          <name>Birthdate</name>
+          <description></description>
+        </label>
+      </labels>
+      <typeRestrictions>
+        <restriction>
+          <table>ca_entities</table>
+          <settings>
+            <setting name="minAttributesPerRow">0</setting>
+            <setting name="maxAttributesPerRow">0</setting>
+            <setting name="minimumAttributeBundlesToDisplay">1</setting>
+          </settings>
+        </restriction>
+      </typeRestrictions>
+    </metadataElement>
+     <metadataElement code="date_create" datatype="DateRange">
+      <labels>
+        <label locale="en_US">
+          <name>Creation Date</name>
+          <description></description>
+        </label>
+      </labels>
+      <typeRestrictions>
+        <restriction>
+          <table>ca_objects</table>
+          <settings>
+            <setting name="minAttributesPerRow">0</setting>
+            <setting name="maxAttributesPerRow">0</setting>
+            <setting name="minimumAttributeBundlesToDisplay">1</setting>
+          </settings>
+        </restriction>
+      </typeRestrictions>
+    </metadataElement>
+     <metadataElement code="date_digit" datatype="DateRange">
+      <labels>
+        <label locale="en_US">
+          <name>Digitization Date</name>
+          <description></description>
+        </label>
+      </labels>
+      <typeRestrictions>
+        <restriction>
+          <table>ca_objects</table>
+          <settings>
+            <setting name="minAttributesPerRow">0</setting>
+            <setting name="maxAttributesPerRow">0</setting>
+            <setting name="minimumAttributeBundlesToDisplay">1</setting>
+          </settings>
+        </restriction>
+      </typeRestrictions>
+    </metadataElement>
+     <metadataElement code="date_publish" datatype="DateRange">
+      <labels>
+        <label locale="en_US">
+          <name>Publication Date</name>
+          <description></description>
+        </label>
+      </labels>
+      <typeRestrictions>
+        <restriction>
+          <table>ca_objects</table>
+          <settings>
+            <setting name="minAttributesPerRow">0</setting>
+            <setting name="maxAttributesPerRow">0</setting>
+            <setting name="minimumAttributeBundlesToDisplay">1</setting>
+          </settings>
+        </restriction>
+      </typeRestrictions>
+    </metadataElement>
+
     <metadataElement code="email" datatype="Text">
       <labels>
         <label locale="en_US">
@@ -7658,6 +7662,14 @@
       <typeRestrictions>
         <restriction>
           <table>ca_collections</table>
+          <settings>
+            <setting name="minAttributesPerRow">0</setting>
+            <setting name="maxAttributesPerRow">0</setting>
+            <setting name="minimumAttributeBundlesToDisplay">1</setting>
+          </settings>
+        </restriction>
+          <restriction>
+          <table>ca_entities</table>
           <settings>
             <setting name="minAttributesPerRow">0</setting>
             <setting name="maxAttributesPerRow">0</setting>
@@ -7801,7 +7813,7 @@
           <table>ca_collections</table>
           <settings>
             <setting name="minAttributesPerRow">0</setting>
-            <setting name="maxAttributesPerRow">0</setting>
+            <setting name="maxAttributesPerRow">5</setting>
             <setting name="minimumAttributeBundlesToDisplay">1</setting>
           </settings>
         </restriction>
@@ -7842,7 +7854,129 @@
       </typeRestrictions>
     </metadataElement>
 
-
+    <metadataElement code="publication" datatype="Container">
+      <labels>
+        <label locale="en_US">
+          <name>Publications</name>
+          <description></description>
+        </label>
+      </labels>
+      <elements>
+        <metadataElement code="pub_title" datatype="Text">
+          <labels>
+            <label locale="en_US">
+              <name>Publication Title</name>
+              <description></description>
+            </label>
+          </labels>
+          <settings>
+            <setting name="fieldWidth">40</setting>
+            <setting name="fieldHeight">1</setting>
+            <setting name="minChars">0</setting>
+            <setting name="maxChars">65535</setting>
+            <setting name="usewysiwygeditor">0</setting>
+            <setting name="doesNotTakeLocale">0</setting>
+            <setting name="singleValuePerLocale">0</setting>
+            <setting name="allowDuplicateValues">0</setting>
+            <setting name="raiseErrorOnDuplicateValue">0</setting>
+            <setting name="canBeUsedInSort">1</setting>
+            <setting name="suggestExistingValues">0</setting>
+            <setting name="suggestExistingValueSort">value</setting>
+            <setting name="canBeUsedInSearchForm">1</setting>
+            <setting name="canBeUsedInDisplay">1</setting>
+            <setting name="canMakePDF">0</setting>
+            <setting name="canMakePDFForValue">0</setting>
+            <setting name="displayDelimiter">; </setting>
+            <setting name="isDependentValue">0</setting>
+            <setting name="mustBeUnique">0</setting>
+            <setting name="moveArticles">1</setting>
+            <setting name="includeSourceData">0</setting>
+            <setting name="regex" />
+            <setting name="default_text" />
+            <setting name="displayTemplate" />
+            <setting name="dependentValueTemplate" />
+            <setting name="referenceMediaIn" />
+          </settings>
+        </metadataElement>
+        <metadataElement code="vol_type" datatype="List" list="vol_type">
+          <labels>
+            <label locale="en_US">
+              <name>Volume Type</name>
+              <description></description>
+            </label>
+          </labels>
+          <settings>
+            <setting name="fieldWidth">40</setting>
+            <setting name="fieldHeight">1</setting>
+            <setting name="minChars">0</setting>
+            <setting name="maxChars">65535</setting>
+            <setting name="usewysiwygeditor">0</setting>
+            <setting name="doesNotTakeLocale">0</setting>
+            <setting name="singleValuePerLocale">0</setting>
+            <setting name="allowDuplicateValues">0</setting>
+            <setting name="raiseErrorOnDuplicateValue">0</setting>
+            <setting name="canBeUsedInSort">1</setting>
+            <setting name="suggestExistingValues">0</setting>
+            <setting name="suggestExistingValueSort">value</setting>
+            <setting name="canBeUsedInSearchForm">1</setting>
+            <setting name="canBeUsedInDisplay">1</setting>
+            <setting name="canMakePDF">0</setting>
+            <setting name="canMakePDFForValue">0</setting>
+            <setting name="displayDelimiter">; </setting>
+            <setting name="isDependentValue">0</setting>
+            <setting name="mustBeUnique">0</setting>
+            <setting name="moveArticles">1</setting>
+            <setting name="includeSourceData">0</setting>
+            <setting name="regex" />
+            <setting name="default_text" />
+            <setting name="displayTemplate" />
+            <setting name="dependentValueTemplate" />
+            <setting name="referenceMediaIn" />
+          </settings>
+        </metadataElement>
+        <metadataElement code="pub_url" datatype="Url">
+          <labels>
+            <label locale="en_US">
+              <name>Publication URL</name>
+              <description></description>
+            </label>
+          </labels>
+          <settings>
+            <setting name="fieldWidth">40</setting>
+            <setting name="fieldHeight">1</setting>
+            <setting name="minChars">0</setting>
+            <setting name="maxChars">65535</setting>
+            <setting name="doesNotTakeLocale">1</setting>
+            <setting name="singleValuePerLocale">0</setting>
+            <setting name="requireValue">0</setting>
+            <setting name="allowDuplicateValues">0</setting>
+            <setting name="raiseErrorOnDuplicateValue">0</setting>
+            <setting name="canBeUsedInSort">1</setting>
+            <setting name="suggestExistingValues">0</setting>
+            <setting name="suggestExistingValueSort">value</setting>
+            <setting name="canBeUsedInSearchForm">1</setting>
+            <setting name="canBeUsedInDisplay">1</setting>
+            <setting name="canMakePDF">0</setting>
+            <setting name="canMakePDFForValue">0</setting>
+            <setting name="displayDelimiter">; </setting>
+            <setting name="includeSourceData">0</setting>
+            <setting name="regex" />
+            <setting name="default_text" />
+            <setting name="displayTemplate" />
+          </settings>
+        </metadataElement>
+      </elements>
+      <typeRestrictions>
+        <restriction>
+          <table>ca_collections</table>
+          <settings>
+            <setting name="minAttributesPerRow">1</setting>
+            <setting name="maxAttributesPerRow">3</setting>
+            <setting name="minimumAttributeBundlesToDisplay">1</setting>
+          </settings>
+        </restriction>
+      </typeRestrictions>
+    </metadataElement>
 <!-- Custom Elements-->
 
 <metadataElement code="timeperiod" datatype="Text">
@@ -8148,6 +8282,17 @@
                 <setting name="dontShowDeleteButton">0</setting>
               </settings>
             </placement>
+            <placement code="ca_attribute_handle">
+              <bundle>ca_objects.handle</bundle>
+              <settings>
+                <setting name="readonly">0</setting>
+                <setting name="expand_collapse_value">bubbles</setting>
+                <setting name="expand_collapse_no_value">bubbles</setting>
+                <setting name="sort">1</setting>
+                <setting name="sortDirection">ASC</setting>
+                <setting name="dontShowDeleteButton">0</setting>
+              </settings>
+            </placement>
             <placement code="access">
               <bundle>access</bundle>
               <settings>
@@ -8187,9 +8332,22 @@
                 <setting name="dontShowDeleteButton">0</setting>
               </settings>
             </placement>
-            <placement code="ca_attribute_langmaterial">
-              <bundle>ca_objects.langmaterial</bundle>
+             <placement code="ca_objects_primarylang">
+              <bundle>ca_objects.primarylang</bundle>
               <settings>
+                <setting name="label" locale="en_US">Primary Language</setting>
+                <setting name="readonly">0</setting>
+                <setting name="expand_collapse_value">bubbles</setting>
+                <setting name="expand_collapse_no_value">bubbles</setting>
+                <setting name="sort">1</setting>
+                <setting name="sortDirection">ASC</setting>
+                <setting name="dontShowDeleteButton">0</setting>
+              </settings>
+            </placement>
+            <placement code="ca_objects_otherlang">
+              <bundle>ca_objects.otherlang</bundle>
+              <settings>
+                <setting name="label" locale="en_US">Other Language</setting>
                 <setting name="readonly">0</setting>
                 <setting name="expand_collapse_value">bubbles</setting>
                 <setting name="expand_collapse_no_value">bubbles</setting>
@@ -8295,8 +8453,9 @@
             </label>
           </labels>
           <bundlePlacements>
-            <placement code="ca_attribute_dates">
-              <bundle>ca_objects.dates</bundle>
+
+            <placement code="ca_objects_date_create">
+              <bundle>ca_objects.date_create</bundle>
               <settings>
                 <setting name="readonly">0</setting>
                 <setting name="expand_collapse_value">bubbles</setting>
@@ -8306,6 +8465,29 @@
                 <setting name="dontShowDeleteButton">0</setting>
               </settings>
             </placement>
+            <placement code="ca_objects_date_digit">
+              <bundle>ca_objects.date_digit</bundle>
+              <settings>
+                <setting name="readonly">0</setting>
+                <setting name="expand_collapse_value">bubbles</setting>
+                <setting name="expand_collapse_no_value">bubbles</setting>
+                <setting name="sort">1</setting>
+                <setting name="sortDirection">ASC</setting>
+                <setting name="dontShowDeleteButton">0</setting>
+              </settings>
+            </placement>
+            <placement code="ca_objects_date_publish">
+              <bundle>ca_objects.date_publish</bundle>
+              <settings>
+                <setting name="readonly">0</setting>
+                <setting name="expand_collapse_value">bubbles</setting>
+                <setting name="expand_collapse_no_value">bubbles</setting>
+                <setting name="sort">1</setting>
+                <setting name="sortDirection">ASC</setting>
+                <setting name="dontShowDeleteButton">0</setting>
+              </settings>
+            </placement>
+
           </bundlePlacements>
         </screen>
         <screen idno="socioculturalscr" default="0">
@@ -8771,10 +8953,22 @@
                 <setting name="dontShowDeleteButton">0</setting>
               </settings>
             </placement>
-            <placement code="ca_attribute_langmaterial">
-              <bundle>ca_entities.langmaterial</bundle>
+            <placement code="ca_entities_primarylang">
+              <bundle>ca_entities.primarylang</bundle>
               <settings>
-                <setting name="label" locale="en_US">Language of Participant</setting>
+                <setting name="label" locale="en_US">Primary Language</setting>
+                <setting name="readonly">0</setting>
+                <setting name="expand_collapse_value">bubbles</setting>
+                <setting name="expand_collapse_no_value">bubbles</setting>
+                <setting name="sort">1</setting>
+                <setting name="sortDirection">ASC</setting>
+                <setting name="dontShowDeleteButton">0</setting>
+              </settings>
+            </placement>
+            <placement code="ca_entities_otherlang">
+              <bundle>ca_entities.otherlang</bundle>
+              <settings>
+                <setting name="label" locale="en_US">Other Language</setting>
                 <setting name="readonly">0</setting>
                 <setting name="expand_collapse_value">bubbles</setting>
                 <setting name="expand_collapse_no_value">bubbles</setting>
@@ -8794,8 +8988,8 @@
                 <setting name="dontShowDeleteButton">0</setting>
               </settings>
             </placement>
-            <placement code="ca_attribute_dates">
-              <bundle>ca_entities.dates</bundle>
+            <placement code="ca_entities_birthdate">
+              <bundle>ca_entities.birthdate</bundle>
               <settings>
                 <setting name="readonly">0</setting>
                 <setting name="expand_collapse_value">bubbles</setting>
@@ -8805,6 +8999,7 @@
                 <setting name="dontShowDeleteButton">0</setting>
               </settings>
             </placement>
+
             <placement code="ca_places">
               <bundle>ca_places</bundle>
               <settings>
@@ -8830,19 +9025,35 @@
                 <setting name="hierarchicalBrowserHeight">200px</setting>
               </settings>
             </placement>
-            <placement code="ca_attribute_occupation">
-              <bundle>ca_entities.occupation</bundle>
+            <placement code="ca_list_items_roles">
+              <bundle>ca_list_items</bundle>
               <settings>
+                <setting name="label" locale="en_US">Role</setting>
                 <setting name="readonly">0</setting>
                 <setting name="expand_collapse_value">bubbles</setting>
                 <setting name="expand_collapse_no_value">bubbles</setting>
-                <setting name="sort">1</setting>
-                <setting name="sortDirection">ASC</setting>
+                <setting name="dontShowRelationshipTypes">0</setting>
+                <setting name="dont_include_subtypes_in_type_restriction">0</setting>
+                <setting name="list_format">bubbles</setting>
+                <setting name="dontShowAddButton">0</setting>
                 <setting name="dontShowDeleteButton">0</setting>
+                <setting name="minRelationshipsPerRow">0</setting>
+                <setting name="maxRelationshipsPerRow">0</setting>
+                <setting name="disableQuickadd">0</setting>
+                <setting name="sortDirection">ASC</setting>
+                <setting name="disableSorts">0</setting>
+                <setting name="showCount">0</setting>
+                <setting name="numPerPage">100</setting>
+                <setting name="showBatchEditorButton">0</setting>
+                <setting name="showSetRepresentationButton">0</setting>
+                <setting name="restrict_to_lists">roleslist</setting>
+                <setting name="useHierarchicalBrowser">1</setting>
+                <setting name="hierarchicalBrowserHeight">200px</setting>
+                <setting name="restrictToTermsRelatedToCollection">0</setting>
               </settings>
             </placement>
-            <placement code="ca_attribute_roles">
-              <bundle>ca_entities.roles</bundle>
+            <placement code="ca_attribute_occupation">
+              <bundle>ca_entities.occupation</bundle>
               <settings>
                 <setting name="readonly">0</setting>
                 <setting name="expand_collapse_value">bubbles</setting>
@@ -8876,6 +9087,17 @@
             </placement>
             <placement code="ca_attribute_perswebsite">
               <bundle>ca_entities.perswebsite</bundle>
+              <settings>
+                <setting name="readonly">0</setting>
+                <setting name="expand_collapse_value">bubbles</setting>
+                <setting name="expand_collapse_no_value">bubbles</setting>
+                <setting name="sort">1</setting>
+                <setting name="sortDirection">ASC</setting>
+                <setting name="dontShowDeleteButton">0</setting>
+              </settings>
+            </placement>
+            <placement code="ca_entities_ifwebpage">
+              <bundle>ca_entities.ifwebpage</bundle>
               <settings>
                 <setting name="readonly">0</setting>
                 <setting name="expand_collapse_value">bubbles</setting>
@@ -10599,6 +10821,17 @@
                 <setting name="auto_shrink">0</setting>
               </settings>
             </placement>
+            <placement code="ca_attribute_description">
+              <bundle>ca_collections.description</bundle>
+              <settings>
+                <setting name="readonly">0</setting>
+                <setting name="expand_collapse_value">bubbles</setting>
+                <setting name="expand_collapse_no_value">bubbles</setting>
+                <setting name="sort">1</setting>
+                <setting name="sortDirection">ASC</setting>
+                <setting name="dontShowDeleteButton">0</setting>
+              </settings>
+            </placement>
             <placement code="ca_attribute_synopsis">
               <bundle>ca_collections.synopsis</bundle>
               <settings>
@@ -10832,6 +11065,28 @@
                 <setting name="useHierarchicalBrowser">1</setting>
                 <setting name="hierarchicalBrowserHeight">200px</setting>
                 <setting name="restrictToTermsRelatedToCollection">0</setting>
+              </settings>
+            </placement>
+            <placement code="ca_attribute_publication">
+              <bundle>ca_collections.publication</bundle>
+              <settings>
+                <setting name="readonly">0</setting>
+                <setting name="expand_collapse_value">bubbles</setting>
+                <setting name="expand_collapse_no_value">bubbles</setting>
+                <setting name="sort">1</setting>
+                <setting name="sortDirection">ASC</setting>
+                <setting name="dontShowDeleteButton">0</setting>
+              </settings>
+            </placement>
+            <placement code="ca_attribute_handle">
+              <bundle>ca_collections.handle</bundle>
+              <settings>
+                <setting name="readonly">0</setting>
+                <setting name="expand_collapse_value">bubbles</setting>
+                <setting name="expand_collapse_no_value">bubbles</setting>
+                <setting name="sort">1</setting>
+                <setting name="sortDirection">ASC</setting>
+                <setting name="dontShowDeleteButton">0</setting>
               </settings>
             </placement>
             <placement code="access">
@@ -11645,249 +11900,6 @@
         </screen>
       </screens>
     </userInterface>
-    <userInterface code="wia_editor" type="ca_objects" color="c42bc4" typeRestrictions="words"
-      includeSubtypes="0">
-      <labels>
-        <label locale="en_US">
-          <name>Words into action editor</name>
-        </label>
-      </labels>
-      <userAccess>
-        <permission user="administrator" access="edit" />
-      </userAccess>
-      <groupAccess>
-        <permission group="cataloguer" access="edit" />
-        <permission group="admin" access="edit" />
-      </groupAccess>
-      <screens>
-        <screen idno="screen_23_0" default="0" color="000000">
-          <labels>
-            <label locale="en_US">
-              <name>content</name>
-            </label>
-          </labels>
-          <bundlePlacements>
-            <placement code="idno1">
-              <bundle>ca_objects.idno</bundle>
-              <settings>
-                <setting name="readonly">0</setting>
-                <setting name="expand_collapse_value">bubbles</setting>
-                <setting name="expand_collapse_no_value">bubbles</setting>
-                <setting name="sort">1</setting>
-                <setting name="sortDirection">ASC</setting>
-                <setting name="dontShowDeleteButton">0</setting>
-              </settings>
-            </placement>
-            <placement code="object_id2">
-              <bundle>object_id</bundle>
-              <settings>
-                <setting name="readonly">0</setting>
-                <setting name="expand_collapse_value">bubbles</setting>
-                <setting name="expand_collapse_no_value">bubbles</setting>
-              </settings>
-            </placement>
-            <placement code="preferred_labels3">
-              <bundle>preferred_labels</bundle>
-              <settings>
-                <setting name="readonly">0</setting>
-                <setting name="expand_collapse_value">bubbles</setting>
-                <setting name="expand_collapse_no_value">bubbles</setting>
-                <setting name="usewysiwygeditor">0</setting>
-              </settings>
-            </placement>
-            <placement code="status4">
-              <bundle>status</bundle>
-              <settings>
-                <setting name="readonly">0</setting>
-                <setting name="expand_collapse_value">dont_force</setting>
-                <setting name="expand_collapse_no_value">dont_force</setting>
-              </settings>
-            </placement>
-            <placement code="history_tracking_current_contents5">
-              <bundle>history_tracking_current_contents</bundle>
-              <settings>
-                <setting name="readonly">0</setting>
-                <setting name="expand_collapse_value">bubbles</setting>
-                <setting name="expand_collapse_no_value">bubbles</setting>
-                <setting name="list_format">bubbles</setting>
-                <setting name="policy">__default__</setting>
-                <setting name="colorItem">#ffffff</setting>
-                <setting name="expandHierarchically">0</setting>
-                <setting name="showBatchEditorButton">0</setting>
-              </settings>
-            </placement>
-            <placement code="ca_attribute_langmaterial6">
-              <bundle>ca_objects.langmaterial</bundle>
-              <settings>
-                <setting name="readonly">0</setting>
-                <setting name="expand_collapse_value">bubbles</setting>
-                <setting name="expand_collapse_no_value">bubbles</setting>
-                <setting name="sort">1</setting>
-                <setting name="sortDirection">ASC</setting>
-                <setting name="dontShowDeleteButton">0</setting>
-              </settings>
-            </placement>
-            <placement code="ca_attribute_keyword7">
-              <bundle>ca_objects.keyword</bundle>
-              <settings>
-                <setting name="readonly">0</setting>
-                <setting name="expand_collapse_value">bubbles</setting>
-                <setting name="expand_collapse_no_value">bubbles</setting>
-                <setting name="sort">1</setting>
-                <setting name="sortDirection">ASC</setting>
-                <setting name="dontShowDeleteButton">0</setting>
-              </settings>
-            </placement>
-            <placement code="ca_attribute_exlink8">
-              <bundle>ca_objects.exlink</bundle>
-              <settings>
-                <setting name="readonly">0</setting>
-                <setting name="expand_collapse_value">bubbles</setting>
-                <setting name="expand_collapse_no_value">bubbles</setting>
-                <setting name="sort">1</setting>
-                <setting name="sortDirection">ASC</setting>
-                <setting name="dontShowDeleteButton">0</setting>
-              </settings>
-            </placement>
-            <placement code="history_tracking_chronology9">
-              <bundle>history_tracking_chronology</bundle>
-              <settings>
-                <setting name="readonly">0</setting>
-                <setting name="policy">__default__</setting>
-                <setting name="displayMode">chronology</setting>
-                <setting name="dateMode">use_dates</setting>
-                <setting name="useAppConfDefaults">1</setting>
-                <setting name="sortDirection">ASC</setting>
-                <setting name="currentValueColor">#EEEEEE</setting>
-                <setting name="futureValueColor">#EEEEEE</setting>
-                <setting name="pastValueColor">#EEEEEE</setting>
-                <setting name="expand_collapse">dont_force</setting>
-                <setting name="hide_include_child_history_controls">0</setting>
-                <setting name="hide_add_to_loan_controls">0</setting>
-                <setting name="always_create_new_loan">0</setting>
-                <setting name="hide_add_to_movement_controls">0</setting>
-                <setting name="always_create_new_movement">0</setting>
-                <setting name="hide_update_location_controls">0</setting>
-                <setting name="hide_return_to_home_location_controls">0</setting>
-                <setting name="hide_add_to_occurrence_controls">0</setting>
-                <setting name="always_create_new_occurrence">0</setting>
-                <setting name="hide_add_to_collection_controls">0</setting>
-                <setting name="hide_add_to_entity_controls">0</setting>
-                <setting name="hide_add_to_object_controls">0</setting>
-                <setting name="useHierarchicalBrowser">1</setting>
-                <setting name="hide_value_interstitial_edit">0</setting>
-                <setting name="hide_value_delete">0</setting>
-                <setting name="ca_object_lots_purchase_color">#EEEEEE</setting>
-                <setting name="ca_object_lots_purchase_includeFromChildren">0</setting>
-                <setting name="ca_object_lots_donation_color">#EEEEEE</setting>
-                <setting name="ca_object_lots_donation_includeFromChildren">0</setting>
-                <setting name="ca_object_lots_loan_color">#EEEEEE</setting>
-                <setting name="ca_object_lots_loan_includeFromChildren">0</setting>
-                <setting name="ca_object_lots_promise_color">#EEEEEE</setting>
-                <setting name="ca_object_lots_promise_includeFromChildren">0</setting>
-                <setting name="ca_occurrences_exhibitions_color">#EEEEEE</setting>
-                <setting name="ca_occurrences_exhibitions_includeFromChildren">0</setting>
-                <setting name="ca_collections_case_studies_color">#EEEEEE</setting>
-                <setting name="ca_collections_case_studies_includeFromChildren">0</setting>
-                <setting name="ca_collections_collected_color">#EEEEEE</setting>
-                <setting name="ca_collections_collected_includeFromChildren">0</setting>
-                <setting name="ca_collections_external_color">#EEEEEE</setting>
-                <setting name="ca_collections_external_includeFromChildren">0</setting>
-                <setting name="ca_collections_project_color">#EEEEEE</setting>
-                <setting name="ca_collections_project_includeFromChildren">0</setting>
-                <setting name="ca_collections_words_into_action_color">#EEEEEE</setting>
-                <setting name="ca_collections_words_into_action_includeFromChildren">0</setting>
-                <setting name="ca_entities_individual_color">#EEEEEE</setting>
-                <setting name="ca_entities_individual_includeFromChildren">0</setting>
-                <setting name="ca_entities_organization_color">#EEEEEE</setting>
-                <setting name="ca_entities_organization_includeFromChildren">0</setting>
-                <setting name="ca_entities_participant_color">#EEEEEE</setting>
-                <setting name="ca_entities_participant_includeFromChildren">0</setting>
-                <setting name="ca_movements_movement_color">#EEEEEE</setting>
-                <setting name="ca_movements_movement_includeFromChildren">0</setting>
-                <setting name="ca_loans_in_color">#EEEEEE</setting>
-                <setting name="ca_loans_in_includeFromChildren">0</setting>
-                <setting name="ca_loans_out_color">#EEEEEE</setting>
-                <setting name="ca_loans_out_includeFromChildren">0</setting>
-                <setting name="ca_objects_book_color">#EEEEEE</setting>
-                <setting name="ca_objects_book_includeFromChildren">0</setting>
-                <setting name="ca_objects_case_study_color">#EEEEEE</setting>
-                <setting name="ca_objects_case_study_includeFromChildren">0</setting>
-                <setting name="ca_objects_dataset_color">#EEEEEE</setting>
-                <setting name="ca_objects_dataset_includeFromChildren">0</setting>
-                <setting name="ca_objects_drawing_color">#EEEEEE</setting>
-                <setting name="ca_objects_drawing_includeFromChildren">0</setting>
-                <setting name="ca_objects_document_color">#EEEEEE</setting>
-                <setting name="ca_objects_document_includeFromChildren">0</setting>
-                <setting name="ca_objects_film_media_color">#EEEEEE</setting>
-                <setting name="ca_objects_film_media_includeFromChildren">0</setting>
-                <setting name="ca_objects_print_color">#EEEEEE</setting>
-                <setting name="ca_objects_print_includeFromChildren">0</setting>
-                <setting name="ca_objects_interview_color">#EEEEEE</setting>
-                <setting name="ca_objects_interview_includeFromChildren">0</setting>
-                <setting name="ca_objects_report_color">#EEEEEE</setting>
-                <setting name="ca_objects_report_includeFromChildren">0</setting>
-                <setting name="ca_objects_painting_color">#EEEEEE</setting>
-                <setting name="ca_objects_painting_includeFromChildren">0</setting>
-                <setting name="ca_objects_performance_color">#EEEEEE</setting>
-                <setting name="ca_objects_performance_includeFromChildren">0</setting>
-                <setting name="ca_objects_photography_color">#EEEEEE</setting>
-                <setting name="ca_objects_photography_includeFromChildren">0</setting>
-                <setting name="ca_objects_recipe_color">#EEEEEE</setting>
-                <setting name="ca_objects_recipe_includeFromChildren">0</setting>
-                <setting name="ca_objects_sculpture_color">#EEEEEE</setting>
-                <setting name="ca_objects_sculpture_includeFromChildren">0</setting>
-                <setting name="ca_objects_words_color">#EEEEEE</setting>
-                <setting name="ca_objects_words_includeFromChildren">0</setting>
-                <setting name="ca_objects_workshop_color">#EEEEEE</setting>
-                <setting name="ca_objects_workshop_includeFromChildren">0</setting>
-                <setting name="ca_storage_locations_color">#EEEEEE</setting>
-                <setting name="ca_storage_locations_includeFromChildren">0</setting>
-                <setting name="showDeaccessionInformation">1</setting>
-                <setting name="deaccession_color">#EEEEEE</setting>
-                <setting name="deaccession_includeFromChildren">0</setting>
-              </settings>
-            </placement>
-            <placement code="ca_attribute_description10">
-              <bundle>ca_objects.description</bundle>
-              <settings>
-                <setting name="readonly">0</setting>
-                <setting name="expand_collapse_value">bubbles</setting>
-                <setting name="expand_collapse_no_value">bubbles</setting>
-                <setting name="sort">1</setting>
-                <setting name="sortDirection">ASC</setting>
-                <setting name="dontShowDeleteButton">0</setting>
-              </settings>
-            </placement>
-            <placement code="ca_collections11">
-              <bundle>ca_collections</bundle>
-              <settings>
-                <setting name="readonly">0</setting>
-                <setting name="expand_collapse_value">bubbles</setting>
-                <setting name="expand_collapse_no_value">bubbles</setting>
-                <setting name="dontShowRelationshipTypes">0</setting>
-                <setting name="dont_include_subtypes_in_type_restriction">0</setting>
-                <setting name="list_format">bubbles</setting>
-                <setting name="dontShowAddButton">0</setting>
-                <setting name="dontShowDeleteButton">0</setting>
-                <setting name="minRelationshipsPerRow">0</setting>
-                <setting name="maxRelationshipsPerRow">0</setting>
-                <setting name="disableQuickadd">0</setting>
-                <setting name="sortDirection">ASC</setting>
-                <setting name="disableSorts">0</setting>
-                <setting name="showCount">0</setting>
-                <setting name="numPerPage">100</setting>
-                <setting name="showBatchEditorButton">0</setting>
-                <setting name="showSetRepresentationButton">0</setting>
-                <setting name="showReturnToHomeLocations">0</setting>
-                <setting name="useHierarchicalBrowser">0</setting>
-                <setting name="hierarchicalBrowserHeight">200px</setting>
-              </settings>
-            </placement>
-          </bundlePlacements>
-        </screen>
-      </screens>
-    </userInterface>
   </userInterfaces>
   <relationshipTypes>
     <relationshipTable name="ca_representation_annotations_x_entities">
@@ -12103,7 +12115,7 @@
         <type code="artist" default="1">
           <labels>
             <label locale="en_US">
-              <typename>had as artist</typename>
+              <typename>artist</typename>
               <typename_reverse>was artist</typename_reverse>
             </label>
             <label locale="fr_FR">
@@ -12115,7 +12127,7 @@
         <type code="curator" default="0">
           <labels>
             <label locale="en_US">
-              <typename>had as curator</typename>
+              <typename>curator</typename>
               <typename_reverse>was curator of</typename_reverse>
             </label>
             <label locale="fr_FR">
@@ -12127,7 +12139,7 @@
         <type code="moderator" default="0">
           <labels>
             <label locale="en_US">
-              <typename>had as moderator</typename>
+              <typename>moderator</typename>
               <typename_reverse>was moderator of</typename_reverse>
             </label>
             <label locale="fr_FR">
@@ -12139,7 +12151,7 @@
         <type code="panelist" default="0">
           <labels>
             <label locale="en_US">
-              <typename>had as panelist</typename>
+              <typename>panelist</typename>
               <typename_reverse>was panelist in</typename_reverse>
             </label>
             <label locale="fr_FR">
@@ -12151,7 +12163,7 @@
         <type code="speaker" default="0">
           <labels>
             <label locale="en_US">
-              <typename>had as speaker</typename>
+              <typename>speaker</typename>
               <typename_reverse>was speaker in</typename_reverse>
             </label>
             <label locale="fr_FR">
@@ -12163,7 +12175,7 @@
         <type code="documentarian" default="0">
           <labels>
             <label locale="en_US">
-              <typename>had as documentarian</typename>
+              <typename>documentarian</typename>
               <typename_reverse>is documentarian of</typename_reverse>
             </label>
             <label locale="fr_FR">
@@ -12175,7 +12187,7 @@
         <type code="architect" default="0">
           <labels>
             <label locale="en_US">
-              <typename>had as architect</typename>
+              <typename>architect</typename>
               <typename_reverse>was architect of</typename_reverse>
             </label>
             <label locale="fr_FR">
@@ -12187,7 +12199,7 @@
         <type code="designer" default="0">
           <labels>
             <label locale="en_US">
-              <typename>had as designer</typename>
+              <typename>designer</typename>
               <typename_reverse>was designer of</typename_reverse>
             </label>
             <label locale="fr_FR">
@@ -12211,7 +12223,7 @@
         <type code="performer" default="0">
           <labels>
             <label locale="en_US">
-              <typename>had as performer</typename>
+              <typename>performer</typename>
               <typename_reverse>was performer in</typename_reverse>
             </label>
             <label locale="fr_FR">
@@ -12223,7 +12235,7 @@
         <type code="staff_member" default="0">
           <labels>
             <label locale="en_US">
-              <typename>had as staff member</typename>
+              <typename>staff member</typename>
               <typename_reverse>was staff member fo</typename_reverse>
             </label>
             <label locale="fr_FR">
@@ -12235,7 +12247,7 @@
         <type code="consultant" default="0">
           <labels>
             <label locale="en_US">
-              <typename>had as consultant</typename>
+              <typename>consultant</typename>
               <typename_reverse>was consultant for</typename_reverse>
             </label>
             <label locale="fr_FR">
@@ -12247,7 +12259,7 @@
         <type code="publisher" default="0">
           <labels>
             <label locale="en_US">
-              <typename>had as publisher</typename>
+              <typename>publisher</typename>
               <typename_reverse>was publisher for</typename_reverse>
             </label>
             <label locale="fr_FR">
@@ -12259,7 +12271,7 @@
         <type code="sponsor" default="0">
           <labels>
             <label locale="en_US">
-              <typename>had as sponsor</typename>
+              <typename>sponsor</typename>
               <typename_reverse>was sponsor for</typename_reverse>
             </label>
             <label locale="fr_FR">
@@ -12271,7 +12283,7 @@
         <type code="partner_museum" default="0">
           <labels>
             <label locale="en_US">
-              <typename>had as partner museum</typename>
+              <typename>partner museum</typename>
               <typename_reverse>was partner museum for</typename_reverse>
             </label>
             <label locale="fr_FR">
@@ -12357,6 +12369,14 @@
             <label locale="fr_FR">
               <typename>est décrit par</typename>
               <typename_reverse>décrit</typename_reverse>
+            </label>
+          </labels>
+        </type>
+        <type code="role" default="1">
+          <labels>
+            <label locale="en_US">
+              <typename>role</typename>
+              <typename_reverse>role</typename_reverse>
             </label>
           </labels>
         </type>
@@ -12511,8 +12531,8 @@
         <type code="artist" default="0">
           <labels>
             <label locale="en_US">
-              <typename>had as artist</typename>
-              <typename_reverse>was artist</typename_reverse>
+              <typename>artist</typename>
+              <typename_reverse>artist</typename_reverse>
             </label>
             <label locale="fr_FR">
               <typename>a eu pour artiste</typename>
@@ -12523,32 +12543,32 @@
         <type code="rightsholder" default="0">
           <labels>
             <label locale="en_US">
-              <typename>had as rights holder</typename>
-              <typename_reverse>was rights holder</typename_reverse>
+              <typename>rights holder</typename>
+              <typename_reverse>rights holder</typename_reverse>
             </label>
           </labels>
         </type>
         <type code="creator" default="0">
           <labels>
             <label locale="en_US">
-              <typename>had as creator</typename>
-              <typename_reverse>was creator</typename_reverse>
+              <typename>creator</typename>
+              <typename_reverse>creator</typename_reverse>
             </label>
           </labels>
         </type>
         <type code="contributor" default="1">
           <labels>
             <label locale="en_US">
-              <typename>had as contributor</typename>
-              <typename_reverse>was contributor</typename_reverse>
+              <typename>contributor</typename>
+              <typename_reverse>contributor</typename_reverse>
             </label>
           </labels>
         </type>
         <type code="curator" default="0">
           <labels>
             <label locale="en_US">
-              <typename>had as curator</typename>
-              <typename_reverse>was curator of</typename_reverse>
+              <typename>curator</typename>
+              <typename_reverse>curator of</typename_reverse>
             </label>
             <label locale="fr_FR">
               <typename>a eu pour commissaire d\'exposition</typename>
@@ -12559,8 +12579,8 @@
         <type code="moderator" default="0">
           <labels>
             <label locale="en_US">
-              <typename>had as moderator</typename>
-              <typename_reverse>was moderator of</typename_reverse>
+              <typename>moderator</typename>
+              <typename_reverse>moderator of</typename_reverse>
             </label>
             <label locale="fr_FR">
               <typename>a eu pour modérateur</typename>
@@ -12571,8 +12591,8 @@
         <type code="speaker" default="0">
           <labels>
             <label locale="en_US">
-              <typename>had as speaker</typename>
-              <typename_reverse>was speaker in</typename_reverse>
+              <typename>speaker</typename>
+              <typename_reverse>speaker in</typename_reverse>
             </label>
             <label locale="fr_FR">
               <typename>a eu pour orateur</typename>
@@ -12583,8 +12603,8 @@
         <type code="panelist" default="0">
           <labels>
             <label locale="en_US">
-              <typename>had as panelist</typename>
-              <typename_reverse>was panelist in</typename_reverse>
+              <typename>panelist</typename>
+              <typename_reverse>panelist in</typename_reverse>
             </label>
             <label locale="fr_FR">
               <typename>a eu pour critique</typename>
@@ -12595,7 +12615,7 @@
         <type code="documentarian" default="0">
           <labels>
             <label locale="en_US">
-              <typename>had as documentarian</typename>
+              <typename>documentarian</typename>
               <typename_reverse>is documentarian of</typename_reverse>
             </label>
             <label locale="fr_FR">
@@ -12607,8 +12627,8 @@
         <type code="architect" default="0">
           <labels>
             <label locale="en_US">
-              <typename>had as architect</typename>
-              <typename_reverse>was architect of</typename_reverse>
+              <typename>architect</typename>
+              <typename_reverse>architect of</typename_reverse>
             </label>
             <label locale="fr_FR">
               <typename>a eu pour architecte</typename>
@@ -12619,8 +12639,8 @@
         <type code="designer" default="0">
           <labels>
             <label locale="en_US">
-              <typename>had as designer</typename>
-              <typename_reverse>was designer of</typename_reverse>
+              <typename>designer</typename>
+              <typename_reverse>designer of</typename_reverse>
             </label>
             <label locale="fr_FR">
               <typename>a eu pour designer</typename>
@@ -12632,7 +12652,7 @@
           <labels>
             <label locale="en_US">
               <typename>has as author</typename>
-              <typename_reverse>was author of</typename_reverse>
+              <typename_reverse>author of</typename_reverse>
             </label>
             <label locale="fr_FR">
               <typename>a eu pour auteur</typename>
@@ -12643,8 +12663,8 @@
         <type code="performer" default="0">
           <labels>
             <label locale="en_US">
-              <typename>had as performer</typename>
-              <typename_reverse>was performer in</typename_reverse>
+              <typename>performer</typename>
+              <typename_reverse>performer in</typename_reverse>
             </label>
             <label locale="fr_FR">
               <typename>a eu pour performer</typename>
@@ -12655,8 +12675,8 @@
         <type code="staff_member" default="0">
           <labels>
             <label locale="en_US">
-              <typename>had as staff member</typename>
-              <typename_reverse>was staff member for</typename_reverse>
+              <typename>staff member</typename>
+              <typename_reverse>staff member for</typename_reverse>
             </label>
             <label locale="fr_FR">
               <typename>a comporté parmi l\'équipe</typename>
@@ -12667,8 +12687,8 @@
         <type code="consultant" default="0">
           <labels>
             <label locale="en_US">
-              <typename>had as consultant</typename>
-              <typename_reverse>was consultant for</typename_reverse>
+              <typename>consultant</typename>
+              <typename_reverse>consultant for</typename_reverse>
             </label>
             <label locale="fr_FR">
               <typename>a eu pour consultant</typename>
@@ -12679,8 +12699,8 @@
         <type code="publisher" default="0">
           <labels>
             <label locale="en_US">
-              <typename>had as publisher</typename>
-              <typename_reverse>was publisher for</typename_reverse>
+              <typename>publisher</typename>
+              <typename_reverse>publisher for</typename_reverse>
             </label>
             <label locale="fr_FR">
               <typename>a eu pour éditeur</typename>
@@ -12691,8 +12711,8 @@
         <type code="sponsor" default="0">
           <labels>
             <label locale="en_US">
-              <typename>had as sponsor</typename>
-              <typename_reverse>was sponsor for</typename_reverse>
+              <typename>sponsor</typename>
+              <typename_reverse>sponsor for</typename_reverse>
             </label>
             <label locale="fr_FR">
               <typename>a eu pour sponsor</typename>
@@ -12703,8 +12723,8 @@
         <type code="partner_museum" default="0">
           <labels>
             <label locale="en_US">
-              <typename>had as partner</typename>
-              <typename_reverse>was partner for</typename_reverse>
+              <typename>partner</typename>
+              <typename_reverse>partner for</typename_reverse>
             </label>
             <label locale="fr_FR">
               <typename>a eu pour partenaire</typename>
