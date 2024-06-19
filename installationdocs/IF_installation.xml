@@ -6798,8 +6798,8 @@
         <restriction>
           <table>ca_objects</table>
           <settings>
-            <setting name="minAttributesPerRow">0</setting>
-            <setting name="maxAttributesPerRow">0</setting>
+            <setting name="minAttributesPerRow">1</setting>
+            <setting name="maxAttributesPerRow">1</setting>
             <setting name="minimumAttributeBundlesToDisplay">1</setting>
           </settings>
         </restriction>
@@ -7813,7 +7813,7 @@
           <table>ca_collections</table>
           <settings>
             <setting name="minAttributesPerRow">0</setting>
-            <setting name="maxAttributesPerRow">0</setting>
+            <setting name="maxAttributesPerRow">5</setting>
             <setting name="minimumAttributeBundlesToDisplay">1</setting>
           </settings>
         </restriction>
@@ -7970,8 +7970,8 @@
         <restriction>
           <table>ca_collections</table>
           <settings>
-            <setting name="minAttributesPerRow">0</setting>
-            <setting name="maxAttributesPerRow">0</setting>
+            <setting name="minAttributesPerRow">1</setting>
+            <setting name="maxAttributesPerRow">3</setting>
             <setting name="minimumAttributeBundlesToDisplay">1</setting>
           </settings>
         </restriction>
