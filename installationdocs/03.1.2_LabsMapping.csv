@@ -7,7 +7,7 @@ Mapping,5,ca_object_representations,,,objectRepresentationSplitter,"{""relations
 Mapping,6,ca_collections,,,collectionSplitter,"{""relationshipType"": ""related"", ""collectionType"": ""project"", ""matchOn"": [""labels""], ""dontCreate"": ""1"", ""delimiter"": "";""}",,,
 Mapping,7,ca_collections.description,,,,,,,
 Mapping,8,ca_collections.descriptionalt,,,,,,,
-Mapping,9,ca_entities,,,entitySplitter,"{""relationshipType"": ""related"", ""entityType"": ""*"", ""matchOn"": [""labels""], ""dontCreate"": ""1"", ""delimiter"": "";""}",,,
+Mapping,9,ca_entities,,,entitySplitter,"{""relationshipType"": ""related"", ""entityType"": ""team_member"", ""matchOn"": [""labels""], ""dontCreate"": ""1"", ""delimiter"": "";""}",,,
 Mapping,10,ca_places,,,placeSplitter,"{""relationshipType"": ""location"",
 ""placeType"": ""country"", ""matchOn"": [""labels""]}",,,
 Mapping,11,ca_collections.ifwebpage,,,,,,,
