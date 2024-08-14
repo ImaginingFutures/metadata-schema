@@ -1,5 +1,20 @@
 # Changelog
 
+## [v1.4.0] - 2024-08-13
+
+### Fixed
+
+- Explicit entity type in projects and labs maps.
+- Fixed inconsistencies between projects and participants names.
+- Fixed naming errors and sorting table.
+
+### Changed
+
+- Consolidate 'Synopsis and Position', 'Objectives and Methods', 'Workshops and Events', and 'Activities' into 'Description' for Projects and Labs.
+- HTML enrich text for descriptions to keep styles.
+- Installation Profile in separate folder for better organization.
+
+
 ## [v1.3.0] - 2024-05-14
 
 ### Fixed
